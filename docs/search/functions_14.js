@@ -1,0 +1,8 @@
+var searchData=
+[
+  ['value_0',['Value',['../classnexilis_1_1CmdLineOptions_1_1Value.html#a47e31083517af32ee80e51b0828e0548',1,'nexilis::CmdLineOptions::Value']]],
+  ['vector2_1',['Vector2',['../classnexilis_1_1Vector2.html#aba8fbc759055a3a72ae6f81f4c3baba9',1,'nexilis::Vector2::Vector2()'],['../classnexilis_1_1Vector2.html#a72c5e83016800b8a545e84eb2bf67425',1,'nexilis::Vector2::Vector2(T x, T y)'],['../classnexilis_1_1Vector2.html#addb5e2c0d15e37f827b722483a15d3c9',1,'nexilis::Vector2::Vector2(const Vector2&lt; U &gt; &amp;vec)']]],
+  ['vector2ffromfront_2',['vector2fFromFront',['../group__FrontConversions.html#ga517d59eea28b35c231cddc5b2bf8a410',1,'nexilis::Util']]],
+  ['vector3_3',['Vector3',['../classnexilis_1_1Vector3.html#adc78be1c9bfb466a28e7270e2fc6479a',1,'nexilis::Vector3::Vector3(T x, T y, T z)'],['../classnexilis_1_1Vector3.html#a8f6a0027126b92cd4ac649083280966d',1,'nexilis::Vector3::Vector3()=default'],['../classnexilis_1_1Vector3.html#a1fcd4103b3cfcf06cd9999d999de0098',1,'nexilis::Vector3::Vector3(const Vector3 &amp;other)'],['../classnexilis_1_1Vector3.html#aa3f5129bde7057266c2abb17eed1c887',1,'nexilis::Vector3::Vector3(Vector3 &amp;&amp;other) noexcept'],['../classNexilis_1_1Vector3-1-g.html#ae6f781827e93c840a3c356290aca3a16',1,'Nexilis.Vector3-1-g.Vector3(T x, T y, T z)'],['../classNexilis_1_1Vector3-1-g.html#aedf09960e8a028a7e746f84adb360e51',1,'Nexilis.Vector3-1-g.Vector3(IntPtr nativePtr, bool ownsNativePointer=true)'],['../classNexilis_1_1Vector3-1-g.html#affe57f62ca468ca829df553dabb4ae5c',1,'Nexilis.Vector3-1-g.Vector3(Vector3&lt; T &gt; other)']]],
+  ['vector3ffromfront_4',['vector3fFromFront',['../group__FrontConversions.html#ga1c20d2a21b98e6c694c4c554b951e6d7',1,'nexilis::Util']]]
+];

@@ -1,0 +1,25 @@
+var classnexilis_1_1BaseRoom =
+[
+    [ "BaseRoom", "classnexilis_1_1BaseRoom.html#af07e2b514f1b716c5a243389abc3f848", null ],
+    [ "BaseRoom", "classnexilis_1_1BaseRoom.html#afe00a43aa326c16ed191cf1211747dca", null ],
+    [ "BaseRoom", "classnexilis_1_1BaseRoom.html#ada4ab35bb8a70302fe039ca860e7c8fd", null ],
+    [ "addGameItem", "classnexilis_1_1BaseRoom.html#a5a59b4b0525b98bd76944a0de2921a02", null ],
+    [ "addObject", "classnexilis_1_1BaseRoom.html#a37941e15c19b692c6fe743ec6dd4d755", null ],
+    [ "addObject", "classnexilis_1_1BaseRoom.html#a7ccdff24d07235ca4eab4f6df73945fc", null ],
+    [ "deleteGameItem", "classnexilis_1_1BaseRoom.html#af3dcf5c22383e7ca5254a31df23ff748", null ],
+    [ "deleteObject2D", "classnexilis_1_1BaseRoom.html#ab2b2d6cb7a86054287e20895d064baf8", null ],
+    [ "deleteObject3D", "classnexilis_1_1BaseRoom.html#a2e9f66290918587581984d1a12f40fd0", null ],
+    [ "getContext", "classnexilis_1_1BaseRoom.html#a5850da119501071f3a9e9d8032238fdf", null ],
+    [ "getCreatorId", "classnexilis_1_1BaseRoom.html#a22a31b859c2c60f3472bb69747698bf9", null ],
+    [ "getGameItemById", "classnexilis_1_1BaseRoom.html#a8d3adfcc34b05b0fc6c575842a5f2835", null ],
+    [ "getGameItems", "classnexilis_1_1BaseRoom.html#aa5ee203cd29be2dafc16845ac81fa916", null ],
+    [ "getId", "classnexilis_1_1BaseRoom.html#a3f1693ee56cc7a471dc72ca29cf0da70", null ],
+    [ "getMaxSize", "classnexilis_1_1BaseRoom.html#a7285580f34d0842bc050c7706fa46353", null ],
+    [ "getName", "classnexilis_1_1BaseRoom.html#adecdf4636671d1b8cc1194420afbaedb", null ],
+    [ "getObject2DById", "classnexilis_1_1BaseRoom.html#a64586858f61426e477ebdffda8efcd55", null ],
+    [ "getObject3DById", "classnexilis_1_1BaseRoom.html#a3f2a276277cb901538e78ef08aefd6b7", null ],
+    [ "getObjects2D", "classnexilis_1_1BaseRoom.html#a36b06f0f1c7e4c2bf0c976c30b03cda2", null ],
+    [ "getObjects3D", "classnexilis_1_1BaseRoom.html#a32f0491f2a77ed939cfa47b43d56d7eb", null ],
+    [ "operator=", "classnexilis_1_1BaseRoom.html#a0f58bd256b61f168f98ba4d9f54079c8", null ],
+    [ "updateGameItemStatus", "classnexilis_1_1BaseRoom.html#a93cead961711422d7e22a1eaaab87615", null ]
+];

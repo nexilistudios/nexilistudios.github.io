@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['y_0',['y',['../structnexilis_1_1client_1_1ClientAPI_1_1AudioEvent.html#af554ce57d9c116110d42ef07f48139c7',1,'nexilis::client::ClientAPI::AudioEvent::y'],['../structnexilis_1_1client_1_1ClientAPI_1_1RemotePlayerSnapshot.html#a8860421df875b98722f520a5d26ddbcb',1,'nexilis::client::ClientAPI::RemotePlayerSnapshot::y'],['../structnexilis_1_1client_1_1ClientAPI_1_1RemoteObject3DSnapshot.html#a91b0faf1dbd484cc62d817777ad5b300',1,'nexilis::client::ClientAPI::RemoteObject3DSnapshot::y'],['../structnexilis_1_1client_1_1ClientAPI_1_1RemoteGameItemSnapshot.html#a15085c46916d60c4cc82fca14aa992ac',1,'nexilis::client::ClientAPI::RemoteGameItemSnapshot::y'],['../classnexilis_1_1Vector2.html#aed6f884af063875b98cd37583721d2c5',1,'nexilis::Vector2::y'],['../classnexilis_1_1Vector3.html#a1dd4b8960e5419721eeb90c92638fbb5',1,'nexilis::Vector3::y']]]
+];

@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['x_0',['X',['../classNexilis_1_1Vector3-1-g.html#ab58ba058f8fafe639b15232b66d8ad4e',1,'Nexilis.Vector3-1-g.X'],['../structNexilis_1_1Util_1_1Position.html#a267d7d792776440d4ee133bc42335d79',1,'Nexilis.Util.Position.X']]],
+  ['x_1',['x',['../structnexilis_1_1client_1_1ClientAPI_1_1AudioEvent.html#ae4d509d904b9b03b93385dfe96cddefb',1,'nexilis::client::ClientAPI::AudioEvent::x'],['../structnexilis_1_1client_1_1ClientAPI_1_1RemotePlayerSnapshot.html#aa905ab4902c357f3e569739525788905',1,'nexilis::client::ClientAPI::RemotePlayerSnapshot::x'],['../structnexilis_1_1client_1_1ClientAPI_1_1RemoteObject3DSnapshot.html#a5dd6ad42896b53442f55fe9daf8839ba',1,'nexilis::client::ClientAPI::RemoteObject3DSnapshot::x'],['../structnexilis_1_1client_1_1ClientAPI_1_1RemoteGameItemSnapshot.html#aa4948add87f3d5db3766f1755e0d972e',1,'nexilis::client::ClientAPI::RemoteGameItemSnapshot::x'],['../classnexilis_1_1Vector2.html#ab9d30edb027e2f110b8b8adb37d57fd3',1,'nexilis::Vector2::x'],['../classnexilis_1_1Vector3.html#ab72f9325446600ab01cf63f7d350ca05',1,'nexilis::Vector3::x']]]
+];

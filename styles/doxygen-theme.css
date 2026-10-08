@@ -1,0 +1,239 @@
+/* Shared palette and type with the Nexilis landing page. */
+html, html.dark-mode, html:not(.dark-mode) {
+  color-scheme: dark;
+  --page-background-color: #111512;
+  --page-foreground-color: #eeefe9;
+  --page-link-color: #c6f36b;
+  --page-visited-link-color: #b9db81;
+  --page-external-link-color: #c6f36b;
+
+  --index-odd-item-bg-color: #191e18;
+  --index-even-item-bg-color: #151b14;
+  --index-header-color: #eeefe9;
+  --index-separator-color: #30382e;
+
+  --header-background-color: #191e18;
+  --header-separator-color: #30382e;
+  --group-header-separator-color: #37432a;
+  --group-header-color: #c6f36b;
+  --title-background-color: #111512;
+  --title-separator-color: #30382e;
+  --footer-foreground-color: #969e93;
+  --citation-label-color: #c6f36b;
+  --blockquote-background-color: #1d2319;
+  --blockquote-border-color: #4c5a42;
+
+  --nav-background-color: #151b14;
+  --nav-foreground-color: #eeefe9;
+  --nav-border-color: #30382e;
+  --nav-breadcrumb-separator-color: #30382e;
+  --nav-breadcrumb-active-bg: #232c1c;
+  --nav-breadcrumb-color: #c6f36b;
+  --nav-splitbar-bg-color: #30382e;
+  --nav-splitbar-handle-color: #82907b;
+  --nav-text-normal-color: #bec6b7;
+  --nav-menu-button-color: #c6f36b;
+  --nav-menu-background-color: #1d2319;
+  --nav-menu-foreground-color: #eeefe9;
+  --nav-menu-active-bg: #273320;
+  --nav-menu-active-color: #c6f36b;
+  --nav-arrow-color: #82907b;
+  --nav-arrow-selected-color: #c6f36b;
+
+  --search-background-color: #1d2319;
+  --search-foreground-color: #bec6b7;
+  --search-active-color: #eeefe9;
+  --search-filter-background-color: #1d2319;
+  --search-filter-foreground-color: #eeefe9;
+  --search-filter-border-color: #4c5a42;
+  --search-filter-highlight-text-color: #111512;
+  --search-filter-highlight-bg-color: #c6f36b;
+  --search-results-background-color: #1d2319;
+  --search-results-foreground-color: #c6f36b;
+  --search-results-border-color: #4c5a42;
+  --search-box-border-color: #4c5a42;
+
+  --memdecl-background-color: #191e18;
+  --memdecl-foreground-color: #bec6b7;
+  --memdecl-template-color: #c6f36b;
+  --memdecl-border-color: #30382e;
+  --memdef-border-color: #4c5a42;
+  --memdef-title-background-color: #273320;
+  --memdef-proto-background-color: #1d2319;
+  --memdef-proto-text-color: #eeefe9;
+  --memdef-param-name-color: #c6f36b;
+  --memdef-template-color: #c6f36b;
+  --table-cell-border-color: #30382e;
+  --table-header-background-color: #273320;
+  --table-header-foreground-color: #eeefe9;
+  --label-background-color: #37432a;
+  --label-left-top-border-color: #4c5a42;
+  --label-right-bottom-border-color: #30382e;
+  --label-foreground-color: #eeefe9;
+
+  --fragment-foreground-color: #eeefe9;
+  --fragment-background-color: #191e18;
+  --fragment-border-color: #30382e;
+  --fragment-lineno-border-color: #37432a;
+  --fragment-lineno-background-color: #151b14;
+  --fragment-lineno-foreground-color: #969e93;
+  --fragment-lineno-link-fg-color: #c6f36b;
+  --fragment-lineno-link-bg-color: #232c1c;
+  --fragment-lineno-link-hover-fg-color: #d9ff96;
+  --fragment-lineno-link-hover-bg-color: #37432a;
+  --code-keyword-color: #c6f36b;
+  --code-type-keyword-color: #a89aff;
+  --code-flow-keyword-color: #ffa877;
+  --code-comment-color: #969e93;
+  --code-preprocessor-color: #75d4e8;
+  --code-string-literal-color: #d9c58f;
+  --code-char-literal-color: #d9c58f;
+
+  --icon-background-color: #37432a;
+  --icon-foreground-color: #eeefe9;
+  --icon-folder-open-fill-color: #4c5a42;
+  --icon-folder-fill-color: #37432a;
+  --icon-folder-border-color: #82907b;
+  --icon-doc-fill-color: #37432a;
+  --icon-doc-border-color: #82907b;
+  --toc-background-color: #191e18;
+  --toc-border-color: #30382e;
+  --toc-header-color: #c6f36b;
+  --tooltip-foreground-color: #eeefe9;
+  --tooltip-background-color: #1d2319;
+  --tooltip-arrow-background-color: #1d2319;
+  --tooltip-border-color: #4c5a42;
+  --tooltip-doc-color: #bec6b7;
+  --tooltip-declaration-color: #c6f36b;
+  --tooltip-link-color: #c6f36b;
+  --scrollbar-thumb-color: #4c5a42;
+  --scrollbar-background-color: #151b14;
+
+  --font-family-normal: "DM Sans", sans-serif;
+  --font-family-title: "Space Grotesk", sans-serif;
+  --font-family-nav: "DM Sans", sans-serif;
+  --font-family-toc: "DM Sans", sans-serif;
+  --font-family-search: "DM Sans", sans-serif;
+}
+
+body, table, div, p, dl {
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+#titlearea {
+  padding: 14px 22px;
+}
+
+#projectname {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -1.4px;
+}
+
+#projectnumber {
+  color: #969e93;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+#projectbrief {
+  color: #969e93;
+  font-size: 13px;
+}
+
+#main-nav, #main-nav-mobile {
+  background: #151b14;
+}
+
+.sm-dox a, .sm-dox a:visited {
+  color: #bec6b7;
+}
+
+.sm-dox a:hover, .sm-dox a:focus, .sm-dox a.highlighted {
+  color: #c6f36b;
+  background: #232c1c;
+}
+
+#nav-tree .label {
+  font-size: 13px;
+  line-height: 26px;
+}
+
+#nav-tree .selected {
+  border-left: 2px solid #c6f36b;
+}
+
+.title, h1, h2, h3, h4, h5, h6 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.7px;
+}
+
+div.headertitle {
+  padding: 16px 24px;
+}
+
+div.contents {
+  margin: 22px 24px 36px;
+}
+
+a:hover, a:focus-visible {
+  color: #d9ff96;
+}
+
+a:focus-visible, button:focus-visible, input:focus-visible {
+  outline: 2px solid #c6f36b;
+  outline-offset: 3px;
+}
+
+div.fragment, div.memproto, div.memdoc, .directory {
+  border-radius: 4px;
+}
+
+div.fragment {
+  padding: 8px 0;
+}
+
+@media (max-width: 767px) {
+  #side-nav, #page-nav {
+    display: none !important;
+  }
+
+  #container {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  #doc-content {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0 !important;
+  }
+
+  #titlearea {
+    padding: 10px 12px;
+  }
+
+  #projectname {
+    font-size: 24px;
+  }
+
+  div.headertitle {
+    padding: 12px 16px;
+  }
+
+  div.contents {
+    margin: 16px;
+  }
+
+  .title {
+    overflow-wrap: anywhere;
+  }
+}

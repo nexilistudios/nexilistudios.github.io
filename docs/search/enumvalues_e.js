@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['parsing_5ffailed_0',['parsing_failed',['../namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865ad9cca3a9c4a44542b21a257ef0507707',1,'nexilis::client']]],
+  ['password_5fprotected_1',['password_protected',['../namespacenexilis_1_1server.html#acc371b1360f86610e42c4eb65bce21b7a50e5526edd0d52c30e1f7e839786623d',1,'nexilis::server']]],
+  ['passwordprotected_2',['PasswordProtected',['../namespaceNexilis_1_1Server.html#a905e5e11c47733fccd629cb8db7fba05a3fbbd361e945bdc08ec049887395ec1c',1,'Nexilis::Server']]],
+  ['player_5f2d_3',['player_2D',['../classnexilis_1_1RoomCommandType.html#acdd2fab4db13f9b25f7d26b50d7cc967ab7c940be36c08064abf32bd2d1b853bc',1,'nexilis::RoomCommandType']]],
+  ['player_5f3d_4',['player_3D',['../classnexilis_1_1RoomCommandType.html#acdd2fab4db13f9b25f7d26b50d7cc967a1716377761d56ffe1fc1179e83aad241',1,'nexilis::RoomCommandType']]],
+  ['player_5fmanagement_5',['player_management',['../namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027ba78ea35366dd05a711dc7ca0101b93e1f',1,'nexilis']]],
+  ['position_6',['position',['../classnexilis_1_1RoomCommandType.html#a6badde935aa039e575cc53395f5b981ca4757fe07fd492a8be0ea6a760d683d6e',1,'nexilis::RoomCommandType']]],
+  ['protocol_5fstatus_5fconnected_7',['PROTOCOL_STATUS_CONNECTED',['../protocol__status__c_8h.html#a64b7bb9810cb21e8b53c08cda68922b6ad175a4018d85c5019423f83628c1f924',1,'protocol_status_c.h']]],
+  ['protocol_5fstatus_5fconnecting_8',['PROTOCOL_STATUS_CONNECTING',['../protocol__status__c_8h.html#a64b7bb9810cb21e8b53c08cda68922b6a5de80deac274d2b43c3599991cdae6df',1,'protocol_status_c.h']]],
+  ['protocol_5fstatus_5ferror_9',['PROTOCOL_STATUS_ERROR',['../protocol__status__c_8h.html#a64b7bb9810cb21e8b53c08cda68922b6a9810be9393fb16037b3d0a00a9f65677',1,'protocol_status_c.h']]],
+  ['protocol_5fstatus_5fswitching_5fports_10',['PROTOCOL_STATUS_SWITCHING_PORTS',['../protocol__status__c_8h.html#a64b7bb9810cb21e8b53c08cda68922b6a5592bb73f96740abf76b9c4560768ec3',1,'protocol_status_c.h']]],
+  ['protocol_5fstatus_5fundefined_11',['PROTOCOL_STATUS_UNDEFINED',['../protocol__status__c_8h.html#a64b7bb9810cb21e8b53c08cda68922b6a418619f343979b5782558015d1fb953a',1,'protocol_status_c.h']]],
+  ['protocol_5ftype_5faf_5finet_5ftcp_5fclient_12',['PROTOCOL_TYPE_AF_INET_TCP_CLIENT',['../protocol__type__c_8h.html#a7638ff48c2566e58f0c3b0098caf09e4a91c201c8c50cd98e9fc1ddb5b9c62e84',1,'protocol_type_c.h']]],
+  ['protocol_5ftype_5faf_5finet_5ftcp_5fserver_13',['PROTOCOL_TYPE_AF_INET_TCP_SERVER',['../protocol__type__c_8h.html#a7638ff48c2566e58f0c3b0098caf09e4affd7f43578373c2f1196006c2369165c',1,'protocol_type_c.h']]],
+  ['protocol_5ftype_5faf_5finet_5fudp_5fclient_14',['PROTOCOL_TYPE_AF_INET_UDP_CLIENT',['../protocol__type__c_8h.html#a7638ff48c2566e58f0c3b0098caf09e4a02eec20925d7c32a0cbadc7364d2d5b2',1,'protocol_type_c.h']]],
+  ['protocol_5ftype_5faf_5finet_5fudp_5fserver_15',['PROTOCOL_TYPE_AF_INET_UDP_SERVER',['../protocol__type__c_8h.html#a7638ff48c2566e58f0c3b0098caf09e4ad8a2fa4dbd80afc2470aee02f740a668',1,'protocol_type_c.h']]],
+  ['protocol_5ftype_5faf_5funix_5fsock_5fdgram_5fclient_16',['PROTOCOL_TYPE_AF_UNIX_SOCK_DGRAM_CLIENT',['../protocol__type__c_8h.html#a7638ff48c2566e58f0c3b0098caf09e4aeabcf3a8dca6e6b5eb9ccde2198a69fb',1,'protocol_type_c.h']]],
+  ['protocol_5ftype_5faf_5funix_5fsock_5fdgram_5fserver_17',['PROTOCOL_TYPE_AF_UNIX_SOCK_DGRAM_SERVER',['../protocol__type__c_8h.html#a7638ff48c2566e58f0c3b0098caf09e4a11da30af293b5e0d713b5b57713b8742',1,'protocol_type_c.h']]],
+  ['protocol_5ftype_5faf_5funix_5fsock_5fstream_5fclient_18',['PROTOCOL_TYPE_AF_UNIX_SOCK_STREAM_CLIENT',['../protocol__type__c_8h.html#a7638ff48c2566e58f0c3b0098caf09e4a996fdac120d9e25bd225a6d80a92c280',1,'protocol_type_c.h']]],
+  ['protocol_5ftype_5faf_5funix_5fsock_5fstream_5fserver_19',['PROTOCOL_TYPE_AF_UNIX_SOCK_STREAM_SERVER',['../protocol__type__c_8h.html#a7638ff48c2566e58f0c3b0098caf09e4a049827cf27aa6fddfb370d71a8e1d028',1,'protocol_type_c.h']]],
+  ['protocol_5ftype_5fboost_5ftcp_5fclient_20',['PROTOCOL_TYPE_BOOST_TCP_CLIENT',['../protocol__type__c_8h.html#a7638ff48c2566e58f0c3b0098caf09e4a58447ea088c5c8fbd9cc2c63b772c3d4',1,'protocol_type_c.h']]],
+  ['protocol_5ftype_5fboost_5ftcp_5fserver_21',['PROTOCOL_TYPE_BOOST_TCP_SERVER',['../protocol__type__c_8h.html#a7638ff48c2566e58f0c3b0098caf09e4a240f0ab62169750525298b40d29a01a3',1,'protocol_type_c.h']]],
+  ['protocol_5ftype_5fboost_5fudp_5fclient_22',['PROTOCOL_TYPE_BOOST_UDP_CLIENT',['../protocol__type__c_8h.html#a7638ff48c2566e58f0c3b0098caf09e4a52117e68030c1f2396c5647370a6b0cc',1,'protocol_type_c.h']]],
+  ['protocol_5ftype_5fboost_5fudp_5fserver_23',['PROTOCOL_TYPE_BOOST_UDP_SERVER',['../protocol__type__c_8h.html#a7638ff48c2566e58f0c3b0098caf09e4ad9a3c6378e77349595baed5c0ea41310',1,'protocol_type_c.h']]],
+  ['protocol_5ftype_5funknown_24',['PROTOCOL_TYPE_UNKNOWN',['../protocol__type__c_8h.html#a7638ff48c2566e58f0c3b0098caf09e4a6fc626007e6b781c18eea7749a0af694',1,'protocol_type_c.h']]]
+];

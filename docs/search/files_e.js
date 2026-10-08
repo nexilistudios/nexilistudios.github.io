@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['rawnxdata_2ecs_0',['RawNxData.cs',['../RawNxData_8cs.html',1,'']]],
+  ['read_5fresult_2ehh_1',['read_result.hh',['../read__result_8hh.html',1,'']]],
+  ['readme_2emd_2',['README.md',['../README_8md.html',1,'']]],
+  ['room_2ecs_3',['Room.cs',['../Room_8cs.html',1,'']]],
+  ['room_5fc_2eh_4',['room_c.h',['../room__c_8h.html',1,'']]],
+  ['room_5fcommand_5ftype_2ehh_5',['room_command_type.hh',['../room__command__type_8hh.html',1,'']]],
+  ['room_5fcontext_5fc_2eh_6',['room_context_c.h',['../room__context__c_8h.html',1,'']]],
+  ['room_5fdata_2ehh_7',['room_data.hh',['../room__data_8hh.html',1,'']]],
+  ['room_5fdata_5fc_2eh_8',['room_data_c.h',['../room__data__c_8h.html',1,'']]],
+  ['room_5fid_2ehh_9',['room_id.hh',['../room__id_8hh.html',1,'']]],
+  ['room_5finfo_2ehh_10',['room_info.hh',['../room__info_8hh.html',1,'']]],
+  ['room_5fstorage_2ehh_11',['room_storage.hh',['../room__storage_8hh.html',1,'']]],
+  ['roomcontext_2ecs_12',['RoomContext.cs',['../RoomContext_8cs.html',1,'']]],
+  ['roomdata_2ecs_13',['RoomData.cs',['../RoomData_8cs.html',1,'']]],
+  ['roomdatanative_2ecs_14',['RoomDataNative.cs',['../RoomDataNative_8cs.html',1,'']]],
+  ['roominfo_2ecs_15',['RoomInfo.cs',['../RoomInfo_8cs.html',1,'']]],
+  ['roomnative_2ecs_16',['RoomNative.cs',['../RoomNative_8cs.html',1,'']]],
+  ['rooms_5fcollection_2eh_17',['rooms_collection.h',['../rooms__collection_8h.html',1,'']]],
+  ['roomscollection_2ecs_18',['RoomsCollection.cs',['../RoomsCollection_8cs.html',1,'']]],
+  ['roomscollectionnative_2ecs_19',['RoomsCollectionNative.cs',['../RoomsCollectionNative_8cs.html',1,'']]],
+  ['runtime_2ehh_20',['runtime.hh',['../runtime_8hh.html',1,'']]]
+];

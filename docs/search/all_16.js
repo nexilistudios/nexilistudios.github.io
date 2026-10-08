@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['w_0',['w',['../structnexilis_1_1client_1_1ClientAPI_1_1RemotePlayerSnapshot.html#a0347ae7cb500da15c4ad98f0d1644677',1,'nexilis::client::ClientAPI::RemotePlayerSnapshot::w'],['../structnexilis_1_1client_1_1ClientAPI_1_1RemoteObject3DSnapshot.html#a4818034b2bfd4c50c7c81880cea47b37',1,'nexilis::client::ClientAPI::RemoteObject3DSnapshot::w'],['../structnexilis_1_1client_1_1ClientAPI_1_1RemoteGameItemSnapshot.html#ada633301d6be3d49703e519dc2f9d42d',1,'nexilis::client::ClientAPI::RemoteGameItemSnapshot::w']]],
+  ['waiter_1',['Waiter',['../classNexilis_1_1Waiter.html',1,'Nexilis.Waiter'],['../classNexilis_1_1Waiter.html#aaf49e561a2f5edebe39d93e2a4b1bf78',1,'Nexilis.Waiter.Waiter()']]],
+  ['waiter_2ecs_2',['Waiter.cs',['../Waiter_8cs.html',1,'']]],
+  ['waiternative_2ecs_3',['WaiterNative.cs',['../WaiterNative_8cs.html',1,'']]],
+  ['waituntilboosttcpready_4',['waitUntilBoostTCPReady',['../classnexilis_1_1client_1_1ClientAPI.html#a06ff19320eb6c2730a633632681526fd',1,'nexilis::client::ClientAPI']]],
+  ['waituntilboostudpready_5',['waitUntilBoostUDPReady',['../classnexilis_1_1client_1_1ClientAPI.html#a61d2241ecf9a09c30ed3dc6296bba237',1,'nexilis::client::ClientAPI']]],
+  ['waituntilinettcpready_6',['waitUntilInetTCPReady',['../classnexilis_1_1client_1_1ClientAPI.html#aef58620c267d5289d4bac61a45473e04',1,'nexilis::client::ClientAPI']]],
+  ['waituntilinetudpready_7',['waitUntilInetUDPReady',['../classnexilis_1_1client_1_1ClientAPI.html#a0e2d5869a2928781d0403ecef064787b',1,'nexilis::client::ClientAPI']]],
+  ['waituntilroomscreated_8',['WaitUntilRoomsCreated',['../classNexilis_1_1Waiter.html#a47764183bc1ecf550e28b424ed877438',1,'Nexilis::Waiter']]],
+  ['waituntilroomscreated_9',['waitUntilRoomsCreated',['../classnexilis_1_1client_1_1ClientAPI.html#a1f032ceb40b93315772ef74432e26482',1,'nexilis::client::ClientAPI']]],
+  ['waituntilunixdgramready_10',['waitUntilUnixDgramReady',['../classnexilis_1_1client_1_1ClientAPI.html#a528794b5d8aadca2cb1c196948e76b27',1,'nexilis::client::ClientAPI']]],
+  ['waituntilunixstreamready_11',['waitUntilUnixStreamReady',['../classnexilis_1_1client_1_1ClientAPI.html#a7ed744f06b2070ebd3e0e69206cf9d55',1,'nexilis::client::ClientAPI']]],
+  ['warning_12',['WARNING',['../namespaceNexilis_1_1Logger.html#aa6d08b57e89ebb68e485d67a61d4415ba059e9861e0400dfbe05c98a841f3f96b',1,'Nexilis::Logger']]],
+  ['warning_13',['Warning',['../classNexilis_1_1Logger_1_1Logger.html#a37533e3f2c60fabc817e7cd1e0eab63d',1,'Nexilis.Logger.Logger.Warning()'],['../classNexilis_1_1NxLogger.html#a68909c24ef5b8755ed5a3e7cc0a1ed3c',1,'Nexilis.NxLogger.Warning()'],['../namespacenexilis_1_1logger.html#a33a82661cf21f69c5b2aa5b1dee51615a0eaadb4fcb48a0a0ed7bc9868be9fbaa',1,'nexilis::logger::Warning']]],
+  ['warning_14',['warning',['../classnexilis_1_1FileLog.html#ac495355c7fd8cb826e662d662e417840',1,'nexilis::FileLog::warning()'],['../classnexilis_1_1Log.html#a191e4c013bad219e746e8e56682d65e1',1,'nexilis::Log::warning()'],['../classnexilis_1_1logger_1_1Logger.html#a68409cb1a072641188aa5b1053c81fbc',1,'nexilis::logger::Logger::warning()']]],
+  ['whitelisted_15',['WhiteListed',['../namespaceNexilis_1_1Server.html#a905e5e11c47733fccd629cb8db7fba05ac502a12ca948cda004e3b40b46f0fe2c',1,'Nexilis::Server']]],
+  ['writeporttofile_16',['writePortToFile',['../group__PortHandling.html#ga8c280d1a0a727bab7d1b9b2d5521a6dc',1,'nexilis::Util']]]
+];

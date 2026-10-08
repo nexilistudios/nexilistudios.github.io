@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['nativeinteropexception_0',['NativeInteropException',['../classNexilis_1_1NativeInteropException.html',1,'Nexilis']]],
+  ['nexilis_5fclientapi_1',['nexilis_ClientAPI',['../structnexilis__ClientAPI.html',1,'']]],
+  ['nexilis_5fclientconfigc_2',['nexilis_ClientConfigC',['../structnexilis__ClientConfigC.html',1,'']]],
+  ['nexilis_5fclientsession_3',['nexilis_ClientSession',['../structnexilis__ClientSession.html',1,'']]],
+  ['nexilis_5flogger_5fconsolehandler_4',['nexilis_logger_ConsoleHandler',['../structnexilis__logger__ConsoleHandler.html',1,'']]],
+  ['nexilis_5flogger_5ffilehandler_5',['nexilis_logger_FileHandler',['../structnexilis__logger__FileHandler.html',1,'']]],
+  ['nexilis_5flogger_5ffunctionhandler_6',['nexilis_logger_FunctionHandler',['../structnexilis__logger__FunctionHandler.html',1,'']]],
+  ['nexilis_5fpromisehandle_7',['nexilis_PromiseHandle',['../structnexilis__PromiseHandle.html',1,'']]],
+  ['nexilis_5fprotocolmanagerc_8',['nexilis_ProtocolManagerC',['../structnexilis__ProtocolManagerC.html',1,'']]],
+  ['nexilis_5froom_9',['nexilis_Room',['../structnexilis__Room.html',1,'']]],
+  ['nexilis_5froomclients_10',['nexilis_RoomClients',['../structnexilis__RoomClients.html',1,'']]],
+  ['nexilis_5froomdata_11',['nexilis_RoomData',['../structnexilis__RoomData.html',1,'']]],
+  ['nexilis_5froomscollection_12',['nexilis_RoomsCollection',['../structnexilis__RoomsCollection.html',1,'']]],
+  ['nexilis_5froomscollectionclients_13',['nexilis_RoomsCollectionClients',['../structnexilis__RoomsCollectionClients.html',1,'']]],
+  ['nexilis_5fvector3f_14',['nexilis_Vector3f',['../structnexilis__Vector3f.html',1,'']]],
+  ['nexilis_5fvector3i_15',['nexilis_Vector3i',['../structnexilis__Vector3i.html',1,'']]],
+  ['nexilis_5fvector3u_16',['nexilis_Vector3u',['../structnexilis__Vector3u.html',1,'']]],
+  ['nexilisclient_17',['NexilisClient',['../classNexilis_1_1Util_1_1NexilisClient.html',1,'Nexilis::Util']]],
+  ['nx_5fdata_5fc_18',['nx_data_c',['../structnx__data__c.html',1,'']]],
+  ['nxclass_19',['NxClass',['../classnexilis_1_1NxClass.html',1,'nexilis']]],
+  ['nxdata_20',['NxData',['../classNexilis_1_1NxData.html',1,'Nexilis']]],
+  ['nxlogger_21',['NxLogger',['../classNexilis_1_1NxLogger.html',1,'Nexilis']]]
+];

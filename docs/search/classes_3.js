@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['callerargumentexpressionattribute_0',['CallerArgumentExpressionAttribute',['../classSystem_1_1Runtime_1_1CompilerServices_1_1CallerArgumentExpressionAttribute.html',1,'System::Runtime::CompilerServices']]],
+  ['chatsnapshot_1',['ChatSnapshot',['../structnexilis_1_1client_1_1ClientAPI_1_1ChatSnapshot.html',1,'nexilis::client::ClientAPI']]],
+  ['clientapi_2',['ClientAPI',['../classNexilis_1_1Client_1_1ClientAPI.html',1,'Nexilis.Client.ClientAPI'],['../classnexilis_1_1client_1_1ClientAPI.html',1,'nexilis::client::ClientAPI']]],
+  ['clientapidata_3',['ClientAPIData',['../classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html',1,'nexilis::client::ClientAPI']]],
+  ['clientconfig_4',['ClientConfig',['../classNexilis_1_1Client_1_1ClientConfig.html',1,'Nexilis.Client.ClientConfig'],['../classnexilis_1_1client_1_1ClientConfig.html',1,'nexilis::client::ClientConfig']]],
+  ['clientdata_5',['ClientData',['../classnexilis_1_1client_1_1ClientAPI_1_1ClientData.html',1,'nexilis::client::ClientAPI']]],
+  ['clientimpl_6',['ClientImpl',['../structnexilis_1_1client_1_1ClientImpl.html',1,'nexilis::client']]],
+  ['clientprotocol_7',['ClientProtocol',['../classnexilis_1_1client_1_1ClientProtocol.html',1,'nexilis::client']]],
+  ['clientsession_8',['ClientSession',['../classNexilis_1_1Client_1_1ClientSession.html',1,'Nexilis.Client.ClientSession'],['../classnexilis_1_1client_1_1ClientSession.html',1,'nexilis::client::ClientSession']]],
+  ['clientsessionnative_9',['ClientSessionNative',['../classNexilis_1_1Client_1_1ClientSessionNative.html',1,'Nexilis::Client']]],
+  ['clientstorage_10',['ClientStorage',['../classnexilis_1_1server_1_1ClientStorage.html',1,'nexilis::server']]],
+  ['cmdlineoptions_11',['CmdLineOptions',['../classnexilis_1_1CmdLineOptions.html',1,'nexilis']]],
+  ['command_12',['Command',['../classnexilis_1_1server_1_1Command.html',1,'nexilis::server']]],
+  ['commandpacketbase_13',['CommandPacketBase',['../classCommandPacketBase.html',1,'']]],
+  ['commandpacketbase_3c_20clientimpl_20_3e_14',['CommandPacketBase&lt; ClientImpl &gt;',['../classCommandPacketBase.html',1,'']]],
+  ['commandpacketbase_3c_20serverimpl_20_3e_15',['CommandPacketBase&lt; ServerImpl &gt;',['../classCommandPacketBase.html',1,'']]],
+  ['commandparser_16',['CommandParser',['../classnexilis_1_1client_1_1CommandParser.html',1,'nexilis::client']]],
+  ['commandspec_17',['CommandSpec',['../classnexilis_1_1CommandSpec.html',1,'nexilis']]],
+  ['communicate_18',['Communicate',['../structCommandPacketBase_1_1Room_1_1Communicate.html',1,'CommandPacketBase::Room']]],
+  ['communication_19',['Communication',['../classNexilis_1_1Client_1_1Communication.html',1,'Nexilis.Client.Communication'],['../classnexilis_1_1client_1_1Room_1_1Communication.html',1,'nexilis::client::Room::Communication']]],
+  ['config_20',['Config',['../classnexilis_1_1server_1_1Config.html',1,'nexilis::server']]],
+  ['consolehandler_21',['ConsoleHandler',['../classNexilis_1_1Logger_1_1ConsoleHandler.html',1,'Nexilis.Logger.ConsoleHandler'],['../classnexilis_1_1logger_1_1ConsoleHandler.html',1,'nexilis::logger::ConsoleHandler']]]
+];

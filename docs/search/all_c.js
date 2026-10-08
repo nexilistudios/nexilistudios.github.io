@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['leaderboard_0',['leaderboard',['../classnexilis_1_1RoomCommandType.html#a6badde935aa039e575cc53395f5b981ca58317cd236f36059667cd6d7adf4ef45',1,'nexilis::RoomCommandType']]],
+  ['leaderboard_2ehh_1',['leaderboard.hh',['../leaderboard_8hh.html',1,'']]],
+  ['leaderboardentry_2',['LeaderboardEntry',['../structnexilis_1_1client_1_1ClientAPI_1_1LeaderboardEntry.html',1,'nexilis::client::ClientAPI']]],
+  ['leaderboardevent_3',['LeaderboardEvent',['../structnexilis_1_1client_1_1ClientAPI_1_1LeaderboardEvent.html',1,'nexilis::client::ClientAPI']]],
+  ['leave_4',['leave',['../structCommandPacketBase_1_1Room_1_1Management.html#a757dfa85bf116a50c1cb499386de66ba',1,'CommandPacketBase::Room::Management::leave()'],['../classnexilis_1_1RoomCommandType.html#a4ec366d57651e02bf03d34c5b1be875ca6c374e70334072aeeb62ed46ea987838',1,'nexilis::RoomCommandType::leave']]],
+  ['leaveroom_5',['leaveRoom',['../classnexilis_1_1server_1_1Room.html#a3f1ac5549845bfcee111265fe922414a',1,'nexilis::server::Room']]],
+  ['leaveroomasync_6',['LeaveRoomAsync',['../classNexilis_1_1Util_1_1NexilisClient.html#aa01d7024cec472e51ce7edac1bc87a38',1,'Nexilis::Util::NexilisClient']]],
+  ['license_7',['License',['../index.html#autotoc_md4',1,'']]],
+  ['linear_8',['linear',['../classnexilis_1_1server_1_1Movement.html#a82460ff41b996e8bc25ec616418fda33',1,'nexilis::server::Movement::linear()'],['../namespacenexilis.html#a5a72a7faf0bb979d471e655625d6d566a9a932b3cb396238423eb2f33ec17d6aa',1,'nexilis::linear']]],
+  ['local_9',['local',['../namespacenexilis.html#af083ac542feacbb3f43f1dc9ee6cae84af5ddaf0ca7929578b408c909429f68f2',1,'nexilis']]],
+  ['log_10',['Log',['../classnexilis_1_1Log.html',1,'nexilis']]],
+  ['log_2ehh_11',['log.hh',['../log_8hh.html',1,'']]],
+  ['log_5fc_2eh_12',['log_c.h',['../log__c_8h.html',1,'']]],
+  ['log_5flevel_2ehh_13',['log_level.hh',['../log__level_8hh.html',1,'']]],
+  ['log_5flevel_5fc_2eh_14',['log_level_c.h',['../log__level__c_8h.html',1,'']]],
+  ['logger_15',['Logger',['../classNexilis_1_1Logger_1_1Logger.html',1,'Nexilis.Logger.Logger'],['../classnexilis_1_1logger_1_1Logger.html',1,'nexilis::logger::Logger'],['../classNexilis_1_1Util_1_1NexilisClient.html#a9d77255a3813266131d09e4860b38b65',1,'Nexilis.Util.NexilisClient.Logger'],['../classnexilis_1_1logger_1_1Logger.html#aff2b20eeee77749cfc9b539222254a77',1,'nexilis::logger::Logger::Logger()'],['../classnexilis_1_1logger_1_1Logger.html#a5aeef5017a6a6d4e04f701fd2187e3f4',1,'nexilis::logger::Logger::Logger(Logger &amp;&amp;other)=delete'],['../classnexilis_1_1logger_1_1Logger.html#a6e6108899d7a84df78f94c70e09bc716',1,'nexilis::logger::Logger::Logger(const Logger &amp;)=delete'],['../classNexilis_1_1Logger_1_1Logger.html#abc06b6e1efe8542eaa8234b9e75414a1',1,'Nexilis.Logger.Logger.Logger()']]],
+  ['logger_2ecs_16',['Logger.cs',['../Logger_8cs.html',1,'']]],
+  ['logger_2ehh_17',['logger.hh',['../logger_8hh.html',1,'']]],
+  ['logger_5fc_2eh_18',['logger_c.h',['../logger__c_8h.html',1,'']]],
+  ['loggernative_2ecs_19',['LoggerNative.cs',['../LoggerNative_8cs.html',1,'']]],
+  ['loghandler_20',['LogHandler',['../classNexilis_1_1Util_1_1NexilisClient.html#adb08565a4def0b946d3b2c372985bf76',1,'Nexilis::Util::NexilisClient']]],
+  ['loglevel_21',['LogLevel',['../namespacenexilis_1_1logger.html#a33a82661cf21f69c5b2aa5b1dee51615',1,'nexilis::logger::LogLevel'],['../namespaceNexilis_1_1Logger.html#aa6d08b57e89ebb68e485d67a61d4415b',1,'Nexilis.Logger.LogLevel']]],
+  ['loglevel_2ecs_22',['LogLevel.cs',['../LogLevel_8cs.html',1,'']]]
+];

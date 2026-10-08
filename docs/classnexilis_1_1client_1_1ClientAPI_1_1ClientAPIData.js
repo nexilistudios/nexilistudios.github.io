@@ -1,0 +1,28 @@
+var classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData =
+[
+    [ "ClientAPIData", "classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#ad9371124a662770237d9edbced205fbe", null ],
+    [ "ClientAPIData", "classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a9b3df703cb89bc7700bca8aafc641309", null ],
+    [ "ClientAPIData", "classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a5df2154b0c1d3eaf7170bdf4a5735044", null ],
+    [ "consumeAudioEvents", "classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a8f0d496a8da3a75a403ab26b4d3e5966", null ],
+    [ "consumeDamageEvents", "classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#af5abd5a4555dcef573a117499139bde1", null ],
+    [ "consumeLeaderboardEvents", "classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a2fb189ca3efac02c067a21f7a1b4c4ce", null ],
+    [ "consumeRespawnEvents", "classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a4df2c77b8a693f4ffd7a73998fea7c50", null ],
+    [ "getCallbacks", "classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#ae2ece8c0d49a91c456ba95524a2648e1", null ],
+    [ "getCurrentlyActiveRooms", "classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a176f196729a7f1801500a2cd5ab22b71", null ],
+    [ "getCurrentlyActiveRooms", "classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a827d09d95f7d81fa2cd69c75bdc71f3e", null ],
+    [ "getMessageIds", "classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a863a3bf1de6496854711211a189f6bb4", null ],
+    [ "getMessageIds", "classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a15026b3cf0314e9cb7ec113c27b49156", null ],
+    [ "getRoomsMutex", "classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a89bf770a7a9d8bb30c56a961fbf9e697", null ],
+    [ "getRoomsMutex", "classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a2436126b2f8b842df069b34f73823f9d", null ],
+    [ "initialize", "classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a0b8c12bc4b03b2baf3a597abb8348b26", null ],
+    [ "isInitialized", "classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#acdfe3d44bf864dd3916866a369f42ad2", null ],
+    [ "isOverlappingAllowed2D", "classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#aee190044de9ae6689f553a443ce46c87", null ],
+    [ "operator=", "classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a6d4dc3f8039ce758618d03062f616789", null ],
+    [ "operator=", "classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a9bad6e813b4d63323f22b58ae3f384fb", null ],
+    [ "pushAudioEvent", "classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#ae1ad4bac1bab203f579014ed4c693c0e", null ],
+    [ "pushDamageEvent", "classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#adead19e44d027fe431500761566b178e", null ],
+    [ "pushLeaderboardEvent", "classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a9a92bdaa36428fb1c41181a1dd06b485", null ],
+    [ "pushRespawnEvent", "classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a1f55de0762fc91b515ea629cfaba37b7", null ],
+    [ "setCurrentlyActiveRooms", "classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a9167b3861bd8c5a78a47d3ed60a2006d", null ],
+    [ "setOverlapStatus2D", "classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a4237779bc7cc8112cdc89f0ae9a52829", null ]
+];
