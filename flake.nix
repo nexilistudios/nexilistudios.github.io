@@ -1,5 +1,5 @@
 {
-  description = "Svelte / SvelteKit web app development shell";
+  description = "Svelte web app development shell";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -14,11 +14,7 @@
       {
         devShells.default = pkgs.mkShell {
           packages = with pkgs; [
-            # Runtime + package managers
             nodejs_22
-            # npm ships with nodejs; yarn/bun are optional:
-            # yarn
-            # bun
 
             # Language tooling (also usable by editors via PATH)
             typescript
@@ -27,18 +23,12 @@
             vscode-langservers-extracted # html/css/json/eslint LSPs
             prettier
             eslint
-
-            # Browser testing (Playwright uses the Nix-provided browsers)
-            playwright-driver.browsers
-
-            # Misc
-            git
           ];
 
           shellHook = ''
             export PATH="$PWD/node_modules/.bin:$PATH"
             echo "node $(node --version)"
-            echo "Dev server:          npm run dev --host"
+            echo "Dev server:          npm run dev"
           '';
         };
 
