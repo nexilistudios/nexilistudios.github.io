@@ -16,7 +16,6 @@
           packages = with pkgs; [
             # Runtime + package managers
             nodejs_22
-            pnpm
             # npm ships with nodejs; yarn/bun are optional:
             # yarn
             # bun
@@ -36,16 +35,10 @@
             git
           ];
 
-          # Make Playwright use Nix's browsers instead of trying to download its own
-          PLAYWRIGHT_BROWSERS_PATH = "${pkgs.playwright-driver.browsers}";
-          PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS = "true";
-          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD = "1";
-
           shellHook = ''
             export PATH="$PWD/node_modules/.bin:$PATH"
-            echo "node $(node --version) | pnpm $(pnpm --version)"
-            echo "Scaffold a project:  pnpm dlx sv create my-app"
-            echo "Dev server:          pnpm dev --host"
+            echo "node $(node --version)"
+            echo "Dev server:          npm run dev --host"
           '';
         };
 
