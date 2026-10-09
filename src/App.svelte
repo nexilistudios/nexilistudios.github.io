@@ -97,10 +97,9 @@
       <article>
         <span class="feature-icon">⌘</span>
         <p class="feature-number">02</p>
-        <h3>A place for every player.</h3>
+        <h3>True cross platform experience.</h3>
         <p>
-          Discover rooms, choose where to join, and track players as they come
-          and go. Build your own lobby experience on top.
+        At least technically any game engine anywhere anytime. Nexilis-C API allows connection to practically any programming language.
         </p>
         <a href="./docs/classNexilis_1_1Util_1_1NexilisClient.html"
           >Explore the client <span>↗</span></a
