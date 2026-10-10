@@ -99,7 +99,7 @@
         <p class="feature-number">02</p>
         <h3>True cross platform experience.</h3>
         <p>
-        At least technically any game engine anywhere anytime. Nexilis-C API allows connection to practically any programming language.
+        Game engine agnostic codebase. Nexilis-C API allows connection to practically any programming language.
         </p>
         <a href="./docs/classNexilis_1_1Util_1_1NexilisClient.html"
           >Explore the client <span>↗</span></a
