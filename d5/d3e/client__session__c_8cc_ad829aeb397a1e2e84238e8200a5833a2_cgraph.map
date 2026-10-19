@@ -1,0 +1,7 @@
+<map id="get_verified_position" name="get_verified_position">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,164,38"/>
+<area shape="rect" id="Node000002" href="$df/de2/classnexilis_1_1FileLog.html#aef30e4423d093f2e16874bef3ca83a3f" title=" " alt="" coords="212,13,383,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,23,198,23,198,28,164,28"/>
+<area shape="rect" id="Node000003" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#a10e932e38c3aa4d6e28057ad1dfeda97" title="Send critical message." alt="" coords="431,5,597,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="383,23,417,23,417,28,383,28"/>
+</map>

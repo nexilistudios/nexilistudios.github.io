@@ -1,0 +1,9 @@
+<map id="nexilis::boost_tcp::Socket::forceClose" name="nexilis::boost_tcp::Socket::forceClose">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,156,71"/>
+<area shape="rect" id="Node000002" href="$dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="226,13,361,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,39,212,32,213,38,156,44"/>
+<area shape="rect" id="Node000004" href="$d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae" title="Get the classes name as header for log messages." alt="" coords="204,62,383,87"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="156,56,191,60,190,66,156,62"/>
+<area shape="rect" id="Node000003" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#acc02567dd7e4103305110bafbfd40c08" title="Send error message." alt="" coords="431,5,597,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="361,23,417,23,417,28,361,28"/>
+</map>

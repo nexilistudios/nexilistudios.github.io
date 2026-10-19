@@ -1,0 +1,15 @@
+<map id="nexilis::logger::Logger::clearHandlers" name="nexilis::logger::Logger::clearHandlers">
+<area shape="rect" id="Node000001" title="Remove all handlers." alt="" coords="721,79,888,119"/>
+<area shape="rect" id="Node000002" href="$dc/dbc/classnexilis_1_1Log.html#a634f066882682331b5000482d94f78c9" title="Remove all handlers." alt="" coords="479,29,673,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="711,79,627,57,628,52,712,73"/>
+<area shape="rect" id="Node000006" href="$d0/d63/logger__c_8cc.html#a78e0bdf6fc382b286b9918e402f1484d" title=" " alt="" coords="500,79,652,119"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="708,102,652,102,652,97,708,97"/>
+<area shape="rect" id="Node000007" href="$d0/d63/logger__c_8cc.html#adaa117337a5be231b6b7e2f4e38a8a1b" title=" " alt="" coords="491,144,661,169"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="712,125,628,147,627,141,711,120"/>
+<area shape="rect" id="Node000003" href="$dc/dee/log__c_8cc.html#a0f64031914e5e69a5d7f885a69555d34" title=" " alt="" coords="236,5,431,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="465,34,431,30,431,25,465,28"/>
+<area shape="rect" id="Node000004" href="$dc/dbc/classnexilis_1_1Log.html#a06b8708f8aaff0e23eb5020e41ad2a65" title="Shut down logging levels and remove handlers." alt="" coords="242,55,425,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="465,56,425,60,424,55,465,51"/>
+<area shape="rect" id="Node000005" href="$dc/dee/log__c_8cc.html#a1ce1b0b774d7a1eeca37ead313495b18" title=" " alt="" coords="5,55,188,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="229,70,188,70,188,65,229,65"/>
+</map>

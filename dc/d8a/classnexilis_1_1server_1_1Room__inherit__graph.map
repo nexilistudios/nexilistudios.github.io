@@ -1,0 +1,5 @@
+<map id="nexilis::server::Room" name="nexilis::server::Room">
+<area shape="rect" id="Node000001" title="Room objects to be stored in the RoomStorage." alt="" coords="5,79,165,104"/>
+<area shape="rect" id="Node000002" href="$da/d49/classnexilis_1_1BaseRoom.html" title=" " alt="" coords="14,5,157,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,44,88,79,83,79,83,44"/>
+</map>

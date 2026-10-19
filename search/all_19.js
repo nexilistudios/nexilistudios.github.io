@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['y_0',['y',['../dc/dfc/structnexilis_1_1client_1_1ClientAPI_1_1AudioEvent.html#af554ce57d9c116110d42ef07f48139c7',1,'nexilis::client::ClientAPI::AudioEvent::y'],['../d3/d19/structnexilis_1_1client_1_1ClientAPI_1_1RemotePlayerSnapshot.html#a8860421df875b98722f520a5d26ddbcb',1,'nexilis::client::ClientAPI::RemotePlayerSnapshot::y'],['../d6/d55/structnexilis_1_1client_1_1ClientAPI_1_1RemoteObject3DSnapshot.html#a91b0faf1dbd484cc62d817777ad5b300',1,'nexilis::client::ClientAPI::RemoteObject3DSnapshot::y'],['../d7/d79/structnexilis_1_1client_1_1ClientAPI_1_1RemoteGameItemSnapshot.html#a15085c46916d60c4cc82fca14aa992ac',1,'nexilis::client::ClientAPI::RemoteGameItemSnapshot::y'],['../d3/d88/classnexilis_1_1Vector2.html#aed6f884af063875b98cd37583721d2c5',1,'nexilis::Vector2::y'],['../d9/d9e/classnexilis_1_1Vector3.html#a1dd4b8960e5419721eeb90c92638fbb5',1,'nexilis::Vector3::y']]],
+  ['yaw_1',['yaw',['../d3/d19/structnexilis_1_1client_1_1ClientAPI_1_1RemotePlayerSnapshot.html#a495d9722cbc44f7c3735bb5ef467a325',1,'nexilis::client::ClientAPI::RemotePlayerSnapshot']]]
+];

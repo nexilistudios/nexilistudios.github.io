@@ -1,0 +1,7 @@
+<map id="nexilis::client::ClientAPI::clientRoomId" name="nexilis::client::ClientAPI::clientRoomId">
+<area shape="rect" id="Node000001" title="The room id of the room that the client is currently in." alt="" coords="521,5,697,45"/>
+<area shape="rect" id="Node000002" href="$d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a7d7bf9f7d979fde6d5863311c2c9721d" title=" " alt="" coords="243,5,473,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="507,28,473,28,473,23,507,23"/>
+<area shape="rect" id="Node000003" href="$d8/d8e/packet__c_8cc.html#aa08d88803cc8c21693ceb9b754c894a0" title=" " alt="" coords="5,5,195,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="229,28,195,28,195,23,229,23"/>
+</map>

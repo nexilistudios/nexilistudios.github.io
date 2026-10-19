@@ -1,0 +1,16 @@
+<map id="nexilis::server::Command::runWithTickrate" name="nexilis::server::Command::runWithTickrate">
+<area shape="rect" id="Node000001" title="Send multiple messages with specified tickrate." alt="" coords="991,39,1180,79"/>
+<area shape="rect" id="Node000002" href="$df/d3b/classnexilis_1_1server_1_1Movement.html#adb3931767a0dd0aff2ab9eac8d7d433a" title="2D movement thread." alt="" coords="751,8,943,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="977,47,943,43,943,38,977,42"/>
+<area shape="rect" id="Node000007" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a2ab39913db19a51bb2358d6684b1749a" title=" " alt="" coords="488,69,695,109"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="977,68,695,86,695,80,977,63"/>
+<area shape="rect" id="Node000003" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a97175caef23eb9fad365629c3d78e107" title=" " alt="" coords="480,5,703,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="737,30,703,29,703,24,737,24"/>
+<area shape="rect" id="Node000004" href="$da/d15/classnexilis_1_1server_1_1Command.html#a36f27b2491becaf040095c3cb5ec4067" title=" " alt="" coords="243,37,432,77"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="467,44,433,48,432,43,466,38"/>
+<area shape="rect" id="Node000005" href="$da/d15/classnexilis_1_1server_1_1Command.html#adb7341228f4137e0656f514180b5a45a" title=" " alt="" coords="5,5,195,45"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="229,45,194,41,195,35,230,40"/>
+<area shape="rect" id="Node000006" href="$d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="15,69,185,109"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="230,75,186,80,185,75,229,69"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="474,77,432,72,433,67,475,72"/>
+</map>

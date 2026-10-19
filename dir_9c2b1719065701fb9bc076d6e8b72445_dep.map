@@ -1,0 +1,16 @@
+<map id="src/nexilisc" name="src/nexilisc">
+<area shape="rect" id="node5" href="dir_d44c64559bbebec7f509842c48db8b23.html" title="include" alt="" coords="160,136,229,161"/>
+<area shape="poly" id="edge1" href="dir_000035_000023.html" alt="" coords="313,91,280,112,237,133,234,128,277,107,310,86"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000035_000023.html" title="19" alt="" coords="235,129,252,144"/>
+<area shape="rect" id="node2" href="dir_ae345cc89dad5bc42cdc710bf4851feb.html" title="client" alt="" coords="208,63,267,88"/>
+<area shape="poly" id="edge2" href="dir_000012_000023.html" alt="" coords="233,90,211,126,206,123,228,87"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000012_000023.html" title="9" alt="" coords="214,117,223,132"/>
+<area shape="rect" id="node3" href="dir_2193ea49f6990668a56303185c5778d6.html" title="logger" alt="" coords="121,63,183,88"/>
+<area shape="poly" id="edge3" href="dir_000027_000023.html" alt="" coords="161,87,183,123,179,126,157,90"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000027_000023.html" title="6" alt="" coords="181,109,190,123"/>
+<area shape="rect" id="node4" href="dir_741c8aab82fd8967ef3217fd11a62e44.html" title="types" alt="" coords="37,63,96,88"/>
+<area shape="poly" id="edge4" href="dir_000059_000023.html" alt="" coords="81,86,111,107,153,128,151,133,108,112,78,90"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000059_000023.html" title="1" alt="" coords="146,114,156,128"/>
+<area shape="rect" id="clust2" href="dir_9c2b1719065701fb9bc076d6e8b72445.html" alt="" coords="27,52,373,99"/>
+<area shape="rect" id="clust1" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html" title="src" alt="" coords="16,16,384,109"/>
+</map>

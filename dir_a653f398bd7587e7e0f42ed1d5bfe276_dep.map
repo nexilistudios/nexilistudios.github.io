@@ -1,0 +1,26 @@
+<map id="src/nexilis/server/command/commands/room" name="src/nexilis/server/command/commands/room">
+<area shape="rect" id="node2" href="dir_78ac397615946916401db0e78485e391.html" title="communicate" alt="" coords="738,63,849,88"/>
+<area shape="rect" id="node9" href="dir_d44c64559bbebec7f509842c48db8b23.html" title="include" alt="" coords="381,136,451,161"/>
+<area shape="poly" id="edge1" href="dir_000017_000023.html" alt="" coords="775,91,726,112,656,128,585,139,465,149,464,144,584,134,655,123,724,107,773,86"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000017_000023.html" title="3" alt="" coords="465,147,474,162"/>
+<area shape="rect" id="node3" href="dir_a893ad5f19b59bf6f91291a2ff690318.html" title="game_item" alt="" coords="617,63,713,88"/>
+<area shape="poly" id="edge2" href="dir_000018_000023.html" alt="" coords="649,91,606,112,533,132,465,144,464,139,531,127,604,107,646,86"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000018_000023.html" title="11" alt="" coords="461,142,478,157"/>
+<area shape="rect" id="node4" href="dir_957cb4a186e1dbddc10004783de9c62e.html" title="management" alt="" coords="484,63,593,88"/>
+<area shape="poly" id="edge3" href="dir_000028_000023.html" alt="" coords="520,90,449,131,446,127,518,86"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000028_000023.html" title="21" alt="" coords="447,127,465,141"/>
+<area shape="rect" id="node5" href="dir_70490b3d58ba37a5d677514a07cb03b3.html" title="object_2D" alt="" coords="373,63,459,88"/>
+<area shape="poly" id="edge4" href="dir_000042_000023.html" alt="" coords="419,88,419,122,413,122,413,88"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000042_000023.html" title="16" alt="" coords="416,110,433,125"/>
+<area shape="rect" id="node6" href="dir_0f0602af1a8c4eae119e90d018398c02.html" title="object_3D" alt="" coords="262,63,349,88"/>
+<area shape="poly" id="edge5" href="dir_000043_000023.html" alt="" coords="325,86,388,126,385,131,322,90"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000043_000023.html" title="16" alt="" coords="379,112,396,126"/>
+<area shape="rect" id="node7" href="dir_6e73ba4ff4dcf8e018fef9cfed2551d1.html" title="player_2D" alt="" coords="149,63,237,88"/>
+<area shape="poly" id="edge6" href="dir_000044_000023.html" alt="" coords="211,86,252,107,312,125,368,137,367,143,310,131,250,112,209,90"/>
+<area shape="rect" id="edge6-headlabel" href="dir_000044_000023.html" title="16" alt="" coords="356,124,373,138"/>
+<area shape="rect" id="node8" href="dir_7088575c881a055eb5187b67d88bddf2.html" title="player_3D" alt="" coords="37,63,125,88"/>
+<area shape="poly" id="edge7" href="dir_000045_000023.html" alt="" coords="98,86,138,107,199,123,261,134,368,144,367,149,260,140,198,129,136,112,96,91"/>
+<area shape="rect" id="edge7-headlabel" href="dir_000045_000023.html" title="33" alt="" coords="355,130,372,145"/>
+<area shape="rect" id="clust2" href="dir_a653f398bd7587e7e0f42ed1d5bfe276.html" alt="" coords="27,52,940,99"/>
+<area shape="rect" id="clust1" href="dir_690c2dc5933bf7ba4ea9775e8ddf95f6.html" title="commands" alt="" coords="16,16,951,109"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="nexilis::Log::critical" name="nexilis::Log::critical">
+<area shape="rect" id="Node000001" title=" " alt="" coords="480,63,628,88"/>
+<area shape="rect" id="Node000002" href="$dc/dee/log__c_8cc.html#af2a08d8347db99e3e3f800daa675f534" title=" " alt="" coords="266,5,409,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="492,62,385,33,387,28,493,57"/>
+<area shape="rect" id="Node000003" href="$da/d15/classnexilis_1_1server_1_1Command.html#a36f27b2491becaf040095c3cb5ec4067" title=" " alt="" coords="243,55,432,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="466,78,432,78,432,73,466,73"/>
+<area shape="rect" id="Node000006" href="$d8/d6b/classnexilis_1_1client_1_1af__inet_1_1TCPClient.html#a3344f385a6c0a606ef330f39b7a44fbf" title="NXProtocol::start() implementation." alt="" coords="256,119,419,159"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="498,95,407,122,405,117,496,90"/>
+<area shape="rect" id="Node000004" href="$da/d15/classnexilis_1_1server_1_1Command.html#adb7341228f4137e0656f514180b5a45a" title=" " alt="" coords="5,23,195,63"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="229,63,194,59,195,53,230,58"/>
+<area shape="rect" id="Node000005" href="$d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="15,87,185,127"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="230,93,186,98,185,93,229,87"/>
+</map>

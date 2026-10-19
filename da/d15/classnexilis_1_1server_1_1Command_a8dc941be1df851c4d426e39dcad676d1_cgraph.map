@@ -1,0 +1,21 @@
+<map id="nexilis::server::Command::sendMessageToClient" name="nexilis::server::Command::sendMessageToClient">
+<area shape="rect" id="Node000001" title="Send message to every protocol that is avainable for a client." alt="" coords="5,216,195,256"/>
+<area shape="rect" id="Node000002" href="$d2/d8d/group__UserBoostTCP.html#gad64b1d7881430c9dc278fcab25c7e4a6" title=" " alt="" coords="243,5,395,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,214,161,138,198,94,241,55,249,50,252,54,244,59,202,98,165,142,115,217"/>
+<area shape="rect" id="Node000003" href="$db/daa/group__UserBoostUDP.html#ga99f955fd99e8c615cf07aa5361078c3b" title=" " alt="" coords="243,69,395,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="121,214,173,168,241,119,252,113,255,118,244,124,177,172,124,218"/>
+<area shape="rect" id="Node000004" href="$dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="251,134,386,159"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="142,213,242,170,264,161,265,166,244,174,144,218"/>
+<area shape="rect" id="Node000006" href="$d5/da4/classnexilis_1_1NXProtocol.html#a7f48d98a5081e37c9616930a8f932cf1" title=" " alt="" coords="246,184,391,224"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="194,220,232,214,233,219,195,225"/>
+<area shape="rect" id="Node000007" href="$d3/d43/group__UserInetTCP.html#ga711d29b0e1d12b1a5733b9b7e943c46f" title=" " alt="" coords="243,248,395,288"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="195,247,230,252,229,258,194,252"/>
+<area shape="rect" id="Node000008" href="$d6/df2/group__UserInetUDP.html#gab9d1020d0109228f277f3a6261aac652" title=" " alt="" coords="243,312,395,352"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="146,254,244,298,259,304,256,309,242,302,144,259"/>
+<area shape="rect" id="Node000009" href="$d5/d20/group__UserUnixDgram.html#gafd2d99a4d3b410b2a01010744b270473" title=" " alt="" coords="243,376,395,416"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="121,254,174,306,208,336,244,362,254,367,251,372,241,366,205,340,170,310,117,258"/>
+<area shape="rect" id="Node000010" href="$db/d8a/group__UserUnixStream.html#gaaf38268746172416550eaaed936fe794" title=" " alt="" coords="243,440,395,480"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="114,255,163,336,201,384,244,426,251,431,248,435,241,430,197,387,159,339,109,258"/>
+<area shape="rect" id="Node000005" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#acc02567dd7e4103305110bafbfd40c08" title="Send error message." alt="" coords="443,127,609,167"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="386,144,429,144,429,149,386,149"/>
+</map>

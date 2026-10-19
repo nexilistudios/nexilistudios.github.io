@@ -1,0 +1,11 @@
+<map id="nexilis::client::ClientSession::setPosition3D" name="nexilis::client::ClientSession::setPosition3D">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,63,211,103"/>
+<area shape="rect" id="Node000002" href="$df/de2/classnexilis_1_1FileLog.html#adb41424fe67132466a731f77e638f0a8" title=" " alt="" coords="273,13,439,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,60,287,38,288,44,196,65"/>
+<area shape="rect" id="Node000004" href="$dc/dcb/classnexilis_1_1BaseClient.html#a2620f3052b832d949805f4a5bc2e0046" title=" " alt="" coords="285,63,427,103"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="211,80,271,80,271,85,211,85"/>
+<area shape="rect" id="Node000005" href="$d6/dd3/classnexilis_1_1Object.html#a9f0c78beb9f01e369258f04fea199c3c" title=" " alt="" coords="259,127,453,153"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="196,100,288,122,287,127,195,105"/>
+<area shape="rect" id="Node000003" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#aa9bd79fb1a1804924e3440947c6ab117" title="Send debug message." alt="" coords="501,5,668,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="440,23,488,23,488,28,440,28"/>
+</map>

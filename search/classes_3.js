@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['chatsnapshot_0',['ChatSnapshot',['../df/d45/structnexilis_1_1client_1_1ClientAPI_1_1ChatSnapshot.html',1,'nexilis::client::ClientAPI']]],
+  ['clientapi_1',['ClientAPI',['../d5/da0/classnexilis_1_1client_1_1ClientAPI.html',1,'nexilis::client']]],
+  ['clientapidata_2',['ClientAPIData',['../d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html',1,'nexilis::client::ClientAPI']]],
+  ['clientconfig_3',['ClientConfig',['../d1/dd9/classnexilis_1_1client_1_1ClientConfig.html',1,'nexilis::client']]],
+  ['clientdata_4',['ClientData',['../d6/d0d/classnexilis_1_1client_1_1ClientAPI_1_1ClientData.html',1,'nexilis::client::ClientAPI']]],
+  ['clientimpl_5',['ClientImpl',['../d5/d69/structnexilis_1_1client_1_1ClientImpl.html',1,'nexilis::client']]],
+  ['clientprotocol_6',['ClientProtocol',['../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html',1,'nexilis::client']]],
+  ['clientsession_7',['ClientSession',['../d8/d6a/classnexilis_1_1client_1_1ClientSession.html',1,'nexilis::client']]],
+  ['clientstorage_8',['ClientStorage',['../da/de9/classnexilis_1_1server_1_1ClientStorage.html',1,'nexilis::server']]],
+  ['cmdlineoptions_9',['CmdLineOptions',['../d4/d26/classnexilis_1_1CmdLineOptions.html',1,'nexilis']]],
+  ['command_10',['Command',['../da/d15/classnexilis_1_1server_1_1Command.html',1,'nexilis::server']]],
+  ['commandpacketbase_11',['CommandPacketBase',['../de/d61/classCommandPacketBase.html',1,'']]],
+  ['commandparser_12',['CommandParser',['../db/d64/classnexilis_1_1client_1_1CommandParser.html',1,'nexilis::client']]],
+  ['commandspec_13',['CommandSpec',['../d2/ddb/classnexilis_1_1CommandSpec.html',1,'nexilis']]],
+  ['communicate_14',['Communicate',['../d6/dec/structCommandPacketBase_1_1Room_1_1Communicate.html',1,'CommandPacketBase::Room']]],
+  ['communication_15',['Communication',['../de/d5b/classnexilis_1_1client_1_1Room_1_1Communication.html',1,'nexilis::client::Room']]],
+  ['config_16',['Config',['../d2/def/classnexilis_1_1server_1_1Config.html',1,'nexilis::server']]],
+  ['consolehandler_17',['ConsoleHandler',['../de/d71/classnexilis_1_1logger_1_1ConsoleHandler.html',1,'nexilis::logger']]]
+];

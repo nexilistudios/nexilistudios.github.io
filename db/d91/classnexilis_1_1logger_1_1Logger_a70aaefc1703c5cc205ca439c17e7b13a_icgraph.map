@@ -1,0 +1,9 @@
+<map id="nexilis::logger::Logger::noHandlers" name="nexilis::logger::Logger::noHandlers">
+<area shape="rect" id="Node000001" title=" " alt="" coords="479,23,645,63"/>
+<area shape="rect" id="Node000002" href="$d0/d63/logger__c_8cc.html#a57b69e09bfaf78a63ecc286ccdd74bf2" title=" " alt="" coords="232,5,431,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="464,35,430,32,431,26,465,30"/>
+<area shape="rect" id="Node000003" href="$dc/dbc/classnexilis_1_1Log.html#a1e5bd23c9ea2f217d234052e0df8d1fc" title="Check if there is existing handlers." alt="" coords="242,55,421,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="465,56,421,61,421,55,465,51"/>
+<area shape="rect" id="Node000004" href="$dc/dee/log__c_8cc.html#aa167e8848687847796e66abdbb556a7c" title=" " alt="" coords="5,55,184,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="228,70,184,70,184,65,228,65"/>
+</map>

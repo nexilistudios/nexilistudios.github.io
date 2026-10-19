@@ -1,0 +1,21 @@
+<map id="nexilis::client::ClientAPI::waitUntilUnixDgramReady" name="nexilis::client::ClientAPI::waitUntilUnixDgramReady">
+<area shape="rect" id="Node000001" title="Steal the runtime until af_unix DGRAM connection is ready." alt="" coords="5,105,209,145"/>
+<area shape="rect" id="Node000002" href="$dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982" title="All the overloaded printing functions." alt="" coords="273,49,417,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,103,283,75,285,80,183,108"/>
+<area shape="rect" id="Node000004" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a0f9c82bb43198858b47dbbafefec1366" title="If the client af_unix DGRAM connection is ready." alt="" coords="257,133,433,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="210,135,244,139,243,144,209,140"/>
+<area shape="rect" id="Node000003" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#aa9bd79fb1a1804924e3440947c6ab117" title="Send debug message." alt="" coords="496,5,663,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="418,48,482,38,483,43,418,53"/>
+<area shape="rect" id="Node000005" href="$d6/d0d/classnexilis_1_1client_1_1ClientAPI_1_1ClientData.html#acf2fb4a90a19b3e6a393bcf9ffdca10c" title=" " alt="" coords="490,69,669,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="419,131,492,110,493,116,420,136"/>
+<area shape="rect" id="Node000006" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a51524818393c2a2a704ee3b3db7b7729" title=" " alt="" coords="491,133,667,173"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="433,151,478,151,478,156,433,156"/>
+<area shape="rect" id="Node000008" href="$d1/dd9/classnexilis_1_1client_1_1ClientConfig.html#a5e7f408ec07dd8f294f3bedf1952da2d" title="af_unix DGRAM" alt="" coords="481,197,677,237"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="420,171,493,191,492,196,419,176"/>
+<area shape="rect" id="Node000009" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a1a217bf8d2dfcc6a0f37b7fb0b1eb010" title="Is the server aware of the client, is the ClientAPI and Packet ready for use." alt="" coords="491,261,667,301"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="372,171,421,209,483,247,497,254,495,259,480,252,418,214,368,175"/>
+<area shape="rect" id="Node000007" href="$d6/d0d/classnexilis_1_1client_1_1ClientAPI_1_1ClientData.html#a5b874da4915fb5a4bb056d88f21f294f" title=" " alt="" coords="731,133,922,173"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="668,151,718,151,718,156,668,156"/>
+<area shape="rect" id="Node000010" href="$d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#acdfe3d44bf864dd3916866a369f42ad2" title=" " alt="" coords="725,261,928,301"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="668,279,712,279,712,284,668,284"/>
+</map>

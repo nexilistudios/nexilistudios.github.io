@@ -1,0 +1,15 @@
+<map id="nexilis::crypto::deriveKey" name="nexilis::crypto::deriveKey">
+<area shape="rect" id="Node000001" title=" " alt="" coords="843,106,1029,131"/>
+<area shape="rect" id="Node000002" href="$d0/dd2/namespacenexilis_1_1crypto.html#a25750d1a862b6c76306e8fecd8cab6ac" title=" " alt="" coords="549,77,795,102"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="829,109,786,105,787,99,830,104"/>
+<area shape="rect" id="Node000006" href="$d7/d94/namespacenexilis_1_1tls.html#a6aec5afeaeb87833f24d3f1295147d51" title=" " alt="" coords="591,130,753,155"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="829,131,753,138,753,133,829,126"/>
+<area shape="rect" id="Node000003" href="$d7/de2/classnexilis_1_1client_1_1RoomCommunicationCommand.html#a30655a8c10bf10fc3cea99fd3c13d39c" title=" " alt="" coords="243,5,501,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="598,76,466,48,467,43,599,71"/>
+<area shape="rect" id="Node000004" href="$d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a7d7bf9f7d979fde6d5863311c2c9721d" title=" " alt="" coords="257,69,487,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="536,92,488,92,488,87,536,87"/>
+<area shape="rect" id="Node000005" href="$d8/d8e/packet__c_8cc.html#aa08d88803cc8c21693ceb9b754c894a0" title=" " alt="" coords="5,69,195,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="243,92,195,92,195,87,243,87"/>
+<area shape="rect" id="Node000007" href="$d7/d94/namespacenexilis_1_1tls.html#ab2da4f30ec86e994dccc7cee18334b9c" title=" " alt="" coords="266,134,478,159"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="577,147,478,148,478,143,577,141"/>
+</map>

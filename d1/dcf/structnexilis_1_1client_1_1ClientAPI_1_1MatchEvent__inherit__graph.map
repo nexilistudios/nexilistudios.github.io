@@ -1,0 +1,7 @@
+<map id="nexilis::client::ClientAPI::MatchEvent" name="nexilis::client::ClientAPI::MatchEvent">
+<area shape="rect" id="Node000001" title="Base for application&#45;managed match notifications." alt="" coords="5,37,181,77"/>
+<area shape="rect" id="Node000002" href="$d2/dab/structnexilis_1_1client_1_1ClientAPI_1_1BombMatchEvent.html" title="Authoritative state of an application&#45;managed bomb round." alt="" coords="235,5,411,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,40,234,35,235,40,196,46"/>
+<area shape="rect" id="Node000003" href="$db/d57/structnexilis_1_1client_1_1ClientAPI_1_1DeathmatchMatchEvent.html" title="A deathmatch player entering or leaving the respawn wait." alt="" coords="229,69,416,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="195,69,230,74,229,79,195,74"/>
+</map>

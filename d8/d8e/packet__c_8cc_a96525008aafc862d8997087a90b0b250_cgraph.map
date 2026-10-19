@@ -1,0 +1,17 @@
+<map id="nexilis_packet_room_player3D_position" name="nexilis_packet_room_player3D_position">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,161,87"/>
+<area shape="rect" id="Node000002" href="$d8/d8e/packet__c_8cc.html#a0e0d970b15f9446b709c4a6b6179d524" title=" " alt="" coords="223,5,354,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,46,221,31,222,37,162,51"/>
+<area shape="rect" id="Node000004" href="$d8/d8e/packet__c_8cc.html#a4c6e0f9daffc6ea7236e4cc62db0beca" title=" " alt="" coords="223,55,355,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="162,65,209,65,209,70,162,70"/>
+<area shape="rect" id="Node000007" href="$df/de2/classnexilis_1_1FileLog.html#a1ce50ae8b99d50558ef4b337604fbd78" title=" " alt="" coords="209,108,368,133"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="161,85,227,102,225,107,160,90"/>
+<area shape="rect" id="Node000003" href="$d0/dab/nx__data__c_8cc.html#a45eae7030cd842ff1e280ab1a7847d75" title=" " alt="" coords="416,5,627,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="354,15,402,15,402,21,354,21"/>
+<area shape="rect" id="Node000005" href="$df/de2/classnexilis_1_1FileLog.html#adb41424fe67132466a731f77e638f0a8" title=" " alt="" coords="438,55,605,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="355,65,424,65,424,70,355,70"/>
+<area shape="rect" id="Node000006" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#aa9bd79fb1a1804924e3440947c6ab117" title="Send debug message." alt="" coords="675,47,841,87"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="605,65,661,65,661,70,605,70"/>
+<area shape="rect" id="Node000008" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#acc02567dd7e4103305110bafbfd40c08" title="Send error message." alt="" coords="438,105,605,145"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="369,119,425,120,424,126,368,125"/>
+</map>

@@ -1,0 +1,72 @@
+<map id="nexilis::client::ClientAPI::ClientAPIData::isInitialized" name="nexilis::client::ClientAPI::ClientAPIData::isInitialized">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1651,328,1853,368"/>
+<area shape="rect" id="Node000002" href="$d8/dcb/classnexilis_1_1client_1_1GetClientIdCommand.html#a47303a84c43b6869d7f3508510eb84fd" title=" " alt="" coords="1424,296,1603,336"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1637,335,1603,331,1603,325,1638,330"/>
+<area shape="rect" id="Node000003" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a1a217bf8d2dfcc6a0f37b7fb0b1eb010" title="Is the server aware of the client, is the ClientAPI and Packet ready for use." alt="" coords="1425,360,1601,400"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1637,366,1602,371,1601,366,1637,361"/>
+<area shape="rect" id="Node000004" href="$da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#a0a59306f321f414d94e879a51217009c" title="Sign an established request; initial authentication has no session key." alt="" coords="1168,77,1376,117"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1426,354,1422,350,1404,323,1396,297,1395,272,1396,247,1398,222,1397,197,1390,172,1374,146,1358,131,1340,120,1343,115,1362,127,1378,142,1395,170,1402,196,1404,222,1402,247,1400,272,1401,296,1409,321,1426,346,1430,350"/>
+<area shape="rect" id="Node000007" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#aa05e1f34d3108b2c4c098a33d222d86c" title="If the client boost TCP connection is ready." alt="" coords="1184,552,1360,592"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="1495,413,1447,478,1414,513,1377,542,1355,554,1353,549,1375,538,1411,509,1443,475,1491,410"/>
+<area shape="rect" id="Node000009" href="$da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#a179d25c69c4a8ece4a2b75c81b3fb6d8" title=" " alt="" coords="643,424,851,464"/>
+<area shape="poly" id="edge37_Node000003_Node000009" title=" " alt="" coords="1505,414,1488,459,1461,512,1425,564,1403,587,1377,606,1343,625,1312,637,1283,642,1255,643,1195,639,1120,639,1057,647,1006,657,982,659,956,658,929,651,897,638,870,622,845,601,804,553,774,505,754,465,759,463,778,502,808,550,849,598,873,618,900,634,930,646,957,652,982,654,1005,652,1056,642,1120,633,1195,634,1255,638,1283,637,1311,632,1341,621,1375,602,1399,583,1421,561,1457,509,1483,457,1500,412"/>
+<area shape="rect" id="Node000016" href="$d8/d34/namespacenexilis.html#a96f5c6cfdccac25888b5a40ef9d32592" title=" " alt="" coords="5,259,147,285"/>
+<area shape="poly" id="edge38_Node000003_Node000016" title=" " alt="" coords="1426,354,1422,350,1407,329,1401,307,1400,265,1398,226,1390,207,1374,190,1329,160,1287,144,1247,138,1207,140,1119,155,1068,162,1011,165,509,165,450,168,390,176,276,203,177,234,107,262,106,257,176,229,274,198,389,171,449,163,509,160,1011,160,1068,157,1118,150,1206,135,1248,133,1289,139,1332,155,1378,186,1395,205,1403,224,1405,265,1406,306,1412,326,1426,346,1430,350"/>
+<area shape="rect" id="Node000020" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a7393249336e504ba53d1182b19022c9f" title="If the client boost UDP connection is ready." alt="" coords="1184,200,1360,240"/>
+<area shape="poly" id="edge19_Node000003_Node000020" title=" " alt="" coords="1428,355,1422,350,1404,325,1398,300,1391,277,1374,254,1357,242,1360,238,1378,250,1396,274,1403,299,1409,323,1426,346,1431,350"/>
+<area shape="rect" id="Node000022" href="$da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#afb0897977a0011004fa0bc37f712e5e0" title=" " alt="" coords="1168,392,1376,432"/>
+<area shape="poly" id="edge22_Node000003_Node000022" title=" " alt="" coords="1412,396,1377,401,1376,396,1411,391"/>
+<area shape="rect" id="Node000025" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#aed14aeef5e50d2815d6b7c93dcbcf289" title="If the client TCP af_inet connection is ready." alt="" coords="1184,264,1360,304"/>
+<area shape="poly" id="edge25_Node000003_Node000025" title=" " alt="" coords="1437,357,1423,350,1399,334,1375,318,1346,306,1348,302,1377,314,1402,330,1425,346,1439,352"/>
+<area shape="rect" id="Node000027" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a90e4f340ab3adebf3635862bd9bfc62a" title="Stuff related to specific connnections." alt="" coords="1184,328,1360,368"/>
+<area shape="poly" id="edge28_Node000003_Node000027" title=" " alt="" coords="1411,369,1360,362,1360,357,1412,364"/>
+<area shape="rect" id="Node000029" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a0f9c82bb43198858b47dbbafefec1366" title="If the client af_unix DGRAM connection is ready." alt="" coords="1184,488,1360,528"/>
+<area shape="poly" id="edge31_Node000003_Node000029" title=" " alt="" coords="1464,409,1312,490,1309,486,1461,404"/>
+<area shape="rect" id="Node000031" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a2cdac5ce3d3fb33495382137b06878a5" title="If the client af_unix STREAM connection is ready." alt="" coords="1184,699,1360,739"/>
+<area shape="poly" id="edge34_Node000003_Node000031" title=" " alt="" coords="1508,414,1493,471,1468,543,1430,617,1406,651,1378,682,1350,701,1347,696,1374,678,1402,648,1426,614,1463,541,1488,470,1503,413"/>
+<area shape="rect" id="Node000005" href="$d8/d6b/classnexilis_1_1client_1_1af__inet_1_1TCPClient.html#a28bd6cf035fb936f13bd1fdfc467c632" title="ClientProtocol::sendMessage(const nx_data&amp;) implementation." alt="" coords="899,5,1120,45"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1185,76,1082,48,1084,43,1186,71"/>
+<area shape="rect" id="Node000006" href="$d8/d6b/classnexilis_1_1client_1_1af__inet_1_1TCPClient.html#ab60ad5f9441a651b53d8dae4129a1cfc" title="ClientProtocol::sendMessageAsync(const nx_data&amp;) implementation." alt="" coords="899,70,1120,125"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="1154,100,1120,100,1120,95,1154,95"/>
+<area shape="rect" id="Node000008" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a06ff19320eb6c2730a633632681526fd" title="Steal the runtime until boost TCP connection is ready." alt="" coords="914,584,1105,624"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1171,587,1105,595,1104,590,1170,582"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="912,581,897,574,858,549,821,520,765,466,768,462,824,516,861,545,900,570,914,576"/>
+<area shape="rect" id="Node000010" href="$d8/d6b/classnexilis_1_1client_1_1af__inet_1_1TCPClient.html#a3344f385a6c0a606ef330f39b7a44fbf" title="NXProtocol::start() implementation." alt="" coords="429,296,591,336"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="705,418,653,384,593,350,567,338,569,334,596,346,656,380,708,414"/>
+<area shape="rect" id="Node000011" href="$dd/d79/classnexilis_1_1client_1_1af__inet_1_1UDPClient.html#aaf3c724b4e74a0ddb26ede0c8453632c" title="NXProtocol::start() implementation." alt="" coords="427,360,593,400"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="658,423,584,403,585,397,660,418"/>
+<area shape="rect" id="Node000012" href="$d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#aa33257eb91ceaddd1289e83aa03d7ba6" title="NXProtocol::start() implementation." alt="" coords="425,424,595,464"/>
+<area shape="poly" id="edge11_Node000009_Node000012" title=" " alt="" coords="629,447,595,447,595,441,629,441"/>
+<area shape="rect" id="Node000017" href="$db/dfd/classnexilis_1_1client_1_1nxboost_1_1UDPClient.html#a49787569066c0c36fc7ca9cf7a566640" title="NXProtocol::start() implementation." alt="" coords="425,488,595,528"/>
+<area shape="poly" id="edge16_Node000009_Node000017" title=" " alt="" coords="660,470,585,491,584,485,658,465"/>
+<area shape="rect" id="Node000013" href="$d8/df0/boost__tcp__client__c_8cc.html#aa7de3448ecaaf164b22a7fc66cbe7356" title=" " alt="" coords="197,424,375,464"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="412,447,376,447,376,441,412,441"/>
+<area shape="rect" id="Node000014" href="$d8/df0/boost__tcp__client__c_8cc.html#a8d93315129da1c1ad300a6e4cef6cc88" title=" " alt="" coords="213,310,359,335"/>
+<area shape="poly" id="edge13_Node000012_Node000014" title=" " alt="" coords="431,419,424,414,408,397,399,381,391,365,376,350,351,338,354,333,379,346,395,362,404,378,412,394,427,410,434,415"/>
+<area shape="rect" id="Node000015" href="$dc/d34/classnexilis_1_1TCPClient.html#a7ef0f30ee01fc275ba8cdc2d1f402784" title="Start running nexilis tcp client." alt="" coords="219,360,353,400"/>
+<area shape="poly" id="edge14_Node000012_Node000015" title=" " alt="" coords="425,423,353,402,354,397,427,418"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="211,357,193,349,138,317,93,287,96,283,141,313,196,344,213,352"/>
+<area shape="rect" id="Node000018" href="$df/d70/boost__udp__client__c_8cc.html#a3e7df0ca76ddd0517837122790254ca9" title=" " alt="" coords="195,552,377,592"/>
+<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="427,534,357,555,356,549,425,529"/>
+<area shape="rect" id="Node000019" href="$de/d39/classnexilis_1_1UDPClient.html#abeaa8f43e6fb3249514e81a1e88b47b0" title="Start running the UDP client." alt="" coords="217,488,355,528"/>
+<area shape="poly" id="edge18_Node000017_Node000019" title=" " alt="" coords="411,511,356,511,356,505,411,505"/>
+<area shape="rect" id="Node000021" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a61d2241ecf9a09c30ed3dc6296bba237" title="Steal the runtime until boost UDP connection is ready." alt="" coords="912,200,1107,240"/>
+<area shape="poly" id="edge20_Node000020_Node000021" title=" " alt="" coords="1170,223,1107,223,1107,217,1170,217"/>
+<area shape="poly" id="edge21_Node000021_Node000009" title=" " alt="" coords="910,248,900,254,853,295,813,342,782,388,761,425,756,422,777,385,809,339,849,291,897,250,907,244"/>
+<area shape="rect" id="Node000023" href="$d8/df0/boost__tcp__client__c_8cc.html#ae0a455fba42598c2ee9cf05743fb8543" title=" " alt="" coords="920,392,1099,432"/>
+<area shape="poly" id="edge23_Node000022_Node000023" title=" " alt="" coords="1154,415,1099,415,1099,409,1154,409"/>
+<area shape="rect" id="Node000024" href="$df/d70/boost__udp__client__c_8cc.html#ad3b1fbe5eced9b385a2553ec4fa4c687" title=" " alt="" coords="918,456,1101,496"/>
+<area shape="poly" id="edge24_Node000022_Node000024" title=" " alt="" coords="1176,438,1093,459,1091,453,1175,433"/>
+<area shape="rect" id="Node000026" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#aef58620c267d5289d4bac61a45473e04" title="Steal the runtime until af_inet TCP connection is ready." alt="" coords="920,264,1099,304"/>
+<area shape="poly" id="edge26_Node000025_Node000026" title=" " alt="" coords="1170,287,1099,287,1099,281,1170,281"/>
+<area shape="poly" id="edge27_Node000026_Node000009" title=" " alt="" coords="914,312,900,318,861,343,824,372,768,426,765,422,821,368,858,339,897,314,912,307"/>
+<area shape="rect" id="Node000028" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a0e2d5869a2928781d0403ecef064787b" title="Steal the runtime until af_inet UDP connection is ready." alt="" coords="918,328,1101,368"/>
+<area shape="poly" id="edge29_Node000027_Node000028" title=" " alt="" coords="1170,351,1101,351,1101,345,1170,345"/>
+<area shape="poly" id="edge30_Node000028_Node000009" title=" " alt="" coords="922,375,900,382,793,426,791,421,898,378,921,370"/>
+<area shape="rect" id="Node000030" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a528794b5d8aadca2cb1c196948e76b27" title="Steal the runtime until af_unix DGRAM connection is ready." alt="" coords="907,520,1111,560"/>
+<area shape="poly" id="edge32_Node000029_Node000030" title=" " alt="" coords="1170,523,1112,530,1111,525,1170,518"/>
+<area shape="poly" id="edge33_Node000030_Node000009" title=" " alt="" coords="921,518,898,510,791,467,793,462,900,506,922,513"/>
+<area shape="rect" id="Node000032" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a7ed744f06b2070ebd3e0e69206cf9d55" title="Steal the runtime until af_unix STREAM connection is ready." alt="" coords="906,699,1113,739"/>
+<area shape="poly" id="edge35_Node000031_Node000032" title=" " alt="" coords="1170,721,1113,721,1113,716,1170,716"/>
+<area shape="poly" id="edge36_Node000032_Node000009" title=" " alt="" coords="917,695,897,682,869,657,845,629,803,568,772,510,753,465,758,463,777,507,808,565,849,626,873,653,900,678,920,691"/>
+</map>

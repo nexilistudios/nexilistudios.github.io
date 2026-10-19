@@ -1,0 +1,17 @@
+<map id="nexilis::server::Movement::linear" name="nexilis::server::Movement::linear">
+<area shape="rect" id="Node000001" title="Linear movement." alt="" coords="751,69,943,109"/>
+<area shape="rect" id="Node000002" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a97175caef23eb9fad365629c3d78e107" title=" " alt="" coords="480,5,703,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="752,68,671,48,672,43,753,63"/>
+<area shape="rect" id="Node000006" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#abb949f0528da98933c7ed71b1b7c8913" title=" " alt="" coords="480,69,703,109"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="737,92,703,92,703,87,737,87"/>
+<area shape="rect" id="Node000007" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a2ab39913db19a51bb2358d6684b1749a" title=" " alt="" coords="488,133,695,173"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="753,115,672,136,671,131,752,110"/>
+<area shape="rect" id="Node000003" href="$da/d15/classnexilis_1_1server_1_1Command.html#a36f27b2491becaf040095c3cb5ec4067" title=" " alt="" coords="243,69,432,109"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="499,51,418,72,417,67,497,46"/>
+<area shape="rect" id="Node000004" href="$da/d15/classnexilis_1_1server_1_1Command.html#adb7341228f4137e0656f514180b5a45a" title=" " alt="" coords="5,37,195,77"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="229,77,194,73,195,67,230,72"/>
+<area shape="rect" id="Node000005" href="$d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="15,101,185,141"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="230,107,186,112,185,107,229,101"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="466,92,432,92,432,87,466,87"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="497,132,417,112,418,107,499,127"/>
+</map>

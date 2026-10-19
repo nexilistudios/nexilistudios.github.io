@@ -1,0 +1,11 @@
+<map id="nexilis::client::nxboost::UDPClient::sendMessage" name="nexilis::client::nxboost::UDPClient::sendMessage">
+<area shape="rect" id="Node000001" title="ClientProtocol::sendMessage(const nx_data&amp; message) implementation." alt="" coords="276,101,469,141"/>
+<area shape="rect" id="Node000002" href="$df/d70/boost__udp__client__c_8cc.html#afa547ad3aa2d678b0ebda7c5959e7ab3" title=" " alt="" coords="25,5,208,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="317,98,227,60,192,48,193,43,229,55,319,93"/>
+<area shape="rect" id="Node000003" href="$df/d70/boost__udp__client__c_8cc.html#a2019219c51e51072cf3bac74f5246b20" title=" " alt="" coords="5,69,228,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="262,110,228,106,229,101,263,105"/>
+<area shape="rect" id="Node000004" href="$de/d39/classnexilis_1_1UDPClient.html#aa7bf0e339fd50f5f68f25d8275378032" title="Send nexilis message." alt="" coords="47,133,186,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="263,138,186,147,186,142,262,132"/>
+<area shape="rect" id="Node000005" href="$de/d39/classnexilis_1_1UDPClient.html#a5f24688eb9aa0e7791107a975120e831" title="Send nexilis message with a callback." alt="" coords="47,197,186,237"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="319,150,229,188,187,202,186,196,227,183,317,145"/>
+</map>

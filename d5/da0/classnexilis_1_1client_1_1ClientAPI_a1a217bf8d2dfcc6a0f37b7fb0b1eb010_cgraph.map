@@ -1,0 +1,5 @@
+<map id="nexilis::client::ClientAPI::isInitialized" name="nexilis::client::ClientAPI::isInitialized">
+<area shape="rect" id="Node000001" title="Is the server aware of the client, is the ClientAPI and Packet ready for use." alt="" coords="5,5,181,45"/>
+<area shape="rect" id="Node000002" href="$d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#acdfe3d44bf864dd3916866a369f42ad2" title=" " alt="" coords="229,5,432,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,23,216,23,216,28,181,28"/>
+</map>

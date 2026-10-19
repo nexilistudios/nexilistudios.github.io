@@ -1,0 +1,28 @@
+<map id="nexilis::NxClass" name="nexilis::NxClass">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,247,132,273"/>
+<area shape="rect" id="Node000002" href="$d3/ddc/classnexilis_1_1boost__tcp_1_1Socket.html" title=" " alt="" coords="216,5,352,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,233,88,194,109,146,139,97,178,55,215,36,217,40,182,59,143,101,114,149,93,196,80,235"/>
+<area shape="rect" id="Node000003" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html" title=" " alt="" coords="196,70,372,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="80,234,119,173,146,140,179,112,219,93,221,98,181,117,150,144,123,176,85,236"/>
+<area shape="rect" id="Node000004" href="$da/d2e/classnexilis_1_1client_1_1ClientProtocol.html" title=" " alt="" coords="180,171,388,197"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="112,240,179,213,238,194,240,199,181,219,114,244"/>
+<area shape="rect" id="Node000006" href="$dd/d79/classnexilis_1_1client_1_1af__inet_1_1UDPClient.html" title=" " alt="" coords="455,87,586,127"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="86,235,125,194,151,173,179,156,250,130,324,114,394,106,455,103,455,108,395,111,325,119,251,135,181,161,154,177,129,198,90,238"/>
+<area shape="rect" id="Node000007" href="$d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html" title=" " alt="" coords="436,215,605,255"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="145,253,436,237,436,242,146,258"/>
+<area shape="rect" id="Node000008" href="$db/dfd/classnexilis_1_1client_1_1nxboost_1_1UDPClient.html" title=" " alt="" coords="436,279,605,319"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="146,264,436,289,436,294,145,269"/>
+<area shape="rect" id="Node000009" href="$da/d15/classnexilis_1_1server_1_1Command.html" title=" " alt="" coords="189,323,379,349"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="114,276,181,301,240,321,238,326,179,307,112,280"/>
+<area shape="rect" id="Node000010" href="$d6/db8/classnexilis_1_1server_1_1MessageHandler.html" title=" " alt="" coords="194,373,374,413"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="91,281,131,321,181,359,206,371,204,376,179,364,127,325,87,285"/>
+<area shape="rect" id="Node000011" href="$d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html" title=" " alt="" coords="197,437,371,477"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="83,284,120,354,148,391,182,423,201,435,199,440,178,427,144,395,115,356,78,286"/>
+<area shape="rect" id="Node000012" href="$d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html" title=" " alt="" coords="197,501,371,541"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="78,286,90,330,110,384,141,440,160,465,182,487,199,499,196,504,178,491,156,469,136,443,106,386,85,332,73,287"/>
+<area shape="rect" id="Node000005" href="$d8/d6b/classnexilis_1_1client_1_1af__inet_1_1TCPClient.html" title="AF_INET TCP client protocol using raw sockets." alt="" coords="455,151,586,191"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="402,175,455,172,455,177,402,180"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="340,165,387,149,462,124,463,129,389,155,341,170"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="358,197,437,214,435,219,357,202"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="319,201,437,264,465,276,463,281,435,269,317,206"/>
+</map>

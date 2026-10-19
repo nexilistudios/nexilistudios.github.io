@@ -1,0 +1,15 @@
+<map id="include/nexilis/client/protocol/nxboost/tcp_client.hh" name="include/nexilis/client/protocol/nxboost/tcp_client.hh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="284,5,443,60"/>
+<area shape="rect" id="Node000002" href="$d8/d32/tcp__client_8hh.html" title=" " alt="" coords="120,115,260,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="308,69,224,117,221,113,305,64"/>
+<area shape="rect" id="Node000006" href="$de/d2b/client_2protocol_2nxboost_2tcp__client_8cc.html" title=" " alt="" coords="284,108,443,163"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="366,74,366,108,361,108,361,74"/>
+<area shape="rect" id="Node000007" href="$d8/df0/boost__tcp__client__c_8cc.html" title=" " alt="" coords="467,108,614,163"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="423,64,495,105,493,110,420,69"/>
+<area shape="rect" id="Node000003" href="$d4/d01/start__client_8hh.html" title=" " alt="" coords="21,211,172,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="163,167,117,213,114,209,159,163"/>
+<area shape="rect" id="Node000005" href="$d0/d2e/tcp__client_8cc.html" title=" " alt="" coords="197,218,370,243"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="221,163,273,216,270,220,217,167"/>
+<area shape="rect" id="Node000004" href="$de/dbc/start__client_8cc.html" title=" " alt="" coords="5,299,188,324"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="99,264,99,298,94,298,94,264"/>
+</map>

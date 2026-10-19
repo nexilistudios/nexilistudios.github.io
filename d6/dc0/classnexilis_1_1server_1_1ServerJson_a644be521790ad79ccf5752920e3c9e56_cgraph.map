@@ -1,0 +1,9 @@
+<map id="nexilis::server::ServerJson::getClientData" name="nexilis::server::ServerJson::getClientData">
+<area shape="rect" id="Node000001" title="Get data about the clients in the server." alt="" coords="5,35,196,75"/>
+<area shape="rect" id="Node000002" href="$da/de9/classnexilis_1_1server_1_1ClientStorage.html#a1fe5ffd9a04e6f2088e0146a1112eda3" title=" " alt="" coords="244,5,455,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,41,230,37,231,42,196,46"/>
+<area shape="rect" id="Node000003" href="$dc/dbc/classnexilis_1_1Log.html#a66755adfac1917c8b8791a018f31c643" title=" " alt="" coords="285,70,414,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,63,271,71,271,77,196,68"/>
+<area shape="rect" id="Node000004" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#abbfff214c9149463f4d7a15990b9361a" title="Send info message." alt="" coords="503,63,669,103"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="415,80,489,80,489,85,415,85"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="nexilis::server::af_inet::UDPServer::getType" name="nexilis::server::af_inet::UDPServer::getType">
+<area shape="rect" id="Node000001" title="NXProtocol::getType() implementation." alt="" coords="275,37,465,77"/>
+<area shape="rect" id="Node000002" href="$df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a7286f8712e5f49cb762d7e3736a25c14" title="NXProtocol::start() implementation." alt="" coords="31,5,201,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="260,46,201,39,202,33,261,41"/>
+<area shape="rect" id="Node000003" href="$df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a50bf92a30646e072df669e53bacfeea0" title="Destructor." alt="" coords="5,69,227,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="261,74,227,78,227,73,260,68"/>
+</map>

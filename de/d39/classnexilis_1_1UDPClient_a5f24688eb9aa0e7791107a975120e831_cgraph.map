@@ -1,0 +1,29 @@
+<map id="nexilis::UDPClient::sendMessage" name="nexilis::UDPClient::sendMessage">
+<area shape="rect" id="Node000001" title="Send nexilis message with a callback." alt="" coords="5,155,144,195"/>
+<area shape="rect" id="Node000002" href="$db/dfd/classnexilis_1_1client_1_1nxboost_1_1UDPClient.html#a91941418589609935209b0e8176077fd" title="ClientProtocol::sendMessage(const nx_data&amp; message) implementation." alt="" coords="192,155,385,195"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,172,178,172,178,177,144,177"/>
+<area shape="rect" id="Node000003" href="$dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982" title="All the overloaded printing functions." alt="" coords="465,17,609,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="308,152,362,105,396,80,432,58,465,44,467,49,435,62,399,84,365,109,312,156"/>
+<area shape="rect" id="Node000005" href="$dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="470,73,605,98"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="329,152,432,108,463,99,465,104,434,113,331,157"/>
+<area shape="rect" id="Node000007" href="$da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#ac9059afc8258f93d0190892d4e4a5b9a" title=" " alt="" coords="433,123,641,163"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="385,160,419,155,420,160,386,165"/>
+<area shape="rect" id="Node000008" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a51524818393c2a2a704ee3b3db7b7729" title=" " alt="" coords="449,187,625,227"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="386,184,436,191,435,196,385,190"/>
+<area shape="rect" id="Node000010" href="$db/d44/namespacenexilis_1_1udp__auth.html#a2f3ec70d456014a8a5ac475216ef3db9" title=" " alt="" coords="467,251,608,291"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="333,192,434,236,456,244,454,249,432,241,330,197"/>
+<area shape="rect" id="Node000011" href="$db/d44/namespacenexilis_1_1udp__auth.html#a3513b7d5da077eec133888bd8cfc6a80" title=" " alt="" coords="467,315,608,355"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="309,193,362,246,397,275,435,300,455,310,452,315,432,305,394,280,359,250,306,197"/>
+<area shape="rect" id="Node000004" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#aa9bd79fb1a1804924e3440947c6ab117" title="Send debug message." alt="" coords="701,5,868,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="609,26,688,24,688,30,609,31"/>
+<area shape="rect" id="Node000006" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#acc02567dd7e4103305110bafbfd40c08" title="Send error message." alt="" coords="701,69,868,109"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="605,84,688,85,687,90,605,89"/>
+<area shape="rect" id="Node000009" href="$d6/d0d/classnexilis_1_1client_1_1ClientAPI_1_1ClientData.html#a5b874da4915fb5a4bb056d88f21f294f" title=" " alt="" coords="689,187,880,227"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="626,204,676,204,676,209,626,209"/>
+<area shape="rect" id="Node000012" href="$dc/dfa/namespacenexilis_1_1message__auth.html#ad2fb5d3e62f9c5f3575c57b5fd4277bf" title=" " alt="" coords="701,315,869,355"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="608,332,687,332,687,337,608,337"/>
+<area shape="rect" id="Node000013" href="$dc/dfa/namespacenexilis_1_1message__auth.html#a3bffff3bf649a82f183135f488be12f9" title=" " alt="" coords="928,322,1125,347"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="869,332,914,332,914,337,869,337"/>
+<area shape="rect" id="Node000014" href="$dc/dfa/namespacenexilis_1_1message__auth.html#ab8ae1f049786d898466a6d38b12efae4" title=" " alt="" coords="1173,315,1341,355"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="1125,332,1160,332,1160,337,1125,337"/>
+</map>

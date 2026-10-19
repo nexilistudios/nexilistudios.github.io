@@ -1,0 +1,15 @@
+<map id="nexilis::client::ClientAPI::IsInetUDPReady" name="nexilis::client::ClientAPI::IsInetUDPReady">
+<area shape="rect" id="Node000001" title="Stuff related to specific connnections." alt="" coords="5,101,181,141"/>
+<area shape="rect" id="Node000002" href="$d6/d0d/classnexilis_1_1client_1_1ClientAPI_1_1ClientData.html#acf2fb4a90a19b3e6a393bcf9ffdca10c" title=" " alt="" coords="239,5,418,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,99,228,55,248,47,250,52,230,60,135,104"/>
+<area shape="rect" id="Node000003" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#af38da76c91dabe16da1d8a0c7dc446a0" title="af_inet UDP." alt="" coords="229,69,428,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,107,215,102,216,107,182,112"/>
+<area shape="rect" id="Node000004" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a51524818393c2a2a704ee3b3db7b7729" title=" " alt="" coords="241,133,417,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,131,227,137,226,142,182,136"/>
+<area shape="rect" id="Node000006" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a1a217bf8d2dfcc6a0f37b7fb0b1eb010" title="Is the server aware of the client, is the ClientAPI and Packet ready for use." alt="" coords="241,197,417,237"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="135,139,230,183,250,190,248,195,228,188,132,144"/>
+<area shape="rect" id="Node000005" href="$d6/d0d/classnexilis_1_1client_1_1ClientAPI_1_1ClientData.html#a5b874da4915fb5a4bb056d88f21f294f" title=" " alt="" coords="482,133,673,173"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="417,151,468,151,468,156,417,156"/>
+<area shape="rect" id="Node000007" href="$d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#acdfe3d44bf864dd3916866a369f42ad2" title=" " alt="" coords="476,197,679,237"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="417,215,462,215,462,220,417,220"/>
+</map>

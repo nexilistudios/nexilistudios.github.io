@@ -1,0 +1,9 @@
+<map id="nexilis::logger::Logger::setAllLevels" name="nexilis::logger::Logger::setAllLevels">
+<area shape="rect" id="Node000001" title="Set all log levels." alt="" coords="427,35,593,75"/>
+<area shape="rect" id="Node000002" href="$d0/d63/logger__c_8cc.html#a6ee41c7e3461672d432bb8683916c1fa" title=" " alt="" coords="217,5,357,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="412,45,357,37,358,32,413,39"/>
+<area shape="rect" id="Node000003" href="$dc/dbc/classnexilis_1_1Log.html#a3ea6d14faaa45d88bd303e29ef55342b" title=" " alt="" coords="196,70,379,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="413,70,379,74,378,69,412,64"/>
+<area shape="rect" id="Node000004" href="$dc/dee/log__c_8cc.html#a6b8ecee5ca993dcd4108a92bcfa43211" title=" " alt="" coords="5,63,148,103"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="182,85,148,85,148,80,182,80"/>
+</map>

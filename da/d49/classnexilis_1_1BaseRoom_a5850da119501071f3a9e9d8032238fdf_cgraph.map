@@ -1,0 +1,5 @@
+<map id="nexilis::BaseRoom::getContext" name="nexilis::BaseRoom::getContext">
+<area shape="rect" id="Node000001" title="Get the 2D/3D context for the room." alt="" coords="5,5,156,45"/>
+<area shape="rect" id="Node000002" href="$de/d38/classnexilis_1_1RoomData.html#a2458b902600bffeb1a475792c89823a7" title="Get the context of the room." alt="" coords="204,5,355,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,23,190,23,190,28,156,28"/>
+</map>

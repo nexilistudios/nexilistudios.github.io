@@ -1,0 +1,11 @@
+<map id="nexilis::Ports::getBoostUDPPort" name="nexilis::Ports::getBoostUDPPort">
+<area shape="rect" id="Node000001" title=" " alt="" coords="484,27,656,67"/>
+<area shape="rect" id="Node000002" href="$d9/d37/protocol__manager__c_8cc.html#a3851b14d7044c3af35f0edc3496999c5" title=" " alt="" coords="236,5,436,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="470,37,436,33,437,28,471,32"/>
+<area shape="rect" id="Node000003" href="$db/dfd/classnexilis_1_1client_1_1nxboost_1_1UDPClient.html#a49787569066c0c36fc7ca9cf7a566640" title="NXProtocol::start() implementation." alt="" coords="251,55,421,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="471,62,421,68,421,63,470,57"/>
+<area shape="rect" id="Node000004" href="$df/d70/boost__udp__client__c_8cc.html#a3e7df0ca76ddd0517837122790254ca9" title=" " alt="" coords="5,23,188,63"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="237,65,188,58,189,53,238,60"/>
+<area shape="rect" id="Node000005" href="$de/d39/classnexilis_1_1UDPClient.html#abeaa8f43e6fb3249514e81a1e88b47b0" title="Start running the UDP client." alt="" coords="27,87,166,127"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="238,91,167,101,166,95,238,86"/>
+</map>

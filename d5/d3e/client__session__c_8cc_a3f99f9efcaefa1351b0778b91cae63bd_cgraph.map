@@ -1,0 +1,13 @@
+<map id="nexilis_client_session_get_position_3D_values" name="nexilis_client_session_get_position_3D_values">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,16,189,56"/>
+<area shape="rect" id="Node000002" href="$df/de2/classnexilis_1_1FileLog.html#aef30e4423d093f2e16874bef3ca83a3f" title=" " alt="" coords="444,23,615,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,14,237,8,317,3,396,8,462,18,461,23,396,13,317,8,238,13,190,19"/>
+<area shape="rect" id="Node000004" href="$d5/d3e/client__session__c_8cc.html#ad829aeb397a1e2e84238e8200a5833a2" title=" " alt="" coords="237,23,396,48"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="190,33,224,33,224,38,190,38"/>
+<area shape="rect" id="Node000005" href="$d5/d3e/client__session__c_8cc.html#a5fb06a5ea2151344a2c8ccb11c0d9b3c" title=" " alt="" coords="249,72,384,98"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="187,53,247,67,246,72,186,58"/>
+<area shape="rect" id="Node000003" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#a10e932e38c3aa4d6e28057ad1dfeda97" title="Send critical message." alt="" coords="663,16,829,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="615,33,649,33,649,38,615,38"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="396,33,430,33,430,38,396,38"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="371,70,460,49,461,54,373,75"/>
+</map>

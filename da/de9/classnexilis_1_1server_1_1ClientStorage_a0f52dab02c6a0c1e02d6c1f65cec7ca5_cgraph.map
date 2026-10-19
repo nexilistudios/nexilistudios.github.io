@@ -1,0 +1,7 @@
+<map id="nexilis::server::ClientStorage::add" name="nexilis::server::ClientStorage::add">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,248,38"/>
+<area shape="rect" id="Node000002" href="$dc/dbc/classnexilis_1_1Log.html#a66755adfac1917c8b8791a018f31c643" title=" " alt="" coords="296,13,425,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,23,282,23,282,28,248,28"/>
+<area shape="rect" id="Node000003" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#abbfff214c9149463f4d7a15990b9361a" title="Send info message." alt="" coords="473,5,640,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="426,23,460,23,460,28,426,28"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="nexilis::client::nxboost::TCPClient::~TCPClient" name="nexilis::client::nxboost::TCPClient::~TCPClient">
+<area shape="rect" id="Node000001" title="Destructor." alt="" coords="5,31,179,71"/>
+<area shape="rect" id="Node000002" href="$d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#ae43cce69993969249f40e476764d8351" title="NXProtocol::stop() implementation." alt="" coords="227,31,396,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,48,213,48,213,53,179,53"/>
+<area shape="rect" id="Node000003" href="$dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982" title="All the overloaded printing functions." alt="" coords="461,13,605,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="396,38,448,32,448,38,397,44"/>
+<area shape="rect" id="Node000005" href="$d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae" title="Get the classes name as header for log messages." alt="" coords="444,62,623,87"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="397,57,431,61,430,66,396,62"/>
+<area shape="rect" id="Node000004" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#aa9bd79fb1a1804924e3440947c6ab117" title="Send debug message." alt="" coords="671,5,837,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="605,23,657,23,657,28,605,28"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="nexilis::client::RoomManagementCommand::execute" name="nexilis::client::RoomManagementCommand::execute">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,69,247,109"/>
+<area shape="rect" id="Node000002" href="$d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a827d09d95f7d81fa2cd69c75bdc71f3e" title=" " alt="" coords="295,5,589,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="225,67,329,45,330,51,226,72"/>
+<area shape="rect" id="Node000003" href="$d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a89bf770a7a9d8bb30c56a961fbf9e697" title=" " alt="" coords="325,69,559,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="247,87,310,87,310,92,247,92"/>
+<area shape="rect" id="Node000004" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a80741fb08b4a50379131fdf0ee75e157" title="Set the value of 2D overlapping." alt="" coords="354,133,530,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="226,107,341,130,340,135,225,112"/>
+</map>

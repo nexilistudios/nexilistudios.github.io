@@ -1,0 +1,13 @@
+<map id="nexilis::client::af_inet::UDPClient::sendMessageAsync" name="nexilis::client::af_inet::UDPClient::sendMessageAsync">
+<area shape="rect" id="Node000001" title="ClientProtocol::sendMessageAsync(const nx_data&amp;) implementation." alt="" coords="5,30,231,85"/>
+<area shape="rect" id="Node000002" href="$da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#ac9059afc8258f93d0190892d4e4a5b9a" title=" " alt="" coords="279,5,487,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,41,265,37,265,42,231,46"/>
+<area shape="rect" id="Node000003" href="$db/d44/namespacenexilis_1_1udp__auth.html#a3513b7d5da077eec133888bd8cfc6a80" title=" " alt="" coords="312,69,453,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="231,68,298,77,298,82,231,74"/>
+<area shape="rect" id="Node000004" href="$dc/dfa/namespacenexilis_1_1message__auth.html#ad2fb5d3e62f9c5f3575c57b5fd4277bf" title=" " alt="" coords="535,69,703,109"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="453,87,521,87,521,92,453,92"/>
+<area shape="rect" id="Node000005" href="$dc/dfa/namespacenexilis_1_1message__auth.html#a3bffff3bf649a82f183135f488be12f9" title=" " alt="" coords="751,77,948,102"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="703,87,737,87,737,92,703,92"/>
+<area shape="rect" id="Node000006" href="$dc/dfa/namespacenexilis_1_1message__auth.html#ab8ae1f049786d898466a6d38b12efae4" title=" " alt="" coords="996,69,1164,109"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="948,87,982,87,982,92,948,92"/>
+</map>

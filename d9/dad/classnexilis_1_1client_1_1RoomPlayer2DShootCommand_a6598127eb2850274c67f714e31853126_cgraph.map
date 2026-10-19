@@ -1,0 +1,9 @@
+<map id="nexilis::client::RoomPlayer2DShootCommand::execute" name="nexilis::client::RoomPlayer2DShootCommand::execute">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,69,209,109"/>
+<area shape="rect" id="Node000002" href="$d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a827d09d95f7d81fa2cd69c75bdc71f3e" title=" " alt="" coords="257,5,552,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,67,297,46,298,51,202,72"/>
+<area shape="rect" id="Node000003" href="$d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a89bf770a7a9d8bb30c56a961fbf9e697" title=" " alt="" coords="287,69,522,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="210,87,273,87,273,92,210,92"/>
+<area shape="rect" id="Node000004" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a2770bb0401d0e5b1e4430af480aba520" title="Called when a Player2D shoot command is received." alt="" coords="317,133,493,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="202,107,303,129,302,134,201,112"/>
+</map>

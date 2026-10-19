@@ -1,0 +1,11 @@
+<map id="nexilis::Vector" name="nexilis::Vector">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,120,105"/>
+<area shape="rect" id="Node000002" href="$d3/d88/classnexilis_1_1Vector2.html" title=" " alt="" coords="168,5,349,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,71,167,40,203,28,204,33,169,44,100,76"/>
+<area shape="rect" id="Node000003" href="$d9/d9e/classnexilis_1_1Vector3.html" title=" " alt="" coords="168,55,349,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="134,81,167,76,168,82,134,86"/>
+<area shape="rect" id="Node000004" href="$d3/d88/classnexilis_1_1Vector2.html" title=" " alt="" coords="179,104,339,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="134,99,179,104,178,110,134,104"/>
+<area shape="rect" id="Node000005" href="$d9/d9e/classnexilis_1_1Vector3.html" title=" " alt="" coords="179,153,339,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="102,109,169,138,208,151,206,156,167,143,100,114"/>
+</map>

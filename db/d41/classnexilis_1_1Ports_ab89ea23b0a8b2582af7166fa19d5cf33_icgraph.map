@@ -1,0 +1,5 @@
+<map id="nexilis::Ports::getInetUDPPort" name="nexilis::Ports::getInetUDPPort">
+<area shape="rect" id="Node000001" title=" " alt="" coords="220,13,435,38"/>
+<area shape="rect" id="Node000002" href="$dd/d79/classnexilis_1_1client_1_1af__inet_1_1UDPClient.html#aaf3c724b4e74a0ddb26ede0c8453632c" title="NXProtocol::start() implementation." alt="" coords="5,5,172,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,28,172,28,172,23,206,23"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="nexilis::convert_to_map" name="nexilis::convert_to_map">
+<area shape="rect" id="Node000001" title=" " alt="" coords="721,77,900,102"/>
+<area shape="rect" id="Node000002" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a0ba5ed7b2f74ac9315bd2cadfd343580" title=" " alt="" coords="480,5,673,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="749,76,650,48,651,43,751,70"/>
+<area shape="rect" id="Node000006" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#aa80de18cfcf90a60cddef6d19e10abf4" title=" " alt="" coords="480,69,673,109"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="708,92,674,92,674,87,708,87"/>
+<area shape="rect" id="Node000007" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a5f2de93a9fda498895716238d782144f" title=" " alt="" coords="480,133,673,173"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="751,108,651,136,650,131,749,103"/>
+<area shape="rect" id="Node000003" href="$da/d15/classnexilis_1_1server_1_1Command.html#a36f27b2491becaf040095c3cb5ec4067" title=" " alt="" coords="243,69,432,109"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="489,52,413,72,412,67,487,46"/>
+<area shape="rect" id="Node000004" href="$da/d15/classnexilis_1_1server_1_1Command.html#adb7341228f4137e0656f514180b5a45a" title=" " alt="" coords="5,37,195,77"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="229,77,194,73,195,67,230,72"/>
+<area shape="rect" id="Node000005" href="$d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="15,101,185,141"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="230,107,186,112,185,107,229,101"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="466,92,432,92,432,87,466,87"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="487,132,412,112,413,107,489,127"/>
+</map>

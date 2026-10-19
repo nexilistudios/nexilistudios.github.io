@@ -1,0 +1,28 @@
+<map id="nexilis::server::ServerImpl::set_general_username" name="nexilis::server::ServerImpl::set_general_username">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,300,199,340"/>
+<area shape="rect" id="Node000002" href="$da/d15/classnexilis_1_1server_1_1Command.html#ac07fa7fe08cfa3955f7fdb9d3c2f7267" title="Convert ClientMsgType to nx_data (and add a &#39; &#39;) as a last character." alt="" coords="257,57,447,97"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,299,128,258,157,207,196,153,220,129,245,107,254,101,257,106,248,111,223,133,201,157,162,210,133,261,114,301"/>
+<area shape="rect" id="Node000005" href="$dd/de4/classnexilis_1_1Util.html#a62d9441f50a65ef0cd3c2040be81d746" title="Convert nx_data to string." alt="" coords="269,121,435,161"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="116,298,169,236,205,202,245,172,260,165,262,169,248,177,208,206,173,240,120,301"/>
+<area shape="rect" id="Node000006" href="$dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982" title="All the overloaded printing functions." alt="" coords="280,186,424,211"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="126,298,179,259,246,222,270,213,271,218,248,226,182,263,129,302"/>
+<area shape="rect" id="Node000008" href="$da/de9/classnexilis_1_1server_1_1ClientStorage.html#ab8e6779096b1d5e58ed403412cd80bcf" title=" " alt="" coords="247,236,457,276"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="180,297,260,277,261,282,182,303"/>
+<area shape="rect" id="Node000009" href="$d9/df3/classnexilis_1_1server_1_1DefaultArgs.html#ad025461696f36ad9e397171a8c8c37c0" title=" " alt="" coords="267,300,437,340"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="199,317,253,317,253,323,199,323"/>
+<area shape="rect" id="Node000010" href="$dc/dcb/classnexilis_1_1BaseClient.html#a2ef1dddc83ce3e9f573e144673189546" title=" " alt="" coords="281,364,423,404"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="182,337,268,360,267,365,180,343"/>
+<area shape="rect" id="Node000011" href="$d9/df3/classnexilis_1_1server_1_1DefaultArgs.html#a8fe32f1095d007598edf936e5be53f1d" title=" " alt="" coords="267,428,437,468"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="130,338,183,376,248,414,264,421,262,426,245,418,180,380,127,342"/>
+<area shape="rect" id="Node000012" href="$d9/df3/classnexilis_1_1server_1_1DefaultArgs.html#ab0f8e94e52cb97cba7df5c6a44093e25" title=" " alt="" coords="267,492,437,532"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="118,339,170,407,206,445,248,478,259,484,256,489,245,482,203,449,166,411,114,342"/>
+<area shape="rect" id="Node000013" href="$dd/de4/classnexilis_1_1Util.html#a37837fd204fbf43eaacd572d621da92e" title=" " alt="" coords="249,556,455,596"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="113,339,131,381,160,436,199,493,222,519,248,542,256,547,253,551,245,546,219,523,195,496,155,439,126,384,108,341"/>
+<area shape="rect" id="Node000003" href="$d9/d3d/group__BytevectorConversions.html#ga38e516c60d98cb71153ded26ce2b67e5" title=" " alt="" coords="513,29,679,69"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="447,64,499,58,499,63,447,69"/>
+<area shape="rect" id="Node000004" href="$d7/de9/classnexilis_1_1Json.html#a176086cccd2bb63f85a178a5b7eca0bd" title=" " alt="" coords="505,94,687,119"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="447,86,492,91,491,97,447,91"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="551,30,548,20,555,10,571,5,596,3,624,6,640,13,637,18,623,11,596,8,573,10,558,15,553,21,556,28"/>
+<area shape="rect" id="Node000007" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#aa9bd79fb1a1804924e3440947c6ab117" title="Send debug message." alt="" coords="513,179,679,219"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="424,196,499,196,499,201,424,201"/>
+</map>

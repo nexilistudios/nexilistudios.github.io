@@ -1,0 +1,5 @@
+<map id="nexilis::client::nxboost::UDPClient::sendMessageAsync" name="nexilis::client::nxboost::UDPClient::sendMessageAsync">
+<area shape="rect" id="Node000001" title="ClientProtocol::sendMessageAsync(const nx_data&amp;) implementation." alt="" coords="212,5,444,45"/>
+<area shape="rect" id="Node000002" href="$de/d39/classnexilis_1_1UDPClient.html#a1809d08048d0fd69aef3427abbdc7555" title="Send async nexilis message." alt="" coords="5,5,164,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,28,164,28,164,23,198,23"/>
+</map>

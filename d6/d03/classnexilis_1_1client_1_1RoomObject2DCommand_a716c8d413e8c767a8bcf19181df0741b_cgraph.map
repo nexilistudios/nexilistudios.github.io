@@ -1,0 +1,9 @@
+<map id="nexilis::client::RoomObject2DCommand::execute" name="nexilis::client::RoomObject2DCommand::execute">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,69,211,109"/>
+<area shape="rect" id="Node000002" href="$d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a827d09d95f7d81fa2cd69c75bdc71f3e" title=" " alt="" coords="259,5,553,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,67,298,46,300,51,203,72"/>
+<area shape="rect" id="Node000003" href="$d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a89bf770a7a9d8bb30c56a961fbf9e697" title=" " alt="" coords="289,69,523,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="211,87,275,87,275,92,211,92"/>
+<area shape="rect" id="Node000004" href="$d6/dd3/classnexilis_1_1Object.html#a3f7df0c25d1d5a2f07a041d6d04cbe7d" title=" " alt="" coords="309,134,503,159"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="201,107,259,119,315,129,314,134,258,124,199,112"/>
+</map>
