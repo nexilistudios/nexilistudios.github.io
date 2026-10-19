@@ -2,6 +2,7 @@ import { readFile, writeFile, mkdir, rm, rename } from "node:fs/promises";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { spawnSync } from "node:child_process";
+import { applyDocsTheme } from "./apply-docs-theme.mjs";
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const source = resolve(
   process.env.NEXILIS_SOURCE || resolve(root, "../nexilis"),
@@ -54,13 +55,7 @@ await writeFile(
 await readFile(
   resolve(temporary, "html/classNexilis_1_1Util_1_1NexilisClient.html"),
 );
-const cssPath = resolve(temporary, "html/doxygen.css");
-const theme = await readFile(resolve(root, "styles/doxygen-theme.css"), "utf8");
-const generatedCss = await readFile(cssPath, "utf8");
-await writeFile(
-  cssPath,
-  `@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");\n${generatedCss}\n/* Nexilis website theme */\n${theme}`,
-);
+await applyDocsTheme(resolve(temporary, "html"));
 const revision = spawnSync("git", ["-C", source, "rev-parse", "HEAD"], {
   encoding: "utf8",
 });
