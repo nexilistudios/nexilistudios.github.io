@@ -1,9 +1,0 @@
-<map id="nexilis::Object::setFilepath" name="nexilis::Object::setFilepath">
-<area shape="rect" id="Node000001" title=" " alt="" coords="259,77,453,102"/>
-<area shape="rect" id="Node000002" href="$d6/d03/classnexilis_1_1client_1_1RoomObject2DCommand.html#a716c8d413e8c767a8bcf19181df0741b" title=" " alt="" coords="5,5,211,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="292,76,186,48,187,43,293,70"/>
-<area shape="rect" id="Node000003" href="$d4/d69/classnexilis_1_1client_1_1RoomObject3DCommand.html#a7e54315deeef436351377188e00d269d" title=" " alt="" coords="5,69,211,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="245,92,211,92,211,87,245,87"/>
-<area shape="rect" id="Node000004" href="$d3/d69/classnexilis_1_1client_1_1GetInfoRoomsCommand.html#a8d88de2409b9c924a3c54d534caada17" title=" " alt="" coords="11,133,205,173"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="293,108,187,136,186,131,292,103"/>
-</map>

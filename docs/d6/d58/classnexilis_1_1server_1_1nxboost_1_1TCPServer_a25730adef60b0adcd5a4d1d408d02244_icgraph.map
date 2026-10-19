@@ -1,0 +1,8 @@
+<map id="nexilis::server::nxboost::TCPServer::stop" name="nexilis::server::nxboost::TCPServer::stop">
+<area shape="rect" id="Node000001" title="NXProtocol::stop() implementation." alt="" coords="236,52,409,97"/>
+<area shape="rect" id="Node000002" href="$d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#afc1f4d3b358c95034aad01506c57951e" title="Deleted move assignment operator." alt="" coords="10,5,183,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,54,184,48,183,43,223,53"/>
+<area shape="rect" id="Node000003" href="$d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#a82fccf956c3f0110a339642081ff9c68" title="Destructor." alt="" coords="5,99,188,143"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="218,96,189,105,188,100,223,95"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="132,84,120,80,96,77,75,79,62,84,57,90,58,99,53,97,52,89,59,80,74,74,97,72,121,75,137,83"/>
+</map>

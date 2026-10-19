@@ -1,0 +1,10 @@
+<map id="include/nexilis/server/protocol" name="include/nexilis/server/protocol">
+<area shape="rect" id="node1" href="dir_5c474c5bb4db4426c90b3774d0b5faaf.html" title="message" alt="" coords="317,141,398,168"/>
+<area shape="rect" id="node3" href="dir_647847ebb49a8942c062af0ee3ef4b8c.html" title="af_inet" alt="" coords="136,65,202,93"/>
+<area shape="rect" id="node4" href="dir_a2ca7768db6ff34d34b3b85bbf09bf91.html" title="af_unix" alt="" coords="227,65,296,93"/>
+<area shape="rect" id="node5" href="dir_a27b42af6e466ecfbbcf8122a8857d3f.html" title="nxboost" alt="" coords="321,65,394,93"/>
+<area shape="poly" id="edge1" href="dir_000037_000029.html" alt="" coords="359,91,360,127,355,123,356,95"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000037_000029.html" title="1" alt="" coords="362,114,370,131"/>
+<area shape="rect" id="clust2" href="dir_f5af10fa4da1408b0f5cb5e9e5169867.html" alt="" coords="27,54,405,103"/>
+<area shape="rect" id="clust1" href="dir_6cbb7aeeec1e648a8e3d084d45762450.html" title="server" alt="" coords="16,16,416,179"/>
+</map>

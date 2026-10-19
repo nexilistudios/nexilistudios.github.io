@@ -1,9 +1,0 @@
-<map id="nexilis::Util::readPortFromFile" name="nexilis::Util::readPortFromFile">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,45,220,70"/>
-<area shape="rect" id="Node000002" href="$dd/d04/group__PortHandling.html#ga8dc341fe44a9de8bb4e0b93a4f447a64" title=" " alt="" coords="268,45,471,70"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,55,254,55,254,60,220,60"/>
-<area shape="rect" id="Node000003" href="$dd/de4/classnexilis_1_1Util.html#a0066197f79b612d78444f59dafeeb466" title=" " alt="" coords="519,5,689,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="462,42,505,36,506,41,463,47"/>
-<area shape="rect" id="Node000004" href="$d5/da4/classnexilis_1_1NXProtocol.html#a0359edd948a8adfcf565c6e57da29480" title="Returns a string value of the Type." alt="" coords="531,69,677,109"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="463,67,518,75,517,80,462,73"/>
-</map>

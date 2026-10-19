@@ -1,0 +1,9 @@
+<map id="include/nexilis/server/signal.hh" name="include/nexilis/server/signal.hh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="58,5,219,50"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,98,72,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,49,68,90,65,86,110,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="95,98,182,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,48,141,84,136,81,137,52"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="206,98,266,126"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="165,48,211,88,206,88,163,53"/>
+</map>

@@ -1,7 +1,0 @@
-<map id="nexilis_log_clear_handlers" name="nexilis_log_clear_handlers">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,200,38"/>
-<area shape="rect" id="Node000002" href="$dc/dbc/classnexilis_1_1Log.html#a634f066882682331b5000482d94f78c9" title="Remove all handlers." alt="" coords="248,13,443,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,23,234,23,234,28,200,28"/>
-<area shape="rect" id="Node000003" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#a386bcae4ce97526c3d3006ed3b0ef912" title="Remove all handlers." alt="" coords="491,5,657,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="443,23,477,23,477,28,443,28"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="nexilis::server::ServerImpl::room_player3d_movement" name="nexilis::server::ServerImpl::room_player3d_movement">
-<area shape="rect" id="Node000001" title=" " alt="" coords="480,37,687,77"/>
-<area shape="rect" id="Node000002" href="$da/d15/classnexilis_1_1server_1_1Command.html#a36f27b2491becaf040095c3cb5ec4067" title=" " alt="" coords="243,37,432,77"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="466,60,432,60,432,55,466,55"/>
-<area shape="rect" id="Node000003" href="$da/d15/classnexilis_1_1server_1_1Command.html#adb7341228f4137e0656f514180b5a45a" title=" " alt="" coords="5,5,195,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="229,45,194,41,195,35,230,40"/>
-<area shape="rect" id="Node000004" href="$d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="15,69,185,109"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="230,75,186,80,185,75,229,69"/>
-</map>

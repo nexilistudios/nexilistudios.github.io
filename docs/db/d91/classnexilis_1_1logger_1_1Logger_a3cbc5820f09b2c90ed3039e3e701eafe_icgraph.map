@@ -1,0 +1,14 @@
+<map id="nexilis::logger::Logger::setMinimumLevel" name="nexilis::logger::Logger::setMinimumLevel">
+<area shape="rect" id="Node000001" title=" " alt="" coords="472,64,637,109"/>
+<area shape="rect" id="Node000002" href="$d0/d63/logger__c_8cc.html#add7fc053ac34542de29f3597bd4410f4" title=" " alt="" coords="262,29,401,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="454,71,402,65,401,60,460,71"/>
+<area shape="rect" id="Node000003" href="$dc/dbc/classnexilis_1_1Log.html#a9a2f4ba5e4889b6fffc35dfb8d1d1d82" title=" " alt="" coords="239,99,424,143"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="454,102,425,109,424,104,459,101"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="366,14,354,10,331,8,311,10,298,15,292,21,294,30,289,28,287,19,295,10,309,5,331,3,356,5,371,14"/>
+<area shape="rect" id="Node000004" href="$dc/dee/log__c_8cc.html#abf3b1b82ced1f043e5f7472aee282a94" title=" " alt="" coords="5,52,191,97"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="221,100,191,96,191,90,226,99"/>
+<area shape="rect" id="Node000005" href="$dc/dee/log__c_8cc.html#a6ac7b2bead757d2121e15924bffe5201" title=" " alt="" coords="5,145,191,190"/>
+<area shape="poly" id="edge6_Node000003_Node000005" title=" " alt="" coords="221,143,192,152,191,146,226,142"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="135,38,122,33,98,31,76,33,63,37,57,43,59,52,53,51,52,42,60,33,75,27,98,25,123,28,140,36"/>
+<area shape="poly" id="edge7_Node000005_Node000005" title=" " alt="" coords="135,130,122,126,98,124,76,126,63,131,57,137,59,145,53,144,52,135,60,126,75,121,98,119,123,121,140,130"/>
+</map>

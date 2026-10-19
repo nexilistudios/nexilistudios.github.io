@@ -1,0 +1,9 @@
+<map id="nexilis::client::ClientAPI::isInetTCPReady" name="nexilis::client::ClientAPI::isInetTCPReady">
+<area shape="rect" id="Node000001" title="If the client TCP af_inet connection is ready." alt="" coords="5,75,181,119"/>
+<area shape="rect" id="Node000002" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a3be92a07de9c7a79109dcc16f0b40d05" title="af_inet TCP." alt="" coords="229,5,423,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,72,236,54,232,56,171,77"/>
+<area shape="rect" id="Node000003" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a51524818393c2a2a704ee3b3db7b7729" title=" " alt="" coords="238,75,414,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,94,225,96,220,98,181,100"/>
+<area shape="rect" id="Node000004" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a1a217bf8d2dfcc6a0f37b7fb0b1eb010" title="Is the server aware of the client, is the ClientAPI and Packet ready for use." alt="" coords="238,144,414,189"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="171,117,236,138,231,140,170,123"/>
+</map>

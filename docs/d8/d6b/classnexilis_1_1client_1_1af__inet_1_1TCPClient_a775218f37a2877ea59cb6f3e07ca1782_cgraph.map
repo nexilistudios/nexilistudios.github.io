@@ -1,0 +1,21 @@
+<map id="nexilis::client::af_inet::TCPClient::operator=" name="nexilis::client::af_inet::TCPClient::operator=">
+<area shape="rect" id="Node000001" title="Move assignment operator." alt="" coords="5,95,204,140"/>
+<area shape="rect" id="Node000002" href="$da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#acc41d5e868dddd01209c4258df695ae1" title="Constructor." alt="" coords="502,348,709,393"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,138,292,230,392,285,496,334,514,343,509,342,494,339,389,289,289,235,139,143"/>
+<area shape="rect" id="Node000003" href="$d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696" title=" " alt="" coords="763,108,950,135"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="157,92,261,54,328,35,401,19,479,7,559,3,639,8,716,24,749,38,781,56,832,97,827,97,778,60,747,43,715,29,638,13,559,8,479,12,402,24,329,40,263,59,159,97"/>
+<area shape="rect" id="Node000004" href="$d5/da4/classnexilis_1_1NXProtocol.html#af09e9806c3da63398b852d39c3a2c06b" title="Default constructor." alt="" coords="533,39,677,84"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="204,104,519,69,516,74,205,109"/>
+<area shape="rect" id="Node000005" href="$d8/d6b/classnexilis_1_1client_1_1af__inet_1_1TCPClient.html#ae91b99b27807f8c02790ff2a62f1d2ea" title="Constructor." alt="" coords="252,150,447,194"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="204,137,239,146,234,148,205,142"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="696,345,714,334,759,291,795,240,823,190,842,151,846,148,828,192,800,243,763,294,717,338,697,350"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="372,193,497,334,506,342,501,341,493,338,369,197"/>
+<area shape="poly" id="edge10_Node000005_Node000003" title=" " alt="" coords="447,151,495,144,626,131,750,125,745,127,626,137,495,149,448,156"/>
+<area shape="poly" id="edge11_Node000005_Node000004" title=" " alt="" coords="394,147,494,100,529,89,524,91,496,105,397,152"/>
+<area shape="rect" id="Node000006" href="$db/d41/classnexilis_1_1Ports.html#aec6bdcc4f5c158caf9754ab478c9801b" title=" " alt="" coords="500,158,710,186"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="447,170,487,171,482,173,448,175"/>
+<area shape="rect" id="Node000007" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a3be92a07de9c7a79109dcc16f0b40d05" title="af_inet TCP." alt="" coords="508,210,702,254"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="447,192,495,205,490,206,448,198"/>
+<area shape="rect" id="Node000008" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#aacbaaf7d6c32efb66909faebd6ecd01b" title="Get the af_inet TCP server port number." alt="" coords="495,279,715,324"/>
+<area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="381,192,434,229,496,264,512,273,507,273,494,269,431,233,380,198"/>
+</map>

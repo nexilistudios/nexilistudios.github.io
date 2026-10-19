@@ -1,0 +1,13 @@
+<map id="nexilis::client::ClientAPI::getInetTCPServerPortNumber" name="nexilis::client::ClientAPI::getInetTCPServerPortNumber">
+<area shape="rect" id="Node000001" title="Get the af_inet TCP server port number." alt="" coords="495,109,715,154"/>
+<area shape="rect" id="Node000002" href="$d8/d6b/classnexilis_1_1client_1_1af__inet_1_1TCPClient.html#ae91b99b27807f8c02790ff2a62f1d2ea" title="Constructor." alt="" coords="252,109,447,154"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="477,132,448,134,447,129,482,131"/>
+<area shape="rect" id="Node000003" href="$d8/d6b/classnexilis_1_1client_1_1af__inet_1_1TCPClient.html#ad1c27a0de96f3d5797fd25f9259f6331" title="Deleted copy assignment operator." alt="" coords="5,5,204,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="288,103,203,65,174,53,173,48,205,60,293,101"/>
+<area shape="rect" id="Node000004" href="$d8/d6b/classnexilis_1_1client_1_1af__inet_1_1TCPClient.html#a775218f37a2877ea59cb6f3e07ca1782" title="Move assignment operator." alt="" coords="5,75,204,119"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="234,116,204,114,204,108,239,115"/>
+<area shape="rect" id="Node000005" href="$d8/d6b/classnexilis_1_1client_1_1af__inet_1_1TCPClient.html#a0d0b2bca477bc5ec5e1b958b86fed443" title="Deleted copy constructor." alt="" coords="7,144,202,189"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="234,149,204,155,202,150,239,147"/>
+<area shape="rect" id="Node000006" href="$d8/d6b/classnexilis_1_1client_1_1af__inet_1_1TCPClient.html#a1b31773001051837a7d2dfe31c87b487" title="Move constructor." alt="" coords="7,213,202,258"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="293,160,205,203,174,215,173,210,203,199,288,162"/>
+</map>

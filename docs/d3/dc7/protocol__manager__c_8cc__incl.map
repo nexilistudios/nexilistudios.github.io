@@ -1,0 +1,19 @@
+<map id="src/nexilisc/protocol_manager_c.cc" name="src/nexilisc/protocol_manager_c.cc">
+<area shape="rect" id="Node000001" title=" " alt="" coords="226,5,378,50"/>
+<area shape="rect" id="Node000002" href="$d9/d5c/ports_8hh.html" title=" " alt="" coords="28,98,149,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,53,138,94,136,90,247,49"/>
+<area shape="rect" id="Node000004" href="$d8/de9/protocol__manager_8hh.html" title=" " alt="" coords="199,98,405,126"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="303,48,304,83,300,81,301,53"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="430,98,649,126"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="365,48,490,92,485,93,365,53"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,174,71,201"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="78,129,58,162,53,159,81,124"/>
+<area shape="rect" id="Node000005" href="$d8/db5/nx__protocol_8hh.html" title=" " alt="" coords="94,174,259,201"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="282,125,213,168,210,164,277,128"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="283,174,374,201"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="308,124,321,160,316,158,306,129"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="399,174,461,201"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="325,124,397,166,392,166,324,129"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="148,249,206,277"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="178,200,179,235,174,232,175,204"/>
+</map>

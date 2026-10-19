@@ -1,0 +1,11 @@
+<map id="include/nexilis/client/command/error.hh" name="include/nexilis/client/command/error.hh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="200,5,355,50"/>
+<area shape="rect" id="Node000002" href="$db/d20/command__parser_8hh.html" title=" " alt="" coords="198,98,357,143"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="279,63,280,99,275,97,276,68"/>
+<area shape="rect" id="Node000003" href="$d1/d83/command__spec_8hh.html" title=" " alt="" coords="5,191,190,235"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="223,149,141,193,139,188,218,151"/>
+<area shape="rect" id="Node000004" href="$d2/d60/client__api_8cc.html" title=" " alt="" coords="214,191,341,235"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="279,156,280,192,275,189,276,160"/>
+<area shape="rect" id="Node000005" href="$df/d48/command__parser_8cc.html" title=" " alt="" coords="365,191,521,235"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="331,148,406,190,401,190,330,153"/>
+</map>

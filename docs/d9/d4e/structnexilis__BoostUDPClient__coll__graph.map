@@ -1,0 +1,12 @@
+<map id="nexilis_BoostUDPClient" name="nexilis_BoostUDPClient">
+<area shape="rect" id="Node000001" title=" " alt="" coords="106,277,280,305"/>
+<area shape="rect" id="Node000002" href="$db/dfd/classnexilis_1_1client_1_1nxboost_1_1UDPClient.html" title=" " alt="" coords="109,159,278,204"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,218,196,278,191,275,191,221"/>
+<area shape="rect" id="Node000003" href="$d2/d7e/classnexilis_1_1NxClass.html" title=" " alt="" coords="5,5,131,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="65,46,69,79,80,109,105,136,139,158,134,160,102,140,75,111,64,80,64,51"/>
+<area shape="rect" id="Node000005" href="$da/d2e/classnexilis_1_1client_1_1ClientProtocol.html" title=" " alt="" coords="90,82,297,110"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="102,38,174,81,169,83,103,44"/>
+<area shape="rect" id="Node000004" href="$d5/da4/classnexilis_1_1NXProtocol.html" title=" " alt="" coords="321,82,466,110"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="345,118,247,161,244,156,350,115"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="195,123,196,160,191,158,192,128"/>
+</map>

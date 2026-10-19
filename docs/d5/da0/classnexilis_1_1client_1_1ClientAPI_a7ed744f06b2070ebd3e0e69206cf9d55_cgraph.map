@@ -1,0 +1,13 @@
+<map id="nexilis::client::ClientAPI::waitUntilUnixStreamReady" name="nexilis::client::ClientAPI::waitUntilUnixStreamReady">
+<area shape="rect" id="Node000001" title="Steal the runtime until af_unix STREAM connection is ready." alt="" coords="5,45,212,90"/>
+<area shape="rect" id="Node000002" href="$dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982" title="All the overloaded printing functions." alt="" coords="276,23,419,51"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,52,263,47,258,49,213,57"/>
+<area shape="rect" id="Node000003" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a2cdac5ce3d3fb33495382137b06878a5" title="If the client af_unix STREAM connection is ready." alt="" coords="260,75,435,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="212,78,247,84,242,85,212,83"/>
+<area shape="rect" id="Node000004" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a51524818393c2a2a704ee3b3db7b7729" title=" " alt="" coords="483,5,658,50"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="421,72,479,56,484,54,422,77"/>
+<area shape="rect" id="Node000005" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#af44554958311acac3fdbef1d97b5e108" title="af_unix STREAM." alt="" coords="483,75,658,119"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="435,94,470,97,465,97,435,100"/>
+<area shape="rect" id="Node000006" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a1a217bf8d2dfcc6a0f37b7fb0b1eb010" title="Is the server aware of the client, is the ClientAPI and Packet ready for use." alt="" coords="483,144,658,189"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="422,117,485,139,479,139,421,123"/>
+</map>

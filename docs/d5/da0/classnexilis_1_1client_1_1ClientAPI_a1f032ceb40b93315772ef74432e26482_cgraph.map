@@ -1,0 +1,9 @@
+<map id="nexilis::client::ClientAPI::waitUntilRoomsCreated" name="nexilis::client::ClientAPI::waitUntilRoomsCreated">
+<area shape="rect" id="Node000001" title="Let the program wait until nexilis has created all the rooms." alt="" coords="5,49,190,94"/>
+<area shape="rect" id="Node000002" href="$dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982" title="All the overloaded printing functions." alt="" coords="255,5,398,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,48,250,36,245,38,190,53"/>
+<area shape="rect" id="Node000003" href="$dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="260,57,394,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,69,246,71,241,72,190,74"/>
+<area shape="rect" id="Node000004" href="$d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae" title="Get the classes name as header for log messages." alt="" coords="238,109,416,137"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="190,89,250,105,245,106,190,95"/>
+</map>

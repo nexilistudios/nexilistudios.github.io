@@ -1,0 +1,9 @@
+<map id="nexilis::client::Room::Communication::getPayload" name="nexilis::client::Room::Communication::getPayload">
+<area shape="rect" id="Node000001" title="Get the payload data as a string." alt="" coords="271,76,484,121"/>
+<area shape="rect" id="Node000002" href="$d5/d09/room__c_8cc.html#ab1b5b084bd1907351f7a666c4f4cc3a1" title=" " alt="" coords="28,29,200,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="253,77,201,70,201,64,258,76"/>
+<area shape="rect" id="Node000003" href="$de/d5b/classnexilis_1_1client_1_1Room_1_1Communication.html#a86e7350d8b8f314e6f5d141cb9f92f5e" title="Comparison operator overload." alt="" coords="5,123,223,167"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="253,120,224,128,223,123,258,119"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="156,15,141,10,114,8,89,10,74,15,68,21,69,29,64,29,63,19,71,10,88,5,114,3,142,5,161,13"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="156,108,141,104,114,101,89,103,74,108,68,114,69,123,64,121,63,112,71,104,88,98,114,96,142,98,161,107"/>
+</map>

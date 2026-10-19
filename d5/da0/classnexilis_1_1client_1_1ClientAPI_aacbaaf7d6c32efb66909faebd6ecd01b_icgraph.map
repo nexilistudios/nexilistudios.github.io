@@ -1,5 +1,0 @@
-<map id="nexilis::client::ClientAPI::getInetTCPServerPortNumber" name="nexilis::client::ClientAPI::getInetTCPServerPortNumber">
-<area shape="rect" id="Node000001" title="Get the af_inet TCP server port number." alt="" coords="248,5,468,45"/>
-<area shape="rect" id="Node000002" href="$d8/d6b/classnexilis_1_1client_1_1af__inet_1_1TCPClient.html#ae91b99b27807f8c02790ff2a62f1d2ea" title="Constructor." alt="" coords="5,5,200,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,28,200,28,200,23,234,23"/>
-</map>

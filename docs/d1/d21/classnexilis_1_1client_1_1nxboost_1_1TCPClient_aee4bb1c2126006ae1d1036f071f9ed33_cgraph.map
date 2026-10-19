@@ -1,0 +1,15 @@
+<map id="nexilis::client::nxboost::TCPClient::operator=" name="nexilis::client::nxboost::TCPClient::operator=">
+<area shape="rect" id="Node000001" title="Move assignment operator." alt="" coords="5,70,174,115"/>
+<area shape="rect" id="Node000002" href="$da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#acc41d5e868dddd01209c4258df695ae1" title="Constructor." alt="" coords="438,159,645,204"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,112,173,135,222,154,272,165,324,173,425,183,420,183,323,178,271,170,221,159,171,140,127,118"/>
+<area shape="rect" id="Node000003" href="$d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696" title=" " alt="" coords="693,108,880,135"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="150,67,247,37,372,12,440,5,509,3,579,9,646,24,679,38,711,56,762,97,757,96,708,61,677,43,645,29,578,15,509,9,440,10,372,17,248,43,152,72"/>
+<area shape="rect" id="Node000004" href="$d5/da4/classnexilis_1_1NXProtocol.html#af09e9806c3da63398b852d39c3a2c06b" title="Default constructor." alt="" coords="470,39,614,84"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="174,84,455,65,453,70,175,89"/>
+<area shape="rect" id="Node000005" href="$d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a3cfc6290b4b33e467f67e73a66f4ba0b" title="Constructor." alt="" coords="222,99,390,144"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="174,101,209,107,204,109,174,106"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="635,156,710,140,715,139,636,161"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="390,140,439,155,434,155,390,146"/>
+<area shape="poly" id="edge7_Node000005_Node000003" title=" " alt="" coords="390,119,680,121,675,122,391,124"/>
+<area shape="poly" id="edge8_Node000005_Node000004" title=" " alt="" coords="389,98,457,83,452,84,391,103"/>
+</map>

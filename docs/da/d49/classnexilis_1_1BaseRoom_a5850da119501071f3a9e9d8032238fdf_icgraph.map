@@ -1,0 +1,17 @@
+<map id="nexilis::BaseRoom::getContext" name="nexilis::BaseRoom::getContext">
+<area shape="rect" id="Node000001" title="Get the 2D/3D context for the room." alt="" coords="428,179,578,223"/>
+<area shape="rect" id="Node000002" href="$da/d49/classnexilis_1_1BaseRoom.html#a5a59b4b0525b98bd76944a0de2921a02" title=" " alt="" coords="230,5,380,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="475,166,433,116,378,64,362,53,361,48,382,60,437,112,480,166"/>
+<area shape="rect" id="Node000003" href="$da/d49/classnexilis_1_1BaseRoom.html#a7ccdff24d07235ca4eab4f6df73945fc" title="Add an Object3D to the room." alt="" coords="230,75,380,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="448,171,379,134,357,123,356,117,381,129,453,170"/>
+<area shape="rect" id="Node000004" href="$da/d49/classnexilis_1_1BaseRoom.html#a8d3adfcc34b05b0fc6c575842a5f2835" title=" " alt="" coords="230,144,380,189"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="410,186,381,182,380,177,416,185"/>
+<area shape="rect" id="Node000006" href="$da/d49/classnexilis_1_1BaseRoom.html#aa5ee203cd29be2dafc16845ac81fa916" title=" " alt="" coords="230,213,380,258"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="411,218,381,225,379,220,416,216"/>
+<area shape="rect" id="Node000007" href="$da/d49/classnexilis_1_1BaseRoom.html#a3f2a276277cb901538e78ef08aefd6b7" title=" " alt="" coords="230,283,380,327"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="453,230,381,273,358,284,355,280,379,268,448,232"/>
+<area shape="rect" id="Node000008" href="$da/d49/classnexilis_1_1BaseRoom.html#a32f0491f2a77ed939cfa47b43d56d7eb" title=" " alt="" coords="230,352,380,397"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="480,235,437,290,382,342,363,354,361,349,378,338,433,286,475,237"/>
+<area shape="rect" id="Node000005" href="$da/d49/classnexilis_1_1BaseRoom.html#a93cead961711422d7e22a1eaaab87615" title=" " alt="" coords="5,144,182,189"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="212,168,183,169,181,164,216,165"/>
+</map>

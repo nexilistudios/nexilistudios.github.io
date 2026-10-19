@@ -1,0 +1,5 @@
+<map id="nexilis::server::BaseMessage::getAddress" name="nexilis::server::BaseMessage::getAddress">
+<area shape="rect" id="Node000001" title="Get the address where the message is assigned." alt="" coords="265,5,476,50"/>
+<area shape="rect" id="Node000002" href="$d9/dcc/classnexilis_1_1server_1_1BaseMessage.html#a3cd4203c8950fc8d36309b740aebab3e" title="Get the type of the class that inherits BaseMessage." alt="" coords="5,5,217,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="247,28,217,30,217,25,252,28"/>
+</map>

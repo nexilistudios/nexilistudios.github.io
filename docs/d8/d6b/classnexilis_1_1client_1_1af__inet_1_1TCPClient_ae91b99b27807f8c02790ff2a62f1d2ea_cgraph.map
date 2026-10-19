@@ -1,0 +1,16 @@
+<map id="nexilis::client::af_inet::TCPClient::TCPClient" name="nexilis::client::af_inet::TCPClient::TCPClient">
+<area shape="rect" id="Node000001" title="Constructor." alt="" coords="5,147,201,191"/>
+<area shape="rect" id="Node000002" href="$da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#acc41d5e868dddd01209c4258df695ae1" title="Constructor." alt="" coords="255,5,462,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,144,184,106,247,67,278,54,274,58,250,71,187,110,135,148"/>
+<area shape="rect" id="Node000003" href="$d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696" title=" " alt="" coords="517,44,703,72"/>
+<area shape="poly" id="edge6_Node000001_Node000003" title=" " alt="" coords="154,144,248,110,379,83,504,67,499,70,380,88,249,116,157,148"/>
+<area shape="rect" id="Node000004" href="$db/d41/classnexilis_1_1Ports.html#aec6bdcc4f5c158caf9754ab478c9801b" title=" " alt="" coords="254,124,464,152"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="200,155,240,151,236,154,202,160"/>
+<area shape="rect" id="Node000005" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a3be92a07de9c7a79109dcc16f0b40d05" title="af_inet TCP." alt="" coords="262,176,456,221"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="201,178,249,184,244,186,202,183"/>
+<area shape="rect" id="Node000006" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#aacbaaf7d6c32efb66909faebd6ecd01b" title="Get the af_inet TCP server port number." alt="" coords="249,245,469,290"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="153,189,250,231,271,240,265,240,248,235,152,195"/>
+<area shape="rect" id="Node000007" href="$d5/da4/classnexilis_1_1NXProtocol.html#af09e9806c3da63398b852d39c3a2c06b" title="Default constructor." alt="" coords="287,315,431,359"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="124,189,178,245,212,274,250,300,275,314,270,314,247,305,209,279,174,249,122,194"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="463,38,504,44,499,46,464,43"/>
+</map>

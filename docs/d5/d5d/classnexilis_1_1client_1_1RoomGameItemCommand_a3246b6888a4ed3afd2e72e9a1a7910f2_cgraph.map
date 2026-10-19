@@ -1,0 +1,9 @@
+<map id="nexilis::client::RoomGameItemCommand::execute" name="nexilis::client::RoomGameItemCommand::execute">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,75,199,119"/>
+<area shape="rect" id="Node000002" href="$d0/dfc/classnexilis_1_1GameItem.html#a68796363bb49fc90af9a81352ad4eedc" title=" " alt="" coords="319,5,468,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,71,246,60,306,48,301,50,247,65,199,77"/>
+<area shape="rect" id="Node000003" href="$d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a827d09d95f7d81fa2cd69c75bdc71f3e" title=" " alt="" coords="247,75,541,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,94,234,96,228,98,200,100"/>
+<area shape="rect" id="Node000004" href="$d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a89bf770a7a9d8bb30c56a961fbf9e697" title=" " alt="" coords="277,144,511,189"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="198,117,247,129,284,140,278,140,246,134,198,123"/>
+</map>

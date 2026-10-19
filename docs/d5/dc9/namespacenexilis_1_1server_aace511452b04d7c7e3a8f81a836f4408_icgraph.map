@@ -1,0 +1,14 @@
+<map id="nexilis::server::merge_boost_json" name="nexilis::server::merge_boost_json">
+<area shape="rect" id="Node000001" title=" " alt="" coords="718,75,882,119"/>
+<area shape="poly" id="edge6_Node000001_Node000001" title=" " alt="" coords="835,59,823,56,800,53,779,55,766,60,761,66,762,76,757,73,755,65,763,56,778,50,800,48,825,51,841,60"/>
+<area shape="rect" id="Node000002" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#aa80de18cfcf90a60cddef6d19e10abf4" title=" " alt="" coords="478,75,670,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="700,97,671,100,671,94,705,97"/>
+<area shape="rect" id="Node000003" href="$da/d15/classnexilis_1_1server_1_1Command.html#a36f27b2491becaf040095c3cb5ec4067" title=" " alt="" coords="242,75,430,119"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="460,97,431,100,430,94,465,97"/>
+<area shape="rect" id="Node000004" href="$da/d15/classnexilis_1_1server_1_1Command.html#a2d49d7ed265f7e6d1deb2bae8060f686" title="Deleted copy assignment operator." alt="" coords="5,5,194,50"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="240,71,178,53,178,48,245,69"/>
+<area shape="rect" id="Node000005" href="$d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="14,75,185,119"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="224,98,185,100,185,94,229,96"/>
+<area shape="rect" id="Node000006" href="$da/d15/classnexilis_1_1server_1_1Command.html#adb7341228f4137e0656f514180b5a45a" title=" " alt="" coords="5,144,194,189"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="245,124,179,146,178,141,240,125"/>
+</map>

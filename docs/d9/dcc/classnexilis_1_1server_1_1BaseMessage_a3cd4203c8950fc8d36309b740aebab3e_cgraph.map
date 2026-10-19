@@ -1,0 +1,10 @@
+<map id="nexilis::server::BaseMessage::getType" name="nexilis::server::BaseMessage::getType">
+<area shape="rect" id="Node000001" title="Get the type of the class that inherits BaseMessage." alt="" coords="5,99,217,143"/>
+<area shape="rect" id="Node000002" href="$d9/dcc/classnexilis_1_1server_1_1BaseMessage.html#adfa0f408e5fc859b9073a98aab025de9" title="Get the address where the message is assigned." alt="" coords="265,5,476,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,96,264,60,287,54,282,57,266,65,171,101"/>
+<area shape="rect" id="Node000003" href="$d9/dcc/classnexilis_1_1server_1_1BaseMessage.html#ae3bf99787f4a276a1de4a31f2f56974a" title="Get the unique identifier of the message." alt="" coords="265,99,476,143"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="217,118,252,120,247,122,218,124"/>
+<area shape="rect" id="Node000004" href="$d9/dcc/classnexilis_1_1server_1_1BaseMessage.html#a224c829d4761f40dac976f77315807ad" title="Get pointer to the user that is associated with the message." alt="" coords="265,168,476,213"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="198,141,272,163,267,164,197,147"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="321,97,320,88,328,80,345,74,370,72,398,74,417,84,411,83,397,80,370,77,346,79,331,84,325,90,326,99"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="nexilis::client::ClientAPI::isBoostUDPReady" name="nexilis::client::ClientAPI::isBoostUDPReady">
+<area shape="rect" id="Node000001" title="If the client boost UDP connection is ready." alt="" coords="5,75,181,119"/>
+<area shape="rect" id="Node000002" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a0384170cf8cea4868f8edc1f54dd1a8b" title="boost UDP" alt="" coords="229,5,438,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,72,241,53,237,56,174,77"/>
+<area shape="rect" id="Node000003" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a51524818393c2a2a704ee3b3db7b7729" title=" " alt="" coords="246,75,421,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="181,94,232,96,227,98,182,100"/>
+<area shape="rect" id="Node000004" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a1a217bf8d2dfcc6a0f37b7fb0b1eb010" title="Is the server aware of the client, is the ClientAPI and Packet ready for use." alt="" coords="246,144,421,189"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="173,117,242,139,236,140,173,123"/>
+</map>

@@ -1,0 +1,23 @@
+<map id="nexilis::server::Movement::linear" name="nexilis::server::Movement::linear">
+<area shape="rect" id="Node000001" title="Linear movement." alt="" coords="773,109,965,154"/>
+<area shape="rect" id="Node000002" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a97175caef23eb9fad365629c3d78e107" title=" " alt="" coords="503,40,725,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="767,105,699,88,699,83,772,105"/>
+<area shape="rect" id="Node000008" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#abb949f0528da98933c7ed71b1b7c8913" title=" " alt="" coords="503,109,725,154"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="755,132,726,134,725,129,760,131"/>
+<area shape="rect" id="Node000009" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a2ab39913db19a51bb2358d6684b1749a" title=" " alt="" coords="512,179,717,223"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="772,158,699,181,698,175,767,159"/>
+<area shape="rect" id="Node000003" href="$da/d15/classnexilis_1_1server_1_1Command.html#a36f27b2491becaf040095c3cb5ec4067" title=" " alt="" coords="254,75,442,119"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="485,79,443,87,442,82,490,78"/>
+<area shape="rect" id="Node000007" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a871e76e71e7c6d117e1ec38739d2c5f3" title=" " alt="" coords="242,144,455,189"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="519,90,504,99,481,116,456,134,429,146,428,141,454,129,477,112,502,95,514,92"/>
+<area shape="rect" id="Node000004" href="$da/d15/classnexilis_1_1server_1_1Command.html#a2d49d7ed265f7e6d1deb2bae8060f686" title="Deleted copy assignment operator." alt="" coords="5,5,194,50"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="248,71,182,53,182,48,253,69"/>
+<area shape="rect" id="Node000005" href="$d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="14,75,185,119"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="236,98,186,100,185,94,241,96"/>
+<area shape="rect" id="Node000006" href="$da/d15/classnexilis_1_1server_1_1Command.html#adb7341228f4137e0656f514180b5a45a" title=" " alt="" coords="5,144,194,189"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="248,125,183,146,181,141,253,123"/>
+<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="485,115,443,112,443,107,490,115"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="485,149,456,155,455,150,490,148"/>
+<area shape="poly" id="edge11_Node000009_Node000003" title=" " alt="" coords="514,172,502,169,477,151,454,134,428,123,429,117,456,129,481,147,504,164,519,173"/>
+<area shape="poly" id="edge12_Node000009_Node000007" title=" " alt="" coords="493,186,455,183,456,178,499,186"/>
+</map>

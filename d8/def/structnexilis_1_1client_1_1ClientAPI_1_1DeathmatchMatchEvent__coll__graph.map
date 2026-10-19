@@ -1,5 +1,0 @@
-<map id="nexilis::client::ClientAPI::DeathmatchMatchEvent" name="nexilis::client::ClientAPI::DeathmatchMatchEvent">
-<area shape="rect" id="Node000001" title="A deathmatch player entering or leaving the respawn wait." alt="" coords="5,93,192,133"/>
-<area shape="rect" id="Node000002" href="$dd/db0/structnexilis_1_1client_1_1ClientAPI_1_1MatchEvent.html" title="Base for application&#45;managed match notifications." alt="" coords="11,5,187,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,59,101,93,96,93,96,59"/>
-</map>

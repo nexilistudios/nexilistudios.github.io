@@ -1,0 +1,7 @@
+<map id="nexilis::NXProtocol::getType" name="nexilis::NXProtocol::getType">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,40,150,85"/>
+<area shape="rect" id="Node000002" href="$d5/da4/classnexilis_1_1NXProtocol.html#a3248202c59d7174876a5d268d6021d64" title="Get the mode of a type." alt="" coords="198,5,342,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,47,185,42,180,44,151,52"/>
+<area shape="rect" id="Node000003" href="$d5/da4/classnexilis_1_1NXProtocol.html#a0359edd948a8adfcf565c6e57da29480" title="Returns a string value of the Type." alt="" coords="198,75,342,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="150,73,185,81,180,82,150,78"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="nexilis::Ports::getInetUDPPort" name="nexilis::Ports::getInetUDPPort">
+<area shape="rect" id="Node000001" title=" " alt="" coords="468,14,681,42"/>
+<area shape="rect" id="Node000002" href="$dd/d79/classnexilis_1_1client_1_1af__inet_1_1UDPClient.html#aaf3c724b4e74a0ddb26ede0c8453632c" title="NXProtocol::start() implementation." alt="" coords="255,5,420,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="450,28,421,30,420,25,455,28"/>
+<area shape="rect" id="Node000003" href="$dd/d79/classnexilis_1_1client_1_1af__inet_1_1UDPClient.html#aaedc01b466874f672ac35ac1f2707be7" title="Deleted copy assignment operator." alt="" coords="5,5,207,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="236,28,207,30,207,25,242,27"/>
+</map>

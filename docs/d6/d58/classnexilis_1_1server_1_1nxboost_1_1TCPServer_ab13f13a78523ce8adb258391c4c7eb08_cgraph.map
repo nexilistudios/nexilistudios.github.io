@@ -1,0 +1,9 @@
+<map id="nexilis::server::nxboost::TCPServer::TCPServer" name="nexilis::server::nxboost::TCPServer::TCPServer">
+<area shape="rect" id="Node000001" title="Move constructor." alt="" coords="5,75,179,119"/>
+<area shape="rect" id="Node000002" href="$d5/da4/classnexilis_1_1NXProtocol.html#af09e9806c3da63398b852d39c3a2c06b" title="Default constructor." alt="" coords="263,5,407,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,72,250,51,245,54,174,76"/>
+<area shape="rect" id="Node000003" href="$de/df0/classnexilis_1_1server_1_1ServerProtocol.html#af3c78251fef035465c2b71962bad2c57" title=" " alt="" coords="227,75,443,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,94,213,96,208,98,180,100"/>
+<area shape="rect" id="Node000004" href="$d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#aa79a4c8d4352fa591d6647eca3bcf93e" title="Constructor." alt="" coords="248,144,422,189"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="173,117,242,139,237,140,173,123"/>
+</map>

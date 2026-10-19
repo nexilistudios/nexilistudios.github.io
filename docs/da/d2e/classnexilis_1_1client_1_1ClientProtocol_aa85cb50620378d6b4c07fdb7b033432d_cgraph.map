@@ -1,0 +1,10 @@
+<map id="nexilis::client::ClientProtocol::operator=" name="nexilis::client::ClientProtocol::operator=">
+<area shape="rect" id="Node000001" title="Move assignment operator." alt="" coords="5,36,213,81"/>
+<area shape="rect" id="Node000002" href="$da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#acc41d5e868dddd01209c4258df695ae1" title="Constructor." alt="" coords="261,5,468,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,43,248,41,243,42,214,48"/>
+<area shape="rect" id="Node000004" href="$d2/d7e/classnexilis_1_1NxClass.html#ad127a52262928cb5edf33905b2dbbc1a" title="Move assignment operator." alt="" coords="265,74,464,102"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="213,68,252,74,246,75,213,73"/>
+<area shape="rect" id="Node000003" href="$d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696" title=" " alt="" coords="516,44,702,72"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="468,38,503,45,498,45,468,43"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="464,73,498,72,503,71,465,78"/>
+</map>

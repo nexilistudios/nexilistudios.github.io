@@ -1,0 +1,29 @@
+<map id="nexilis_boost_udp_client_send_message_with_callback" name="nexilis_boost_udp_client_send_message_with_callback">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,144,227,188"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="68,143,66,133,74,124,91,119,116,117,143,119,161,127,156,129,142,125,116,122,92,124,77,129,71,135,73,143"/>
+<area shape="rect" id="Node000002" href="$db/dfd/classnexilis_1_1client_1_1nxboost_1_1UDPClient.html#a91941418589609935209b0e8176077fd" title="ClientProtocol::sendMessage(const nx_data&amp; message) implementation." alt="" coords="275,144,467,188"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="226,163,261,165,257,167,228,168"/>
+<area shape="rect" id="Node000003" href="$dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982" title="All the overloaded printing functions." alt="" coords="547,5,690,33"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="391,141,444,92,477,66,514,43,535,37,530,39,516,48,480,70,447,96,395,145"/>
+<area shape="rect" id="Node000004" href="$dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="552,57,686,85"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="412,141,460,117,514,94,539,88,534,91,516,99,462,122,414,145"/>
+<area shape="rect" id="Node000005" href="$da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#ac9059afc8258f93d0190892d4e4a5b9a" title=" " alt="" coords="515,109,722,154"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="467,150,502,147,497,149,468,155"/>
+<area shape="rect" id="Node000006" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a51524818393c2a2a704ee3b3db7b7729" title=" " alt="" coords="531,178,706,223"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="467,177,518,186,513,187,468,182"/>
+<area shape="rect" id="Node000007" href="$db/d44/namespacenexilis_1_1udp__auth.html#a2f3ec70d456014a8a5ac475216ef3db9" title=" " alt="" coords="548,272,689,316"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="417,186,563,264,558,265,415,191"/>
+<area shape="rect" id="Node000008" href="$db/d44/namespacenexilis_1_1udp__auth.html#a3513b7d5da077eec133888bd8cfc6a80" title=" " alt="" coords="548,365,689,410"/>
+<area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="389,186,443,253,478,291,517,326,560,357,554,356,513,331,475,295,439,257,387,191"/>
+<area shape="poly" id="edge8_Node000007_Node000007" title=" " alt="" coords="574,270,572,261,580,252,596,247,619,245,644,247,661,257,656,256,643,253,619,250,597,252,583,257,578,263,579,272"/>
+<area shape="poly" id="edge10_Node000008_Node000008" title=" " alt="" coords="574,363,572,355,580,346,596,340,619,338,644,341,661,350,656,349,643,346,619,343,597,345,583,350,578,356,578,366"/>
+<area shape="rect" id="Node000009" href="$dc/dfa/namespacenexilis_1_1message__auth.html#ad2fb5d3e62f9c5f3575c57b5fd4277bf" title=" " alt="" coords="770,365,938,410"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="689,385,757,387,752,387,689,390"/>
+<area shape="poly" id="edge12_Node000009_Node000009" title=" " alt="" coords="811,363,809,355,816,346,831,340,854,338,879,341,895,350,890,349,878,346,854,343,833,345,819,350,814,356,815,366"/>
+<area shape="rect" id="Node000010" href="$dc/dfa/namespacenexilis_1_1message__auth.html#a3bffff3bf649a82f183135f488be12f9" title=" " alt="" coords="986,373,1182,401"/>
+<area shape="poly" id="edge13_Node000009_Node000010" title=" " alt="" coords="938,385,973,387,967,387,938,390"/>
+<area shape="poly" id="edge16_Node000010_Node000010" title=" " alt="" coords="1044,372,1038,364,1043,355,1059,349,1084,347,1111,349,1127,358,1122,358,1109,354,1084,352,1060,354,1047,359,1043,364,1049,374"/>
+<area shape="rect" id="Node000011" href="$dc/dfa/namespacenexilis_1_1message__auth.html#ab8ae1f049786d898466a6d38b12efae4" title=" " alt="" coords="1230,365,1397,410"/>
+<area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="1182,385,1217,387,1212,387,1182,390"/>
+<area shape="poly" id="edge15_Node000011_Node000011" title=" " alt="" coords="1270,363,1268,355,1276,346,1291,340,1314,338,1339,341,1355,350,1350,349,1337,346,1314,343,1292,345,1279,350,1274,356,1274,366"/>
+</map>

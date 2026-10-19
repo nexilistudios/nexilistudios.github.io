@@ -1,7 +1,0 @@
-<map id="nexilis::client::ClientProtocol::authenticate" name="nexilis::client::ClientProtocol::authenticate">
-<area shape="rect" id="Node000001" title="Sign an established request; initial authentication has no session key." alt="" coords="275,41,483,81"/>
-<area shape="rect" id="Node000002" href="$d8/d6b/classnexilis_1_1client_1_1af__inet_1_1TCPClient.html#a28bd6cf035fb936f13bd1fdfc467c632" title="ClientProtocol::sendMessage(const nx_data&amp;) implementation." alt="" coords="5,5,227,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="261,48,227,43,227,38,262,43"/>
-<area shape="rect" id="Node000003" href="$d8/d6b/classnexilis_1_1client_1_1af__inet_1_1TCPClient.html#ab60ad5f9441a651b53d8dae4129a1cfc" title="ClientProtocol::sendMessageAsync(const nx_data&amp;) implementation." alt="" coords="5,70,227,125"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="262,80,227,85,227,80,261,75"/>
-</map>

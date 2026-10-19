@@ -1,0 +1,22 @@
+<map id="nexilis::client::Room::Room" name="nexilis::client::Room::Room">
+<area shape="rect" id="Node000001" title="Constructor." alt="" coords="496,235,650,279"/>
+<area shape="rect" id="Node000002" href="$d3/d69/classnexilis_1_1client_1_1GetInfoRoomsCommand.html#a8d88de2409b9c924a3c54d534caada17" title=" " alt="" coords="231,5,424,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="556,220,539,185,515,142,484,100,446,64,425,51,425,46,450,60,488,97,519,139,543,182,561,222"/>
+<area shape="rect" id="Node000003" href="$df/d2c/classnexilis_1_1client_1_1RoomManagementCommand.html#abd74df6bdcd0895fed166f8ab0a35334" title=" " alt="" coords="208,75,448,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="543,222,501,177,475,154,447,134,425,123,424,117,449,129,478,150,505,173,549,222"/>
+<area shape="rect" id="Node000004" href="$db/dbd/classnexilis_1_1client_1_1Room.html#a9b2b08260a0915ca0c750b03b7deef30" title="Non&#45;comparison operator overload." alt="" coords="251,144,405,189"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="500,229,447,210,397,192,396,187,449,205,505,228"/>
+<area shape="rect" id="Node000005" href="$db/dbd/classnexilis_1_1client_1_1Room.html#a973543d435d07591920c63e7c12364cf" title="Copy assignment operator." alt="" coords="5,281,160,326"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="478,246,351,241,279,244,208,254,166,267,128,283,125,279,164,262,207,249,278,239,351,236,483,244"/>
+<area shape="rect" id="Node000006" href="$db/dbd/classnexilis_1_1client_1_1Room.html#aca24c3a8b1c186100bec2c51b93fc0c7" title="Move assignment operator." alt="" coords="251,264,405,309"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="478,269,406,280,405,275,483,267"/>
+<area shape="rect" id="Node000007" href="$db/dbd/classnexilis_1_1client_1_1Room.html#af889314df2c68ecbfbe20c264bb28ae4" title="Comparison operator overload." alt="" coords="251,357,405,402"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="517,285,449,323,377,359,375,354,447,319,513,288"/>
+<area shape="rect" id="Node000008" href="$db/dbd/classnexilis_1_1client_1_1Room.html#ade3c76b4dd81ea01a44594511b292d67" title="Copy constructor." alt="" coords="251,427,405,471"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="555,292,512,357,483,389,449,417,406,437,404,432,447,412,479,385,508,354,550,295"/>
+<area shape="rect" id="Node000009" href="$db/dbd/classnexilis_1_1client_1_1Room.html#ac87a138a97e0e52950258c9139d97390" title="Move constructor." alt="" coords="251,496,405,541"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="563,292,548,339,524,390,492,442,450,486,429,499,406,508,404,503,426,494,446,482,487,438,520,388,543,337,560,296"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="121,267,108,262,82,260,60,262,45,267,39,273,41,281,36,281,34,271,42,262,58,257,83,255,109,257,126,265"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="237,354,157,329,157,324,242,351"/>
+<area shape="poly" id="edge9_Node000007_Node000007" title=" " alt="" coords="366,342,353,338,328,336,305,338,291,343,285,349,286,358,281,356,280,347,288,338,304,333,328,331,354,333,372,342"/>
+</map>

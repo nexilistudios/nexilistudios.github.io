@@ -1,5 +1,0 @@
-<map id="nexilis::client::ClientProtocol::getProtocolStatusString" name="nexilis::client::ClientProtocol::getProtocolStatusString">
-<area shape="rect" id="Node000001" title="Get string value of m_protocolStatus." alt="" coords="5,5,213,45"/>
-<area shape="rect" id="Node000002" href="$da/d9d/classnexilis_1_1client_1_1ProtocolUtils.html#aba08e8d47d140f7d7e26c40a6704b602" title=" " alt="" coords="261,5,491,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,23,248,23,248,28,213,28"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="nexilis::client::ClientAPI::ClientData::setRoomId" name="nexilis::client::ClientAPI::ClientData::setRoomId">
-<area shape="rect" id="Node000001" title=" " alt="" coords="456,5,633,45"/>
-<area shape="rect" id="Node000002" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a9c57706bb980adb5956a37ec8aedc5c1" title=" " alt="" coords="232,5,408,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="442,28,408,28,408,23,442,23"/>
-<area shape="rect" id="Node000003" href="$d0/d63/classnexilis_1_1client_1_1GetRoomIdCommand.html#aa68817bdc2b10b94742cf5ac30273966" title=" " alt="" coords="5,5,184,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="218,28,184,28,184,23,218,23"/>
-</map>

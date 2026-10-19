@@ -1,0 +1,5 @@
+<map id="nexilis::client::ClientAPI::BombMatchEvent" name="nexilis::client::ClientAPI::BombMatchEvent">
+<area shape="rect" id="Node000001" title="Authoritative state of an application&#45;managed bomb round." alt="" coords="5,98,181,143"/>
+<area shape="rect" id="Node000002" href="$dd/db0/structnexilis_1_1client_1_1ClientAPI_1_1MatchEvent.html" title="Base for application&#45;managed match notifications." alt="" coords="5,5,181,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,64,96,99,90,97,91,68"/>
+</map>

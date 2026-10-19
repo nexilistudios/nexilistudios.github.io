@@ -1,0 +1,7 @@
+<map id="nexilis::server::nxboost::UDPServer::UDPServer" name="nexilis::server::nxboost::UDPServer::UDPServer">
+<area shape="rect" id="Node000001" title="Constructor." alt="" coords="5,28,183,72"/>
+<area shape="rect" id="Node000002" href="$d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696" title=" " alt="" coords="246,5,432,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,36,233,32,228,33,184,41"/>
+<area shape="rect" id="Node000003" href="$de/df0/classnexilis_1_1server_1_1ServerProtocol.html#af3c78251fef035465c2b71962bad2c57" title=" " alt="" coords="231,57,447,102"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="183,58,218,64,212,65,183,63"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="nexilis::client::ClientProtocol::authenticate" name="nexilis::client::ClientProtocol::authenticate">
+<area shape="rect" id="Node000001" title="Sign an established request; initial authentication has no session key." alt="" coords="5,29,213,74"/>
+<area shape="rect" id="Node000002" href="$dc/dfa/namespacenexilis_1_1message__auth.html#ad2fb5d3e62f9c5f3575c57b5fd4277bf" title=" " alt="" coords="261,29,428,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,49,247,51,242,52,213,54"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="301,27,299,19,307,10,322,5,344,3,369,5,386,14,380,14,368,10,344,8,323,10,310,15,304,21,305,30"/>
+<area shape="rect" id="Node000003" href="$dc/dfa/namespacenexilis_1_1message__auth.html#a3bffff3bf649a82f183135f488be12f9" title=" " alt="" coords="476,38,672,66"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="428,49,463,52,458,52,428,54"/>
+<area shape="poly" id="edge6_Node000003_Node000003" title=" " alt="" coords="535,36,528,29,534,19,549,13,574,11,601,14,617,23,612,22,600,19,574,16,550,18,537,23,534,29,540,38"/>
+<area shape="rect" id="Node000004" href="$dc/dfa/namespacenexilis_1_1message__auth.html#ab8ae1f049786d898466a6d38b12efae4" title=" " alt="" coords="720,29,888,74"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="672,49,708,52,702,52,673,54"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="761,27,759,19,766,10,781,5,804,3,829,5,845,15,840,14,828,10,804,8,783,10,769,15,764,21,765,30"/>
+</map>

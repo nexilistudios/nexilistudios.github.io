@@ -1,0 +1,9 @@
+<map id="nexilis::udp_auth::hexValue" name="nexilis::udp_auth::hexValue">
+<area shape="rect" id="Node000001" title=" " alt="" coords="419,29,559,74"/>
+<area shape="poly" id="edge4_Node000001_Node000001" title=" " alt="" coords="518,13,508,10,489,8,472,10,461,15,457,21,457,30,453,27,452,19,458,10,470,5,489,3,509,5,523,14"/>
+<area shape="rect" id="Node000002" href="$db/d44/namespacenexilis_1_1udp__auth.html#a8ebdfdbacb3e3300981bb53464c13439" title=" " alt="" coords="231,29,371,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="401,52,371,54,371,49,406,52"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="329,13,319,10,301,8,283,10,273,15,268,21,269,30,265,27,263,19,269,10,282,5,301,3,321,5,335,14"/>
+<area shape="rect" id="Node000003" href="$d8/dcb/classnexilis_1_1client_1_1GetClientIdCommand.html#a47303a84c43b6869d7f3508510eb84fd" title=" " alt="" coords="5,29,183,74"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="213,52,183,54,183,49,218,51"/>
+</map>

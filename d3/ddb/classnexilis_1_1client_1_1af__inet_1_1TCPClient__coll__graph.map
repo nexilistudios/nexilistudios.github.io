@@ -1,9 +1,0 @@
-<map id="nexilis::client::af_inet::TCPClient" name="nexilis::client::af_inet::TCPClient">
-<area shape="rect" id="Node000001" title="AF_INET TCP client protocol using raw sockets." alt="" coords="113,152,243,192"/>
-<area shape="rect" id="Node000002" href="$d5/da4/classnexilis_1_1NXProtocol.html" title=" " alt="" coords="5,79,151,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,111,156,150,152,154,102,115"/>
-<area shape="rect" id="Node000003" href="$da/d2e/classnexilis_1_1client_1_1ClientProtocol.html" title=" " alt="" coords="175,79,383,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="255,114,204,154,201,150,252,110"/>
-<area shape="rect" id="Node000004" href="$d2/d7e/classnexilis_1_1NxClass.html" title=" " alt="" coords="216,5,343,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="282,44,282,79,277,79,277,44"/>
-</map>

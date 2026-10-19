@@ -1,0 +1,20 @@
+<map id="nexilis::client::nxboost::TCPClient::operator=" name="nexilis::client::nxboost::TCPClient::operator=">
+<area shape="rect" id="Node000001" title="Deleted copy assignment operator." alt="" coords="5,75,174,119"/>
+<area shape="rect" id="Node000002" href="$d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a1b45b8575f174da4069c2e4aa4416511" title="ClientProtocol::sendMessage(const nx_data&amp;) implementation." alt="" coords="241,5,430,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,72,241,53,237,56,173,76"/>
+<area shape="rect" id="Node000003" href="$d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a59567fda856169a936804c9a5c91dfc7" title="ClientProtocol::sendMessageAsync(const nx_data&amp;) implementation." alt="" coords="222,75,450,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,95,208,96,203,98,175,99"/>
+<area shape="rect" id="Node000006" href="$d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a3cfc6290b4b33e467f67e73a66f4ba0b" title="Constructor." alt="" coords="252,169,420,214"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="150,117,264,162,259,165,150,123"/>
+<area shape="rect" id="Node000004" href="$dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="534,31,669,59"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="450,72,522,60,517,62,451,77"/>
+<area shape="rect" id="Node000005" href="$d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae" title="Get the classes name as header for log messages." alt="" coords="512,83,691,111"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="450,94,499,96,494,98,451,100"/>
+<area shape="rect" id="Node000007" href="$da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#acc41d5e868dddd01209c4258df695ae1" title="Constructor." alt="" coords="498,135,705,179"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="420,178,485,172,480,173,421,183"/>
+<area shape="rect" id="Node000008" href="$d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696" title=" " alt="" coords="753,174,940,202"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="420,190,705,189,741,191,735,191,705,194,421,195"/>
+<area shape="rect" id="Node000009" href="$d5/da4/classnexilis_1_1NXProtocol.html#af09e9806c3da63398b852d39c3a2c06b" title="Default constructor." alt="" coords="530,255,674,299"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="408,212,518,249,513,250,408,217"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="706,167,740,174,735,174,706,173"/>
+</map>

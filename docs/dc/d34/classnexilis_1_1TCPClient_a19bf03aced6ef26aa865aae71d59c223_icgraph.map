@@ -1,0 +1,6 @@
+<map id="nexilis::TCPClient::sendMessage" name="nexilis::TCPClient::sendMessage">
+<area shape="rect" id="Node000001" title="Send nexilis message." alt="" coords="194,21,329,66"/>
+<area shape="rect" id="Node000002" href="$d8/d34/namespacenexilis.html#a96f5c6cfdccac25888b5a40ef9d32592" title=" " alt="" coords="5,29,146,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,43,146,46,146,41,181,43"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="106,14,96,10,75,8,56,10,46,15,43,20,48,29,43,29,38,20,42,11,55,5,76,3,98,5,111,14"/>
+</map>

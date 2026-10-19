@@ -1,0 +1,13 @@
+<map id="nexilis::server::User::User" name="nexilis::server::User::User">
+<area shape="rect" id="Node000001" title="Constructor." alt="" coords="205,144,356,189"/>
+<area shape="rect" id="Node000002" href="$d4/d3a/classnexilis_1_1server_1_1User.html#aef835fcdbb10325d7d558591f082ed4e" title="Deleted copy assignment operator." alt="" coords="5,5,157,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="243,134,203,99,155,65,137,53,135,48,158,60,206,95,248,133"/>
+<area shape="rect" id="Node000003" href="$d4/d3a/classnexilis_1_1server_1_1User.html#aee8f82c276cb4af537a5817222d5d2d1" title="Move assignment operator." alt="" coords="5,75,157,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,139,148,123,147,117,202,137"/>
+<area shape="rect" id="Node000004" href="$d4/d3a/classnexilis_1_1server_1_1User.html#a5ef143ed0e055154edb0030ea5646c07" title="Operator overload for comparison operator." alt="" coords="5,144,157,189"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="187,168,158,169,156,164,191,165"/>
+<area shape="rect" id="Node000005" href="$d4/d3a/classnexilis_1_1server_1_1User.html#a630ceb7ddb1ab2fcbe8e3995dfde874f" title="Deleted copy constructor." alt="" coords="5,213,157,258"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="198,196,149,215,146,210,202,193"/>
+<area shape="rect" id="Node000006" href="$d4/d3a/classnexilis_1_1server_1_1User.html#ad0343881b09bce874b5110188c548b56" title="Move constructor." alt="" coords="5,283,157,327"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="248,198,206,237,158,273,137,284,135,280,155,268,203,233,243,201"/>
+</map>

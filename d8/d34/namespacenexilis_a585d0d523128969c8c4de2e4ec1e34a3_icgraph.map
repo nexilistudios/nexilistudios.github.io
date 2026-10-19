@@ -1,7 +1,0 @@
-<map id="nexilis::commandTypeFromString" name="nexilis::commandTypeFromString">
-<area shape="rect" id="Node000001" title=" " alt="" coords="456,5,657,45"/>
-<area shape="rect" id="Node000002" href="$db/d64/classnexilis_1_1client_1_1CommandParser.html#aca2f982d6b44dbff9fba0da6e949d570" title=" " alt="" coords="224,5,408,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="442,28,408,28,408,23,442,23"/>
-<area shape="rect" id="Node000003" href="$d2/ddb/classnexilis_1_1CommandSpec.html#a98f7323e03cb6ceeaa5db28ccc1ad2e2" title="Parse a JSON object into a client&#45;side command handler." alt="" coords="5,5,176,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="210,28,176,28,176,23,210,23"/>
-</map>

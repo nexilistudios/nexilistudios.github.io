@@ -1,9 +1,0 @@
-<map id="nexilis::udp_auth::checkAuthentication" name="nexilis::udp_auth::checkAuthentication">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,69,160,109"/>
-<area shape="rect" id="Node000002" href="$db/d44/namespacenexilis_1_1udp__auth.html#a1167b1733e74c5df7c39852d9f51c1ba" title=" " alt="" coords="208,5,349,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,67,203,47,205,52,145,72"/>
-<area shape="rect" id="Node000003" href="$db/d44/namespacenexilis_1_1udp__auth.html#a01c27787ea192f10299346520f705ee9" title=" " alt="" coords="208,69,349,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,87,194,87,194,92,160,92"/>
-<area shape="rect" id="Node000004" href="$db/d44/namespacenexilis_1_1udp__auth.html#ac24e4dfcb23f571c85e27a44d0554bab" title=" " alt="" coords="208,133,349,173"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="145,107,205,127,203,132,144,112"/>
-</map>

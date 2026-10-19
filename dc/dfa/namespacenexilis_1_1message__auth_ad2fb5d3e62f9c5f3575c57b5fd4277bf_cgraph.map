@@ -1,7 +1,0 @@
-<map id="nexilis::message_auth::sign" name="nexilis::message_auth::sign">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,173,45"/>
-<area shape="rect" id="Node000002" href="$dc/dfa/namespacenexilis_1_1message__auth.html#a3bffff3bf649a82f183135f488be12f9" title=" " alt="" coords="221,13,419,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,23,208,23,208,28,174,28"/>
-<area shape="rect" id="Node000003" href="$dc/dfa/namespacenexilis_1_1message__auth.html#ab8ae1f049786d898466a6d38b12efae4" title=" " alt="" coords="467,5,635,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="419,23,453,23,453,28,419,28"/>
-</map>

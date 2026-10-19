@@ -1,0 +1,5 @@
+<map id="nexilis::Log::stopLogging" name="nexilis::Log::stopLogging">
+<area shape="rect" id="Node000001" title="Shut down logging levels and remove handlers." alt="" coords="5,5,188,33"/>
+<area shape="rect" id="Node000002" href="$dc/dbc/classnexilis_1_1Log.html#a634f066882682331b5000482d94f78c9" title="Remove all handlers." alt="" coords="236,5,429,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,17,223,19,217,19,188,22"/>
+</map>

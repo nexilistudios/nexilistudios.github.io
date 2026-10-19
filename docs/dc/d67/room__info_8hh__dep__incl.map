@@ -1,0 +1,7 @@
+<map id="include/nexilis/room_info.hh" name="include/nexilis/room_info.hh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="20,5,173,50"/>
+<area shape="rect" id="Node000002" href="$d4/d01/start__client_8hh.html" title=" " alt="" coords="22,98,171,143"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,63,99,98,94,97,95,68"/>
+<area shape="rect" id="Node000003" href="$de/dbc/start__client_8cc.html" title=" " alt="" coords="5,191,188,218"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="98,157,99,191,94,189,95,160"/>
+</map>

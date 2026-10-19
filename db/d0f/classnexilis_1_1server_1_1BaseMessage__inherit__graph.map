@@ -1,9 +1,0 @@
-<map id="nexilis::server::BaseMessage" name="nexilis::server::BaseMessage">
-<area shape="rect" id="Node000001" title="Base class for incoming messages from the client." alt="" coords="5,55,217,80"/>
-<area shape="rect" id="Node000002" href="$d5/dc6/classnexilis_1_1server_1_1AuthMessage.html" title=" " alt="" coords="265,5,476,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,49,303,28,304,33,193,55"/>
-<area shape="rect" id="Node000003" href="$d0/de2/classnexilis_1_1server_1_1ErrorMessage.html" title=" " alt="" coords="265,55,476,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="231,65,265,65,265,70,231,70"/>
-<area shape="rect" id="Node000004" href="$d1/d87/classnexilis_1_1server_1_1Message.html" title=" " alt="" coords="281,104,461,129"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="193,80,304,101,303,107,192,85"/>
-</map>

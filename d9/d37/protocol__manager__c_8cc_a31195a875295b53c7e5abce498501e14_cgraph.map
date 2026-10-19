@@ -1,5 +1,0 @@
-<map id="nexilis_set_boost_udp_port" name="nexilis_set_boost_udp_port">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,204,38"/>
-<area shape="rect" id="Node000002" href="$db/d41/classnexilis_1_1Ports.html#af3172fd95ee3c4c1cf5f5f5a3622be08" title="Override the Boost UDP port for protocols created later." alt="" coords="252,5,423,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,23,238,23,238,28,204,28"/>
-</map>

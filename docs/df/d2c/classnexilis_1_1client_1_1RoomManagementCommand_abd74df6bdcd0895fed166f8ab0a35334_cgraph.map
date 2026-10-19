@@ -1,0 +1,15 @@
+<map id="nexilis::client::RoomManagementCommand::execute" name="nexilis::client::RoomManagementCommand::execute">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,144,246,189"/>
+<area shape="rect" id="Node000002" href="$d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a827d09d95f7d81fa2cd69c75bdc71f3e" title=" " alt="" coords="294,5,588,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,142,217,100,293,60,315,54,310,57,295,65,219,104,158,146"/>
+<area shape="rect" id="Node000003" href="$d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a89bf770a7a9d8bb30c56a961fbf9e697" title=" " alt="" coords="324,75,558,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="230,141,323,122,319,125,231,146"/>
+<area shape="rect" id="Node000004" href="$db/dbd/classnexilis_1_1client_1_1Room.html#a237fd284564e1026db6e24edde02bb42" title="Constructor." alt="" coords="364,144,518,189"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="245,164,350,165,346,167,246,169"/>
+<area shape="rect" id="Node000006" href="$de/d38/classnexilis_1_1RoomData.html#a9fb2372f6caba39f20329e7db4f88a58" title=" " alt="" coords="366,213,516,258"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="231,187,354,215,349,217,230,192"/>
+<area shape="rect" id="Node000007" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a80741fb08b4a50379131fdf0ee75e157" title="Set the value of 2D overlapping." alt="" coords="353,283,528,327"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="157,186,219,228,295,268,341,286,336,285,293,273,217,233,156,192"/>
+<area shape="rect" id="Node000005" href="$da/d49/classnexilis_1_1BaseRoom.html#af07e2b514f1b716c5a243389abc3f848" title="Constructor." alt="" coords="636,144,786,189"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="518,164,623,166,618,167,519,169"/>
+</map>

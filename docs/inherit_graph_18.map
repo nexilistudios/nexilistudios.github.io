@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$dc/dcb/classnexilis_1_1BaseClient.html" title="BaseClient offers common functionality between server&#45; and clientside client objects." alt="" coords="5,32,148,60"/>
+<area shape="rect" id="Node000001" href="$d8/d6a/classnexilis_1_1client_1_1ClientSession.html" title=" " alt="" coords="196,5,400,33"/>
+<area shape="poly" id="edge3_Node000000_Node000001" title=" " alt="" coords="163,33,198,31,193,32,164,38"/>
+<area shape="rect" id="Node000002" href="$d4/d3a/classnexilis_1_1server_1_1User.html" title="Internal client abstraction for server." alt="" coords="222,57,374,85"/>
+<area shape="poly" id="edge4_Node000000_Node000002" title=" " alt="" coords="163,53,224,62,219,63,163,58"/>
+</map>

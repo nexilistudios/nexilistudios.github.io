@@ -1,0 +1,11 @@
+<map id="nexilis::client::RoomObject3DCommand::execute" name="nexilis::client::RoomObject3DCommand::execute">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,75,210,119"/>
+<area shape="rect" id="Node000002" href="$d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a827d09d95f7d81fa2cd69c75bdc71f3e" title=" " alt="" coords="258,5,552,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,71,294,53,289,55,207,77"/>
+<area shape="rect" id="Node000003" href="$d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a89bf770a7a9d8bb30c56a961fbf9e697" title=" " alt="" coords="288,75,522,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="210,94,275,96,270,98,211,100"/>
+<area shape="rect" id="Node000004" href="$dc/d49/classnexilis_1_1Object3D.html#a0633cf8dfb38ef0210b92e0ed6d31ddc" title="Constructor." alt="" coords="335,144,475,189"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="207,117,322,146,317,147,206,123"/>
+<area shape="rect" id="Node000005" href="$d6/dd3/classnexilis_1_1Object.html#abf7b2a2b9dbe42ee4cb3137fdd290eff" title=" " alt="" coords="600,144,784,189"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="475,164,587,166,582,166,475,169"/>
+</map>

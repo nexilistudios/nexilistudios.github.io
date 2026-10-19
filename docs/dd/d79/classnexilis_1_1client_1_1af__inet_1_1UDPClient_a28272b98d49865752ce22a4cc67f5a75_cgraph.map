@@ -1,0 +1,9 @@
+<map id="nexilis::client::af_inet::UDPClient::~UDPClient" name="nexilis::client::af_inet::UDPClient::~UDPClient">
+<area shape="rect" id="Node000001" title="Destructor." alt="" coords="5,24,218,68"/>
+<area shape="rect" id="Node000002" href="$dd/d79/classnexilis_1_1client_1_1af__inet_1_1UDPClient.html#a9cdbb178318ae0f3af6ff867f8fe2218" title="NXProtocol::stop() implementation." alt="" coords="266,24,429,68"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,43,253,46,247,46,218,48"/>
+<area shape="rect" id="Node000003" href="$dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982" title="All the overloaded printing functions." alt="" coords="477,5,620,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="429,32,459,31,464,30,430,38"/>
+<area shape="rect" id="Node000004" href="$dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="482,57,616,85"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="430,53,469,61,463,61,429,59"/>
+</map>

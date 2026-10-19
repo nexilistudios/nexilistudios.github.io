@@ -1,0 +1,19 @@
+<map id="include/nexilis/boost_tcp/socket.hh" name="include/nexilis/boost_tcp/socket.hh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="338,5,494,50"/>
+<area shape="rect" id="Node000002" href="$d6/d9e/nx__class_8hh.html" title=" " alt="" coords="5,98,150,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="337,50,147,96,146,91,339,45"/>
+<area shape="rect" id="Node000004" href="$dc/dd2/nx__data_8hh.html" title=" " alt="" coords="174,98,314,126"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="373,50,287,93,284,88,368,52"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="338,98,494,126"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="418,48,418,84,414,81,414,52"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="518,98,706,126"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="469,48,569,91,564,92,468,53"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="730,98,806,126"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="494,44,717,96,712,98,494,49"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="48,174,107,201"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="79,124,80,159,75,157,76,128"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="170,174,236,201"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="239,125,219,162,216,158,235,128"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="260,174,322,201"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="254,124,277,161,272,160,251,129"/>
+</map>

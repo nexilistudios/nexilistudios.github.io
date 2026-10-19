@@ -1,0 +1,16 @@
+<map id="nexilis::client::Room::operator=" name="nexilis::client::Room::operator=">
+<area shape="rect" id="Node000001" title="Copy assignment operator." alt="" coords="5,111,160,155"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="43,110,42,101,49,92,62,86,83,84,104,86,119,94,113,96,103,92,82,89,64,91,52,96,48,102,49,110"/>
+<area shape="rect" id="Node000002" href="$db/dbd/classnexilis_1_1client_1_1Room.html#af889314df2c68ecbfbe20c264bb28ae4" title="Comparison operator overload." alt="" coords="208,77,362,122"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="159,118,195,114,190,116,161,123"/>
+<area shape="rect" id="Node000005" href="$db/dbd/classnexilis_1_1client_1_1Room.html#a237fd284564e1026db6e24edde02bb42" title="Constructor." alt="" coords="410,144,564,189"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="160,137,395,156,393,161,160,142"/>
+<area shape="poly" id="edge5_Node000002_Node000002" title=" " alt="" coords="246,76,245,67,251,58,265,53,285,51,306,53,321,62,316,62,305,58,285,56,266,58,255,63,250,69,251,78"/>
+<area shape="rect" id="Node000003" href="$db/dbd/classnexilis_1_1client_1_1Room.html#a42474b41292801b79a3af58caeb1cfb8" title=" " alt="" coords="410,5,564,50"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="349,74,405,57,410,55,351,79"/>
+<area shape="rect" id="Node000004" href="$db/dbd/classnexilis_1_1client_1_1Room.html#ae62814ff9b342b60aac18e17af09f9cf" title=" " alt="" coords="410,75,564,119"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="362,96,397,98,392,99,363,101"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="355,120,405,139,400,138,355,125"/>
+<area shape="rect" id="Node000006" href="$da/d49/classnexilis_1_1BaseRoom.html#af07e2b514f1b716c5a243389abc3f848" title="Constructor." alt="" coords="612,144,763,189"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="565,164,599,166,594,166,565,169"/>
+</map>

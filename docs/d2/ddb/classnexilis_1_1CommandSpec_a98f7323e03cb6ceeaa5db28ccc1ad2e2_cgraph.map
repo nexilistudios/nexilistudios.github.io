@@ -1,0 +1,11 @@
+<map id="nexilis::CommandSpec::parse" name="nexilis::CommandSpec::parse">
+<area shape="rect" id="Node000001" title="Parse a JSON object into a client&#45;side command handler." alt="" coords="5,72,176,117"/>
+<area shape="rect" id="Node000002" href="$db/d64/classnexilis_1_1client_1_1CommandParser.html#aca2f982d6b44dbff9fba0da6e949d570" title=" " alt="" coords="224,72,407,117"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,92,211,94,205,95,176,97"/>
+<area shape="rect" id="Node000003" href="$d8/d34/namespacenexilis.html#a585d0d523128969c8c4de2e4ec1e34a3" title=" " alt="" coords="455,29,655,74"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="407,75,437,73,442,72,408,81"/>
+<area shape="rect" id="Node000004" href="$d2/dbe/namespacenexilis_1_1client.html#a66d84b8ab1165bf05648038b51ec7b4e" title=" " alt="" coords="464,122,647,150"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="408,107,459,119,454,119,407,113"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="510,27,508,19,516,10,532,5,555,3,581,5,598,14,593,14,580,10,555,8,533,10,519,15,513,21,514,30"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="514,120,508,113,513,103,529,97,555,95,583,98,600,107,595,106,582,103,555,100,530,102,516,107,513,113,519,122"/>
+</map>

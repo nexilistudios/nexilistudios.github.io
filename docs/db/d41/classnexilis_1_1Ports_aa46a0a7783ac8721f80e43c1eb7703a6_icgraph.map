@@ -1,0 +1,6 @@
+<map id="nexilis::Ports::getBoostTCPSessionPort" name="nexilis::Ports::getBoostTCPSessionPort">
+<area shape="rect" id="Node000001" title=" " alt="" coords="216,29,387,74"/>
+<area shape="rect" id="Node000002" href="$d9/d37/protocol__manager__c_8cc.html#a574b37d8eb281fdcf237e5bf2fd82c0a" title=" " alt="" coords="5,29,168,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,52,168,54,168,49,203,51"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="120,14,108,10,86,8,67,10,54,15,49,21,50,29,45,28,44,19,51,10,65,5,87,3,110,5,125,14"/>
+</map>

@@ -1,0 +1,21 @@
+<map id="nexilis::Util::getPortFilePath" name="nexilis::Util::getPortFilePath">
+<area shape="rect" id="Node000001" title=" " alt="" coords="788,124,990,152"/>
+<area shape="rect" id="Node000002" href="$dd/d04/group__PortHandling.html#ga510daefca8fad8c7b1b9af82773e3f70" title=" " alt="" coords="532,72,735,100"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="800,121,705,103,706,98,805,121"/>
+<area shape="rect" id="Node000005" href="$dd/d04/group__PortHandling.html#gae1009e216e99e77576b45deabd78286a" title=" " alt="" coords="527,124,740,152"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="770,139,741,141,741,136,775,138"/>
+<area shape="rect" id="Node000006" href="$dd/d04/group__PortHandling.html#gae95993b3b515cdb8e8eb84ad7027eb24" title=" " alt="" coords="552,176,715,221"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="815,156,716,182,715,177,810,157"/>
+<area shape="rect" id="Node000003" href="$df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a50bf92a30646e072df669e53bacfeea0" title="Destructor." alt="" coords="259,5,479,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="550,69,473,53,473,48,556,68"/>
+<area shape="rect" id="Node000004" href="$d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#a4642f3d0d8ed9baf31087321b6e0948b" title="Destructor." alt="" coords="275,75,463,119"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="515,92,464,96,463,91,520,90"/>
+<area shape="rect" id="Node000007" href="$df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a7286f8712e5f49cb762d7e3736a25c14" title="NXProtocol::start() implementation." alt="" coords="284,165,454,210"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="534,195,454,194,454,188,539,194"/>
+<area shape="rect" id="Node000009" href="$d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#aad1d2569729f1380a5d41c7096cf5fa2" title="NXProtocol::start() implementation." alt="" coords="282,235,456,279"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="540,219,456,240,455,235,534,220"/>
+<area shape="rect" id="Node000008" href="$df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#af47c596e408db5c34cad00ab2ecdb128" title="Deleted copy assignment operator." alt="" coords="5,165,211,210"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="266,188,212,190,211,185,271,187"/>
+<area shape="rect" id="Node000010" href="$d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#a493c027b02bbb6535404261cc125c46a" title="Deleted copy assignment operator." alt="" coords="21,235,195,279"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="264,257,195,260,195,254,269,257"/>
+</map>

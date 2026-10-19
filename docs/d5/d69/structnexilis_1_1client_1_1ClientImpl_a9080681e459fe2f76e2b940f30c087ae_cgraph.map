@@ -1,0 +1,18 @@
+<map id="nexilis::client::ClientImpl::room_management_join" name="nexilis::client::ClientImpl::room_management_join">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,141,194,186"/>
+<area shape="rect" id="Node000002" href="$db/df7/classnexilis_1_1client_1_1__Packet.html#afbc04feec4d92f69d7847d386a0d0567" title=" " alt="" coords="242,141,408,186"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,161,228,163,223,165,195,166"/>
+<area shape="rect" id="Node000003" href="$d9/d3d/group__BytevectorConversions.html#ga38e516c60d98cb71153ded26ce2b67e5" title=" " alt="" coords="471,29,637,74"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="359,138,404,111,455,84,472,79,467,81,457,89,407,116,362,143"/>
+<area shape="rect" id="Node000004" href="$dd/de4/classnexilis_1_1Util.html#a6c88740ca44074ff58309b009e68fd0d" title="Convert nx_data to numeral type." alt="" coords="456,98,652,126"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="408,142,478,129,473,130,409,147"/>
+<area shape="rect" id="Node000006" href="$dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="487,150,621,178"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="408,161,474,163,469,164,409,166"/>
+<area shape="rect" id="Node000007" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a311405fc8800e91760016a6da07cb130" title="General." alt="" coords="466,201,642,246"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="409,183,454,197,449,197,409,188"/>
+<area shape="rect" id="Node000008" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#ab658f11270adc45665288a833f6c18ba" title=" " alt="" coords="466,271,642,315"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="353,184,401,220,457,256,470,265,465,264,455,261,398,225,352,189"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="511,28,509,19,517,10,532,5,554,3,579,5,595,14,590,14,577,10,554,8,533,10,520,15,514,21,516,30"/>
+<area shape="rect" id="Node000005" href="$d2/def/classnexilis_1_1server_1_1Config.html#a4524682844dcfc71ad49250c36f399ca" title=" " alt="" coords="700,89,864,134"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="653,109,687,111,682,112,653,114"/>
+</map>

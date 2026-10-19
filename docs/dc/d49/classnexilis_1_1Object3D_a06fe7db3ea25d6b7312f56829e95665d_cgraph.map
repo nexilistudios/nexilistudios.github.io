@@ -1,0 +1,10 @@
+<map id="nexilis::Object3D::Object3D" name="nexilis::Object3D::Object3D">
+<area shape="rect" id="Node000001" title="Copy constructor." alt="" coords="5,65,146,110"/>
+<area shape="rect" id="Node000002" href="$dc/d49/classnexilis_1_1Object3D.html#ad0c5e692b116853427c686fa3f9e520e" title=" " alt="" coords="194,5,334,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,63,181,53,177,56,147,68"/>
+<area shape="rect" id="Node000003" href="$d6/dd3/classnexilis_1_1Object.html#abf7b2a2b9dbe42ee4cb3137fdd290eff" title=" " alt="" coords="382,96,566,141"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,90,368,108,365,112,146,96"/>
+<area shape="rect" id="Node000004" href="$dc/d49/classnexilis_1_1Object3D.html#a0633cf8dfb38ef0210b92e0ed6d31ddc" title="Constructor." alt="" coords="194,125,334,170"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="146,107,182,120,176,121,146,113"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="334,135,364,134,369,133,335,141"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="nexilis::client::_Packet::clientIdentification" name="nexilis::client::_Packet::clientIdentification">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,141,172,186"/>
+<area shape="rect" id="Node000002" href="$d9/d3d/group__BytevectorConversions.html#ga38e516c60d98cb71153ded26ce2b67e5" title=" " alt="" coords="235,29,401,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,139,168,111,218,84,236,79,231,82,221,89,170,116,126,143"/>
+<area shape="rect" id="Node000003" href="$dd/de4/classnexilis_1_1Util.html#a6c88740ca44074ff58309b009e68fd0d" title="Convert nx_data to numeral type." alt="" coords="220,98,416,126"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="171,142,241,128,237,131,173,147"/>
+<area shape="rect" id="Node000005" href="$dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="251,150,385,178"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="172,161,237,162,232,165,173,166"/>
+<area shape="rect" id="Node000006" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a311405fc8800e91760016a6da07cb130" title="General." alt="" coords="230,201,406,246"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="172,183,218,196,213,198,172,188"/>
+<area shape="rect" id="Node000007" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#ab658f11270adc45665288a833f6c18ba" title=" " alt="" coords="230,271,406,315"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="117,184,164,220,221,256,234,264,229,264,218,261,161,225,116,189"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="274,28,273,19,280,10,295,5,318,3,343,5,359,14,353,15,341,10,318,8,297,10,283,15,278,21,279,30"/>
+<area shape="rect" id="Node000004" href="$d2/def/classnexilis_1_1server_1_1Config.html#a4524682844dcfc71ad49250c36f399ca" title=" " alt="" coords="464,89,627,134"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="416,109,451,111,446,112,417,114"/>
+</map>

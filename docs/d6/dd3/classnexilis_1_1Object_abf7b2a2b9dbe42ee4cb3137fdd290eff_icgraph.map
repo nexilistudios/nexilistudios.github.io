@@ -1,0 +1,19 @@
+<map id="nexilis::Object::Object" name="nexilis::Object::Object">
+<area shape="rect" id="Node000001" title="Constructor." alt="" coords="430,92,594,120"/>
+<area shape="rect" id="Node000002" href="$d6/dd3/classnexilis_1_1Object.html#ae4186561d1efeab87d5087511bf921d4" title="Copy constructor." alt="" coords="206,14,370,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="461,86,381,57,343,45,343,39,383,52,467,86"/>
+<area shape="rect" id="Node000003" href="$d6/dd3/classnexilis_1_1Object.html#a9cf5f1e42a68d371c88e44dc85cfa3ed" title="Move constructor." alt="" coords="206,66,370,94"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="412,95,371,92,370,87,417,94"/>
+<area shape="rect" id="Node000004" href="$d6/dd3/classnexilis_1_1Object.html#abf2e73f6404a74d57eeb75be05d30b9a" title="Copy assignment operator." alt="" coords="194,118,382,146"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="412,118,383,124,382,118,417,117"/>
+<area shape="rect" id="Node000009" href="$d6/dd3/classnexilis_1_1Object.html#a1706e926ee7ad1d4c22475c2e8f177cd" title="Move assignment operator." alt="" coords="194,170,382,198"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="465,126,383,160,343,172,342,167,381,154,460,127"/>
+<area shape="rect" id="Node000005" href="$de/d8f/classnexilis_1_1Object2D.html#a0901a9f458b34313bda10a27bf3ee67a" title="Copy assignment operator." alt="" coords="5,5,146,50"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="205,112,192,107,177,97,167,86,144,64,127,53,126,48,147,60,171,83,181,93,195,103,211,111"/>
+<area shape="rect" id="Node000006" href="$de/d8f/classnexilis_1_1Object2D.html#a66495a1a12ff864689f16f69c4b3adcc" title="Move assignment operator." alt="" coords="5,75,146,119"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="182,116,147,111,146,106,187,114"/>
+<area shape="rect" id="Node000007" href="$dc/d49/classnexilis_1_1Object3D.html#a70c365b01a762d32a68909599989af4d" title="Copy assignment operator." alt="" coords="5,144,146,189"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="182,150,147,157,145,152,187,147"/>
+<area shape="rect" id="Node000008" href="$dc/d49/classnexilis_1_1Object3D.html#a91dc0bce4d309d15020aa2113b3a5ad7" title="Move assignment operator." alt="" coords="5,213,146,258"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="206,153,195,161,181,171,171,181,147,203,127,215,125,210,144,199,167,177,177,167,192,156,210,150"/>
+</map>

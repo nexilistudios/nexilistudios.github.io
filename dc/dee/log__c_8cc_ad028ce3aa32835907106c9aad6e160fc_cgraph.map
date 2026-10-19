@@ -1,7 +1,0 @@
-<map id="nexilis_log_unset_all_levels" name="nexilis_log_unset_all_levels">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,164,45"/>
-<area shape="rect" id="Node000002" href="$dc/dbc/classnexilis_1_1Log.html#a828adb816ebcee7a061957bb49114cc2" title=" " alt="" coords="212,13,411,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,23,198,23,198,28,164,28"/>
-<area shape="rect" id="Node000003" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#ac9153c886b9fa87b83a3e5591c21c43a" title="Unset all log levels." alt="" coords="459,5,625,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="411,23,445,23,445,28,411,28"/>
-</map>

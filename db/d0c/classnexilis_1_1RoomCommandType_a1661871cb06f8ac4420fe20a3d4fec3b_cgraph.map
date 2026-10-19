@@ -1,7 +1,0 @@
-<map id="nexilis::RoomCommandType::CommunicationTypeToString" name="nexilis::RoomCommandType::CommunicationTypeToString">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,220,45"/>
-<area shape="rect" id="Node000002" href="$dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="268,13,403,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,23,254,23,254,28,220,28"/>
-<area shape="rect" id="Node000003" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#acc02567dd7e4103305110bafbfd40c08" title="Send error message." alt="" coords="451,5,617,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="403,23,437,23,437,28,403,28"/>
-</map>

@@ -1,0 +1,9 @@
+<map id="nexilis::server::ServerConfig::ServerConfig" name="nexilis::server::ServerConfig::ServerConfig">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,211,74"/>
+<area shape="rect" id="Node000002" href="$d0/db6/classnexilis_1_1AuthConfig.html#a96de7c9925ac9342059942ba7190ecd7" title=" " alt="" coords="259,29,403,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,49,246,51,241,52,211,54"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="294,27,293,19,299,10,312,5,331,3,351,5,365,14,360,13,350,10,331,8,313,10,302,15,298,21,298,30"/>
+<area shape="rect" id="Node000003" href="$d0/db6/classnexilis_1_1AuthConfig.html#ada5216f9c70b6a729fc7d884c88f58b3" title=" " alt="" coords="451,29,595,74"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="403,58,438,61,433,61,403,63"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="448,43,419,45,418,40,454,43"/>
+</map>

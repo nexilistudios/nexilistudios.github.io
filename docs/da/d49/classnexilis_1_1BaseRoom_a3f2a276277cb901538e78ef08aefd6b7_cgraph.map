@@ -1,0 +1,9 @@
+<map id="nexilis::BaseRoom::getObject3DById" name="nexilis::BaseRoom::getObject3DById">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,57,156,102"/>
+<area shape="rect" id="Node000002" href="$dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="212,5,346,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,54,219,36,214,39,157,59"/>
+<area shape="rect" id="Node000003" href="$da/d49/classnexilis_1_1BaseRoom.html#a5850da119501071f3a9e9d8032238fdf" title="Get the 2D/3D context for the room." alt="" coords="204,57,354,102"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="155,77,191,78,186,80,156,82"/>
+<area shape="rect" id="Node000004" href="$da/d49/classnexilis_1_1BaseRoom.html#a3f1693ee56cc7a471dc72ca29cf0da70" title="Get the identifier of the room." alt="" coords="204,126,354,171"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="147,99,201,120,196,121,146,105"/>
+</map>

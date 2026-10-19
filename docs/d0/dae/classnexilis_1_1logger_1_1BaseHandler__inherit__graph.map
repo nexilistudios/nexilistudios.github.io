@@ -1,0 +1,9 @@
+<map id="nexilis::logger::BaseHandler" name="nexilis::logger::BaseHandler">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,74,210,102"/>
+<area shape="rect" id="Node000002" href="$de/d71/classnexilis_1_1logger_1_1ConsoleHandler.html" title=" " alt="" coords="268,5,442,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,67,270,48,265,50,183,72"/>
+<area shape="rect" id="Node000003" href="$d5/db0/classnexilis_1_1logger_1_1FileHandler.html" title=" " alt="" coords="258,74,452,102"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="225,85,260,87,254,88,226,90"/>
+<area shape="rect" id="Node000004" href="$d6/de0/classnexilis_1_1logger_1_1FunctionHandler.html" title=" " alt="" coords="267,125,443,170"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,103,269,126,264,127,182,108"/>
+</map>

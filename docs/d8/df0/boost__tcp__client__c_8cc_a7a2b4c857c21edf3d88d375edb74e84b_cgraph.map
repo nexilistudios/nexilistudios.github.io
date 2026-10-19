@@ -1,0 +1,6 @@
+<map id="nexilis_boost_tcp_client_send_message_with_callback" name="nexilis_boost_tcp_client_send_message_with_callback">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,227,74"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="68,28,66,19,75,10,91,5,116,3,143,5,161,14,156,14,142,10,116,8,92,10,77,15,72,21,73,30"/>
+<area shape="rect" id="Node000002" href="$d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a1b45b8575f174da4069c2e4aa4416511" title="ClientProtocol::sendMessage(const nx_data&amp;) implementation." alt="" coords="275,29,464,74"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="227,49,262,52,256,52,227,54"/>
+</map>

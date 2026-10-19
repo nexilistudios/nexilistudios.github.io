@@ -1,0 +1,6 @@
+<map id="nexilis_boost_tcp_client_get_type" name="nexilis_boost_tcp_client_get_type">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,183,74"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="52,28,50,19,58,10,72,5,94,3,118,5,134,14,128,14,117,10,94,8,73,10,61,15,56,21,57,29"/>
+<area shape="rect" id="Node000002" href="$d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a603d6e40cbf86e6754008c220c620512" title="NXProtocol::getType() implementation." alt="" coords="231,29,399,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,49,218,51,212,52,183,54"/>
+</map>

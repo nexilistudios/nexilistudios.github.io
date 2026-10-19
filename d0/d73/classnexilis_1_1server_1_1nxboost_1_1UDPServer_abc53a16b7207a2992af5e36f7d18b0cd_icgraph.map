@@ -1,5 +1,0 @@
-<map id="nexilis::server::nxboost::UDPServer::stop" name="nexilis::server::nxboost::UDPServer::stop">
-<area shape="rect" id="Node000001" title="NXProtocol::stop() implementation." alt="" coords="243,5,417,45"/>
-<area shape="rect" id="Node000002" href="$d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#a4642f3d0d8ed9baf31087321b6e0948b" title="Destructor." alt="" coords="5,5,195,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,28,195,28,195,23,229,23"/>
-</map>

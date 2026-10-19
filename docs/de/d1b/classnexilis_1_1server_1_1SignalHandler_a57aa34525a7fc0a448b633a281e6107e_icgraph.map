@@ -1,0 +1,11 @@
+<map id="nexilis::server::SignalHandler::install" name="nexilis::server::SignalHandler::install">
+<area shape="rect" id="Node000001" title=" " alt="" coords="483,64,695,109"/>
+<area shape="rect" id="Node000002" href="$d5/dc9/namespacenexilis_1_1server.html#ab434e50e9b81f15e104bef7c2638d466" title=" " alt="" coords="248,29,410,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="465,70,410,65,410,60,470,70"/>
+<area shape="rect" id="Node000003" href="$de/d1b/classnexilis_1_1server_1_1SignalHandler.html#a45a578d5c8a531f482fc6ecc20f86a7d" title=" " alt="" coords="223,99,435,143"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="470,102,436,109,435,104,465,103"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="366,14,353,10,329,8,307,10,293,15,287,21,288,30,284,28,282,19,290,10,305,5,329,3,355,5,372,14"/>
+<area shape="rect" id="Node000004" href="$d5/dc9/namespacenexilis_1_1server.html#abef914c1761485bb7c70cf40cd0030df" title=" " alt="" coords="5,99,175,143"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="204,121,175,124,175,118,210,121"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="127,84,115,80,90,77,68,79,54,84,48,90,50,99,44,98,43,89,51,80,67,74,90,72,116,75,133,83"/>
+</map>

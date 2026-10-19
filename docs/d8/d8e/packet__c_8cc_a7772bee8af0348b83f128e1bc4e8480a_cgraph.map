@@ -1,0 +1,10 @@
+<map id="nexilis_packet_get_info_rooms" name="nexilis_packet_get_info_rooms">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,148,74"/>
+<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="41,28,40,19,46,10,58,5,77,3,96,5,110,13,104,14,95,10,76,8,60,10,49,14,45,21,46,29"/>
+<area shape="rect" id="Node000002" href="$d8/d8e/packet__c_8cc.html#a0e0d970b15f9446b709c4a6b6179d524" title=" " alt="" coords="196,38,325,66"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,49,182,51,177,52,148,54"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="228,36,223,29,227,19,240,13,260,11,282,14,295,23,290,22,281,19,260,16,241,18,231,23,229,29,233,38"/>
+<area shape="rect" id="Node000003" href="$d0/dab/nx__data__c_8cc.html#a45eae7030cd842ff1e280ab1a7847d75" title=" " alt="" coords="373,38,582,66"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="325,49,360,52,355,52,326,54"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="440,36,434,29,439,19,454,13,478,11,503,14,519,23,513,22,502,19,478,16,455,18,443,23,440,29,445,38"/>
+</map>

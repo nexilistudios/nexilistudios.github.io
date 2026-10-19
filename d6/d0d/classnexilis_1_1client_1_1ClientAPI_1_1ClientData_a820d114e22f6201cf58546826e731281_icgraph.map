@@ -1,7 +1,0 @@
-<map id="nexilis::client::ClientAPI::ClientData::setUdpToken" name="nexilis::client::ClientAPI::ClientData::setUdpToken">
-<area shape="rect" id="Node000001" title=" " alt="" coords="456,5,647,45"/>
-<area shape="rect" id="Node000002" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#af77ed9e40d813fe28f12ca1481fa67e7" title=" " alt="" coords="232,5,408,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="442,28,408,28,408,23,442,23"/>
-<area shape="rect" id="Node000003" href="$d8/dcb/classnexilis_1_1client_1_1GetClientIdCommand.html#a47303a84c43b6869d7f3508510eb84fd" title=" " alt="" coords="5,5,184,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="218,28,184,28,184,23,218,23"/>
-</map>

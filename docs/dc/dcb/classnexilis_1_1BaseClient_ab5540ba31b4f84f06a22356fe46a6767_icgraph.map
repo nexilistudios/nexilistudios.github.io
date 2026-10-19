@@ -1,0 +1,7 @@
+<map id="nexilis::BaseClient::operator=" name="nexilis::BaseClient::operator=">
+<area shape="rect" id="Node000001" title="Move assignment operator." alt="" coords="258,40,400,85"/>
+<area shape="rect" id="Node000002" href="$d8/d6a/classnexilis_1_1client_1_1ClientSession.html#a7c0efa367cf6258969a7efca4b824601" title="Move assignment operator." alt="" coords="5,5,210,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,49,210,46,210,41,245,48"/>
+<area shape="rect" id="Node000003" href="$d4/d3a/classnexilis_1_1server_1_1User.html#aee8f82c276cb4af537a5817222d5d2d1" title="Move assignment operator." alt="" coords="32,75,183,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="240,76,184,88,183,83,245,75"/>
+</map>

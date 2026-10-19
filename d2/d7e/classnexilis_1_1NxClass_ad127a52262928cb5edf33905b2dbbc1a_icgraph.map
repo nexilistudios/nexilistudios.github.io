@@ -1,9 +1,0 @@
-<map id="nexilis::NxClass::operator=" name="nexilis::NxClass::operator=">
-<area shape="rect" id="Node000001" title="Move assignment operator." alt="" coords="261,77,461,102"/>
-<area shape="rect" id="Node000002" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a89c86ccb4d40fcc3b9a5eea6ea0864d5" title="Move assignment operator." alt="" coords="21,5,197,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="296,76,188,48,190,43,298,71"/>
-<area shape="rect" id="Node000003" href="$da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#aa85cb50620378d6b4c07fdb7b033432d" title="Move assignment operator." alt="" coords="5,69,213,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="247,92,214,92,214,87,247,87"/>
-<area shape="rect" id="Node000004" href="$da/d15/classnexilis_1_1server_1_1Command.html#aad46fb6ea2d89a4b87d31dd981eb5024" title=" " alt="" coords="15,133,204,173"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="298,108,190,136,188,131,296,103"/>
-</map>

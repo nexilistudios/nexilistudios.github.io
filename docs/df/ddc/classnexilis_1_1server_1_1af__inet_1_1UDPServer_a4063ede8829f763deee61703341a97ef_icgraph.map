@@ -1,0 +1,9 @@
+<map id="nexilis::server::af_inet::UDPServer::getType" name="nexilis::server::af_inet::UDPServer::getType">
+<area shape="rect" id="Node000001" title="NXProtocol::getType() implementation." alt="" coords="527,40,717,85"/>
+<area shape="rect" id="Node000002" href="$df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a7286f8712e5f49cb762d7e3736a25c14" title="NXProtocol::start() implementation." alt="" coords="284,5,454,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="509,47,454,42,454,37,514,47"/>
+<area shape="rect" id="Node000004" href="$df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a50bf92a30646e072df669e53bacfeea0" title="Destructor." alt="" coords="259,75,479,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="514,77,480,85,479,79,509,78"/>
+<area shape="rect" id="Node000003" href="$df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#af47c596e408db5c34cad00ab2ecdb128" title="Deleted copy assignment operator." alt="" coords="5,5,211,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="266,28,212,30,211,25,271,27"/>
+</map>

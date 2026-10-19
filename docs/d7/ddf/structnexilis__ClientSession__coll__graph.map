@@ -1,0 +1,7 @@
+<map id="nexilis_ClientSession" name="nexilis_ClientSession">
+<area shape="rect" id="Node000001" title=" " alt="" coords="28,183,187,211"/>
+<area shape="rect" id="Node000002" href="$d8/d6a/classnexilis_1_1client_1_1ClientSession.html" title=" " alt="" coords="5,82,210,110"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,124,110,183,105,182,105,127"/>
+<area shape="rect" id="Node000003" href="$dc/dcb/classnexilis_1_1BaseClient.html" title="BaseClient offers common functionality between server&#45; and clientside client objects." alt="" coords="36,5,179,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="109,46,110,83,105,81,106,51"/>
+</map>

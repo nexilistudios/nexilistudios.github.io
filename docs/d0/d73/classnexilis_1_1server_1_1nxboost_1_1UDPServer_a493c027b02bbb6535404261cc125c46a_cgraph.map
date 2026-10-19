@@ -1,0 +1,29 @@
+<map id="nexilis::server::nxboost::UDPServer::operator=" name="nexilis::server::nxboost::UDPServer::operator=">
+<area shape="rect" id="Node000001" title="Deleted copy assignment operator." alt="" coords="5,109,179,154"/>
+<area shape="rect" id="Node000002" href="$d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#aad1d2569729f1380a5d41c7096cf5fa2" title="NXProtocol::start() implementation." alt="" coords="229,109,402,154"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,129,215,130,211,132,180,134"/>
+<area shape="rect" id="Node000010" href="$d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#abc53a16b7207a2992af5e36f7d18b0cd" title="NXProtocol::stop() implementation." alt="" coords="229,40,402,84"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="165,106,229,88,225,91,168,111"/>
+<area shape="rect" id="Node000011" href="$d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#a02d2201c151ae09aeab3aae6e1bb4b8b" title="Constructor." alt="" coords="227,238,404,283"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="133,151,264,229,260,231,132,157"/>
+<area shape="rect" id="Node000003" href="$dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982" title="All the overloaded printing functions." alt="" coords="488,5,632,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="382,106,402,94,417,82,425,69,435,56,451,44,476,34,472,37,453,48,439,60,430,72,421,85,406,99,385,110"/>
+<area shape="rect" id="Node000004" href="$dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="493,57,627,85"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="402,106,451,94,485,88,480,90,453,99,403,111"/>
+<area shape="rect" id="Node000005" href="$d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#ad82522770f8875f8b171989ce0e02e7e" title="NXProtocol::getType() implementation." alt="" coords="474,109,647,154"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="402,129,460,130,455,132,403,134"/>
+<area shape="rect" id="Node000006" href="$dd/d04/group__PortHandling.html#gae95993b3b515cdb8e8eb84ad7027eb24" title=" " alt="" coords="479,178,641,223"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="397,151,467,173,462,174,397,157"/>
+<area shape="rect" id="Node000007" href="$dd/d04/group__PortHandling.html#ga8dc341fe44a9de8bb4e0b93a4f447a64" title=" " alt="" coords="716,187,918,214"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="642,198,703,200,698,201,642,203"/>
+<area shape="rect" id="Node000008" href="$dd/de4/classnexilis_1_1Util.html#a0066197f79b612d78444f59dafeeb466" title=" " alt="" coords="966,144,1135,188"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="914,183,953,180,948,181,915,189"/>
+<area shape="rect" id="Node000009" href="$d5/da4/classnexilis_1_1NXProtocol.html#a0359edd948a8adfcf565c6e57da29480" title="Returns a string value of the Type." alt="" coords="978,213,1122,258"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="915,212,965,222,960,222,914,218"/>
+<area shape="poly" id="edge10_Node000010_Node000003" title=" " alt="" coords="401,44,476,33,471,35,403,49"/>
+<area shape="poly" id="edge11_Node000010_Node000004" title=" " alt="" coords="402,63,480,67,475,69,403,68"/>
+<area shape="rect" id="Node000012" href="$d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696" title=" " alt="" coords="467,247,653,274"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="404,258,454,260,449,261,405,263"/>
+<area shape="rect" id="Node000013" href="$de/df0/classnexilis_1_1server_1_1ServerProtocol.html#af3c78251fef035465c2b71962bad2c57" title=" " alt="" coords="452,298,668,343"/>
+<area shape="poly" id="edge14_Node000011_Node000013" title=" " alt="" coords="405,280,454,294,449,294,404,285"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="nexilis::server::Command::clientMessageData" name="nexilis::server::Command::clientMessageData">
+<area shape="rect" id="Node000001" title="Convert ClientMsgType to nx_data (and add a &#39; &#39;) as a last character." alt="" coords="5,60,194,105"/>
+<area shape="rect" id="Node000002" href="$d9/d3d/group__BytevectorConversions.html#ga38e516c60d98cb71153ded26ce2b67e5" title=" " alt="" coords="249,29,415,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,67,236,64,231,65,195,72"/>
+<area shape="rect" id="Node000003" href="$d7/de9/classnexilis_1_1Json.html#a176086cccd2bb63f85a178a5b7eca0bd" title=" " alt="" coords="242,98,422,126"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="194,92,229,98,224,98,194,97"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="288,27,286,19,294,10,309,5,332,3,357,5,374,14,368,14,356,10,332,8,310,10,297,15,291,21,292,30"/>
+</map>

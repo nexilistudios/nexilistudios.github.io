@@ -1,0 +1,13 @@
+<map id="nexilis::udp_auth::makeSession" name="nexilis::udp_auth::makeSession">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,146,74"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="37,28,35,19,42,10,56,5,76,3,97,5,112,13,106,14,96,10,75,8,57,10,45,15,41,21,42,29"/>
+<area shape="rect" id="Node000002" href="$dc/dfa/namespacenexilis_1_1message__auth.html#ad2fb5d3e62f9c5f3575c57b5fd4277bf" title=" " alt="" coords="194,29,361,74"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="146,49,181,51,175,52,146,54"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="239,27,237,19,244,10,257,5,277,3,299,5,313,14,308,13,297,10,277,8,259,10,247,15,242,21,243,30"/>
+<area shape="rect" id="Node000003" href="$dc/dfa/namespacenexilis_1_1message__auth.html#a3bffff3bf649a82f183135f488be12f9" title=" " alt="" coords="409,38,605,66"/>
+<area shape="poly" id="edge4_Node000002_Node000003" title=" " alt="" coords="361,49,396,52,391,52,361,54"/>
+<area shape="poly" id="edge7_Node000003_Node000003" title=" " alt="" coords="468,36,461,29,467,19,482,13,507,11,534,14,550,23,545,22,533,19,507,16,483,18,470,23,467,29,473,38"/>
+<area shape="rect" id="Node000004" href="$dc/dfa/namespacenexilis_1_1message__auth.html#ab8ae1f049786d898466a6d38b12efae4" title=" " alt="" coords="653,29,821,74"/>
+<area shape="poly" id="edge5_Node000003_Node000004" title=" " alt="" coords="605,49,641,52,635,52,606,54"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="694,27,692,19,699,10,714,5,737,3,762,5,778,15,773,14,761,10,737,8,716,10,702,15,697,21,698,30"/>
+</map>

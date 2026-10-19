@@ -1,0 +1,16 @@
+<map id="nexilis::server::ServerJson::getServerData" name="nexilis::server::ServerJson::getServerData">
+<area shape="rect" id="Node000001" title="Return all data from the server." alt="" coords="5,57,196,102"/>
+<area shape="rect" id="Node000002" href="$d7/de9/classnexilis_1_1Json.html#a59fe0c8498a692d754af7aa490c39f8f" title="Merge second object to the first one." alt="" coords="257,5,420,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,54,268,36,264,39,193,59"/>
+<area shape="rect" id="Node000003" href="$d6/dc0/classnexilis_1_1server_1_1ServerJson.html#a644be521790ad79ccf5752920e3c9e56" title="Get data about the clients in the server." alt="" coords="244,57,434,102"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,77,231,78,226,80,197,82"/>
+<area shape="rect" id="Node000006" href="$d6/dc0/classnexilis_1_1server_1_1ServerJson.html#a869d0093fb9e50ceae2e1e72a59cce1f" title="Get data about the rooms in the server." alt="" coords="244,126,434,171"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="180,99,247,121,242,122,180,105"/>
+<area shape="rect" id="Node000004" href="$da/de9/classnexilis_1_1server_1_1ClientStorage.html#a1fe5ffd9a04e6f2088e0146a1112eda3" title=" " alt="" coords="482,32,691,76"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="434,67,469,66,464,67,435,72"/>
+<area shape="rect" id="Node000005" href="$dc/dbc/classnexilis_1_1Log.html#a66755adfac1917c8b8791a018f31c643" title=" " alt="" coords="522,100,651,128"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="435,90,510,103,505,103,435,95"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="434,133,510,125,505,125,435,138"/>
+<area shape="rect" id="Node000007" href="$db/d96/classnexilis_1_1server_1_1RoomStorage.html#afb508e42ad9e8246209a81cea08d9144" title="Get all the rooms in the server." alt="" coords="482,152,691,196"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="435,156,469,162,464,162,435,161"/>
+</map>

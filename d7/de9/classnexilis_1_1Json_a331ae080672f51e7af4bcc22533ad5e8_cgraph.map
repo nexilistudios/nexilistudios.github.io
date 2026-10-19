@@ -1,7 +1,0 @@
-<map id="nexilis::Json::saveToFile" name="nexilis::Json::saveToFile">
-<area shape="rect" id="Node000001" title="Write json object to a file." alt="" coords="5,13,181,38"/>
-<area shape="rect" id="Node000002" href="$dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="229,13,364,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,23,216,23,216,28,182,28"/>
-<area shape="rect" id="Node000003" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#acc02567dd7e4103305110bafbfd40c08" title="Send error message." alt="" coords="412,5,579,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="364,23,398,23,398,28,364,28"/>
-</map>

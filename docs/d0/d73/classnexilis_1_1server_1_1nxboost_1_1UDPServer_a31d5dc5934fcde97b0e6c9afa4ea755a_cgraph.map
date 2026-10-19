@@ -1,0 +1,13 @@
+<map id="nexilis::server::nxboost::UDPServer::operator=" name="nexilis::server::nxboost::UDPServer::operator=">
+<area shape="rect" id="Node000001" title="Move assignment operator." alt="" coords="5,64,179,108"/>
+<area shape="rect" id="Node000002" href="$d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696" title=" " alt="" coords="467,28,653,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,61,171,35,226,14,296,4,366,4,433,11,492,24,487,25,432,17,366,10,296,9,227,19,173,40,128,66"/>
+<area shape="rect" id="Node000003" href="$d5/da4/classnexilis_1_1NXProtocol.html#af09e9806c3da63398b852d39c3a2c06b" title="Default constructor." alt="" coords="243,29,388,74"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,70,230,64,225,66,180,75"/>
+<area shape="rect" id="Node000004" href="$de/df0/classnexilis_1_1server_1_1ServerProtocol.html#af3c78251fef035465c2b71962bad2c57" title=" " alt="" coords="452,129,668,174"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="127,106,173,133,227,153,280,162,333,167,434,167,439,167,333,172,279,168,226,158,171,137,125,111"/>
+<area shape="rect" id="Node000005" href="$d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#a02d2201c151ae09aeab3aae6e1bb4b8b" title="Constructor." alt="" coords="227,98,404,143"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="179,97,214,104,209,105,179,102"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="387,95,497,62,503,61,388,100"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="405,129,439,136,434,136,404,135"/>
+</map>

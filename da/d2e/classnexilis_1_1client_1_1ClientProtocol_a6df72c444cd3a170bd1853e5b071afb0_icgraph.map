@@ -1,9 +1,0 @@
-<map id="nexilis::client::ClientProtocol::getProtocolStatus" name="nexilis::client::ClientProtocol::getProtocolStatus">
-<area shape="rect" id="Node000001" title="Get the connection status of client protocol." alt="" coords="388,35,596,75"/>
-<area shape="rect" id="Node000002" href="$dc/d34/classnexilis_1_1TCPClient.html#a86ff1a43689a14c35d0c32f8a0bf7e64" title=" " alt="" coords="195,5,340,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="374,42,340,37,341,32,374,37"/>
-<area shape="rect" id="Node000004" href="$d8/df0/boost__tcp__client__c_8cc.html#a8d93315129da1c1ad300a6e4cef6cc88" title=" " alt="" coords="195,70,340,95"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="374,72,341,76,340,71,374,67"/>
-<area shape="rect" id="Node000003" href="$d8/d34/namespacenexilis.html#a96f5c6cfdccac25888b5a40ef9d32592" title=" " alt="" coords="5,13,147,38"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="181,28,147,28,147,23,181,23"/>
-</map>

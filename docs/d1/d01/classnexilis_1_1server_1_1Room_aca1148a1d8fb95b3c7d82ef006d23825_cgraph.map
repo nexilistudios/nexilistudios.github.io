@@ -1,0 +1,11 @@
+<map id="nexilis::server::Room::joinRoom" name="nexilis::server::Room::joinRoom">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,105,165,150"/>
+<area shape="rect" id="Node000002" href="$d1/d01/classnexilis_1_1server_1_1Room.html#a873fab57f71377c806ce892c76fe6d7a" title=" " alt="" coords="213,5,372,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,103,211,60,227,55,222,58,214,65,130,107"/>
+<area shape="rect" id="Node000003" href="$da/d49/classnexilis_1_1BaseRoom.html#a3f1693ee56cc7a471dc72ca29cf0da70" title="Get the identifier of the room." alt="" coords="217,75,368,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,113,204,109,199,111,166,118"/>
+<area shape="rect" id="Node000004" href="$dc/dbc/classnexilis_1_1Log.html#a66755adfac1917c8b8791a018f31c643" title=" " alt="" coords="228,143,356,171"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="165,136,215,145,210,147,165,142"/>
+<area shape="rect" id="Node000005" href="$dc/dbc/classnexilis_1_1Log.html#a191e4c013bad219e746e8e56682d65e1" title=" " alt="" coords="215,195,370,223"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="137,148,214,180,235,190,229,189,212,185,136,153"/>
+</map>

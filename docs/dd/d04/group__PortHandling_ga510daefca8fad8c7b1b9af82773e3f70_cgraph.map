@@ -1,0 +1,11 @@
+<map id="nexilis::Util::cleanupPortFile" name="nexilis::Util::cleanupPortFile">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,32,208,60"/>
+<area shape="rect" id="Node000002" href="$dd/de4/classnexilis_1_1Util.html#ad4e4e317fd172fff57099fc3284d6299" title="File stuff." alt="" coords="260,5,452,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,32,248,30,242,32,209,38"/>
+<area shape="rect" id="Node000003" href="$dd/d04/group__PortHandling.html#ga8dc341fe44a9de8bb4e0b93a4f447a64" title=" " alt="" coords="256,57,457,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,53,243,59,237,60,208,59"/>
+<area shape="rect" id="Node000004" href="$dd/de4/classnexilis_1_1Util.html#a0066197f79b612d78444f59dafeeb466" title=" " alt="" coords="505,14,674,59"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="453,54,492,51,487,52,454,59"/>
+<area shape="rect" id="Node000005" href="$d5/da4/classnexilis_1_1NXProtocol.html#a0359edd948a8adfcf565c6e57da29480" title="Returns a string value of the Type." alt="" coords="518,84,662,128"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="454,83,505,93,499,93,454,88"/>
+</map>

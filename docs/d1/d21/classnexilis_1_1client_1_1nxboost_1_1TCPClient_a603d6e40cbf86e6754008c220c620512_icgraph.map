@@ -1,0 +1,14 @@
+<map id="nexilis::client::nxboost::TCPClient::getType" name="nexilis::client::nxboost::TCPClient::getType">
+<area shape="rect" id="Node000001" title="NXProtocol::getType() implementation." alt="" coords="456,64,624,109"/>
+<area shape="rect" id="Node000002" href="$d8/df0/boost__tcp__client__c_8cc.html#a87fffc7c57af13cc2b04724ba6d5214d" title=" " alt="" coords="231,29,408,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="438,71,409,68,409,63,443,71"/>
+<area shape="rect" id="Node000003" href="$d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#aa33257eb91ceaddd1289e83aa03d7ba6" title="NXProtocol::start() implementation." alt="" coords="235,99,404,143"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="438,102,404,110,403,105,443,101"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="354,14,342,10,319,8,299,10,286,15,281,21,282,30,277,28,276,19,283,10,298,5,319,3,343,5,359,14"/>
+<area shape="rect" id="Node000004" href="$d8/df0/boost__tcp__client__c_8cc.html#aa7de3448ecaaf164b22a7fc66cbe7356" title=" " alt="" coords="5,56,183,101"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="218,103,183,98,183,92,223,102"/>
+<area shape="rect" id="Node000005" href="$d8/df0/boost__tcp__client__c_8cc.html#a8d93315129da1c1ad300a6e4cef6cc88" title=" " alt="" coords="22,148,166,176"/>
+<area shape="poly" id="edge6_Node000003_Node000005" title=" " alt="" coords="223,139,167,152,166,146,217,140"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="129,42,117,37,94,35,73,37,60,41,55,47,56,56,51,55,50,46,57,37,72,31,94,29,118,32,134,40"/>
+<area shape="poly" id="edge7_Node000005_Node000005" title=" " alt="" coords="131,133,119,130,94,127,71,129,58,134,54,139,60,148,55,148,49,140,54,130,69,124,94,122,120,124,136,133"/>
+</map>

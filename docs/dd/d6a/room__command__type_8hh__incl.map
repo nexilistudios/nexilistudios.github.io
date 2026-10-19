@@ -1,0 +1,30 @@
+<map id="include/nexilis/room_command_type.hh" name="include/nexilis/room_command_type.hh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="336,5,489,50"/>
+<area shape="rect" id="Node000002" href="$d1/d6b/vector2_8hh.html" title=" " alt="" coords="76,98,253,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="345,52,220,95,217,90,349,49"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="321,258,386,286"/>
+<area shape="poly" id="edge14_Node000001_Node000006" title=" " alt="" coords="401,49,379,99,363,176,357,244,352,241,358,175,374,97,397,52"/>
+<area shape="rect" id="Node000007" href="$db/d36/vector3_8hh.html" title=" " alt="" coords="388,98,565,126"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="430,48,459,86,454,85,429,53"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="589,98,647,126"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="467,48,577,93,572,94,467,53"/>
+<area shape="rect" id="Node000003" href="$dc/d61/vector_8hh.html" title=" " alt="" coords="142,174,312,201"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="176,124,209,162,204,162,175,129"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,174,68,201"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="140,129,74,168,71,164,143,124"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="154,124,142,144,132,163,127,182,133,200,152,219,170,230,189,235,210,237,256,237,281,239,309,247,317,252,311,251,308,252,280,245,255,242,210,242,188,240,168,235,148,223,129,203,122,183,127,161,138,141,150,128"/>
+<area shape="rect" id="Node000004" href="$db/d0a/vector__type_8hh.html" title=" " alt="" coords="147,249,296,294"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="228,200,227,235,222,232,224,204"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="429,127,287,171,285,166,434,125"/>
+<area shape="rect" id="Node000008" href="$dc/dd2/nx__data_8hh.html" title=" " alt="" coords="388,174,528,201"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="475,124,467,160,463,157,471,128"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="552,174,617,201"/>
+<area shape="poly" id="edge11_Node000007_Node000010" title=" " alt="" coords="496,124,555,165,550,165,495,129"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="642,174,727,201"/>
+<area shape="poly" id="edge12_Node000007_Node000011" title=" " alt="" coords="514,124,636,168,631,168,513,129"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="751,174,842,201"/>
+<area shape="poly" id="edge13_Node000007_Node000012" title=" " alt="" coords="534,124,738,172,733,173,534,129"/>
+<area shape="poly" id="edge8_Node000008_Node000006" title=" " alt="" coords="444,201,384,250,381,245,439,203"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="427,258,489,286"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="460,200,460,244,456,241,456,204"/>
+</map>

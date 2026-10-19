@@ -1,0 +1,10 @@
+<map id="nexilis::message_auth::sign" name="nexilis::message_auth::sign">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,173,74"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="45,28,44,19,51,10,66,5,89,3,114,5,130,14,125,14,113,10,89,8,68,10,54,15,49,21,50,29"/>
+<area shape="rect" id="Node000002" href="$dc/dfa/namespacenexilis_1_1message__auth.html#a3bffff3bf649a82f183135f488be12f9" title=" " alt="" coords="221,38,417,66"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="173,49,208,51,202,52,173,54"/>
+<area shape="poly" id="edge5_Node000002_Node000002" title=" " alt="" coords="279,36,273,29,278,19,294,13,319,11,346,14,362,23,357,22,344,19,319,16,295,18,282,23,278,29,284,38"/>
+<area shape="rect" id="Node000003" href="$dc/dfa/namespacenexilis_1_1message__auth.html#ab8ae1f049786d898466a6d38b12efae4" title=" " alt="" coords="465,29,632,74"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="417,49,452,52,447,52,417,54"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="505,27,503,19,511,10,526,5,549,3,574,5,590,15,585,14,572,10,549,8,527,10,514,15,509,21,509,30"/>
+</map>

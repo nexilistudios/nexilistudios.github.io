@@ -1,9 +1,0 @@
-<map id="nexilis::crypto::deriveMessageKey" name="nexilis::crypto::deriveMessageKey">
-<area shape="rect" id="Node000001" title=" " alt="" coords="549,45,795,70"/>
-<area shape="rect" id="Node000002" href="$d7/de2/classnexilis_1_1client_1_1RoomCommunicationCommand.html#a30655a8c10bf10fc3cea99fd3c13d39c" title=" " alt="" coords="243,5,501,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="539,46,501,42,502,36,539,41"/>
-<area shape="rect" id="Node000003" href="$d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a7d7bf9f7d979fde6d5863311c2c9721d" title=" " alt="" coords="257,69,487,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="539,74,488,80,487,74,539,69"/>
-<area shape="rect" id="Node000004" href="$d8/d8e/packet__c_8cc.html#aa08d88803cc8c21693ceb9b754c894a0" title=" " alt="" coords="5,69,195,109"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="243,92,195,92,195,87,243,87"/>
-</map>

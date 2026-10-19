@@ -1,0 +1,9 @@
+<map id="nexilis::client::ClientSession::getPosition3D" name="nexilis::client::ClientSession::getPosition3D">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,57,210,102"/>
+<area shape="rect" id="Node000002" href="$df/de2/classnexilis_1_1FileLog.html#adb41424fe67132466a731f77e638f0a8" title=" " alt="" coords="273,5,438,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,54,283,36,278,38,203,59"/>
+<area shape="rect" id="Node000003" href="$dc/dcb/classnexilis_1_1BaseClient.html#a2620f3052b832d949805f4a5bc2e0046" title=" " alt="" coords="284,57,426,102"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="210,77,271,79,266,80,211,82"/>
+<area shape="rect" id="Node000004" href="$d6/dd3/classnexilis_1_1Object.html#af8b4495dec7bf7276df9dddff4b19939" title=" " alt="" coords="258,125,453,153"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="203,99,283,121,278,122,202,105"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="nexilis::client::ClientAPI::getClientPassword" name="nexilis::client::ClientAPI::getClientPassword">
+<area shape="rect" id="Node000001" title=" " alt="" coords="547,40,722,85"/>
+<area shape="rect" id="Node000002" href="$d7/de2/classnexilis_1_1client_1_1RoomCommunicationCommand.html#a30655a8c10bf10fc3cea99fd3c13d39c" title=" " alt="" coords="242,5,499,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="529,49,499,47,499,42,534,49"/>
+<area shape="rect" id="Node000003" href="$d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a7d7bf9f7d979fde6d5863311c2c9721d" title=" " alt="" coords="255,75,486,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="534,76,486,85,485,79,529,76"/>
+<area shape="rect" id="Node000004" href="$d8/d8e/packet__c_8cc.html#aa08d88803cc8c21693ceb9b754c894a0" title=" " alt="" coords="5,75,194,119"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="237,97,194,100,194,94,242,97"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="142,60,127,56,99,53,74,55,58,60,52,66,53,75,48,74,47,64,55,56,73,50,100,48,128,50,147,59"/>
+</map>

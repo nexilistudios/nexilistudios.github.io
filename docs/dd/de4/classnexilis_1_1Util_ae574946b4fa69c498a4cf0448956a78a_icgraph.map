@@ -1,0 +1,19 @@
+<map id="nexilis::Util::convertToVector3" name="nexilis::Util::convertToVector3">
+<area shape="rect" id="Node000001" title="Convert nx_data to Vector3f." alt="" coords="753,109,920,154"/>
+<area shape="rect" id="Node000002" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a87d6805bee7b08064fbd10a328df579f" title=" " alt="" coords="503,75,705,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="735,117,706,115,706,109,741,117"/>
+<area shape="rect" id="Node000008" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a02f82557e240dadd7338438092a85ed1" title=" " alt="" coords="508,144,700,189"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="741,146,701,155,701,149,735,147"/>
+<area shape="rect" id="Node000003" href="$da/d15/classnexilis_1_1server_1_1Command.html#a36f27b2491becaf040095c3cb5ec4067" title=" " alt="" coords="254,75,442,119"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="484,97,443,100,443,94,490,97"/>
+<area shape="rect" id="Node000007" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a871e76e71e7c6d117e1ec38739d2c5f3" title=" " alt="" coords="242,144,455,189"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="507,123,434,146,433,141,502,124"/>
+<area shape="rect" id="Node000004" href="$da/d15/classnexilis_1_1server_1_1Command.html#a2d49d7ed265f7e6d1deb2bae8060f686" title="Deleted copy assignment operator." alt="" coords="5,5,194,50"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="248,71,182,53,182,48,253,69"/>
+<area shape="rect" id="Node000005" href="$d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="14,75,185,119"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="236,98,186,100,185,94,241,96"/>
+<area shape="rect" id="Node000006" href="$da/d15/classnexilis_1_1server_1_1Command.html#adb7341228f4137e0656f514180b5a45a" title=" " alt="" coords="5,144,194,189"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="253,123,183,146,182,141,248,125"/>
+<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="502,139,433,123,434,117,507,139"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="490,166,456,169,455,164,495,166"/>
+</map>

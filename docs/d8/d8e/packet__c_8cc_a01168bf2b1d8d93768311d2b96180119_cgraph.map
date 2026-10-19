@@ -1,0 +1,27 @@
+<map id="nexilis_packet_room_player3D_audio_event" name="nexilis_packet_room_player3D_audio_event">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,112,180,157"/>
+<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="46,111,45,102,53,93,69,87,93,85,119,88,136,96,131,98,117,93,92,91,70,93,56,97,50,103,52,111"/>
+<area shape="rect" id="Node000002" href="$d8/d8e/packet__c_8cc.html#a0e0d970b15f9446b709c4a6b6179d524" title=" " alt="" coords="270,90,400,118"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,121,257,112,253,115,181,126"/>
+<area shape="rect" id="Node000004" href="$d5/d69/structnexilis_1_1client_1_1ClientImpl.html#ae8b01f94e650959a0dcc2fb4bc68b6cd" title=" " alt="" coords="228,141,442,186"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="179,142,214,148,209,150,181,147"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="293,89,287,81,292,71,308,65,335,63,363,66,380,74,375,75,362,71,335,68,310,70,296,75,292,81,298,90"/>
+<area shape="rect" id="Node000003" href="$d0/dab/nx__data__c_8cc.html#a45eae7030cd842ff1e280ab1a7847d75" title=" " alt="" coords="490,90,699,118"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="399,101,477,103,472,104,400,106"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="552,89,545,81,551,71,567,65,595,63,624,66,641,75,636,75,623,71,595,68,568,70,554,75,550,81,557,90"/>
+<area shape="rect" id="Node000005" href="$db/df7/classnexilis_1_1client_1_1__Packet.html#afbc04feec4d92f69d7847d386a0d0567" title=" " alt="" coords="512,141,678,186"/>
+<area shape="poly" id="edge7_Node000004_Node000005" title=" " alt="" coords="442,161,498,163,493,164,443,166"/>
+<area shape="rect" id="Node000006" href="$d9/d3d/group__BytevectorConversions.html#ga38e516c60d98cb71153ded26ce2b67e5" title=" " alt="" coords="762,29,929,74"/>
+<area shape="poly" id="edge8_Node000005_Node000006" title=" " alt="" coords="674,138,698,127,712,116,721,106,731,95,746,84,755,82,760,80,749,89,735,99,725,110,716,120,701,131,676,143"/>
+<area shape="rect" id="Node000007" href="$dd/de4/classnexilis_1_1Util.html#a6c88740ca44074ff58309b009e68fd0d" title="Convert nx_data to numeral type." alt="" coords="747,98,944,126"/>
+<area shape="poly" id="edge10_Node000005_Node000007" title=" " alt="" coords="678,144,763,129,758,130,679,149"/>
+<area shape="rect" id="Node000009" href="$dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="778,150,913,178"/>
+<area shape="poly" id="edge12_Node000005_Node000009" title=" " alt="" coords="678,161,765,163,760,164,679,166"/>
+<area shape="rect" id="Node000010" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a311405fc8800e91760016a6da07cb130" title="General." alt="" coords="758,201,933,246"/>
+<area shape="poly" id="edge13_Node000005_Node000010" title=" " alt="" coords="678,181,745,199,740,199,678,186"/>
+<area shape="rect" id="Node000011" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#ab658f11270adc45665288a833f6c18ba" title=" " alt="" coords="758,271,933,315"/>
+<area shape="poly" id="edge14_Node000005_Node000011" title=" " alt="" coords="629,184,684,220,749,256,763,265,758,264,746,261,681,225,627,189"/>
+<area shape="poly" id="edge9_Node000006_Node000006" title=" " alt="" coords="802,27,801,19,808,10,823,5,846,3,870,5,886,14,881,14,869,10,845,8,824,10,811,15,806,21,807,30"/>
+<area shape="rect" id="Node000008" href="$d2/def/classnexilis_1_1server_1_1Config.html#a4524682844dcfc71ad49250c36f399ca" title=" " alt="" coords="992,89,1155,134"/>
+<area shape="poly" id="edge11_Node000007_Node000008" title=" " alt="" coords="944,109,979,111,973,112,945,114"/>
+</map>

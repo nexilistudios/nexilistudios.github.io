@@ -1,0 +1,23 @@
+<map id="include/nexilis/message_auth.hh" name="include/nexilis/message_auth.hh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="651,5,829,50"/>
+<area shape="rect" id="Node000002" href="$d4/d3d/udp__auth_8hh.html" title=" " alt="" coords="503,98,646,143"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="689,57,615,100,613,95,684,59"/>
+<area shape="rect" id="Node000010" href="$df/d3c/client__protocol_8cc.html" title=" " alt="" coords="670,98,810,143"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="741,63,742,99,738,96,738,68"/>
+<area shape="rect" id="Node000011" href="$da/d3b/message__handler_8cc.html" title=" " alt="" coords="833,98,1054,143"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="803,54,898,97,892,97,802,59"/>
+<area shape="rect" id="Node000003" href="$d0/d83/client__id_8hh.html" title=" " alt="" coords="5,199,200,244"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="485,137,358,163,212,193,180,201,178,196,211,188,357,158,490,135"/>
+<area shape="rect" id="Node000005" href="$df/de8/client_2protocol_2af__inet_2udp__client_8cc.html" title=" " alt="" coords="224,191,379,252"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="498,149,380,195,378,190,503,147"/>
+<area shape="rect" id="Node000006" href="$dc/dbe/client_2protocol_2nxboost_2udp__client_8cc.html" title=" " alt="" coords="403,191,565,252"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="547,153,513,192,510,188,542,155"/>
+<area shape="rect" id="Node000007" href="$d7/de7/af__inet_2udp__server_8cc.html" title=" " alt="" coords="589,191,744,252"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="606,152,641,191,636,190,604,157"/>
+<area shape="rect" id="Node000008" href="$d6/dd2/nxboost_2udp__server_8cc.html" title=" " alt="" coords="768,191,930,252"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="649,146,770,191,765,191,649,151"/>
+<area shape="rect" id="Node000009" href="$d3/df1/user_8cc.html" title=" " alt="" coords="955,199,1087,244"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="662,140,742,154,805,162,866,171,943,188,971,199,965,198,942,193,865,176,804,167,741,159,662,146"/>
+<area shape="rect" id="Node000004" href="$df/d48/command__parser_8cc.html" title=" " alt="" coords="24,300,181,345"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="104,257,105,301,100,299,101,261"/>
+</map>

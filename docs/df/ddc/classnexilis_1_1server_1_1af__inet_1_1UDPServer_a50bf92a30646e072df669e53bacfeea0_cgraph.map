@@ -1,0 +1,21 @@
+<map id="nexilis::server::af_inet::UDPServer::~UDPServer" name="nexilis::server::af_inet::UDPServer::~UDPServer">
+<area shape="rect" id="Node000001" title="Destructor." alt="" coords="5,89,226,134"/>
+<area shape="rect" id="Node000002" href="$dd/d04/group__PortHandling.html#ga510daefca8fad8c7b1b9af82773e3f70" title=" " alt="" coords="274,37,476,65"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,86,299,68,295,70,216,91"/>
+<area shape="rect" id="Node000007" href="$df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a4063ede8829f763deee61703341a97ef" title="NXProtocol::getType() implementation." alt="" coords="280,89,470,134"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="226,109,267,111,262,112,226,114"/>
+<area shape="rect" id="Node000008" href="$df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a9f160f664a411ee41ab01634930ebe3f" title="NXProtocol::stop() implementation." alt="" coords="291,158,458,203"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="202,132,279,154,274,155,202,137"/>
+<area shape="rect" id="Node000003" href="$dd/de4/classnexilis_1_1Util.html#ad4e4e317fd172fff57099fc3284d6299" title="File stuff." alt="" coords="528,5,721,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="476,36,516,33,511,34,477,41"/>
+<area shape="rect" id="Node000004" href="$dd/d04/group__PortHandling.html#ga8dc341fe44a9de8bb4e0b93a4f447a64" title=" " alt="" coords="524,57,725,85"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="476,57,511,62,506,62,477,62"/>
+<area shape="rect" id="Node000005" href="$dd/de4/classnexilis_1_1Util.html#a0066197f79b612d78444f59dafeeb466" title=" " alt="" coords="773,14,943,59"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="722,54,761,51,755,52,723,59"/>
+<area shape="rect" id="Node000006" href="$d5/da4/classnexilis_1_1NXProtocol.html#a0359edd948a8adfcf565c6e57da29480" title="Returns a string value of the Type." alt="" coords="786,84,930,128"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="722,83,773,93,768,93,722,88"/>
+<area shape="rect" id="Node000009" href="$dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982" title="All the overloaded printing functions." alt="" coords="553,128,696,156"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="459,165,535,156,540,155,460,170"/>
+<area shape="rect" id="Node000010" href="$dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="558,180,692,208"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="459,182,544,189,539,189,459,188"/>
+</map>

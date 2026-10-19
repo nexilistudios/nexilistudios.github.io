@@ -1,0 +1,6 @@
+<map id="nexilis::Ports::setBoostTCPPort" name="nexilis::Ports::setBoostTCPPort">
+<area shape="rect" id="Node000001" title="Override the Boost TCP authentication port for protocols created later." alt="" coords="248,21,418,66"/>
+<area shape="rect" id="Node000002" href="$d9/d37/protocol__manager__c_8cc.html#abb597bec929183b11b0f1cfb2d7d47b0" title=" " alt="" coords="5,29,200,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,43,200,46,200,41,235,43"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="140,14,128,10,102,8,78,10,65,15,62,20,68,29,63,29,57,20,62,11,77,5,103,3,130,5,146,14"/>
+</map>

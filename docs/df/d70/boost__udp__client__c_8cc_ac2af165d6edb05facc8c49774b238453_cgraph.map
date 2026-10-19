@@ -1,0 +1,6 @@
+<map id="nexilis_boost_udp_client_get_type" name="nexilis_boost_udp_client_get_type">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,187,74"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="53,28,52,19,59,10,74,5,96,3,120,5,136,14,131,14,119,10,96,8,75,10,62,15,57,21,59,29"/>
+<area shape="rect" id="Node000002" href="$db/dfd/classnexilis_1_1client_1_1nxboost_1_1UDPClient.html#a53543bdbd8f0c3e035d8b1136af1e73a" title="NXProtocol::getType() implementation." alt="" coords="235,29,403,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,49,222,51,216,52,187,54"/>
+</map>

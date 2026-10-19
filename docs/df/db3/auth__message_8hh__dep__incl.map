@@ -1,0 +1,15 @@
+<map id="include/nexilis/server/message/auth_message.hh" name="include/nexilis/server/message/auth_message.hh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="539,5,742,50"/>
+<area shape="rect" id="Node000002" href="$de/d36/auth__message_8cc.html" title=" " alt="" coords="5,106,207,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="521,46,378,71,220,101,186,109,184,103,219,95,377,66,526,45"/>
+<area shape="rect" id="Node000003" href="$da/d3b/message__handler_8cc.html" title=" " alt="" coords="231,106,453,151"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="563,55,408,109,407,103,558,56"/>
+<area shape="rect" id="Node000004" href="$df/dac/af__inet_2tcp__server_8cc.html" title=" " alt="" coords="477,98,628,160"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="614,61,581,100,578,95,609,63"/>
+<area shape="rect" id="Node000005" href="$d7/de7/af__inet_2udp__server_8cc.html" title=" " alt="" coords="652,98,808,160"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="671,59,705,98,700,97,669,64"/>
+<area shape="rect" id="Node000006" href="$d4/dbc/nxboost_2tcp__server_8cc.html" title=" " alt="" coords="832,98,990,160"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="715,53,834,99,829,98,714,58"/>
+<area shape="rect" id="Node000007" href="$d6/dd2/nxboost_2udp__server_8cc.html" title=" " alt="" coords="1014,98,1176,160"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="758,45,877,67,1003,95,1016,101,1011,101,1001,101,876,72,758,50"/>
+</map>

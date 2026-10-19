@@ -1,7 +1,0 @@
-<map id="nexilis::client::af_inet::TCPClient::stop" name="nexilis::client::af_inet::TCPClient::stop">
-<area shape="rect" id="Node000001" title="NXProtocol::stop() implementation." alt="" coords="259,37,419,77"/>
-<area shape="rect" id="Node000002" href="$d8/d6b/classnexilis_1_1client_1_1af__inet_1_1TCPClient.html#a3344f385a6c0a606ef330f39b7a44fbf" title="NXProtocol::start() implementation." alt="" coords="27,5,189,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,47,189,39,190,34,245,42"/>
-<area shape="rect" id="Node000003" href="$d8/d6b/classnexilis_1_1client_1_1af__inet_1_1TCPClient.html#a1440cc4a5e8e18188a4973781aa6822b" title="Destructor." alt="" coords="5,69,211,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="245,73,211,78,210,72,244,68"/>
-</map>

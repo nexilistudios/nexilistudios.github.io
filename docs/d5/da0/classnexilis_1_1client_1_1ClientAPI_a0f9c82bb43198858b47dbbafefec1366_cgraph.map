@@ -1,0 +1,7 @@
+<map id="nexilis::client::ClientAPI::isUnixDgramReady" name="nexilis::client::ClientAPI::isUnixDgramReady">
+<area shape="rect" id="Node000001" title="If the client af_unix DGRAM connection is ready." alt="" coords="5,40,181,85"/>
+<area shape="rect" id="Node000002" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a51524818393c2a2a704ee3b3db7b7729" title=" " alt="" coords="229,5,404,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,46,216,43,211,44,182,51"/>
+<area shape="rect" id="Node000003" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a1a217bf8d2dfcc6a0f37b7fb0b1eb010" title="Is the server aware of the client, is the ClientAPI and Packet ready for use." alt="" coords="229,75,404,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="181,73,216,81,211,81,181,79"/>
+</map>

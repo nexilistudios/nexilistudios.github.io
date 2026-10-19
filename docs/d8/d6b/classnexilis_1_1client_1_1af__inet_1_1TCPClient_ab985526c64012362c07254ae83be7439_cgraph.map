@@ -1,0 +1,7 @@
+<map id="nexilis::client::af_inet::TCPClient::sendMessage" name="nexilis::client::af_inet::TCPClient::sendMessage">
+<area shape="rect" id="Node000001" title="ClientProtocol::sendMessage(const nx_data&amp;, const std::function&lt;void()&gt;&amp;) implementation." alt="" coords="5,5,227,50"/>
+<area shape="rect" id="Node000002" href="$da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#a3bedd34391c63ccb9d70483317198ac6" title=" " alt="" coords="275,5,482,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="227,25,262,28,257,28,227,30"/>
+<area shape="rect" id="Node000003" href="$da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#a4f1a10ae05e2d672a42a12b956b0e3b5" title="Send nexilis message (nx_data) to server." alt="" coords="530,5,737,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="482,25,517,28,512,28,482,30"/>
+</map>

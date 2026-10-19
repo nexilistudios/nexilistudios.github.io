@@ -1,7 +1,0 @@
-<map id="nexilis_packet_room_management_leave" name="nexilis_packet_room_management_leave">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,164,45"/>
-<area shape="rect" id="Node000002" href="$d8/d8e/packet__c_8cc.html#a0e0d970b15f9446b709c4a6b6179d524" title=" " alt="" coords="212,13,343,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,23,198,23,198,28,164,28"/>
-<area shape="rect" id="Node000003" href="$d0/dab/nx__data__c_8cc.html#a45eae7030cd842ff1e280ab1a7847d75" title=" " alt="" coords="391,13,601,38"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="343,23,377,23,377,28,343,28"/>
-</map>

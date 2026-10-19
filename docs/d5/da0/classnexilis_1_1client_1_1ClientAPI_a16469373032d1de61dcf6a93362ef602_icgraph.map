@@ -1,0 +1,10 @@
+<map id="nexilis::client::ClientAPI::getBoostUDPServerPortNumber" name="nexilis::client::ClientAPI::getBoostUDPServerPortNumber">
+<area shape="rect" id="Node000001" title=" " alt="" coords="451,64,686,109"/>
+<area shape="rect" id="Node000002" href="$db/dfd/classnexilis_1_1client_1_1nxboost_1_1UDPClient.html#a49787569066c0c36fc7ca9cf7a566640" title="NXProtocol::start() implementation." alt="" coords="235,64,403,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="433,87,404,89,403,84,438,86"/>
+<area shape="rect" id="Node000003" href="$df/d70/boost__udp__client__c_8cc.html#a3e7df0ca76ddd0517837122790254ca9" title=" " alt="" coords="5,29,187,74"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="217,71,187,68,187,63,222,70"/>
+<area shape="rect" id="Node000004" href="$db/dfd/classnexilis_1_1client_1_1nxboost_1_1UDPClient.html#a61bb5396bbf24f96ee1a289f0110531f" title="Deleted copy assignment operator." alt="" coords="11,99,181,143"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="217,102,182,110,181,105,222,101"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="131,15,119,10,96,8,75,10,62,15,57,21,59,29,53,29,52,19,59,10,74,5,96,3,120,5,136,13"/>
+</map>

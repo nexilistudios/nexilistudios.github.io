@@ -1,0 +1,7 @@
+<map id="nexilis::server::Room::Room" name="nexilis::server::Room::Room">
+<area shape="rect" id="Node000001" title="Deleted copy constructor." alt="" coords="5,5,165,50"/>
+<area shape="rect" id="Node000002" href="$d1/d01/classnexilis_1_1server_1_1Room.html#a012f91530eafea5e7a36c9b9198057df" title="Constructor." alt="" coords="213,5,372,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,25,200,27,195,28,165,30"/>
+<area shape="rect" id="Node000003" href="$da/d49/classnexilis_1_1BaseRoom.html#af07e2b514f1b716c5a243389abc3f848" title="Constructor." alt="" coords="420,5,570,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="372,25,407,28,402,28,372,30"/>
+</map>

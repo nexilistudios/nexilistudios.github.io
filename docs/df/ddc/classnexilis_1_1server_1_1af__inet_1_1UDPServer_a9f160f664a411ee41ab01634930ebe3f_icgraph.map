@@ -1,0 +1,7 @@
+<map id="nexilis::server::af_inet::UDPServer::stop" name="nexilis::server::af_inet::UDPServer::stop">
+<area shape="rect" id="Node000001" title="NXProtocol::stop() implementation." alt="" coords="274,40,441,85"/>
+<area shape="rect" id="Node000002" href="$df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#af47c596e408db5c34cad00ab2ecdb128" title="Deleted copy assignment operator." alt="" coords="13,5,218,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="255,49,219,45,219,40,261,48"/>
+<area shape="rect" id="Node000003" href="$df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a50bf92a30646e072df669e53bacfeea0" title="Destructor." alt="" coords="5,75,226,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="255,77,227,84,226,79,261,76"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="nexilis::server::af_inet::UDPServer::UDPServer" name="nexilis::server::af_inet::UDPServer::UDPServer">
+<area shape="rect" id="Node000001" title="Move constructor." alt="" coords="5,65,215,110"/>
+<area shape="rect" id="Node000002" href="$d5/da4/classnexilis_1_1NXProtocol.html#af09e9806c3da63398b852d39c3a2c06b" title="Default constructor." alt="" coords="295,5,440,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,62,283,47,278,49,210,67"/>
+<area shape="rect" id="Node000003" href="$de/df0/classnexilis_1_1server_1_1ServerProtocol.html#af3c78251fef035465c2b71962bad2c57" title=" " alt="" coords="520,96,736,141"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="215,91,506,109,504,113,215,97"/>
+<area shape="rect" id="Node000004" href="$df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a25107546042534bd83076db39dbd5f9d" title=" " alt="" coords="263,125,472,170"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="209,108,256,121,251,121,209,113"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="472,133,502,132,507,132,473,139"/>
+</map>

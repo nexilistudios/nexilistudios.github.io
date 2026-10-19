@@ -1,0 +1,6 @@
+<map id="nexilis_boost_tcp_client_send_message" name="nexilis_boost_tcp_client_send_message">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,183,74"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="50,28,48,19,56,10,71,5,94,3,119,5,135,14,130,14,118,10,94,8,72,10,59,15,54,21,55,29"/>
+<area shape="rect" id="Node000002" href="$d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a1b45b8575f174da4069c2e4aa4416511" title="ClientProtocol::sendMessage(const nx_data&amp;) implementation." alt="" coords="231,29,420,74"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="183,49,218,51,212,52,183,54"/>
+</map>

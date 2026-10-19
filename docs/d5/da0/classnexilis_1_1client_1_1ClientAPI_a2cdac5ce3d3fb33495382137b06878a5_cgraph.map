@@ -1,0 +1,9 @@
+<map id="nexilis::client::ClientAPI::isUnixStreamReady" name="nexilis::client::ClientAPI::isUnixStreamReady">
+<area shape="rect" id="Node000001" title="If the client af_unix STREAM connection is ready." alt="" coords="5,75,181,119"/>
+<area shape="rect" id="Node000002" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a51524818393c2a2a704ee3b3db7b7729" title=" " alt="" coords="229,5,404,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,72,230,54,225,57,168,77"/>
+<area shape="rect" id="Node000003" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#af44554958311acac3fdbef1d97b5e108" title="af_unix STREAM." alt="" coords="229,75,404,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,94,216,96,211,98,181,100"/>
+<area shape="rect" id="Node000004" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a1a217bf8d2dfcc6a0f37b7fb0b1eb010" title="Is the server aware of the client, is the ClientAPI and Packet ready for use." alt="" coords="229,144,404,189"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="167,117,230,138,225,139,167,123"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="nexilis::client::af_inet::UDPClient::UDPClient" name="nexilis::client::af_inet::UDPClient::UDPClient">
+<area shape="rect" id="Node000001" title="Constructor." alt="" coords="255,109,456,154"/>
+<area shape="rect" id="Node000002" href="$dd/d79/classnexilis_1_1client_1_1af__inet_1_1UDPClient.html#aaedc01b466874f672ac35ac1f2707be7" title="Deleted copy assignment operator." alt="" coords="5,5,207,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="293,103,206,65,176,53,176,48,208,60,298,101"/>
+<area shape="rect" id="Node000003" href="$dd/d79/classnexilis_1_1client_1_1af__inet_1_1UDPClient.html#a248609f22adf87de137f79715f8fed3a" title="Move assignment operator." alt="" coords="5,75,207,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="236,116,207,114,207,108,242,115"/>
+<area shape="rect" id="Node000004" href="$dd/d79/classnexilis_1_1client_1_1af__inet_1_1UDPClient.html#a4a4a33ccde2d63be7e05053ce3730050" title="Deleted copy constructor." alt="" coords="5,144,207,189"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="237,149,208,155,206,150,242,147"/>
+<area shape="rect" id="Node000005" href="$dd/d79/classnexilis_1_1client_1_1af__inet_1_1UDPClient.html#a0d4b60b928aa209fd8381e9512ae5a07" title="Move constructor." alt="" coords="5,213,207,258"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="298,160,208,203,177,215,175,210,206,199,293,162"/>
+</map>

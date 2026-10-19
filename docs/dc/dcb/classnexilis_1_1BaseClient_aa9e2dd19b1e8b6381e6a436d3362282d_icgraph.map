@@ -1,0 +1,9 @@
+<map id="nexilis::BaseClient::setBaseUsername" name="nexilis::BaseClient::setBaseUsername">
+<area shape="rect" id="Node000001" title=" " alt="" coords="499,40,647,85"/>
+<area shape="rect" id="Node000002" href="$d8/d6a/classnexilis_1_1client_1_1ClientSession.html#abdbea8e2bc0177516dacdef80ddccc40" title=" " alt="" coords="247,5,451,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="481,49,451,46,451,41,486,49"/>
+<area shape="rect" id="Node000004" href="$d4/d3a/classnexilis_1_1server_1_1User.html#addb1403676f233cfed7a10970b3e431b" title=" " alt="" coords="273,75,424,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="487,76,425,88,424,83,481,76"/>
+<area shape="rect" id="Node000003" href="$d3/d69/classnexilis_1_1client_1_1GetInfoRoomsCommand.html#a8d88de2409b9c924a3c54d534caada17" title=" " alt="" coords="5,5,199,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="228,28,199,30,199,25,234,27"/>
+</map>

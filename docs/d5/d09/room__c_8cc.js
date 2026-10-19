@@ -1,0 +1,28 @@
+var room__c_8cc =
+[
+    [ "nexilis_ClientSession", "d6/d91/structnexilis__ClientSession.html", "d6/d91/structnexilis__ClientSession" ],
+    [ "nexilis_Communication", "df/d07/structnexilis__Communication.html", "df/d07/structnexilis__Communication" ],
+    [ "nexilis_communication_create", "d5/d09/room__c_8cc.html#a428de0995606a0be8470e4c31e609fe3", null ],
+    [ "nexilis_communication_destroy", "d5/d09/room__c_8cc.html#aa7622b744a47228b0a6ad74abd0c7393", null ],
+    [ "nexilis_communication_get_client", "d5/d09/room__c_8cc.html#aded50d2e5dd9c72244cfd1a5997c49ac", null ],
+    [ "nexilis_communication_get_id", "d5/d09/room__c_8cc.html#ab8a86026a82d3ecf2d7b5ba3ecf43acc", null ],
+    [ "nexilis_communication_get_payload", "d5/d09/room__c_8cc.html#ab1b5b084bd1907351f7a666c4f4cc3a1", null ],
+    [ "nexilis_communication_get_sender_id", "d5/d09/room__c_8cc.html#a602f3e732545ab368fb4531ff89cb01d", null ],
+    [ "nexilis_room_add_client", "d5/d09/room__c_8cc.html#acd3512b6cb07892bc54d1121e1fb8da9", null ],
+    [ "nexilis_room_add_message", "d5/d09/room__c_8cc.html#a2808569515ec0c3ea45e3c9ff35067a6", null ],
+    [ "nexilis_room_contains_communication", "d5/d09/room__c_8cc.html#abdd45a0539ab1cd1923ea81cecc178da", null ],
+    [ "nexilis_room_contains_communication_by_id", "d5/d09/room__c_8cc.html#a46d5490f0d176db2b1a3e570c2a6fa07", null ],
+    [ "nexilis_room_create", "d5/d09/room__c_8cc.html#a32a73b5d9304062390e4caf983a214bb", null ],
+    [ "nexilis_room_destroy", "d5/d09/room__c_8cc.html#aa45f3b59cb735c67e584d0556d0dab28", null ],
+    [ "nexilis_room_free_client_array", "d5/d09/room__c_8cc.html#a0e7f80f1afd5c63511b552ceb07b5b9f", null ],
+    [ "nexilis_room_free_message_array", "d5/d09/room__c_8cc.html#ab86ec83589bc4cae2bf65c1111936330", null ],
+    [ "nexilis_room_get_client_amount", "d5/d09/room__c_8cc.html#a151aa2e313e5a950d7d9feab03902976", null ],
+    [ "nexilis_room_get_clients", "d5/d09/room__c_8cc.html#ae778e10250a735607d7b74ce130c387d", null ],
+    [ "nexilis_room_get_context", "d5/d09/room__c_8cc.html#ab282e25a6ca8b4eecfaa411130caffe5", null ],
+    [ "nexilis_room_get_creator_id", "d5/d09/room__c_8cc.html#aa460f2cfac8422fbb630360a18c6bc72", null ],
+    [ "nexilis_room_get_id", "d5/d09/room__c_8cc.html#a6347d1005515899fbdc101e9c5f50fa3", null ],
+    [ "nexilis_room_get_max_size", "d5/d09/room__c_8cc.html#adfbedc950e6d8d560757fd7dac2a17c6", null ],
+    [ "nexilis_room_get_messages", "d5/d09/room__c_8cc.html#a80923d398203ddddb72b0a3ba43821b5", null ],
+    [ "nexilis_room_get_name", "d5/d09/room__c_8cc.html#a550f9a23b5cdb98eb2db2f0fd928f8cb", null ],
+    [ "nexilis_room_remove_client", "d5/d09/room__c_8cc.html#a6dbd7c84b8bf4736077a3cdd02367910", null ]
+];

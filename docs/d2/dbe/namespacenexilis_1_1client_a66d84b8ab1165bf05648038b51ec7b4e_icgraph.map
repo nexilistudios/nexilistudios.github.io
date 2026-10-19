@@ -1,0 +1,8 @@
+<map id="nexilis::client::makeError" name="nexilis::client::makeError">
+<area shape="rect" id="Node000001" title=" " alt="" coords="455,29,638,57"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="585,14,572,10,547,8,523,10,509,15,506,20,512,30,507,28,501,20,506,11,521,5,547,3,574,5,590,14"/>
+<area shape="rect" id="Node000002" href="$db/d64/classnexilis_1_1client_1_1CommandParser.html#aca2f982d6b44dbff9fba0da6e949d570" title=" " alt="" coords="224,21,407,66"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="437,43,408,46,407,41,442,43"/>
+<area shape="rect" id="Node000003" href="$d2/ddb/classnexilis_1_1CommandSpec.html#a98f7323e03cb6ceeaa5db28ccc1ad2e2" title="Parse a JSON object into a client&#45;side command handler." alt="" coords="5,21,176,66"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="206,43,176,46,176,41,211,43"/>
+</map>

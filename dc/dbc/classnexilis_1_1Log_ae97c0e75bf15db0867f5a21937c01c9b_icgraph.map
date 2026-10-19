@@ -1,9 +1,0 @@
-<map id="nexilis::Log::addHandler" name="nexilis::Log::addHandler">
-<area shape="rect" id="Node000001" title="Add handler for logging messages." alt="" coords="236,77,415,102"/>
-<area shape="rect" id="Node000002" href="$dc/dee/log__c_8cc.html#ae5ad4c23ebb6640e955f6ee478b3d8a6" title=" " alt="" coords="7,5,187,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="265,75,168,48,170,43,266,70"/>
-<area shape="rect" id="Node000003" href="$dc/dee/log__c_8cc.html#af47b7c620d26cad786fb0e7938af3c59" title=" " alt="" coords="21,69,172,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="223,92,172,92,172,87,223,87"/>
-<area shape="rect" id="Node000004" href="$dc/dee/log__c_8cc.html#aaab55611796489f8afb127adedb09f30" title=" " alt="" coords="5,133,188,173"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="266,108,170,136,168,131,265,103"/>
-</map>

@@ -1,0 +1,15 @@
+<map id="include/nexilis/server/server_json.hh" name="include/nexilis/server/server_json.hh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="501,5,661,50"/>
+<area shape="rect" id="Node000002" href="$d2/dfb/command_8cc.html" title=" " alt="" coords="5,106,138,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="483,39,327,63,238,80,150,101,125,108,123,103,148,95,236,75,326,58,488,38"/>
+<area shape="rect" id="Node000003" href="$d9/df6/client__info_8cc.html" title=" " alt="" coords="161,98,352,160"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="498,54,354,101,352,96,493,56"/>
+<area shape="rect" id="Node000004" href="$db/dd8/server_2command_2commands_2get_2info_2room__data_8cc.html" title=" " alt="" coords="377,98,568,160"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="549,60,507,100,504,95,544,62"/>
+<area shape="rect" id="Node000005" href="$d3/d15/server__info_8cc.html" title=" " alt="" coords="593,98,784,160"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="617,58,659,98,653,97,615,63"/>
+<area shape="rect" id="Node000006" href="$da/d3b/message__handler_8cc.html" title=" " alt="" coords="809,106,1030,151"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="670,52,848,106,843,106,669,58"/>
+<area shape="rect" id="Node000007" href="$d8/d48/server__json_8cc.html" title=" " alt="" coords="1055,106,1187,151"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="677,35,849,57,946,74,1043,95,1071,106,1065,106,1041,101,945,79,848,62,677,40"/>
+</map>

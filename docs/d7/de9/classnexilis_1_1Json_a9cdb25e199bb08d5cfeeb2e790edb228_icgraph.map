@@ -1,0 +1,9 @@
+<map id="nexilis::Json::convertToJSON" name="nexilis::Json::convertToJSON">
+<area shape="rect" id="Node000001" title="Convert nx_data to boost::json::object." alt="" coords="452,36,654,64"/>
+<area shape="rect" id="Node000002" href="$d7/de9/classnexilis_1_1Json.html#ae0a2025387bdefbfa18f4039ea6e53fc" title="Default constructor." alt="" coords="249,5,384,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="434,35,384,31,384,25,439,35"/>
+<area shape="rect" id="Node000003" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a4ccd207fd09b712366be9262cf25a668" title="Read incoming message to client." alt="" coords="229,57,404,102"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="439,64,405,71,404,66,434,65"/>
+<area shape="rect" id="Node000004" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a8ad60d76c085da8cb735db717dffb818" title="Deleted copy assignment operator." alt="" coords="5,57,181,102"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="211,79,181,82,181,77,216,79"/>
+</map>

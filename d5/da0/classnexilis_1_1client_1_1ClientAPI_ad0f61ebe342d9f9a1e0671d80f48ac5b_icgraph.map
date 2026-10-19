@@ -1,7 +1,0 @@
-<map id="nexilis::client::ClientAPI::getClientFromRoom" name="nexilis::client::ClientAPI::getClientFromRoom">
-<area shape="rect" id="Node000001" title="Get client pointer from any room." alt="" coords="259,37,435,77"/>
-<area shape="rect" id="Node000002" href="$da/ddf/classnexilis_1_1client_1_1SetUsernameCommand.html#aed607a526853dddeddc8bce4a33dc1f5" title=" " alt="" coords="5,5,211,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,46,210,42,211,36,246,41"/>
-<area shape="rect" id="Node000003" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a39a7bdd856ecdbeccd6796b87e64914f" title=" " alt="" coords="20,69,196,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="245,74,196,80,196,75,245,68"/>
-</map>

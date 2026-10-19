@@ -1,0 +1,8 @@
+<map id="nexilis::client::ClientAPI::readResultStr" name="nexilis::client::ClientAPI::readResultStr">
+<area shape="rect" id="Node000001" title=" " alt="" coords="452,5,627,50"/>
+<area shape="rect" id="Node000002" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a8ad60d76c085da8cb735db717dffb818" title="Deleted copy assignment operator." alt="" coords="5,5,181,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="434,23,404,25,229,25,181,26,181,21,229,20,404,20,439,23"/>
+<area shape="rect" id="Node000003" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a4ccd207fd09b712366be9262cf25a668" title="Read incoming message to client." alt="" coords="229,35,404,79"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="439,41,405,48,404,43,434,41"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="211,44,181,42,181,37,216,43"/>
+</map>

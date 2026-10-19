@@ -1,0 +1,24 @@
+<map id="include/nexilis/message_auth.hh" name="include/nexilis/message_auth.hh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="490,5,668,50"/>
+<area shape="rect" id="Node000002" href="$dc/dd2/nx__data_8hh.html" title=" " alt="" coords="65,98,206,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="489,48,221,97,220,92,491,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,174,71,201"/>
+<area shape="poly" id="edge9_Node000001_Node000003" title=" " alt="" coords="487,29,373,34,244,44,183,53,128,65,85,81,54,100,45,112,40,127,37,159,32,158,35,126,41,110,51,96,82,76,127,60,182,48,243,39,373,29,492,28"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="230,98,358,126"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="501,51,355,96,354,91,506,50"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="382,98,494,126"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="544,50,475,93,472,88,539,52"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="518,98,641,126"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="581,48,581,84,577,81,578,52"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="665,98,750,126"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="614,48,677,90,672,89,613,53"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="773,98,828,126"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="638,48,761,95,756,95,638,53"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="853,98,927,126"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="662,48,840,97,835,97,662,53"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="951,98,1048,126"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="669,43,939,97,934,98,669,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="121,126,69,167,65,162,115,127"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="104,174,166,201"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="137,124,138,159,133,157,134,128"/>
+</map>

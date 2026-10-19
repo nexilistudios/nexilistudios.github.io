@@ -1,0 +1,7 @@
+<map id="nexilis::server::ErrorMessage::ErrorMessage" name="nexilis::server::ErrorMessage::ErrorMessage">
+<area shape="rect" id="Node000001" title="Move constructor." alt="" coords="5,5,216,50"/>
+<area shape="rect" id="Node000002" href="$d0/de2/classnexilis_1_1server_1_1ErrorMessage.html#a54cde9ecf0867d4b898614454981aa89" title="Constructor." alt="" coords="264,5,474,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,25,250,28,245,28,216,30"/>
+<area shape="rect" id="Node000003" href="$d9/dcc/classnexilis_1_1server_1_1BaseMessage.html#a099e19d85902f0139a61c78ee102ab57" title="Constructor." alt="" coords="522,5,733,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="474,25,509,28,504,28,474,30"/>
+</map>
