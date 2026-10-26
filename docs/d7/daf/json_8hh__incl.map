@@ -1,18 +1,18 @@
 <map id="include/nexilis/json.hh" name="include/nexilis/json.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="305,5,471,33"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,81,166,109"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="333,36,156,79,154,74,335,31"/>
-<area shape="rect" id="Node000003" href="$dd/da5/nexilis__constants_8hh.html" title=" " alt="" coords="190,81,392,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="373,32,321,74,319,69,368,35"/>
-<area shape="rect" id="Node000006" href="$dc/dd2/nx__data_8hh.html" title=" " alt="" coords="415,81,556,109"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="406,31,459,72,454,72,405,36"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="580,81,631,109"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="427,31,568,80,563,80,427,36"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="354,157,420,184"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="309,107,360,147,355,147,307,112"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="262,157,320,184"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="293,107,293,142,289,139,289,111"/>
-<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="470,108,417,150,415,145,465,110"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="454,157,517,184"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="487,107,488,143,483,139,484,111"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="307,5,473,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,167,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="342,33,149,78,148,73,341,28"/>
+<area shape="rect" id="Node000003" href="$dd/da5/nexilis__constants_8hh.html" title=" " alt="" coords="191,79,394,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="376,33,321,72,318,68,373,29"/>
+<area shape="rect" id="Node000006" href="$dc/dd2/nx__data_8hh.html" title=" " alt="" coords="418,79,559,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="407,29,463,68,460,73,404,33"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="583,79,634,104"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="426,28,571,75,569,80,424,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="357,152,423,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="310,102,364,141,361,146,307,106"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="263,152,322,177"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="295,104,295,138,290,138,290,104"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="474,106,419,146,416,142,471,102"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="457,152,520,177"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="491,104,491,138,486,138,486,104"/>
 </map>

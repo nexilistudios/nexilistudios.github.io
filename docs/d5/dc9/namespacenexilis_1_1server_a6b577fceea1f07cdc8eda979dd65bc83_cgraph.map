@@ -1,6 +1,5 @@
 <map id="nexilis::server::isShutdownRequested" name="nexilis::server::isShutdownRequested">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,202,74"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="56,28,54,19,62,10,79,5,104,3,131,5,149,14,143,14,129,10,103,8,80,10,65,15,59,21,61,29"/>
-<area shape="rect" id="Node000002" href="$de/d1b/classnexilis_1_1server_1_1SignalHandler.html#ae37f255a0bf094e166fdc26fcccb5bbd" title=" " alt="" coords="250,29,462,74"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="202,49,237,51,231,52,202,54"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,203,45"/>
+<area shape="rect" id="Node000002" href="$de/d1b/classnexilis_1_1server_1_1SignalHandler.html#ae37f255a0bf094e166fdc26fcccb5bbd" title=" " alt="" coords="251,5,464,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,23,237,23,237,28,203,28"/>
 </map>

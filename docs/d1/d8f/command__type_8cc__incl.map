@@ -1,9 +1,9 @@
 <map id="src/nexilis/command_type.cc" name="src/nexilis/command_type.cc">
-<area shape="rect" id="Node000001" title=" " alt="" coords="22,5,178,50"/>
-<area shape="rect" id="Node000002" href="$dd/dcf/command__type_8hh.html" title=" " alt="" coords="5,98,195,126"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,48,103,83,97,82,99,53"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="25,174,90,201"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="95,125,75,162,70,159,90,128"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="114,174,172,201"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="109,124,130,160,125,160,106,129"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="22,5,179,45"/>
+<area shape="rect" id="Node000002" href="$dd/dcf/command__type_8hh.html" title=" " alt="" coords="5,93,196,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,46,103,79,98,79,98,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="25,167,91,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="96,120,74,156,70,154,91,118"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="115,167,174,192"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="110,118,133,154,128,156,106,120"/>
 </map>

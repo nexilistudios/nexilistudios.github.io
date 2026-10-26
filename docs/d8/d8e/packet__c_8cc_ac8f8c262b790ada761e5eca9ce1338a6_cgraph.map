@@ -1,10 +1,7 @@
 <map id="nexilis_packet_room_player3D_movement_direct" name="nexilis_packet_room_player3D_movement_direct">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,215,74"/>
-<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="68,28,67,19,74,10,89,5,110,3,134,5,149,14,144,14,132,10,110,8,90,10,77,15,72,21,73,30"/>
-<area shape="rect" id="Node000002" href="$d8/d8e/packet__c_8cc.html#a0e0d970b15f9446b709c4a6b6179d524" title=" " alt="" coords="263,38,392,66"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,49,250,51,244,52,215,54"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="290,36,284,29,289,19,304,13,327,11,353,14,368,23,363,22,352,19,327,16,305,18,292,23,289,29,295,38"/>
-<area shape="rect" id="Node000003" href="$d0/dab/nx__data__c_8cc.html#a45eae7030cd842ff1e280ab1a7847d75" title=" " alt="" coords="440,38,649,66"/>
-<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="392,49,427,52,422,52,393,54"/>
-<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="507,36,501,29,506,19,521,13,545,11,570,14,586,23,580,22,569,19,545,16,522,18,510,23,507,29,512,38"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,216,45"/>
+<area shape="rect" id="Node000002" href="$d8/d8e/packet__c_8cc.html#a0e0d970b15f9446b709c4a6b6179d524" title=" " alt="" coords="264,13,395,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,23,250,23,250,28,216,28"/>
+<area shape="rect" id="Node000003" href="$d0/dab/nx__data__c_8cc.html#a45eae7030cd842ff1e280ab1a7847d75" title=" " alt="" coords="443,13,653,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="395,23,429,23,429,28,395,28"/>
 </map>

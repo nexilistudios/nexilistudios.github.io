@@ -1,7 +1,5 @@
 <map id="get_verified_position" name="get_verified_position">
-<area shape="rect" id="Node000001" title=" " alt="" coords="237,38,395,66"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="352,22,340,19,316,16,293,18,281,23,278,29,283,38,278,36,272,29,277,19,292,13,316,11,342,14,357,23"/>
-<area shape="rect" id="Node000002" href="$d5/d3e/client__session__c_8cc.html#a3f99f9efcaefa1351b0778b91cae63bd" title=" " alt="" coords="5,29,189,74"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="219,52,189,54,189,49,224,51"/>
-<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="131,14,119,10,97,8,77,10,64,15,59,21,60,29,55,28,54,19,61,10,75,5,97,3,121,5,136,14"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="237,13,396,38"/>
+<area shape="rect" id="Node000002" href="$d5/d3e/client__session__c_8cc.html#a3f99f9efcaefa1351b0778b91cae63bd" title=" " alt="" coords="5,5,189,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,28,190,28,190,23,224,23"/>
 </map>

@@ -1,6 +1,7 @@
 <map id="nexilis_log_add_console_handler" name="nexilis_log_add_console_handler">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,185,74"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="52,28,50,19,58,10,73,5,95,3,120,5,136,14,130,14,118,10,95,8,74,10,61,15,55,21,57,29"/>
-<area shape="rect" id="Node000002" href="$dc/dbc/classnexilis_1_1Log.html#ae97c0e75bf15db0867f5a21937c01c9b" title="Add handler for logging messages." alt="" coords="233,38,411,66"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,49,220,51,214,52,185,54"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,185,45"/>
+<area shape="rect" id="Node000002" href="$dc/dbc/classnexilis_1_1Log.html#ae97c0e75bf15db0867f5a21937c01c9b" title="Add handler for logging messages." alt="" coords="233,13,412,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,23,220,23,220,28,185,28"/>
+<area shape="rect" id="Node000003" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#a70f59f1ba00451a14b2e4a9dad8dca5d" title=" " alt="" coords="460,5,627,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="412,23,447,23,447,28,412,28"/>
 </map>

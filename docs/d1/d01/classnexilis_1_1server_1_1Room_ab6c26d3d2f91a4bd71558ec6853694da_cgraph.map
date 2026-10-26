@@ -1,8 +1,0 @@
-<map id="nexilis::server::Room::Room" name="nexilis::server::Room::Room">
-<area shape="rect" id="Node000001" title="Move constructor." alt="" coords="5,5,165,50"/>
-<area shape="rect" id="Node000002" href="$da/d49/classnexilis_1_1BaseRoom.html#af07e2b514f1b716c5a243389abc3f848" title="Constructor." alt="" coords="420,5,570,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,21,213,20,372,20,407,23,402,23,372,25,213,25,166,26"/>
-<area shape="rect" id="Node000003" href="$d1/d01/classnexilis_1_1server_1_1Room.html#a012f91530eafea5e7a36c9b9198057df" title="Constructor." alt="" coords="213,35,372,79"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="165,36,200,43,195,44,165,42"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="372,43,402,41,407,40,373,48"/>
-</map>

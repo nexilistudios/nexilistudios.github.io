@@ -1,9 +1,9 @@
 <map id="include/nexilis/client/command_parser.hh" name="include/nexilis/client/command_parser.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="198,5,357,50"/>
-<area shape="rect" id="Node000002" href="$d1/d83/command__spec_8hh.html" title=" " alt="" coords="5,98,190,143"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,57,141,100,139,95,218,58"/>
-<area shape="rect" id="Node000003" href="$d2/d60/client__api_8cc.html" title=" " alt="" coords="214,98,341,143"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="279,64,280,99,275,96,276,68"/>
-<area shape="rect" id="Node000004" href="$df/d48/command__parser_8cc.html" title=" " alt="" coords="365,98,521,143"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="331,55,406,98,401,98,330,60"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="200,5,359,45"/>
+<area shape="rect" id="Node000002" href="$d1/d83/command__spec_8hh.html" title=" " alt="" coords="5,93,191,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,54,139,96,137,91,226,49"/>
+<area shape="rect" id="Node000003" href="$d2/d60/client__api_8cc.html" title=" " alt="" coords="215,93,343,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="282,59,282,93,277,93,277,59"/>
+<area shape="rect" id="Node000004" href="$df/d48/command__parser_8cc.html" title=" " alt="" coords="368,93,524,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="329,49,411,91,408,96,327,54"/>
 </map>

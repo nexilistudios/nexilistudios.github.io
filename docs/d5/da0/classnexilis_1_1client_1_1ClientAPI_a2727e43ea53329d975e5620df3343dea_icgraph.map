@@ -1,5 +1,13 @@
 <map id="nexilis::client::ClientAPI::addCallback" name="nexilis::client::ClientAPI::addCallback">
-<area shape="rect" id="Node000001" title=" " alt="" coords="229,5,404,50"/>
-<area shape="rect" id="Node000002" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a8ad60d76c085da8cb735db717dffb818" title="Deleted copy assignment operator." alt="" coords="5,5,181,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,28,181,30,181,25,216,27"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="535,101,711,141"/>
+<area shape="rect" id="Node000002" href="$da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#a3bedd34391c63ccb9d70483317198ac6" title=" " alt="" coords="279,101,487,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="521,124,487,124,487,119,521,119"/>
+<area shape="rect" id="Node000003" href="$d8/d6b/classnexilis_1_1client_1_1af__inet_1_1TCPClient.html#ab985526c64012362c07254ae83be7439" title="ClientProtocol::sendMessage(const nx_data&amp;, const std::function&lt;void()&gt;&amp;) implementation." alt="" coords="7,5,229,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="324,98,230,60,193,48,195,43,232,55,326,93"/>
+<area shape="rect" id="Node000004" href="$dd/d79/classnexilis_1_1client_1_1af__inet_1_1UDPClient.html#ab3047eccf100bc7340f44c13a41d6439" title="ClientProtocol::sendMessage(const nx_data&amp;, const std::function&lt;void()&gt;&amp;) implementation." alt="" coords="5,69,231,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="265,110,231,106,231,100,266,105"/>
+<area shape="rect" id="Node000005" href="$d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#aeed2948a335bc9f5d804d62d6fc97d89" title="ClientProtocol::sendMessage(const nx_data&amp;, const std::function&lt;void()&gt;&amp;) implementation." alt="" coords="23,133,213,173"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="266,138,213,145,213,139,265,133"/>
+<area shape="rect" id="Node000006" href="$db/dfd/classnexilis_1_1client_1_1nxboost_1_1UDPClient.html#a38fe8aefa77559da797c778b96e69ff5" title="ClientProtocol::sendMessage(const nx_data&amp;, const std::function&lt;void()&gt;&amp;) implementation." alt="" coords="21,197,215,237"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="326,150,232,188,195,200,193,195,230,183,324,145"/>
 </map>

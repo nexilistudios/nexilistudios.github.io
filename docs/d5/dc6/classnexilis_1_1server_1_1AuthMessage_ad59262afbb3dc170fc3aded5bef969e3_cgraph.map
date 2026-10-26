@@ -1,8 +1,0 @@
-<map id="nexilis::server::AuthMessage::operator=" name="nexilis::server::AuthMessage::operator=">
-<area shape="rect" id="Node000001" title="Deleted copy assignment operator." alt="" coords="5,29,215,74"/>
-<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="61,28,60,19,68,10,85,5,110,3,138,5,156,14,151,14,137,10,110,8,86,10,71,15,65,21,66,30"/>
-<area shape="rect" id="Node000002" href="$d5/dc6/classnexilis_1_1server_1_1AuthMessage.html#a040188bcd7b98f246b0b619c443ccdca" title="Constructor." alt="" coords="263,29,472,74"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,49,250,52,245,52,215,54"/>
-<area shape="rect" id="Node000003" href="$d9/dcc/classnexilis_1_1server_1_1BaseMessage.html#a099e19d85902f0139a61c78ee102ab57" title="Constructor." alt="" coords="520,29,731,74"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="473,49,507,52,502,52,473,54"/>
-</map>

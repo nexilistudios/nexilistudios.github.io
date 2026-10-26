@@ -1,12 +1,9 @@
 <map id="nexilis::Log::addHandler" name="nexilis::Log::addHandler">
-<area shape="rect" id="Node000001" title="Add handler for logging messages." alt="" coords="236,131,414,159"/>
-<area shape="rect" id="Node000002" href="$dc/dee/log__c_8cc.html#ae5ad4c23ebb6640e955f6ee478b3d8a6" title=" " alt="" coords="7,29,186,74"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="275,126,187,89,159,77,158,72,189,84,280,124"/>
-<area shape="rect" id="Node000003" href="$dc/dee/log__c_8cc.html#af47b7c620d26cad786fb0e7938af3c59" title=" " alt="" coords="21,123,172,167"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="218,146,173,148,172,142,223,144"/>
-<area shape="rect" id="Node000004" href="$dc/dee/log__c_8cc.html#aaab55611796489f8afb127adedb09f30" title=" " alt="" coords="5,216,188,261"/>
-<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="277,165,154,218,152,213,272,165"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="132,15,120,10,96,8,75,10,62,15,57,21,58,29,53,29,52,19,59,10,74,5,97,3,121,5,137,13"/>
-<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="132,108,120,104,96,101,75,103,62,108,57,114,58,122,53,122,52,113,59,104,74,98,97,96,121,99,137,107"/>
-<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="132,201,120,197,96,195,75,197,62,201,57,207,58,216,53,215,52,206,59,197,74,191,97,189,121,192,137,201"/>
+<area shape="rect" id="Node000001" title="Add handler for logging messages." alt="" coords="236,77,415,102"/>
+<area shape="rect" id="Node000002" href="$dc/dee/log__c_8cc.html#ae5ad4c23ebb6640e955f6ee478b3d8a6" title=" " alt="" coords="7,5,187,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="265,75,168,48,170,43,266,70"/>
+<area shape="rect" id="Node000003" href="$dc/dee/log__c_8cc.html#af47b7c620d26cad786fb0e7938af3c59" title=" " alt="" coords="21,69,172,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="223,92,172,92,172,87,223,87"/>
+<area shape="rect" id="Node000004" href="$dc/dee/log__c_8cc.html#aaab55611796489f8afb127adedb09f30" title=" " alt="" coords="5,133,188,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="266,108,170,136,168,131,265,103"/>
 </map>

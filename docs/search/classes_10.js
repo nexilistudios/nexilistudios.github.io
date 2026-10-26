@@ -4,7 +4,7 @@ var searchData=
   ['remoteobject3dsnapshot_1',['RemoteObject3DSnapshot',['../d6/d55/structnexilis_1_1client_1_1ClientAPI_1_1RemoteObject3DSnapshot.html',1,'nexilis::client::ClientAPI']]],
   ['remoteplayersnapshot_2',['RemotePlayerSnapshot',['../d3/d19/structnexilis_1_1client_1_1ClientAPI_1_1RemotePlayerSnapshot.html',1,'nexilis::client::ClientAPI']]],
   ['respawnevent_3',['RespawnEvent',['../d2/df5/structnexilis_1_1client_1_1ClientAPI_1_1RespawnEvent.html',1,'nexilis::client::ClientAPI']]],
-  ['room_4',['Room',['../dc/d98/structCommandPacketBase_1_1Room.html',1,'CommandPacketBase&lt; Impl &gt;::Room'],['../db/dbd/classnexilis_1_1client_1_1Room.html',1,'nexilis::client::Room'],['../d1/d01/classnexilis_1_1server_1_1Room.html',1,'nexilis::server::Room']]],
+  ['room_4',['room',['../dc/d98/structCommandPacketBase_1_1Room.html',1,'CommandPacketBase&lt; Impl &gt;::Room'],['../db/dbd/classnexilis_1_1client_1_1Room.html',1,'nexilis::client::Room'],['../d1/d01/classnexilis_1_1server_1_1Room.html',1,'nexilis::server::Room']]],
   ['roomanimationeventcommand_5',['RoomAnimationEventCommand',['../d4/dee/classnexilis_1_1client_1_1RoomAnimationEventCommand.html',1,'nexilis::client']]],
   ['roomaudioeventcommand_6',['RoomAudioEventCommand',['../db/d15/classnexilis_1_1client_1_1RoomAudioEventCommand.html',1,'nexilis::client']]],
   ['roomcommand_7',['RoomCommand',['../da/de5/classnexilis_1_1client_1_1RoomCommand.html',1,'nexilis::client']]],

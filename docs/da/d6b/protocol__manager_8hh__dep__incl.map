@@ -1,7 +1,7 @@
 <map id="include/nexilis/protocol_manager.hh" name="include/nexilis/protocol_manager.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="77,5,249,50"/>
-<area shape="rect" id="Node000002" href="$de/d00/protocol__manager_8cc.html" title=" " alt="" coords="5,98,150,143"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,60,99,100,96,96,130,63"/>
-<area shape="rect" id="Node000003" href="$d9/d37/protocol__manager__c_8cc.html" title=" " alt="" coords="174,98,325,143"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="195,59,232,98,226,98,193,64"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="78,5,251,45"/>
+<area shape="rect" id="Node000002" href="$de/d00/protocol__manager_8cc.html" title=" " alt="" coords="5,93,151,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,57,99,95,95,91,134,53"/>
+<area shape="rect" id="Node000003" href="$d9/d37/protocol__manager__c_8cc.html" title=" " alt="" coords="175,93,327,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="195,53,234,91,230,95,192,57"/>
 </map>

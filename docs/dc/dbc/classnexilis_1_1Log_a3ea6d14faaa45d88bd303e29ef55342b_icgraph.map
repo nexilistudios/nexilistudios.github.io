@@ -1,6 +1,5 @@
 <map id="nexilis::Log::setAllLevels" name="nexilis::Log::setAllLevels">
-<area shape="rect" id="Node000001" title=" " alt="" coords="195,38,377,66"/>
-<area shape="rect" id="Node000002" href="$dc/dee/log__c_8cc.html#a6b8ecee5ca993dcd4108a92bcfa43211" title=" " alt="" coords="5,29,147,74"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,52,147,54,147,49,182,51"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="109,15,97,10,76,8,57,10,45,15,40,21,41,29,36,28,34,19,41,10,55,5,76,3,99,5,114,14"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="196,13,379,38"/>
+<area shape="rect" id="Node000002" href="$dc/dee/log__c_8cc.html#a6b8ecee5ca993dcd4108a92bcfa43211" title=" " alt="" coords="5,5,148,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,28,148,28,148,23,182,23"/>
 </map>

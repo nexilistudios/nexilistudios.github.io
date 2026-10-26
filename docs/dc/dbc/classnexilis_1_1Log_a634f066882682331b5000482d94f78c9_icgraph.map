@@ -1,11 +1,9 @@
 <map id="nexilis::Log::clearHandlers" name="nexilis::Log::clearHandlers">
-<area shape="rect" id="Node000001" title="Remove all handlers." alt="" coords="476,56,669,84"/>
-<area shape="rect" id="Node000002" href="$dc/dee/log__c_8cc.html#a0f64031914e5e69a5d7f885a69555d34" title=" " alt="" coords="235,29,428,57"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="458,58,428,57,428,51,463,57"/>
-<area shape="rect" id="Node000003" href="$dc/dbc/classnexilis_1_1Log.html#a06b8708f8aaff0e23eb5020e41ad2a65" title="Shut down logging levels and remove handlers." alt="" coords="240,81,422,109"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="463,81,423,88,423,83,458,82"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="370,14,358,10,331,8,307,10,293,15,290,20,296,30,291,28,285,20,290,11,306,5,331,3,359,5,375,14"/>
-<area shape="rect" id="Node000004" href="$dc/dee/log__c_8cc.html#a1ce1b0b774d7a1eeca37ead313495b18" title=" " alt="" coords="5,81,187,109"/>
-<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="222,95,187,98,187,93,227,95"/>
-<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="135,66,122,62,96,60,71,62,58,67,55,72,61,81,55,81,49,72,54,63,70,57,96,55,124,57,140,66"/>
+<area shape="rect" id="Node000001" title="Remove all handlers." alt="" coords="479,31,673,56"/>
+<area shape="rect" id="Node000002" href="$dc/dee/log__c_8cc.html#a0f64031914e5e69a5d7f885a69555d34" title=" " alt="" coords="236,5,431,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="465,34,431,31,431,26,465,29"/>
+<area shape="rect" id="Node000003" href="$dc/dbc/classnexilis_1_1Log.html#a06b8708f8aaff0e23eb5020e41ad2a65" title="Shut down logging levels and remove handlers." alt="" coords="242,55,425,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="465,57,425,61,424,56,465,52"/>
+<area shape="rect" id="Node000004" href="$dc/dee/log__c_8cc.html#a1ce1b0b774d7a1eeca37ead313495b18" title=" " alt="" coords="5,55,188,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="229,70,188,70,188,65,229,65"/>
 </map>

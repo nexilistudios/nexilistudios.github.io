@@ -1,6 +1,7 @@
 <map id="nexilis_log_critical" name="nexilis_log_critical">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,148,57"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="43,29,38,20,42,11,55,5,77,3,99,5,113,14,108,14,98,10,76,8,57,10,46,15,43,20,48,29"/>
-<area shape="rect" id="Node000002" href="$dc/dbc/classnexilis_1_1Log.html#a5223d303f4e8522bfc3378e8d8e00ff2" title=" " alt="" coords="196,29,343,57"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,41,183,43,178,43,148,46"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,148,38"/>
+<area shape="rect" id="Node000002" href="$dc/dbc/classnexilis_1_1Log.html#a5223d303f4e8522bfc3378e8d8e00ff2" title=" " alt="" coords="196,13,344,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,23,182,23,182,28,148,28"/>
+<area shape="rect" id="Node000003" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#a10e932e38c3aa4d6e28057ad1dfeda97" title="Send critical message." alt="" coords="392,5,559,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="345,23,378,23,378,28,345,28"/>
 </map>

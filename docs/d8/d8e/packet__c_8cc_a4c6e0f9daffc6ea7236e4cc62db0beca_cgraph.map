@@ -1,6 +1,7 @@
 <map id="convert_vector3f" name="convert_vector3f">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,137,57"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="37,29,32,20,36,11,49,5,71,3,94,5,108,14,103,14,93,10,71,8,51,10,40,15,37,20,42,29"/>
-<area shape="rect" id="Node000002" href="$df/de2/classnexilis_1_1FileLog.html#adb41424fe67132466a731f77e638f0a8" title=" " alt="" coords="185,29,350,57"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="137,41,172,43,166,43,137,46"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,137,38"/>
+<area shape="rect" id="Node000002" href="$df/de2/classnexilis_1_1FileLog.html#adb41424fe67132466a731f77e638f0a8" title=" " alt="" coords="185,13,352,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,23,172,23,172,28,137,28"/>
+<area shape="rect" id="Node000003" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#aa9bd79fb1a1804924e3440947c6ab117" title="Send debug message." alt="" coords="400,5,567,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="353,23,386,23,386,28,353,28"/>
 </map>

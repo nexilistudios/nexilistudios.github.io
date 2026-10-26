@@ -1,10 +1,9 @@
 <map id="nexilis::Util::toUint64" name="nexilis::Util::toUint64">
-<area shape="rect" id="Node000001" title=" " alt="" coords="336,98,495,126"/>
-<area shape="rect" id="Node000002" href="$d3/d69/classnexilis_1_1client_1_1GetInfoRoomsCommand.html#a8d88de2409b9c924a3c54d534caada17" title=" " alt="" coords="50,5,243,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="364,92,287,65,244,52,244,47,288,60,369,91"/>
-<area shape="rect" id="Node000003" href="$d2/dbe/namespacenexilis_1_1client.html#a3a4b2e925d91170fec02f84890c28ff7" title=" " alt="" coords="56,98,237,126"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="318,112,237,114,237,109,323,111"/>
-<area shape="rect" id="Node000004" href="$d7/d52/classnexilis_1_1client_1_1RoomLeaderboardCommand.html#a6174af580e1eb3787c6e52977b87d783" title=" " alt="" coords="5,149,288,194"/>
-<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="338,129,250,151,249,146,332,130"/>
-<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="191,83,177,79,146,76,118,78,103,83,99,89,106,97,101,97,93,89,99,79,117,73,147,71,178,74,196,82"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="336,70,496,95"/>
+<area shape="rect" id="Node000002" href="$d3/d69/classnexilis_1_1client_1_1GetInfoRoomsCommand.html#a8d88de2409b9c924a3c54d534caada17" title=" " alt="" coords="50,5,243,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="341,70,241,48,242,43,343,64"/>
+<area shape="rect" id="Node000003" href="$d2/dbe/namespacenexilis_1_1client.html#a3a4b2e925d91170fec02f84890c28ff7" title=" " alt="" coords="56,70,237,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="322,85,237,85,237,80,322,80"/>
+<area shape="rect" id="Node000004" href="$d7/d52/classnexilis_1_1client_1_1RoomLeaderboardCommand.html#a6174af580e1eb3787c6e52977b87d783" title=" " alt="" coords="5,120,288,160"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="343,101,242,123,241,117,341,96"/>
 </map>

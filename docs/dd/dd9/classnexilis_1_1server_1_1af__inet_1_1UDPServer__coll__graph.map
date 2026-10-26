@@ -1,7 +1,7 @@
 <map id="nexilis::server::af_inet::UDPServer" name="nexilis::server::af_inet::UDPServer">
-<area shape="rect" id="Node000001" title=" " alt="" coords="112,81,246,126"/>
-<area shape="rect" id="Node000002" href="$d5/da4/classnexilis_1_1NXProtocol.html" title=" " alt="" coords="5,5,150,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,41,155,80,149,81,105,46"/>
-<area shape="rect" id="Node000003" href="$de/df0/classnexilis_1_1server_1_1ServerProtocol.html" title=" " alt="" coords="173,5,390,33"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="256,42,207,83,205,78,251,44"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="113,79,248,119"/>
+<area shape="rect" id="Node000002" href="$d5/da4/classnexilis_1_1NXProtocol.html" title=" " alt="" coords="5,5,151,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,37,158,76,154,81,102,41"/>
+<area shape="rect" id="Node000003" href="$de/df0/classnexilis_1_1server_1_1ServerProtocol.html" title=" " alt="" coords="175,5,392,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="259,41,207,81,204,76,256,37"/>
 </map>

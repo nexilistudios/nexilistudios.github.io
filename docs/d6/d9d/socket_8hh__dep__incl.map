@@ -1,7 +1,7 @@
 <map id="include/nexilis/boost_tcp/socket.hh" name="include/nexilis/boost_tcp/socket.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="94,5,250,50"/>
-<area shape="rect" id="Node000002" href="$d2/d88/socket_8cc.html" title=" " alt="" coords="5,106,160,151"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,60,104,108,100,104,140,63"/>
-<area shape="rect" id="Node000003" href="$d4/dbc/nxboost_2tcp__server_8cc.html" title=" " alt="" coords="183,98,342,160"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="203,59,238,98,232,97,201,64"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="95,5,251,45"/>
+<area shape="rect" id="Node000002" href="$d2/d88/socket_8cc.html" title=" " alt="" coords="5,101,160,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,57,103,102,99,99,144,53"/>
+<area shape="rect" id="Node000003" href="$d4/dbc/nxboost_2tcp__server_8cc.html" title=" " alt="" coords="185,93,343,148"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="203,53,240,91,237,95,199,57"/>
 </map>

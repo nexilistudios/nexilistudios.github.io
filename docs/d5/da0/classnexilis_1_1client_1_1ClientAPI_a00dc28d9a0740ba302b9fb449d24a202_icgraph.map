@@ -1,6 +1,5 @@
 <map id="nexilis::client::ClientAPI::getActiveRooms" name="nexilis::client::ClientAPI::getActiveRooms">
-<area shape="rect" id="Node000001" title=" " alt="" coords="194,21,369,66"/>
-<area shape="rect" id="Node000002" href="$d8/d34/namespacenexilis.html#a96f5c6cfdccac25888b5a40ef9d32592" title=" " alt="" coords="5,29,146,57"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,43,146,46,146,41,181,43"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="109,14,98,10,75,8,54,10,42,15,40,20,45,29,40,29,34,20,39,11,53,5,76,3,100,5,114,14"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="195,5,371,45"/>
+<area shape="rect" id="Node000002" href="$d8/d34/namespacenexilis.html#a96f5c6cfdccac25888b5a40ef9d32592" title=" " alt="" coords="5,13,147,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,28,147,28,147,23,181,23"/>
 </map>

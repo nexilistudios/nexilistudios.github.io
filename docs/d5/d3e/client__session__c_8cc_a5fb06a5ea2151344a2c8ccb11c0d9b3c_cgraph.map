@@ -1,6 +1,7 @@
 <map id="validate_position" name="validate_position">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,139,57"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="37,29,32,20,36,11,50,5,72,3,96,5,110,14,104,14,94,10,72,8,51,10,40,15,37,20,43,29"/>
-<area shape="rect" id="Node000002" href="$df/de2/classnexilis_1_1FileLog.html#aef30e4423d093f2e16874bef3ca83a3f" title=" " alt="" coords="187,29,356,57"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,41,174,43,168,43,139,46"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,140,38"/>
+<area shape="rect" id="Node000002" href="$df/de2/classnexilis_1_1FileLog.html#aef30e4423d093f2e16874bef3ca83a3f" title=" " alt="" coords="188,13,359,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,23,174,23,174,28,140,28"/>
+<area shape="rect" id="Node000003" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#a10e932e38c3aa4d6e28057ad1dfeda97" title="Send critical message." alt="" coords="407,5,573,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="359,23,393,23,393,28,359,28"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="nexilis::client::GetInfoClientCountCommand::execute" name="nexilis::client::GetInfoClientCountCommand::execute">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,230,50"/>
-<area shape="rect" id="Node000002" href="$d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a30d7a3bd9677d1ca7f18e976ef8d7338" title=" " alt="" coords="278,5,543,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,25,265,28,259,28,230,30"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,229,45"/>
+<area shape="rect" id="Node000002" href="$d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a30d7a3bd9677d1ca7f18e976ef8d7338" title=" " alt="" coords="277,5,544,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,23,264,23,264,28,229,28"/>
 </map>

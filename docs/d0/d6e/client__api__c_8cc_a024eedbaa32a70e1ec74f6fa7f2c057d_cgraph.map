@@ -1,7 +1,5 @@
 <map id="nexilis_client_api_get_unix_stream_path" name="nexilis_client_api_get_unix_stream_path">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,179,74"/>
-<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="57,28,56,19,62,10,74,5,92,3,111,5,124,13,119,14,110,10,92,8,76,10,65,14,61,21,62,30"/>
-<area shape="rect" id="Node000002" href="$d0/d6e/client__api__c_8cc.html#a0c429809f22898c880c677212d3fef5a" title=" " alt="" coords="227,38,316,66"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,49,214,51,208,52,179,54"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="240,36,235,29,239,19,251,13,271,11,293,14,306,23,300,22,291,19,271,16,253,18,243,23,240,29,245,38"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,180,45"/>
+<area shape="rect" id="Node000002" href="$d0/d6e/client__api__c_8cc.html#a0c429809f22898c880c677212d3fef5a" title=" " alt="" coords="228,13,319,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,23,215,23,215,28,180,28"/>
 </map>

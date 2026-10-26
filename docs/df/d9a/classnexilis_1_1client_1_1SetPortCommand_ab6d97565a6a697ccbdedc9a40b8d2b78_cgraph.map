@@ -1,5 +1,5 @@
 <map id="nexilis::client::SetPortCommand::execute" name="nexilis::client::SetPortCommand::execute">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,169,50"/>
-<area shape="rect" id="Node000002" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a946b2edf5cd580bf62206c7291de4fed" title=" " alt="" coords="217,5,392,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,25,204,27,198,28,169,30"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,169,45"/>
+<area shape="rect" id="Node000002" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a946b2edf5cd580bf62206c7291de4fed" title=" " alt="" coords="217,5,393,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,23,204,23,204,28,169,28"/>
 </map>

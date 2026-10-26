@@ -1,8 +1,5 @@
 <map id="nexilis::server::Room::contains" name="nexilis::server::Room::contains">
-<area shape="rect" id="Node000001" title=" " alt="" coords="420,36,579,81"/>
-<area shape="rect" id="Node000002" href="$d1/d01/classnexilis_1_1server_1_1Room.html#aca1148a1d8fb95b3c7d82ef006d23825" title=" " alt="" coords="213,5,372,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="402,44,372,42,372,37,407,44"/>
-<area shape="rect" id="Node000003" href="$d1/d01/classnexilis_1_1server_1_1Room.html#ad1dfed0e28e343c61c36104a1f602c0c" title="Deleted copy assignment operator." alt="" coords="5,36,165,81"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="402,62,372,65,213,65,165,64,165,59,213,60,372,60,407,62"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="195,42,165,49,165,44,200,41"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="213,5,373,45"/>
+<area shape="rect" id="Node000002" href="$d1/d01/classnexilis_1_1server_1_1Room.html#aca1148a1d8fb95b3c7d82ef006d23825" title=" " alt="" coords="5,5,165,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,28,166,28,166,23,200,23"/>
 </map>

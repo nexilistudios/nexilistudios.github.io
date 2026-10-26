@@ -1,7 +1,5 @@
 <map id="convert_nx_data" name="convert_nx_data">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,135,57"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="32,29,27,20,31,11,46,5,70,3,96,5,111,14,106,14,94,10,70,8,47,10,35,15,32,20,38,29"/>
-<area shape="rect" id="Node000002" href="$d0/dab/nx__data__c_8cc.html#a45eae7030cd842ff1e280ab1a7847d75" title=" " alt="" coords="183,29,392,57"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="135,41,170,43,165,43,135,46"/>
-<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="250,28,244,20,249,11,264,5,287,3,313,5,328,14,323,14,312,10,287,8,265,10,252,15,249,20,255,30"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,136,31"/>
+<area shape="rect" id="Node000002" href="$d0/dab/nx__data__c_8cc.html#a45eae7030cd842ff1e280ab1a7847d75" title=" " alt="" coords="184,5,395,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,15,171,15,171,21,136,21"/>
 </map>

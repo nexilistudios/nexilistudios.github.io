@@ -1,7 +1,7 @@
 <map id="include/nexilis/convert_to_map.hh" name="include/nexilis/convert_to_map.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="65,5,234,50"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,98,166,126"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,49,107,87,103,83,130,52"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="190,98,240,126"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="168,48,198,86,192,85,166,53"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="67,5,236,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,93,167,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,47,106,84,102,81,133,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="191,93,242,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="169,44,200,81,196,84,165,47"/>
 </map>

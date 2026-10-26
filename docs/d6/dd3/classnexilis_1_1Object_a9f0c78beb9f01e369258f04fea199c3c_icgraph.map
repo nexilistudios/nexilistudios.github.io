@@ -1,9 +1,9 @@
 <map id="nexilis::Object::setPosition" name="nexilis::Object::setPosition">
-<area shape="rect" id="Node000001" title=" " alt="" coords="258,83,452,111"/>
-<area shape="rect" id="Node000002" href="$d3/d69/classnexilis_1_1client_1_1GetInfoRoomsCommand.html#a8d88de2409b9c924a3c54d534caada17" title=" " alt="" coords="11,5,204,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="286,80,190,53,190,48,291,77"/>
-<area shape="rect" id="Node000003" href="$d8/d6a/classnexilis_1_1client_1_1ClientSession.html#a1ee3448a13c08e2266b1983954dd07da" title=" " alt="" coords="5,75,210,119"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="239,98,211,100,210,94,244,96"/>
-<area shape="rect" id="Node000004" href="$d8/d6a/classnexilis_1_1client_1_1ClientSession.html#ad888b3453b7e06b4dc52396e8db4877b" title=" " alt="" coords="5,144,210,189"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="291,115,191,146,189,141,285,116"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="259,77,453,102"/>
+<area shape="rect" id="Node000002" href="$d3/d69/classnexilis_1_1client_1_1GetInfoRoomsCommand.html#a8d88de2409b9c924a3c54d534caada17" title=" " alt="" coords="11,5,205,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="292,76,186,48,187,43,293,70"/>
+<area shape="rect" id="Node000003" href="$d8/d6a/classnexilis_1_1client_1_1ClientSession.html#a1ee3448a13c08e2266b1983954dd07da" title=" " alt="" coords="5,69,211,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="245,92,211,92,211,87,245,87"/>
+<area shape="rect" id="Node000004" href="$d8/d6a/classnexilis_1_1client_1_1ClientSession.html#ad888b3453b7e06b4dc52396e8db4877b" title=" " alt="" coords="5,133,211,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="293,108,187,136,186,131,292,103"/>
 </map>

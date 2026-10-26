@@ -1,8 +1,0 @@
-<map id="nexilis::client::ClientSession::ClientSession" name="nexilis::client::ClientSession::ClientSession">
-<area shape="rect" id="Node000001" title="Copy constructor." alt="" coords="5,5,210,50"/>
-<area shape="rect" id="Node000002" href="$dc/dcb/classnexilis_1_1BaseClient.html#a94a60e9babe94d304b7c61522c2c6fc9" title="Constructor." alt="" coords="510,5,652,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,21,258,20,462,20,497,23,492,23,462,25,258,25,210,26"/>
-<area shape="rect" id="Node000003" href="$d8/d6a/classnexilis_1_1client_1_1ClientSession.html#aab76abac8a12a607f52522339b0ed5fd" title=" " alt="" coords="258,35,462,79"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="210,37,245,43,239,43,210,42"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="462,41,492,39,498,39,462,46"/>
-</map>

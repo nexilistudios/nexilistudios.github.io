@@ -1,9 +1,9 @@
 <map id="include/nexilis/logger/file_handler.hh" name="include/nexilis/logger/file_handler.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="151,5,312,50"/>
-<area shape="rect" id="Node000002" href="$d3/d69/file__log_8cc.html" title=" " alt="" coords="5,98,138,143"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,57,111,100,108,95,178,59"/>
-<area shape="rect" id="Node000003" href="$dc/dee/log__c_8cc.html" title=" " alt="" coords="162,98,301,143"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="233,64,234,99,229,96,230,68"/>
-<area shape="rect" id="Node000004" href="$d0/d63/logger__c_8cc.html" title=" " alt="" coords="326,98,465,143"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="285,55,359,98,354,98,283,60"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="153,5,314,45"/>
+<area shape="rect" id="Node000002" href="$d3/d69/file__log_8cc.html" title=" " alt="" coords="5,93,139,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,54,109,96,106,91,185,49"/>
+<area shape="rect" id="Node000003" href="$dc/dee/log__c_8cc.html" title=" " alt="" coords="163,93,303,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="236,59,236,93,231,93,231,59"/>
+<area shape="rect" id="Node000004" href="$d0/d63/logger__c_8cc.html" title=" " alt="" coords="327,93,467,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="283,49,363,91,360,96,280,54"/>
 </map>

@@ -1,6 +1,5 @@
 <map id="nexilis::client::ClientImpl::room_player3d_audio_event" name="nexilis::client::ClientImpl::room_player3d_audio_event">
-<area shape="rect" id="Node000001" title=" " alt="" coords="228,29,442,74"/>
-<area shape="rect" id="Node000002" href="$d8/d8e/packet__c_8cc.html#a01168bf2b1d8d93768311d2b96180119" title=" " alt="" coords="5,29,180,74"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,52,180,54,180,49,215,51"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="131,14,117,10,92,8,70,10,56,15,50,21,52,29,46,28,45,19,53,10,69,5,93,3,119,5,136,14"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="228,5,443,45"/>
+<area shape="rect" id="Node000002" href="$d8/d8e/packet__c_8cc.html#a01168bf2b1d8d93768311d2b96180119" title=" " alt="" coords="5,5,180,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,28,180,28,180,23,214,23"/>
 </map>

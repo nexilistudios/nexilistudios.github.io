@@ -1,11 +1,17 @@
 <map id="nexilis::BaseRoom::updateGameItemStatus" name="nexilis::BaseRoom::updateGameItemStatus">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,57,182,102"/>
-<area shape="rect" id="Node000002" href="$da/d49/classnexilis_1_1BaseRoom.html#a8d3adfcc34b05b0fc6c575842a5f2835" title=" " alt="" coords="230,26,380,71"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,64,217,61,212,62,183,69"/>
-<area shape="rect" id="Node000005" href="$dc/dbc/classnexilis_1_1Log.html#a66755adfac1917c8b8791a018f31c643" title=" " alt="" coords="241,95,369,122"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="182,89,228,97,222,98,182,94"/>
-<area shape="rect" id="Node000003" href="$dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="436,5,570,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="380,35,423,31,418,32,381,40"/>
-<area shape="rect" id="Node000004" href="$da/d49/classnexilis_1_1BaseRoom.html#a5850da119501071f3a9e9d8032238fdf" title="Get the 2D/3D context for the room." alt="" coords="428,57,578,102"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="380,57,416,65,410,65,380,63"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,99,183,139"/>
+<area shape="rect" id="Node000002" href="$da/d49/classnexilis_1_1BaseRoom.html#a8d3adfcc34b05b0fc6c575842a5f2835" title=" " alt="" coords="231,67,381,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,103,216,97,217,103,183,108"/>
+<area shape="rect" id="Node000007" href="$dc/dbc/classnexilis_1_1Log.html#a66755adfac1917c8b8791a018f31c643" title=" " alt="" coords="241,134,371,159"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="183,128,228,134,227,139,183,133"/>
+<area shape="rect" id="Node000003" href="$dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="445,14,580,39"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="375,64,454,41,456,46,377,69"/>
+<area shape="rect" id="Node000005" href="$da/d49/classnexilis_1_1BaseRoom.html#a5850da119501071f3a9e9d8032238fdf" title="Get the 2D/3D context for the room." alt="" coords="437,67,588,107"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="382,84,424,84,424,89,382,89"/>
+<area shape="rect" id="Node000004" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#acc02567dd7e4103305110bafbfd40c08" title="Send error message." alt="" coords="644,5,811,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="580,24,630,23,630,29,581,29"/>
+<area shape="rect" id="Node000006" href="$de/d38/classnexilis_1_1RoomData.html#a2458b902600bffeb1a475792c89823a7" title="Get the context of the room." alt="" coords="652,69,803,109"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="588,85,638,86,638,91,588,90"/>
+<area shape="rect" id="Node000008" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#abbfff214c9149463f4d7a15990b9361a" title="Send info message." alt="" coords="429,131,596,171"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="371,145,416,146,416,151,371,151"/>
 </map>

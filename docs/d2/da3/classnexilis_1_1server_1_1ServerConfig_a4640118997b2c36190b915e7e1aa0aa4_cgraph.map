@@ -1,5 +1,5 @@
 <map id="nexilis::server::ServerConfig::setPassphrase" name="nexilis::server::ServerConfig::setPassphrase">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,211,50"/>
-<area shape="rect" id="Node000002" href="$d0/db6/classnexilis_1_1AuthConfig.html#a8163d62db05ab246309990462de8e896" title=" " alt="" coords="259,5,403,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,25,246,27,241,28,211,30"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,211,45"/>
+<area shape="rect" id="Node000002" href="$d0/db6/classnexilis_1_1AuthConfig.html#a8163d62db05ab246309990462de8e896" title=" " alt="" coords="259,5,403,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,23,245,23,245,28,211,28"/>
 </map>

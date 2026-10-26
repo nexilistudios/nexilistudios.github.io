@@ -1,10 +1,5 @@
 <map id="nexilis::server::Command::operator=" name="nexilis::server::Command::operator=">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,36,194,81"/>
-<area shape="rect" id="Node000002" href="$da/d15/classnexilis_1_1server_1_1Command.html#a37259e4a54b89cffee4978da72daf612" title=" " alt="" coords="247,5,436,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,44,234,41,229,42,195,49"/>
-<area shape="rect" id="Node000004" href="$d2/d7e/classnexilis_1_1NxClass.html#ad127a52262928cb5edf33905b2dbbc1a" title="Move assignment operator." alt="" coords="242,74,441,102"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="194,67,229,74,223,74,194,72"/>
-<area shape="rect" id="Node000003" href="$d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696" title=" " alt="" coords="489,44,675,72"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="436,37,476,44,471,45,436,42"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="441,73,471,72,476,71,442,78"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,195,45"/>
+<area shape="rect" id="Node000002" href="$d2/d7e/classnexilis_1_1NxClass.html#ad127a52262928cb5edf33905b2dbbc1a" title="Move assignment operator." alt="" coords="243,13,443,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,23,229,23,229,28,195,28"/>
 </map>

@@ -1,32 +1,24 @@
 <map id="nexilis::bytesToFloatBigEndian" name="nexilis::bytesToFloatBigEndian">
-<area shape="rect" id="Node000001" title=" " alt="" coords="968,109,1144,154"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="1090,94,1078,90,1056,88,1035,90,1023,95,1018,101,1019,110,1014,107,1013,99,1020,90,1034,85,1056,83,1080,85,1095,95"/>
-<area shape="rect" id="Node000002" href="$dd/de4/classnexilis_1_1Util.html#a8c6fc50748fb3c5851a4b07c85648efc" title="Convert nx_data to Vec2f." alt="" coords="753,75,920,119"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="950,115,920,113,920,108,955,115"/>
-<area shape="rect" id="Node000010" href="$dd/de4/classnexilis_1_1Util.html#ae574946b4fa69c498a4cf0448956a78a" title="Convert nx_data to Vector3f." alt="" coords="753,144,920,189"/>
-<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="955,148,921,156,920,151,950,148"/>
-<area shape="rect" id="Node000003" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a7bcf6c1c97e41879c205761652523e43" title=" " alt="" coords="503,5,705,50"/>
-<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="742,70,682,53,682,48,748,70"/>
-<area shape="rect" id="Node000009" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a200e4503dbb419dba8d77ffbc75d4603" title=" " alt="" coords="508,75,700,119"/>
-<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="735,97,701,100,701,94,740,97"/>
-<area shape="rect" id="Node000004" href="$da/d15/classnexilis_1_1server_1_1Command.html#a36f27b2491becaf040095c3cb5ec4067" title=" " alt="" coords="254,75,442,119"/>
-<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="502,56,434,77,433,72,507,54"/>
-<area shape="rect" id="Node000008" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a871e76e71e7c6d117e1ec38739d2c5f3" title=" " alt="" coords="242,144,455,189"/>
-<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="512,57,505,64,489,81,481,98,473,116,457,134,437,146,434,141,453,130,469,113,477,96,485,78,501,60,507,59"/>
-<area shape="rect" id="Node000005" href="$da/d15/classnexilis_1_1server_1_1Command.html#a2d49d7ed265f7e6d1deb2bae8060f686" title="Deleted copy assignment operator." alt="" coords="5,5,194,50"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="248,71,183,53,182,48,253,69"/>
-<area shape="rect" id="Node000006" href="$d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="14,75,185,119"/>
-<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="236,98,186,100,185,94,241,96"/>
-<area shape="rect" id="Node000007" href="$da/d15/classnexilis_1_1server_1_1Command.html#adb7341228f4137e0656f514180b5a45a" title=" " alt="" coords="5,144,194,189"/>
-<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="248,125,183,146,181,141,253,123"/>
-<area shape="poly" id="edge10_Node000009_Node000004" title=" " alt="" coords="490,98,443,100,442,94,495,96"/>
-<area shape="poly" id="edge11_Node000009_Node000008" title=" " alt="" coords="507,123,434,146,433,141,502,125"/>
-<area shape="rect" id="Node000011" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a87d6805bee7b08064fbd10a328df579f" title=" " alt="" coords="503,144,705,189"/>
-<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="735,167,706,169,705,164,740,166"/>
-<area shape="rect" id="Node000012" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a02f82557e240dadd7338438092a85ed1" title=" " alt="" coords="508,213,700,258"/>
-<area shape="poly" id="edge16_Node000010_Node000012" title=" " alt="" coords="748,193,682,215,681,210,742,194"/>
-<area shape="poly" id="edge14_Node000011_Node000004" title=" " alt="" coords="502,140,433,123,434,117,507,139"/>
-<area shape="poly" id="edge15_Node000011_Node000008" title=" " alt="" coords="485,167,456,169,455,164,490,166"/>
-<area shape="poly" id="edge17_Node000012_Node000004" title=" " alt="" coords="507,205,501,203,485,185,477,167,469,150,453,134,435,122,436,117,457,130,473,147,481,165,489,182,505,199,512,206"/>
-<area shape="poly" id="edge18_Node000012_Node000008" title=" " alt="" coords="502,209,433,192,434,187,507,209"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="945,101,1123,141"/>
+<area shape="rect" id="Node000002" href="$dd/de4/classnexilis_1_1Util.html#a8c6fc50748fb3c5851a4b07c85648efc" title="Convert nx_data to Vec2f." alt="" coords="731,69,897,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="931,109,897,104,898,99,932,104"/>
+<area shape="rect" id="Node000008" href="$dd/de4/classnexilis_1_1Util.html#ae574946b4fa69c498a4cf0448956a78a" title="Convert nx_data to Vector3f." alt="" coords="731,133,897,173"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="932,139,898,144,897,139,931,134"/>
+<area shape="rect" id="Node000003" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a7bcf6c1c97e41879c205761652523e43" title=" " alt="" coords="480,5,683,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="727,68,654,48,655,43,728,63"/>
+<area shape="rect" id="Node000007" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a200e4503dbb419dba8d77ffbc75d4603" title=" " alt="" coords="485,69,678,109"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="717,92,678,92,678,87,717,87"/>
+<area shape="rect" id="Node000004" href="$da/d15/classnexilis_1_1server_1_1Command.html#a36f27b2491becaf040095c3cb5ec4067" title=" " alt="" coords="243,101,432,141"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="502,52,481,60,381,104,378,99,479,55,500,47"/>
+<area shape="rect" id="Node000005" href="$da/d15/classnexilis_1_1server_1_1Command.html#adb7341228f4137e0656f514180b5a45a" title=" " alt="" coords="5,69,195,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="229,109,194,105,195,99,230,104"/>
+<area shape="rect" id="Node000006" href="$d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="15,133,185,173"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="230,139,186,144,185,139,229,133"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="472,106,433,112,432,106,471,101"/>
+<area shape="rect" id="Node000009" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a87d6805bee7b08064fbd10a328df579f" title=" " alt="" coords="480,133,683,173"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="717,156,683,156,683,151,717,151"/>
+<area shape="rect" id="Node000010" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a02f82557e240dadd7338438092a85ed1" title=" " alt="" coords="485,197,678,237"/>
+<area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="728,180,655,200,654,195,727,174"/>
+<area shape="poly" id="edge10_Node000009_Node000004" title=" " alt="" coords="466,141,432,136,432,131,467,136"/>
+<area shape="poly" id="edge12_Node000010_Node000004" title=" " alt="" coords="500,195,479,188,378,144,381,139,481,183,502,190"/>
 </map>

@@ -1,6 +1,5 @@
 <map id="nexilis_set_boost_tcp_session_port" name="nexilis_set_boost_tcp_session_port">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,167,74"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="45,28,44,19,51,10,65,5,86,3,109,5,125,14,119,14,108,10,86,8,66,10,54,15,49,21,50,29"/>
-<area shape="rect" id="Node000002" href="$db/d41/classnexilis_1_1Ports.html#aa9f6444e89156c28a6628763a04448f1" title="Override the Boost TCP session port for protocols created later." alt="" coords="215,29,385,74"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="167,49,202,51,197,52,167,54"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,168,45"/>
+<area shape="rect" id="Node000002" href="$db/d41/classnexilis_1_1Ports.html#aa9f6444e89156c28a6628763a04448f1" title="Override the Boost TCP session port for protocols created later." alt="" coords="216,5,387,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,23,202,23,202,28,168,28"/>
 </map>

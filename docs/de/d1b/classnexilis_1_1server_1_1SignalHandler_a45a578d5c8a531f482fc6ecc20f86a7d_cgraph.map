@@ -1,10 +1,9 @@
 <map id="nexilis::server::SignalHandler::waitForShutdown" name="nexilis::server::SignalHandler::waitForShutdown">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,218,100"/>
-<area shape="rect" id="Node000002" href="$de/d1b/classnexilis_1_1server_1_1SignalHandler.html#a57aa34525a7fc0a448b633a281e6107e" title=" " alt="" coords="266,21,478,66"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,61,253,59,248,60,219,66"/>
-<area shape="rect" id="Node000004" href="$de/d1b/classnexilis_1_1server_1_1SignalHandler.html#ae37f255a0bf094e166fdc26fcccb5bbd" title=" " alt="" coords="266,90,478,135"/>
-<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="218,89,253,96,247,96,218,95"/>
-<area shape="rect" id="Node000003" href="$d5/dc9/namespacenexilis_1_1server.html#af4e736dda423d459c1363b6f51afa0b4" title=" " alt="" coords="526,29,737,57"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="478,41,513,43,508,43,479,46"/>
-<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="587,28,580,20,586,11,603,5,632,3,662,5,680,14,675,14,661,10,632,8,604,10,589,15,586,20,592,30"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,37,219,77"/>
+<area shape="rect" id="Node000002" href="$de/d1b/classnexilis_1_1server_1_1SignalHandler.html#a57aa34525a7fc0a448b633a281e6107e" title=" " alt="" coords="267,5,480,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,42,253,37,253,43,219,47"/>
+<area shape="rect" id="Node000004" href="$de/d1b/classnexilis_1_1server_1_1SignalHandler.html#ae37f255a0bf094e166fdc26fcccb5bbd" title=" " alt="" coords="267,69,480,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="219,68,253,72,253,77,219,73"/>
+<area shape="rect" id="Node000003" href="$d5/dc9/namespacenexilis_1_1server.html#af4e736dda423d459c1363b6f51afa0b4" title=" " alt="" coords="528,13,740,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="480,23,515,23,515,28,480,28"/>
 </map>

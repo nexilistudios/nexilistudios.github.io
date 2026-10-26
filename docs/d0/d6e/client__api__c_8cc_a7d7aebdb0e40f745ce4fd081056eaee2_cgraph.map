@@ -1,7 +1,5 @@
 <map id="nexilis_client_api_get_inet_udp_server_address" name="nexilis_client_api_get_inet_udp_server_address">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,166,91"/>
-<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="51,28,52,19,58,10,69,5,86,3,104,5,116,14,111,15,102,10,85,8,71,10,61,14,57,21,56,30"/>
-<area shape="rect" id="Node000002" href="$d0/d6e/client__api__c_8cc.html#a0c429809f22898c880c677212d3fef5a" title=" " alt="" coords="214,46,303,74"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,58,201,60,195,60,166,63"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="228,45,223,37,227,28,239,22,258,20,279,22,291,31,286,31,277,27,258,25,241,27,231,32,229,37,233,47"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,167,60"/>
+<area shape="rect" id="Node000002" href="$d0/d6e/client__api__c_8cc.html#a0c429809f22898c880c677212d3fef5a" title=" " alt="" coords="215,20,305,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,30,201,30,201,35,167,35"/>
 </map>

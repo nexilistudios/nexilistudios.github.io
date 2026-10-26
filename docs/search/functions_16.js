@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['waitforshutdown_0',['waitForShutdown',['../de/d1b/classnexilis_1_1server_1_1SignalHandler.html#a45a578d5c8a531f482fc6ecc20f86a7d',1,'nexilis::server::SignalHandler::waitForShutdown()'],['../d5/dc9/namespacenexilis_1_1server.html#abef914c1761485bb7c70cf40cd0030df',1,'nexilis::server::waitForShutdown()']]],
+  ['waitforshutdown_0',['waitforshutdown',['../de/d1b/classnexilis_1_1server_1_1SignalHandler.html#a45a578d5c8a531f482fc6ecc20f86a7d',1,'nexilis::server::SignalHandler::waitForShutdown()'],['../d5/dc9/namespacenexilis_1_1server.html#abef914c1761485bb7c70cf40cd0030df',1,'nexilis::server::waitForShutdown()']]],
   ['waituntilboosttcpready_1',['waitUntilBoostTCPReady',['../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a06ff19320eb6c2730a633632681526fd',1,'nexilis::client::ClientAPI']]],
   ['waituntilboostudpready_2',['waitUntilBoostUDPReady',['../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a61d2241ecf9a09c30ed3dc6296bba237',1,'nexilis::client::ClientAPI']]],
   ['waituntilinettcpready_3',['waitUntilInetTCPReady',['../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#aef58620c267d5289d4bac61a45473e04',1,'nexilis::client::ClientAPI']]],

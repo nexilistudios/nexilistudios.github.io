@@ -1,9 +1,5 @@
 <map id="nexilis::Json::emplace" name="nexilis::Json::emplace">
-<area shape="rect" id="Node000001" title="Merge second object to the first one." alt="" coords="482,44,645,72"/>
-<area shape="rect" id="Node000002" href="$d6/dc0/classnexilis_1_1server_1_1ServerJson.html#afbd6e9270f8afc7020939ea5e41505de" title="Return all data from the server." alt="" coords="244,5,434,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="464,45,434,43,435,38,469,45"/>
-<area shape="rect" id="Node000004" href="$d7/de9/classnexilis_1_1Json.html#ae0a2025387bdefbfa18f4039ea6e53fc" title="Default constructor." alt="" coords="272,74,406,102"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="469,71,407,82,406,76,464,71"/>
-<area shape="rect" id="Node000003" href="$d6/dc0/classnexilis_1_1server_1_1ServerJson.html#a9678de83d33d93f7cdd34846e0483130" title="Default constructor." alt="" coords="5,5,196,50"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="225,28,196,30,196,25,231,27"/>
+<area shape="rect" id="Node000001" title="Merge second object to the first one." alt="" coords="244,13,408,38"/>
+<area shape="rect" id="Node000002" href="$d6/dc0/classnexilis_1_1server_1_1ServerJson.html#afbd6e9270f8afc7020939ea5e41505de" title="Return all data from the server." alt="" coords="5,5,196,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,28,196,28,196,23,230,23"/>
 </map>

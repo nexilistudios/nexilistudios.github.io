@@ -1,7 +1,5 @@
 <map id="nexilis::detail::has_get_type&lt; T, std::void_t&lt; decltype(std::declval&lt; T &gt;().getType())&gt; &gt;" name="nexilis::detail::has_get_type&lt; T, std::void_t&lt; decltype(std::declval&lt; T &gt;().getType())&gt; &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="258,14,442,93"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="49,5,166,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,27,260,40,255,42,181,32"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,58,210,119"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="225,69,260,67,254,68,226,74"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="15,108,201,177"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,211,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,74,111,108,105,108,105,74"/>
 </map>

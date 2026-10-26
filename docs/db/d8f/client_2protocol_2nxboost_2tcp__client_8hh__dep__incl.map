@@ -1,15 +1,15 @@
 <map id="include/nexilis/client/protocol/nxboost/tcp_client.hh" name="include/nexilis/client/protocol/nxboost/tcp_client.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="283,5,441,67"/>
-<area shape="rect" id="Node000002" href="$d8/d32/tcp__client_8hh.html" title=" " alt="" coords="119,124,258,168"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="298,77,225,125,222,121,302,74"/>
-<area shape="rect" id="Node000006" href="$de/d2b/client_2protocol_2nxboost_2tcp__client_8cc.html" title=" " alt="" coords="283,115,441,177"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="363,80,364,116,359,113,360,85"/>
-<area shape="rect" id="Node000007" href="$d8/df0/boost__tcp__client__c_8cc.html" title=" " alt="" coords="465,115,610,177"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="424,73,491,114,486,115,424,78"/>
-<area shape="rect" id="Node000003" href="$d4/d01/start__client_8hh.html" title=" " alt="" coords="22,225,171,269"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="156,182,118,226,114,223,160,178"/>
-<area shape="rect" id="Node000005" href="$d0/d2e/tcp__client_8cc.html" title=" " alt="" coords="196,233,368,261"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="220,177,273,233,267,233,218,182"/>
-<area shape="rect" id="Node000004" href="$de/dbc/start__client_8cc.html" title=" " alt="" coords="5,317,188,345"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="98,283,99,318,94,316,95,287"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="284,5,443,60"/>
+<area shape="rect" id="Node000002" href="$d8/d32/tcp__client_8hh.html" title=" " alt="" coords="120,115,260,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="308,69,224,117,221,113,305,64"/>
+<area shape="rect" id="Node000006" href="$de/d2b/client_2protocol_2nxboost_2tcp__client_8cc.html" title=" " alt="" coords="284,108,443,163"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="366,74,366,108,361,108,361,74"/>
+<area shape="rect" id="Node000007" href="$d8/df0/boost__tcp__client__c_8cc.html" title=" " alt="" coords="467,108,614,163"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="423,64,495,105,493,110,420,69"/>
+<area shape="rect" id="Node000003" href="$d4/d01/start__client_8hh.html" title=" " alt="" coords="21,211,172,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="163,167,117,213,114,209,159,163"/>
+<area shape="rect" id="Node000005" href="$d0/d2e/tcp__client_8cc.html" title=" " alt="" coords="197,218,370,243"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="221,163,273,216,270,220,217,167"/>
+<area shape="rect" id="Node000004" href="$de/dbc/start__client_8cc.html" title=" " alt="" coords="5,299,188,324"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="99,264,99,298,94,298,94,264"/>
 </map>

@@ -1,9 +1,7 @@
 <map id="nexilis::client::ClientProtocol::isConnected" name="nexilis::client::ClientProtocol::isConnected">
-<area shape="rect" id="Node000001" title=" " alt="" coords="235,76,442,121"/>
-<area shape="rect" id="Node000002" href="$d8/df0/boost__tcp__client__c_8cc.html#ae0a455fba42598c2ee9cf05743fb8543" title=" " alt="" coords="7,29,185,74"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,76,185,71,185,66,222,75"/>
-<area shape="rect" id="Node000003" href="$df/d70/boost__udp__client__c_8cc.html#ad3b1fbe5eced9b385a2553ec4fa4c687" title=" " alt="" coords="5,123,187,167"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="217,122,187,130,186,125,222,121"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="134,15,121,10,96,8,73,10,59,15,54,21,55,29,50,29,48,19,56,10,72,5,96,3,122,5,139,13"/>
-<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="134,108,121,104,96,101,73,103,59,108,54,114,55,123,50,122,48,113,56,104,72,98,96,96,122,99,139,107"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="236,37,444,77"/>
+<area shape="rect" id="Node000002" href="$d8/df0/boost__tcp__client__c_8cc.html#ae0a455fba42598c2ee9cf05743fb8543" title=" " alt="" coords="7,5,186,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,45,186,40,186,34,223,39"/>
+<area shape="rect" id="Node000003" href="$df/d70/boost__udp__client__c_8cc.html#ad3b1fbe5eced9b385a2553ec4fa4c687" title=" " alt="" coords="5,69,188,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="223,75,189,80,188,75,222,70"/>
 </map>

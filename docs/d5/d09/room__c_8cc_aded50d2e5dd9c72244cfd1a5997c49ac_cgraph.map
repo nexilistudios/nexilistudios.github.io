@@ -1,6 +1,5 @@
 <map id="nexilis_communication_get_client" name="nexilis_communication_get_client">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,178,74"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="47,28,46,19,53,10,69,5,92,3,117,5,133,14,128,14,115,10,91,8,70,10,56,15,51,21,52,29"/>
-<area shape="rect" id="Node000002" href="$de/d5b/classnexilis_1_1client_1_1Room_1_1Communication.html#a4a602ca3027ba3815a243497e48ba482" title="Get client identification." alt="" coords="226,29,425,74"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,49,213,51,207,52,178,54"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,179,45"/>
+<area shape="rect" id="Node000002" href="$de/d5b/classnexilis_1_1client_1_1Room_1_1Communication.html#a4a602ca3027ba3815a243497e48ba482" title="Get client identification." alt="" coords="227,5,427,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,23,213,23,213,28,179,28"/>
 </map>

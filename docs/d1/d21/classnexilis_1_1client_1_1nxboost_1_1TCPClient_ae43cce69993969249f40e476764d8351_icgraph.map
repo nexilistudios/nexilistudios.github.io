@@ -1,8 +1,9 @@
 <map id="nexilis::client::nxboost::TCPClient::stop" name="nexilis::client::nxboost::TCPClient::stop">
-<area shape="rect" id="Node000001" title="NXProtocol::stop() implementation." alt="" coords="266,52,434,96"/>
-<area shape="rect" id="Node000002" href="$d8/df0/boost__tcp__client__c_8cc.html#ae70ef14c7a9163967c164b38353c0292" title=" " alt="" coords="5,29,218,57"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,61,218,60,218,54,253,61"/>
-<area shape="rect" id="Node000003" href="$d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a006bdabddb896eefbb71203a4b912c65" title="Destructor." alt="" coords="24,81,199,126"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="248,86,200,95,199,90,253,86"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="151,15,138,10,111,8,87,10,73,15,70,20,76,29,70,29,64,20,69,11,85,5,112,3,139,5,156,13"/>
+<area shape="rect" id="Node000001" title="NXProtocol::stop() implementation." alt="" coords="267,55,436,95"/>
+<area shape="rect" id="Node000002" href="$d8/df0/boost__tcp__client__c_8cc.html#ae70ef14c7a9163967c164b38353c0292" title=" " alt="" coords="5,5,219,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="254,55,218,46,166,33,167,28,219,41,256,50"/>
+<area shape="rect" id="Node000003" href="$dc/d34/classnexilis_1_1TCPClient.html#aed3f18c564b4708ff7565e509dd3137d" title="Stop running nexilis tcp client." alt="" coords="45,55,179,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="253,78,180,78,180,73,253,73"/>
+<area shape="rect" id="Node000004" href="$d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a006bdabddb896eefbb71203a4b912c65" title="Destructor." alt="" coords="25,119,199,159"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="263,102,188,122,187,117,262,96"/>
 </map>

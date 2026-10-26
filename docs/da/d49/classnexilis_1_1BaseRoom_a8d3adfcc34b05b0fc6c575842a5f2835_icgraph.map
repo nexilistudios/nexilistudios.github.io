@@ -1,5 +1,5 @@
 <map id="nexilis::BaseRoom::getGameItemById" name="nexilis::BaseRoom::getGameItemById">
-<area shape="rect" id="Node000001" title=" " alt="" coords="230,5,380,50"/>
-<area shape="rect" id="Node000002" href="$da/d49/classnexilis_1_1BaseRoom.html#a93cead961711422d7e22a1eaaab87615" title=" " alt="" coords="5,5,182,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,28,182,30,182,25,217,27"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="231,5,381,45"/>
+<area shape="rect" id="Node000002" href="$da/d49/classnexilis_1_1BaseRoom.html#a93cead961711422d7e22a1eaaab87615" title=" " alt="" coords="5,5,183,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,28,183,28,183,23,217,23"/>
 </map>

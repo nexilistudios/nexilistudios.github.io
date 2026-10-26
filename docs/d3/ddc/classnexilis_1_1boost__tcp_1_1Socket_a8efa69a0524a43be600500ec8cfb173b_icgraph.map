@@ -1,7 +1,0 @@
-<map id="nexilis::boost_tcp::Socket::Socket" name="nexilis::boost_tcp::Socket::Socket">
-<area shape="rect" id="Node000001" title="Server&#45;side constructor." alt="" coords="200,40,335,85"/>
-<area shape="rect" id="Node000002" href="$d3/ddc/classnexilis_1_1boost__tcp_1_1Socket.html#a79b30ce1af67c31a995c5f4bb47a4867" title="Move assigment operator." alt="" coords="5,5,152,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,48,152,44,152,38,187,47"/>
-<area shape="rect" id="Node000003" href="$d3/ddc/classnexilis_1_1boost__tcp_1_1Socket.html#a27dbaea842e7eb2aedb31eaf84161533" title="Move constructor." alt="" coords="11,75,146,119"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,78,147,87,146,82,187,77"/>
-</map>

@@ -1,6 +1,5 @@
 <map id="nexilis_logger_destroy" name="nexilis_logger_destroy">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,174,57"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="52,29,47,20,51,11,66,5,90,3,115,5,130,14,125,14,113,10,89,8,67,10,55,15,52,20,58,29"/>
-<area shape="rect" id="Node000002" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#a386bcae4ce97526c3d3006ed3b0ef912" title="Remove all handlers." alt="" coords="222,21,387,66"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,41,208,43,203,43,174,46"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,175,38"/>
+<area shape="rect" id="Node000002" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#a386bcae4ce97526c3d3006ed3b0ef912" title="Remove all handlers." alt="" coords="223,5,389,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,23,209,23,209,28,175,28"/>
 </map>

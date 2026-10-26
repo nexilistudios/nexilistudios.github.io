@@ -1,9 +1,13 @@
 <map id="nexilis::client::nxboost::UDPClient::~UDPClient" name="nexilis::client::nxboost::UDPClient::~UDPClient">
-<area shape="rect" id="Node000001" title="Destructor." alt="" coords="5,24,186,68"/>
-<area shape="rect" id="Node000002" href="$db/dfd/classnexilis_1_1client_1_1nxboost_1_1UDPClient.html#a7c1a97eb574c54c1b2c4aaa7940ac733" title="NXProtocol::stop() implementation." alt="" coords="234,24,402,68"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,43,221,45,215,46,186,48"/>
-<area shape="rect" id="Node000003" href="$dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982" title="All the overloaded printing functions." alt="" coords="450,5,593,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="402,32,432,31,437,30,402,37"/>
-<area shape="rect" id="Node000004" href="$dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="454,57,589,85"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="402,54,442,61,436,61,402,59"/>
+<area shape="rect" id="Node000001" title="Destructor." alt="" coords="5,39,187,79"/>
+<area shape="rect" id="Node000002" href="$db/dfd/classnexilis_1_1client_1_1nxboost_1_1UDPClient.html#a7c1a97eb574c54c1b2c4aaa7940ac733" title="NXProtocol::stop() implementation." alt="" coords="235,39,404,79"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,56,221,56,221,61,187,61"/>
+<area shape="rect" id="Node000003" href="$dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982" title="All the overloaded printing functions." alt="" coords="452,17,596,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="404,44,438,39,439,44,405,49"/>
+<area shape="rect" id="Node000005" href="$dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="457,70,591,95"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="405,66,443,71,443,76,404,71"/>
+<area shape="rect" id="Node000004" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#aa9bd79fb1a1804924e3440947c6ab117" title="Send debug message." alt="" coords="644,5,811,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="596,25,630,25,630,30,596,31"/>
+<area shape="rect" id="Node000006" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#acc02567dd7e4103305110bafbfd40c08" title="Send error message." alt="" coords="644,69,811,109"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="592,82,630,83,630,89,592,88"/>
 </map>

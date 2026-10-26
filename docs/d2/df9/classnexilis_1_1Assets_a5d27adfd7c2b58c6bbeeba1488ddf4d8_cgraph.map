@@ -1,5 +1,7 @@
 <map id="nexilis::Assets::assetsCreated" name="nexilis::Assets::assetsCreated">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,222,33"/>
-<area shape="rect" id="Node000002" href="$dc/dbc/classnexilis_1_1Log.html#a191e4c013bad219e746e8e56682d65e1" title=" " alt="" coords="270,5,425,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,17,257,19,251,19,222,22"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,223,38"/>
+<area shape="rect" id="Node000002" href="$dc/dbc/classnexilis_1_1Log.html#a191e4c013bad219e746e8e56682d65e1" title=" " alt="" coords="271,13,427,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,23,257,23,257,28,223,28"/>
+<area shape="rect" id="Node000003" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#a68409cb1a072641188aa5b1053c81fbc" title="Send warning message." alt="" coords="475,5,641,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="427,23,461,23,461,28,427,28"/>
 </map>

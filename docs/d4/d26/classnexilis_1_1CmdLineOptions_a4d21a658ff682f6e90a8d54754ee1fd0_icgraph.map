@@ -1,5 +1,5 @@
 <map id="nexilis::CmdLineOptions::getArgument" name="nexilis::CmdLineOptions::getArgument">
-<area shape="rect" id="Node000001" title="Get the argument based on any passing name." alt="" coords="233,5,412,50"/>
-<area shape="rect" id="Node000002" href="$d4/d26/classnexilis_1_1CmdLineOptions.html#acc17856941144db12cc0fbd481291472" title="Get value for specific argument." alt="" coords="5,5,185,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,28,185,30,185,25,220,27"/>
+<area shape="rect" id="Node000001" title="Get the argument based on any passing name." alt="" coords="233,5,413,45"/>
+<area shape="rect" id="Node000002" href="$d4/d26/classnexilis_1_1CmdLineOptions.html#acc17856941144db12cc0fbd481291472" title="Get value for specific argument." alt="" coords="5,5,185,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,28,185,28,185,23,219,23"/>
 </map>

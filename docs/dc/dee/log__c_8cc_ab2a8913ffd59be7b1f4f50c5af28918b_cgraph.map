@@ -1,6 +1,7 @@
 <map id="nexilis_log_unset_level" name="nexilis_log_unset_level">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,179,57"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="54,29,48,20,53,11,68,5,92,3,118,5,134,14,128,14,117,10,92,8,69,10,56,15,53,20,59,29"/>
-<area shape="rect" id="Node000002" href="$dc/dbc/classnexilis_1_1Log.html#a64d78dc01e6b17db37c6382cfa1fe5f8" title=" " alt="" coords="227,29,401,57"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="179,41,213,43,208,43,179,46"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,180,38"/>
+<area shape="rect" id="Node000002" href="$dc/dbc/classnexilis_1_1Log.html#a64d78dc01e6b17db37c6382cfa1fe5f8" title=" " alt="" coords="228,13,403,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,23,214,23,214,28,180,28"/>
+<area shape="rect" id="Node000003" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#a83febe422e1f2910b6a02c9358f53605" title=" " alt="" coords="451,5,617,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="403,23,437,23,437,28,403,28"/>
 </map>

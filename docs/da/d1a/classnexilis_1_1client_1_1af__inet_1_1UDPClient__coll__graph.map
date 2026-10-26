@@ -1,10 +1,10 @@
 <map id="nexilis::client::af_inet::UDPClient" name="nexilis::client::af_inet::UDPClient">
-<area shape="rect" id="Node000001" title=" " alt="" coords="74,157,203,201"/>
-<area shape="rect" id="Node000002" href="$d2/d7e/classnexilis_1_1NxClass.html" title=" " alt="" coords="5,5,131,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="42,46,24,76,21,92,25,107,49,134,80,155,75,157,45,138,20,110,16,92,19,74,43,41"/>
-<area shape="rect" id="Node000004" href="$da/d2e/classnexilis_1_1client_1_1ClientProtocol.html" title=" " alt="" coords="35,81,242,109"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="91,42,129,80,124,81,91,47"/>
-<area shape="rect" id="Node000003" href="$d5/da4/classnexilis_1_1NXProtocol.html" title=" " alt="" coords="266,81,411,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="295,114,193,159,191,154,290,116"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="140,123,141,157,136,155,137,127"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="74,152,205,192"/>
+<area shape="rect" id="Node000002" href="$d2/d7e/classnexilis_1_1NxClass.html" title=" " alt="" coords="5,5,132,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="47,42,26,72,22,88,26,103,51,130,83,150,80,154,47,134,21,105,16,88,21,70,42,39"/>
+<area shape="rect" id="Node000004" href="$da/d2e/classnexilis_1_1client_1_1ClientProtocol.html" title=" " alt="" coords="35,79,243,104"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="92,39,130,77,126,80,88,43"/>
+<area shape="rect" id="Node000003" href="$d5/da4/classnexilis_1_1NXProtocol.html" title=" " alt="" coords="268,79,413,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="300,111,189,154,187,149,298,106"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="142,118,142,152,137,152,137,118"/>
 </map>

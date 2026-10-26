@@ -1,5 +1,7 @@
 <map id="nexilis::client::ClientSession::setUsername" name="nexilis::client::ClientSession::setUsername">
-<area shape="rect" id="Node000001" title=" " alt="" coords="247,5,451,50"/>
-<area shape="rect" id="Node000002" href="$d3/d69/classnexilis_1_1client_1_1GetInfoRoomsCommand.html#a8d88de2409b9c924a3c54d534caada17" title=" " alt="" coords="5,5,199,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,28,199,30,199,25,234,27"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="259,37,464,77"/>
+<area shape="rect" id="Node000002" href="$da/ddf/classnexilis_1_1client_1_1SetUsernameCommand.html#aed607a526853dddeddc8bce4a33dc1f5" title=" " alt="" coords="5,5,211,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,45,211,41,211,36,245,40"/>
+<area shape="rect" id="Node000003" href="$d3/d69/classnexilis_1_1client_1_1GetInfoRoomsCommand.html#a8d88de2409b9c924a3c54d534caada17" title=" " alt="" coords="11,69,205,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="245,75,205,80,205,74,245,69"/>
 </map>

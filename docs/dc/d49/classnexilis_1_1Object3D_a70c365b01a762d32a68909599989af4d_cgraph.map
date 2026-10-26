@@ -1,12 +1,7 @@
 <map id="nexilis::Object3D::operator=" name="nexilis::Object3D::operator=">
-<area shape="rect" id="Node000001" title="Copy assignment operator." alt="" coords="5,75,146,119"/>
-<area shape="rect" id="Node000002" href="$dc/d49/classnexilis_1_1Object3D.html#ad0c5e692b116853427c686fa3f9e520e" title=" " alt="" coords="218,5,358,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,72,205,54,201,57,147,77"/>
-<area shape="rect" id="Node000003" href="$dc/d49/classnexilis_1_1Object3D.html#a0633cf8dfb38ef0210b92e0ed6d31ddc" title="Constructor." alt="" coords="218,75,358,119"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,94,204,96,199,98,146,100"/>
-<area shape="rect" id="Node000005" href="$d6/dd3/classnexilis_1_1Object.html#abf2e73f6404a74d57eeb75be05d30b9a" title="Copy assignment operator." alt="" coords="194,143,382,171"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="146,115,194,129,221,139,216,139,193,134,146,120"/>
-<area shape="rect" id="Node000004" href="$d6/dd3/classnexilis_1_1Object.html#abf7b2a2b9dbe42ee4cb3137fdd290eff" title=" " alt="" coords="430,105,614,150"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="358,103,417,113,412,114,358,109"/>
-<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="382,143,412,141,417,141,383,148"/>
+<area shape="rect" id="Node000001" title="Copy assignment operator." alt="" coords="5,35,147,75"/>
+<area shape="rect" id="Node000002" href="$dc/d49/classnexilis_1_1Object3D.html#ad0c5e692b116853427c686fa3f9e520e" title=" " alt="" coords="219,5,360,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,42,204,34,205,40,147,48"/>
+<area shape="rect" id="Node000003" href="$d6/dd3/classnexilis_1_1Object.html#abf2e73f6404a74d57eeb75be05d30b9a" title="Copy assignment operator." alt="" coords="195,70,384,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,61,181,66,181,71,147,67"/>
 </map>

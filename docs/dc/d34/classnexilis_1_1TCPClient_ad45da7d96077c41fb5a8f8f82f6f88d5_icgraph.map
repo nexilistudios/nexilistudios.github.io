@@ -1,8 +1,0 @@
-<map id="nexilis::TCPClient::TCPClient" name="nexilis::TCPClient::TCPClient">
-<area shape="rect" id="Node000001" title="Constructor." alt="" coords="189,40,324,85"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="284,24,274,21,256,19,239,21,229,25,225,31,226,41,221,38,220,30,226,21,238,15,256,13,276,16,289,25"/>
-<area shape="rect" id="Node000002" href="$dc/d34/classnexilis_1_1TCPClient.html#ab4e701033f50267c4a9b4f79b86528c5" title="Move assignment operator." alt="" coords="5,5,141,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,47,141,43,141,38,176,46"/>
-<area shape="rect" id="Node000003" href="$dc/d34/classnexilis_1_1TCPClient.html#abe75fba4b1fb087eefc195d5c07307df" title="Move constructor." alt="" coords="5,75,141,119"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="171,79,141,87,140,82,176,77"/>
-</map>

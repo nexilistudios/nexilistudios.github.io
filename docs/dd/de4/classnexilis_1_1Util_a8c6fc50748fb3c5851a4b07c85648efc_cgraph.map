@@ -1,8 +1,7 @@
 <map id="nexilis::Util::convertToVector2" name="nexilis::Util::convertToVector2">
-<area shape="rect" id="Node000001" title="Convert nx_data to Vec2f." alt="" coords="5,64,172,109"/>
-<area shape="rect" id="Node000002" href="$d8/d34/namespacenexilis.html#af2889eb3347861d077b1f1a02ab9e25f" title=" " alt="" coords="220,29,396,74"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,71,206,67,201,69,172,76"/>
-<area shape="rect" id="Node000003" href="$d2/def/classnexilis_1_1server_1_1Config.html#a4524682844dcfc71ad49250c36f399ca" title=" " alt="" coords="226,99,390,143"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="172,97,213,105,208,106,172,102"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="266,28,265,19,272,10,286,5,308,3,332,5,347,14,342,14,330,10,308,8,287,10,275,15,270,21,271,30"/>
+<area shape="rect" id="Node000001" title="Convert nx_data to Vec2f." alt="" coords="5,37,172,77"/>
+<area shape="rect" id="Node000002" href="$d8/d34/namespacenexilis.html#af2889eb3347861d077b1f1a02ab9e25f" title=" " alt="" coords="220,5,397,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,43,206,38,207,43,173,48"/>
+<area shape="rect" id="Node000003" href="$d2/def/classnexilis_1_1server_1_1Config.html#a4524682844dcfc71ad49250c36f399ca" title=" " alt="" coords="227,69,390,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,67,214,73,214,78,172,72"/>
 </map>

@@ -1,7 +1,5 @@
 <map id="nexilis::client::af_inet::TCPClient::getType" name="nexilis::client::af_inet::TCPClient::getType">
-<area shape="rect" id="Node000001" title="NXProtocol::getType() implementation." alt="" coords="462,5,645,50"/>
-<area shape="rect" id="Node000002" href="$d8/d6b/classnexilis_1_1client_1_1af__inet_1_1TCPClient.html#a3344f385a6c0a606ef330f39b7a44fbf" title="NXProtocol::start() implementation." alt="" coords="252,5,414,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="444,28,414,30,414,25,449,28"/>
-<area shape="rect" id="Node000003" href="$d8/d6b/classnexilis_1_1client_1_1af__inet_1_1TCPClient.html#ad1c27a0de96f3d5797fd25f9259f6331" title="Deleted copy assignment operator." alt="" coords="5,5,204,50"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="233,28,204,30,204,25,239,27"/>
+<area shape="rect" id="Node000001" title="NXProtocol::getType() implementation." alt="" coords="216,5,399,45"/>
+<area shape="rect" id="Node000002" href="$d8/d6b/classnexilis_1_1client_1_1af__inet_1_1TCPClient.html#a3344f385a6c0a606ef330f39b7a44fbf" title="NXProtocol::start() implementation." alt="" coords="5,5,168,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,28,168,28,168,23,202,23"/>
 </map>

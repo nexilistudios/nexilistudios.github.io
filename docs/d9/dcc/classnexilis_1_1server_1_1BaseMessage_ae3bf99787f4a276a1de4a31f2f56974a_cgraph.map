@@ -1,4 +1,5 @@
 <map id="nexilis::server::BaseMessage::getMessageId" name="nexilis::server::BaseMessage::getMessageId">
-<area shape="rect" id="Node000001" title="Get the unique identifier of the message." alt="" coords="5,29,217,74"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="70,28,69,19,76,10,90,5,111,3,134,5,149,14,144,14,133,10,111,8,91,10,79,15,74,21,76,30"/>
+<area shape="rect" id="Node000001" title="Get the unique identifier of the message." alt="" coords="5,5,217,45"/>
+<area shape="rect" id="Node000002" href="$dc/db7/classnexilis_1_1server_1_1BaseMessage_1_1Data.html#ac7c3324def086e0869fc0fcdf3997fd6" title=" " alt="" coords="265,5,477,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,23,252,23,252,28,217,28"/>
 </map>

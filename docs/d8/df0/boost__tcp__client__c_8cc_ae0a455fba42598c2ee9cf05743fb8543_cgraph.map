@@ -1,6 +1,9 @@
 <map id="nexilis_boost_tcp_client_is_connected" name="nexilis_boost_tcp_client_is_connected">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,183,74"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="48,28,47,19,55,10,70,5,94,3,120,5,137,14,132,14,119,10,94,8,72,10,58,15,52,21,53,29"/>
-<area shape="rect" id="Node000002" href="$da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#afb0897977a0011004fa0bc37f712e5e0" title=" " alt="" coords="231,29,438,74"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,49,218,51,212,52,183,54"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,184,45"/>
+<area shape="rect" id="Node000002" href="$da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#afb0897977a0011004fa0bc37f712e5e0" title=" " alt="" coords="232,5,440,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,23,218,23,218,28,184,28"/>
+<area shape="rect" id="Node000003" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a1a217bf8d2dfcc6a0f37b7fb0b1eb010" title="Is the server aware of the client, is the ClientAPI and Packet ready for use." alt="" coords="488,5,664,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="440,23,474,23,474,28,440,28"/>
+<area shape="rect" id="Node000004" href="$d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#acdfe3d44bf864dd3916866a369f42ad2" title=" " alt="" coords="712,5,915,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="664,23,698,23,698,28,664,28"/>
 </map>

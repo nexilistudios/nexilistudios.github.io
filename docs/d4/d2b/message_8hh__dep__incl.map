@@ -1,32 +1,32 @@
 <map id="include/nexilis/server/message/message.hh" name="include/nexilis/server/message/message.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="790,5,958,50"/>
-<area shape="rect" id="Node000002" href="$da/de8/message__handler_8hh.html" title=" " alt="" coords="626,98,850,143"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="831,58,771,100,769,95,826,60"/>
-<area shape="rect" id="Node000007" href="$df/dac/af__inet_2tcp__server_8cc.html" title=" " alt="" coords="814,393,966,455"/>
-<area shape="poly" id="edge15_Node000001_Node000007" title=" " alt="" coords="889,62,908,119,924,189,932,267,931,307,926,346,908,395,904,390,921,344,926,306,927,267,918,190,902,120,887,67"/>
-<area shape="rect" id="Node000009" href="$d7/de7/af__inet_2udp__server_8cc.html" title=" " alt="" coords="56,393,212,455"/>
-<area shape="poly" id="edge16_Node000001_Node000009" title=" " alt="" coords="772,45,583,80,469,103,353,132,243,164,146,201,68,241,40,263,19,285,10,300,8,313,11,327,19,344,39,370,67,391,62,394,36,374,14,346,6,329,3,313,5,298,14,282,36,259,65,237,143,196,241,159,352,126,468,98,582,74,777,42"/>
-<area shape="rect" id="Node000014" href="$d4/d7a/message_8cc.html" title=" " alt="" coords="986,98,1151,143"/>
-<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="935,54,1025,97,1019,98,934,60"/>
-<area shape="rect" id="Node000003" href="$d9/d9a/nxboost_2tcp__server_8hh.html" title=" " alt="" coords="567,283,727,345"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="775,151,791,171,803,192,808,215,801,237,790,249,772,261,725,285,723,280,769,257,786,245,797,234,803,214,798,194,787,174,773,156"/>
-<area shape="rect" id="Node000005" href="$da/dc6/server__protocol_8hh.html" title=" " alt="" coords="382,191,542,235"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="655,149,529,193,527,188,660,147"/>
-<area shape="rect" id="Node000013" href="$da/d3b/message__handler_8cc.html" title=" " alt="" coords="566,191,787,235"/>
-<area shape="poly" id="edge13_Node000002_Node000013" title=" " alt="" coords="717,154,693,193,689,188,713,157"/>
-<area shape="rect" id="Node000004" href="$d4/dbc/nxboost_2tcp__server_8cc.html" title=" " alt="" coords="568,393,726,455"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="649,359,649,394,645,391,645,362"/>
-<area shape="poly" id="edge9_Node000005_Node000003" title=" " alt="" coords="516,240,593,283,588,283,515,246"/>
-<area shape="rect" id="Node000006" href="$d4/d28/af__inet_2tcp__server_8hh.html" title=" " alt="" coords="751,283,911,345"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="557,234,740,281,753,287,748,287,738,286,557,239"/>
-<area shape="rect" id="Node000008" href="$d7/d21/af__inet_2udp__server_8hh.html" title=" " alt="" coords="196,283,357,345"/>
-<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="410,242,334,285,332,280,406,244"/>
-<area shape="rect" id="Node000010" href="$d3/d7d/nxboost_2udp__server_8hh.html" title=" " alt="" coords="381,283,543,345"/>
-<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="463,249,464,284,460,282,460,253"/>
-<area shape="rect" id="Node000012" href="$dd/dfa/server__protocol_8cc.html" title=" " alt="" coords="28,292,173,336"/>
-<area shape="poly" id="edge12_Node000005_Node000012" title=" " alt="" coords="365,238,185,286,161,294,159,289,184,281,368,234"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="856,356,876,394,871,391,854,361"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="227,353,175,395,172,390,222,356"/>
-<area shape="rect" id="Node000011" href="$d6/dd2/nxboost_2udp__server_8cc.html" title=" " alt="" coords="381,393,543,455"/>
-<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="464,359,464,394,460,391,460,362"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="797,5,965,45"/>
+<area shape="rect" id="Node000002" href="$da/de8/message__handler_8hh.html" title=" " alt="" coords="632,93,855,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="840,55,775,96,772,91,837,51"/>
+<area shape="rect" id="Node000007" href="$df/dac/af__inet_2tcp__server_8cc.html" title=" " alt="" coords="819,372,971,427"/>
+<area shape="poly" id="edge15_Node000001_Node000007" title=" " alt="" coords="896,57,914,108,930,175,939,249,938,287,933,325,924,350,913,373,909,371,919,348,927,323,933,287,934,250,925,176,909,110,891,59"/>
+<area shape="rect" id="Node000009" href="$d7/de7/af__inet_2udp__server_8cc.html" title=" " alt="" coords="56,372,212,427"/>
+<area shape="poly" id="edge16_Node000001_Node000009" title=" " alt="" coords="783,42,589,73,474,95,357,121,245,152,147,188,68,227,39,249,18,271,10,284,8,296,18,323,40,349,68,369,65,374,36,353,13,325,3,296,5,282,13,268,35,245,65,223,144,183,244,147,356,116,473,89,589,67,782,37"/>
+<area shape="rect" id="Node000014" href="$d4/d7a/message_8cc.html" title=" " alt="" coords="993,93,1160,133"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="937,48,1035,91,1033,96,935,53"/>
+<area shape="rect" id="Node000003" href="$d9/d9a/nxboost_2tcp__server_8hh.html" title=" " alt="" coords="571,269,732,324"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="779,141,794,159,807,179,812,201,806,223,793,235,774,248,724,272,721,267,771,243,790,231,801,220,806,201,802,181,790,162,775,145"/>
+<area shape="rect" id="Node000005" href="$da/dc6/server__protocol_8hh.html" title=" " alt="" coords="384,181,545,221"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="670,140,527,184,525,179,669,135"/>
+<area shape="rect" id="Node000013" href="$da/d3b/message__handler_8cc.html" title=" " alt="" coords="570,181,791,221"/>
+<area shape="poly" id="edge13_Node000002_Node000013" title=" " alt="" coords="724,146,697,183,692,180,719,143"/>
+<area shape="rect" id="Node000004" href="$d4/dbc/nxboost_2tcp__server_8cc.html" title=" " alt="" coords="572,372,731,427"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="654,338,654,372,649,372,649,338"/>
+<area shape="poly" id="edge9_Node000005_Node000003" title=" " alt="" coords="516,225,600,267,598,272,514,230"/>
+<area shape="rect" id="Node000006" href="$d4/d28/af__inet_2tcp__server_8hh.html" title=" " alt="" coords="756,269,917,324"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="560,221,745,267,757,270,755,275,744,272,558,227"/>
+<area shape="rect" id="Node000008" href="$d7/d21/af__inet_2udp__server_8hh.html" title=" " alt="" coords="197,269,359,324"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="416,230,332,272,329,267,414,225"/>
+<area shape="rect" id="Node000010" href="$d3/d7d/nxboost_2udp__server_8hh.html" title=" " alt="" coords="383,269,546,324"/>
+<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="467,235,467,269,462,269,462,235"/>
+<area shape="rect" id="Node000012" href="$dd/dfa/server__protocol_8cc.html" title=" " alt="" coords="28,277,173,317"/>
+<area shape="poly" id="edge12_Node000005_Node000012" title=" " alt="" coords="371,226,185,272,160,279,159,274,184,267,370,221"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="861,335,882,371,878,373,857,337"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="231,334,173,374,170,370,228,330"/>
+<area shape="rect" id="Node000011" href="$d6/dd2/nxboost_2udp__server_8cc.html" title=" " alt="" coords="383,372,546,427"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="467,338,467,372,462,372,462,338"/>
 </map>

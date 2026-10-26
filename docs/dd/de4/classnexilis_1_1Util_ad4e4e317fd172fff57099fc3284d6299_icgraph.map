@@ -1,9 +1,9 @@
 <map id="nexilis::Util::deleteIfExists" name="nexilis::Util::deleteIfExists">
-<area shape="rect" id="Node000001" title="File stuff." alt="" coords="524,48,716,76"/>
-<area shape="rect" id="Node000002" href="$dd/d04/group__PortHandling.html#ga510daefca8fad8c7b1b9af82773e3f70" title=" " alt="" coords="274,48,476,76"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="506,63,476,65,476,60,511,62"/>
-<area shape="rect" id="Node000003" href="$df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a50bf92a30646e072df669e53bacfeea0" title="Destructor." alt="" coords="5,5,226,50"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="256,47,226,45,226,40,261,46"/>
-<area shape="rect" id="Node000004" href="$d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#a4642f3d0d8ed9baf31087321b6e0948b" title="Destructor." alt="" coords="21,75,210,119"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="256,78,210,87,210,82,261,77"/>
+<area shape="rect" id="Node000001" title="File stuff." alt="" coords="527,45,720,70"/>
+<area shape="rect" id="Node000002" href="$dd/d04/group__PortHandling.html#ga510daefca8fad8c7b1b9af82773e3f70" title=" " alt="" coords="275,45,479,70"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="513,60,479,60,479,55,513,55"/>
+<area shape="rect" id="Node000003" href="$df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a50bf92a30646e072df669e53bacfeea0" title="Destructor." alt="" coords="5,5,227,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="261,46,227,42,227,36,261,40"/>
+<area shape="rect" id="Node000004" href="$d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#a4642f3d0d8ed9baf31087321b6e0948b" title="Destructor." alt="" coords="21,69,211,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="261,74,211,80,211,75,261,69"/>
 </map>

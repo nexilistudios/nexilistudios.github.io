@@ -1,8 +1,0 @@
-<map id="nexilis::client::af_inet::UDPClient::UDPClient" name="nexilis::client::af_inet::UDPClient::UDPClient">
-<area shape="rect" id="Node000001" title="Constructor." alt="" coords="5,36,207,81"/>
-<area shape="rect" id="Node000002" href="$da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#acc41d5e868dddd01209c4258df695ae1" title="Constructor." alt="" coords="255,5,462,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,43,242,42,236,43,207,49"/>
-<area shape="rect" id="Node000003" href="$d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696" title=" " alt="" coords="510,44,696,72"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="207,59,255,60,462,60,497,62,492,62,462,65,255,65,207,64"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="462,38,497,45,492,45,462,43"/>
-</map>

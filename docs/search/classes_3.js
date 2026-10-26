@@ -12,12 +12,10 @@ var searchData=
   ['cmdlineoptions_9',['CmdLineOptions',['../d4/d26/classnexilis_1_1CmdLineOptions.html',1,'nexilis']]],
   ['command_10',['Command',['../da/d15/classnexilis_1_1server_1_1Command.html',1,'nexilis::server']]],
   ['commandpacketbase_11',['CommandPacketBase',['../de/d61/classCommandPacketBase.html',1,'']]],
-  ['commandpacketbase_3c_20clientimpl_20_3e_12',['CommandPacketBase&lt; ClientImpl &gt;',['../de/d61/classCommandPacketBase.html',1,'']]],
-  ['commandpacketbase_3c_20serverimpl_20_3e_13',['CommandPacketBase&lt; ServerImpl &gt;',['../de/d61/classCommandPacketBase.html',1,'']]],
-  ['commandparser_14',['CommandParser',['../db/d64/classnexilis_1_1client_1_1CommandParser.html',1,'nexilis::client']]],
-  ['commandspec_15',['CommandSpec',['../d2/ddb/classnexilis_1_1CommandSpec.html',1,'nexilis']]],
-  ['communicate_16',['Communicate',['../d6/dec/structCommandPacketBase_1_1Room_1_1Communicate.html',1,'CommandPacketBase::Room']]],
-  ['communication_17',['Communication',['../de/d5b/classnexilis_1_1client_1_1Room_1_1Communication.html',1,'nexilis::client::Room']]],
-  ['config_18',['Config',['../d2/def/classnexilis_1_1server_1_1Config.html',1,'nexilis::server']]],
-  ['consolehandler_19',['ConsoleHandler',['../de/d71/classnexilis_1_1logger_1_1ConsoleHandler.html',1,'nexilis::logger']]]
+  ['commandparser_12',['CommandParser',['../db/d64/classnexilis_1_1client_1_1CommandParser.html',1,'nexilis::client']]],
+  ['commandspec_13',['CommandSpec',['../d2/ddb/classnexilis_1_1CommandSpec.html',1,'nexilis']]],
+  ['communicate_14',['Communicate',['../d6/dec/structCommandPacketBase_1_1Room_1_1Communicate.html',1,'CommandPacketBase::Room']]],
+  ['communication_15',['Communication',['../de/d5b/classnexilis_1_1client_1_1Room_1_1Communication.html',1,'nexilis::client::Room']]],
+  ['config_16',['Config',['../d2/def/classnexilis_1_1server_1_1Config.html',1,'nexilis::server']]],
+  ['consolehandler_17',['ConsoleHandler',['../de/d71/classnexilis_1_1logger_1_1ConsoleHandler.html',1,'nexilis::logger']]]
 ];

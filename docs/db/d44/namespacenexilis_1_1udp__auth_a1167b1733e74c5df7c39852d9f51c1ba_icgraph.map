@@ -1,10 +1,7 @@
 <map id="nexilis::udp_auth::cookieFor" name="nexilis::udp_auth::cookieFor">
-<area shape="rect" id="Node000001" title=" " alt="" coords="208,76,348,121"/>
-<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="308,60,297,57,278,55,260,57,249,61,244,67,245,77,240,74,239,66,245,57,258,51,278,49,299,52,313,60"/>
-<area shape="rect" id="Node000002" href="$db/d44/namespacenexilis_1_1udp__auth.html#aa3a67319a2b678c52788d1ae2c04eca8" title=" " alt="" coords="5,29,160,74"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,79,160,73,160,68,195,77"/>
-<area shape="rect" id="Node000003" href="$db/d44/namespacenexilis_1_1udp__auth.html#a62879781e3693eda66aeb9d879fedb77" title=" " alt="" coords="12,123,153,167"/>
-<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="190,119,154,131,152,126,195,118"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="112,15,102,10,82,8,64,10,53,15,49,21,50,29,45,29,44,19,50,10,63,5,83,3,103,5,117,13"/>
-<area shape="poly" id="edge5_Node000003_Node000003" title=" " alt="" coords="112,107,102,104,82,101,64,103,53,108,49,114,50,123,45,122,44,113,50,104,63,98,83,96,103,98,117,107"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="208,37,349,77"/>
+<area shape="rect" id="Node000002" href="$db/d44/namespacenexilis_1_1udp__auth.html#aa3a67319a2b678c52788d1ae2c04eca8" title=" " alt="" coords="5,5,160,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,46,160,41,161,35,194,41"/>
+<area shape="rect" id="Node000003" href="$db/d44/namespacenexilis_1_1udp__auth.html#a62879781e3693eda66aeb9d879fedb77" title=" " alt="" coords="12,69,153,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="195,74,154,80,153,75,194,68"/>
 </map>

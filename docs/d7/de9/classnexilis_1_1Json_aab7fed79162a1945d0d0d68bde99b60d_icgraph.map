@@ -1,6 +1,4 @@
 <map id="nexilis::Json::print" name="nexilis::Json::print">
-<area shape="rect" id="Node000001" title="Print the contents of boost::json::object." alt="" coords="188,29,325,57"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="286,14,277,10,256,8,237,10,227,15,225,20,229,30,224,28,219,20,223,11,236,5,256,3,278,5,291,14"/>
-<area shape="rect" id="Node000002" href="$d7/de9/classnexilis_1_1Json.html#ae0a2025387bdefbfa18f4039ea6e53fc" title="Default constructor." alt="" coords="5,29,140,57"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,43,140,46,140,41,175,43"/>
+<area shape="rect" id="Node000001" title="Print the contents of boost::json::object." alt="" coords="5,29,144,55"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="98,18,91,11,75,8,60,10,53,15,51,20,56,28,51,30,46,21,49,11,59,5,75,3,94,6,102,15"/>
 </map>

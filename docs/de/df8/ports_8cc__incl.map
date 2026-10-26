@@ -1,7 +1,7 @@
 <map id="src/nexilis/ports.cc" name="src/nexilis/ports.cc">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,148,33"/>
-<area shape="rect" id="Node000002" href="$d9/d5c/ports_8hh.html" title=" " alt="" coords="16,81,137,109"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,31,79,66,74,65,76,36"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="44,157,109,184"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="78,107,79,142,74,140,75,111"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,148,31"/>
+<area shape="rect" id="Node000002" href="$d9/d5c/ports_8hh.html" title=" " alt="" coords="15,79,138,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,31,79,65,74,65,74,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="43,152,110,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="79,104,79,138,74,138,74,104"/>
 </map>

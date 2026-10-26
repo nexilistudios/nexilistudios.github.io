@@ -1,9 +1,0 @@
-<map id="nexilis::server::nxboost::UDPServer::UDPServer" name="nexilis::server::nxboost::UDPServer::UDPServer">
-<area shape="rect" id="Node000001" title="Deleted copy constructor." alt="" coords="5,28,183,72"/>
-<area shape="rect" id="Node000002" href="$d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#a02d2201c151ae09aeab3aae6e1bb4b8b" title="Constructor." alt="" coords="231,28,408,72"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,47,218,49,212,50,183,52"/>
-<area shape="rect" id="Node000003" href="$d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696" title=" " alt="" coords="471,5,657,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="408,36,458,32,453,33,409,41"/>
-<area shape="rect" id="Node000004" href="$de/df0/classnexilis_1_1server_1_1ServerProtocol.html#af3c78251fef035465c2b71962bad2c57" title=" " alt="" coords="456,57,672,102"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="409,58,443,64,438,64,408,63"/>
-</map>

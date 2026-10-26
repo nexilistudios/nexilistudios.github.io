@@ -1,4 +1,7 @@
 <map id="nexilis::nx_emplace" name="nexilis::nx_emplace">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,157,57"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="105,14,97,10,81,8,66,10,57,14,55,20,59,29,54,28,50,20,53,11,64,5,81,3,99,5,110,14"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="240,35,392,60"/>
+<area shape="rect" id="Node000002" href="$d6/dd3/classnexilis_1_1Object.html#ac72195e1d794e6de1fc63fce5911377d" title=" " alt="" coords="6,5,191,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,38,191,33,192,28,227,33"/>
+<area shape="rect" id="Node000003" href="$d5/d69/structnexilis_1_1client_1_1ClientImpl.html#aac7e437246e2c81d8e41b3bc65400a8c" title=" " alt="" coords="5,55,192,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="226,62,192,66,192,61,226,56"/>
 </map>

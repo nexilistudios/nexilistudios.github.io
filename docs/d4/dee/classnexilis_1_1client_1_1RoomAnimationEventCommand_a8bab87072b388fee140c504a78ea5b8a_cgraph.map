@@ -1,5 +1,5 @@
 <map id="nexilis::client::RoomAnimationEventCommand::execute" name="nexilis::client::RoomAnimationEventCommand::execute">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,227,50"/>
-<area shape="rect" id="Node000002" href="$d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a61d5721f7e87bf169adcf9aed41b1b19" title=" " alt="" coords="275,5,537,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="227,25,262,28,256,28,227,30"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,228,45"/>
+<area shape="rect" id="Node000002" href="$d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a61d5721f7e87bf169adcf9aed41b1b19" title=" " alt="" coords="276,5,539,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,23,262,23,262,28,228,28"/>
 </map>

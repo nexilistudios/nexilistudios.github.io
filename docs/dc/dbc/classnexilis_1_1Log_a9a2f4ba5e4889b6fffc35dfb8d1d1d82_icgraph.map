@@ -1,9 +1,7 @@
 <map id="nexilis::Log::startConsoleLogging" name="nexilis::Log::startConsoleLogging">
-<area shape="rect" id="Node000001" title=" " alt="" coords="239,76,424,121"/>
-<area shape="rect" id="Node000002" href="$dc/dee/log__c_8cc.html#abf3b1b82ced1f043e5f7472aee282a94" title=" " alt="" coords="5,29,191,74"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,77,191,73,191,68,226,76"/>
-<area shape="rect" id="Node000003" href="$dc/dee/log__c_8cc.html#a6ac7b2bead757d2121e15924bffe5201" title=" " alt="" coords="5,123,191,167"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="221,121,192,129,191,124,226,119"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="135,15,122,10,98,8,76,10,63,15,57,21,59,29,53,29,52,19,60,10,75,5,98,3,123,5,140,13"/>
-<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="135,108,122,104,98,101,76,103,63,108,57,114,59,123,53,121,52,113,60,104,75,98,98,96,123,99,140,107"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="240,37,427,77"/>
+<area shape="rect" id="Node000002" href="$dc/dee/log__c_8cc.html#abf3b1b82ced1f043e5f7472aee282a94" title=" " alt="" coords="5,5,192,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,45,192,41,193,35,227,40"/>
+<area shape="rect" id="Node000003" href="$dc/dee/log__c_8cc.html#a6ac7b2bead757d2121e15924bffe5201" title=" " alt="" coords="5,69,192,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="227,75,193,79,192,74,226,69"/>
 </map>

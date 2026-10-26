@@ -1,7 +1,9 @@
 <map id="nexilis::client::nxboost::TCPClient::sendMessageAsync" name="nexilis::client::nxboost::TCPClient::sendMessageAsync">
-<area shape="rect" id="Node000001" title="ClientProtocol::sendMessageAsync(const nx_data&amp;) implementation." alt="" coords="5,24,234,68"/>
-<area shape="rect" id="Node000002" href="$dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="304,5,438,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,31,291,27,286,28,235,36"/>
-<area shape="rect" id="Node000003" href="$d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae" title="Get the classes name as header for log messages." alt="" coords="282,57,460,85"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="234,55,269,61,263,61,234,60"/>
+<area shape="rect" id="Node000001" title="ClientProtocol::sendMessageAsync(const nx_data&amp;) implementation." alt="" coords="5,31,233,71"/>
+<area shape="rect" id="Node000002" href="$dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="303,13,438,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,37,290,31,290,36,234,42"/>
+<area shape="rect" id="Node000004" href="$d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae" title="Get the classes name as header for log messages." alt="" coords="281,62,460,87"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="234,59,268,62,267,68,233,64"/>
+<area shape="rect" id="Node000003" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#acc02567dd7e4103305110bafbfd40c08" title="Send error message." alt="" coords="508,5,675,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="439,23,494,23,494,28,439,28"/>
 </map>
