@@ -239,7 +239,7 @@
   <a class="brand" href="#top"
     ><span class="brand-icon">N</span>nexilis<span class="brand-dot">.</span></a
   >
-  <p>Good things happen when players connect.</p>
+  <p>Created by</p> <a href="https://viirret.github.io/">Valtteri Viirret</a>
   <div>
     <a href="./docs/index.html">Documentation ↗</a><a href={repo}>Source ↗</a><a
       href={`${repo}/blob/main/LICENSE`}>License ↗</a
