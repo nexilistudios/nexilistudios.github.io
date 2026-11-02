@@ -3,7 +3,7 @@
   let copied = $state(false);
   let copyError = $state(false);
   let tab = $state<"connect" | "movement">("connect");
-  const repo = "https://github.com/NexilisLib/nexilis";
+  const repo = "https://github.com/nexilistudios/nexilis";
   const examples = {
     connect: `using Nexilis.Util;\n\nusing var client = new NexilisClient\n{\n    ServerAddress = "127.0.0.1",\n    Password = "password"\n};\n\nclient.OnReady += () =>\n    Console.WriteLine("Welcome to the room.");\n\nawait client.ConnectAsync();\n\n// Keep the client alive for your game loop.\n// Call client.Update() each frame.`,
     movement: `// After connecting, wire up remote players.\nclient.OnRemoteClientPosition += (id, position) =>\n{\n    // Apply position.X, .Y, .Z to your player.\n};\n\n// In your game loop, process incoming updates.\nclient.Update();\n\n// Send your player's world position.\nclient.SendPosition(x: 1.0f, y: 0.0f, z: 2.5f);\n\n// Or send movement with the frame delta.\nclient.SendMovement(1.0f, 0.0f, 0.0f, 0.016f);`,
@@ -197,7 +197,7 @@
         <div>
           <h3>Get the source</h3>
           <code
-            >git clone --recurse-submodules https://github.com/NexilisLib/nexilis.git</code
+            >git clone --recurse-submodules https://github.com/nexilistudios/nexilis.git</code
           >
         </div>
       </article>

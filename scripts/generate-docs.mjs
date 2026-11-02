@@ -47,8 +47,8 @@ const mainPage = await readFile(mainPagePath, "utf8");
 await writeFile(
   mainPagePath,
   mainPage.replace(
-    /\[(?:LICENSE|LICENCE)\]\((?:LICENSE|https:\/\/github\.com\/NexilisLib\/nexilis\/blob\/main\/LICENSE)\)/g,
-    '<a href="https://github.com/NexilisLib/nexilis/blob/main/LICENSE">LICENSE</a>',
+    /\[(?:LICENSE|LICENCE)\]\((?:LICENSE|https:\/\/github\.com\/[^/]+\/nexilis\/blob\/main\/LICENSE)\)/g,
+    '<a href="https://github.com/nexilistudios/nexilis/blob/main/LICENSE">LICENSE</a>',
   ),
 );
 await readFile(
