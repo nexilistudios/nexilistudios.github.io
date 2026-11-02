@@ -15,7 +15,7 @@ npm run build
 npm run preview
 ```
 
-The production build includes the generated reference at `dist/docs/` and reapplies `styles/doxygen-theme.css` to its Doxygen stylesheet. Relative asset URLs support the GitHub Pages `/website/` path as well as domain-root hosting.
+The production build copies the generated reference to `dist/docs/` without changing its CSS. Relative asset URLs support the GitHub Pages `/website/` path as well as domain-root hosting.
 
 ## Update API documentation
 
@@ -31,7 +31,7 @@ The default input is `../nexilis` (locally `/home/valtteri/code/nexilis`). The g
 
 Commit the regenerated `docs/` with source-related website updates. Deployments use this checked-in snapshot so the API docs match the reviewed site; they do not silently pull a moving upstream branch.
 
-The Nexilis release workflow replaces `docs/` with fresh Doxygen output. After that sync, run `node site/scripts/apply-docs-theme.mjs site/docs` from the Nexilis checkout so the committed snapshot retains the website theme.
+Documentation updates preserve the CSS already in `docs/`, so API changes do not alter the site's documentation styling.
 
 ## Deployment
 

@@ -1,8 +1,7 @@
-import { readFile, writeFile, mkdir, rm, rename } from "node:fs/promises";
-import { resolve, dirname } from "node:path";
+import { readFile, writeFile, mkdir, rm, rename, readdir, cp } from "node:fs/promises";
+import { resolve, dirname, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 import { spawnSync } from "node:child_process";
-import { applyDocsTheme } from "./apply-docs-theme.mjs";
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const source = resolve(
   process.env.NEXILIS_SOURCE || resolve(root, "../nexilis"),
@@ -55,7 +54,20 @@ await writeFile(
 await readFile(
   resolve(temporary, "html/classNexilis_1_1Util_1_1NexilisClient.html"),
 );
-await applyDocsTheme(resolve(temporary, "html"));
+// Keep the site's existing documentation styles when refreshing API content.
+const currentDocs = resolve(root, "docs");
+async function preserveCss(directory) {
+  for (const entry of await readdir(directory, { withFileTypes: true })) {
+    const path = resolve(directory, entry.name);
+    if (entry.isDirectory()) await preserveCss(path);
+    else if (entry.isFile() && entry.name.endsWith(".css")) {
+      const destination = resolve(temporary, "html", relative(currentDocs, path));
+      await mkdir(dirname(destination), { recursive: true });
+      await cp(path, destination);
+    }
+  }
+}
+await preserveCss(currentDocs);
 const revision = spawnSync("git", ["-C", source, "rev-parse", "HEAD"], {
   encoding: "utf8",
 });
