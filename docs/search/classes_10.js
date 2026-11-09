@@ -14,13 +14,14 @@ var searchData=
   ['roomgameitemcommand_11',['RoomGameItemCommand',['../d5/d5d/classnexilis_1_1client_1_1RoomGameItemCommand.html',1,'nexilis::client']]],
   ['roominfo_12',['RoomInfo',['../df/dc3/classnexilis_1_1RoomInfo.html',1,'nexilis']]],
   ['roomleaderboardcommand_13',['RoomLeaderboardCommand',['../d7/d52/classnexilis_1_1client_1_1RoomLeaderboardCommand.html',1,'nexilis::client']]],
-  ['roommanagementcommand_14',['RoomManagementCommand',['../df/d2c/classnexilis_1_1client_1_1RoomManagementCommand.html',1,'nexilis::client']]],
-  ['roommatchcommand_15',['RoomMatchCommand',['../de/d01/classnexilis_1_1client_1_1RoomMatchCommand.html',1,'nexilis::client']]],
-  ['roomobject2dcommand_16',['RoomObject2DCommand',['../d6/d03/classnexilis_1_1client_1_1RoomObject2DCommand.html',1,'nexilis::client']]],
-  ['roomobject3dcommand_17',['RoomObject3DCommand',['../d4/d69/classnexilis_1_1client_1_1RoomObject3DCommand.html',1,'nexilis::client']]],
-  ['roomplayer2dcommand_18',['RoomPlayer2DCommand',['../d9/d6c/classnexilis_1_1client_1_1RoomPlayer2DCommand.html',1,'nexilis::client']]],
-  ['roomplayer2dshootcommand_19',['RoomPlayer2DShootCommand',['../d9/dad/classnexilis_1_1client_1_1RoomPlayer2DShootCommand.html',1,'nexilis::client']]],
-  ['roomplayer3dcommand_20',['RoomPlayer3DCommand',['../d9/d3d/classnexilis_1_1client_1_1RoomPlayer3DCommand.html',1,'nexilis::client']]],
-  ['roomstorage_21',['RoomStorage',['../db/d96/classnexilis_1_1server_1_1RoomStorage.html',1,'nexilis::server']]],
-  ['rootauthstate_22',['RootAuthState',['../d1/d06/structnexilis_1_1server_1_1Command_1_1RootAuthState.html',1,'nexilis::server::Command']]]
+  ['roomlimits_14',['RoomLimits',['../d9/d73/classnexilis_1_1server_1_1RoomLimits.html',1,'nexilis::server']]],
+  ['roommanagementcommand_15',['RoomManagementCommand',['../df/d2c/classnexilis_1_1client_1_1RoomManagementCommand.html',1,'nexilis::client']]],
+  ['roommatchcommand_16',['RoomMatchCommand',['../de/d01/classnexilis_1_1client_1_1RoomMatchCommand.html',1,'nexilis::client']]],
+  ['roomobject2dcommand_17',['RoomObject2DCommand',['../d6/d03/classnexilis_1_1client_1_1RoomObject2DCommand.html',1,'nexilis::client']]],
+  ['roomobject3dcommand_18',['RoomObject3DCommand',['../d4/d69/classnexilis_1_1client_1_1RoomObject3DCommand.html',1,'nexilis::client']]],
+  ['roomplayer2dcommand_19',['RoomPlayer2DCommand',['../d9/d6c/classnexilis_1_1client_1_1RoomPlayer2DCommand.html',1,'nexilis::client']]],
+  ['roomplayer2dshootcommand_20',['RoomPlayer2DShootCommand',['../d9/dad/classnexilis_1_1client_1_1RoomPlayer2DShootCommand.html',1,'nexilis::client']]],
+  ['roomplayer3dcommand_21',['RoomPlayer3DCommand',['../d9/d3d/classnexilis_1_1client_1_1RoomPlayer3DCommand.html',1,'nexilis::client']]],
+  ['roomstorage_22',['RoomStorage',['../db/d96/classnexilis_1_1server_1_1RoomStorage.html',1,'nexilis::server']]],
+  ['rootauthstate_23',['RootAuthState',['../d1/d06/structnexilis_1_1server_1_1Command_1_1RootAuthState.html',1,'nexilis::server::Command']]]
 ];

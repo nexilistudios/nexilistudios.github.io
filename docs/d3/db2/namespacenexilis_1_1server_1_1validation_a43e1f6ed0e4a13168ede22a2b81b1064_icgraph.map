@@ -1,0 +1,20 @@
+<map id="nexilis::server::validation::isValidOptionalAssetPath" name="nexilis::server::validation::isValidOptionalAssetPath">
+<area shape="rect" id="Node000001" title="An empty asset path means &quot;no asset&quot;, which is valid for room objects." alt="" coords="751,101,943,141"/>
+<area shape="rect" id="Node000002" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a7702a108e1318abd0fb19b32529b4bb8" title=" " alt="" coords="495,5,688,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="792,98,702,60,666,48,668,43,704,55,794,93"/>
+<area shape="rect" id="Node000006" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a97175caef23eb9fad365629c3d78e107" title=" " alt="" coords="480,69,703,109"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="737,110,703,106,703,101,738,105"/>
+<area shape="rect" id="Node000007" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a179b17009debe269a88815c62704617d" title=" " alt="" coords="495,133,688,173"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="737,138,688,144,688,139,737,132"/>
+<area shape="rect" id="Node000008" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#abb949f0528da98933c7ed71b1b7c8913" title=" " alt="" coords="480,197,703,237"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="794,150,704,188,668,200,666,195,702,183,792,145"/>
+<area shape="rect" id="Node000003" href="$da/d15/classnexilis_1_1server_1_1Command.html#a205831cf4657d0a80391beba1cfd953d" title=" " alt="" coords="243,101,432,141"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="503,52,481,60,380,104,378,99,479,55,502,47"/>
+<area shape="rect" id="Node000004" href="$da/d15/classnexilis_1_1server_1_1Command.html#a523ea35f6efde10413e9718e50a96e70" title=" " alt="" coords="5,69,195,109"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="229,109,194,105,195,99,230,104"/>
+<area shape="rect" id="Node000005" href="$d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="15,133,185,173"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="230,139,186,144,185,139,229,133"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="467,108,433,112,432,107,466,102"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="481,142,432,136,433,131,481,137"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="502,196,479,188,378,144,380,139,481,183,503,191"/>
+</map>

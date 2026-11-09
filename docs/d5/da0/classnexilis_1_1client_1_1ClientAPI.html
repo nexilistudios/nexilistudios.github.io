@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.8-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.9-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -209,12 +209,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a00dc28d9a0740ba302b9fb449d24a202"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61ff582b105e1c786f9d4ffb9fe6c136" id="r_a61ff582b105e1c786f9d4ffb9fe6c136"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a61ff582b105e1c786f9d4ffb9fe6c136">getServerClientCount</a> () const</td></tr>
 <tr class="separator:a61ff582b105e1c786f9d4ffb9fe6c136"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f697448972c4edd1bfe6689a160bf07" id="r_a9f697448972c4edd1bfe6689a160bf07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dbd/classnexilis_1_1client_1_1Room.html">Room</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a9f697448972c4edd1bfe6689a160bf07">getRoom</a> (uint64_t room_id)</td></tr>
-<tr class="memdesc:a9f697448972c4edd1bfe6689a160bf07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a reference to a room from room id.  <br /></td></tr>
-<tr class="separator:a9f697448972c4edd1bfe6689a160bf07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0f61ebe342d9f9a1e0671d80f48ac5b" id="r_ad0f61ebe342d9f9a1e0671d80f48ac5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d6a/classnexilis_1_1client_1_1ClientSession.html">ClientSession</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#ad0f61ebe342d9f9a1e0671d80f48ac5b">getClientFromRoom</a> (uint64_t client_id)</td></tr>
-<tr class="memdesc:ad0f61ebe342d9f9a1e0671d80f48ac5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get client pointer from any room.  <br /></td></tr>
-<tr class="separator:ad0f61ebe342d9f9a1e0671d80f48ac5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f371286f855631612137a88f604840e" id="r_a5f371286f855631612137a88f604840e"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../db/dbd/classnexilis_1_1client_1_1Room.html">Room</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a5f371286f855631612137a88f604840e">getRoom</a> (uint64_t room_id)</td></tr>
+<tr class="memdesc:a5f371286f855631612137a88f604840e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an owned snapshot copied under the room lock.  <br /></td></tr>
+<tr class="separator:a5f371286f855631612137a88f604840e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7f812ca02d7bdbb2949310f90d06e1a" id="r_ac7f812ca02d7bdbb2949310f90d06e1a"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d8/d6a/classnexilis_1_1client_1_1ClientSession.html">ClientSession</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#ac7f812ca02d7bdbb2949310f90d06e1a">getClientFromRoom</a> (uint64_t client_id)</td></tr>
+<tr class="memdesc:ac7f812ca02d7bdbb2949310f90d06e1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an owned session snapshot copied under the room lock.  <br /></td></tr>
+<tr class="separator:ac7f812ca02d7bdbb2949310f90d06e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e254efb578471c9a0e308c4899afb83" id="r_a1e254efb578471c9a0e308c4899afb83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d34/namespacenexilis.html#a6d4456bc63926293b47b68c62361ce2d">Vector3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a1e254efb578471c9a0e308c4899afb83">getClientPosition3D</a> (uint64_t client_id)</td></tr>
 <tr class="memdesc:a1e254efb578471c9a0e308c4899afb83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a copy of a client's 3D position.  <br /></td></tr>
 <tr class="separator:a1e254efb578471c9a0e308c4899afb83"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1171,14 +1171,14 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="ad0f61ebe342d9f9a1e0671d80f48ac5b" name="ad0f61ebe342d9f9a1e0671d80f48ac5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0f61ebe342d9f9a1e0671d80f48ac5b">&#9670;&#160;</a></span>getClientFromRoom()</h2>
+<a id="ac7f812ca02d7bdbb2949310f90d06e1a" name="ac7f812ca02d7bdbb2949310f90d06e1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7f812ca02d7bdbb2949310f90d06e1a">&#9670;&#160;</a></span>getClientFromRoom()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d8/d6a/classnexilis_1_1client_1_1ClientSession.html">ClientSession</a> * nexilis::client::ClientAPI::getClientFromRoom </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="../../d8/d6a/classnexilis_1_1client_1_1ClientSession.html">ClientSession</a> &gt; nexilis::client::ClientAPI::getClientFromRoom </td>
           <td>(</td>
           <td class="paramtype">uint64_t&#160;</td>
           <td class="paramname"><em>client_id</em></td><td>)</td>
@@ -1187,14 +1187,14 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Get client pointer from any room. </p>
+<p>Return an owned session snapshot copied under the room lock. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d60/client__api_8cc_source.html#l00261">261</a> of file <a class="el" href="../../d2/d60/client__api_8cc_source.html">client_api.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  262</span>{</div>
 <div class="line"><span class="lineno">  263</span>    <span class="keyword">auto</span>&amp; mtx = m_clientAPIData.<a class="code hl_function" href="../../d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a89bf770a7a9d8bb30c56a961fbf9e697">getRoomsMutex</a>();</div>
 <div class="line"><span class="lineno">  264</span>    std::lock_guard&lt;std::mutex&gt; lock(*mtx);</div>
 <div class="line"><span class="lineno">  265</span> </div>
-<div class="line"><span class="lineno">  266</span>    ClientSession* returned_client = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  266</span>    std::unique_ptr&lt;ClientSession&gt; returned_client;</div>
 <div class="line"><span class="lineno">  267</span>    <span class="keyword">auto</span>&amp; rooms = m_clientAPIData.<a class="code hl_function" href="../../d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a827d09d95f7d81fa2cd69c75bdc71f3e">getCurrentlyActiveRooms</a>();</div>
 <div class="line"><span class="lineno">  268</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a> = rooms.begin(); <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a> != rooms.end(); <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>++)</div>
 <div class="line"><span class="lineno">  269</span>    {</div>
@@ -1202,7 +1202,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  271</span>        {</div>
 <div class="line"><span class="lineno">  272</span>            <span class="keywordflow">if</span> (client.getId() == client_id)</div>
 <div class="line"><span class="lineno">  273</span>            {</div>
-<div class="line"><span class="lineno">  274</span>                returned_client = &amp;client;</div>
+<div class="line"><span class="lineno">  274</span>                returned_client = std::make_unique&lt;ClientSession&gt;(client);</div>
 <div class="line"><span class="lineno">  275</span>            }</div>
 <div class="line"><span class="lineno">  276</span>        }</div>
 <div class="line"><span class="lineno">  277</span>    }</div>
@@ -1211,9 +1211,9 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d5/da0/classnexilis_1_1client_1_1ClientAPI_ad0f61ebe342d9f9a1e0671d80f48ac5b_cgraph.png" border="0" usemap="#ad5/da0/classnexilis_1_1client_1_1ClientAPI_ad0f61ebe342d9f9a1e0671d80f48ac5b_cgraph" alt=""/></div>
-<map name="ad5/da0/classnexilis_1_1client_1_1ClientAPI_ad0f61ebe342d9f9a1e0671d80f48ac5b_cgraph" id="ad5/da0/classnexilis_1_1client_1_1ClientAPI_ad0f61ebe342d9f9a1e0671d80f48ac5b_cgraph">
-<area shape="rect" title="Get client pointer from any room." alt="" coords="5,37,181,77"/>
+<div class="center"><img src="../../d5/da0/classnexilis_1_1client_1_1ClientAPI_ac7f812ca02d7bdbb2949310f90d06e1a_cgraph.png" border="0" usemap="#ad5/da0/classnexilis_1_1client_1_1ClientAPI_ac7f812ca02d7bdbb2949310f90d06e1a_cgraph" alt=""/></div>
+<map name="ad5/da0/classnexilis_1_1client_1_1ClientAPI_ac7f812ca02d7bdbb2949310f90d06e1a_cgraph" id="ad5/da0/classnexilis_1_1client_1_1ClientAPI_ac7f812ca02d7bdbb2949310f90d06e1a_cgraph">
+<area shape="rect" title="Return an owned session snapshot copied under the room lock." alt="" coords="5,37,181,77"/>
 <area shape="rect" href="../../d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a827d09d95f7d81fa2cd69c75bdc71f3e" title=" " alt="" coords="229,5,524,45"/>
 <area shape="poly" title=" " alt="" coords="181,45,215,41,216,46,182,50"/>
 <area shape="rect" href="../../d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a89bf770a7a9d8bb30c56a961fbf9e697" title=" " alt="" coords="259,69,494,109"/>
@@ -1223,13 +1223,11 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d5/da0/classnexilis_1_1client_1_1ClientAPI_ad0f61ebe342d9f9a1e0671d80f48ac5b_icgraph.png" border="0" usemap="#ad5/da0/classnexilis_1_1client_1_1ClientAPI_ad0f61ebe342d9f9a1e0671d80f48ac5b_icgraph" alt=""/></div>
-<map name="ad5/da0/classnexilis_1_1client_1_1ClientAPI_ad0f61ebe342d9f9a1e0671d80f48ac5b_icgraph" id="ad5/da0/classnexilis_1_1client_1_1ClientAPI_ad0f61ebe342d9f9a1e0671d80f48ac5b_icgraph">
-<area shape="rect" title="Get client pointer from any room." alt="" coords="259,37,435,77"/>
-<area shape="rect" href="../../da/ddf/classnexilis_1_1client_1_1SetUsernameCommand.html#aed607a526853dddeddc8bce4a33dc1f5" title=" " alt="" coords="5,5,211,45"/>
-<area shape="poly" title=" " alt="" coords="245,46,210,42,211,36,246,41"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a39a7bdd856ecdbeccd6796b87e64914f" title=" " alt="" coords="20,69,196,109"/>
-<area shape="poly" title=" " alt="" coords="245,74,196,80,196,75,245,68"/>
+<div class="center"><img src="../../d5/da0/classnexilis_1_1client_1_1ClientAPI_ac7f812ca02d7bdbb2949310f90d06e1a_icgraph.png" border="0" usemap="#ad5/da0/classnexilis_1_1client_1_1ClientAPI_ac7f812ca02d7bdbb2949310f90d06e1a_icgraph" alt=""/></div>
+<map name="ad5/da0/classnexilis_1_1client_1_1ClientAPI_ac7f812ca02d7bdbb2949310f90d06e1a_icgraph" id="ad5/da0/classnexilis_1_1client_1_1ClientAPI_ac7f812ca02d7bdbb2949310f90d06e1a_icgraph">
+<area shape="rect" title="Return an owned session snapshot copied under the room lock." alt="" coords="229,5,405,45"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a39a7bdd856ecdbeccd6796b87e64914f" title=" " alt="" coords="5,5,181,45"/>
+<area shape="poly" title=" " alt="" coords="215,28,182,28,182,23,215,23"/>
 </map>
 </div>
 
@@ -1284,7 +1282,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="784,1276,730,1276,730,1271,784,1271"/>
 <area shape="rect" href="../../d8/dcb/classnexilis_1_1client_1_1GetClientIdCommand.html#a47303a84c43b6869d7f3508510eb84fd" title=" " alt="" coords="289,5,467,45"/>
 <area shape="poly" title=" " alt="" coords="881,1239,879,1157,871,1036,853,887,822,719,800,631,774,542,743,453,706,366,663,282,614,202,558,127,494,59,466,41,469,37,498,55,562,124,618,199,668,280,711,364,748,451,779,540,805,629,827,718,858,886,876,1036,885,1157,887,1239"/>
-<area shape="rect" href="../../da/ddf/classnexilis_1_1client_1_1SetUsernameCommand.html#aed607a526853dddeddc8bce4a33dc1f5" title=" " alt="" coords="544,1317,749,1357"/>
+<area shape="rect" href="../../da/ddf/classnexilis_1_1client_1_1SetUsernameCommand.html#ad4f811a33c4226b5dd07dac0785ae129" title=" " alt="" coords="544,1317,749,1357"/>
 <area shape="poly" title=" " alt="" coords="798,1300,722,1320,721,1315,796,1294"/>
 <area shape="poly" title=" " alt="" coords="637,1240,593,985,566,807,541,624,530,336,517,158,507,94,494,59,481,47,466,39,469,34,484,43,498,56,512,92,522,157,535,335,547,624,571,806,599,985,642,1240"/>
 <area shape="rect" href="../../d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a5a1ec2ecc43b364e0bc037429842b2e7" title=" " alt="" coords="286,69,470,109"/>
@@ -1309,7 +1307,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="638,1240,620,1120,590,957,570,875,547,801,522,740,494,699,474,685,477,680,498,695,526,737,552,799,575,874,595,956,626,1119,644,1239"/>
 <area shape="rect" href="../../d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a0ec10f80bec4ccee6325303744abe148" title=" " alt="" coords="283,709,473,749"/>
 <area shape="poly" title=" " alt="" coords="643,1240,639,1146,632,1084,620,1017,601,949,575,881,540,818,494,763,472,748,475,744,498,759,544,815,580,879,606,947,625,1016,637,1083,644,1145,649,1239"/>
-<area shape="rect" href="../../d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a0acd4c3071cc8f233078c88ead96b75d" title=" " alt="" coords="275,773,481,813"/>
+<area shape="rect" href="../../d5/d69/structnexilis_1_1client_1_1ClientImpl.html#ae4c0bcb14329691ac2a4a90421712aa2" title=" " alt="" coords="275,773,481,813"/>
 <area shape="poly" title=" " alt="" coords="642,1240,634,1156,625,1103,611,1045,593,986,567,928,535,874,494,827,478,815,481,811,498,823,539,871,572,926,598,984,617,1043,630,1102,639,1155,647,1239"/>
 <area shape="rect" href="../../d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a9080681e459fe2f76e2b940f30c087ae" title=" " alt="" coords="283,837,473,877"/>
 <area shape="poly" title=" " alt="" coords="640,1240,628,1167,603,1073,584,1024,560,975,530,930,494,891,471,876,474,872,498,887,534,927,565,973,589,1021,608,1072,633,1166,645,1239"/>
@@ -1539,17 +1537,17 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/d13/client__api_8hh_source.html#l00604">604</a> of file <a class="el" href="../../d5/d13/client__api_8hh_source.html">client_api.hh</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  605</span>    {</div>
-<div class="line"><span class="lineno">  606</span>        <span class="keyword">auto</span>* client = <a class="code hl_function" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#ad0f61ebe342d9f9a1e0671d80f48ac5b">getClientFromRoom</a>(client_id);</div>
+<div class="line"><span class="lineno">  606</span>        <span class="keyword">auto</span> client = <a class="code hl_function" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#ac7f812ca02d7bdbb2949310f90d06e1a">getClientFromRoom</a>(client_id);</div>
 <div class="line"><span class="lineno">  607</span>        <span class="keywordflow">return</span> client ? client-&gt;getUsername() : <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><span class="lineno">  608</span>    }</div>
-<div class="ttc" id="aclassnexilis_1_1client_1_1ClientAPI_html_ad0f61ebe342d9f9a1e0671d80f48ac5b"><div class="ttname"><a href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#ad0f61ebe342d9f9a1e0671d80f48ac5b">nexilis::client::ClientAPI::getClientFromRoom</a></div><div class="ttdeci">ClientSession * getClientFromRoom(uint64_t client_id)</div><div class="ttdoc">Get client pointer from any room.</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d60/client__api_8cc_source.html#l00261">client_api.cc:261</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1client_1_1ClientAPI_html_ac7f812ca02d7bdbb2949310f90d06e1a"><div class="ttname"><a href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#ac7f812ca02d7bdbb2949310f90d06e1a">nexilis::client::ClientAPI::getClientFromRoom</a></div><div class="ttdeci">std::unique_ptr&lt; ClientSession &gt; getClientFromRoom(uint64_t client_id)</div><div class="ttdoc">Return an owned session snapshot copied under the room lock.</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d60/client__api_8cc_source.html#l00261">client_api.cc:261</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d5/da0/classnexilis_1_1client_1_1ClientAPI_a39a7bdd856ecdbeccd6796b87e64914f_cgraph.png" border="0" usemap="#ad5/da0/classnexilis_1_1client_1_1ClientAPI_a39a7bdd856ecdbeccd6796b87e64914f_cgraph" alt=""/></div>
 <map name="ad5/da0/classnexilis_1_1client_1_1ClientAPI_a39a7bdd856ecdbeccd6796b87e64914f_cgraph" id="ad5/da0/classnexilis_1_1client_1_1ClientAPI_a39a7bdd856ecdbeccd6796b87e64914f_cgraph">
 <area shape="rect" title=" " alt="" coords="5,37,181,77"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#ad0f61ebe342d9f9a1e0671d80f48ac5b" title="Get client pointer from any room." alt="" coords="229,37,405,77"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#ac7f812ca02d7bdbb2949310f90d06e1a" title="Return an owned session snapshot copied under the room lock." alt="" coords="229,37,405,77"/>
 <area shape="poly" title=" " alt="" coords="182,55,215,55,215,60,182,60"/>
 <area shape="rect" href="../../d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a827d09d95f7d81fa2cd69c75bdc71f3e" title=" " alt="" coords="453,5,748,45"/>
 <area shape="poly" title=" " alt="" coords="405,45,439,41,440,46,406,50"/>
@@ -1922,7 +1920,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="621,1272,608,1146,583,974,566,887,546,807,522,743,508,718,494,699,474,684,477,680,498,695,513,715,526,741,551,806,571,885,589,973,613,1145,626,1271"/>
 <area shape="rect" href="../../d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a0ec10f80bec4ccee6325303744abe148" title=" " alt="" coords="283,709,473,749"/>
 <area shape="poly" title=" " alt="" coords="620,1272,605,1157,579,1005,562,928,542,858,519,801,494,763,472,747,475,743,498,759,524,799,547,857,567,927,584,1004,610,1157,625,1271"/>
-<area shape="rect" href="../../d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a0acd4c3071cc8f233078c88ead96b75d" title=" " alt="" coords="275,773,481,813"/>
+<area shape="rect" href="../../d5/d69/structnexilis_1_1client_1_1ClientImpl.html#ae4c0bcb14329691ac2a4a90421712aa2" title=" " alt="" coords="275,773,481,813"/>
 <area shape="poly" title=" " alt="" coords="619,1272,602,1170,575,1036,557,970,538,909,517,860,494,827,479,815,482,811,498,824,522,858,543,907,563,968,580,1035,607,1169,624,1271"/>
 <area shape="rect" href="../../d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a9080681e459fe2f76e2b940f30c087ae" title=" " alt="" coords="283,837,473,877"/>
 <area shape="poly" title=" " alt="" coords="623,1271,617,1193,598,1091,582,1037,560,984,531,934,494,891,472,876,475,871,498,887,535,931,565,981,587,1035,604,1090,622,1193,628,1271"/>
@@ -2181,14 +2179,14 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a9f697448972c4edd1bfe6689a160bf07" name="a9f697448972c4edd1bfe6689a160bf07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f697448972c4edd1bfe6689a160bf07">&#9670;&#160;</a></span>getRoom()</h2>
+<a id="a5f371286f855631612137a88f604840e" name="a5f371286f855631612137a88f604840e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f371286f855631612137a88f604840e">&#9670;&#160;</a></span>getRoom()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../db/dbd/classnexilis_1_1client_1_1Room.html">Room</a> * nexilis::client::ClientAPI::getRoom </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="../../db/dbd/classnexilis_1_1client_1_1Room.html">Room</a> &gt; nexilis::client::ClientAPI::getRoom </td>
           <td>(</td>
           <td class="paramtype">uint64_t&#160;</td>
           <td class="paramname"><em>room_id</em></td><td>)</td>
@@ -2197,7 +2195,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Get a reference to a room from room id. </p>
+<p>Return an owned snapshot copied under the room lock. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d60/client__api_8cc_source.html#l00248">248</a> of file <a class="el" href="../../d2/d60/client__api_8cc_source.html">client_api.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  249</span>{</div>
@@ -2206,7 +2204,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  252</span>    {</div>
 <div class="line"><span class="lineno">  253</span>        <span class="keywordflow">if</span> (<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>.getId() == room_id)</div>
 <div class="line"><span class="lineno">  254</span>        {</div>
-<div class="line"><span class="lineno">  255</span>            <span class="keywordflow">return</span> &amp;<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>;</div>
+<div class="line"><span class="lineno">  255</span>            <span class="keywordflow">return</span> std::make_unique&lt;Room&gt;(<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>);</div>
 <div class="line"><span class="lineno">  256</span>        }</div>
 <div class="line"><span class="lineno">  257</span>    }</div>
 <div class="line"><span class="lineno">  258</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
@@ -2214,9 +2212,9 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d5/da0/classnexilis_1_1client_1_1ClientAPI_a9f697448972c4edd1bfe6689a160bf07_cgraph.png" border="0" usemap="#ad5/da0/classnexilis_1_1client_1_1ClientAPI_a9f697448972c4edd1bfe6689a160bf07_cgraph" alt=""/></div>
-<map name="ad5/da0/classnexilis_1_1client_1_1ClientAPI_a9f697448972c4edd1bfe6689a160bf07_cgraph" id="ad5/da0/classnexilis_1_1client_1_1ClientAPI_a9f697448972c4edd1bfe6689a160bf07_cgraph">
-<area shape="rect" title="Get a reference to a room from room id." alt="" coords="5,37,181,77"/>
+<div class="center"><img src="../../d5/da0/classnexilis_1_1client_1_1ClientAPI_a5f371286f855631612137a88f604840e_cgraph.png" border="0" usemap="#ad5/da0/classnexilis_1_1client_1_1ClientAPI_a5f371286f855631612137a88f604840e_cgraph" alt=""/></div>
+<map name="ad5/da0/classnexilis_1_1client_1_1ClientAPI_a5f371286f855631612137a88f604840e_cgraph" id="ad5/da0/classnexilis_1_1client_1_1ClientAPI_a5f371286f855631612137a88f604840e_cgraph">
+<area shape="rect" title="Return an owned snapshot copied under the room lock." alt="" coords="5,37,181,77"/>
 <area shape="rect" href="../../d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a827d09d95f7d81fa2cd69c75bdc71f3e" title=" " alt="" coords="229,5,524,45"/>
 <area shape="poly" title=" " alt="" coords="181,45,215,41,216,46,182,50"/>
 <area shape="rect" href="../../d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a89bf770a7a9d8bb30c56a961fbf9e697" title=" " alt="" coords="259,69,494,109"/>
@@ -3364,7 +3362,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  155</span>    }</div>
 <div class="line"><span class="lineno">  156</span>    <span class="keywordflow">catch</span> (...)</div>
 <div class="line"><span class="lineno">  157</span>    {</div>
-<div class="line"><span class="lineno">  158</span>        <a class="code hl_function" href="../../dd/de4/classnexilis_1_1Util.html#a6ae83d47990c0b249e692f5efe19a1a3">Util::debugUint8Vector</a>(message);</div>
+<div class="line"><span class="lineno">  158</span>        <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">Log::debug</a>(<span class="stringliteral">&quot;ClientAPI: Could not parse message (&quot;</span>, message.size(), <span class="stringliteral">&quot; bytes)&quot;</span>);</div>
 <div class="line"><span class="lineno">  159</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865a273720206a846dfb4dd2efce5b4fbe36">ReadResult::error_in_json_conversion</a>;</div>
 <div class="line"><span class="lineno">  160</span>    }</div>
 <div class="line"><span class="lineno">  161</span> </div>
@@ -3388,8 +3386,8 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  179</span>}</div>
 <div class="ttc" id="aclassnexilis_1_1Json_html_a9cdb25e199bb08d5cfeeb2e790edb228"><div class="ttname"><a href="../../d7/de9/classnexilis_1_1Json.html#a9cdb25e199bb08d5cfeeb2e790edb228">nexilis::Json::convertToJSON</a></div><div class="ttdeci">static boost::json::object convertToJSON(const nx_data &amp;bytes)</div><div class="ttdoc">Convert nx_data to boost::json::object.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/de6/json_8cc_source.html#l00049">json.cc:49</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1Log_html_a49959aac4210e93d1ccd1977e08dba80"><div class="ttname"><a href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">nexilis::Log::error</a></div><div class="ttdeci">static void error(const T &amp;data, const Args &amp;... args)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de3/log_8hh_source.html#l00123">log.hh:123</a></div></div>
-<div class="ttc" id="aclassnexilis_1_1Util_html_a62d9441f50a65ef0cd3c2040be81d746"><div class="ttname"><a href="../../dd/de4/classnexilis_1_1Util.html#a62d9441f50a65ef0cd3c2040be81d746">nexilis::Util::convertToString</a></div><div class="ttdeci">static std::string convertToString(nx_data bytes)</div><div class="ttdoc">Convert nx_data to string.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d6f/util_8cc_source.html#l00036">util.cc:36</a></div></div>
-<div class="ttc" id="aclassnexilis_1_1Util_html_a6ae83d47990c0b249e692f5efe19a1a3"><div class="ttname"><a href="../../dd/de4/classnexilis_1_1Util.html#a6ae83d47990c0b249e692f5efe19a1a3">nexilis::Util::debugUint8Vector</a></div><div class="ttdeci">static void debugUint8Vector(const nx_data &amp;vector)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d6f/util_8cc_source.html#l00401">util.cc:401</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1Log_html_a8818a693340eed14a9110c9988eac982"><div class="ttname"><a href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">nexilis::Log::debug</a></div><div class="ttdeci">static void debug(const T &amp;data, const Args &amp;... args)</div><div class="ttdoc">All the overloaded printing functions.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de3/log_8hh_source.html#l00105">log.hh:105</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1Util_html_a62d9441f50a65ef0cd3c2040be81d746"><div class="ttname"><a href="../../dd/de4/classnexilis_1_1Util.html#a62d9441f50a65ef0cd3c2040be81d746">nexilis::Util::convertToString</a></div><div class="ttdeci">static std::string convertToString(nx_data bytes)</div><div class="ttdoc">Convert nx_data to string.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d6f/util_8cc_source.html#l00063">util.cc:63</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1client_1_1ClientAPI_html_a80d83a2728ec3fc7afe7c10292c45ae2"><div class="ttname"><a href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a80d83a2728ec3fc7afe7c10292c45ae2">nexilis::client::ClientAPI::readResultStr</a></div><div class="ttdeci">static std::string readResultStr(ReadResult res)</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d60/client__api_8cc_source.html#l00120">client_api.cc:120</a></div></div>
 <div class="ttc" id="anamespacenexilis_1_1client_html_ac26aef7623575a5f6e0f89c9ffa31865a260ca9dd8a4577fc00b7bd5810298076"><div class="ttname"><a href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865a260ca9dd8a4577fc00b7bd5810298076">nexilis::client::ReadResult::success</a></div><div class="ttdeci">@ success</div><div class="ttdoc">Command success.</div></div>
 <div class="ttc" id="anamespacenexilis_1_1client_html_ac26aef7623575a5f6e0f89c9ffa31865a273720206a846dfb4dd2efce5b4fbe36"><div class="ttname"><a href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865a273720206a846dfb4dd2efce5b4fbe36">nexilis::client::ReadResult::error_in_json_conversion</a></div><div class="ttdeci">@ error_in_json_conversion</div><div class="ttdoc">Failure in json conversion.</div></div>
@@ -3399,23 +3397,21 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d5/da0/classnexilis_1_1client_1_1ClientAPI_a4ccd207fd09b712366be9262cf25a668_cgraph.png" border="0" usemap="#ad5/da0/classnexilis_1_1client_1_1ClientAPI_a4ccd207fd09b712366be9262cf25a668_cgraph" alt=""/></div>
 <map name="ad5/da0/classnexilis_1_1client_1_1ClientAPI_a4ccd207fd09b712366be9262cf25a668_cgraph" id="ad5/da0/classnexilis_1_1client_1_1ClientAPI_a4ccd207fd09b712366be9262cf25a668_cgraph">
-<area shape="rect" title="Read incoming message to client." alt="" coords="5,119,181,159"/>
+<area shape="rect" title="Read incoming message to client." alt="" coords="5,113,181,153"/>
 <area shape="rect" href="../../d7/de9/classnexilis_1_1Json.html#a9cdb25e199bb08d5cfeeb2e790edb228" title="Convert nx_data to boost::json::object." alt="" coords="229,5,432,31"/>
-<area shape="poly" title=" " alt="" coords="116,117,165,78,228,41,250,32,252,37,231,46,168,83,119,121"/>
+<area shape="poly" title=" " alt="" coords="118,110,167,75,228,41,251,32,253,37,230,46,170,79,121,115"/>
 <area shape="rect" href="../../dd/de4/classnexilis_1_1Util.html#a62d9441f50a65ef0cd3c2040be81d746" title="Convert nx_data to string." alt="" coords="247,55,414,95"/>
-<area shape="poly" title=" " alt="" coords="168,117,242,96,244,101,169,122"/>
-<area shape="rect" href="../../dd/de4/classnexilis_1_1Util.html#a6ae83d47990c0b249e692f5efe19a1a3" title=" " alt="" coords="241,119,420,159"/>
-<area shape="poly" title=" " alt="" coords="181,137,228,137,228,142,181,142"/>
-<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="263,184,398,209"/>
-<area shape="poly" title=" " alt="" coords="177,157,265,178,263,183,176,162"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a80d83a2728ec3fc7afe7c10292c45ae2" title=" " alt="" coords="243,234,419,274"/>
-<area shape="poly" title=" " alt="" coords="124,157,173,189,230,220,247,227,245,232,228,224,170,193,122,162"/>
-<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982" title="All the overloaded printing functions." alt="" coords="491,127,635,152"/>
-<area shape="poly" title=" " alt="" coords="420,137,478,137,478,142,420,142"/>
-<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#aa9bd79fb1a1804924e3440947c6ab117" title="Send debug message." alt="" coords="695,119,861,159"/>
-<area shape="poly" title=" " alt="" coords="636,137,681,137,681,142,636,142"/>
-<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#acc02567dd7e4103305110bafbfd40c08" title="Send error message." alt="" coords="480,177,647,217"/>
-<area shape="poly" title=" " alt="" coords="399,194,466,194,466,199,399,199"/>
+<area shape="poly" title=" " alt="" coords="176,110,234,96,235,101,177,115"/>
+<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982" title="All the overloaded printing functions." alt="" coords="259,120,403,145"/>
+<area shape="poly" title=" " alt="" coords="181,130,245,130,245,135,181,135"/>
+<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="263,169,398,195"/>
+<area shape="poly" title=" " alt="" coords="182,148,256,164,255,169,181,154"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a80d83a2728ec3fc7afe7c10292c45ae2" title=" " alt="" coords="243,219,419,259"/>
+<area shape="poly" title=" " alt="" coords="128,151,176,178,230,205,249,212,247,217,228,210,173,183,126,155"/>
+<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#aa9bd79fb1a1804924e3440947c6ab117" title="Send debug message." alt="" coords="480,105,647,145"/>
+<area shape="poly" title=" " alt="" coords="403,128,466,125,466,131,403,133"/>
+<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#acc02567dd7e4103305110bafbfd40c08" title="Send error message." alt="" coords="480,169,647,209"/>
+<area shape="poly" title=" " alt="" coords="399,181,466,183,466,189,398,187"/>
 </map>
 </div>
 
@@ -3894,7 +3890,6 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  428</span>        std::this_thread::sleep_for(std::chrono::milliseconds(100));</div>
 <div class="line"><span class="lineno">  429</span>    }</div>
 <div class="line"><span class="lineno">  430</span>}</div>
-<div class="ttc" id="aclassnexilis_1_1Log_html_a8818a693340eed14a9110c9988eac982"><div class="ttname"><a href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">nexilis::Log::debug</a></div><div class="ttdeci">static void debug(const T &amp;data, const Args &amp;... args)</div><div class="ttdoc">All the overloaded printing functions.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de3/log_8hh_source.html#l00105">log.hh:105</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1client_1_1ClientAPI_html_aa05e1f34d3108b2c4c098a33d222d86c"><div class="ttname"><a href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#aa05e1f34d3108b2c4c098a33d222d86c">nexilis::client::ClientAPI::isBoostTCPReady</a></div><div class="ttdeci">bool isBoostTCPReady()</div><div class="ttdoc">If the client boost TCP connection is ready.</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d60/client__api_8cc_source.html#l00385">client_api.cc:385</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>

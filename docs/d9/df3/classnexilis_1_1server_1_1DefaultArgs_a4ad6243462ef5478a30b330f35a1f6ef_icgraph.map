@@ -62,9 +62,9 @@
 <area shape="poly" id="edge61_Node000001_Node000034" title=" " alt="" coords="850,1019,844,1192,837,1312,826,1441,809,1570,786,1687,756,1784,738,1822,718,1851,696,1868,693,1864,714,1847,734,1819,751,1782,781,1686,804,1569,820,1441,832,1312,839,1192,845,1019"/>
 <area shape="rect" id="Node000035" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#aba19bd1310d901fa8a7247da19e32974" title=" " alt="" coords="501,1925,695,1965"/>
 <area shape="poly" id="edge63_Node000001_Node000035" title=" " alt="" coords="851,1019,847,1203,840,1332,829,1472,813,1610,790,1738,775,1794,759,1843,740,1884,718,1915,696,1932,693,1928,714,1912,735,1881,754,1841,770,1792,785,1737,808,1610,824,1471,835,1332,841,1203,845,1019"/>
-<area shape="rect" id="Node000003" href="$da/d15/classnexilis_1_1server_1_1Command.html#a36f27b2491becaf040095c3cb5ec4067" title=" " alt="" coords="243,965,432,1005"/>
+<area shape="rect" id="Node000003" href="$da/d15/classnexilis_1_1server_1_1Command.html#a205831cf4657d0a80391beba1cfd953d" title=" " alt="" coords="243,965,432,1005"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="492,50,482,59,460,91,441,133,423,184,408,242,383,374,366,518,354,661,347,791,342,965,336,965,341,791,349,661,360,517,378,373,403,241,418,182,436,131,455,88,478,56,488,46"/>
-<area shape="rect" id="Node000004" href="$da/d15/classnexilis_1_1server_1_1Command.html#adb7341228f4137e0656f514180b5a45a" title=" " alt="" coords="5,933,195,973"/>
+<area shape="rect" id="Node000004" href="$da/d15/classnexilis_1_1server_1_1Command.html#a523ea35f6efde10413e9718e50a96e70" title=" " alt="" coords="5,933,195,973"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="229,973,194,969,195,963,230,968"/>
 <area shape="rect" id="Node000005" href="$d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="15,997,185,1037"/>
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="230,1003,186,1008,185,1003,229,997"/>

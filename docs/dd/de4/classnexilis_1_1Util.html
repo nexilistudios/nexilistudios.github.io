@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.8-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.9-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -229,19 +229,19 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00060">60</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   61</span>{</div>
-<div class="line"><span class="lineno">   62</span>    uint8_t result = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(expected.size() != given.size());</div>
-<div class="line"><span class="lineno">   63</span> </div>
-<div class="line"><span class="lineno">   64</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; expected.size(); ++i)</div>
-<div class="line"><span class="lineno">   65</span>    {</div>
-<div class="line"><span class="lineno">   66</span>        uint8_t expectedByte = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(expected[i]);</div>
-<div class="line"><span class="lineno">   67</span>        uint8_t givenByte = i &lt; given.size() ? <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(given[i]) : 0;</div>
-<div class="line"><span class="lineno">   68</span>        result |= <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(expectedByte ^ givenByte);</div>
-<div class="line"><span class="lineno">   69</span>    }</div>
-<div class="line"><span class="lineno">   70</span> </div>
-<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">return</span> result == 0;</div>
-<div class="line"><span class="lineno">   72</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00087">87</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   88</span>{</div>
+<div class="line"><span class="lineno">   89</span>    uint8_t result = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(expected.size() != given.size());</div>
+<div class="line"><span class="lineno">   90</span> </div>
+<div class="line"><span class="lineno">   91</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; expected.size(); ++i)</div>
+<div class="line"><span class="lineno">   92</span>    {</div>
+<div class="line"><span class="lineno">   93</span>        uint8_t expectedByte = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(expected[i]);</div>
+<div class="line"><span class="lineno">   94</span>        uint8_t givenByte = i &lt; given.size() ? <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(given[i]) : 0;</div>
+<div class="line"><span class="lineno">   95</span>        result |= <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(expectedByte ^ givenByte);</div>
+<div class="line"><span class="lineno">   96</span>    }</div>
+<div class="line"><span class="lineno">   97</span> </div>
+<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">return</span> result == 0;</div>
+<div class="line"><span class="lineno">   99</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -286,39 +286,33 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00046">46</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   47</span>{</div>
-<div class="line"><span class="lineno">   48</span>    uint8_t result = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(expected.size() != given.size());</div>
-<div class="line"><span class="lineno">   49</span> </div>
-<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; expected.size(); ++i)</div>
-<div class="line"><span class="lineno">   51</span>    {</div>
-<div class="line"><span class="lineno">   52</span>        uint8_t expectedByte = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(expected[i]);</div>
-<div class="line"><span class="lineno">   53</span>        uint8_t givenByte = i &lt; given.size() ? <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(given[i]) : 0;</div>
-<div class="line"><span class="lineno">   54</span>        result |= <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(expectedByte ^ givenByte);</div>
-<div class="line"><span class="lineno">   55</span>    }</div>
-<div class="line"><span class="lineno">   56</span> </div>
-<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">return</span> result == 0;</div>
-<div class="line"><span class="lineno">   58</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00073">73</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   74</span>{</div>
+<div class="line"><span class="lineno">   75</span>    uint8_t result = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(expected.size() != given.size());</div>
+<div class="line"><span class="lineno">   76</span> </div>
+<div class="line"><span class="lineno">   77</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; expected.size(); ++i)</div>
+<div class="line"><span class="lineno">   78</span>    {</div>
+<div class="line"><span class="lineno">   79</span>        uint8_t expectedByte = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(expected[i]);</div>
+<div class="line"><span class="lineno">   80</span>        uint8_t givenByte = i &lt; given.size() ? <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(given[i]) : 0;</div>
+<div class="line"><span class="lineno">   81</span>        result |= <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(expectedByte ^ givenByte);</div>
+<div class="line"><span class="lineno">   82</span>    }</div>
+<div class="line"><span class="lineno">   83</span> </div>
+<div class="line"><span class="lineno">   84</span>    <span class="keywordflow">return</span> result == 0;</div>
+<div class="line"><span class="lineno">   85</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dd/de4/classnexilis_1_1Util_a64405d1c0bd549b08621f4c4787e2482_icgraph.png" border="0" usemap="#add/de4/classnexilis_1_1Util_a64405d1c0bd549b08621f4c4787e2482_icgraph" alt=""/></div>
 <map name="add/de4/classnexilis_1_1Util_a64405d1c0bd549b08621f4c4787e2482_icgraph" id="add/de4/classnexilis_1_1Util_a64405d1c0bd549b08621f4c4787e2482_icgraph">
-<area shape="rect" title=" " alt="" coords="749,69,943,109"/>
-<area shape="rect" href="../../d0/db6/classnexilis_1_1AuthConfig.html#aeb0f227d0880bc62191e943869a80358" title=" " alt="" coords="527,5,671,45"/>
-<area shape="poly" title=" " alt="" coords="754,68,670,47,672,41,756,63"/>
-<area shape="rect" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#acf7263919c7accddbb3d6f9ff160edfe" title=" " alt="" coords="496,69,701,109"/>
-<area shape="poly" title=" " alt="" coords="735,92,702,92,702,87,735,87"/>
-<area shape="rect" href="../../d6/db8/classnexilis_1_1server_1_1MessageHandler.html#a5f33dc0df903c132243ed14c13cf8826" title=" " alt="" coords="509,133,689,173"/>
-<area shape="poly" title=" " alt="" coords="755,115,677,136,676,131,754,110"/>
-<area shape="rect" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#abfff15d7cdf94fd107ffcd2117c59a32" title=" " alt="" coords="243,5,448,45"/>
-<area shape="poly" title=" " alt="" coords="513,28,448,28,448,23,513,23"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a36f27b2491becaf040095c3cb5ec4067" title=" " alt="" coords="251,69,440,109"/>
-<area shape="poly" title=" " alt="" coords="482,92,440,92,440,87,482,87"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#adb7341228f4137e0656f514180b5a45a" title=" " alt="" coords="5,37,195,77"/>
-<area shape="poly" title=" " alt="" coords="237,78,194,72,195,67,237,73"/>
-<area shape="rect" href="../../d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="15,101,185,141"/>
-<area shape="poly" title=" " alt="" coords="237,106,186,113,185,108,237,101"/>
+<area shape="rect" title=" " alt="" coords="512,69,705,109"/>
+<area shape="rect" href="../../d0/db6/classnexilis_1_1AuthConfig.html#aeb0f227d0880bc62191e943869a80358" title=" " alt="" coords="289,5,433,45"/>
+<area shape="poly" title=" " alt="" coords="517,68,433,47,434,41,518,63"/>
+<area shape="rect" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#acf7263919c7accddbb3d6f9ff160edfe" title=" " alt="" coords="259,69,464,109"/>
+<area shape="poly" title=" " alt="" coords="498,92,464,92,464,87,498,87"/>
+<area shape="rect" href="../../d6/db8/classnexilis_1_1server_1_1MessageHandler.html#a5f33dc0df903c132243ed14c13cf8826" title=" " alt="" coords="271,133,451,173"/>
+<area shape="poly" title=" " alt="" coords="518,115,440,136,438,131,517,110"/>
+<area shape="rect" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#abfff15d7cdf94fd107ffcd2117c59a32" title=" " alt="" coords="5,5,211,45"/>
+<area shape="poly" title=" " alt="" coords="276,28,211,28,211,23,276,23"/>
 </map>
 </div>
 
@@ -350,22 +344,22 @@ Here is the caller graph for this function:</div>
 
 <p>Convert nx_data to uint16_t. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00085">85</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   86</span>{</div>
-<div class="line"><span class="lineno">   87</span>    <span class="keywordflow">if</span> (bytes.size() &lt; 2)</div>
-<div class="line"><span class="lineno">   88</span>    {</div>
-<div class="line"><span class="lineno">   89</span>        <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Input nx_data must contain at least 2 bytes&quot;</span>);</div>
-<div class="line"><span class="lineno">   90</span>    }</div>
-<div class="line"><span class="lineno">   91</span> </div>
-<div class="line"><span class="lineno">   92</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d2/def/classnexilis_1_1server_1_1Config.html#a4524682844dcfc71ad49250c36f399ca">server::Config::getBigEndian</a>())</div>
-<div class="line"><span class="lineno">   93</span>    {</div>
-<div class="line"><span class="lineno">   94</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint16_t<span class="keyword">&gt;</span>((bytes[0] &lt;&lt; 8) | bytes[1]);</div>
-<div class="line"><span class="lineno">   95</span>    }</div>
-<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   97</span>    {</div>
-<div class="line"><span class="lineno">   98</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint16_t<span class="keyword">&gt;</span>(bytes[0] | <span class="keyword">static_cast&lt;</span>uint16_t<span class="keyword">&gt;</span>(bytes[1]) &lt;&lt; 8);</div>
-<div class="line"><span class="lineno">   99</span>    }</div>
-<div class="line"><span class="lineno">  100</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00112">112</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  113</span>{</div>
+<div class="line"><span class="lineno">  114</span>    <span class="keywordflow">if</span> (bytes.size() &lt; 2)</div>
+<div class="line"><span class="lineno">  115</span>    {</div>
+<div class="line"><span class="lineno">  116</span>        <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Input nx_data must contain at least 2 bytes&quot;</span>);</div>
+<div class="line"><span class="lineno">  117</span>    }</div>
+<div class="line"><span class="lineno">  118</span> </div>
+<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d2/def/classnexilis_1_1server_1_1Config.html#a4524682844dcfc71ad49250c36f399ca">server::Config::getBigEndian</a>())</div>
+<div class="line"><span class="lineno">  120</span>    {</div>
+<div class="line"><span class="lineno">  121</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint16_t<span class="keyword">&gt;</span>((bytes[0] &lt;&lt; 8) | bytes[1]);</div>
+<div class="line"><span class="lineno">  122</span>    }</div>
+<div class="line"><span class="lineno">  123</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  124</span>    {</div>
+<div class="line"><span class="lineno">  125</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint16_t<span class="keyword">&gt;</span>(bytes[0] | <span class="keyword">static_cast&lt;</span>uint16_t<span class="keyword">&gt;</span>(bytes[1]) &lt;&lt; 8);</div>
+<div class="line"><span class="lineno">  126</span>    }</div>
+<div class="line"><span class="lineno">  127</span>}</div>
 <div class="ttc" id="aclassnexilis_1_1server_1_1Config_html_a4524682844dcfc71ad49250c36f399ca"><div class="ttname"><a href="../../d2/def/classnexilis_1_1server_1_1Config.html#a4524682844dcfc71ad49250c36f399ca">nexilis::server::Config::getBigEndian</a></div><div class="ttdeci">static bool getBigEndian()</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d53/config_8hh_source.html#l00026">config.hh:26</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -385,9 +379,9 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Convert nx_data to uint16_t." alt="" coords="735,37,909,77"/>
 <area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a1fd0add1c5afaa69f27d4af1de5b4315" title=" " alt="" coords="480,37,687,77"/>
 <area shape="poly" title=" " alt="" coords="721,60,687,60,687,55,721,55"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a36f27b2491becaf040095c3cb5ec4067" title=" " alt="" coords="243,37,432,77"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a205831cf4657d0a80391beba1cfd953d" title=" " alt="" coords="243,37,432,77"/>
 <area shape="poly" title=" " alt="" coords="466,60,432,60,432,55,466,55"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#adb7341228f4137e0656f514180b5a45a" title=" " alt="" coords="5,5,195,45"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a523ea35f6efde10413e9718e50a96e70" title=" " alt="" coords="5,5,195,45"/>
 <area shape="poly" title=" " alt="" coords="229,45,194,41,195,35,230,40"/>
 <area shape="rect" href="../../d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="15,69,185,109"/>
 <area shape="poly" title=" " alt="" coords="230,75,186,80,185,75,229,69"/>
@@ -422,16 +416,16 @@ Here is the caller graph for this function:</div>
 
 <p>Convert nx_data to number values. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00074">74</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   75</span>{</div>
-<div class="line"><span class="lineno">   76</span>    std::stringstream ss;</div>
-<div class="line"><span class="lineno">   77</span>    <span class="keywordflow">for</span> (uint8_t <span class="keywordtype">byte</span> : bytes)</div>
-<div class="line"><span class="lineno">   78</span>    {</div>
-<div class="line"><span class="lineno">   79</span>        ss &lt;&lt; std::hex &lt;&lt; static_cast&lt;int&gt;(<span class="keywordtype">byte</span>) &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><span class="lineno">   80</span>    }</div>
-<div class="line"><span class="lineno">   81</span>    ss &lt;&lt; std::dec &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   82</span>    <span class="keywordflow">return</span> ss.str();</div>
-<div class="line"><span class="lineno">   83</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00101">101</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  102</span>{</div>
+<div class="line"><span class="lineno">  103</span>    std::stringstream ss;</div>
+<div class="line"><span class="lineno">  104</span>    <span class="keywordflow">for</span> (uint8_t <span class="keywordtype">byte</span> : bytes)</div>
+<div class="line"><span class="lineno">  105</span>    {</div>
+<div class="line"><span class="lineno">  106</span>        ss &lt;&lt; std::hex &lt;&lt; static_cast&lt;int&gt;(<span class="keywordtype">byte</span>) &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><span class="lineno">  107</span>    }</div>
+<div class="line"><span class="lineno">  108</span>    ss &lt;&lt; std::dec &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  109</span>    <span class="keywordflow">return</span> ss.str();</div>
+<div class="line"><span class="lineno">  110</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -461,22 +455,22 @@ Here is the caller graph for this function:</div>
 
 <p>Convert nx_data to string. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00036">36</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   37</span>{</div>
-<div class="line"><span class="lineno">   38</span>    std::string result;</div>
-<div class="line"><span class="lineno">   39</span>    <span class="keywordflow">for</span> (uint8_t b : bytes)</div>
-<div class="line"><span class="lineno">   40</span>    {</div>
-<div class="line"><span class="lineno">   41</span>        result += <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>(b);</div>
-<div class="line"><span class="lineno">   42</span>    }</div>
-<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno">   44</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00063">63</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   64</span>{</div>
+<div class="line"><span class="lineno">   65</span>    std::string result;</div>
+<div class="line"><span class="lineno">   66</span>    <span class="keywordflow">for</span> (uint8_t b : bytes)</div>
+<div class="line"><span class="lineno">   67</span>    {</div>
+<div class="line"><span class="lineno">   68</span>        result += <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>(b);</div>
+<div class="line"><span class="lineno">   69</span>    }</div>
+<div class="line"><span class="lineno">   70</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">   71</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dd/de4/classnexilis_1_1Util_a62d9441f50a65ef0cd3c2040be81d746_icgraph.png" border="0" usemap="#add/de4/classnexilis_1_1Util_a62d9441f50a65ef0cd3c2040be81d746_icgraph" alt=""/></div>
 <map name="add/de4/classnexilis_1_1Util_a62d9441f50a65ef0cd3c2040be81d746_icgraph" id="add/de4/classnexilis_1_1Util_a62d9441f50a65ef0cd3c2040be81d746_icgraph">
 <area shape="rect" title="Convert nx_data to string." alt="" coords="759,348,925,388"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a36f27b2491becaf040095c3cb5ec4067" title=" " alt="" coords="243,380,432,420"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a205831cf4657d0a80391beba1cfd953d" title=" " alt="" coords="243,380,432,420"/>
 <area shape="poly" title=" " alt="" coords="836,335,827,271,806,192,790,151,769,113,742,79,709,51,650,19,622,11,595,8,568,11,541,19,512,32,482,50,443,84,412,126,388,172,370,221,349,313,342,380,337,380,344,312,365,219,383,170,407,123,439,81,478,46,510,27,539,14,567,5,595,3,623,5,652,14,712,46,746,75,773,110,795,149,812,190,832,270,841,334"/>
 <area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a4ccd207fd09b712366be9262cf25a668" title="Read incoming message to client." alt="" coords="507,60,683,100"/>
 <area shape="poly" title=" " alt="" coords="831,336,816,287,791,227,756,166,734,138,709,114,683,99,685,94,712,110,738,135,760,163,796,224,821,285,836,334"/>
@@ -500,7 +494,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="836,402,821,452,796,512,760,574,738,602,712,626,694,638,691,634,709,622,734,598,756,571,791,510,816,450,831,401"/>
 <area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a2b966ab982b96ce50f2cabb471bd7b56" title=" " alt="" coords="499,700,692,740"/>
 <area shape="poly" title=" " alt="" coords="839,403,828,464,805,541,789,582,768,621,743,658,712,690,694,703,691,699,709,686,739,655,763,619,784,580,800,540,823,463,834,402"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#adb7341228f4137e0656f514180b5a45a" title=" " alt="" coords="5,348,195,388"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a523ea35f6efde10413e9718e50a96e70" title=" " alt="" coords="5,348,195,388"/>
 <area shape="poly" title=" " alt="" coords="229,388,194,384,195,378,230,383"/>
 <area shape="rect" href="../../d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="15,412,185,452"/>
 <area shape="poly" title=" " alt="" coords="230,418,186,423,185,418,229,412"/>
@@ -613,31 +607,31 @@ Here is the call graph for this function:</div>
 
 <p>Convert nx_data to Vec2f. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00116">116</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  117</span>{</div>
-<div class="line"><span class="lineno">  118</span>    <span class="comment">// Ensure the vector has enough bytes for two floats</span></div>
-<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">if</span> (bytes.size() &lt; <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>) * 2)</div>
-<div class="line"><span class="lineno">  120</span>    {</div>
-<div class="line"><span class="lineno">  121</span>        <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;The input vector does not contain enough bytes for two floats.&quot;</span>);</div>
-<div class="line"><span class="lineno">  122</span>    }</div>
-<div class="line"><span class="lineno">  123</span>    <span class="keywordtype">float</span> x, y;</div>
-<div class="line"><span class="lineno">  124</span> </div>
-<div class="line"><span class="lineno">  125</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d2/def/classnexilis_1_1server_1_1Config.html#a4524682844dcfc71ad49250c36f399ca">server::Config::getBigEndian</a>())</div>
-<div class="line"><span class="lineno">  126</span>    {</div>
-<div class="line"><span class="lineno">  127</span>        x = <a class="code hl_function" href="../../d8/d34/namespacenexilis.html#af2889eb3347861d077b1f1a02ab9e25f">bytesToFloatBigEndian</a>(bytes.data());</div>
-<div class="line"><span class="lineno">  128</span>        y = <a class="code hl_function" href="../../d8/d34/namespacenexilis.html#af2889eb3347861d077b1f1a02ab9e25f">bytesToFloatBigEndian</a>(bytes.data() + <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
-<div class="line"><span class="lineno">  129</span>    }</div>
-<div class="line"><span class="lineno">  130</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  131</span>    {</div>
-<div class="line"><span class="lineno">  132</span>        <span class="comment">// Copy the first 4 bytes.</span></div>
-<div class="line"><span class="lineno">  133</span>        memcpy(&amp;x, bytes.data(), <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
-<div class="line"><span class="lineno">  134</span>        <span class="comment">// Copy the next 4 bytes.</span></div>
-<div class="line"><span class="lineno">  135</span>        memcpy(&amp;y, bytes.data() + <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>), <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
-<div class="line"><span class="lineno">  136</span>    }</div>
-<div class="line"><span class="lineno">  137</span>    <span class="keywordflow">return</span> <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a66c81b5d9a82dd24f6bb045ab576df99">Vector2f</a>(x, y);</div>
-<div class="line"><span class="lineno">  138</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00143">143</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  144</span>{</div>
+<div class="line"><span class="lineno">  145</span>    <span class="comment">// Ensure the vector has enough bytes for two floats</span></div>
+<div class="line"><span class="lineno">  146</span>    <span class="keywordflow">if</span> (bytes.size() &lt; <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>) * 2)</div>
+<div class="line"><span class="lineno">  147</span>    {</div>
+<div class="line"><span class="lineno">  148</span>        <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;The input vector does not contain enough bytes for two floats.&quot;</span>);</div>
+<div class="line"><span class="lineno">  149</span>    }</div>
+<div class="line"><span class="lineno">  150</span>    <span class="keywordtype">float</span> x, y;</div>
+<div class="line"><span class="lineno">  151</span> </div>
+<div class="line"><span class="lineno">  152</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d2/def/classnexilis_1_1server_1_1Config.html#a4524682844dcfc71ad49250c36f399ca">server::Config::getBigEndian</a>())</div>
+<div class="line"><span class="lineno">  153</span>    {</div>
+<div class="line"><span class="lineno">  154</span>        x = <a class="code hl_function" href="../../d8/d34/namespacenexilis.html#af2889eb3347861d077b1f1a02ab9e25f">bytesToFloatBigEndian</a>(bytes.data());</div>
+<div class="line"><span class="lineno">  155</span>        y = <a class="code hl_function" href="../../d8/d34/namespacenexilis.html#af2889eb3347861d077b1f1a02ab9e25f">bytesToFloatBigEndian</a>(bytes.data() + <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
+<div class="line"><span class="lineno">  156</span>    }</div>
+<div class="line"><span class="lineno">  157</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  158</span>    {</div>
+<div class="line"><span class="lineno">  159</span>        <span class="comment">// Copy the first 4 bytes.</span></div>
+<div class="line"><span class="lineno">  160</span>        memcpy(&amp;x, bytes.data(), <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
+<div class="line"><span class="lineno">  161</span>        <span class="comment">// Copy the next 4 bytes.</span></div>
+<div class="line"><span class="lineno">  162</span>        memcpy(&amp;y, bytes.data() + <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>), <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
+<div class="line"><span class="lineno">  163</span>    }</div>
+<div class="line"><span class="lineno">  164</span>    <span class="keywordflow">return</span> <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a66c81b5d9a82dd24f6bb045ab576df99">Vector2f</a>(x, y);</div>
+<div class="line"><span class="lineno">  165</span>}</div>
 <div class="ttc" id="anamespacenexilis_html_a66c81b5d9a82dd24f6bb045ab576df99"><div class="ttname"><a href="../../d8/d34/namespacenexilis.html#a66c81b5d9a82dd24f6bb045ab576df99">nexilis::Vector2f</a></div><div class="ttdeci">Vector2&lt; float &gt; Vector2f</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d6b/vector2_8hh_source.html#l00153">vector2.hh:153</a></div></div>
-<div class="ttc" id="anamespacenexilis_html_af2889eb3347861d077b1f1a02ab9e25f"><div class="ttname"><a href="../../d8/d34/namespacenexilis.html#af2889eb3347861d077b1f1a02ab9e25f">nexilis::bytesToFloatBigEndian</a></div><div class="ttdeci">float bytesToFloatBigEndian(const uint8_t *bytes)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d6f/util_8cc_source.html#l00103">util.cc:103</a></div></div>
+<div class="ttc" id="anamespacenexilis_html_af2889eb3347861d077b1f1a02ab9e25f"><div class="ttname"><a href="../../d8/d34/namespacenexilis.html#af2889eb3347861d077b1f1a02ab9e25f">nexilis::bytesToFloatBigEndian</a></div><div class="ttdeci">float bytesToFloatBigEndian(const uint8_t *bytes)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d6f/util_8cc_source.html#l00130">util.cc:130</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -660,9 +654,9 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="716,47,683,42,683,37,717,41"/>
 <area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a200e4503dbb419dba8d77ffbc75d4603" title=" " alt="" coords="485,69,678,109"/>
 <area shape="poly" title=" " alt="" coords="717,73,679,79,678,73,717,68"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a36f27b2491becaf040095c3cb5ec4067" title=" " alt="" coords="243,37,432,77"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a205831cf4657d0a80391beba1cfd953d" title=" " alt="" coords="243,37,432,77"/>
 <area shape="poly" title=" " alt="" coords="467,43,432,48,432,42,466,38"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#adb7341228f4137e0656f514180b5a45a" title=" " alt="" coords="5,5,195,45"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a523ea35f6efde10413e9718e50a96e70" title=" " alt="" coords="5,5,195,45"/>
 <area shape="poly" title=" " alt="" coords="229,45,194,41,195,35,230,40"/>
 <area shape="rect" href="../../d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="15,69,185,109"/>
 <area shape="poly" title=" " alt="" coords="230,75,186,80,185,75,229,69"/>
@@ -698,28 +692,28 @@ Here is the caller graph for this function:</div>
 
 <p>Convert nx_data to Vector3f. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00140">140</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  141</span>{</div>
-<div class="line"><span class="lineno">  142</span>    <span class="keywordflow">if</span> (bytes.size() &lt; <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>) * 3)</div>
-<div class="line"><span class="lineno">  143</span>    {</div>
-<div class="line"><span class="lineno">  144</span>        <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;The input vector does not contain enough bytes for three floats&quot;</span>);</div>
-<div class="line"><span class="lineno">  145</span>    }</div>
-<div class="line"><span class="lineno">  146</span>    <span class="keywordtype">float</span> x, y, z;</div>
-<div class="line"><span class="lineno">  147</span> </div>
-<div class="line"><span class="lineno">  148</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d2/def/classnexilis_1_1server_1_1Config.html#a4524682844dcfc71ad49250c36f399ca">server::Config::getBigEndian</a>())</div>
-<div class="line"><span class="lineno">  149</span>    {</div>
-<div class="line"><span class="lineno">  150</span>        x = <a class="code hl_function" href="../../d8/d34/namespacenexilis.html#af2889eb3347861d077b1f1a02ab9e25f">bytesToFloatBigEndian</a>(bytes.data());</div>
-<div class="line"><span class="lineno">  151</span>        y = <a class="code hl_function" href="../../d8/d34/namespacenexilis.html#af2889eb3347861d077b1f1a02ab9e25f">bytesToFloatBigEndian</a>(bytes.data() + <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
-<div class="line"><span class="lineno">  152</span>        z = <a class="code hl_function" href="../../d8/d34/namespacenexilis.html#af2889eb3347861d077b1f1a02ab9e25f">bytesToFloatBigEndian</a>(bytes.data() + 2 * <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
-<div class="line"><span class="lineno">  153</span>    }</div>
-<div class="line"><span class="lineno">  154</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  155</span>    {</div>
-<div class="line"><span class="lineno">  156</span>        memcpy(&amp;x, bytes.data(), <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
-<div class="line"><span class="lineno">  157</span>        memcpy(&amp;y, bytes.data() + <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>), <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
-<div class="line"><span class="lineno">  158</span>        memcpy(&amp;z, bytes.data() + <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>) * 2, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
-<div class="line"><span class="lineno">  159</span>    }</div>
-<div class="line"><span class="lineno">  160</span>    <span class="keywordflow">return</span> <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a6d4456bc63926293b47b68c62361ce2d">Vector3f</a>(x, y, z);</div>
-<div class="line"><span class="lineno">  161</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00167">167</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  168</span>{</div>
+<div class="line"><span class="lineno">  169</span>    <span class="keywordflow">if</span> (bytes.size() &lt; <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>) * 3)</div>
+<div class="line"><span class="lineno">  170</span>    {</div>
+<div class="line"><span class="lineno">  171</span>        <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;The input vector does not contain enough bytes for three floats&quot;</span>);</div>
+<div class="line"><span class="lineno">  172</span>    }</div>
+<div class="line"><span class="lineno">  173</span>    <span class="keywordtype">float</span> x, y, z;</div>
+<div class="line"><span class="lineno">  174</span> </div>
+<div class="line"><span class="lineno">  175</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d2/def/classnexilis_1_1server_1_1Config.html#a4524682844dcfc71ad49250c36f399ca">server::Config::getBigEndian</a>())</div>
+<div class="line"><span class="lineno">  176</span>    {</div>
+<div class="line"><span class="lineno">  177</span>        x = <a class="code hl_function" href="../../d8/d34/namespacenexilis.html#af2889eb3347861d077b1f1a02ab9e25f">bytesToFloatBigEndian</a>(bytes.data());</div>
+<div class="line"><span class="lineno">  178</span>        y = <a class="code hl_function" href="../../d8/d34/namespacenexilis.html#af2889eb3347861d077b1f1a02ab9e25f">bytesToFloatBigEndian</a>(bytes.data() + <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
+<div class="line"><span class="lineno">  179</span>        z = <a class="code hl_function" href="../../d8/d34/namespacenexilis.html#af2889eb3347861d077b1f1a02ab9e25f">bytesToFloatBigEndian</a>(bytes.data() + 2 * <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
+<div class="line"><span class="lineno">  180</span>    }</div>
+<div class="line"><span class="lineno">  181</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  182</span>    {</div>
+<div class="line"><span class="lineno">  183</span>        memcpy(&amp;x, bytes.data(), <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
+<div class="line"><span class="lineno">  184</span>        memcpy(&amp;y, bytes.data() + <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>), <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
+<div class="line"><span class="lineno">  185</span>        memcpy(&amp;z, bytes.data() + <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>) * 2, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
+<div class="line"><span class="lineno">  186</span>    }</div>
+<div class="line"><span class="lineno">  187</span>    <span class="keywordflow">return</span> <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a6d4456bc63926293b47b68c62361ce2d">Vector3f</a>(x, y, z);</div>
+<div class="line"><span class="lineno">  188</span>}</div>
 <div class="ttc" id="anamespacenexilis_html_a6d4456bc63926293b47b68c62361ce2d"><div class="ttname"><a href="../../d8/d34/namespacenexilis.html#a6d4456bc63926293b47b68c62361ce2d">nexilis::Vector3f</a></div><div class="ttdeci">Vector3&lt; float &gt; Vector3f</div><div class="ttdef"><b>Definition</b> <a href="../../db/d36/vector3_8hh_source.html#l00153">vector3.hh:153</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -743,9 +737,9 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="716,47,683,42,683,37,717,41"/>
 <area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a02f82557e240dadd7338438092a85ed1" title=" " alt="" coords="485,69,678,109"/>
 <area shape="poly" title=" " alt="" coords="717,73,679,79,678,73,717,68"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a36f27b2491becaf040095c3cb5ec4067" title=" " alt="" coords="243,37,432,77"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a205831cf4657d0a80391beba1cfd953d" title=" " alt="" coords="243,37,432,77"/>
 <area shape="poly" title=" " alt="" coords="467,43,432,48,432,42,466,38"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#adb7341228f4137e0656f514180b5a45a" title=" " alt="" coords="5,5,195,45"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a523ea35f6efde10413e9718e50a96e70" title=" " alt="" coords="5,5,195,45"/>
 <area shape="poly" title=" " alt="" coords="229,45,194,41,195,35,230,40"/>
 <area shape="rect" href="../../d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="15,69,185,109"/>
 <area shape="poly" title=" " alt="" coords="230,75,186,80,185,75,229,69"/>
@@ -791,14 +785,14 @@ Here is the caller graph for this function:</div>
 
 <p>Get a boost json key value as a float. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00301">301</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  302</span>{</div>
-<div class="line"><span class="lineno">  303</span>    <span class="comment">// clang-format off</span></div>
-<div class="line"><span class="lineno">  304</span>    <span class="keywordflow">return</span> boostJsonValue&lt;double&gt;(</div>
-<div class="line"><span class="lineno">  305</span>            [&amp;ctx, &amp;key]() { <span class="keywordflow">return</span> ctx.at(key).if_double(); },</div>
-<div class="line"><span class="lineno">  306</span>            [&amp;ctx, &amp;key]() { <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(ctx.at(key).as_double()); });</div>
-<div class="line"><span class="lineno">  307</span>    <span class="comment">// clang-format on</span></div>
-<div class="line"><span class="lineno">  308</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00328">328</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  329</span>{</div>
+<div class="line"><span class="lineno">  330</span>    <span class="comment">// clang-format off</span></div>
+<div class="line"><span class="lineno">  331</span>    <span class="keywordflow">return</span> boostJsonValue&lt;double&gt;(</div>
+<div class="line"><span class="lineno">  332</span>            [&amp;ctx, &amp;key]() { <span class="keywordflow">return</span> ctx.at(key).if_double(); },</div>
+<div class="line"><span class="lineno">  333</span>            [&amp;ctx, &amp;key]() { <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(ctx.at(key).as_double()); });</div>
+<div class="line"><span class="lineno">  334</span>    <span class="comment">// clang-format on</span></div>
+<div class="line"><span class="lineno">  335</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -838,14 +832,14 @@ Here is the caller graph for this function:</div>
 
 <p>Get a boost json key value as a string. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00278">278</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  279</span>{</div>
-<div class="line"><span class="lineno">  280</span>    <span class="comment">// clang-format off</span></div>
-<div class="line"><span class="lineno">  281</span>    <span class="keywordflow">return</span> boostJsonValue&lt;std::string&gt;(</div>
-<div class="line"><span class="lineno">  282</span>            [&amp;ctx, &amp;key]() { <span class="keywordflow">return</span> ctx.at(key).if_string(); },</div>
-<div class="line"><span class="lineno">  283</span>            [&amp;ctx, &amp;key]() { <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(ctx.at(key).as_string()); });</div>
-<div class="line"><span class="lineno">  284</span>    <span class="comment">// clang-format on</span></div>
-<div class="line"><span class="lineno">  285</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00305">305</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  306</span>{</div>
+<div class="line"><span class="lineno">  307</span>    <span class="comment">// clang-format off</span></div>
+<div class="line"><span class="lineno">  308</span>    <span class="keywordflow">return</span> boostJsonValue&lt;std::string&gt;(</div>
+<div class="line"><span class="lineno">  309</span>            [&amp;ctx, &amp;key]() { <span class="keywordflow">return</span> ctx.at(key).if_string(); },</div>
+<div class="line"><span class="lineno">  310</span>            [&amp;ctx, &amp;key]() { <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::string<span class="keyword">&gt;</span>(ctx.at(key).as_string()); });</div>
+<div class="line"><span class="lineno">  311</span>    <span class="comment">// clang-format on</span></div>
+<div class="line"><span class="lineno">  312</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -885,19 +879,19 @@ Here is the caller graph for this function:</div>
 
 <p>Get a boost json key value as a uint64. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00287">287</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  288</span>{</div>
-<div class="line"><span class="lineno">  289</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; val = ctx.at(key);</div>
-<div class="line"><span class="lineno">  290</span>    <span class="keywordflow">if</span> (<span class="keyword">auto</span>* u = val.if_uint64())</div>
-<div class="line"><span class="lineno">  291</span>    {</div>
-<div class="line"><span class="lineno">  292</span>        <span class="keywordflow">return</span> *u;</div>
-<div class="line"><span class="lineno">  293</span>    }</div>
-<div class="line"><span class="lineno">  294</span>    <span class="keywordflow">if</span> (<span class="keyword">auto</span>* i = val.if_int64())</div>
-<div class="line"><span class="lineno">  295</span>    {</div>
-<div class="line"><span class="lineno">  296</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(*i);</div>
-<div class="line"><span class="lineno">  297</span>    }</div>
-<div class="line"><span class="lineno">  298</span>    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Key does not exist or the value is of wrong type&quot;</span>);</div>
-<div class="line"><span class="lineno">  299</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00314">314</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  315</span>{</div>
+<div class="line"><span class="lineno">  316</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; val = ctx.at(key);</div>
+<div class="line"><span class="lineno">  317</span>    <span class="keywordflow">if</span> (<span class="keyword">auto</span>* u = val.if_uint64())</div>
+<div class="line"><span class="lineno">  318</span>    {</div>
+<div class="line"><span class="lineno">  319</span>        <span class="keywordflow">return</span> *u;</div>
+<div class="line"><span class="lineno">  320</span>    }</div>
+<div class="line"><span class="lineno">  321</span>    <span class="keywordflow">if</span> (<span class="keyword">auto</span>* i = val.if_int64())</div>
+<div class="line"><span class="lineno">  322</span>    {</div>
+<div class="line"><span class="lineno">  323</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(*i);</div>
+<div class="line"><span class="lineno">  324</span>    }</div>
+<div class="line"><span class="lineno">  325</span>    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Key does not exist or the value is of wrong type&quot;</span>);</div>
+<div class="line"><span class="lineno">  326</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -925,16 +919,16 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00401">401</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  402</span>{</div>
-<div class="line"><span class="lineno">  403</span>    std::stringstream ss;</div>
-<div class="line"><span class="lineno">  404</span>    <span class="keywordflow">for</span> (uint8_t <span class="keywordtype">byte</span> : vector)</div>
-<div class="line"><span class="lineno">  405</span>    {</div>
-<div class="line"><span class="lineno">  406</span>        ss &lt;&lt; std::hex &lt;&lt; static_cast&lt;int&gt;(<span class="keywordtype">byte</span>) &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>(byte) &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span>;</div>
-<div class="line"><span class="lineno">  407</span>    }</div>
-<div class="line"><span class="lineno">  408</span>    ss &lt;&lt; std::dec &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  409</span>    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">Log::debug</a>(ss.str());</div>
-<div class="line"><span class="lineno">  410</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00418">418</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  419</span>{</div>
+<div class="line"><span class="lineno">  420</span>    std::stringstream ss;</div>
+<div class="line"><span class="lineno">  421</span>    <span class="keywordflow">for</span> (uint8_t <span class="keywordtype">byte</span> : vector)</div>
+<div class="line"><span class="lineno">  422</span>    {</div>
+<div class="line"><span class="lineno">  423</span>        ss &lt;&lt; std::hex &lt;&lt; static_cast&lt;int&gt;(<span class="keywordtype">byte</span>) &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>(byte) &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span>;</div>
+<div class="line"><span class="lineno">  424</span>    }</div>
+<div class="line"><span class="lineno">  425</span>    ss &lt;&lt; std::dec &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  426</span>    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">Log::debug</a>(ss.str());</div>
+<div class="line"><span class="lineno">  427</span>}</div>
 <div class="ttc" id="aclassnexilis_1_1Log_html_a8818a693340eed14a9110c9988eac982"><div class="ttname"><a href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">nexilis::Log::debug</a></div><div class="ttdeci">static void debug(const T &amp;data, const Args &amp;... args)</div><div class="ttdoc">All the overloaded printing functions.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de3/log_8hh_source.html#l00105">log.hh:105</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -946,22 +940,6 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="184,23,218,23,218,28,184,28"/>
 <area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#aa9bd79fb1a1804924e3440947c6ab117" title="Send debug message." alt="" coords="424,5,591,45"/>
 <area shape="poly" title=" " alt="" coords="376,23,410,23,410,28,376,28"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../dd/de4/classnexilis_1_1Util_a6ae83d47990c0b249e692f5efe19a1a3_icgraph.png" border="0" usemap="#add/de4/classnexilis_1_1Util_a6ae83d47990c0b249e692f5efe19a1a3_icgraph" alt=""/></div>
-<map name="add/de4/classnexilis_1_1Util_a6ae83d47990c0b249e692f5efe19a1a3_icgraph" id="add/de4/classnexilis_1_1Util_a6ae83d47990c0b249e692f5efe19a1a3_icgraph">
-<area shape="rect" title=" " alt="" coords="480,69,659,109"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a36f27b2491becaf040095c3cb5ec4067" title=" " alt="" coords="243,37,432,77"/>
-<area shape="poly" title=" " alt="" coords="466,78,432,73,433,68,467,73"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a4ccd207fd09b712366be9262cf25a668" title="Read incoming message to client." alt="" coords="249,101,425,141"/>
-<area shape="poly" title=" " alt="" coords="467,106,426,112,425,107,466,101"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#adb7341228f4137e0656f514180b5a45a" title=" " alt="" coords="5,5,195,45"/>
-<area shape="poly" title=" " alt="" coords="229,45,194,41,195,35,230,40"/>
-<area shape="rect" href="../../d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="15,69,185,109"/>
-<area shape="poly" title=" " alt="" coords="230,75,186,80,185,75,229,69"/>
 </map>
 </div>
 
@@ -993,20 +971,20 @@ Here is the caller graph for this function:</div>
 
 <p>File stuff. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00518">518</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  519</span>{</div>
-<div class="line"><span class="lineno">  520</span>    <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  521</span>    {</div>
-<div class="line"><span class="lineno">  522</span>        <span class="keywordflow">if</span> (std::filesystem::exists(filePath))</div>
-<div class="line"><span class="lineno">  523</span>        {</div>
-<div class="line"><span class="lineno">  524</span>            std::filesystem::remove(filePath);</div>
-<div class="line"><span class="lineno">  525</span>        }</div>
-<div class="line"><span class="lineno">  526</span>    }</div>
-<div class="line"><span class="lineno">  527</span>    <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::filesystem::filesystem_error&amp; e)</div>
-<div class="line"><span class="lineno">  528</span>    {</div>
-<div class="line"><span class="lineno">  529</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Filesystem error: &quot;</span> &lt;&lt; e.what() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><span class="lineno">  530</span>    }</div>
-<div class="line"><span class="lineno">  531</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00535">535</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  536</span>{</div>
+<div class="line"><span class="lineno">  537</span>    <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  538</span>    {</div>
+<div class="line"><span class="lineno">  539</span>        <span class="keywordflow">if</span> (std::filesystem::exists(filePath))</div>
+<div class="line"><span class="lineno">  540</span>        {</div>
+<div class="line"><span class="lineno">  541</span>            std::filesystem::remove(filePath);</div>
+<div class="line"><span class="lineno">  542</span>        }</div>
+<div class="line"><span class="lineno">  543</span>    }</div>
+<div class="line"><span class="lineno">  544</span>    <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::filesystem::filesystem_error&amp; e)</div>
+<div class="line"><span class="lineno">  545</span>    {</div>
+<div class="line"><span class="lineno">  546</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Filesystem error: &quot;</span> &lt;&lt; e.what() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">  547</span>    }</div>
+<div class="line"><span class="lineno">  548</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1060,27 +1038,27 @@ Here is the caller graph for this function:</div>
 
 <p>Logging. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00374">374</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  375</span>{</div>
-<div class="line"><span class="lineno">  376</span>    std::string color;</div>
-<div class="line"><span class="lineno">  377</span>    <span class="keywordflow">switch</span> (logLevel)</div>
-<div class="line"><span class="lineno">  378</span>    {</div>
-<div class="line"><span class="lineno">  379</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../db/d61/namespacenexilis_1_1logger.html#a33a82661cf21f69c5b2aa5b1dee51615aa603905470e2a5b8c13e96b579ef0dba">logger::LogLevel::Debug</a>:</div>
-<div class="line"><span class="lineno">  380</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../db/d61/namespacenexilis_1_1logger.html#a33a82661cf21f69c5b2aa5b1dee51615a4059b0251f66a18cb56f544728796875">logger::LogLevel::Info</a>:</div>
-<div class="line"><span class="lineno">  381</span>            color = <span class="stringliteral">&quot;\033[37m&quot;</span>;</div>
-<div class="line"><span class="lineno">  382</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  383</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../db/d61/namespacenexilis_1_1logger.html#a33a82661cf21f69c5b2aa5b1dee51615a0eaadb4fcb48a0a0ed7bc9868be9fbaa">logger::LogLevel::Warning</a>:</div>
-<div class="line"><span class="lineno">  384</span>            color = <span class="stringliteral">&quot;\033[33m&quot;</span>;</div>
-<div class="line"><span class="lineno">  385</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  386</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../db/d61/namespacenexilis_1_1logger.html#a33a82661cf21f69c5b2aa5b1dee51615a902b0d55fddef6f8d651fe1035b7d4bd">logger::LogLevel::Error</a>:</div>
-<div class="line"><span class="lineno">  387</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../db/d61/namespacenexilis_1_1logger.html#a33a82661cf21f69c5b2aa5b1dee51615a278d01e5af56273bae1bb99a98b370cd">logger::LogLevel::Critical</a>:</div>
-<div class="line"><span class="lineno">  388</span>            color = <span class="stringliteral">&quot;\033[31m&quot;</span>;</div>
-<div class="line"><span class="lineno">  389</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  390</span>    }</div>
-<div class="line"><span class="lineno">  391</span>    std::stringstream ss;</div>
-<div class="line"><span class="lineno">  392</span>    ss &lt;&lt; color &lt;&lt; data &lt;&lt; <span class="stringliteral">&quot;\033[0m&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  393</span>    <span class="keywordflow">return</span> ss.str();</div>
-<div class="line"><span class="lineno">  394</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00391">391</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  392</span>{</div>
+<div class="line"><span class="lineno">  393</span>    std::string color;</div>
+<div class="line"><span class="lineno">  394</span>    <span class="keywordflow">switch</span> (logLevel)</div>
+<div class="line"><span class="lineno">  395</span>    {</div>
+<div class="line"><span class="lineno">  396</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../db/d61/namespacenexilis_1_1logger.html#a33a82661cf21f69c5b2aa5b1dee51615aa603905470e2a5b8c13e96b579ef0dba">logger::LogLevel::Debug</a>:</div>
+<div class="line"><span class="lineno">  397</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../db/d61/namespacenexilis_1_1logger.html#a33a82661cf21f69c5b2aa5b1dee51615a4059b0251f66a18cb56f544728796875">logger::LogLevel::Info</a>:</div>
+<div class="line"><span class="lineno">  398</span>            color = <span class="stringliteral">&quot;\033[37m&quot;</span>;</div>
+<div class="line"><span class="lineno">  399</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  400</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../db/d61/namespacenexilis_1_1logger.html#a33a82661cf21f69c5b2aa5b1dee51615a0eaadb4fcb48a0a0ed7bc9868be9fbaa">logger::LogLevel::Warning</a>:</div>
+<div class="line"><span class="lineno">  401</span>            color = <span class="stringliteral">&quot;\033[33m&quot;</span>;</div>
+<div class="line"><span class="lineno">  402</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  403</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../db/d61/namespacenexilis_1_1logger.html#a33a82661cf21f69c5b2aa5b1dee51615a902b0d55fddef6f8d651fe1035b7d4bd">logger::LogLevel::Error</a>:</div>
+<div class="line"><span class="lineno">  404</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../db/d61/namespacenexilis_1_1logger.html#a33a82661cf21f69c5b2aa5b1dee51615a278d01e5af56273bae1bb99a98b370cd">logger::LogLevel::Critical</a>:</div>
+<div class="line"><span class="lineno">  405</span>            color = <span class="stringliteral">&quot;\033[31m&quot;</span>;</div>
+<div class="line"><span class="lineno">  406</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  407</span>    }</div>
+<div class="line"><span class="lineno">  408</span>    std::stringstream ss;</div>
+<div class="line"><span class="lineno">  409</span>    ss &lt;&lt; color &lt;&lt; data &lt;&lt; <span class="stringliteral">&quot;\033[0m&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  410</span>    <span class="keywordflow">return</span> ss.str();</div>
+<div class="line"><span class="lineno">  411</span>}</div>
 <div class="ttc" id="anamespacenexilis_1_1logger_html_a33a82661cf21f69c5b2aa5b1dee51615a0eaadb4fcb48a0a0ed7bc9868be9fbaa"><div class="ttname"><a href="../../db/d61/namespacenexilis_1_1logger.html#a33a82661cf21f69c5b2aa5b1dee51615a0eaadb4fcb48a0a0ed7bc9868be9fbaa">nexilis::logger::LogLevel::Warning</a></div><div class="ttdeci">@ Warning</div></div>
 <div class="ttc" id="anamespacenexilis_1_1logger_html_a33a82661cf21f69c5b2aa5b1dee51615a278d01e5af56273bae1bb99a98b370cd"><div class="ttname"><a href="../../db/d61/namespacenexilis_1_1logger.html#a33a82661cf21f69c5b2aa5b1dee51615a278d01e5af56273bae1bb99a98b370cd">nexilis::logger::LogLevel::Critical</a></div><div class="ttdeci">@ Critical</div></div>
 <div class="ttc" id="anamespacenexilis_1_1logger_html_a33a82661cf21f69c5b2aa5b1dee51615a4059b0251f66a18cb56f544728796875"><div class="ttname"><a href="../../db/d61/namespacenexilis_1_1logger.html#a33a82661cf21f69c5b2aa5b1dee51615a4059b0251f66a18cb56f544728796875">nexilis::logger::LogLevel::Info</a></div><div class="ttdeci">@ Info</div></div>
@@ -1124,22 +1102,22 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00484">484</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  485</span>{</div>
-<div class="line"><span class="lineno">  486</span>    <span class="comment">// Get the current time.</span></div>
-<div class="line"><span class="lineno">  487</span>    <span class="keyword">auto</span> now = std::chrono::system_clock::now();</div>
-<div class="line"><span class="lineno">  488</span> </div>
-<div class="line"><span class="lineno">  489</span>    <span class="comment">// Convert to time_t.</span></div>
-<div class="line"><span class="lineno">  490</span>    std::time_t currentTime = std::chrono::system_clock::to_time_t(now);</div>
-<div class="line"><span class="lineno">  491</span> </div>
-<div class="line"><span class="lineno">  492</span>    <span class="comment">// Convert to local time struct.</span></div>
-<div class="line"><span class="lineno">  493</span>    std::tm* localTime = std::localtime(&amp;currentTime);</div>
-<div class="line"><span class="lineno">  494</span> </div>
-<div class="line"><span class="lineno">  495</span>    <span class="comment">// Format the time.</span></div>
-<div class="line"><span class="lineno">  496</span>    std::stringstream ss;</div>
-<div class="line"><span class="lineno">  497</span>    ss &lt;&lt; std::put_time(localTime, <span class="stringliteral">&quot;%Y-%m-%d_%H:%M:%S&quot;</span>);</div>
-<div class="line"><span class="lineno">  498</span>    <span class="keywordflow">return</span> ss.str();</div>
-<div class="line"><span class="lineno">  499</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00501">501</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  502</span>{</div>
+<div class="line"><span class="lineno">  503</span>    <span class="comment">// Get the current time.</span></div>
+<div class="line"><span class="lineno">  504</span>    <span class="keyword">auto</span> now = std::chrono::system_clock::now();</div>
+<div class="line"><span class="lineno">  505</span> </div>
+<div class="line"><span class="lineno">  506</span>    <span class="comment">// Convert to time_t.</span></div>
+<div class="line"><span class="lineno">  507</span>    std::time_t currentTime = std::chrono::system_clock::to_time_t(now);</div>
+<div class="line"><span class="lineno">  508</span> </div>
+<div class="line"><span class="lineno">  509</span>    <span class="comment">// Convert to local time struct.</span></div>
+<div class="line"><span class="lineno">  510</span>    std::tm* localTime = std::localtime(&amp;currentTime);</div>
+<div class="line"><span class="lineno">  511</span> </div>
+<div class="line"><span class="lineno">  512</span>    <span class="comment">// Format the time.</span></div>
+<div class="line"><span class="lineno">  513</span>    std::stringstream ss;</div>
+<div class="line"><span class="lineno">  514</span>    ss &lt;&lt; std::put_time(localTime, <span class="stringliteral">&quot;%Y-%m-%d_%H:%M:%S&quot;</span>);</div>
+<div class="line"><span class="lineno">  515</span>    <span class="keywordflow">return</span> ss.str();</div>
+<div class="line"><span class="lineno">  516</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1166,22 +1144,22 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00501">501</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  502</span>{</div>
-<div class="line"><span class="lineno">  503</span>    <span class="keyword">auto</span> tmp_dir = std::filesystem::temp_directory_path();</div>
-<div class="line"><span class="lineno">  504</span>    <span class="keyword">auto</span> nexilis_temp_dir = tmp_dir / <span class="stringliteral">&quot;nexilis&quot;</span>;</div>
-<div class="line"><span class="lineno">  505</span> </div>
-<div class="line"><span class="lineno">  506</span>    std::error_code ec;</div>
-<div class="line"><span class="lineno">  507</span>    std::filesystem::create_directories(nexilis_temp_dir, ec);</div>
-<div class="line"><span class="lineno">  508</span>    <span class="keywordflow">if</span> (!ec)</div>
-<div class="line"><span class="lineno">  509</span>    {</div>
-<div class="line"><span class="lineno">  510</span>        std::filesystem::permissions(nexilis_temp_dir,</div>
-<div class="line"><span class="lineno">  511</span>                                     std::filesystem::perms::owner_all,</div>
-<div class="line"><span class="lineno">  512</span>                                     std::filesystem::perm_options::replace,</div>
-<div class="line"><span class="lineno">  513</span>                                     ec);</div>
-<div class="line"><span class="lineno">  514</span>    }</div>
-<div class="line"><span class="lineno">  515</span>    <span class="keywordflow">return</span> nexilis_temp_dir;</div>
-<div class="line"><span class="lineno">  516</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00518">518</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  519</span>{</div>
+<div class="line"><span class="lineno">  520</span>    <span class="keyword">auto</span> tmp_dir = std::filesystem::temp_directory_path();</div>
+<div class="line"><span class="lineno">  521</span>    <span class="keyword">auto</span> nexilis_temp_dir = tmp_dir / <span class="stringliteral">&quot;nexilis&quot;</span>;</div>
+<div class="line"><span class="lineno">  522</span> </div>
+<div class="line"><span class="lineno">  523</span>    std::error_code ec;</div>
+<div class="line"><span class="lineno">  524</span>    std::filesystem::create_directories(nexilis_temp_dir, ec);</div>
+<div class="line"><span class="lineno">  525</span>    <span class="keywordflow">if</span> (!ec)</div>
+<div class="line"><span class="lineno">  526</span>    {</div>
+<div class="line"><span class="lineno">  527</span>        std::filesystem::permissions(nexilis_temp_dir,</div>
+<div class="line"><span class="lineno">  528</span>                                     std::filesystem::perms::owner_all,</div>
+<div class="line"><span class="lineno">  529</span>                                     std::filesystem::perm_options::replace,</div>
+<div class="line"><span class="lineno">  530</span>                                     ec);</div>
+<div class="line"><span class="lineno">  531</span>    }</div>
+<div class="line"><span class="lineno">  532</span>    <span class="keywordflow">return</span> nexilis_temp_dir;</div>
+<div class="line"><span class="lineno">  533</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1243,11 +1221,11 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00396">396</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  397</span>{</div>
-<div class="line"><span class="lineno">  398</span>    std::cout &lt;&lt; <a class="code hl_function" href="../../dd/de4/classnexilis_1_1Util.html#af66394d496d839b3f427ac17dfc009e7">getColorMessage</a>(logLevel, data);</div>
-<div class="line"><span class="lineno">  399</span>}</div>
-<div class="ttc" id="aclassnexilis_1_1Util_html_af66394d496d839b3f427ac17dfc009e7"><div class="ttname"><a href="../../dd/de4/classnexilis_1_1Util.html#af66394d496d839b3f427ac17dfc009e7">nexilis::Util::getColorMessage</a></div><div class="ttdeci">static std::string getColorMessage(logger::LogLevel logLevel, const std::string &amp;data)</div><div class="ttdoc">Logging.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d6f/util_8cc_source.html#l00374">util.cc:374</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00413">413</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  414</span>{</div>
+<div class="line"><span class="lineno">  415</span>    std::cout &lt;&lt; <a class="code hl_function" href="../../dd/de4/classnexilis_1_1Util.html#af66394d496d839b3f427ac17dfc009e7">getColorMessage</a>(logLevel, data);</div>
+<div class="line"><span class="lineno">  416</span>}</div>
+<div class="ttc" id="aclassnexilis_1_1Util_html_af66394d496d839b3f427ac17dfc009e7"><div class="ttname"><a href="../../dd/de4/classnexilis_1_1Util.html#af66394d496d839b3f427ac17dfc009e7">nexilis::Util::getColorMessage</a></div><div class="ttdeci">static std::string getColorMessage(logger::LogLevel logLevel, const std::string &amp;data)</div><div class="ttdoc">Logging.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d6f/util_8cc_source.html#l00391">util.cc:391</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1306,17 +1284,17 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Remove amount of bytes from the beginning of the vector. </p><dl class="section return"><dt>Returns</dt><dd>The updated vector. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00362">362</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  363</span>{</div>
-<div class="line"><span class="lineno">  364</span>    <span class="comment">// Return empty vector if the original vector has less elements than we want to remove.</span></div>
-<div class="line"><span class="lineno">  365</span>    <span class="keywordflow">if</span> (original.size() &lt; amount)</div>
-<div class="line"><span class="lineno">  366</span>    {</div>
-<div class="line"><span class="lineno">  367</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Cannot remove more bytes than existing command has.&quot;</span>;</div>
-<div class="line"><span class="lineno">  368</span>        <span class="keywordflow">return</span> {};</div>
-<div class="line"><span class="lineno">  369</span>    }</div>
-<div class="line"><span class="lineno">  370</span> </div>
-<div class="line"><span class="lineno">  371</span>    <span class="keywordflow">return</span> <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a>(original.begin() + amount, original.end());</div>
-<div class="line"><span class="lineno">  372</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00379">379</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  380</span>{</div>
+<div class="line"><span class="lineno">  381</span>    <span class="comment">// Return empty vector if the original vector has less elements than we want to remove.</span></div>
+<div class="line"><span class="lineno">  382</span>    <span class="keywordflow">if</span> (original.size() &lt; amount)</div>
+<div class="line"><span class="lineno">  383</span>    {</div>
+<div class="line"><span class="lineno">  384</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Cannot remove more bytes than existing command has.&quot;</span>;</div>
+<div class="line"><span class="lineno">  385</span>        <span class="keywordflow">return</span> {};</div>
+<div class="line"><span class="lineno">  386</span>    }</div>
+<div class="line"><span class="lineno">  387</span> </div>
+<div class="line"><span class="lineno">  388</span>    <span class="keywordflow">return</span> <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a>(original.begin() + amount, original.end());</div>
+<div class="line"><span class="lineno">  389</span>}</div>
 <div class="ttc" id="anamespacenexilis_html_a279ce2b95cb6cfebfb8a884fcf615072"><div class="ttname"><a href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nexilis::nx_data</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; nx_data</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dd2/nx__data_8hh_source.html#l00026">nx_data.hh:26</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1324,7 +1302,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="../../dd/de4/classnexilis_1_1Util_a37837fd204fbf43eaacd572d621da92e_icgraph.png" border="0" usemap="#add/de4/classnexilis_1_1Util_a37837fd204fbf43eaacd572d621da92e_icgraph" alt=""/></div>
 <map name="add/de4/classnexilis_1_1Util_a37837fd204fbf43eaacd572d621da92e_icgraph" id="add/de4/classnexilis_1_1Util_a37837fd204fbf43eaacd572d621da92e_icgraph">
 <area shape="rect" title=" " alt="" coords="764,932,969,972"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a36f27b2491becaf040095c3cb5ec4067" title=" " alt="" coords="243,932,432,972"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a205831cf4657d0a80391beba1cfd953d" title=" " alt="" coords="243,932,432,972"/>
 <area shape="poly" title=" " alt="" coords="863,919,858,737,850,611,838,475,819,341,793,219,777,166,759,121,738,85,714,58,685,36,656,21,627,11,598,8,569,11,540,20,511,36,482,58,458,86,437,124,418,171,402,227,377,354,360,493,349,633,344,761,341,932,336,932,338,760,344,633,354,493,372,353,397,225,413,170,432,122,453,83,478,54,508,32,538,16,568,6,598,3,628,6,658,16,688,32,718,54,742,82,763,119,782,165,799,218,825,340,843,474,856,610,863,737,868,919"/>
 <area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#af3e224168bd0155316f390244bcfe54e" title=" " alt="" coords="483,68,713,108"/>
 <area shape="poly" title=" " alt="" coords="861,919,851,752,826,512,807,389,782,277,751,184,733,149,714,122,700,111,704,107,718,119,738,146,756,182,787,275,812,388,831,512,856,752,867,919"/>
@@ -1384,7 +1362,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="867,986,856,1153,831,1393,812,1516,787,1629,756,1722,738,1758,718,1786,697,1802,694,1798,714,1782,733,1756,751,1720,782,1628,807,1515,826,1392,851,1153,861,986"/>
 <area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a1fd0add1c5afaa69f27d4af1de5b4315" title=" " alt="" coords="495,1860,701,1900"/>
 <area shape="poly" title=" " alt="" coords="867,986,859,1165,849,1289,835,1424,816,1557,791,1680,759,1781,739,1820,718,1850,703,1863,700,1858,714,1847,735,1817,754,1779,786,1678,811,1556,830,1423,844,1289,853,1164,862,986"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#adb7341228f4137e0656f514180b5a45a" title=" " alt="" coords="5,900,195,940"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a523ea35f6efde10413e9718e50a96e70" title=" " alt="" coords="5,900,195,940"/>
 <area shape="poly" title=" " alt="" coords="229,940,194,936,195,930,230,935"/>
 <area shape="rect" href="../../d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="15,964,185,1004"/>
 <area shape="poly" title=" " alt="" coords="230,970,186,975,185,970,229,964"/>
@@ -1446,14 +1424,14 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00310">310</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  311</span>{</div>
-<div class="line"><span class="lineno">  312</span>    <span class="keywordflow">if</span> (val.is_uint64())</div>
-<div class="line"><span class="lineno">  313</span>        <span class="keywordflow">return</span> val.as_uint64();</div>
-<div class="line"><span class="lineno">  314</span>    <span class="keywordflow">if</span> (val.is_int64())</div>
-<div class="line"><span class="lineno">  315</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(val.as_int64());</div>
-<div class="line"><span class="lineno">  316</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  317</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00337">337</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  338</span>{</div>
+<div class="line"><span class="lineno">  339</span>    <span class="keywordflow">if</span> (val.is_uint64())</div>
+<div class="line"><span class="lineno">  340</span>        <span class="keywordflow">return</span> val.as_uint64();</div>
+<div class="line"><span class="lineno">  341</span>    <span class="keywordflow">if</span> (val.is_int64())</div>
+<div class="line"><span class="lineno">  342</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(val.as_int64());</div>
+<div class="line"><span class="lineno">  343</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  344</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1519,11 +1497,11 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00168">168</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  169</span>{</div>
-<div class="line"><span class="lineno">  170</span>    lowByte = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(value &amp; 0xFF);</div>
-<div class="line"><span class="lineno">  171</span>    highByte = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>((value &gt;&gt; 8) &amp; 0xFF);</div>
-<div class="line"><span class="lineno">  172</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00195">195</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  196</span>{</div>
+<div class="line"><span class="lineno">  197</span>    lowByte = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(value &amp; 0xFF);</div>
+<div class="line"><span class="lineno">  198</span>    highByte = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>((value &gt;&gt; 8) &amp; 0xFF);</div>
+<div class="line"><span class="lineno">  199</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1563,10 +1541,10 @@ Here is the caller graph for this function:</div>
 
 <p>Return uint16_t from two bytes. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00163">163</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  164</span>{</div>
-<div class="line"><span class="lineno">  165</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint16_t<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span>uint16_t<span class="keyword">&gt;</span>(lowByte) | (<span class="keyword">static_cast&lt;</span>uint16_t<span class="keyword">&gt;</span>(highByte) &lt;&lt; 8));</div>
-<div class="line"><span class="lineno">  166</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00190">190</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  191</span>{</div>
+<div class="line"><span class="lineno">  192</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint16_t<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span>uint16_t<span class="keyword">&gt;</span>(lowByte) | (<span class="keyword">static_cast&lt;</span>uint16_t<span class="keyword">&gt;</span>(highByte) &lt;&lt; 8));</div>
+<div class="line"><span class="lineno">  193</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

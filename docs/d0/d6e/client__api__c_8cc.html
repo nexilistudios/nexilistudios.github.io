@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.8-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.9-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -82,6 +82,7 @@ $(function() {
 <div class="textblock"><code>#include &lt;boost/json.hpp&gt;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;nexilisc/client/client_api_c.h&gt;</code><br />
 <code>#include &lt;nexilisc/client/client_session_c.h&gt;</code><br />
 <code>#include &lt;nexilisc/room_data_c.h&gt;</code><br />
@@ -90,19 +91,21 @@ Include dependency graph for client_api_c.cc:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d6/d8c/client__api__c_8cc__incl.png" border="0" usemap="#asrc_2nexilisc_2client_2client__api__c_8cc" alt=""/></div>
 <map name="asrc_2nexilisc_2client_2client__api__c_8cc" id="asrc_2nexilisc_2client_2client__api__c_8cc">
-<area shape="rect" title=" " alt="" coords="269,5,403,45"/>
+<area shape="rect" title=" " alt="" coords="298,5,433,45"/>
 <area shape="rect" title=" " alt="" coords="5,101,123,126"/>
-<area shape="poly" title=" " alt="" coords="277,48,114,99,112,94,276,43"/>
+<area shape="poly" title=" " alt="" coords="300,48,118,100,116,94,298,43"/>
 <area shape="rect" title=" " alt="" coords="146,101,211,126"/>
-<area shape="poly" title=" " alt="" coords="303,48,213,96,210,92,300,43"/>
+<area shape="poly" title=" " alt="" coords="325,48,217,97,215,92,323,43"/>
 <area shape="rect" title=" " alt="" coords="236,101,303,126"/>
-<area shape="poly" title=" " alt="" coords="323,47,289,91,285,88,319,44"/>
-<area shape="rect" title=" " alt="" coords="327,93,479,133"/>
-<area shape="poly" title=" " alt="" coords="353,44,382,81,377,84,349,47"/>
-<area shape="rect" title=" " alt="" coords="503,93,655,133"/>
-<area shape="poly" title=" " alt="" coords="390,43,514,86,512,91,388,48"/>
-<area shape="rect" title=" " alt="" coords="679,101,851,126"/>
-<area shape="poly" title=" " alt="" coords="404,37,695,95,694,101,403,43"/>
+<area shape="poly" title=" " alt="" coords="346,48,295,93,291,89,342,44"/>
+<area shape="rect" title=" " alt="" coords="327,101,404,126"/>
+<area shape="poly" title=" " alt="" coords="368,46,368,87,363,87,363,46"/>
+<area shape="rect" title=" " alt="" coords="428,93,580,133"/>
+<area shape="poly" title=" " alt="" coords="397,43,464,84,461,89,394,48"/>
+<area shape="rect" title=" " alt="" coords="604,93,756,133"/>
+<area shape="poly" title=" " alt="" coords="434,42,598,87,597,92,432,48"/>
+<area shape="rect" title=" " alt="" coords="781,101,953,126"/>
+<area shape="poly" title=" " alt="" coords="433,35,768,91,795,95,794,101,768,96,432,40"/>
 </map>
 </div>
 </div>
@@ -168,7 +171,7 @@ Functions</h2></td></tr>
 <tr class="separator:abc9c5c3faf27d5abfa42163c312baf90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3945fc4737387c3dfbbcbb4441cc5f2" id="r_ab3945fc4737387c3dfbbcbb4441cc5f2"><td class="memItemLeft" align="right" valign="top">nexilis_Room *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6e/client__api__c_8cc.html#ab3945fc4737387c3dfbbcbb4441cc5f2">nexilis_client_api_get_room</a> (const nexilis_ClientAPI *client_api, uint64_t room_id)</td></tr>
 <tr class="separator:ab3945fc4737387c3dfbbcbb4441cc5f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa4f460644c20a793699734a2e7bda9c" id="r_aaa4f460644c20a793699734a2e7bda9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d91/structnexilis__ClientSession.html">nexilis_ClientSession</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6e/client__api__c_8cc.html#aaa4f460644c20a793699734a2e7bda9c">nexilis_client_api_get_client_from_room</a> (const nexilis_ClientAPI *client_api, uint64_t client_id)</td></tr>
+<tr class="memitem:aaa4f460644c20a793699734a2e7bda9c" id="r_aaa4f460644c20a793699734a2e7bda9c"><td class="memItemLeft" align="right" valign="top">nexilis_ClientSession *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6e/client__api__c_8cc.html#aaa4f460644c20a793699734a2e7bda9c">nexilis_client_api_get_client_from_room</a> (const nexilis_ClientAPI *client_api, uint64_t client_id)</td></tr>
 <tr class="separator:aaa4f460644c20a793699734a2e7bda9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2ccd35cae81f327a68a67803d6c2cba" id="r_aa2ccd35cae81f327a68a67803d6c2cba"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6e/client__api__c_8cc.html#aa2ccd35cae81f327a68a67803d6c2cba">nexilis_client_api_drain_game_events</a> (nexilis_ClientAPI *client_api, size_t chat_since)</td></tr>
 <tr class="separator:aa2ccd35cae81f327a68a67803d6c2cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -271,18 +274,24 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d6e/client__api__c_8cc_source.html#l00024">24</a> of file <a class="el" href="../../d0/d6e/client__api__c_8cc_source.html">client_api_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   25</span>{</div>
-<div class="line"><span class="lineno">   26</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
-<div class="line"><span class="lineno">   27</span>    {</div>
-<div class="line"><span class="lineno">   28</span>        <span class="keyword">auto</span> client_api = <span class="keyword">new</span> nexilis_ClientAPI();</div>
-<div class="line"><span class="lineno">   29</span>        <span class="keyword">auto</span> cpp_client_api = <span class="keyword">new</span> <a class="code hl_class" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html">nexilis::client::ClientAPI</a>(*config-&gt;data);</div>
-<div class="line"><span class="lineno">   30</span>        client_api-&gt;api = cpp_client_api;</div>
-<div class="line"><span class="lineno">   31</span>        <span class="keywordflow">return</span> client_api;</div>
-<div class="line"><span class="lineno">   32</span>    }</div>
-<div class="line"><span class="lineno">   33</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   34</span>}</div>
-<div class="ttc" id="aclassnexilis_1_1client_1_1ClientAPI_html"><div class="ttname"><a href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html">nexilis::client::ClientAPI</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d13/client__api_8hh_source.html#l00049">client_api.hh:50</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d6e/client__api__c_8cc_source.html#l00025">25</a> of file <a class="el" href="../../d0/d6e/client__api__c_8cc_source.html">client_api_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   26</span>{</div>
+<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
+<div class="line"><span class="lineno">   28</span>    {</div>
+<div class="line"><span class="lineno">   29</span>        <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">   30</span>        {</div>
+<div class="line"><span class="lineno">   31</span>            <span class="keyword">auto</span> client_api = std::make_unique&lt;nexilis_ClientAPI&gt;();</div>
+<div class="line"><span class="lineno">   32</span>            client_api-&gt;owner = std::make_shared&lt;nexilis::client::ClientAPI&gt;(*config-&gt;data);</div>
+<div class="line"><span class="lineno">   33</span>            client_api-&gt;api = client_api-&gt;owner.get();</div>
+<div class="line"><span class="lineno">   34</span>            <span class="keywordflow">return</span> client_api.release();</div>
+<div class="line"><span class="lineno">   35</span>        }</div>
+<div class="line"><span class="lineno">   36</span>        <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><span class="lineno">   37</span>        {</div>
+<div class="line"><span class="lineno">   38</span>            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   39</span>        }</div>
+<div class="line"><span class="lineno">   40</span>    }</div>
+<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   42</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -302,17 +311,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d6e/client__api__c_8cc_source.html#l00036">36</a> of file <a class="el" href="../../d0/d6e/client__api__c_8cc_source.html">client_api_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   37</span>{</div>
-<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">if</span> (client_api)</div>
-<div class="line"><span class="lineno">   39</span>    {</div>
-<div class="line"><span class="lineno">   40</span>        <span class="keywordflow">if</span> (client_api-&gt;api)</div>
-<div class="line"><span class="lineno">   41</span>        {</div>
-<div class="line"><span class="lineno">   42</span>            <span class="keyword">delete</span> client_api-&gt;api;</div>
-<div class="line"><span class="lineno">   43</span>            client_api-&gt;api = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   44</span>        }</div>
-<div class="line"><span class="lineno">   45</span>        <span class="keyword">delete</span> client_api;</div>
-<div class="line"><span class="lineno">   46</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d6e/client__api__c_8cc_source.html#l00044">44</a> of file <a class="el" href="../../d0/d6e/client__api__c_8cc_source.html">client_api_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>{</div>
+<div class="line"><span class="lineno">   46</span>    <span class="keyword">delete</span> client_api;</div>
 <div class="line"><span class="lineno">   47</span>}</div>
 </div><!-- fragment -->
 </div>
@@ -343,48 +344,48 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d6e/client__api__c_8cc_source.html#l00338">338</a> of file <a class="el" href="../../d0/d6e/client__api__c_8cc_source.html">client_api_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  339</span>{</div>
-<div class="line"><span class="lineno">  340</span>    <span class="keywordflow">if</span> (!client_api || !client_api-&gt;api)</div>
-<div class="line"><span class="lineno">  341</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  342</span>    boost::json::object root;</div>
-<div class="line"><span class="lineno">  343</span>    boost::json::array damage, respawns, leaderboard, chat, audio;</div>
-<div class="line"><span class="lineno">  344</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; event : client_api-&gt;api-&gt;consumeDamageEvents())</div>
-<div class="line"><span class="lineno">  345</span>        damage.emplace_back(boost::json::object{{<span class="stringliteral">&quot;shooter&quot;</span>, std::to_string(event.shooter_id)},</div>
-<div class="line"><span class="lineno">  346</span>                                                {<span class="stringliteral">&quot;target&quot;</span>, std::to_string(event.target_id)},</div>
-<div class="line"><span class="lineno">  347</span>                                                {<span class="stringliteral">&quot;health&quot;</span>, <span class="keyword">event</span>.new_health}});</div>
-<div class="line"><span class="lineno">  348</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; event : client_api-&gt;api-&gt;consumeAudioEvents())</div>
-<div class="line"><span class="lineno">  349</span>        audio.emplace_back(boost::json::object{{<span class="stringliteral">&quot;sender&quot;</span>, std::to_string(event.client_id)},</div>
-<div class="line"><span class="lineno">  350</span>                                               {<span class="stringliteral">&quot;sound&quot;</span>, <span class="keyword">event</span>.sound},</div>
-<div class="line"><span class="lineno">  351</span>                                               {<span class="stringliteral">&quot;x&quot;</span>, <span class="keyword">event</span>.x},</div>
-<div class="line"><span class="lineno">  352</span>                                               {<span class="stringliteral">&quot;y&quot;</span>, <span class="keyword">event</span>.y},</div>
-<div class="line"><span class="lineno">  353</span>                                               {<span class="stringliteral">&quot;z&quot;</span>, <span class="keyword">event</span>.z}});</div>
-<div class="line"><span class="lineno">  354</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; event : client_api-&gt;api-&gt;consumeRespawnEvents())</div>
-<div class="line"><span class="lineno">  355</span>        respawns.emplace_back(boost::json::object{{<span class="stringliteral">&quot;target&quot;</span>, std::to_string(event.target_id)}});</div>
-<div class="line"><span class="lineno">  356</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; event : client_api-&gt;api-&gt;consumeLeaderboardEvents())</div>
-<div class="line"><span class="lineno">  357</span>        for (const auto&amp; entry : event.entries)</div>
-<div class="line"><span class="lineno">  358</span>            leaderboard.emplace_back(boost::json::object{{<span class="stringliteral">&quot;id&quot;</span>, std::to_string(entry.id)},</div>
-<div class="line"><span class="lineno">  359</span>                                                         {<span class="stringliteral">&quot;name&quot;</span>, entry.username},</div>
-<div class="line"><span class="lineno">  360</span>                                                         {<span class="stringliteral">&quot;team&quot;</span>, entry.team},</div>
-<div class="line"><span class="lineno">  361</span>                                                         {<span class="stringliteral">&quot;kills&quot;</span>, entry.kills},</div>
-<div class="line"><span class="lineno">  362</span>                                                         {<span class="stringliteral">&quot;deaths&quot;</span>, entry.deaths}});</div>
-<div class="line"><span class="lineno">  363</span>    root[<span class="stringliteral">&quot;damage&quot;</span>] = std::move(damage);</div>
-<div class="line"><span class="lineno">  364</span>    root[<span class="stringliteral">&quot;audio&quot;</span>] = std::move(audio);</div>
-<div class="line"><span class="lineno">  365</span>    root[<span class="stringliteral">&quot;respawns&quot;</span>] = std::move(respawns);</div>
-<div class="line"><span class="lineno">  366</span>    root[<span class="stringliteral">&quot;leaderboard&quot;</span>] = std::move(leaderboard);</div>
-<div class="line"><span class="lineno">  367</span>    <span class="keyword">auto</span> messages = client_api-&gt;api-&gt;getChatSnapshot(client_api-&gt;api-&gt;clientRoomId());</div>
-<div class="line"><span class="lineno">  368</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = chat_since; i &lt; messages.size(); ++i)</div>
-<div class="line"><span class="lineno">  369</span>        chat.emplace_back(boost::json::object{{<span class="stringliteral">&quot;sender&quot;</span>, std::to_string(messages[i].sender_id)},</div>
-<div class="line"><span class="lineno">  370</span>                                              {<span class="stringliteral">&quot;message&quot;</span>, messages[i].message}});</div>
-<div class="line"><span class="lineno">  371</span>    root[<span class="stringliteral">&quot;chat&quot;</span>] = std::move(chat);</div>
-<div class="line"><span class="lineno">  372</span>    root[<span class="stringliteral">&quot;chatTotal&quot;</span>] = messages.size();</div>
-<div class="line"><span class="lineno">  373</span>    <span class="keyword">auto</span> serialized = boost::json::serialize(root);</div>
-<div class="line"><span class="lineno">  374</span>    <span class="keywordtype">char</span>* result = <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(std::malloc(serialized.size() + 1));</div>
-<div class="line"><span class="lineno">  375</span>    <span class="keywordflow">if</span> (!result)</div>
-<div class="line"><span class="lineno">  376</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  377</span>    std::memcpy(result, serialized.c_str(), serialized.size() + 1);</div>
-<div class="line"><span class="lineno">  378</span>    <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno">  379</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d6e/client__api__c_8cc_source.html#l00352">352</a> of file <a class="el" href="../../d0/d6e/client__api__c_8cc_source.html">client_api_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  353</span>{</div>
+<div class="line"><span class="lineno">  354</span>    <span class="keywordflow">if</span> (!client_api || !client_api-&gt;api)</div>
+<div class="line"><span class="lineno">  355</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  356</span>    boost::json::object root;</div>
+<div class="line"><span class="lineno">  357</span>    boost::json::array damage, respawns, leaderboard, chat, audio;</div>
+<div class="line"><span class="lineno">  358</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; event : client_api-&gt;api-&gt;consumeDamageEvents())</div>
+<div class="line"><span class="lineno">  359</span>        damage.emplace_back(boost::json::object{{<span class="stringliteral">&quot;shooter&quot;</span>, std::to_string(event.shooter_id)},</div>
+<div class="line"><span class="lineno">  360</span>                                                {<span class="stringliteral">&quot;target&quot;</span>, std::to_string(event.target_id)},</div>
+<div class="line"><span class="lineno">  361</span>                                                {<span class="stringliteral">&quot;health&quot;</span>, <span class="keyword">event</span>.new_health}});</div>
+<div class="line"><span class="lineno">  362</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; event : client_api-&gt;api-&gt;consumeAudioEvents())</div>
+<div class="line"><span class="lineno">  363</span>        audio.emplace_back(boost::json::object{{<span class="stringliteral">&quot;sender&quot;</span>, std::to_string(event.client_id)},</div>
+<div class="line"><span class="lineno">  364</span>                                               {<span class="stringliteral">&quot;sound&quot;</span>, <span class="keyword">event</span>.sound},</div>
+<div class="line"><span class="lineno">  365</span>                                               {<span class="stringliteral">&quot;x&quot;</span>, <span class="keyword">event</span>.x},</div>
+<div class="line"><span class="lineno">  366</span>                                               {<span class="stringliteral">&quot;y&quot;</span>, <span class="keyword">event</span>.y},</div>
+<div class="line"><span class="lineno">  367</span>                                               {<span class="stringliteral">&quot;z&quot;</span>, <span class="keyword">event</span>.z}});</div>
+<div class="line"><span class="lineno">  368</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; event : client_api-&gt;api-&gt;consumeRespawnEvents())</div>
+<div class="line"><span class="lineno">  369</span>        respawns.emplace_back(boost::json::object{{<span class="stringliteral">&quot;target&quot;</span>, std::to_string(event.target_id)}});</div>
+<div class="line"><span class="lineno">  370</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; event : client_api-&gt;api-&gt;consumeLeaderboardEvents())</div>
+<div class="line"><span class="lineno">  371</span>        for (const auto&amp; entry : event.entries)</div>
+<div class="line"><span class="lineno">  372</span>            leaderboard.emplace_back(boost::json::object{{<span class="stringliteral">&quot;id&quot;</span>, std::to_string(entry.id)},</div>
+<div class="line"><span class="lineno">  373</span>                                                         {<span class="stringliteral">&quot;name&quot;</span>, entry.username},</div>
+<div class="line"><span class="lineno">  374</span>                                                         {<span class="stringliteral">&quot;team&quot;</span>, entry.team},</div>
+<div class="line"><span class="lineno">  375</span>                                                         {<span class="stringliteral">&quot;kills&quot;</span>, entry.kills},</div>
+<div class="line"><span class="lineno">  376</span>                                                         {<span class="stringliteral">&quot;deaths&quot;</span>, entry.deaths}});</div>
+<div class="line"><span class="lineno">  377</span>    root[<span class="stringliteral">&quot;damage&quot;</span>] = std::move(damage);</div>
+<div class="line"><span class="lineno">  378</span>    root[<span class="stringliteral">&quot;audio&quot;</span>] = std::move(audio);</div>
+<div class="line"><span class="lineno">  379</span>    root[<span class="stringliteral">&quot;respawns&quot;</span>] = std::move(respawns);</div>
+<div class="line"><span class="lineno">  380</span>    root[<span class="stringliteral">&quot;leaderboard&quot;</span>] = std::move(leaderboard);</div>
+<div class="line"><span class="lineno">  381</span>    <span class="keyword">auto</span> messages = client_api-&gt;api-&gt;getChatSnapshot(client_api-&gt;api-&gt;clientRoomId());</div>
+<div class="line"><span class="lineno">  382</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = chat_since; i &lt; messages.size(); ++i)</div>
+<div class="line"><span class="lineno">  383</span>        chat.emplace_back(boost::json::object{{<span class="stringliteral">&quot;sender&quot;</span>, std::to_string(messages[i].sender_id)},</div>
+<div class="line"><span class="lineno">  384</span>                                              {<span class="stringliteral">&quot;message&quot;</span>, messages[i].message}});</div>
+<div class="line"><span class="lineno">  385</span>    root[<span class="stringliteral">&quot;chat&quot;</span>] = std::move(chat);</div>
+<div class="line"><span class="lineno">  386</span>    root[<span class="stringliteral">&quot;chatTotal&quot;</span>] = messages.size();</div>
+<div class="line"><span class="lineno">  387</span>    <span class="keyword">auto</span> serialized = boost::json::serialize(root);</div>
+<div class="line"><span class="lineno">  388</span>    <span class="keywordtype">char</span>* result = <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(std::malloc(serialized.size() + 1));</div>
+<div class="line"><span class="lineno">  389</span>    <span class="keywordflow">if</span> (!result)</div>
+<div class="line"><span class="lineno">  390</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  391</span>    std::memcpy(result, serialized.c_str(), serialized.size() + 1);</div>
+<div class="line"><span class="lineno">  392</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  393</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -404,10 +405,10 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d6e/client__api__c_8cc_source.html#l00381">381</a> of file <a class="el" href="../../d0/d6e/client__api__c_8cc_source.html">client_api_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  382</span>{</div>
-<div class="line"><span class="lineno">  383</span>    std::free(events);</div>
-<div class="line"><span class="lineno">  384</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d6e/client__api__c_8cc_source.html#l00395">395</a> of file <a class="el" href="../../d0/d6e/client__api__c_8cc_source.html">client_api_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  396</span>{</div>
+<div class="line"><span class="lineno">  397</span>    std::free(events);</div>
+<div class="line"><span class="lineno">  398</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -522,7 +523,7 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d6/d91/structnexilis__ClientSession.html">nexilis_ClientSession</a> * nexilis_client_api_get_client_from_room </td>
+          <td class="memname">nexilis_ClientSession * nexilis_client_api_get_client_from_room </td>
           <td>(</td>
           <td class="paramtype">const nexilis_ClientAPI *&#160;</td>
           <td class="paramname"><em>client_api</em>, </td>
@@ -541,25 +542,31 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d6e/client__api__c_8cc_source.html#l00319">319</a> of file <a class="el" href="../../d0/d6e/client__api__c_8cc_source.html">client_api_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  320</span>{</div>
-<div class="line"><span class="lineno">  321</span>    <span class="keywordflow">if</span> (!client_api || !client_api-&gt;api)</div>
-<div class="line"><span class="lineno">  322</span>    {</div>
-<div class="line"><span class="lineno">  323</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  324</span>    }</div>
-<div class="line"><span class="lineno">  325</span> </div>
-<div class="line"><span class="lineno">  326</span>    <span class="keyword">auto</span> client = client_api-&gt;api-&gt;getClientFromRoom(client_id);</div>
-<div class="line"><span class="lineno">  327</span>    <span class="keywordflow">if</span> (!client)</div>
-<div class="line"><span class="lineno">  328</span>    {</div>
-<div class="line"><span class="lineno">  329</span>        <span class="comment">// The client is not in any of the rooms the client knows about.</span></div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d6e/client__api__c_8cc_source.html#l00326">326</a> of file <a class="el" href="../../d0/d6e/client__api__c_8cc_source.html">client_api_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  327</span>{</div>
+<div class="line"><span class="lineno">  328</span>    <span class="keywordflow">if</span> (!client_api || !client_api-&gt;api)</div>
+<div class="line"><span class="lineno">  329</span>    {</div>
 <div class="line"><span class="lineno">  330</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  331</span>    }</div>
 <div class="line"><span class="lineno">  332</span> </div>
-<div class="line"><span class="lineno">  333</span>    <span class="keyword">auto</span> client_session = <span class="keyword">new</span> <a class="code hl_struct" href="../../d6/d91/structnexilis__ClientSession.html">nexilis_ClientSession</a>;</div>
-<div class="line"><span class="lineno">  334</span>    client_session-&gt;client = client;</div>
-<div class="line"><span class="lineno">  335</span>    <span class="keywordflow">return</span> client_session;</div>
-<div class="line"><span class="lineno">  336</span>}</div>
-<div class="ttc" id="astructnexilis__ClientSession_html"><div class="ttname"><a href="../../d6/d91/structnexilis__ClientSession.html">nexilis_ClientSession</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d09/room__c_8cc_source.html#l00024">room_c.cc:25</a></div></div>
+<div class="line"><span class="lineno">  333</span>    <span class="keyword">auto</span> client = client_api-&gt;api-&gt;getClientFromRoom(client_id);</div>
+<div class="line"><span class="lineno">  334</span>    <span class="keywordflow">if</span> (!client)</div>
+<div class="line"><span class="lineno">  335</span>    {</div>
+<div class="line"><span class="lineno">  336</span>        <span class="comment">// The client is not in any of the rooms the client knows about.</span></div>
+<div class="line"><span class="lineno">  337</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  338</span>    }</div>
+<div class="line"><span class="lineno">  339</span> </div>
+<div class="line"><span class="lineno">  340</span>    <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  341</span>    {</div>
+<div class="line"><span class="lineno">  342</span>        <span class="keyword">auto</span> wrapper = std::make_unique&lt;nexilis_ClientSession&gt;();</div>
+<div class="line"><span class="lineno">  343</span>        wrapper-&gt;client = client.release();</div>
+<div class="line"><span class="lineno">  344</span>        <span class="keywordflow">return</span> wrapper.release();</div>
+<div class="line"><span class="lineno">  345</span>    }</div>
+<div class="line"><span class="lineno">  346</span>    <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><span class="lineno">  347</span>    {</div>
+<div class="line"><span class="lineno">  348</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  349</span>    }</div>
+<div class="line"><span class="lineno">  350</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -788,11 +795,18 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  310</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  311</span>    }</div>
 <div class="line"><span class="lineno">  312</span> </div>
-<div class="line"><span class="lineno">  313</span>    <span class="keyword">auto</span> const_room = <span class="keyword">new</span> nexilis_Room;</div>
-<div class="line"><span class="lineno">  314</span>    const_room-&gt;room = <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>;</div>
-<div class="line"><span class="lineno">  315</span>    const_room-&gt;owned = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  316</span>    <span class="keywordflow">return</span> const_room;</div>
-<div class="line"><span class="lineno">  317</span>}</div>
+<div class="line"><span class="lineno">  313</span>    <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  314</span>    {</div>
+<div class="line"><span class="lineno">  315</span>        <span class="keyword">auto</span> wrapper = std::make_unique&lt;nexilis_Room&gt;();</div>
+<div class="line"><span class="lineno">  316</span>        wrapper-&gt;room = <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>.release();</div>
+<div class="line"><span class="lineno">  317</span>        wrapper-&gt;owned = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  318</span>        <span class="keywordflow">return</span> wrapper.release();</div>
+<div class="line"><span class="lineno">  319</span>    }</div>
+<div class="line"><span class="lineno">  320</span>    <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><span class="lineno">  321</span>    {</div>
+<div class="line"><span class="lineno">  322</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  323</span>    }</div>
+<div class="line"><span class="lineno">  324</span>}</div>
 <div class="ttc" id="anamespacenexilis_html_a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d"><div class="ttname"><a href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">nexilis::CommandType::room</a></div><div class="ttdeci">@ room</div></div>
 </div><!-- fragment -->
 </div>

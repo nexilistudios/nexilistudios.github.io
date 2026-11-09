@@ -14,7 +14,7 @@ var searchData=
   ['log_2ehh_11',['log.hh',['../d3/de3/log_8hh.html',1,'']]],
   ['log_5fc_2ecc_12',['log_c.cc',['../dc/dee/log__c_8cc.html',1,'']]],
   ['log_5flevel_2ehh_13',['log_level.hh',['../dd/dbd/log__level_8hh.html',1,'']]],
-  ['logger_14',['logger',['../d5/da8/structnexilis__logger__LoggerC.html#ad97f9cdf90dc22aee9631e786a97c1aa',1,'nexilis_logger_LoggerC::logger'],['../db/d91/classnexilis_1_1logger_1_1Logger.html#aff2b20eeee77749cfc9b539222254a77',1,'nexilis::logger::Logger::Logger()'],['../db/d91/classnexilis_1_1logger_1_1Logger.html#a5aeef5017a6a6d4e04f701fd2187e3f4',1,'nexilis::logger::Logger::Logger(Logger &amp;&amp;other)=delete'],['../db/d91/classnexilis_1_1logger_1_1Logger.html#a6e6108899d7a84df78f94c70e09bc716',1,'nexilis::logger::Logger::Logger(const Logger &amp;)=delete'],['../db/d91/classnexilis_1_1logger_1_1Logger.html',1,'nexilis::logger::Logger']]],
+  ['logger_14',['logger',['../db/d91/classnexilis_1_1logger_1_1Logger.html#aff2b20eeee77749cfc9b539222254a77',1,'nexilis::logger::Logger::Logger()'],['../db/d91/classnexilis_1_1logger_1_1Logger.html#a5aeef5017a6a6d4e04f701fd2187e3f4',1,'nexilis::logger::Logger::Logger(Logger &amp;&amp;other)=delete'],['../db/d91/classnexilis_1_1logger_1_1Logger.html#a6e6108899d7a84df78f94c70e09bc716',1,'nexilis::logger::Logger::Logger(const Logger &amp;)=delete'],['../d5/da8/structnexilis__logger__LoggerC.html#ad97f9cdf90dc22aee9631e786a97c1aa',1,'nexilis_logger_LoggerC::logger'],['../db/d91/classnexilis_1_1logger_1_1Logger.html',1,'nexilis::logger::Logger']]],
   ['logger_2ecc_15',['logger.cc',['../d5/d6e/logger_8cc.html',1,'']]],
   ['logger_2ehh_16',['logger.hh',['../d5/dc3/logger_8hh.html',1,'']]],
   ['logger_5fc_2ecc_17',['logger_c.cc',['../d0/d63/logger__c_8cc.html',1,'']]],

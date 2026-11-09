@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.8-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.9-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -157,25 +157,22 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/dd0/nexilis__waiter_8cc_source.html#l00065">65</a> of file <a class="el" href="../../d3/dd0/nexilis__waiter_8cc_source.html">nexilis_waiter.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   66</span>{</div>
-<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">if</span> (!client_api || !promise)</div>
-<div class="line"><span class="lineno">   68</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   69</span> </div>
-<div class="line"><span class="lineno">   70</span>    <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">   71</span>    {</div>
-<div class="line"><span class="lineno">   72</span>        <span class="keyword">auto</span> waiter = <span class="keyword">new</span> <a class="code hl_struct" href="../../d9/d48/structnexilis__WaiterHandle.html">nexilis_WaiterHandle</a>();</div>
-<div class="line"><span class="lineno">   73</span>        waiter-&gt;client_api = client_api;</div>
-<div class="line"><span class="lineno">   74</span>        waiter-&gt;wait_type = wait_type;</div>
-<div class="line"><span class="lineno">   75</span>        waiter-&gt;callback = create_wait_callback(client_api, promise-&gt;promise, wait_type);</div>
-<div class="line"><span class="lineno">   76</span>        <span class="keywordflow">return</span> waiter;</div>
-<div class="line"><span class="lineno">   77</span>    }</div>
-<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">catch</span> (...)</div>
-<div class="line"><span class="lineno">   79</span>    {</div>
-<div class="line"><span class="lineno">   80</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   81</span>    }</div>
-<div class="line"><span class="lineno">   82</span>}</div>
-<div class="ttc" id="astructnexilis__WaiterHandle_html"><div class="ttname"><a href="../../d9/d48/structnexilis__WaiterHandle.html">nexilis_WaiterHandle</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/dd0/nexilis__waiter_8cc_source.html#l00024">nexilis_waiter.cc:25</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d3/dd0/nexilis__waiter_8cc_source.html#l00047">47</a> of file <a class="el" href="../../d3/dd0/nexilis__waiter_8cc_source.html">nexilis_waiter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   48</span>{</div>
+<div class="line"><span class="lineno">   49</span>    <span class="keywordflow">if</span> (!client_api || !client_api-&gt;owner || !promise || !promise-&gt;promise)</div>
+<div class="line"><span class="lineno">   50</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   51</span> </div>
+<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">   53</span>    {</div>
+<div class="line"><span class="lineno">   54</span>        <span class="keyword">auto</span> waiter = std::make_unique&lt;nexilis_WaiterHandle&gt;();</div>
+<div class="line"><span class="lineno">   55</span>        waiter-&gt;callback = create_wait_callback(client_api-&gt;owner, promise-&gt;promise, wait_type);</div>
+<div class="line"><span class="lineno">   56</span>        <span class="keywordflow">return</span> waiter.release();</div>
+<div class="line"><span class="lineno">   57</span>    }</div>
+<div class="line"><span class="lineno">   58</span>    <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><span class="lineno">   59</span>    {</div>
+<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   61</span>    }</div>
+<div class="line"><span class="lineno">   62</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -215,18 +212,18 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/dd0/nexilis__waiter_8cc_source.html#l00084">84</a> of file <a class="el" href="../../d3/dd0/nexilis__waiter_8cc_source.html">nexilis_waiter.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   85</span>{</div>
-<div class="line"><span class="lineno">   86</span>    <span class="keywordflow">if</span> (client_api &amp;&amp; promise)</div>
-<div class="line"><span class="lineno">   87</span>    {</div>
-<div class="line"><span class="lineno">   88</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../d3/dd0/nexilis__waiter_8cc.html#aad94d467b8128a585ccc7b16b269250f">nexilis_waiter_create</a>(client_api, promise, NEXILIS_WAIT_UNTIL_ROOMS_CREATED);</div>
-<div class="line"><span class="lineno">   89</span>    }</div>
-<div class="line"><span class="lineno">   90</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   91</span>    {</div>
-<div class="line"><span class="lineno">   92</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   93</span>    }</div>
-<div class="line"><span class="lineno">   94</span>}</div>
-<div class="ttc" id="anexilis__waiter_8cc_html_aad94d467b8128a585ccc7b16b269250f"><div class="ttname"><a href="../../d3/dd0/nexilis__waiter_8cc.html#aad94d467b8128a585ccc7b16b269250f">nexilis_waiter_create</a></div><div class="ttdeci">nexilis_WaiterHandle * nexilis_waiter_create(nexilis_ClientAPI *client_api, nexilis_PromiseHandle *promise, nexilis_WaitType wait_type)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dd0/nexilis__waiter_8cc_source.html#l00065">nexilis_waiter.cc:65</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d3/dd0/nexilis__waiter_8cc_source.html#l00064">64</a> of file <a class="el" href="../../d3/dd0/nexilis__waiter_8cc_source.html">nexilis_waiter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   65</span>{</div>
+<div class="line"><span class="lineno">   66</span>    <span class="keywordflow">if</span> (client_api &amp;&amp; promise)</div>
+<div class="line"><span class="lineno">   67</span>    {</div>
+<div class="line"><span class="lineno">   68</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../d3/dd0/nexilis__waiter_8cc.html#aad94d467b8128a585ccc7b16b269250f">nexilis_waiter_create</a>(client_api, promise, NEXILIS_WAIT_UNTIL_ROOMS_CREATED);</div>
+<div class="line"><span class="lineno">   69</span>    }</div>
+<div class="line"><span class="lineno">   70</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   71</span>    {</div>
+<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   73</span>    }</div>
+<div class="line"><span class="lineno">   74</span>}</div>
+<div class="ttc" id="anexilis__waiter_8cc_html_aad94d467b8128a585ccc7b16b269250f"><div class="ttname"><a href="../../d3/dd0/nexilis__waiter_8cc.html#aad94d467b8128a585ccc7b16b269250f">nexilis_waiter_create</a></div><div class="ttdeci">nexilis_WaiterHandle * nexilis_waiter_create(nexilis_ClientAPI *client_api, nexilis_PromiseHandle *promise, nexilis_WaitType wait_type)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dd0/nexilis__waiter_8cc_source.html#l00047">nexilis_waiter.cc:47</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -256,15 +253,19 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/dd0/nexilis__waiter_8cc_source.html#l00119">119</a> of file <a class="el" href="../../d3/dd0/nexilis__waiter_8cc_source.html">nexilis_waiter.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  120</span>{</div>
-<div class="line"><span class="lineno">  121</span>    <span class="keywordflow">if</span> (waiter)</div>
-<div class="line"><span class="lineno">  122</span>    {</div>
-<div class="line"><span class="lineno">  123</span>        std::lock_guard&lt;std::mutex&gt; lock(waiter-&gt;<a class="code hl_variable" href="../../d9/d48/structnexilis__WaiterHandle.html#ab29b66ebee9b1ac189b0d91eb4b35687">mutex</a>);</div>
-<div class="line"><span class="lineno">  124</span>        <span class="keyword">delete</span> waiter;</div>
-<div class="line"><span class="lineno">  125</span>    }</div>
-<div class="line"><span class="lineno">  126</span>}</div>
-<div class="ttc" id="astructnexilis__WaiterHandle_html_ab29b66ebee9b1ac189b0d91eb4b35687"><div class="ttname"><a href="../../d9/d48/structnexilis__WaiterHandle.html#ab29b66ebee9b1ac189b0d91eb4b35687">nexilis_WaiterHandle::mutex</a></div><div class="ttdeci">std::mutex mutex</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dd0/nexilis__waiter_8cc_source.html#l00028">nexilis_waiter.cc:28</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d3/dd0/nexilis__waiter_8cc_source.html#l00099">99</a> of file <a class="el" href="../../d3/dd0/nexilis__waiter_8cc_source.html">nexilis_waiter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  100</span>{</div>
+<div class="line"><span class="lineno">  101</span>    <span class="keywordflow">if</span> (waiter)</div>
+<div class="line"><span class="lineno">  102</span>    {</div>
+<div class="line"><span class="lineno">  103</span>        {</div>
+<div class="line"><span class="lineno">  104</span>            std::lock_guard&lt;std::mutex&gt; lock(waiter-&gt;<a class="code hl_variable" href="../../d9/d48/structnexilis__WaiterHandle.html#ab29b66ebee9b1ac189b0d91eb4b35687">mutex</a>);</div>
+<div class="line"><span class="lineno">  105</span>            waiter-&gt;<a class="code hl_variable" href="../../d9/d48/structnexilis__WaiterHandle.html#ab237d02c6e908dc7e36c30d7eefe5021">callback</a> = {};</div>
+<div class="line"><span class="lineno">  106</span>        }</div>
+<div class="line"><span class="lineno">  107</span>        <span class="keyword">delete</span> waiter;</div>
+<div class="line"><span class="lineno">  108</span>    }</div>
+<div class="line"><span class="lineno">  109</span>}</div>
+<div class="ttc" id="astructnexilis__WaiterHandle_html_ab237d02c6e908dc7e36c30d7eefe5021"><div class="ttname"><a href="../../d9/d48/structnexilis__WaiterHandle.html#ab237d02c6e908dc7e36c30d7eefe5021">nexilis_WaiterHandle::callback</a></div><div class="ttdeci">std::function&lt; void()&gt; callback</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dd0/nexilis__waiter_8cc_source.html#l00026">nexilis_waiter.cc:26</a></div></div>
+<div class="ttc" id="astructnexilis__WaiterHandle_html_ab29b66ebee9b1ac189b0d91eb4b35687"><div class="ttname"><a href="../../d9/d48/structnexilis__WaiterHandle.html#ab29b66ebee9b1ac189b0d91eb4b35687">nexilis_WaiterHandle::mutex</a></div><div class="ttdeci">std::mutex mutex</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dd0/nexilis__waiter_8cc_source.html#l00027">nexilis_waiter.cc:27</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -284,11 +285,10 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/dd0/nexilis__waiter_8cc_source.html#l00128">128</a> of file <a class="el" href="../../d3/dd0/nexilis__waiter_8cc_source.html">nexilis_waiter.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  129</span>{</div>
-<div class="line"><span class="lineno">  130</span>    <span class="keywordflow">return</span> waiter != <span class="keyword">nullptr</span> &amp;&amp; waiter-&gt;<a class="code hl_variable" href="../../d9/d48/structnexilis__WaiterHandle.html#ab237d02c6e908dc7e36c30d7eefe5021">callback</a> != <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  131</span>}</div>
-<div class="ttc" id="astructnexilis__WaiterHandle_html_ab237d02c6e908dc7e36c30d7eefe5021"><div class="ttname"><a href="../../d9/d48/structnexilis__WaiterHandle.html#ab237d02c6e908dc7e36c30d7eefe5021">nexilis_WaiterHandle::callback</a></div><div class="ttdeci">std::function&lt; void()&gt; callback</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dd0/nexilis__waiter_8cc_source.html#l00026">nexilis_waiter.cc:26</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d3/dd0/nexilis__waiter_8cc_source.html#l00111">111</a> of file <a class="el" href="../../d3/dd0/nexilis__waiter_8cc_source.html">nexilis_waiter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  112</span>{</div>
+<div class="line"><span class="lineno">  113</span>    <span class="keywordflow">return</span> waiter != <span class="keyword">nullptr</span> &amp;&amp; waiter-&gt;<a class="code hl_variable" href="../../d9/d48/structnexilis__WaiterHandle.html#ab237d02c6e908dc7e36c30d7eefe5021">callback</a> != <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  114</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -308,29 +308,29 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/dd0/nexilis__waiter_8cc_source.html#l00096">96</a> of file <a class="el" href="../../d3/dd0/nexilis__waiter_8cc_source.html">nexilis_waiter.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   97</span>{</div>
-<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">if</span> (!waiter)</div>
-<div class="line"><span class="lineno">   99</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  100</span> </div>
-<div class="line"><span class="lineno">  101</span>    std::lock_guard&lt;std::mutex&gt; lock(waiter-&gt;<a class="code hl_variable" href="../../d9/d48/structnexilis__WaiterHandle.html#ab29b66ebee9b1ac189b0d91eb4b35687">mutex</a>);</div>
-<div class="line"><span class="lineno">  102</span>    <span class="keywordflow">if</span> (waiter-&gt;<a class="code hl_variable" href="../../d9/d48/structnexilis__WaiterHandle.html#a01c4cd05bb63d066d88cee5b4c5a9e9f">waited</a>)</div>
-<div class="line"><span class="lineno">  103</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  104</span> </div>
-<div class="line"><span class="lineno">  105</span>    <span class="keywordflow">if</span> (waiter-&gt;<a class="code hl_variable" href="../../d9/d48/structnexilis__WaiterHandle.html#ab237d02c6e908dc7e36c30d7eefe5021">callback</a>)</div>
-<div class="line"><span class="lineno">  106</span>    {</div>
-<div class="line"><span class="lineno">  107</span>        <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  108</span>        {</div>
-<div class="line"><span class="lineno">  109</span>            waiter-&gt;<a class="code hl_variable" href="../../d9/d48/structnexilis__WaiterHandle.html#ab237d02c6e908dc7e36c30d7eefe5021">callback</a>();</div>
-<div class="line"><span class="lineno">  110</span>            waiter-&gt;<a class="code hl_variable" href="../../d9/d48/structnexilis__WaiterHandle.html#a01c4cd05bb63d066d88cee5b4c5a9e9f">waited</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  111</span>        }</div>
-<div class="line"><span class="lineno">  112</span>        <span class="keywordflow">catch</span> (...)</div>
-<div class="line"><span class="lineno">  113</span>        {</div>
-<div class="line"><span class="lineno">  114</span>            <span class="comment">// Handle exceptions</span></div>
-<div class="line"><span class="lineno">  115</span>        }</div>
-<div class="line"><span class="lineno">  116</span>    }</div>
-<div class="line"><span class="lineno">  117</span>}</div>
-<div class="ttc" id="astructnexilis__WaiterHandle_html_a01c4cd05bb63d066d88cee5b4c5a9e9f"><div class="ttname"><a href="../../d9/d48/structnexilis__WaiterHandle.html#a01c4cd05bb63d066d88cee5b4c5a9e9f">nexilis_WaiterHandle::waited</a></div><div class="ttdeci">bool waited</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dd0/nexilis__waiter_8cc_source.html#l00029">nexilis_waiter.cc:29</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d3/dd0/nexilis__waiter_8cc_source.html#l00076">76</a> of file <a class="el" href="../../d3/dd0/nexilis__waiter_8cc_source.html">nexilis_waiter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   77</span>{</div>
+<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">if</span> (!waiter)</div>
+<div class="line"><span class="lineno">   79</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   80</span> </div>
+<div class="line"><span class="lineno">   81</span>    std::lock_guard&lt;std::mutex&gt; lock(waiter-&gt;<a class="code hl_variable" href="../../d9/d48/structnexilis__WaiterHandle.html#ab29b66ebee9b1ac189b0d91eb4b35687">mutex</a>);</div>
+<div class="line"><span class="lineno">   82</span>    <span class="keywordflow">if</span> (waiter-&gt;<a class="code hl_variable" href="../../d9/d48/structnexilis__WaiterHandle.html#a01c4cd05bb63d066d88cee5b4c5a9e9f">waited</a>)</div>
+<div class="line"><span class="lineno">   83</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   84</span> </div>
+<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">if</span> (waiter-&gt;<a class="code hl_variable" href="../../d9/d48/structnexilis__WaiterHandle.html#ab237d02c6e908dc7e36c30d7eefe5021">callback</a>)</div>
+<div class="line"><span class="lineno">   86</span>    {</div>
+<div class="line"><span class="lineno">   87</span>        <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">   88</span>        {</div>
+<div class="line"><span class="lineno">   89</span>            waiter-&gt;<a class="code hl_variable" href="../../d9/d48/structnexilis__WaiterHandle.html#ab237d02c6e908dc7e36c30d7eefe5021">callback</a>();</div>
+<div class="line"><span class="lineno">   90</span>            waiter-&gt;<a class="code hl_variable" href="../../d9/d48/structnexilis__WaiterHandle.html#a01c4cd05bb63d066d88cee5b4c5a9e9f">waited</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   91</span>        }</div>
+<div class="line"><span class="lineno">   92</span>        <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><span class="lineno">   93</span>        {</div>
+<div class="line"><span class="lineno">   94</span>            <span class="comment">// Handle exceptions</span></div>
+<div class="line"><span class="lineno">   95</span>        }</div>
+<div class="line"><span class="lineno">   96</span>    }</div>
+<div class="line"><span class="lineno">   97</span>}</div>
+<div class="ttc" id="astructnexilis__WaiterHandle_html_a01c4cd05bb63d066d88cee5b4c5a9e9f"><div class="ttname"><a href="../../d9/d48/structnexilis__WaiterHandle.html#a01c4cd05bb63d066d88cee5b4c5a9e9f">nexilis_WaiterHandle::waited</a></div><div class="ttdeci">bool waited</div><div class="ttdef"><b>Definition</b> <a href="../../d3/dd0/nexilis__waiter_8cc_source.html#l00028">nexilis_waiter.cc:28</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

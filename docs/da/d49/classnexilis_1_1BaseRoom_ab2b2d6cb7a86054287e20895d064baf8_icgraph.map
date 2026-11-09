@@ -1,0 +1,5 @@
+<map id="nexilis::BaseRoom::deleteObject2D" name="nexilis::BaseRoom::deleteObject2D">
+<area shape="rect" id="Node000001" title=" " alt="" coords="213,5,364,45"/>
+<area shape="rect" id="Node000002" href="$d1/d01/classnexilis_1_1server_1_1Room.html#a49d3489d6712104b2a45e8ebf75c0842" title=" " alt="" coords="5,5,165,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,28,166,28,166,23,200,23"/>
+</map>

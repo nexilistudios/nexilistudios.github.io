@@ -5,7 +5,7 @@ var searchData=
   ['remove_5fgame_5fitem_2ecc_2',['remove_game_item.cc',['../da/d59/remove__game__item_8cc.html',1,'']]],
   ['remove_5fobject_5f2d_2ecc_3',['remove_object_2D.cc',['../dc/d26/remove__object__2D_8cc.html',1,'']]],
   ['remove_5fobject_5f3d_2ecc_4',['remove_object_3D.cc',['../d4/d1f/remove__object__3D_8cc.html',1,'']]],
-  ['room_2ecc_5',['room.cc',['../d8/dd8/client_2room_8cc.html',1,'(Global Namespace)'],['../d9/d36/server_2room_8cc.html',1,'(Global Namespace)']]],
+  ['room_2ecc_5',['room.cc',['../d9/d36/server_2room_8cc.html',1,'(Global Namespace)'],['../d8/dd8/client_2room_8cc.html',1,'(Global Namespace)']]],
   ['room_2ehh_6',['room.hh',['../d7/db8/client_2command_2room_8hh.html',1,'(Global Namespace)'],['../d7/d99/client_2room_8hh.html',1,'(Global Namespace)'],['../dc/d7f/server_2room_8hh.html',1,'(Global Namespace)']]],
   ['room_5fc_2ecc_7',['room_c.cc',['../d5/d09/room__c_8cc.html',1,'']]],
   ['room_5fcommand_5ftype_2ecc_8',['room_command_type.cc',['../dd/d96/room__command__type_8cc.html',1,'']]],
@@ -16,8 +16,9 @@ var searchData=
   ['room_5fid_2ecc_13',['room_id.cc',['../da/da6/room__id_8cc.html',1,'']]],
   ['room_5fid_2ehh_14',['room_id.hh',['../da/d9a/room__id_8hh.html',1,'']]],
   ['room_5finfo_2ehh_15',['room_info.hh',['../d6/dcb/room__info_8hh.html',1,'']]],
-  ['room_5fstorage_2ecc_16',['room_storage.cc',['../df/d00/room__storage_8cc.html',1,'']]],
-  ['room_5fstorage_2ehh_17',['room_storage.hh',['../df/d11/room__storage_8hh.html',1,'']]],
-  ['rooms_5fcollection_2ecc_18',['rooms_collection.cc',['../d8/dde/rooms__collection_8cc.html',1,'']]],
-  ['runtime_2ehh_19',['runtime.hh',['../db/d33/runtime_8hh.html',1,'']]]
+  ['room_5flimits_2ehh_16',['room_limits.hh',['../d1/de9/room__limits_8hh.html',1,'']]],
+  ['room_5fstorage_2ecc_17',['room_storage.cc',['../df/d00/room__storage_8cc.html',1,'']]],
+  ['room_5fstorage_2ehh_18',['room_storage.hh',['../df/d11/room__storage_8hh.html',1,'']]],
+  ['rooms_5fcollection_2ecc_19',['rooms_collection.cc',['../d8/dde/rooms__collection_8cc.html',1,'']]],
+  ['runtime_2ehh_20',['runtime.hh',['../db/d33/runtime_8hh.html',1,'']]]
 ];

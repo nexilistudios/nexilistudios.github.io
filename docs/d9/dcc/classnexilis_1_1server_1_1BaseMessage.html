@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.8-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.9-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -145,13 +145,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:adfa0f408e5fc859b9073a98aab025de9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the address where the message is assigned.  <br /></td></tr>
 <tr class="separator:adfa0f408e5fc859b9073a98aab025de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a224c829d4761f40dac976f77315807ad" id="r_a224c829d4761f40dac976f77315807ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html">User</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dcc/classnexilis_1_1server_1_1BaseMessage.html#a224c829d4761f40dac976f77315807ad">getUser</a> () const</td></tr>
-<tr class="memdesc:a224c829d4761f40dac976f77315807ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pointer to the user that is associated with the message.  <br /></td></tr>
+<tr class="memdesc:a224c829d4761f40dac976f77315807ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Borrowed pointer, valid while this message retains its user handle.  <br /></td></tr>
 <tr class="separator:a224c829d4761f40dac976f77315807ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for incoming messages from the client. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/de4/base__message_8hh_source.html#l00026">26</a> of file <a class="el" href="../../db/de4/base__message_8hh_source.html">base_message.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/de4/base__message_8hh_source.html#l00027">27</a> of file <a class="el" href="../../db/de4/base__message_8hh_source.html">base_message.hh</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="aebc7acba53510d98c7b4ceef6ed28e41" name="aebc7acba53510d98c7b4ceef6ed28e41"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aebc7acba53510d98c7b4ceef6ed28e41">&#9670;&#160;</a></span>Type</h2>
@@ -170,15 +170,15 @@ Public Member Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="aebc7acba53510d98c7b4ceef6ed28e41af65f79e4091897ca50f84df96ee310ad" name="aebc7acba53510d98c7b4ceef6ed28e41af65f79e4091897ca50f84df96ee310ad"></a>error_message&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../db/de4/base__message_8hh_source.html#l00029">29</a> of file <a class="el" href="../../db/de4/base__message_8hh_source.html">base_message.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   30</span>    {</div>
-<div class="line"><span class="lineno">   31</span>        <a class="code hl_enumvalue" href="../../d9/dcc/classnexilis_1_1server_1_1BaseMessage.html#aebc7acba53510d98c7b4ceef6ed28e41ad1cfb2ab3e331aba97d00a05020d66b7">message</a>,</div>
-<div class="line"><span class="lineno">   32</span>        <a class="code hl_enumvalue" href="../../d9/dcc/classnexilis_1_1server_1_1BaseMessage.html#aebc7acba53510d98c7b4ceef6ed28e41a8ba2d4026cddf4657e1081ed3d186dba">auth_message</a>,</div>
-<div class="line"><span class="lineno">   33</span>        <a class="code hl_enumvalue" href="../../d9/dcc/classnexilis_1_1server_1_1BaseMessage.html#aebc7acba53510d98c7b4ceef6ed28e41af65f79e4091897ca50f84df96ee310ad">error_message</a></div>
-<div class="line"><span class="lineno">   34</span>    };</div>
-<div class="ttc" id="aclassnexilis_1_1server_1_1BaseMessage_html_aebc7acba53510d98c7b4ceef6ed28e41a8ba2d4026cddf4657e1081ed3d186dba"><div class="ttname"><a href="../../d9/dcc/classnexilis_1_1server_1_1BaseMessage.html#aebc7acba53510d98c7b4ceef6ed28e41a8ba2d4026cddf4657e1081ed3d186dba">nexilis::server::BaseMessage::auth_message</a></div><div class="ttdeci">@ auth_message</div><div class="ttdef"><b>Definition</b> <a href="../../db/de4/base__message_8hh_source.html#l00032">base_message.hh:32</a></div></div>
-<div class="ttc" id="aclassnexilis_1_1server_1_1BaseMessage_html_aebc7acba53510d98c7b4ceef6ed28e41ad1cfb2ab3e331aba97d00a05020d66b7"><div class="ttname"><a href="../../d9/dcc/classnexilis_1_1server_1_1BaseMessage.html#aebc7acba53510d98c7b4ceef6ed28e41ad1cfb2ab3e331aba97d00a05020d66b7">nexilis::server::BaseMessage::message</a></div><div class="ttdeci">@ message</div><div class="ttdef"><b>Definition</b> <a href="../../db/de4/base__message_8hh_source.html#l00031">base_message.hh:31</a></div></div>
-<div class="ttc" id="aclassnexilis_1_1server_1_1BaseMessage_html_aebc7acba53510d98c7b4ceef6ed28e41af65f79e4091897ca50f84df96ee310ad"><div class="ttname"><a href="../../d9/dcc/classnexilis_1_1server_1_1BaseMessage.html#aebc7acba53510d98c7b4ceef6ed28e41af65f79e4091897ca50f84df96ee310ad">nexilis::server::BaseMessage::error_message</a></div><div class="ttdeci">@ error_message</div><div class="ttdef"><b>Definition</b> <a href="../../db/de4/base__message_8hh_source.html#l00034">base_message.hh:33</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../db/de4/base__message_8hh_source.html#l00030">30</a> of file <a class="el" href="../../db/de4/base__message_8hh_source.html">base_message.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>    {</div>
+<div class="line"><span class="lineno">   32</span>        <a class="code hl_enumvalue" href="../../d9/dcc/classnexilis_1_1server_1_1BaseMessage.html#aebc7acba53510d98c7b4ceef6ed28e41ad1cfb2ab3e331aba97d00a05020d66b7">message</a>,</div>
+<div class="line"><span class="lineno">   33</span>        <a class="code hl_enumvalue" href="../../d9/dcc/classnexilis_1_1server_1_1BaseMessage.html#aebc7acba53510d98c7b4ceef6ed28e41a8ba2d4026cddf4657e1081ed3d186dba">auth_message</a>,</div>
+<div class="line"><span class="lineno">   34</span>        <a class="code hl_enumvalue" href="../../d9/dcc/classnexilis_1_1server_1_1BaseMessage.html#aebc7acba53510d98c7b4ceef6ed28e41af65f79e4091897ca50f84df96ee310ad">error_message</a></div>
+<div class="line"><span class="lineno">   35</span>    };</div>
+<div class="ttc" id="aclassnexilis_1_1server_1_1BaseMessage_html_aebc7acba53510d98c7b4ceef6ed28e41a8ba2d4026cddf4657e1081ed3d186dba"><div class="ttname"><a href="../../d9/dcc/classnexilis_1_1server_1_1BaseMessage.html#aebc7acba53510d98c7b4ceef6ed28e41a8ba2d4026cddf4657e1081ed3d186dba">nexilis::server::BaseMessage::auth_message</a></div><div class="ttdeci">@ auth_message</div><div class="ttdef"><b>Definition</b> <a href="../../db/de4/base__message_8hh_source.html#l00033">base_message.hh:33</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1server_1_1BaseMessage_html_aebc7acba53510d98c7b4ceef6ed28e41ad1cfb2ab3e331aba97d00a05020d66b7"><div class="ttname"><a href="../../d9/dcc/classnexilis_1_1server_1_1BaseMessage.html#aebc7acba53510d98c7b4ceef6ed28e41ad1cfb2ab3e331aba97d00a05020d66b7">nexilis::server::BaseMessage::message</a></div><div class="ttdeci">@ message</div><div class="ttdef"><b>Definition</b> <a href="../../db/de4/base__message_8hh_source.html#l00032">base_message.hh:32</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1server_1_1BaseMessage_html_aebc7acba53510d98c7b4ceef6ed28e41af65f79e4091897ca50f84df96ee310ad"><div class="ttname"><a href="../../d9/dcc/classnexilis_1_1server_1_1BaseMessage.html#aebc7acba53510d98c7b4ceef6ed28e41af65f79e4091897ca50f84df96ee310ad">nexilis::server::BaseMessage::error_message</a></div><div class="ttdeci">@ error_message</div><div class="ttdef"><b>Definition</b> <a href="../../db/de4/base__message_8hh_source.html#l00035">base_message.hh:34</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -419,7 +419,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Get pointer to the user that is associated with the message. </p>
+<p>Borrowed pointer, valid while this message retains its user handle. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d7a/base__message_8cc_source.html#l00092">92</a> of file <a class="el" href="../../d6/d7a/base__message_8cc_source.html">base_message.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   93</span>{</div>
@@ -431,7 +431,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d9/dcc/classnexilis_1_1server_1_1BaseMessage_a224c829d4761f40dac976f77315807ad_cgraph.png" border="0" usemap="#ad9/dcc/classnexilis_1_1server_1_1BaseMessage_a224c829d4761f40dac976f77315807ad_cgraph" alt=""/></div>
 <map name="ad9/dcc/classnexilis_1_1server_1_1BaseMessage_a224c829d4761f40dac976f77315807ad_cgraph" id="ad9/dcc/classnexilis_1_1server_1_1BaseMessage_a224c829d4761f40dac976f77315807ad_cgraph">
-<area shape="rect" title="Get pointer to the user that is associated with the message." alt="" coords="5,5,217,45"/>
+<area shape="rect" title="Borrowed pointer, valid while this message retains its user handle." alt="" coords="5,5,217,45"/>
 <area shape="rect" href="../../dc/db7/classnexilis_1_1server_1_1BaseMessage_1_1Data.html#a4d8f10046d74275d1564c1ec5e314dd1" title=" " alt="" coords="265,5,477,45"/>
 <area shape="poly" title=" " alt="" coords="217,23,252,23,252,28,217,28"/>
 </map>

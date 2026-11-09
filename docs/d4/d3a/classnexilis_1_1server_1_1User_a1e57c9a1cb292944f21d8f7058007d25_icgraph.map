@@ -1,0 +1,13 @@
+<map id="nexilis::server::User::setId" name="nexilis::server::User::setId">
+<area shape="rect" id="Node000001" title=" " alt="" coords="980,37,1132,77"/>
+<area shape="rect" id="Node000002" href="$da/de9/classnexilis_1_1server_1_1ClientStorage.html#ae358e954fbc75f4c9917a2c98af9a854" title="Change a registered user&#39;s ID under the registry lock; reject collisions." alt="" coords="721,37,932,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="966,60,932,60,932,55,966,55"/>
+<area shape="rect" id="Node000003" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#ae650fcafe7bff16de0a43e9efd61ca6d" title=" " alt="" coords="480,37,673,77"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="708,60,673,60,673,55,708,55"/>
+<area shape="rect" id="Node000004" href="$da/d15/classnexilis_1_1server_1_1Command.html#a205831cf4657d0a80391beba1cfd953d" title=" " alt="" coords="243,37,432,77"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="466,60,432,60,432,55,466,55"/>
+<area shape="rect" id="Node000005" href="$da/d15/classnexilis_1_1server_1_1Command.html#a523ea35f6efde10413e9718e50a96e70" title=" " alt="" coords="5,5,195,45"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="229,45,194,41,195,35,230,40"/>
+<area shape="rect" id="Node000006" href="$d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="15,69,185,109"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="230,75,186,80,185,75,229,69"/>
+</map>

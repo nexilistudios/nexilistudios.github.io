@@ -1,0 +1,5 @@
+<map id="nexilis::BaseRoom::getGameItems" name="nexilis::BaseRoom::getGameItems">
+<area shape="rect" id="Node000001" title=" " alt="" coords="213,5,364,45"/>
+<area shape="rect" id="Node000002" href="$d1/d01/classnexilis_1_1server_1_1Room.html#ac8d3605f98ada8214703cb7df25a2234" title=" " alt="" coords="5,5,165,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,28,166,28,166,23,200,23"/>
+</map>

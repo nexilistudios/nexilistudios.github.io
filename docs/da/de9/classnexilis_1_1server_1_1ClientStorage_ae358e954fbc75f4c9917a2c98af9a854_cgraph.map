@@ -1,0 +1,10 @@
+<map id="nexilis::server::ClientStorage::updateId" name="nexilis::server::ClientStorage::updateId">
+<area shape="rect" id="Node000001" title="Change a registered user&#39;s ID under the registry lock; reject collisions." alt="" coords="5,35,216,75"/>
+<area shape="rect" id="Node000002" href="$d4/d3a/classnexilis_1_1server_1_1User.html#adc7c8eb7a3e4d0931b7bf355fa5bbfa5" title=" " alt="" coords="464,5,616,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,45,450,29,450,34,217,50"/>
+<area shape="rect" id="Node000003" href="$d4/d3a/classnexilis_1_1server_1_1User.html#a1e57c9a1cb292944f21d8f7058007d25" title=" " alt="" coords="264,63,416,103"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="216,65,251,69,250,74,216,70"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="410,60,456,47,458,52,411,65"/>
+<area shape="rect" id="Node000004" href="$dc/dcb/classnexilis_1_1BaseClient.html#af962e129369619828020a06ef78ce7b0" title=" " alt="" coords="469,69,611,109"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="417,83,455,84,455,89,416,88"/>
+</map>

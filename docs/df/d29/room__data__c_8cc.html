@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.8-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.9-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -81,16 +81,19 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="../../df/d7c/room__data_8hh_source.html">nexilis/room_data.hh</a>&gt;</code><br />
 <code>#include &lt;nexilisc/room_data_c.h&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for room_data_c.cc:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d7/d48/room__data__c_8cc__incl.png" border="0" usemap="#asrc_2nexilisc_2room__data__c_8cc" alt=""/></div>
 <map name="asrc_2nexilisc_2room__data__c_8cc" id="asrc_2nexilisc_2room__data__c_8cc">
-<area shape="rect" title=" " alt="" coords="941,5,1143,31"/>
+<area shape="rect" title=" " alt="" coords="1036,5,1237,31"/>
 <area shape="rect" href="../../df/d7c/room__data_8hh.html" title=" " alt="" coords="868,79,1027,104"/>
-<area shape="poly" title=" " alt="" coords="1028,33,975,72,972,68,1025,29"/>
+<area shape="poly" title=" " alt="" coords="1107,33,992,76,990,71,1105,28"/>
 <area shape="rect" title=" " alt="" coords="1051,79,1223,104"/>
-<area shape="poly" title=" " alt="" coords="1059,29,1112,68,1109,72,1056,33"/>
+<area shape="poly" title=" " alt="" coords="1139,31,1139,65,1134,65,1134,31"/>
+<area shape="rect" title=" " alt="" coords="1247,79,1325,104"/>
+<area shape="poly" title=" " alt="" coords="1162,28,1250,70,1248,75,1160,33"/>
 <area shape="rect" href="../../d3/d68/util_8hh.html" title=" " alt="" coords="892,152,1003,177"/>
 <area shape="poly" title=" " alt="" coords="950,104,950,138,945,138,945,104"/>
 <area shape="rect" href="../../dd/dbd/log__level_8hh.html" title=" " alt="" coords="5,225,140,265"/>
@@ -199,25 +202,33 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d29/room__data__c_8cc_source.html#l00020">20</a> of file <a class="el" href="../../df/d29/room__data__c_8cc_source.html">room_data_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   21</span>{</div>
-<div class="line"><span class="lineno">   22</span>    uint64_t room_id = <a class="code hl_function" href="../../df/d06/group__RandFunctions.html#gacb4f385a6c9480e76c639947e185ff07">nexilis::Util::getRandomUint64</a>();</div>
-<div class="line"><span class="lineno">   23</span>    <span class="keyword">auto</span> room_data = <span class="keyword">new</span> nexilis_RoomData();</div>
-<div class="line"><span class="lineno">   24</span>    room_data-&gt;data = <span class="keyword">new</span> <a class="code hl_class" href="../../de/d38/classnexilis_1_1RoomData.html">nexilis::RoomData</a>(creator_id, name, room_id, <span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="../../de/d38/classnexilis_1_1RoomData.html#a30cb19551acfa5508f5f29d096c8f76e">nexilis::RoomData::Context</a><span class="keyword">&gt;</span>(context), max_size);</div>
-<div class="line"><span class="lineno">   25</span>    <span class="keywordflow">return</span> room_data;</div>
-<div class="line"><span class="lineno">   26</span>}</div>
-<div class="ttc" id="aclassnexilis_1_1RoomData_html"><div class="ttname"><a href="../../de/d38/classnexilis_1_1RoomData.html">nexilis::RoomData</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d7c/room__data_8hh_source.html#l00025">room_data.hh:26</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../df/d29/room__data__c_8cc_source.html#l00022">22</a> of file <a class="el" href="../../df/d29/room__data__c_8cc_source.html">room_data_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   23</span>{</div>
+<div class="line"><span class="lineno">   24</span>    <span class="keywordflow">if</span> (!name)</div>
+<div class="line"><span class="lineno">   25</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   26</span>    <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">   27</span>    {</div>
+<div class="line"><span class="lineno">   28</span>        uint64_t room_id = <a class="code hl_function" href="../../df/d06/group__RandFunctions.html#gacb4f385a6c9480e76c639947e185ff07">nexilis::Util::getRandomUint64</a>();</div>
+<div class="line"><span class="lineno">   29</span>        <span class="keyword">auto</span> data = std::make_unique&lt;nexilis::RoomData&gt;(creator_id, name, room_id, <span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="../../de/d38/classnexilis_1_1RoomData.html#a30cb19551acfa5508f5f29d096c8f76e">nexilis::RoomData::Context</a><span class="keyword">&gt;</span>(context), max_size);</div>
+<div class="line"><span class="lineno">   30</span>        <span class="keyword">auto</span> wrapper = <span class="keyword">new</span> nexilis_RoomData{data.get()};</div>
+<div class="line"><span class="lineno">   31</span>        data.release();</div>
+<div class="line"><span class="lineno">   32</span>        <span class="keywordflow">return</span> wrapper;</div>
+<div class="line"><span class="lineno">   33</span>    }</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><span class="lineno">   35</span>    {</div>
+<div class="line"><span class="lineno">   36</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   37</span>    }</div>
+<div class="line"><span class="lineno">   38</span>}</div>
 <div class="ttc" id="aclassnexilis_1_1RoomData_html_a30cb19551acfa5508f5f29d096c8f76e"><div class="ttname"><a href="../../de/d38/classnexilis_1_1RoomData.html#a30cb19551acfa5508f5f29d096c8f76e">nexilis::RoomData::Context</a></div><div class="ttdeci">Context</div><div class="ttdef"><b>Definition</b> <a href="../../df/d7c/room__data_8hh_source.html#l00028">room_data.hh:29</a></div></div>
-<div class="ttc" id="agroup__RandFunctions_html_gacb4f385a6c9480e76c639947e185ff07"><div class="ttname"><a href="../../df/d06/group__RandFunctions.html#gacb4f385a6c9480e76c639947e185ff07">nexilis::Util::getRandomUint64</a></div><div class="ttdeci">static uint64_t getRandomUint64()</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d6f/util_8cc_source.html#l00319">util.cc:319</a></div></div>
+<div class="ttc" id="agroup__RandFunctions_html_gacb4f385a6c9480e76c639947e185ff07"><div class="ttname"><a href="../../df/d06/group__RandFunctions.html#gacb4f385a6c9480e76c639947e185ff07">nexilis::Util::getRandomUint64</a></div><div class="ttdeci">static uint64_t getRandomUint64()</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d6f/util_8cc_source.html#l00346">util.cc:346</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../df/d29/room__data__c_8cc_ac2b2122fe09dc0e28ec3c0a04ec1d7ed_cgraph.png" border="0" usemap="#adf/d29/room__data__c_8cc_ac2b2122fe09dc0e28ec3c0a04ec1d7ed_cgraph" alt=""/></div>
 <map name="adf/d29/room__data__c_8cc_ac2b2122fe09dc0e28ec3c0a04ec1d7ed_cgraph" id="adf/d29/room__data__c_8cc_ac2b2122fe09dc0e28ec3c0a04ec1d7ed_cgraph">
-<area shape="rect" title=" " alt="" coords="5,37,196,62"/>
-<area shape="rect" href="../../df/d06/group__RandFunctions.html#gacb4f385a6c9480e76c639947e185ff07" title=" " alt="" coords="244,29,423,69"/>
-<area shape="poly" title=" " alt="" coords="196,47,230,47,230,52,196,52"/>
-<area shape="poly" title=" " alt="" coords="290,30,287,20,294,10,310,5,333,3,360,6,375,13,373,18,359,11,333,8,311,10,298,15,293,21,295,28"/>
+<area shape="rect" title=" " alt="" coords="5,13,196,38"/>
+<area shape="rect" href="../../df/d06/group__RandFunctions.html#gacb4f385a6c9480e76c639947e185ff07" title=" " alt="" coords="244,5,423,45"/>
+<area shape="poly" title=" " alt="" coords="196,23,230,23,230,28,196,28"/>
 </map>
 </div>
 
@@ -239,18 +250,18 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d29/room__data__c_8cc_source.html#l00028">28</a> of file <a class="el" href="../../df/d29/room__data__c_8cc_source.html">room_data_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   29</span>{</div>
-<div class="line"><span class="lineno">   30</span>    <span class="keywordflow">if</span> (room_data)</div>
-<div class="line"><span class="lineno">   31</span>    {</div>
-<div class="line"><span class="lineno">   32</span>        <span class="keywordflow">if</span> (room_data-&gt;data)</div>
-<div class="line"><span class="lineno">   33</span>        {</div>
-<div class="line"><span class="lineno">   34</span>            <span class="keyword">delete</span> room_data-&gt;data;</div>
-<div class="line"><span class="lineno">   35</span>            room_data-&gt;data = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   36</span>        }</div>
-<div class="line"><span class="lineno">   37</span>        <span class="keyword">delete</span> room_data;</div>
-<div class="line"><span class="lineno">   38</span>    }</div>
-<div class="line"><span class="lineno">   39</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d29/room__data__c_8cc_source.html#l00040">40</a> of file <a class="el" href="../../df/d29/room__data__c_8cc_source.html">room_data_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   41</span>{</div>
+<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">if</span> (room_data)</div>
+<div class="line"><span class="lineno">   43</span>    {</div>
+<div class="line"><span class="lineno">   44</span>        <span class="keywordflow">if</span> (room_data-&gt;data)</div>
+<div class="line"><span class="lineno">   45</span>        {</div>
+<div class="line"><span class="lineno">   46</span>            <span class="keyword">delete</span> room_data-&gt;data;</div>
+<div class="line"><span class="lineno">   47</span>            room_data-&gt;data = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   48</span>        }</div>
+<div class="line"><span class="lineno">   49</span>        <span class="keyword">delete</span> room_data;</div>
+<div class="line"><span class="lineno">   50</span>    }</div>
+<div class="line"><span class="lineno">   51</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -270,14 +281,14 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d29/room__data__c_8cc_source.html#l00056">56</a> of file <a class="el" href="../../df/d29/room__data__c_8cc_source.html">room_data_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   57</span>{</div>
-<div class="line"><span class="lineno">   58</span>    <span class="keywordflow">if</span> (room_data &amp;&amp; room_data-&gt;data)</div>
-<div class="line"><span class="lineno">   59</span>    {</div>
-<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>nexilis_RoomContext<span class="keyword">&gt;</span>(room_data-&gt;data-&gt;getContext());</div>
-<div class="line"><span class="lineno">   61</span>    }</div>
-<div class="line"><span class="lineno">   62</span>    <span class="keywordflow">return</span> ROOM_CONTEXT_UNDEFINED;</div>
-<div class="line"><span class="lineno">   63</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d29/room__data__c_8cc_source.html#l00068">68</a> of file <a class="el" href="../../df/d29/room__data__c_8cc_source.html">room_data_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   69</span>{</div>
+<div class="line"><span class="lineno">   70</span>    <span class="keywordflow">if</span> (room_data &amp;&amp; room_data-&gt;data)</div>
+<div class="line"><span class="lineno">   71</span>    {</div>
+<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>nexilis_RoomContext<span class="keyword">&gt;</span>(room_data-&gt;data-&gt;getContext());</div>
+<div class="line"><span class="lineno">   73</span>    }</div>
+<div class="line"><span class="lineno">   74</span>    <span class="keywordflow">return</span> ROOM_CONTEXT_UNDEFINED;</div>
+<div class="line"><span class="lineno">   75</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -297,14 +308,14 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d29/room__data__c_8cc_source.html#l00083">83</a> of file <a class="el" href="../../df/d29/room__data__c_8cc_source.html">room_data_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   84</span>{</div>
-<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">if</span> (room_data &amp;&amp; room_data-&gt;data)</div>
-<div class="line"><span class="lineno">   86</span>    {</div>
-<div class="line"><span class="lineno">   87</span>        <span class="keywordflow">return</span> room_data-&gt;data-&gt;getCreatorId();</div>
-<div class="line"><span class="lineno">   88</span>    }</div>
-<div class="line"><span class="lineno">   89</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   90</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d29/room__data__c_8cc_source.html#l00095">95</a> of file <a class="el" href="../../df/d29/room__data__c_8cc_source.html">room_data_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   96</span>{</div>
+<div class="line"><span class="lineno">   97</span>    <span class="keywordflow">if</span> (room_data &amp;&amp; room_data-&gt;data)</div>
+<div class="line"><span class="lineno">   98</span>    {</div>
+<div class="line"><span class="lineno">   99</span>        <span class="keywordflow">return</span> room_data-&gt;data-&gt;getCreatorId();</div>
+<div class="line"><span class="lineno">  100</span>    }</div>
+<div class="line"><span class="lineno">  101</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  102</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -324,14 +335,14 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d29/room__data__c_8cc_source.html#l00074">74</a> of file <a class="el" href="../../df/d29/room__data__c_8cc_source.html">room_data_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   75</span>{</div>
-<div class="line"><span class="lineno">   76</span>    <span class="keywordflow">if</span> (room_data &amp;&amp; room_data-&gt;data)</div>
-<div class="line"><span class="lineno">   77</span>    {</div>
-<div class="line"><span class="lineno">   78</span>        <span class="keywordflow">return</span> room_data-&gt;data-&gt;getId();</div>
-<div class="line"><span class="lineno">   79</span>    }</div>
-<div class="line"><span class="lineno">   80</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   81</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d29/room__data__c_8cc_source.html#l00086">86</a> of file <a class="el" href="../../df/d29/room__data__c_8cc_source.html">room_data_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   87</span>{</div>
+<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">if</span> (room_data &amp;&amp; room_data-&gt;data)</div>
+<div class="line"><span class="lineno">   89</span>    {</div>
+<div class="line"><span class="lineno">   90</span>        <span class="keywordflow">return</span> room_data-&gt;data-&gt;getId();</div>
+<div class="line"><span class="lineno">   91</span>    }</div>
+<div class="line"><span class="lineno">   92</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   93</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -351,14 +362,14 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d29/room__data__c_8cc_source.html#l00065">65</a> of file <a class="el" href="../../df/d29/room__data__c_8cc_source.html">room_data_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   66</span>{</div>
-<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">if</span> (room_data &amp;&amp; room_data-&gt;data)</div>
-<div class="line"><span class="lineno">   68</span>    {</div>
-<div class="line"><span class="lineno">   69</span>        <span class="keywordflow">return</span> room_data-&gt;data-&gt;getMaxSize();</div>
-<div class="line"><span class="lineno">   70</span>    }</div>
-<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   72</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d29/room__data__c_8cc_source.html#l00077">77</a> of file <a class="el" href="../../df/d29/room__data__c_8cc_source.html">room_data_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   78</span>{</div>
+<div class="line"><span class="lineno">   79</span>    <span class="keywordflow">if</span> (room_data &amp;&amp; room_data-&gt;data)</div>
+<div class="line"><span class="lineno">   80</span>    {</div>
+<div class="line"><span class="lineno">   81</span>        <span class="keywordflow">return</span> room_data-&gt;data-&gt;getMaxSize();</div>
+<div class="line"><span class="lineno">   82</span>    }</div>
+<div class="line"><span class="lineno">   83</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   84</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -378,20 +389,20 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d29/room__data__c_8cc_source.html#l00041">41</a> of file <a class="el" href="../../df/d29/room__data__c_8cc_source.html">room_data_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   42</span>{</div>
-<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">if</span> (room_data &amp;&amp; room_data-&gt;data)</div>
-<div class="line"><span class="lineno">   44</span>    {</div>
-<div class="line"><span class="lineno">   45</span>        std::string name = room_data-&gt;data-&gt;getName();</div>
-<div class="line"><span class="lineno">   46</span>        <span class="keywordtype">char</span>* cstr = (<span class="keywordtype">char</span>*)malloc(name.size() + 1);</div>
-<div class="line"><span class="lineno">   47</span>        <span class="keywordflow">if</span> (cstr)</div>
-<div class="line"><span class="lineno">   48</span>        {</div>
-<div class="line"><span class="lineno">   49</span>            std::strcpy(cstr, name.c_str());</div>
-<div class="line"><span class="lineno">   50</span>        }</div>
-<div class="line"><span class="lineno">   51</span>        <span class="keywordflow">return</span> cstr;</div>
-<div class="line"><span class="lineno">   52</span>    }</div>
-<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   54</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d29/room__data__c_8cc_source.html#l00053">53</a> of file <a class="el" href="../../df/d29/room__data__c_8cc_source.html">room_data_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   54</span>{</div>
+<div class="line"><span class="lineno">   55</span>    <span class="keywordflow">if</span> (room_data &amp;&amp; room_data-&gt;data)</div>
+<div class="line"><span class="lineno">   56</span>    {</div>
+<div class="line"><span class="lineno">   57</span>        std::string name = room_data-&gt;data-&gt;getName();</div>
+<div class="line"><span class="lineno">   58</span>        <span class="keywordtype">char</span>* cstr = (<span class="keywordtype">char</span>*)malloc(name.size() + 1);</div>
+<div class="line"><span class="lineno">   59</span>        <span class="keywordflow">if</span> (cstr)</div>
+<div class="line"><span class="lineno">   60</span>        {</div>
+<div class="line"><span class="lineno">   61</span>            std::strcpy(cstr, name.c_str());</div>
+<div class="line"><span class="lineno">   62</span>        }</div>
+<div class="line"><span class="lineno">   63</span>        <span class="keywordflow">return</span> cstr;</div>
+<div class="line"><span class="lineno">   64</span>    }</div>
+<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   66</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

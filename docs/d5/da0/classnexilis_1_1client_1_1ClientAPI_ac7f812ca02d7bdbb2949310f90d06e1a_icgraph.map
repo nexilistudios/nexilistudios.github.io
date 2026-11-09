@@ -1,0 +1,5 @@
+<map id="nexilis::client::ClientAPI::getClientFromRoom" name="nexilis::client::ClientAPI::getClientFromRoom">
+<area shape="rect" id="Node000001" title="Return an owned session snapshot copied under the room lock." alt="" coords="229,5,405,45"/>
+<area shape="rect" id="Node000002" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a39a7bdd856ecdbeccd6796b87e64914f" title=" " alt="" coords="5,5,181,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,28,182,28,182,23,215,23"/>
+</map>

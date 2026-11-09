@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.8-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.9-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -108,7 +108,7 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Boost abstraction for serverside clients and rooms. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/db7/server__json_8hh_source.html#l00030">30</a> of file <a class="el" href="../../d8/db7/server__json_8hh_source.html">server_json.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/db7/server__json_8hh_source.html#l00031">31</a> of file <a class="el" href="../../d8/db7/server__json_8hh_source.html">server_json.hh</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9678de83d33d93f7cdd34846e0483130" name="a9678de83d33d93f7cdd34846e0483130"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9678de83d33d93f7cdd34846e0483130">&#9670;&#160;</a></span>ServerJson()</h2>
@@ -167,7 +167,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">   50</span>{</div>
 <div class="line"><span class="lineno">   51</span>    boost::json::object clientDataObj;</div>
 <div class="line"><span class="lineno">   52</span> </div>
-<div class="line"><span class="lineno">   53</span>    <span class="keyword">auto</span>&amp; clients = <a class="code hl_function" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#a1fe5ffd9a04e6f2088e0146a1112eda3">ClientStorage::getAllClients</a>();</div>
+<div class="line"><span class="lineno">   53</span>    <span class="keyword">auto</span> clients = <a class="code hl_function" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#aaea84dd6f0296109d1c006d421650dc2">ClientStorage::getAllClients</a>();</div>
 <div class="line"><span class="lineno">   54</span> </div>
 <div class="line"><span class="lineno">   55</span>    <span class="keywordflow">if</span> (clients.empty())</div>
 <div class="line"><span class="lineno">   56</span>    {</div>
@@ -183,14 +183,14 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   66</span>    <span class="keywordflow">return</span> clientDataObj;</div>
 <div class="line"><span class="lineno">   67</span>}</div>
 <div class="ttc" id="aclassnexilis_1_1Log_html_a66755adfac1917c8b8791a018f31c643"><div class="ttname"><a href="../../dc/dbc/classnexilis_1_1Log.html#a66755adfac1917c8b8791a018f31c643">nexilis::Log::info</a></div><div class="ttdeci">static void info(const T &amp;data, const Args &amp;... args)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de3/log_8hh_source.html#l00111">log.hh:111</a></div></div>
-<div class="ttc" id="aclassnexilis_1_1server_1_1ClientStorage_html_a1fe5ffd9a04e6f2088e0146a1112eda3"><div class="ttname"><a href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#a1fe5ffd9a04e6f2088e0146a1112eda3">nexilis::server::ClientStorage::getAllClients</a></div><div class="ttdeci">static std::vector&lt; std::unique_ptr&lt; User &gt; &gt; &amp; getAllClients()</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d56/client__storage_8cc_source.html#l00044">client_storage.cc:44</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1server_1_1ClientStorage_html_aaea84dd6f0296109d1c006d421650dc2"><div class="ttname"><a href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#aaea84dd6f0296109d1c006d421650dc2">nexilis::server::ClientStorage::getAllClients</a></div><div class="ttdeci">static std::vector&lt; std::shared_ptr&lt; User &gt; &gt; getAllClients()</div><div class="ttdoc">Snapshot of owning handles. This does not lock mutable user fields.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d56/client__storage_8cc_source.html#l00045">client_storage.cc:45</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d6/dc0/classnexilis_1_1server_1_1ServerJson_a644be521790ad79ccf5752920e3c9e56_cgraph.png" border="0" usemap="#ad6/dc0/classnexilis_1_1server_1_1ServerJson_a644be521790ad79ccf5752920e3c9e56_cgraph" alt=""/></div>
 <map name="ad6/dc0/classnexilis_1_1server_1_1ServerJson_a644be521790ad79ccf5752920e3c9e56_cgraph" id="ad6/dc0/classnexilis_1_1server_1_1ServerJson_a644be521790ad79ccf5752920e3c9e56_cgraph">
 <area shape="rect" title="Get data about the clients in the server." alt="" coords="5,35,196,75"/>
-<area shape="rect" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#a1fe5ffd9a04e6f2088e0146a1112eda3" title=" " alt="" coords="244,5,455,45"/>
+<area shape="rect" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#aaea84dd6f0296109d1c006d421650dc2" title="Snapshot of owning handles. This does not lock mutable user fields." alt="" coords="244,5,455,45"/>
 <area shape="poly" title=" " alt="" coords="196,41,230,37,231,42,196,46"/>
 <area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a66755adfac1917c8b8791a018f31c643" title=" " alt="" coords="285,70,414,95"/>
 <area shape="poly" title=" " alt="" coords="196,63,271,71,271,77,196,68"/>
@@ -210,9 +210,9 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="707,92,674,92,674,87,707,87"/>
 <area shape="rect" href="../../d6/dc0/classnexilis_1_1server_1_1ServerJson.html#afbd6e9270f8afc7020939ea5e41505de" title="Return all data from the server." alt="" coords="481,133,672,173"/>
 <area shape="poly" title=" " alt="" coords="728,116,653,136,651,131,727,110"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a36f27b2491becaf040095c3cb5ec4067" title=" " alt="" coords="243,37,432,77"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a205831cf4657d0a80391beba1cfd953d" title=" " alt="" coords="243,37,432,77"/>
 <area shape="poly" title=" " alt="" coords="467,43,433,47,432,42,466,37"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#adb7341228f4137e0656f514180b5a45a" title=" " alt="" coords="5,5,195,45"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a523ea35f6efde10413e9718e50a96e70" title=" " alt="" coords="5,5,195,45"/>
 <area shape="poly" title=" " alt="" coords="229,45,194,41,195,35,230,40"/>
 <area shape="rect" href="../../d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="15,69,185,109"/>
 <area shape="poly" title=" " alt="" coords="230,75,186,80,185,75,229,69"/>
@@ -251,7 +251,7 @@ Here is the caller graph for this function:</div>
 <div class="fragment"><div class="line"><span class="lineno">   30</span>{</div>
 <div class="line"><span class="lineno">   31</span>    boost::json::object roomDataObj;</div>
 <div class="line"><span class="lineno">   32</span> </div>
-<div class="line"><span class="lineno">   33</span>    <span class="keyword">auto</span>&amp; rooms = <a class="code hl_function" href="../../db/d96/classnexilis_1_1server_1_1RoomStorage.html#afb508e42ad9e8246209a81cea08d9144">RoomStorage::getAllRooms</a>();</div>
+<div class="line"><span class="lineno">   33</span>    <span class="keyword">auto</span> rooms = <a class="code hl_function" href="../../db/d96/classnexilis_1_1server_1_1RoomStorage.html#a1a34d89eff94828154b7bb44e545dcc6">RoomStorage::getAllRooms</a>();</div>
 <div class="line"><span class="lineno">   34</span> </div>
 <div class="line"><span class="lineno">   35</span>    <span class="keywordflow">if</span> (rooms.empty())</div>
 <div class="line"><span class="lineno">   36</span>    {</div>
@@ -266,14 +266,14 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">   45</span>    }</div>
 <div class="line"><span class="lineno">   46</span>    <span class="keywordflow">return</span> roomDataObj;</div>
 <div class="line"><span class="lineno">   47</span>}</div>
-<div class="ttc" id="aclassnexilis_1_1server_1_1RoomStorage_html_afb508e42ad9e8246209a81cea08d9144"><div class="ttname"><a href="../../db/d96/classnexilis_1_1server_1_1RoomStorage.html#afb508e42ad9e8246209a81cea08d9144">nexilis::server::RoomStorage::getAllRooms</a></div><div class="ttdeci">static std::vector&lt; Room &gt; &amp; getAllRooms()</div><div class="ttdoc">Get all the rooms in the server.</div><div class="ttdef"><b>Definition</b> <a href="../../df/d00/room__storage_8cc_source.html#l00025">room_storage.cc:25</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1server_1_1RoomStorage_html_a1a34d89eff94828154b7bb44e545dcc6"><div class="ttname"><a href="../../db/d96/classnexilis_1_1server_1_1RoomStorage.html#a1a34d89eff94828154b7bb44e545dcc6">nexilis::server::RoomStorage::getAllRooms</a></div><div class="ttdeci">static std::vector&lt; std::shared_ptr&lt; Room &gt; &gt; getAllRooms()</div><div class="ttdef"><b>Definition</b> <a href="../../df/d00/room__storage_8cc_source.html#l00038">room_storage.cc:38</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d6/dc0/classnexilis_1_1server_1_1ServerJson_a869d0093fb9e50ceae2e1e72a59cce1f_cgraph.png" border="0" usemap="#ad6/dc0/classnexilis_1_1server_1_1ServerJson_a869d0093fb9e50ceae2e1e72a59cce1f_cgraph" alt=""/></div>
 <map name="ad6/dc0/classnexilis_1_1server_1_1ServerJson_a869d0093fb9e50ceae2e1e72a59cce1f_cgraph" id="ad6/dc0/classnexilis_1_1server_1_1ServerJson_a869d0093fb9e50ceae2e1e72a59cce1f_cgraph">
 <area shape="rect" title="Get data about the rooms in the server." alt="" coords="5,35,196,75"/>
-<area shape="rect" href="../../db/d96/classnexilis_1_1server_1_1RoomStorage.html#afb508e42ad9e8246209a81cea08d9144" title="Get all the rooms in the server." alt="" coords="244,5,455,45"/>
+<area shape="rect" href="../../db/d96/classnexilis_1_1server_1_1RoomStorage.html#a1a34d89eff94828154b7bb44e545dcc6" title=" " alt="" coords="244,5,455,45"/>
 <area shape="poly" title=" " alt="" coords="196,41,230,37,231,42,196,46"/>
 <area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a66755adfac1917c8b8791a018f31c643" title=" " alt="" coords="285,70,414,95"/>
 <area shape="poly" title=" " alt="" coords="196,63,271,71,271,77,196,68"/>
@@ -293,9 +293,9 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="707,92,674,92,674,87,707,87"/>
 <area shape="rect" href="../../d6/dc0/classnexilis_1_1server_1_1ServerJson.html#afbd6e9270f8afc7020939ea5e41505de" title="Return all data from the server." alt="" coords="481,133,672,173"/>
 <area shape="poly" title=" " alt="" coords="728,116,653,136,651,131,727,110"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a36f27b2491becaf040095c3cb5ec4067" title=" " alt="" coords="243,37,432,77"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a205831cf4657d0a80391beba1cfd953d" title=" " alt="" coords="243,37,432,77"/>
 <area shape="poly" title=" " alt="" coords="467,43,433,47,432,42,466,37"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#adb7341228f4137e0656f514180b5a45a" title=" " alt="" coords="5,5,195,45"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a523ea35f6efde10413e9718e50a96e70" title=" " alt="" coords="5,5,195,45"/>
 <area shape="poly" title=" " alt="" coords="229,45,194,41,195,35,230,40"/>
 <area shape="rect" href="../../d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="15,69,185,109"/>
 <area shape="poly" title=" " alt="" coords="230,75,186,80,185,75,229,69"/>
@@ -354,14 +354,14 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="196,73,230,73,230,78,196,78"/>
 <area shape="rect" href="../../d6/dc0/classnexilis_1_1server_1_1ServerJson.html#a869d0093fb9e50ceae2e1e72a59cce1f" title="Get data about the rooms in the server." alt="" coords="244,119,435,159"/>
 <area shape="poly" title=" " alt="" coords="177,93,252,113,250,118,175,98"/>
-<area shape="rect" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#a1fe5ffd9a04e6f2088e0146a1112eda3" title=" " alt="" coords="483,30,693,70"/>
+<area shape="rect" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#aaea84dd6f0296109d1c006d421650dc2" title="Snapshot of owning handles. This does not lock mutable user fields." alt="" coords="483,30,693,70"/>
 <area shape="poly" title=" " alt="" coords="434,63,469,59,469,65,435,68"/>
 <area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a66755adfac1917c8b8791a018f31c643" title=" " alt="" coords="523,95,653,120"/>
 <area shape="poly" title=" " alt="" coords="435,85,510,95,509,100,434,90"/>
 <area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#abbfff214c9149463f4d7a15990b9361a" title="Send info message." alt="" coords="741,87,908,127"/>
 <area shape="poly" title=" " alt="" coords="653,105,728,105,728,110,653,110"/>
 <area shape="poly" title=" " alt="" coords="434,124,509,115,510,120,435,130"/>
-<area shape="rect" href="../../db/d96/classnexilis_1_1server_1_1RoomStorage.html#afb508e42ad9e8246209a81cea08d9144" title="Get all the rooms in the server." alt="" coords="483,145,693,185"/>
+<area shape="rect" href="../../db/d96/classnexilis_1_1server_1_1RoomStorage.html#a1a34d89eff94828154b7bb44e545dcc6" title=" " alt="" coords="483,145,693,185"/>
 <area shape="poly" title=" " alt="" coords="435,146,469,150,469,155,434,152"/>
 </map>
 </div>

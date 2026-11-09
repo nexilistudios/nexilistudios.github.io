@@ -12,7 +12,7 @@
 <area shape="poly" id="edge27_Node000001_Node000019" title=" " alt="" coords="126,860,179,822,246,784,276,773,278,778,248,789,182,826,129,865"/>
 <area shape="rect" id="Node000020" href="$d9/df3/classnexilis_1_1server_1_1DefaultArgs.html#a4ad6243462ef5478a30b330f35a1f6ef" title=" " alt="" coords="290,799,461,839"/>
 <area shape="poly" id="edge28_Node000001_Node000020" title=" " alt="" coords="188,860,276,839,277,844,189,865"/>
-<area shape="rect" id="Node000021" href="$db/d96/classnexilis_1_1server_1_1RoomStorage.html#a5844ce073678e9563067641007c3c939" title=" " alt="" coords="270,863,481,903"/>
+<area shape="rect" id="Node000021" href="$db/d96/classnexilis_1_1server_1_1RoomStorage.html#ab485886b13f88d861cf50ad148391fb5" title=" " alt="" coords="270,863,481,903"/>
 <area shape="poly" id="edge29_Node000001_Node000021" title=" " alt="" coords="199,880,256,880,256,885,199,885"/>
 <area shape="rect" id="Node000022" href="$d9/df3/classnexilis_1_1server_1_1DefaultArgs.html#ab0f8e94e52cb97cba7df5c6a44093e25" title=" " alt="" coords="290,927,461,967"/>
 <area shape="poly" id="edge30_Node000001_Node000022" title=" " alt="" coords="189,900,277,921,276,926,188,905"/>
@@ -63,7 +63,7 @@
 <area shape="poly" id="edge24_Node000017_Node000008" title=" " alt="" coords="949,504,1003,532,1067,555,1128,569,1176,577,1224,574,1280,555,1313,535,1341,508,1380,453,1384,456,1345,511,1316,539,1282,560,1225,579,1176,582,1127,574,1066,560,1001,537,947,509"/>
 <area shape="rect" id="Node000024" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#abbfff214c9149463f4d7a15990b9361a" title="Send info message." alt="" coords="574,831,741,871"/>
 <area shape="poly" id="edge32_Node000023_Node000024" title=" " alt="" coords="440,1000,473,992,502,977,513,966,520,955,526,931,532,906,539,893,550,881,560,873,564,877,554,885,543,896,537,908,531,932,525,957,518,969,506,981,475,997,441,1005"/>
-<area shape="rect" id="Node000026" href="$da/de9/classnexilis_1_1server_1_1ClientStorage.html#ab8e6779096b1d5e58ed403412cd80bcf" title=" " alt="" coords="552,895,763,935"/>
+<area shape="rect" id="Node000026" href="$da/de9/classnexilis_1_1server_1_1ClientStorage.html#acdb61fe86e1f6a500b143675bd774503" title="Retain the returned handle throughout the operation on the user." alt="" coords="552,895,763,935"/>
 <area shape="poly" id="edge34_Node000025_Node000026" title=" " alt="" coords="469,1043,502,1026,518,1009,526,990,534,971,550,951,570,939,572,943,554,955,538,974,531,992,523,1011,506,1030,471,1048"/>
 <area shape="poly" id="edge39_Node000028_Node000008" title=" " alt="" coords="469,1176,487,1167,502,1155,517,1137,524,1117,525,1077,527,1036,534,1015,550,995,576,975,601,964,625,959,650,958,702,958,730,954,762,944,921,884,1045,832,1100,801,1156,763,1215,714,1279,650,1318,601,1348,547,1370,496,1385,454,1390,456,1375,498,1353,549,1322,604,1283,654,1218,718,1159,767,1103,806,1047,837,923,889,764,949,731,959,702,963,650,963,626,964,603,969,579,980,554,999,539,1018,532,1037,531,1077,529,1118,522,1139,506,1159,490,1172,471,1180"/>
 <area shape="rect" id="Node000029" href="$d2/d8d/group__UserBoostTCP.html#gad64b1d7881430c9dc278fcab25c7e4a6" title=" " alt="" coords="581,1009,733,1049"/>

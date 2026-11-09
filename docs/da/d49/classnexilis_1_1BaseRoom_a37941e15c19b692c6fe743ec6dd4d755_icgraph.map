@@ -1,0 +1,11 @@
+<map id="nexilis::BaseRoom::addObject" name="nexilis::BaseRoom::addObject">
+<area shape="rect" id="Node000001" title="Add an Object2D to the room." alt="" coords="213,101,364,141"/>
+<area shape="rect" id="Node000002" href="$d1/d01/classnexilis_1_1server_1_1Room.html#af00107732a5e76d21b1b33b027174cc2" title="Server&#45;authored additions bypass caps but share the resource lock." alt="" coords="5,5,165,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,97,164,60,137,48,139,43,166,55,240,92"/>
+<area shape="rect" id="Node000003" href="$d1/d01/classnexilis_1_1server_1_1Room.html#a0454e4fdc4668c9cf4e420a5c3eac6a3" title=" " alt="" coords="5,69,165,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,110,165,105,166,99,200,105"/>
+<area shape="rect" id="Node000004" href="$d1/d01/classnexilis_1_1server_1_1Room.html#a1adeb97790b3426f0328058055ae1309" title="Client creation caps check and insert atomically. Zero disables creation." alt="" coords="5,133,165,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="200,138,166,143,165,138,199,133"/>
+<area shape="rect" id="Node000005" href="$d1/d01/classnexilis_1_1server_1_1Room.html#a26663a68c0d3345f979ca390d8a7984a" title=" " alt="" coords="5,197,165,237"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="240,150,166,188,139,200,137,195,164,183,238,146"/>
+</map>

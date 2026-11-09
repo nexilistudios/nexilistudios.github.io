@@ -30,11 +30,11 @@
 <area shape="poly" id="edge13_Node000012_Node000004" title=" " alt="" coords="256,515,241,504,199,455,166,399,142,339,124,278,112,219,104,166,99,89,104,89,110,166,117,218,129,277,147,337,171,396,203,452,244,500,259,511"/>
 <area shape="rect" id="Node000014" href="$dc/dee/log__c_8cc.html#af2a08d8347db99e3e3f800daa675f534" title=" " alt="" coords="266,564,409,589"/>
 <area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="477,597,408,588,409,583,477,592"/>
-<area shape="rect" id="Node000015" href="$da/d15/classnexilis_1_1server_1_1Command.html#a36f27b2491becaf040095c3cb5ec4067" title=" " alt="" coords="243,614,432,654"/>
+<area shape="rect" id="Node000015" href="$da/d15/classnexilis_1_1server_1_1Command.html#a205831cf4657d0a80391beba1cfd953d" title=" " alt="" coords="243,614,432,654"/>
 <area shape="poly" id="edge16_Node000013_Node000015" title=" " alt="" coords="478,619,432,625,432,620,477,614"/>
 <area shape="rect" id="Node000018" href="$d8/d6b/classnexilis_1_1client_1_1af__inet_1_1TCPClient.html#a3344f385a6c0a606ef330f39b7a44fbf" title="NXProtocol::start() implementation." alt="" coords="256,678,419,718"/>
 <area shape="poly" id="edge19_Node000013_Node000018" title=" " alt="" coords="497,626,481,632,457,650,433,668,407,680,404,676,431,664,454,646,479,628,495,621"/>
-<area shape="rect" id="Node000016" href="$da/d15/classnexilis_1_1server_1_1Command.html#adb7341228f4137e0656f514180b5a45a" title=" " alt="" coords="5,582,195,622"/>
+<area shape="rect" id="Node000016" href="$da/d15/classnexilis_1_1server_1_1Command.html#a523ea35f6efde10413e9718e50a96e70" title=" " alt="" coords="5,582,195,622"/>
 <area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="229,622,194,617,195,612,230,617"/>
 <area shape="rect" id="Node000017" href="$d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="15,646,185,686"/>
 <area shape="poly" id="edge18_Node000015_Node000017" title=" " alt="" coords="230,651,186,657,185,652,229,646"/>

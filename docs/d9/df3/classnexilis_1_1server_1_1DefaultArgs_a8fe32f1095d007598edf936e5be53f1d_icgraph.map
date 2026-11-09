@@ -66,9 +66,9 @@
 <area shape="poly" id="edge65_Node000001_Node000036" title=" " alt="" coords="851,1083,847,1267,840,1396,829,1536,813,1674,790,1802,775,1858,759,1907,740,1948,718,1979,696,1996,693,1992,714,1976,735,1945,754,1905,770,1856,785,1801,808,1674,824,1535,835,1396,841,1267,845,1083"/>
 <area shape="rect" id="Node000037" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a1fd0add1c5afaa69f27d4af1de5b4315" title=" " alt="" coords="495,2053,701,2093"/>
 <area shape="poly" id="edge67_Node000001_Node000037" title=" " alt="" coords="851,1083,849,1278,843,1416,833,1566,817,1715,794,1852,779,1912,761,1965,741,2009,718,2043,703,2056,700,2052,714,2040,736,2007,756,1963,773,1911,788,1851,812,1714,828,1565,838,1416,843,1278,846,1083"/>
-<area shape="rect" id="Node000003" href="$da/d15/classnexilis_1_1server_1_1Command.html#a36f27b2491becaf040095c3cb5ec4067" title=" " alt="" coords="243,1029,432,1069"/>
+<area shape="rect" id="Node000003" href="$da/d15/classnexilis_1_1server_1_1Command.html#a205831cf4657d0a80391beba1cfd953d" title=" " alt="" coords="243,1029,432,1069"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="492,50,482,59,459,93,438,138,420,193,404,256,379,398,362,553,351,706,345,845,341,1029,336,1029,339,845,346,706,357,552,374,398,399,255,415,192,433,136,454,91,478,56,488,46"/>
-<area shape="rect" id="Node000004" href="$da/d15/classnexilis_1_1server_1_1Command.html#adb7341228f4137e0656f514180b5a45a" title=" " alt="" coords="5,997,195,1037"/>
+<area shape="rect" id="Node000004" href="$da/d15/classnexilis_1_1server_1_1Command.html#a523ea35f6efde10413e9718e50a96e70" title=" " alt="" coords="5,997,195,1037"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="229,1037,194,1033,195,1027,230,1032"/>
 <area shape="rect" id="Node000005" href="$d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="15,1061,185,1101"/>
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="230,1067,186,1072,185,1067,229,1061"/>

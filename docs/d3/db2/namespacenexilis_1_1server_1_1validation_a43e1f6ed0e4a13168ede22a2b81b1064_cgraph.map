@@ -1,0 +1,5 @@
+<map id="nexilis::server::validation::isValidOptionalAssetPath" name="nexilis::server::validation::isValidOptionalAssetPath">
+<area shape="rect" id="Node000001" title="An empty asset path means &quot;no asset&quot;, which is valid for room objects." alt="" coords="5,5,197,45"/>
+<area shape="rect" id="Node000002" href="$d3/db2/namespacenexilis_1_1server_1_1validation.html#a1aba72c479578f7b9f72d250ac7af505" title="Check that a path is relative and consists of safe path segments." alt="" coords="245,5,432,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,23,232,23,232,28,197,28"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="include/nexilis/server/room_limits.hh" name="include/nexilis/server/room_limits.hh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="106,5,267,45"/>
+<area shape="rect" id="Node000002" href="$dd/da5/nexilis__constants_8hh.html" title=" " alt="" coords="5,93,208,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,47,130,85,127,82,165,44"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="233,93,303,119"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="208,44,248,82,244,85,205,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="31,167,97,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,120,80,156,76,154,97,118"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="121,167,180,192"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="116,118,139,154,134,156,112,120"/>
+</map>

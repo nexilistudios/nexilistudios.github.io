@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.8-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.9-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -155,39 +155,38 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">bool</span> acceptClients();</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">void</span> handleClient(boost::asio::ip::tcp::socket socket);</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">void</span> handleHandshake(boost::asio::ip::tcp::socket socket, std::function&lt;<span class="keywordtype">void</span>()&gt; onCompleted);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> receiveMessage(boost::asio::ip::tcp::socket&amp; socket);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    std::string getClientAddress(boost::asio::ip::tcp::socket&amp; socket);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordtype">void</span> startSwitchedAccepting();</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    uint16_t switchToSessionPort();</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keyword">const</span> uint16_t m_defaultServerPort = <a class="code hl_function" href="../../db/d41/classnexilis_1_1Ports.html#a01bfdb03f223f2a958c79f3568001794">Ports::getBoostTCPPort</a>();</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    std::unique_ptr&lt;std::atomic&lt;bool&gt;&gt; m_firstClientConnected;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    std::unique_ptr&lt;std::atomic&lt;bool&gt;&gt; m_stopped;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    std::unique_ptr&lt;std::mutex&gt; m_mutex;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    std::unique_ptr&lt;boost::asio::io_context&gt; m_ioContext;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    std::shared_ptr&lt;boost::asio::ssl::context&gt; m_tlsContext;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    boost::asio::ip::tcp::acceptor m_acceptor;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    boost::asio::ip::tcp::acceptor m_switchedAcceptor;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    std::unique_ptr&lt;std::atomic&lt;uint16_t&gt;&gt; m_switchedPort;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    std::thread m_listenThread;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    std::thread m_ioContextThread;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    std::thread m_switchedAcceptThread;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    std::vector&lt;std::thread&gt; m_clientThreads;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>};</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    std::string getClientAddress(boost::asio::ip::tcp::socket&amp; socket);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordtype">void</span> startSwitchedAccepting();</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    uint16_t switchToSessionPort();</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keyword">const</span> uint16_t m_defaultServerPort = <a class="code hl_function" href="../../db/d41/classnexilis_1_1Ports.html#a01bfdb03f223f2a958c79f3568001794">Ports::getBoostTCPPort</a>();</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    std::unique_ptr&lt;std::atomic&lt;bool&gt;&gt; m_firstClientConnected;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    std::unique_ptr&lt;std::atomic&lt;bool&gt;&gt; m_stopped;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    std::unique_ptr&lt;std::mutex&gt; m_mutex;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    std::unique_ptr&lt;boost::asio::io_context&gt; m_ioContext;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    std::shared_ptr&lt;boost::asio::ssl::context&gt; m_tlsContext;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    boost::asio::ip::tcp::acceptor m_acceptor;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    boost::asio::ip::tcp::acceptor m_switchedAcceptor;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    std::unique_ptr&lt;std::atomic&lt;uint16_t&gt;&gt; m_switchedPort;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    std::thread m_listenThread;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    std::thread m_ioContextThread;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    std::thread m_switchedAcceptThread;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    std::vector&lt;std::thread&gt; m_clientThreads;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>};</div>
 </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>} <span class="comment">// namespace nexilis::server::nxboost</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>} <span class="comment">// namespace nexilis::server::nxboost</span></div>
 </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassnexilis_1_1NXProtocol_html"><div class="ttname"><a href="../../d5/da4/classnexilis_1_1NXProtocol.html">nexilis::NXProtocol</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/db5/nx__protocol_8hh_source.html#l00025">nx_protocol.hh:26</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1NXProtocol_html_a369b4d31659356389601322319be1490"><div class="ttname"><a href="../../d5/da4/classnexilis_1_1NXProtocol.html#a369b4d31659356389601322319be1490">nexilis::NXProtocol::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition</b> <a href="../../d8/db5/nx__protocol_8hh_source.html#l00029">nx_protocol.hh:30</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1NXProtocol_html_a369b4d31659356389601322319be1490a70aca1e6aff85ccb6530e623ff62168c"><div class="ttname"><a href="../../d5/da4/classnexilis_1_1NXProtocol.html#a369b4d31659356389601322319be1490a70aca1e6aff85ccb6530e623ff62168c">nexilis::NXProtocol::Type::BOOST_TCP_SERVER</a></div><div class="ttdeci">@ BOOST_TCP_SERVER</div></div>
 <div class="ttc" id="aclassnexilis_1_1NxClass_html"><div class="ttname"><a href="../../d2/d7e/classnexilis_1_1NxClass.html">nexilis::NxClass</a></div><div class="ttdef"><b>Definition</b> <a href="../../d6/d9e/nx__class_8hh_source.html#l00027">nx_class.hh:28</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1Ports_html_a01bfdb03f223f2a958c79f3568001794"><div class="ttname"><a href="../../db/d41/classnexilis_1_1Ports.html#a01bfdb03f223f2a958c79f3568001794">nexilis::Ports::getBoostTCPPort</a></div><div class="ttdeci">static uint16_t getBoostTCPPort()</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dfb/ports_8cc_source.html#l00024">ports.cc:24</a></div></div>
-<div class="ttc" id="aclassnexilis_1_1server_1_1ServerConfig_html"><div class="ttname"><a href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html">nexilis::server::ServerConfig</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d27/server__config_8hh_source.html#l00029">server_config.hh:30</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1server_1_1ServerConfig_html"><div class="ttname"><a href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html">nexilis::server::ServerConfig</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d27/server__config_8hh_source.html#l00030">server_config.hh:31</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1server_1_1ServerProtocol_html"><div class="ttname"><a href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html">nexilis::server::ServerProtocol</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/dc6/server__protocol_8hh_source.html#l00028">server_protocol.hh:29</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1server_1_1nxboost_1_1TCPServer_html"><div class="ttname"><a href="../../d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html">nexilis::server::nxboost::TCPServer</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d9a/nxboost_2tcp__server_8hh_source.html#l00036">tcp_server.hh:39</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1server_1_1nxboost_1_1TCPServer_html_a25730adef60b0adcd5a4d1d408d02244"><div class="ttname"><a href="../../d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#a25730adef60b0adcd5a4d1d408d02244">nexilis::server::nxboost::TCPServer::stop</a></div><div class="ttdeci">void stop() override</div><div class="ttdoc">NXProtocol::stop() implementation.</div><div class="ttdef"><b>Definition</b> <a href="../../df/dac/af__inet_2tcp__server_8cc_source.html#l00110">tcp_server.cc:110</a></div></div>
@@ -195,7 +194,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="ttc" id="aclassnexilis_1_1server_1_1nxboost_1_1TCPServer_html_a35fd3f2e67731e41113c957cd533c7fb"><div class="ttname"><a href="../../d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#a35fd3f2e67731e41113c957cd533c7fb">nexilis::server::nxboost::TCPServer::start</a></div><div class="ttdeci">void start() override</div><div class="ttdoc">NXProtocol::start() implementation.</div><div class="ttdef"><b>Definition</b> <a href="../../df/dac/af__inet_2tcp__server_8cc_source.html#l00099">tcp_server.cc:99</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1server_1_1nxboost_1_1TCPServer_html_a62b21eca9e173a6ba88c75fca5719eb6"><div class="ttname"><a href="../../d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#a62b21eca9e173a6ba88c75fca5719eb6">nexilis::server::nxboost::TCPServer::TCPServer</a></div><div class="ttdeci">TCPServer(const TCPServer &amp;)=delete</div><div class="ttdoc">Deleted move constructor.</div></div>
 <div class="ttc" id="aclassnexilis_1_1server_1_1nxboost_1_1TCPServer_html_a82fccf956c3f0110a339642081ff9c68"><div class="ttname"><a href="../../d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#a82fccf956c3f0110a339642081ff9c68">nexilis::server::nxboost::TCPServer::~TCPServer</a></div><div class="ttdeci">~TCPServer()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition</b> <a href="../../df/dac/af__inet_2tcp__server_8cc_source.html#l00047">tcp_server.cc:47</a></div></div>
-<div class="ttc" id="aclassnexilis_1_1server_1_1nxboost_1_1TCPServer_html_a90a247baeba1fe0cb18fe13c242c26d7"><div class="ttname"><a href="../../d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#a90a247baeba1fe0cb18fe13c242c26d7">nexilis::server::nxboost::TCPServer::getPort</a></div><div class="ttdeci">uint16_t getPort() const</div><div class="ttdoc">Get the port where the server is running.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dbc/nxboost_2tcp__server_8cc_source.html#l00789">tcp_server.cc:789</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1server_1_1nxboost_1_1TCPServer_html_a90a247baeba1fe0cb18fe13c242c26d7"><div class="ttname"><a href="../../d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#a90a247baeba1fe0cb18fe13c242c26d7">nexilis::server::nxboost::TCPServer::getPort</a></div><div class="ttdeci">uint16_t getPort() const</div><div class="ttdoc">Get the port where the server is running.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dbc/nxboost_2tcp__server_8cc_source.html#l00744">tcp_server.cc:744</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1server_1_1nxboost_1_1TCPServer_html_ae29ac09253f9ecb486cc1d1735b2caae"><div class="ttname"><a href="../../d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#ae29ac09253f9ecb486cc1d1735b2caae">nexilis::server::nxboost::TCPServer::operator=</a></div><div class="ttdeci">TCPServer &amp; operator=(TCPServer &amp;&amp;other) noexcept</div><div class="ttdoc">Move assignment operator.</div><div class="ttdef"><b>Definition</b> <a href="../../df/dac/af__inet_2tcp__server_8cc_source.html#l00079">tcp_server.cc:79</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1server_1_1nxboost_1_1TCPServer_html_afc1f4d3b358c95034aad01506c57951e"><div class="ttname"><a href="../../d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#afc1f4d3b358c95034aad01506c57951e">nexilis::server::nxboost::TCPServer::operator=</a></div><div class="ttdeci">TCPServer &amp; operator=(const TCPServer &amp;)=delete</div><div class="ttdoc">Deleted move assignment operator.</div></div>
 <div class="ttc" id="amessage__handler_8hh_html"><div class="ttname"><a href="../../da/de8/message__handler_8hh.html">message_handler.hh</a></div></div>

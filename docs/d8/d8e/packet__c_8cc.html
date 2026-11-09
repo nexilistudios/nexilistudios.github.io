@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.8-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.9-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -605,7 +605,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  123</span>        <span class="keywordflow">return</span> {};</div>
 <div class="line"><span class="lineno">  124</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../d8/d8e/packet__c_8cc.html#a0e0d970b15f9446b709c4a6b6179d524">convert_nx_data</a>(<a class="code hl_function" href="../../d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a7d7bf9f7d979fde6d5863311c2c9721d">nexilis::client::ClientImpl::room_communicate_broadcast</a>(*client_api-&gt;api, message));</div>
 <div class="line"><span class="lineno">  125</span>}</div>
-<div class="ttc" id="astructnexilis_1_1client_1_1ClientImpl_html_a7d7bf9f7d979fde6d5863311c2c9721d"><div class="ttname"><a href="../../d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a7d7bf9f7d979fde6d5863311c2c9721d">nexilis::client::ClientImpl::room_communicate_broadcast</a></div><div class="ttdeci">static nx_data room_communicate_broadcast(ClientAPI &amp;api, const std::string &amp;message)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d7e/packet_8cc_source.html#l00206">packet.cc:206</a></div></div>
+<div class="ttc" id="astructnexilis_1_1client_1_1ClientImpl_html_a7d7bf9f7d979fde6d5863311c2c9721d"><div class="ttname"><a href="../../d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a7d7bf9f7d979fde6d5863311c2c9721d">nexilis::client::ClientImpl::room_communicate_broadcast</a></div><div class="ttdeci">static nx_data room_communicate_broadcast(ClientAPI &amp;api, const std::string &amp;message)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d7e/packet_8cc_source.html#l00207">packet.cc:207</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -851,7 +851,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  117</span>            *client_api-&gt;api, sound, <a class="code hl_class" href="../../d9/d9e/classnexilis_1_1Vector3.html">nexilis::Vector3f</a>(x, y, z)));</div>
 <div class="line"><span class="lineno">  118</span>}</div>
 <div class="ttc" id="aclassnexilis_1_1Vector3_html"><div class="ttname"><a href="../../d9/d9e/classnexilis_1_1Vector3.html">nexilis::Vector3&lt; float &gt;</a></div></div>
-<div class="ttc" id="astructnexilis_1_1client_1_1ClientImpl_html_ae8b01f94e650959a0dcc2fb4bc68b6cd"><div class="ttname"><a href="../../d5/d69/structnexilis_1_1client_1_1ClientImpl.html#ae8b01f94e650959a0dcc2fb4bc68b6cd">nexilis::client::ClientImpl::room_player3d_audio_event</a></div><div class="ttdeci">static nx_data room_player3d_audio_event(ClientAPI &amp;api, uint8_t soundType, Vector3f position)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d7e/packet_8cc_source.html#l00424">packet.cc:424</a></div></div>
+<div class="ttc" id="astructnexilis_1_1client_1_1ClientImpl_html_ae8b01f94e650959a0dcc2fb4bc68b6cd"><div class="ttname"><a href="../../d5/d69/structnexilis_1_1client_1_1ClientImpl.html#ae8b01f94e650959a0dcc2fb4bc68b6cd">nexilis::client::ClientImpl::room_player3d_audio_event</a></div><div class="ttdeci">static nx_data room_player3d_audio_event(ClientAPI &amp;api, uint8_t soundType, Vector3f position)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d7e/packet_8cc_source.html#l00425">packet.cc:425</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1048,7 +1048,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  108</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../d8/d8e/packet__c_8cc.html#a0e0d970b15f9446b709c4a6b6179d524">convert_nx_data</a>(<a class="code hl_function" href="../../d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a3a4979743a4d7675d1d6ed397202b658">nexilis::client::ClientImpl::room_player3d_fire</a>(</div>
 <div class="line"><span class="lineno">  109</span>            *client_api-&gt;api, <a class="code hl_class" href="../../d9/d9e/classnexilis_1_1Vector3.html">nexilis::Vector3f</a>(x, y, z), slot));</div>
 <div class="line"><span class="lineno">  110</span>}</div>
-<div class="ttc" id="astructnexilis_1_1client_1_1ClientImpl_html_a3a4979743a4d7675d1d6ed397202b658"><div class="ttname"><a href="../../d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a3a4979743a4d7675d1d6ed397202b658">nexilis::client::ClientImpl::room_player3d_fire</a></div><div class="ttdeci">static nx_data room_player3d_fire(ClientAPI &amp;api, Vector3f direction, uint8_t slot)</div><div class="ttdoc">Send an aim direction and equipped slot; the room's server resolves the hit.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d7e/packet_8cc_source.html#l00394">packet.cc:394</a></div></div>
+<div class="ttc" id="astructnexilis_1_1client_1_1ClientImpl_html_a3a4979743a4d7675d1d6ed397202b658"><div class="ttname"><a href="../../d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a3a4979743a4d7675d1d6ed397202b658">nexilis::client::ClientImpl::room_player3d_fire</a></div><div class="ttdeci">static nx_data room_player3d_fire(ClientAPI &amp;api, Vector3f direction, uint8_t slot)</div><div class="ttdoc">Send an aim direction and equipped slot; the room's server resolves the hit.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d7e/packet_8cc_source.html#l00395">packet.cc:395</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1357,7 +1357,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   93</span>        <span class="keywordflow">return</span> {};</div>
 <div class="line"><span class="lineno">   94</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../d8/d8e/packet__c_8cc.html#a0e0d970b15f9446b709c4a6b6179d524">convert_nx_data</a>(<a class="code hl_function" href="../../d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a1fd435b1be2324a3e12a8b29bfd21f66">nexilis::client::ClientImpl::room_player3d_set_team</a>(*client_api-&gt;api, team));</div>
 <div class="line"><span class="lineno">   95</span>}</div>
-<div class="ttc" id="astructnexilis_1_1client_1_1ClientImpl_html_a1fd435b1be2324a3e12a8b29bfd21f66"><div class="ttname"><a href="../../d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a1fd435b1be2324a3e12a8b29bfd21f66">nexilis::client::ClientImpl::room_player3d_set_team</a></div><div class="ttdeci">static nx_data room_player3d_set_team(ClientAPI &amp;api, const std::string &amp;team)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d7e/packet_8cc_source.html#l00414">packet.cc:414</a></div></div>
+<div class="ttc" id="astructnexilis_1_1client_1_1ClientImpl_html_a1fd435b1be2324a3e12a8b29bfd21f66"><div class="ttname"><a href="../../d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a1fd435b1be2324a3e12a8b29bfd21f66">nexilis::client::ClientImpl::room_player3d_set_team</a></div><div class="ttdeci">static nx_data room_player3d_set_team(ClientAPI &amp;api, const std::string &amp;team)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d7e/packet_8cc_source.html#l00415">packet.cc:415</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1432,7 +1432,7 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">  100</span>        <span class="keywordflow">return</span> {};</div>
 <div class="line"><span class="lineno">  101</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../d8/d8e/packet__c_8cc.html#a0e0d970b15f9446b709c4a6b6179d524">convert_nx_data</a>(<a class="code hl_function" href="../../d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a8d1140bf74ed420cf72102c1c673c24d">nexilis::client::ClientImpl::room_player3d_shoot</a>(*client_api-&gt;api, target_id, damage));</div>
 <div class="line"><span class="lineno">  102</span>}</div>
-<div class="ttc" id="astructnexilis_1_1client_1_1ClientImpl_html_a8d1140bf74ed420cf72102c1c673c24d"><div class="ttname"><a href="../../d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a8d1140bf74ed420cf72102c1c673c24d">nexilis::client::ClientImpl::room_player3d_shoot</a></div><div class="ttdeci">static nx_data room_player3d_shoot(ClientAPI &amp;api, uint64_t targetId, float damage)</div><div class="ttdoc">Deprecated wire format: servers reject client-selected hits.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d7e/packet_8cc_source.html#l00384">packet.cc:384</a></div></div>
+<div class="ttc" id="astructnexilis_1_1client_1_1ClientImpl_html_a8d1140bf74ed420cf72102c1c673c24d"><div class="ttname"><a href="../../d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a8d1140bf74ed420cf72102c1c673c24d">nexilis::client::ClientImpl::room_player3d_shoot</a></div><div class="ttdeci">static nx_data room_player3d_shoot(ClientAPI &amp;api, uint64_t targetId, float damage)</div><div class="ttdoc">Deprecated wire format: servers reject client-selected hits.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d7e/packet_8cc_source.html#l00385">packet.cc:385</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

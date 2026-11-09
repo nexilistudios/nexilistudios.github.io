@@ -12,6 +12,7 @@ var searchData=
   ['nexilis_3a_3aserver_9',['server',['../d5/dc9/namespacenexilis_1_1server.html',1,'nexilis']]],
   ['nexilis_3a_3aserver_3a_3aaf_5finet_10',['af_inet',['../db/d65/namespacenexilis_1_1server_1_1af__inet.html',1,'nexilis::server']]],
   ['nexilis_3a_3aserver_3a_3anxboost_11',['nxboost',['../d5/d19/namespacenexilis_1_1server_1_1nxboost.html',1,'nexilis::server']]],
-  ['nexilis_3a_3atls_12',['tls',['../d7/d94/namespacenexilis_1_1tls.html',1,'nexilis']]],
-  ['nexilis_3a_3audp_5fauth_13',['udp_auth',['../db/d44/namespacenexilis_1_1udp__auth.html',1,'nexilis']]]
+  ['nexilis_3a_3aserver_3a_3avalidation_12',['validation',['../d3/db2/namespacenexilis_1_1server_1_1validation.html',1,'nexilis::server']]],
+  ['nexilis_3a_3atls_13',['tls',['../d7/d94/namespacenexilis_1_1tls.html',1,'nexilis']]],
+  ['nexilis_3a_3audp_5fauth_14',['udp_auth',['../db/d44/namespacenexilis_1_1udp__auth.html',1,'nexilis']]]
 ];

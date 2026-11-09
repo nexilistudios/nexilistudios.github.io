@@ -1,8 +1,8 @@
 <map id="nexilis::server::Command::sendRoomCommand" name="nexilis::server::Command::sendRoomCommand">
 <area shape="rect" id="Node000001" title="Send message in room context." alt="" coords="5,120,195,160"/>
-<area shape="rect" id="Node000002" href="$db/d96/classnexilis_1_1server_1_1RoomStorage.html#afb508e42ad9e8246209a81cea08d9144" title="Get all the rooms in the server." alt="" coords="243,24,453,64"/>
+<area shape="rect" id="Node000002" href="$db/d96/classnexilis_1_1server_1_1RoomStorage.html#a1a34d89eff94828154b7bb44e545dcc6" title=" " alt="" coords="243,24,453,64"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,117,242,74,263,66,265,71,244,78,143,122"/>
-<area shape="rect" id="Node000003" href="$da/de9/classnexilis_1_1server_1_1ClientStorage.html#ab8e6779096b1d5e58ed403412cd80bcf" title=" " alt="" coords="243,88,453,128"/>
+<area shape="rect" id="Node000003" href="$da/de9/classnexilis_1_1server_1_1ClientStorage.html#acdb61fe86e1f6a500b143675bd774503" title="Retain the returned handle throughout the operation on the user." alt="" coords="243,88,453,128"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,125,229,121,229,126,195,130"/>
 <area shape="rect" id="Node000004" href="$d4/d3a/classnexilis_1_1server_1_1User.html#a37bf38b5fc17e97faecf5637c8ad7e47" title=" " alt="" coords="272,152,424,192"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="195,150,259,158,258,163,194,155"/>

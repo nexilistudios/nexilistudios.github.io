@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.8-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.9-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -120,7 +120,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get random integer between values. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get a cryptographically random integer in the inclusive range. Reversed ranges throw std::invalid_argument; source failures throw std::runtime_error. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">from</td><td>The smallest possible value. </td></tr>
     <tr><td class="paramname">to</td><td>The biggest possible value. </td></tr>
@@ -129,17 +129,14 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The random integer. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00338">338</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  339</span>{</div>
-<div class="line"><span class="lineno">  340</span>    std::mt19937_64 generator(<a class="code hl_variable" href="../../d8/d34/namespacenexilis.html#adcc8467c6ba49824160d844525662f5f">rand_dev</a>());</div>
-<div class="line"><span class="lineno">  341</span>    std::uniform_int_distribution&lt;int&gt; dist(from, to);</div>
-<div class="line"><span class="lineno">  342</span>    <span class="keywordtype">int</span> randomValue = dist(generator);</div>
-<div class="line"><span class="lineno">  343</span> </div>
-<div class="line"><span class="lineno">  344</span>    assert(randomValue &gt;= from);</div>
-<div class="line"><span class="lineno">  345</span>    assert(randomValue &lt;= to);</div>
-<div class="line"><span class="lineno">  346</span>    <span class="keywordflow">return</span> randomValue;</div>
-<div class="line"><span class="lineno">  347</span>}</div>
-<div class="ttc" id="anamespacenexilis_html_adcc8467c6ba49824160d844525662f5f"><div class="ttname"><a href="../../d8/d34/namespacenexilis.html#adcc8467c6ba49824160d844525662f5f">nexilis::rand_dev</a></div><div class="ttdeci">static std::random_device rand_dev</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d6f/util_8cc_source.html#l00034">util.cc:34</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00357">357</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  358</span>{</div>
+<div class="line"><span class="lineno">  359</span>    <span class="keywordflow">if</span> (from &gt; to)</div>
+<div class="line"><span class="lineno">  360</span>        <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Random integer range is reversed&quot;</span>);</div>
+<div class="line"><span class="lineno">  361</span>    CryptoRandom generator;</div>
+<div class="line"><span class="lineno">  362</span>    std::uniform_int_distribution&lt;int&gt; distribution(from, to);</div>
+<div class="line"><span class="lineno">  363</span>    <span class="keywordflow">return</span> distribution(generator);</div>
+<div class="line"><span class="lineno">  364</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -166,25 +163,25 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get random characters from 'A' to 'Z'. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get cryptographically random characters from 'A' to 'Z'. Source failures throw std::runtime_error; oversized lengths throw std::length_error. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">charAmount</td><td>The amount of characters in the string. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00349">349</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  350</span>{</div>
-<div class="line"><span class="lineno">  351</span>    std::mt19937 eng(<a class="code hl_variable" href="../../d8/d34/namespacenexilis.html#adcc8467c6ba49824160d844525662f5f">rand_dev</a>());</div>
-<div class="line"><span class="lineno">  352</span>    std::uniform_int_distribution&lt;int&gt; distribution(<span class="charliteral">&#39;A&#39;</span>, <span class="charliteral">&#39;Z&#39;</span>);</div>
-<div class="line"><span class="lineno">  353</span> </div>
-<div class="line"><span class="lineno">  354</span>    std::string randomString;</div>
-<div class="line"><span class="lineno">  355</span>    <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; charAmount; ++i)</div>
-<div class="line"><span class="lineno">  356</span>    {</div>
-<div class="line"><span class="lineno">  357</span>        randomString += <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>(distribution(eng));</div>
-<div class="line"><span class="lineno">  358</span>    }</div>
-<div class="line"><span class="lineno">  359</span>    <span class="keywordflow">return</span> randomString;</div>
-<div class="line"><span class="lineno">  360</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00366">366</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  367</span>{</div>
+<div class="line"><span class="lineno">  368</span>    std::string result;</div>
+<div class="line"><span class="lineno">  369</span>    <span class="keywordflow">if</span> (charAmount &gt; result.max_size())</div>
+<div class="line"><span class="lineno">  370</span>        <span class="keywordflow">throw</span> std::length_error(<span class="stringliteral">&quot;Random string length is too large&quot;</span>);</div>
+<div class="line"><span class="lineno">  371</span>    result.resize(<span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(charAmount));</div>
+<div class="line"><span class="lineno">  372</span>    CryptoRandom generator;</div>
+<div class="line"><span class="lineno">  373</span>    std::uniform_int_distribution&lt;int&gt; distribution(<span class="charliteral">&#39;A&#39;</span>, <span class="charliteral">&#39;Z&#39;</span>);</div>
+<div class="line"><span class="lineno">  374</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; character : result)</div>
+<div class="line"><span class="lineno">  375</span>        character = static_cast&lt;char&gt;(distribution(generator));</div>
+<div class="line"><span class="lineno">  376</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  377</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -220,44 +217,24 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get random uint64_t value between 0 and max uint64. </p>
+<p>Get a cryptographically random nonzero uint64_t. Random-source failures throw std::runtime_error; there is no fallback. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00319">319</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  320</span>{</div>
-<div class="line"><span class="lineno">  321</span>    std::mt19937_64 generator(<a class="code hl_variable" href="../../d8/d34/namespacenexilis.html#adcc8467c6ba49824160d844525662f5f">rand_dev</a>());</div>
-<div class="line"><span class="lineno">  322</span>    std::uniform_int_distribution&lt;uint64_t&gt; dist(0, <a class="code hl_variable" href="../../d8/d34/namespacenexilis.html#a411c214c17dbae9c7be3e61441eee2c9">NEXILIS_MAX</a>);</div>
-<div class="line"><span class="lineno">  323</span> </div>
-<div class="line"><span class="lineno">  324</span>    uint64_t randomValue;</div>
-<div class="line"><span class="lineno">  325</span>    <span class="keywordflow">do</span></div>
-<div class="line"><span class="lineno">  326</span>    {</div>
-<div class="line"><span class="lineno">  327</span>        randomValue = dist(generator);</div>
-<div class="line"><span class="lineno">  328</span>    } <span class="keywordflow">while</span> (std::bitset&lt;64&gt;(randomValue).count() &lt; 32); <span class="comment">// Ensure at least 32 bits are set</span></div>
-<div class="line"><span class="lineno">  329</span> </div>
-<div class="line"><span class="lineno">  330</span>    assert((std::is_same&lt;<span class="keyword">decltype</span>(randomValue), uint64_t&gt;::value));</div>
-<div class="line"><span class="lineno">  331</span> </div>
-<div class="line"><span class="lineno">  332</span>    <span class="keywordflow">if</span> (randomValue == 0)</div>
-<div class="line"><span class="lineno">  333</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../df/d06/group__RandFunctions.html#gacb4f385a6c9480e76c639947e185ff07">getRandomUint64</a>();</div>
-<div class="line"><span class="lineno">  334</span> </div>
-<div class="line"><span class="lineno">  335</span>    <span class="keywordflow">return</span> randomValue;</div>
-<div class="line"><span class="lineno">  336</span>}</div>
-<div class="ttc" id="agroup__RandFunctions_html_gacb4f385a6c9480e76c639947e185ff07"><div class="ttname"><a href="../../df/d06/group__RandFunctions.html#gacb4f385a6c9480e76c639947e185ff07">nexilis::Util::getRandomUint64</a></div><div class="ttdeci">static uint64_t getRandomUint64()</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d6f/util_8cc_source.html#l00319">util.cc:319</a></div></div>
-<div class="ttc" id="anamespacenexilis_html_a411c214c17dbae9c7be3e61441eee2c9"><div class="ttname"><a href="../../d8/d34/namespacenexilis.html#a411c214c17dbae9c7be3e61441eee2c9">nexilis::NEXILIS_MAX</a></div><div class="ttdeci">constexpr uint64_t NEXILIS_MAX</div><div class="ttdef"><b>Definition</b> <a href="../../dd/da5/nexilis__constants_8hh_source.html#l00027">nexilis_constants.hh:27</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00346">346</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  347</span>{</div>
+<div class="line"><span class="lineno">  348</span>    CryptoRandom generator;</div>
+<div class="line"><span class="lineno">  349</span>    uint64_t value;</div>
+<div class="line"><span class="lineno">  350</span>    <span class="keywordflow">do</span></div>
+<div class="line"><span class="lineno">  351</span>    {</div>
+<div class="line"><span class="lineno">  352</span>        value = generator();</div>
+<div class="line"><span class="lineno">  353</span>    } <span class="keywordflow">while</span> (value == 0);</div>
+<div class="line"><span class="lineno">  354</span>    <span class="keywordflow">return</span> value;</div>
+<div class="line"><span class="lineno">  355</span>}</div>
 </div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../df/d06/group__RandFunctions_gacb4f385a6c9480e76c639947e185ff07_cgraph.png" border="0" usemap="#adf/d06/group__RandFunctions_gacb4f385a6c9480e76c639947e185ff07_cgraph" alt=""/></div>
-<map name="adf/d06/group__RandFunctions_gacb4f385a6c9480e76c639947e185ff07_cgraph" id="adf/d06/group__RandFunctions_gacb4f385a6c9480e76c639947e185ff07_cgraph">
-<area shape="rect" title=" " alt="" coords="5,29,184,69"/>
-<area shape="poly" title=" " alt="" coords="61,30,59,20,64,11,76,5,95,3,116,6,127,13,124,17,114,11,95,8,78,10,68,15,64,21,66,28"/>
-</map>
-</div>
-<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../df/d06/group__RandFunctions_gacb4f385a6c9480e76c639947e185ff07_icgraph.png" border="0" usemap="#adf/d06/group__RandFunctions_gacb4f385a6c9480e76c639947e185ff07_icgraph" alt=""/></div>
 <map name="adf/d06/group__RandFunctions_gacb4f385a6c9480e76c639947e185ff07_icgraph" id="adf/d06/group__RandFunctions_gacb4f385a6c9480e76c639947e185ff07_icgraph">
 <area shape="rect" title=" " alt="" coords="751,215,929,255"/>
-<area shape="poly" title=" " alt="" coords="882,204,867,197,840,194,816,196,802,201,796,207,799,214,794,216,791,206,799,196,815,191,840,189,869,192,885,199"/>
 <area shape="rect" href="../../df/d29/room__data__c_8cc.html#ac2b2122fe09dc0e28ec3c0a04ec1d7ed" title=" " alt="" coords="496,5,687,31"/>
 <area shape="poly" title=" " alt="" coords="822,204,803,166,776,123,742,81,701,46,676,33,679,28,704,41,746,77,781,120,808,164,827,201"/>
 <area shape="rect" href="../../d6/db8/classnexilis_1_1server_1_1MessageHandler.html#a5f33dc0df903c132243ed14c13cf8826" title=" " alt="" coords="501,55,681,95"/>
@@ -274,9 +251,9 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="816,268,767,318,737,344,704,366,678,378,676,373,701,361,734,339,764,314,812,264"/>
 <area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#abb949f0528da98933c7ed71b1b7c8913" title=" " alt="" coords="480,439,703,479"/>
 <area shape="poly" title=" " alt="" coords="827,269,807,306,780,350,745,393,704,429,683,442,680,437,701,425,741,389,775,346,802,304,822,267"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a36f27b2491becaf040095c3cb5ec4067" title=" " alt="" coords="243,279,432,319"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a205831cf4657d0a80391beba1cfd953d" title=" " alt="" coords="243,279,432,319"/>
 <area shape="poly" title=" " alt="" coords="495,167,481,174,444,198,410,227,358,281,354,277,406,223,441,194,479,169,492,162"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#adb7341228f4137e0656f514180b5a45a" title=" " alt="" coords="5,247,195,287"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a523ea35f6efde10413e9718e50a96e70" title=" " alt="" coords="5,247,195,287"/>
 <area shape="poly" title=" " alt="" coords="229,287,194,283,195,277,230,282"/>
 <area shape="rect" href="../../d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="15,311,185,351"/>
 <area shape="poly" title=" " alt="" coords="230,317,186,322,185,317,229,311"/>

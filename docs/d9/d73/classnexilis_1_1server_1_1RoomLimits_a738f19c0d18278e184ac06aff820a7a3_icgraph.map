@@ -1,0 +1,29 @@
+<map id="nexilis::server::RoomLimits::get" name="nexilis::server::RoomLimits::get">
+<area shape="rect" id="Node000001" title=" " alt="" coords="751,205,980,230"/>
+<area shape="rect" id="Node000002" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a6815bcee9409ea91a5ec13a9b5481688" title=" " alt="" coords="495,5,688,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="844,195,785,128,746,91,701,60,677,48,679,43,704,55,749,87,789,124,848,192"/>
+<area shape="rect" id="Node000006" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a5407146c6b1fa7b968f9e1963fa37f7c" title=" " alt="" coords="488,69,695,109"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="833,199,774,161,702,124,670,112,672,107,704,119,776,157,836,194"/>
+<area shape="rect" id="Node000007" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a7702a108e1318abd0fb19b32529b4bb8" title=" " alt="" coords="495,133,688,173"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="796,204,677,176,678,171,797,199"/>
+<area shape="rect" id="Node000008" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a97175caef23eb9fad365629c3d78e107" title=" " alt="" coords="480,197,703,237"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="737,220,703,220,703,215,737,215"/>
+<area shape="rect" id="Node000009" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a179b17009debe269a88815c62704617d" title=" " alt="" coords="495,261,688,301"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="797,236,678,264,677,259,796,231"/>
+<area shape="rect" id="Node000010" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#abb949f0528da98933c7ed71b1b7c8913" title=" " alt="" coords="480,325,703,365"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="836,240,776,278,704,316,672,328,670,323,702,311,774,273,833,236"/>
+<area shape="rect" id="Node000011" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a2b966ab982b96ce50f2cabb471bd7b56" title=" " alt="" coords="495,389,688,429"/>
+<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="848,243,789,311,749,348,704,380,679,392,677,387,701,375,746,344,785,307,844,240"/>
+<area shape="rect" id="Node000003" href="$da/d15/classnexilis_1_1server_1_1Command.html#a205831cf4657d0a80391beba1cfd953d" title=" " alt="" coords="243,197,432,237"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="492,53,481,60,440,92,404,130,353,198,349,195,400,126,436,88,479,55,490,49"/>
+<area shape="rect" id="Node000004" href="$da/d15/classnexilis_1_1server_1_1Command.html#a523ea35f6efde10413e9718e50a96e70" title=" " alt="" coords="5,165,195,205"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="229,205,194,201,195,195,230,200"/>
+<area shape="rect" id="Node000005" href="$d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="15,229,185,269"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="230,235,186,240,185,235,229,229"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="498,117,481,124,417,161,365,199,362,195,414,157,479,119,496,112"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="499,179,418,200,417,195,497,174"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="466,220,432,220,432,215,466,215"/>
+<area shape="poly" id="edge12_Node000009_Node000003" title=" " alt="" coords="497,260,417,240,418,235,499,255"/>
+<area shape="poly" id="edge14_Node000010_Node000003" title=" " alt="" coords="496,323,479,316,414,278,362,240,365,235,417,274,481,311,498,318"/>
+<area shape="poly" id="edge16_Node000011_Node000003" title=" " alt="" coords="490,386,479,380,436,347,400,308,349,239,353,236,404,305,440,343,481,375,492,381"/>
+</map>

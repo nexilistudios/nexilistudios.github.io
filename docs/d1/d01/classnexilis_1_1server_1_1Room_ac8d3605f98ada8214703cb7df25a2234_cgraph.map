@@ -1,0 +1,17 @@
+<map id="nexilis::server::Room::tryAddGameItem" name="nexilis::server::Room::tryAddGameItem">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,37,165,77"/>
+<area shape="rect" id="Node000002" href="$da/d49/classnexilis_1_1BaseRoom.html#a5a59b4b0525b98bd76944a0de2921a02" title=" " alt="" coords="213,5,364,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,42,199,37,200,42,166,47"/>
+<area shape="rect" id="Node000007" href="$da/d49/classnexilis_1_1BaseRoom.html#aa5ee203cd29be2dafc16845ac81fa916" title=" " alt="" coords="213,69,364,109"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="166,67,200,73,199,78,165,73"/>
+<area shape="rect" id="Node000003" href="$dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="420,13,555,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="364,23,406,23,406,28,364,28"/>
+<area shape="rect" id="Node000005" href="$da/d49/classnexilis_1_1BaseRoom.html#a5850da119501071f3a9e9d8032238fdf" title="Get the 2D/3D context for the room." alt="" coords="412,69,563,109"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="352,43,413,63,411,68,351,48"/>
+<area shape="rect" id="Node000004" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#acc02567dd7e4103305110bafbfd40c08" title="Send error message." alt="" coords="611,5,777,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="555,23,597,23,597,28,555,28"/>
+<area shape="rect" id="Node000006" href="$de/d38/classnexilis_1_1RoomData.html#a2458b902600bffeb1a475792c89823a7" title="Get the context of the room." alt="" coords="619,69,769,109"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="563,87,605,87,605,92,563,92"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="351,67,433,40,435,45,352,72"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="364,87,398,87,398,92,364,92"/>
+</map>

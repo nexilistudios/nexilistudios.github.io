@@ -38,9 +38,10 @@ var searchData=
   ['broadcast_35',['broadcast',['../d6/dec/structCommandPacketBase_1_1Room_1_1Communicate.html#a3a01e423e79afc5e4a5098077e5cd808',1,'CommandPacketBase::Room::Communicate::broadcast()'],['../db/d0c/classnexilis_1_1RoomCommandType.html#ab8c9579b168841027cda6285c68e6431ab605ea609b9dfcf295cfd5a7803dcd37',1,'nexilis::RoomCommandType::broadcast'],['../de/d68/structnexilis_1_1server_1_1Room_1_1Broadcast.html',1,'nexilis::server::Room::Broadcast']]],
   ['broadcast_2ecc_36',['broadcast.cc',['../d8/d93/broadcast_8cc.html',1,'']]],
   ['broadcast_5fencrypted_37',['broadcast_encrypted',['../db/d0c/classnexilis_1_1RoomCommandType.html#ab8c9579b168841027cda6285c68e6431aa073b01b1ce707445692c86e40617563',1,'nexilis::RoomCommandType']]],
-  ['broadcasttoall_38',['broadcastToAll',['../d1/d01/classnexilis_1_1server_1_1Room.html#a8be5c2fb690749127fd5fc2530b9e3d6',1,'nexilis::server::Room']]],
-  ['byaddress_39',['byAddress',['../d1/d06/structnexilis_1_1server_1_1Command_1_1RootAuthState.html#aa9e679a425795f9a797b18815295bbda',1,'nexilis::server::Command::RootAuthState']]],
-  ['byte_20vectors_40',['Functions that converts items to byte vectors.',['../d9/d3d/group__BytevectorConversions.html',1,'']]],
-  ['bytes_20of_20nx_5fdata_20into_20type_41',['Functions that convert the first bytes of nx_data into type.',['../dc/dc3/group__FrontConversions.html',1,'']]],
-  ['bytestofloatbigendian_42',['bytesToFloatBigEndian',['../d8/d34/namespacenexilis.html#af2889eb3347861d077b1f1a02ab9e25f',1,'nexilis']]]
+  ['broadcastinterval_38',['broadcastInterval',['../dd/d16/classnexilis_1_1server_1_1GameplayLimits.html#a5791a25f461d79314b84911ea8215625',1,'nexilis::server::GameplayLimits']]],
+  ['broadcasttoall_39',['broadcastToAll',['../d1/d01/classnexilis_1_1server_1_1Room.html#a8be5c2fb690749127fd5fc2530b9e3d6',1,'nexilis::server::Room']]],
+  ['byaddress_40',['byAddress',['../d1/d06/structnexilis_1_1server_1_1Command_1_1RootAuthState.html#aa9e679a425795f9a797b18815295bbda',1,'nexilis::server::Command::RootAuthState']]],
+  ['byte_20vectors_41',['Functions that converts items to byte vectors.',['../d9/d3d/group__BytevectorConversions.html',1,'']]],
+  ['bytes_20of_20nx_5fdata_20into_20type_42',['Functions that convert the first bytes of nx_data into type.',['../dc/dc3/group__FrontConversions.html',1,'']]],
+  ['bytestofloatbigendian_43',['bytesToFloatBigEndian',['../d8/d34/namespacenexilis.html#af2889eb3347861d077b1f1a02ab9e25f',1,'nexilis']]]
 ];

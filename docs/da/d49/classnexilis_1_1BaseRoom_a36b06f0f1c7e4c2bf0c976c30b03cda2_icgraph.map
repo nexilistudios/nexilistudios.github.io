@@ -1,0 +1,7 @@
+<map id="nexilis::BaseRoom::getObjects2D" name="nexilis::BaseRoom::getObjects2D">
+<area shape="rect" id="Node000001" title=" " alt="" coords="213,37,364,77"/>
+<area shape="rect" id="Node000002" href="$d1/d01/classnexilis_1_1server_1_1Room.html#a1adeb97790b3426f0328058055ae1309" title="Client creation caps check and insert atomically. Zero disables creation." alt="" coords="5,5,165,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,46,165,41,166,35,200,41"/>
+<area shape="rect" id="Node000003" href="$d1/d01/classnexilis_1_1server_1_1Room.html#a26663a68c0d3345f979ca390d8a7984a" title=" " alt="" coords="5,69,165,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="200,74,166,79,165,74,199,69"/>
+</map>

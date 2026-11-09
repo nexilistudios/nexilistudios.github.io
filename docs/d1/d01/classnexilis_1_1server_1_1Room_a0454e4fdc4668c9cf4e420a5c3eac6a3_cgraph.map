@@ -1,0 +1,5 @@
+<map id="nexilis::server::Room::addObject" name="nexilis::server::Room::addObject">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,165,45"/>
+<area shape="rect" id="Node000002" href="$da/d49/classnexilis_1_1BaseRoom.html#a37941e15c19b692c6fe743ec6dd4d755" title="Add an Object2D to the room." alt="" coords="213,5,364,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,23,199,23,199,28,165,28"/>
+</map>

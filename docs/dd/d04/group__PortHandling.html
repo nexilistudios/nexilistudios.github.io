@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.8-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.9-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -113,13 +113,13 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00604">604</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  605</span>{</div>
-<div class="line"><span class="lineno">  606</span>    std::string file_path = <a class="code hl_function" href="../../dd/d04/group__PortHandling.html#ga8dc341fe44a9de8bb4e0b93a4f447a64">getPortFilePath</a>(protocol_type);</div>
-<div class="line"><span class="lineno">  607</span>    <a class="code hl_function" href="../../dd/de4/classnexilis_1_1Util.html#ad4e4e317fd172fff57099fc3284d6299">deleteIfExists</a>(file_path);</div>
-<div class="line"><span class="lineno">  608</span>}</div>
-<div class="ttc" id="aclassnexilis_1_1Util_html_ad4e4e317fd172fff57099fc3284d6299"><div class="ttname"><a href="../../dd/de4/classnexilis_1_1Util.html#ad4e4e317fd172fff57099fc3284d6299">nexilis::Util::deleteIfExists</a></div><div class="ttdeci">static void deleteIfExists(const std::filesystem::path &amp;filePath)</div><div class="ttdoc">File stuff.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d6f/util_8cc_source.html#l00518">util.cc:518</a></div></div>
-<div class="ttc" id="agroup__PortHandling_html_ga8dc341fe44a9de8bb4e0b93a4f447a64"><div class="ttname"><a href="../../dd/d04/group__PortHandling.html#ga8dc341fe44a9de8bb4e0b93a4f447a64">nexilis::Util::getPortFilePath</a></div><div class="ttdeci">static std::string getPortFilePath(NXProtocol::Type protocol_type)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d6f/util_8cc_source.html#l00533">util.cc:533</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00621">621</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  622</span>{</div>
+<div class="line"><span class="lineno">  623</span>    std::string file_path = <a class="code hl_function" href="../../dd/d04/group__PortHandling.html#ga8dc341fe44a9de8bb4e0b93a4f447a64">getPortFilePath</a>(protocol_type);</div>
+<div class="line"><span class="lineno">  624</span>    <a class="code hl_function" href="../../dd/de4/classnexilis_1_1Util.html#ad4e4e317fd172fff57099fc3284d6299">deleteIfExists</a>(file_path);</div>
+<div class="line"><span class="lineno">  625</span>}</div>
+<div class="ttc" id="aclassnexilis_1_1Util_html_ad4e4e317fd172fff57099fc3284d6299"><div class="ttname"><a href="../../dd/de4/classnexilis_1_1Util.html#ad4e4e317fd172fff57099fc3284d6299">nexilis::Util::deleteIfExists</a></div><div class="ttdeci">static void deleteIfExists(const std::filesystem::path &amp;filePath)</div><div class="ttdoc">File stuff.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d6f/util_8cc_source.html#l00535">util.cc:535</a></div></div>
+<div class="ttc" id="agroup__PortHandling_html_ga8dc341fe44a9de8bb4e0b93a4f447a64"><div class="ttname"><a href="../../dd/d04/group__PortHandling.html#ga8dc341fe44a9de8bb4e0b93a4f447a64">nexilis::Util::getPortFilePath</a></div><div class="ttdeci">static std::string getPortFilePath(NXProtocol::Type protocol_type)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d6f/util_8cc_source.html#l00550">util.cc:550</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -175,15 +175,15 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00533">533</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  534</span>{</div>
-<div class="line"><span class="lineno">  535</span>    std::filesystem::path port_file = <a class="code hl_function" href="../../dd/de4/classnexilis_1_1Util.html#a0066197f79b612d78444f59dafeeb466">getNexilisTempPath</a>() /</div>
-<div class="line"><span class="lineno">  536</span>                                      (<a class="code hl_function" href="../../d5/da4/classnexilis_1_1NXProtocol.html#a0359edd948a8adfcf565c6e57da29480">NXProtocol::typeToString</a>(protocol_type) + <span class="stringliteral">&quot;_port.txt&quot;</span>);</div>
-<div class="line"><span class="lineno">  537</span> </div>
-<div class="line"><span class="lineno">  538</span>    <span class="keywordflow">return</span> port_file.string();</div>
-<div class="line"><span class="lineno">  539</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00550">550</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  551</span>{</div>
+<div class="line"><span class="lineno">  552</span>    std::filesystem::path port_file = <a class="code hl_function" href="../../dd/de4/classnexilis_1_1Util.html#a0066197f79b612d78444f59dafeeb466">getNexilisTempPath</a>() /</div>
+<div class="line"><span class="lineno">  553</span>                                      (<a class="code hl_function" href="../../d5/da4/classnexilis_1_1NXProtocol.html#a0359edd948a8adfcf565c6e57da29480">NXProtocol::typeToString</a>(protocol_type) + <span class="stringliteral">&quot;_port.txt&quot;</span>);</div>
+<div class="line"><span class="lineno">  554</span> </div>
+<div class="line"><span class="lineno">  555</span>    <span class="keywordflow">return</span> port_file.string();</div>
+<div class="line"><span class="lineno">  556</span>}</div>
 <div class="ttc" id="aclassnexilis_1_1NXProtocol_html_a0359edd948a8adfcf565c6e57da29480"><div class="ttname"><a href="../../d5/da4/classnexilis_1_1NXProtocol.html#a0359edd948a8adfcf565c6e57da29480">nexilis::NXProtocol::typeToString</a></div><div class="ttdeci">static std::string typeToString(Type type)</div><div class="ttdoc">Returns a string value of the Type.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d86/nx__protocol_8cc_source.html#l00047">nx_protocol.cc:47</a></div></div>
-<div class="ttc" id="aclassnexilis_1_1Util_html_a0066197f79b612d78444f59dafeeb466"><div class="ttname"><a href="../../dd/de4/classnexilis_1_1Util.html#a0066197f79b612d78444f59dafeeb466">nexilis::Util::getNexilisTempPath</a></div><div class="ttdeci">static std::filesystem::path getNexilisTempPath()</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d6f/util_8cc_source.html#l00501">util.cc:501</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1Util_html_a0066197f79b612d78444f59dafeeb466"><div class="ttname"><a href="../../dd/de4/classnexilis_1_1Util.html#a0066197f79b612d78444f59dafeeb466">nexilis::Util::getNexilisTempPath</a></div><div class="ttdeci">static std::filesystem::path getNexilisTempPath()</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d6f/util_8cc_source.html#l00518">util.cc:518</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -245,41 +245,41 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00568">568</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  569</span>{</div>
-<div class="line"><span class="lineno">  570</span>    std::string file_path = <a class="code hl_function" href="../../dd/d04/group__PortHandling.html#ga8dc341fe44a9de8bb4e0b93a4f447a64">getPortFilePath</a>(protocol_type);</div>
-<div class="line"><span class="lineno">  571</span> </div>
-<div class="line"><span class="lineno">  572</span>    <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  573</span>    {</div>
-<div class="line"><span class="lineno">  574</span>        <span class="keywordflow">if</span> (!std::filesystem::exists(file_path))</div>
-<div class="line"><span class="lineno">  575</span>        {</div>
-<div class="line"><span class="lineno">  576</span>            <span class="keywordflow">return</span> std::nullopt;</div>
-<div class="line"><span class="lineno">  577</span>        }</div>
-<div class="line"><span class="lineno">  578</span> </div>
-<div class="line"><span class="lineno">  579</span>        std::ifstream port_file(file_path);</div>
-<div class="line"><span class="lineno">  580</span>        <span class="keywordflow">if</span> (!port_file.is_open())</div>
-<div class="line"><span class="lineno">  581</span>        {</div>
-<div class="line"><span class="lineno">  582</span>            <span class="keywordflow">return</span> std::nullopt;</div>
-<div class="line"><span class="lineno">  583</span>        }</div>
-<div class="line"><span class="lineno">  584</span> </div>
-<div class="line"><span class="lineno">  585</span>        <span class="keywordtype">int</span> port_value;</div>
-<div class="line"><span class="lineno">  586</span>        <span class="keywordflow">if</span> (!(port_file &gt;&gt; port_value))</div>
-<div class="line"><span class="lineno">  587</span>        {</div>
-<div class="line"><span class="lineno">  588</span>            <span class="keywordflow">return</span> std::nullopt;</div>
-<div class="line"><span class="lineno">  589</span>        }</div>
-<div class="line"><span class="lineno">  590</span> </div>
-<div class="line"><span class="lineno">  591</span>        <span class="keywordflow">if</span> (port_value &lt; 1024 || port_value &gt; 65535)</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00585">585</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  586</span>{</div>
+<div class="line"><span class="lineno">  587</span>    std::string file_path = <a class="code hl_function" href="../../dd/d04/group__PortHandling.html#ga8dc341fe44a9de8bb4e0b93a4f447a64">getPortFilePath</a>(protocol_type);</div>
+<div class="line"><span class="lineno">  588</span> </div>
+<div class="line"><span class="lineno">  589</span>    <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  590</span>    {</div>
+<div class="line"><span class="lineno">  591</span>        <span class="keywordflow">if</span> (!std::filesystem::exists(file_path))</div>
 <div class="line"><span class="lineno">  592</span>        {</div>
 <div class="line"><span class="lineno">  593</span>            <span class="keywordflow">return</span> std::nullopt;</div>
 <div class="line"><span class="lineno">  594</span>        }</div>
 <div class="line"><span class="lineno">  595</span> </div>
-<div class="line"><span class="lineno">  596</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint16_t<span class="keyword">&gt;</span>(port_value);</div>
-<div class="line"><span class="lineno">  597</span>    }</div>
-<div class="line"><span class="lineno">  598</span>    <span class="keywordflow">catch</span> (...)</div>
-<div class="line"><span class="lineno">  599</span>    {</div>
-<div class="line"><span class="lineno">  600</span>        <span class="keywordflow">return</span> std::nullopt;</div>
-<div class="line"><span class="lineno">  601</span>    }</div>
-<div class="line"><span class="lineno">  602</span>}</div>
+<div class="line"><span class="lineno">  596</span>        std::ifstream port_file(file_path);</div>
+<div class="line"><span class="lineno">  597</span>        <span class="keywordflow">if</span> (!port_file.is_open())</div>
+<div class="line"><span class="lineno">  598</span>        {</div>
+<div class="line"><span class="lineno">  599</span>            <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><span class="lineno">  600</span>        }</div>
+<div class="line"><span class="lineno">  601</span> </div>
+<div class="line"><span class="lineno">  602</span>        <span class="keywordtype">int</span> port_value;</div>
+<div class="line"><span class="lineno">  603</span>        <span class="keywordflow">if</span> (!(port_file &gt;&gt; port_value))</div>
+<div class="line"><span class="lineno">  604</span>        {</div>
+<div class="line"><span class="lineno">  605</span>            <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><span class="lineno">  606</span>        }</div>
+<div class="line"><span class="lineno">  607</span> </div>
+<div class="line"><span class="lineno">  608</span>        <span class="keywordflow">if</span> (port_value &lt; 1024 || port_value &gt; 65535)</div>
+<div class="line"><span class="lineno">  609</span>        {</div>
+<div class="line"><span class="lineno">  610</span>            <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><span class="lineno">  611</span>        }</div>
+<div class="line"><span class="lineno">  612</span> </div>
+<div class="line"><span class="lineno">  613</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint16_t<span class="keyword">&gt;</span>(port_value);</div>
+<div class="line"><span class="lineno">  614</span>    }</div>
+<div class="line"><span class="lineno">  615</span>    <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><span class="lineno">  616</span>    {</div>
+<div class="line"><span class="lineno">  617</span>        <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><span class="lineno">  618</span>    }</div>
+<div class="line"><span class="lineno">  619</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -331,32 +331,32 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00541">541</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  542</span>{</div>
-<div class="line"><span class="lineno">  543</span>    std::string file_path = <a class="code hl_function" href="../../dd/d04/group__PortHandling.html#ga8dc341fe44a9de8bb4e0b93a4f447a64">getPortFilePath</a>(protocol_type);</div>
-<div class="line"><span class="lineno">  544</span> </div>
-<div class="line"><span class="lineno">  545</span>    <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  546</span>    {</div>
-<div class="line"><span class="lineno">  547</span>        std::ofstream port_file(file_path, std::ios::out);</div>
-<div class="line"><span class="lineno">  548</span>        <span class="keywordflow">if</span> (!port_file.is_open())</div>
-<div class="line"><span class="lineno">  549</span>        {</div>
-<div class="line"><span class="lineno">  550</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  551</span>        }</div>
-<div class="line"><span class="lineno">  552</span> </div>
-<div class="line"><span class="lineno">  553</span>        port_file &lt;&lt; port;</div>
-<div class="line"><span class="lineno">  554</span>        port_file.close();</div>
-<div class="line"><span class="lineno">  555</span> </div>
-<div class="line"><span class="lineno">  556</span>        std::filesystem::permissions(file_path,</div>
-<div class="line"><span class="lineno">  557</span>                                     std::filesystem::perms::owner_read | std::filesystem::perms::owner_write,</div>
-<div class="line"><span class="lineno">  558</span>                                     std::filesystem::perm_options::replace);</div>
-<div class="line"><span class="lineno">  559</span> </div>
-<div class="line"><span class="lineno">  560</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  561</span>    }</div>
-<div class="line"><span class="lineno">  562</span>    <span class="keywordflow">catch</span> (...)</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/d6f/util_8cc_source.html#l00558">558</a> of file <a class="el" href="../../d9/d6f/util_8cc_source.html">util.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  559</span>{</div>
+<div class="line"><span class="lineno">  560</span>    std::string file_path = <a class="code hl_function" href="../../dd/d04/group__PortHandling.html#ga8dc341fe44a9de8bb4e0b93a4f447a64">getPortFilePath</a>(protocol_type);</div>
+<div class="line"><span class="lineno">  561</span> </div>
+<div class="line"><span class="lineno">  562</span>    <span class="keywordflow">try</span></div>
 <div class="line"><span class="lineno">  563</span>    {</div>
-<div class="line"><span class="lineno">  564</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  565</span>    }</div>
-<div class="line"><span class="lineno">  566</span>}</div>
+<div class="line"><span class="lineno">  564</span>        std::ofstream port_file(file_path, std::ios::out);</div>
+<div class="line"><span class="lineno">  565</span>        <span class="keywordflow">if</span> (!port_file.is_open())</div>
+<div class="line"><span class="lineno">  566</span>        {</div>
+<div class="line"><span class="lineno">  567</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  568</span>        }</div>
+<div class="line"><span class="lineno">  569</span> </div>
+<div class="line"><span class="lineno">  570</span>        port_file &lt;&lt; port;</div>
+<div class="line"><span class="lineno">  571</span>        port_file.close();</div>
+<div class="line"><span class="lineno">  572</span> </div>
+<div class="line"><span class="lineno">  573</span>        std::filesystem::permissions(file_path,</div>
+<div class="line"><span class="lineno">  574</span>                                     std::filesystem::perms::owner_read | std::filesystem::perms::owner_write,</div>
+<div class="line"><span class="lineno">  575</span>                                     std::filesystem::perm_options::replace);</div>
+<div class="line"><span class="lineno">  576</span> </div>
+<div class="line"><span class="lineno">  577</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  578</span>    }</div>
+<div class="line"><span class="lineno">  579</span>    <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><span class="lineno">  580</span>    {</div>
+<div class="line"><span class="lineno">  581</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  582</span>    }</div>
+<div class="line"><span class="lineno">  583</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

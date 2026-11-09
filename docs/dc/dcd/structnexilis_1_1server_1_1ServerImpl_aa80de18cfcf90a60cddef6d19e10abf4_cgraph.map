@@ -27,14 +27,14 @@
 <area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="547,30,544,20,551,10,567,5,591,3,618,6,633,13,631,18,617,11,591,8,568,10,554,15,549,21,552,28"/>
 <area shape="rect" id="Node000007" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#aa9bd79fb1a1804924e3440947c6ab117" title="Send debug message." alt="" coords="507,168,674,208"/>
 <area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="414,188,493,187,494,192,415,194"/>
-<area shape="rect" id="Node000009" href="$da/de9/classnexilis_1_1server_1_1ClientStorage.html#a1fe5ffd9a04e6f2088e0146a1112eda3" title=" " alt="" coords="485,232,696,272"/>
+<area shape="rect" id="Node000009" href="$da/de9/classnexilis_1_1server_1_1ClientStorage.html#aaea84dd6f0296109d1c006d421650dc2" title="Snapshot of owning handles. This does not lock mutable user fields." alt="" coords="485,232,696,272"/>
 <area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="437,248,472,248,472,253,437,253"/>
 <area shape="rect" id="Node000010" href="$dc/dbc/classnexilis_1_1Log.html#a66755adfac1917c8b8791a018f31c643" title=" " alt="" coords="526,322,655,347"/>
 <area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="403,267,438,279,541,315,540,320,436,284,402,272"/>
 <area shape="rect" id="Node000011" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#abbfff214c9149463f4d7a15990b9361a" title="Send info message." alt="" coords="744,315,911,355"/>
 <area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="656,332,730,332,730,337,656,337"/>
 <area shape="poly" id="edge16_Node000014_Node000010" title=" " alt="" coords="406,419,436,407,484,382,548,351,550,356,487,386,438,412,408,424"/>
-<area shape="rect" id="Node000015" href="$db/d96/classnexilis_1_1server_1_1RoomStorage.html#afb508e42ad9e8246209a81cea08d9144" title="Get all the rooms in the server." alt="" coords="485,396,696,436"/>
+<area shape="rect" id="Node000015" href="$db/d96/classnexilis_1_1server_1_1RoomStorage.html#a1a34d89eff94828154b7bb44e545dcc6" title=" " alt="" coords="485,396,696,436"/>
 <area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="437,429,471,425,472,431,438,434"/>
 <area shape="rect" id="Node000019" href="$d2/d8d/group__UserBoostTCP.html#gad64b1d7881430c9dc278fcab25c7e4a6" title=" " alt="" coords="515,460,667,500"/>
 <area shape="poly" id="edge20_Node000018_Node000019" title=" " alt="" coords="385,636,411,620,435,600,451,576,457,554,465,532,484,510,501,498,504,503,487,514,470,535,462,556,455,579,439,603,415,624,388,641"/>
