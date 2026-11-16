@@ -1,5 +1,9 @@
 <map id="nexilis::RoomData::getMaxSize" name="nexilis::RoomData::getMaxSize">
-<area shape="rect" id="Node000001" title="Get the maximum amount of players in a room." alt="" coords="204,5,355,45"/>
-<area shape="rect" id="Node000002" href="$da/d49/classnexilis_1_1BaseRoom.html#a7285580f34d0842bc050c7706fa46353" title="Get the maximum amount of players in a room." alt="" coords="5,5,156,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,28,156,28,156,23,191,23"/>
+<area shape="rect" id="Node000001" title="Get the maximum amount of players in a room." alt="" coords="620,5,771,45"/>
+<area shape="rect" id="Node000002" href="$da/d49/classnexilis_1_1BaseRoom.html#a7285580f34d0842bc050c7706fa46353" title="Get the maximum amount of players in a room." alt="" coords="421,5,572,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="607,28,572,28,572,23,607,23"/>
+<area shape="rect" id="Node000003" href="$d1/d01/classnexilis_1_1server_1_1Room.html#aae8532fc62283072d2ea4afb3b4bf6ae" title="Atomically enforce the room capacity and insert a new member." alt="" coords="213,5,373,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="408,28,374,28,374,23,408,23"/>
+<area shape="rect" id="Node000004" href="$d1/d01/classnexilis_1_1server_1_1Room.html#aca1148a1d8fb95b3c7d82ef006d23825" title=" " alt="" coords="5,5,165,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="200,28,166,28,166,23,200,23"/>
 </map>

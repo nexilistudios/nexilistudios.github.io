@@ -10,7 +10,10 @@ var searchData=
   ['waituntilroomscreated_7',['waitUntilRoomsCreated',['../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a1f032ceb40b93315772ef74432e26482',1,'nexilis::client::ClientAPI']]],
   ['waituntilunixdgramready_8',['waitUntilUnixDgramReady',['../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a528794b5d8aadca2cb1c196948e76b27',1,'nexilis::client::ClientAPI']]],
   ['waituntilunixstreamready_9',['waitUntilUnixStreamReady',['../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a7ed744f06b2070ebd3e0e69206cf9d55',1,'nexilis::client::ClientAPI']]],
-  ['warning_10',['warning',['../df/de2/classnexilis_1_1FileLog.html#ac495355c7fd8cb826e662d662e417840',1,'nexilis::FileLog::warning()'],['../dc/dbc/classnexilis_1_1Log.html#a191e4c013bad219e746e8e56682d65e1',1,'nexilis::Log::warning()'],['../db/d91/classnexilis_1_1logger_1_1Logger.html#a68409cb1a072641188aa5b1053c81fbc',1,'nexilis::logger::Logger::warning()'],['../db/d61/namespacenexilis_1_1logger.html#a33a82661cf21f69c5b2aa5b1dee51615a0eaadb4fcb48a0a0ed7bc9868be9fbaa',1,'nexilis::logger::Warning']]],
+  ['warning_10',['warning',['../dc/dbc/classnexilis_1_1Log.html#a191e4c013bad219e746e8e56682d65e1',1,'nexilis::Log::warning()'],['../db/d91/classnexilis_1_1logger_1_1Logger.html#a68409cb1a072641188aa5b1053c81fbc',1,'nexilis::logger::Logger::warning()'],['../df/de2/classnexilis_1_1FileLog.html#ac495355c7fd8cb826e662d662e417840',1,'nexilis::FileLog::warning()'],['../db/d61/namespacenexilis_1_1logger.html#a33a82661cf21f69c5b2aa5b1dee51615a0eaadb4fcb48a0a0ed7bc9868be9fbaa',1,'nexilis::logger::Warning']]],
   ['weapon_11',['weapon',['../d1/d4f/structnexilis_1_1client_1_1ClientAPI_1_1AnimationEvent.html#aa9b06d8e6b9abee261cf20f967458fc4',1,'nexilis::client::ClientAPI::AnimationEvent']]],
-  ['writeporttofile_12',['writePortToFile',['../dd/d04/group__PortHandling.html#gae95993b3b515cdb8e8eb84ad7027eb24',1,'nexilis::Util']]]
+  ['windowstart_12',['windowStart',['../d4/d7f/structnexilis_1_1server_1_1MessageHandler_1_1RegistrationState_1_1Attempt.html#a0f4024c1beee6efe5c73e8368700d232',1,'nexilis::server::MessageHandler::RegistrationState::Attempt']]],
+  ['withobject2d_13',['withObject2D',['../d1/d01/classnexilis_1_1server_1_1Room.html#a74e82ee47dd13e2b54d4943af5327fcd',1,'nexilis::server::Room']]],
+  ['withobject3d_14',['withObject3D',['../d1/d01/classnexilis_1_1server_1_1Room.html#a91290e3814ef9e86c9d6a6537d874041',1,'nexilis::server::Room']]],
+  ['writeporttofile_15',['writePortToFile',['../dd/d04/group__PortHandling.html#gae95993b3b515cdb8e8eb84ad7027eb24',1,'nexilis::Util']]]
 ];

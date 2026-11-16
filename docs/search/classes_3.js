@@ -17,5 +17,6 @@ var searchData=
   ['communicate_14',['Communicate',['../d6/dec/structCommandPacketBase_1_1Room_1_1Communicate.html',1,'CommandPacketBase::Room']]],
   ['communication_15',['Communication',['../de/d5b/classnexilis_1_1client_1_1Room_1_1Communication.html',1,'nexilis::client::Room']]],
   ['config_16',['Config',['../d2/def/classnexilis_1_1server_1_1Config.html',1,'nexilis::server']]],
-  ['consolehandler_17',['ConsoleHandler',['../de/d71/classnexilis_1_1logger_1_1ConsoleHandler.html',1,'nexilis::logger']]]
+  ['connection_17',['Connection',['../de/dc5/structnexilis_1_1server_1_1af__inet_1_1TCPServer_1_1Connection.html',1,'nexilis::server::af_inet::TCPServer']]],
+  ['consolehandler_18',['ConsoleHandler',['../de/d71/classnexilis_1_1logger_1_1ConsoleHandler.html',1,'nexilis::logger']]]
 ];

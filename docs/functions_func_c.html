@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.9-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.10-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -74,6 +74,7 @@ $(function() {
 
 <h3><a id="index_c" name="index_c"></a>- c -</h3><ul>
 <li>cancelAllSocketOperations()&#160;:&#160;<a class="el" href="d3/ddc/classnexilis_1_1boost__tcp_1_1Socket.html#ab17e2ee6cfe71c8bc6cd4678d1933a85">nexilis::boost_tcp::Socket</a></li>
+<li>cancelPendingHandshakes()&#160;:&#160;<a class="el" href="d4/d3a/classnexilis_1_1server_1_1User.html#a5d5583ebe804896d757b0029e942edb1">nexilis::server::User</a></li>
 <li>canDamage()&#160;:&#160;<a class="el" href="d1/d01/classnexilis_1_1server_1_1Room.html#a8af328b5c109e5283db8c958de0fd1fb">nexilis::server::Room</a></li>
 <li>canSelectTeam()&#160;:&#160;<a class="el" href="d1/d01/classnexilis_1_1server_1_1Room.html#a189009f98bcd5a9251ea1c197f285977">nexilis::server::Room</a></li>
 <li>claimInitialUdpToken()&#160;:&#160;<a class="el" href="d4/d3a/classnexilis_1_1server_1_1User.html#a07f9091f2dd375b85a28e97cfdb7d72c">nexilis::server::User</a></li>
@@ -82,11 +83,14 @@ $(function() {
 <li>clampHorizontal()&#160;:&#160;<a class="el" href="dd/d16/classnexilis_1_1server_1_1GameplayLimits.html#a8157b3d45995932f8de9094f04722933">nexilis::server::GameplayLimits</a></li>
 <li>clampSpeed()&#160;:&#160;<a class="el" href="dd/d16/classnexilis_1_1server_1_1GameplayLimits.html#a9fea31f92f11926600378bccd452cffc">nexilis::server::GameplayLimits</a></li>
 <li>classname()&#160;:&#160;<a class="el" href="d2/d7e/classnexilis_1_1NxClass.html#a20092d21c249b02b834272d2f2a48904">nexilis::NxClass</a></li>
+<li>cleanupDatagramTransports()&#160;:&#160;<a class="el" href="de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a62494bb2dd0c80e8e20e33aa712748d1">nexilis::server::ServerProtocol</a></li>
+<li>cleanupPendingHandshakes()&#160;:&#160;<a class="el" href="de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a1579630f6d5ce660dd271816fa0441e6">nexilis::server::ServerProtocol</a></li>
 <li>cleanupPortFile()&#160;:&#160;<a class="el" href="dd/d04/group__PortHandling.html#ga510daefca8fad8c7b1b9af82773e3f70">nexilis::Util</a></li>
 <li>clear()&#160;:&#160;<a class="el" href="da/de9/classnexilis_1_1server_1_1ClientStorage.html#a9b9bf413dc0e0c1d9a4b559c84a95362">nexilis::server::ClientStorage</a>, <a class="el" href="db/d96/classnexilis_1_1server_1_1RoomStorage.html#a32532b414b079d9f46c2d6a6bda4049e">nexilis::server::RoomStorage</a></li>
 <li>clearHandlers()&#160;:&#160;<a class="el" href="dc/dbc/classnexilis_1_1Log.html#a634f066882682331b5000482d94f78c9">nexilis::Log</a>, <a class="el" href="db/d91/classnexilis_1_1logger_1_1Logger.html#a386bcae4ce97526c3d3006ed3b0ef912">nexilis::logger::Logger</a></li>
+<li>clearSendCallback()&#160;:&#160;<a class="el" href="d4/d3a/classnexilis_1_1server_1_1User.html#a62fc8b1c44df9ceb64daac949e9c6caf">nexilis::server::User</a></li>
 <li>clearShutdownRequested()&#160;:&#160;<a class="el" href="de/d1b/classnexilis_1_1server_1_1SignalHandler.html#a787af58ae32fd2f08e9023b0cdd756d7">nexilis::server::SignalHandler</a></li>
-<li>ClientAPI()&#160;:&#160;<a class="el" href="d5/da0/classnexilis_1_1client_1_1ClientAPI.html#af11a5ead29db06075ad81c2224c608f5">nexilis::client::ClientAPI</a></li>
+<li>ClientAPI()&#160;:&#160;<a class="el" href="d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a23c8b2452dea9a4d95401b077945a134">nexilis::client::ClientAPI</a></li>
 <li>ClientAPIData()&#160;:&#160;<a class="el" href="d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#ad9371124a662770237d9edbced205fbe">nexilis::client::ClientAPI::ClientAPIData</a></li>
 <li>ClientConfig()&#160;:&#160;<a class="el" href="d1/dd9/classnexilis_1_1client_1_1ClientConfig.html#a7d75e747d26a6d0b3506cc5679d02148">nexilis::client::ClientConfig</a></li>
 <li>ClientData()&#160;:&#160;<a class="el" href="d6/d0d/classnexilis_1_1client_1_1ClientAPI_1_1ClientData.html#ad8f8f26a0384e4ce8fef08ea04348196">nexilis::client::ClientAPI::ClientData</a></li>
@@ -98,12 +102,14 @@ $(function() {
 <li>clientRoomId()&#160;:&#160;<a class="el" href="d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a693536cc21f86ecf79e7eeab922c4c40">nexilis::client::ClientAPI</a></li>
 <li>clients()&#160;:&#160;<a class="el" href="d4/d36/structCommandPacketBase_1_1Get_1_1Info.html#a9b800acabc100e42f834606132c51850">CommandPacketBase&lt; Impl &gt;::Get::Info</a></li>
 <li>ClientSession()&#160;:&#160;<a class="el" href="d8/d6a/classnexilis_1_1client_1_1ClientSession.html#aab76abac8a12a607f52522339b0ed5fd">nexilis::client::ClientSession</a></li>
-<li>close()&#160;:&#160;<a class="el" href="d3/ddc/classnexilis_1_1boost__tcp_1_1Socket.html#add41f72d15ca9def1ab176e93c6254d3">nexilis::boost_tcp::Socket</a></li>
-<li>CmdLineOptions()&#160;:&#160;<a class="el" href="d4/d26/classnexilis_1_1CmdLineOptions.html#a176d8117b38873e4b7c5526ce8c341dd">nexilis::CmdLineOptions</a></li>
+<li>close()&#160;:&#160;<a class="el" href="d3/ddc/classnexilis_1_1boost__tcp_1_1Socket.html#add41f72d15ca9def1ab176e93c6254d3">nexilis::boost_tcp::Socket</a>, <a class="el" href="de/dc5/structnexilis_1_1server_1_1af__inet_1_1TCPServer_1_1Connection.html#a36eb0441a4f442ec0aea7e5818800639">nexilis::server::af_inet::TCPServer::Connection</a>, <a class="el" href="d7/d67/structnexilis_1_1server_1_1af__inet_1_1UDPServer_1_1SocketState.html#a0159e1dbb5d2008aa7b458574ca92053">nexilis::server::af_inet::UDPServer::SocketState</a>, <a class="el" href="d0/de6/structnexilis_1_1server_1_1nxboost_1_1UDPServer_1_1SocketState.html#aaba3f5856ad4217afd6df9444c50fe18">nexilis::server::nxboost::UDPServer::SocketState</a></li>
+<li>CmdLineOptions()&#160;:&#160;<a class="el" href="d4/d26/classnexilis_1_1CmdLineOptions.html#a9dc89d64cb00d6eb1954d6448ed50413">nexilis::CmdLineOptions</a></li>
 <li>Command()&#160;:&#160;<a class="el" href="da/d15/classnexilis_1_1server_1_1Command.html#a37259e4a54b89cffee4978da72daf612">nexilis::server::Command</a></li>
 <li>Communication()&#160;:&#160;<a class="el" href="de/d5b/classnexilis_1_1client_1_1Room_1_1Communication.html#a587e4ba521fd3fa36356229839fa0915">nexilis::client::Room::Communication</a></li>
 <li>CommunicationTypeToString()&#160;:&#160;<a class="el" href="db/d0c/classnexilis_1_1RoomCommandType.html#a1661871cb06f8ac4420fe20a3d4fec3b">nexilis::RoomCommandType</a></li>
+<li>completePendingHandshake()&#160;:&#160;<a class="el" href="de/df0/classnexilis_1_1server_1_1ServerProtocol.html#afa1eee7a244639a9c6c9e27a2015bb0f">nexilis::server::ServerProtocol</a></li>
 <li>connect()&#160;:&#160;<a class="el" href="d3/ddc/classnexilis_1_1boost__tcp_1_1Socket.html#ab6dd5ac0c901c115a42bfc5d1fb9d8d1">nexilis::boost_tcp::Socket</a></li>
+<li>Connection()&#160;:&#160;<a class="el" href="de/dc5/structnexilis_1_1server_1_1af__inet_1_1TCPServer_1_1Connection.html#adb7209ea4a5070ae7e5a0e2efc720b9b">nexilis::server::af_inet::TCPServer::Connection</a></li>
 <li>connectionClosed()&#160;:&#160;<a class="el" href="de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a8ae318a14230dd8d16ad924af3604660">nexilis::server::ServerProtocol</a></li>
 <li>connectionEstablished()&#160;:&#160;<a class="el" href="de/df0/classnexilis_1_1server_1_1ServerProtocol.html#abd96ab10e893a97f65093139c2a34965">nexilis::server::ServerProtocol</a></li>
 <li>ConsoleHandler()&#160;:&#160;<a class="el" href="de/d71/classnexilis_1_1logger_1_1ConsoleHandler.html#abe5db7629360aafe4d78909bbe824c1e">nexilis::logger::ConsoleHandler</a></li>

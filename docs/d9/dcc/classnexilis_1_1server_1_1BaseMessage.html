@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.9-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.10-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -147,6 +147,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a224c829d4761f40dac976f77315807ad" id="r_a224c829d4761f40dac976f77315807ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html">User</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dcc/classnexilis_1_1server_1_1BaseMessage.html#a224c829d4761f40dac976f77315807ad">getUser</a> () const</td></tr>
 <tr class="memdesc:a224c829d4761f40dac976f77315807ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Borrowed pointer, valid while this message retains its user handle.  <br /></td></tr>
 <tr class="separator:a224c829d4761f40dac976f77315807ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d51fb40749830b9d0970a916c4f850f" id="r_a2d51fb40749830b9d0970a916c4f850f"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html">User</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dcc/classnexilis_1_1server_1_1BaseMessage.html#a2d51fb40749830b9d0970a916c4f850f">getUserHandle</a> () const</td></tr>
+<tr class="memdesc:a2d51fb40749830b9d0970a916c4f850f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Owning handle for cleanup paths that outlive this message.  <br /></td></tr>
+<tr class="separator:a2d51fb40749830b9d0970a916c4f850f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for incoming messages from the client. </p>
@@ -209,10 +212,10 @@ Public Member Functions</h2></td></tr>
 
 <p>Constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d7a/base__message_8cc_source.html#l00063">63</a> of file <a class="el" href="../../d6/d7a/base__message_8cc_source.html">base_message.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   64</span>    : m_data(std::move(data))</div>
-<div class="line"><span class="lineno">   65</span>{</div>
-<div class="line"><span class="lineno">   66</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d7a/base__message_8cc_source.html#l00068">68</a> of file <a class="el" href="../../d6/d7a/base__message_8cc_source.html">base_message.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   69</span>    : m_data(std::move(data))</div>
+<div class="line"><span class="lineno">   70</span>{</div>
+<div class="line"><span class="lineno">   71</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -270,10 +273,10 @@ Public Member Functions</h2></td></tr>
 
 <p>Move constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d7a/base__message_8cc_source.html#l00068">68</a> of file <a class="el" href="../../d6/d7a/base__message_8cc_source.html">base_message.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   69</span>    : m_data(std::move(other.m_data))</div>
-<div class="line"><span class="lineno">   70</span>{</div>
-<div class="line"><span class="lineno">   71</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d7a/base__message_8cc_source.html#l00073">73</a> of file <a class="el" href="../../d6/d7a/base__message_8cc_source.html">base_message.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   74</span>    : m_data(std::move(other.m_data))</div>
+<div class="line"><span class="lineno">   75</span>{</div>
+<div class="line"><span class="lineno">   76</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -322,10 +325,10 @@ Public Member Functions</h2></td></tr>
 
 <p>Get the address where the message is assigned. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d7a/base__message_8cc_source.html#l00087">87</a> of file <a class="el" href="../../d6/d7a/base__message_8cc_source.html">base_message.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   88</span>{</div>
-<div class="line"><span class="lineno">   89</span>    <span class="keywordflow">return</span> m_data.<a class="code hl_function" href="../../dc/db7/classnexilis_1_1server_1_1BaseMessage_1_1Data.html#a1a57c696ce5d9dde5c35cb4d562766d0">getAddress</a>();</div>
-<div class="line"><span class="lineno">   90</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d7a/base__message_8cc_source.html#l00092">92</a> of file <a class="el" href="../../d6/d7a/base__message_8cc_source.html">base_message.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   93</span>{</div>
+<div class="line"><span class="lineno">   94</span>    <span class="keywordflow">return</span> m_data.<a class="code hl_function" href="../../dc/db7/classnexilis_1_1server_1_1BaseMessage_1_1Data.html#a1a57c696ce5d9dde5c35cb4d562766d0">getAddress</a>();</div>
+<div class="line"><span class="lineno">   95</span>}</div>
 <div class="ttc" id="aclassnexilis_1_1server_1_1BaseMessage_1_1Data_html_a1a57c696ce5d9dde5c35cb4d562766d0"><div class="ttname"><a href="../../dc/db7/classnexilis_1_1server_1_1BaseMessage_1_1Data.html#a1a57c696ce5d9dde5c35cb4d562766d0">nexilis::server::BaseMessage::Data::getAddress</a></div><div class="ttdeci">const std::string &amp; getAddress() const</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d7a/base__message_8cc_source.html#l00053">base_message.cc:53</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -357,10 +360,10 @@ Here is the call graph for this function:</div>
 
 <p>Get the unique identifier of the message. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d7a/base__message_8cc_source.html#l00082">82</a> of file <a class="el" href="../../d6/d7a/base__message_8cc_source.html">base_message.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   83</span>{</div>
-<div class="line"><span class="lineno">   84</span>    <span class="keywordflow">return</span> m_data.<a class="code hl_function" href="../../dc/db7/classnexilis_1_1server_1_1BaseMessage_1_1Data.html#ac7c3324def086e0869fc0fcdf3997fd6">getMessageId</a>();</div>
-<div class="line"><span class="lineno">   85</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d7a/base__message_8cc_source.html#l00087">87</a> of file <a class="el" href="../../d6/d7a/base__message_8cc_source.html">base_message.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   88</span>{</div>
+<div class="line"><span class="lineno">   89</span>    <span class="keywordflow">return</span> m_data.<a class="code hl_function" href="../../dc/db7/classnexilis_1_1server_1_1BaseMessage_1_1Data.html#ac7c3324def086e0869fc0fcdf3997fd6">getMessageId</a>();</div>
+<div class="line"><span class="lineno">   90</span>}</div>
 <div class="ttc" id="aclassnexilis_1_1server_1_1BaseMessage_1_1Data_html_ac7c3324def086e0869fc0fcdf3997fd6"><div class="ttname"><a href="../../dc/db7/classnexilis_1_1server_1_1BaseMessage_1_1Data.html#ac7c3324def086e0869fc0fcdf3997fd6">nexilis::server::BaseMessage::Data::getMessageId</a></div><div class="ttdeci">uint64_t getMessageId() const</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d7a/base__message_8cc_source.html#l00048">base_message.cc:48</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -421,10 +424,10 @@ Here is the call graph for this function:</div>
 
 <p>Borrowed pointer, valid while this message retains its user handle. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d7a/base__message_8cc_source.html#l00092">92</a> of file <a class="el" href="../../d6/d7a/base__message_8cc_source.html">base_message.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   93</span>{</div>
-<div class="line"><span class="lineno">   94</span>    <span class="keywordflow">return</span> m_data.<a class="code hl_function" href="../../dc/db7/classnexilis_1_1server_1_1BaseMessage_1_1Data.html#a4d8f10046d74275d1564c1ec5e314dd1">getUser</a>();</div>
-<div class="line"><span class="lineno">   95</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d7a/base__message_8cc_source.html#l00097">97</a> of file <a class="el" href="../../d6/d7a/base__message_8cc_source.html">base_message.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   98</span>{</div>
+<div class="line"><span class="lineno">   99</span>    <span class="keywordflow">return</span> m_data.<a class="code hl_function" href="../../dc/db7/classnexilis_1_1server_1_1BaseMessage_1_1Data.html#a4d8f10046d74275d1564c1ec5e314dd1">getUser</a>();</div>
+<div class="line"><span class="lineno">  100</span>}</div>
 <div class="ttc" id="aclassnexilis_1_1server_1_1BaseMessage_1_1Data_html_a4d8f10046d74275d1564c1ec5e314dd1"><div class="ttname"><a href="../../dc/db7/classnexilis_1_1server_1_1BaseMessage_1_1Data.html#a4d8f10046d74275d1564c1ec5e314dd1">nexilis::server::BaseMessage::Data::getUser</a></div><div class="ttdeci">User * getUser() const</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d7a/base__message_8cc_source.html#l00058">base_message.cc:58</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -433,6 +436,41 @@ Here is the call graph for this function:</div>
 <map name="ad9/dcc/classnexilis_1_1server_1_1BaseMessage_a224c829d4761f40dac976f77315807ad_cgraph" id="ad9/dcc/classnexilis_1_1server_1_1BaseMessage_a224c829d4761f40dac976f77315807ad_cgraph">
 <area shape="rect" title="Borrowed pointer, valid while this message retains its user handle." alt="" coords="5,5,217,45"/>
 <area shape="rect" href="../../dc/db7/classnexilis_1_1server_1_1BaseMessage_1_1Data.html#a4d8f10046d74275d1564c1ec5e314dd1" title=" " alt="" coords="265,5,477,45"/>
+<area shape="poly" title=" " alt="" coords="217,23,252,23,252,28,217,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2d51fb40749830b9d0970a916c4f850f" name="a2d51fb40749830b9d0970a916c4f850f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d51fb40749830b9d0970a916c4f850f">&#9670;&#160;</a></span>getUserHandle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html">User</a> &gt; nexilis::server::BaseMessage::getUserHandle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Owning handle for cleanup paths that outlive this message. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d7a/base__message_8cc_source.html#l00102">102</a> of file <a class="el" href="../../d6/d7a/base__message_8cc_source.html">base_message.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  103</span>{</div>
+<div class="line"><span class="lineno">  104</span>    <span class="keywordflow">return</span> m_data.<a class="code hl_function" href="../../dc/db7/classnexilis_1_1server_1_1BaseMessage_1_1Data.html#aaec632c96048e513439c8459aa3be480">getUserHandle</a>();</div>
+<div class="line"><span class="lineno">  105</span>}</div>
+<div class="ttc" id="aclassnexilis_1_1server_1_1BaseMessage_1_1Data_html_aaec632c96048e513439c8459aa3be480"><div class="ttname"><a href="../../dc/db7/classnexilis_1_1server_1_1BaseMessage_1_1Data.html#aaec632c96048e513439c8459aa3be480">nexilis::server::BaseMessage::Data::getUserHandle</a></div><div class="ttdeci">std::shared_ptr&lt; User &gt; getUserHandle() const</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d7a/base__message_8cc_source.html#l00063">base_message.cc:63</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/dcc/classnexilis_1_1server_1_1BaseMessage_a2d51fb40749830b9d0970a916c4f850f_cgraph.png" border="0" usemap="#ad9/dcc/classnexilis_1_1server_1_1BaseMessage_a2d51fb40749830b9d0970a916c4f850f_cgraph" alt=""/></div>
+<map name="ad9/dcc/classnexilis_1_1server_1_1BaseMessage_a2d51fb40749830b9d0970a916c4f850f_cgraph" id="ad9/dcc/classnexilis_1_1server_1_1BaseMessage_a2d51fb40749830b9d0970a916c4f850f_cgraph">
+<area shape="rect" title="Owning handle for cleanup paths that outlive this message." alt="" coords="5,5,217,45"/>
+<area shape="rect" href="../../dc/db7/classnexilis_1_1server_1_1BaseMessage_1_1Data.html#aaec632c96048e513439c8459aa3be480" title=" " alt="" coords="265,5,477,45"/>
 <area shape="poly" title=" " alt="" coords="217,23,252,23,252,28,217,28"/>
 </map>
 </div>
@@ -465,14 +503,14 @@ Here is the call graph for this function:</div>
 
 <p>Move assignment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d7a/base__message_8cc_source.html#l00073">73</a> of file <a class="el" href="../../d6/d7a/base__message_8cc_source.html">base_message.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   74</span>{</div>
-<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;other)</div>
-<div class="line"><span class="lineno">   76</span>    {</div>
-<div class="line"><span class="lineno">   77</span>        m_data = std::move(other.m_data);</div>
-<div class="line"><span class="lineno">   78</span>    }</div>
-<div class="line"><span class="lineno">   79</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">   80</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d7a/base__message_8cc_source.html#l00078">78</a> of file <a class="el" href="../../d6/d7a/base__message_8cc_source.html">base_message.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   79</span>{</div>
+<div class="line"><span class="lineno">   80</span>    <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;other)</div>
+<div class="line"><span class="lineno">   81</span>    {</div>
+<div class="line"><span class="lineno">   82</span>        m_data = std::move(other.m_data);</div>
+<div class="line"><span class="lineno">   83</span>    }</div>
+<div class="line"><span class="lineno">   84</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">   85</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

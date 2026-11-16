@@ -1,0 +1,5 @@
+<map id="nexilis::server::ServerProtocol::registerStreamTransport" name="nexilis::server::ServerProtocol::registerStreamTransport">
+<area shape="rect" id="Node000001" title="Register a stream connection after a message identifies its user." alt="" coords="5,5,223,45"/>
+<area shape="rect" id="Node000002" href="$d4/d3a/classnexilis_1_1server_1_1User.html#a3d12364411f9a592b314ab2d5993776c" title="Register one stream connection for a transport." alt="" coords="271,5,457,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,23,257,23,257,28,223,28"/>
+</map>

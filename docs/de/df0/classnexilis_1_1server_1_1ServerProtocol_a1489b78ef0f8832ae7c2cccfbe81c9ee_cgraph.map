@@ -1,0 +1,5 @@
+<map id="nexilis::server::ServerProtocol::touchDatagramTransport" name="nexilis::server::ServerProtocol::touchDatagramTransport">
+<area shape="rect" id="Node000001" title="Record datagram activity and activate that transport for the user." alt="" coords="5,5,223,45"/>
+<area shape="rect" id="Node000002" href="$d4/d3a/classnexilis_1_1server_1_1User.html#ae28d614e7b7fe541b74dfcc9f928467c" title="Record datagram activity, activating the transport if needed." alt="" coords="271,5,461,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,23,257,23,257,28,223,28"/>
+</map>

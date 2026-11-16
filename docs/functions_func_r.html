@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.9-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.10-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -78,14 +78,16 @@ $(function() {
 <li>readMessage()&#160;:&#160;<a class="el" href="d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a4ccd207fd09b712366be9262cf25a668">nexilis::client::ClientAPI</a>, <a class="el" href="d6/db8/classnexilis_1_1server_1_1MessageHandler.html#a5f33dc0df903c132243ed14c13cf8826">nexilis::server::MessageHandler</a></li>
 <li>readPortFromFile()&#160;:&#160;<a class="el" href="dd/d04/group__PortHandling.html#gae1009e216e99e77576b45deabd78286a">nexilis::Util</a></li>
 <li>readResultStr()&#160;:&#160;<a class="el" href="d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a80d83a2728ec3fc7afe7c10292c45ae2">nexilis::client::ClientAPI</a></li>
-<li>receive()&#160;:&#160;<a class="el" href="d3/ddc/classnexilis_1_1boost__tcp_1_1Socket.html#aea78a2b8aa594197c0ba96a5942a212e">nexilis::boost_tcp::Socket</a></li>
+<li>receive()&#160;:&#160;<a class="el" href="d3/ddc/classnexilis_1_1boost__tcp_1_1Socket.html#aea78a2b8aa594197c0ba96a5942a212e">nexilis::boost_tcp::Socket</a>, <a class="el" href="d0/de6/structnexilis_1_1server_1_1nxboost_1_1UDPServer_1_1SocketState.html#ab08ae60fce2d2c9068a9b4071de015bc">nexilis::server::nxboost::UDPServer::SocketState</a></li>
 <li>recordKill()&#160;:&#160;<a class="el" href="d1/d01/classnexilis_1_1server_1_1Room.html#af1fe25f5cf75c220eb8873898dd5cd39">nexilis::server::Room</a></li>
+<li>registerStreamTransport()&#160;:&#160;<a class="el" href="de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a634b5f45b76a08cd5a30523b052d9541">nexilis::server::ServerProtocol</a>, <a class="el" href="d4/d3a/classnexilis_1_1server_1_1User.html#a3d12364411f9a592b314ab2d5993776c">nexilis::server::User</a></li>
 <li>reload()&#160;:&#160;<a class="el" href="df/da5/structCommandPacketBase_1_1Room_1_1Player3D.html#ad55d2e9014ff1e69ac591c14489705aa">CommandPacketBase&lt; Impl &gt;::Room::Player3D</a></li>
 <li>remove()&#160;:&#160;<a class="el" href="d5/da1/structCommandPacketBase_1_1Room_1_1Management.html#a6e081a65fd724fdb9ea7f0258e2cb166">CommandPacketBase&lt; Impl &gt;::Room::Management</a>, <a class="el" href="da/de9/classnexilis_1_1server_1_1ClientStorage.html#aabd05a96502a6e23a5edcac8da44a430">nexilis::server::ClientStorage</a>, <a class="el" href="db/d96/classnexilis_1_1server_1_1RoomStorage.html#a60ddd20d836bcba2269b81bec626c235">nexilis::server::RoomStorage</a></li>
 <li>removeAmountOfBytesFromVector()&#160;:&#160;<a class="el" href="dd/de4/classnexilis_1_1Util.html#a37837fd204fbf43eaacd572d621da92e">nexilis::Util</a></li>
 <li>removeClient()&#160;:&#160;<a class="el" href="db/dbd/classnexilis_1_1client_1_1Room.html#adeb68d235156b1b5bebdf52e142183c4">nexilis::client::Room</a></li>
 <li>removeHandler()&#160;:&#160;<a class="el" href="dc/dbc/classnexilis_1_1Log.html#ab7b96ada07de7b4e8b24d5060593fc3a">nexilis::Log</a>, <a class="el" href="db/d91/classnexilis_1_1logger_1_1Logger.html#a873150c465a203d99281a9a4922c8f1b">nexilis::logger::Logger</a></li>
 <li>resetPlayerHealth()&#160;:&#160;<a class="el" href="d1/d01/classnexilis_1_1server_1_1Room.html#a0b7eef3f9c747e44206d110149709882">nexilis::server::Room</a></li>
+<li>resetPlayerStats()&#160;:&#160;<a class="el" href="d1/d01/classnexilis_1_1server_1_1Room.html#a2bfed3b3908160c152d5b76c2430d3bb">nexilis::server::Room</a></li>
 <li>resolveShot()&#160;:&#160;<a class="el" href="d1/d01/classnexilis_1_1server_1_1Room.html#aadce22cb8791187d478ca30edc473fb9">nexilis::server::Room</a></li>
 <li>Room()&#160;:&#160;<a class="el" href="db/dbd/classnexilis_1_1client_1_1Room.html#a237fd284564e1026db6e24edde02bb42">nexilis::client::Room</a>, <a class="el" href="d1/d01/classnexilis_1_1server_1_1Room.html#a012f91530eafea5e7a36c9b9198057df">nexilis::server::Room</a></li>
 <li>room_communicate_broadcast()&#160;:&#160;<a class="el" href="d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a7d7bf9f7d979fde6d5863311c2c9721d">nexilis::client::ClientImpl</a>, <a class="el" href="dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#af3e224168bd0155316f390244bcfe54e">nexilis::server::ServerImpl</a></li>
@@ -118,7 +120,7 @@ $(function() {
 <li>room_player3d_fire()&#160;:&#160;<a class="el" href="d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a3a4979743a4d7675d1d6ed397202b658">nexilis::client::ClientImpl</a></li>
 <li>room_player3d_match_action()&#160;:&#160;<a class="el" href="d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a20312ce32479684ed4caa467d6567763">nexilis::client::ClientImpl</a></li>
 <li>room_player3d_movement()&#160;:&#160;<a class="el" href="d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a08bb2a933dbdb43547640516228da439">nexilis::client::ClientImpl</a>, <a class="el" href="dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#af690c313968733268b9bbec9d5443425">nexilis::server::ServerImpl</a></li>
-<li>room_player3d_position()&#160;:&#160;<a class="el" href="d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a4658234d41b439b4992fb7e526c2dd12">nexilis::client::ClientImpl</a>, <a class="el" href="dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a02f82557e240dadd7338438092a85ed1">nexilis::server::ServerImpl</a></li>
+<li>room_player3d_position()&#160;:&#160;<a class="el" href="d5/d69/structnexilis_1_1client_1_1ClientImpl.html#aac7e437246e2c81d8e41b3bc65400a8c">nexilis::client::ClientImpl</a>, <a class="el" href="dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a02f82557e240dadd7338438092a85ed1">nexilis::server::ServerImpl</a></li>
 <li>room_player3d_reload()&#160;:&#160;<a class="el" href="d5/d69/structnexilis_1_1client_1_1ClientImpl.html#ae8d7ac542ef38d8017b8bd14e9d074a8">nexilis::client::ClientImpl</a></li>
 <li>room_player3d_set_team()&#160;:&#160;<a class="el" href="d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a1fd435b1be2324a3e12a8b29bfd21f66">nexilis::client::ClientImpl</a></li>
 <li>room_player3d_setTeam()&#160;:&#160;<a class="el" href="dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a29b5e4bb44e4ee840033319acfee74f8">nexilis::server::ServerImpl</a></li>

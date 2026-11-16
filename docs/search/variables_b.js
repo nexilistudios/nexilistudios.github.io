@@ -11,6 +11,7 @@ var searchData=
   ['nexilis_5fmax_8',['NEXILIS_MAX',['../d8/d34/namespacenexilis.html#a411c214c17dbae9c7be3e61441eee2c9',1,'nexilis']]],
   ['nexilis_5fmax_5fbroadcast_5fhistory_9',['NEXILIS_MAX_BROADCAST_HISTORY',['../d8/d34/namespacenexilis.html#a3364bd8352db23f96931fe5fb0b579c6',1,'nexilis']]],
   ['nexilis_5fmax_5fbroadcast_5flength_10',['NEXILIS_MAX_BROADCAST_LENGTH',['../d8/d34/namespacenexilis.html#ad1c71a6e3a20cb7ad1822e75b1d6a1f4',1,'nexilis']]],
-  ['nexilis_5fmax_5fposition_11',['NEXILIS_MAX_POSITION',['../d8/d34/namespacenexilis.html#a31c0a59e4056f48915f1ae3155a5484f',1,'nexilis']]],
-  ['notice_12',['notice',['../d2/dab/structnexilis_1_1client_1_1ClientAPI_1_1BombMatchEvent.html#a967928ddc837dba20bc17e67458b787a',1,'nexilis::client::ClientAPI::BombMatchEvent']]]
+  ['nexilis_5fmax_5fjson_5fmessage_11',['NEXILIS_MAX_JSON_MESSAGE',['../d8/d34/namespacenexilis.html#a55ce89b28f747effbc16956e848bccaf',1,'nexilis']]],
+  ['nexilis_5fmax_5fposition_12',['NEXILIS_MAX_POSITION',['../d8/d34/namespacenexilis.html#a31c0a59e4056f48915f1ae3155a5484f',1,'nexilis']]],
+  ['notice_13',['notice',['../d2/dab/structnexilis_1_1client_1_1ClientAPI_1_1BombMatchEvent.html#a967928ddc837dba20bc17e67458b787a',1,'nexilis::client::ClientAPI::BombMatchEvent']]]
 ];

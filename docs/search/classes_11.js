@@ -9,5 +9,6 @@ var searchData=
   ['setusernamecommand_6',['SetUsernameCommand',['../da/ddf/classnexilis_1_1client_1_1SetUsernameCommand.html',1,'nexilis::client']]],
   ['shothit_7',['ShotHit',['../d6/d57/structnexilis_1_1server_1_1Room_1_1ShotHit.html',1,'nexilis::server::Room']]],
   ['signalhandler_8',['SignalHandler',['../de/d1b/classnexilis_1_1server_1_1SignalHandler.html',1,'nexilis::server']]],
-  ['socket_9',['Socket',['../d3/ddc/classnexilis_1_1boost__tcp_1_1Socket.html',1,'nexilis::boost_tcp']]]
+  ['socket_9',['Socket',['../d3/ddc/classnexilis_1_1boost__tcp_1_1Socket.html',1,'nexilis::boost_tcp']]],
+  ['socketstate_10',['socketstate',['../d7/d67/structnexilis_1_1server_1_1af__inet_1_1UDPServer_1_1SocketState.html',1,'nexilis::server::af_inet::UDPServer::SocketState'],['../d0/de6/structnexilis_1_1server_1_1nxboost_1_1UDPServer_1_1SocketState.html',1,'nexilis::server::nxboost::UDPServer::SocketState']]]
 ];

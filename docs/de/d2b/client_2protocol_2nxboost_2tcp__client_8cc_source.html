@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.9-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.10-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -779,7 +779,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>    }</div>
 <div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span> </div>
 <div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">Log::debug</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Starting async read on &quot;</span>, (m_useSwitchedPort ? <span class="stringliteral">&quot;switched&quot;</span> : <span class="stringliteral">&quot;main&quot;</span>), <span class="stringliteral">&quot; port&quot;</span>);</div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>    doAsyncRead(current_socket, std::make_shared&lt;boost::asio::streambuf&gt;());</div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>    doAsyncRead(current_socket, std::make_shared&lt;boost::asio::streambuf&gt;(<a class="code hl_variable" href="../../d8/d34/namespacenexilis.html#a55ce89b28f747effbc16956e848bccaf">NEXILIS_MAX_JSON_MESSAGE</a> + 1));</div>
 <div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>}</div>
 <div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span> </div>
 <div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span><span class="keywordtype">void</span> TCPClient::doAsyncRead(std::shared_ptr&lt;TlsSocket&gt; current_socket,</div>
@@ -1026,6 +1026,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="ttc" id="anamespacenexilis_1_1client_html_af8d5b5008691d1832d523cc9008fede2acb5e100e5a9a3e7f6d1fd97512215282"><div class="ttname"><a href="../../d2/dbe/namespacenexilis_1_1client.html#af8d5b5008691d1832d523cc9008fede2acb5e100e5a9a3e7f6d1fd97512215282">nexilis::client::ProtocolStatus::error</a></div><div class="ttdeci">@ error</div></div>
 <div class="ttc" id="anamespacenexilis_1_1tls_html_ab2da4f30ec86e994dccc7cee18334b9c"><div class="ttname"><a href="../../d7/d94/namespacenexilis_1_1tls.html#ab2da4f30ec86e994dccc7cee18334b9c">nexilis::tls::createPskContext</a></div><div class="ttdeci">std::shared_ptr&lt; boost::asio::ssl::context &gt; createPskContext(const std::string &amp;password, bool server)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d54/tls_8cc_source.html#l00103">tls.cc:103</a></div></div>
 <div class="ttc" id="anamespacenexilis_html_a279ce2b95cb6cfebfb8a884fcf615072"><div class="ttname"><a href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nexilis::nx_data</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; nx_data</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dd2/nx__data_8hh_source.html#l00026">nx_data.hh:26</a></div></div>
+<div class="ttc" id="anamespacenexilis_html_a55ce89b28f747effbc16956e848bccaf"><div class="ttname"><a href="../../d8/d34/namespacenexilis.html#a55ce89b28f747effbc16956e848bccaf">nexilis::NEXILIS_MAX_JSON_MESSAGE</a></div><div class="ttdeci">constexpr uint64_t NEXILIS_MAX_JSON_MESSAGE</div><div class="ttdoc">Maximum size of one server JSON response, excluding its newline delimiter.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/da5/nexilis__constants_8hh_source.html#l00028">nexilis_constants.hh:28</a></div></div>
 <div class="ttc" id="aports_8hh_html"><div class="ttname"><a href="../../d9/d5c/ports_8hh.html">ports.hh</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

@@ -1,0 +1,12 @@
+<map id="nexilis::server::af_inet::TCPServer::Connection::shutdown" name="nexilis::server::af_inet::TCPServer::Connection::shutdown">
+<area shape="rect" id="Node000001" title=" " alt="" coords="559,77,768,132"/>
+<area shape="poly" id="edge6_Node000001_Node000001" title=" " alt="" coords="709,66,693,59,663,56,639,58,623,63,615,69,616,77,610,77,610,67,620,58,638,53,663,51,694,54,712,62"/>
+<area shape="rect" id="Node000002" href="$de/dc5/structnexilis_1_1server_1_1af__inet_1_1TCPServer_1_1Connection.html#a36eb0441a4f442ec0aea7e5818800639" title=" " alt="" coords="282,29,491,84"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="545,87,491,77,492,72,545,82"/>
+<area shape="rect" id="Node000004" href="$de/dc5/structnexilis_1_1server_1_1af__inet_1_1TCPServer_1_1Connection.html#a7bb429044ed954a7afba4f1908367cc4" title=" " alt="" coords="263,133,511,173"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="545,128,503,135,502,130,544,123"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="433,18,416,11,387,8,362,10,346,15,339,21,339,29,334,29,334,19,343,10,361,5,387,3,418,6,435,14"/>
+<area shape="rect" id="Node000003" href="$de/dc5/structnexilis_1_1server_1_1af__inet_1_1TCPServer_1_1Connection.html#a466e719db35e5637b5f45aed8385bc1a" title=" " alt="" coords="5,29,215,84"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="268,59,215,59,215,54,268,54"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="434,121,417,114,387,111,360,113,344,118,338,124,341,131,336,133,333,123,341,114,359,108,387,106,418,109,436,116"/>
+</map>

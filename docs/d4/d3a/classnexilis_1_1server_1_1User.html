@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.9-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.10-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -76,7 +76,9 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="../../d7/ddb/classnexilis_1_1server_1_1User-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">nexilis::server::User Class Reference</div></div>
 </div><!--header-->
@@ -107,6 +109,26 @@ Collaboration diagram for nexilis::server::User:</div>
 </map>
 <center><span class="legend">[<a href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d1f/structnexilis_1_1server_1_1User_1_1TransportStatus.html">TransportStatus</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a7c1b63209cf1ea24fc883cd878b3ba1f" id="r_a7c1b63209cf1ea24fc883cd878b3ba1f"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1f">Transport</a> : std::uint8_t { <br />
+&#160;&#160;<a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1fa035f1c9c5b40ee5319893599395dd119">boostTcp</a>
+, <a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1fa3cd943e502fb66b1006ae938431bec8d">boostUdp</a>
+, <a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1fa0b23d540f859506a243c2f216492e84a">unixStream</a>
+, <a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1fa062c400c0e1f599aa5d978d6d11080bb">unixDgram</a>
+, <br />
+&#160;&#160;<a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1fa5456e39798caad5101a9209a8b8f5cba">inetTcp</a>
+, <a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1faa21236475ead46231cd2d5c1736a1428">inetUdp</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a7c1b63209cf1ea24fc883cd878b3ba1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transports that can keep one logical user connected.  <a href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1f">More...</a><br /></td></tr>
+<tr class="separator:a7c1b63209cf1ea24fc883cd878b3ba1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7710968efe499a793664c2f8425e1ba3" id="r_a7710968efe499a793664c2f8425e1ba3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7710968efe499a793664c2f8425e1ba3">User</a> (uint64_t id, std::string ip_address)</td></tr>
@@ -154,6 +176,41 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abe8ea61d63ba1bb6f188442c4298f863"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37bf38b5fc17e97faecf5637c8ad7e47" id="r_a37bf38b5fc17e97faecf5637c8ad7e47"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a37bf38b5fc17e97faecf5637c8ad7e47">getRoomId</a> () const</td></tr>
 <tr class="separator:a37bf38b5fc17e97faecf5637c8ad7e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d12364411f9a592b314ab2d5993776c" id="r_a3d12364411f9a592b314ab2d5993776c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a3d12364411f9a592b314ab2d5993776c">registerStreamTransport</a> (<a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1f">Transport</a> transport)</td></tr>
+<tr class="memdesc:a3d12364411f9a592b314ab2d5993776c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register one stream connection for a transport.  <br /></td></tr>
+<tr class="separator:a3d12364411f9a592b314ab2d5993776c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a107b8bb9504e3b661f373270bebaa622" id="r_a107b8bb9504e3b661f373270bebaa622"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d1f/structnexilis_1_1server_1_1User_1_1TransportStatus.html">TransportStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a107b8bb9504e3b661f373270bebaa622">endStreamTransport</a> (<a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1f">Transport</a> transport)</td></tr>
+<tr class="memdesc:a107b8bb9504e3b661f373270bebaa622"><td class="mdescLeft">&#160;</td><td class="mdescRight">End one stream connection and return the remaining presence.  <br /></td></tr>
+<tr class="separator:a107b8bb9504e3b661f373270bebaa622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae28d614e7b7fe541b74dfcc9f928467c" id="r_ae28d614e7b7fe541b74dfcc9f928467c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#ae28d614e7b7fe541b74dfcc9f928467c">touchDatagramTransport</a> (<a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1f">Transport</a> transport, std::chrono::steady_clock::time_point now)</td></tr>
+<tr class="memdesc:ae28d614e7b7fe541b74dfcc9f928467c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record datagram activity, activating the transport if needed.  <br /></td></tr>
+<tr class="separator:ae28d614e7b7fe541b74dfcc9f928467c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea70bacfc678863b82a72d7f8ee7f2a0" id="r_aea70bacfc678863b82a72d7f8ee7f2a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d1f/structnexilis_1_1server_1_1User_1_1TransportStatus.html">TransportStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#aea70bacfc678863b82a72d7f8ee7f2a0">endDatagramTransport</a> (<a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1f">Transport</a> transport)</td></tr>
+<tr class="memdesc:aea70bacfc678863b82a72d7f8ee7f2a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">End an active datagram transport and return the remaining presence.  <br /></td></tr>
+<tr class="separator:aea70bacfc678863b82a72d7f8ee7f2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f7c4a602b26313177eaf8735c6ca16c" id="r_a9f7c4a602b26313177eaf8735c6ca16c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a9f7c4a602b26313177eaf8735c6ca16c">beginPendingHandshake</a> (std::chrono::steady_clock::time_point now)</td></tr>
+<tr class="separator:a9f7c4a602b26313177eaf8735c6ca16c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a6e3a0be483133f74d8fd669dec8e7" id="r_af1a6e3a0be483133f74d8fd669dec8e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d1f/structnexilis_1_1server_1_1User_1_1TransportStatus.html">TransportStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#af1a6e3a0be483133f74d8fd669dec8e7">endPendingHandshake</a> ()</td></tr>
+<tr class="memdesc:af1a6e3a0be483133f74d8fd669dec8e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">End one pending handshake and return the remaining presence.  <br /></td></tr>
+<tr class="separator:af1a6e3a0be483133f74d8fd669dec8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f2d0e4da42280dea7afd903e819cab7" id="r_a4f2d0e4da42280dea7afd903e819cab7"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d6/d1f/structnexilis_1_1server_1_1User_1_1TransportStatus.html">TransportStatus</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a4f2d0e4da42280dea7afd903e819cab7">expirePendingHandshakes</a> (std::chrono::steady_clock::time_point now, std::chrono::milliseconds timeout)</td></tr>
+<tr class="memdesc:a4f2d0e4da42280dea7afd903e819cab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically claim idle pending handshakes for cleanup.  <br /></td></tr>
+<tr class="separator:a4f2d0e4da42280dea7afd903e819cab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d5583ebe804896d757b0029e942edb1" id="r_a5d5583ebe804896d757b0029e942edb1"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d6/d1f/structnexilis_1_1server_1_1User_1_1TransportStatus.html">TransportStatus</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a5d5583ebe804896d757b0029e942edb1">cancelPendingHandshakes</a> ()</td></tr>
+<tr class="memdesc:a5d5583ebe804896d757b0029e942edb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically cancel every pending handshake for cleanup.  <br /></td></tr>
+<tr class="separator:a5d5583ebe804896d757b0029e942edb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a461891fb214b28f7f6140a20f68f15a3" id="r_a461891fb214b28f7f6140a20f68f15a3"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d6/d1f/structnexilis_1_1server_1_1User_1_1TransportStatus.html">TransportStatus</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a461891fb214b28f7f6140a20f68f15a3">expireDatagramTransport</a> (<a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1f">Transport</a> transport, std::chrono::steady_clock::time_point now, std::chrono::milliseconds timeout)</td></tr>
+<tr class="memdesc:a461891fb214b28f7f6140a20f68f15a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically claim an idle datagram transport for cleanup.  <br /></td></tr>
+<tr class="separator:a461891fb214b28f7f6140a20f68f15a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f037e26479be0ff86e55eeeeca29a18" id="r_a9f037e26479be0ff86e55eeeeca29a18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a9f037e26479be0ff86e55eeeeca29a18">hasTransportPresence</a> () const</td></tr>
+<tr class="memdesc:a9f037e26479be0ff86e55eeeeca29a18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether any transport or pending handshake keeps this user alive.  <br /></td></tr>
+<tr class="separator:a9f037e26479be0ff86e55eeeeca29a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44b2493d892d7962c1dbf0897e9cc221" id="r_a44b2493d892d7962c1dbf0897e9cc221"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a44b2493d892d7962c1dbf0897e9cc221">hasTransport</a> (<a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1f">Transport</a> transport) const</td></tr>
+<tr class="memdesc:a44b2493d892d7962c1dbf0897e9cc221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the given transport is currently active.  <br /></td></tr>
+<tr class="separator:a44b2493d892d7962c1dbf0897e9cc221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62fc8b1c44df9ceb64daac949e9c6caf" id="r_a62fc8b1c44df9ceb64daac949e9c6caf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a62fc8b1c44df9ceb64daac949e9c6caf">clearSendCallback</a> (<a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1f">Transport</a> transport)</td></tr>
+<tr class="memdesc:a62fc8b1c44df9ceb64daac949e9c6caf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the send callback associated with a closed transport.  <br /></td></tr>
+<tr class="separator:a62fc8b1c44df9ceb64daac949e9c6caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab003a4c5310bd4b02f3a0987ed5f20d4" id="r_ab003a4c5310bd4b02f3a0987ed5f20d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#ab003a4c5310bd4b02f3a0987ed5f20d4">acceptShot</a> (std::chrono::steady_clock::time_point now, std::chrono::duration&lt; float &gt; interval)</td></tr>
 <tr class="memdesc:ab003a4c5310bd4b02f3a0987ed5f20d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically check and record the last accepted shot across transports.  <br /></td></tr>
 <tr class="separator:ab003a4c5310bd4b02f3a0987ed5f20d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,12 +275,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a555e9ed2d54c7fb42bc48011fc953816 inherit pub_methods_classnexilis_1_1BaseClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ef1dddc83ce3e9f573e144673189546 inherit pub_methods_classnexilis_1_1BaseClient" id="r_a2ef1dddc83ce3e9f573e144673189546"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dcb/classnexilis_1_1BaseClient.html#a2ef1dddc83ce3e9f573e144673189546">getId</a> () const</td></tr>
 <tr class="separator:a2ef1dddc83ce3e9f573e144673189546 inherit pub_methods_classnexilis_1_1BaseClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afabe7f6e603cd732fef7ed9d0058cd46 inherit pub_methods_classnexilis_1_1BaseClient" id="r_afabe7f6e603cd732fef7ed9d0058cd46"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dcb/classnexilis_1_1BaseClient.html#afabe7f6e603cd732fef7ed9d0058cd46">getUsername</a> () const</td></tr>
-<tr class="separator:afabe7f6e603cd732fef7ed9d0058cd46 inherit pub_methods_classnexilis_1_1BaseClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6535354cf22ad2a58f3b69c1d2feec53 inherit pub_methods_classnexilis_1_1BaseClient" id="r_a6535354cf22ad2a58f3b69c1d2feec53"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dcb/classnexilis_1_1BaseClient.html#a6535354cf22ad2a58f3b69c1d2feec53">getUsername</a> () const</td></tr>
+<tr class="separator:a6535354cf22ad2a58f3b69c1d2feec53 inherit pub_methods_classnexilis_1_1BaseClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28815de63f1ae6458a8a73e30727caa5 inherit pub_methods_classnexilis_1_1BaseClient" id="r_a28815de63f1ae6458a8a73e30727caa5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d8f/classnexilis_1_1Object2D.html">Object2D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dcb/classnexilis_1_1BaseClient.html#a28815de63f1ae6458a8a73e30727caa5">getObject2D</a> ()</td></tr>
 <tr class="separator:a28815de63f1ae6458a8a73e30727caa5 inherit pub_methods_classnexilis_1_1BaseClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2620f3052b832d949805f4a5bc2e0046 inherit pub_methods_classnexilis_1_1BaseClient" id="r_a2620f3052b832d949805f4a5bc2e0046"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d49/classnexilis_1_1Object3D.html">Object3D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dcb/classnexilis_1_1BaseClient.html#a2620f3052b832d949805f4a5bc2e0046">getObject3D</a> ()</td></tr>
 <tr class="separator:a2620f3052b832d949805f4a5bc2e0046 inherit pub_methods_classnexilis_1_1BaseClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ab13ef2cc86d67d91d35ae66b9dc7ba12" id="r_ab13ef2cc86d67d91d35ae66b9dc7ba12"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#ab13ef2cc86d67d91d35ae66b9dc7ba12">transportCount</a> = 6</td></tr>
+<tr class="separator:ab13ef2cc86d67d91d35ae66b9dc7ba12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -236,8 +298,57 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Internal client abstraction for server. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00035">35</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00039">39</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a7c1b63209cf1ea24fc883cd878b3ba1f" name="a7c1b63209cf1ea24fc883cd878b3ba1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c1b63209cf1ea24fc883cd878b3ba1f">&#9670;&#160;</a></span>Transport</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1f">nexilis::server::User::Transport</a> : std::uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transports that can keep one logical user connected. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7c1b63209cf1ea24fc883cd878b3ba1fa035f1c9c5b40ee5319893599395dd119" name="a7c1b63209cf1ea24fc883cd878b3ba1fa035f1c9c5b40ee5319893599395dd119"></a>boostTcp&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7c1b63209cf1ea24fc883cd878b3ba1fa3cd943e502fb66b1006ae938431bec8d" name="a7c1b63209cf1ea24fc883cd878b3ba1fa3cd943e502fb66b1006ae938431bec8d"></a>boostUdp&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7c1b63209cf1ea24fc883cd878b3ba1fa0b23d540f859506a243c2f216492e84a" name="a7c1b63209cf1ea24fc883cd878b3ba1fa0b23d540f859506a243c2f216492e84a"></a>unixStream&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7c1b63209cf1ea24fc883cd878b3ba1fa062c400c0e1f599aa5d978d6d11080bb" name="a7c1b63209cf1ea24fc883cd878b3ba1fa062c400c0e1f599aa5d978d6d11080bb"></a>unixDgram&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7c1b63209cf1ea24fc883cd878b3ba1fa5456e39798caad5101a9209a8b8f5cba" name="a7c1b63209cf1ea24fc883cd878b3ba1fa5456e39798caad5101a9209a8b8f5cba"></a>inetTcp&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7c1b63209cf1ea24fc883cd878b3ba1faa21236475ead46231cd2d5c1736a1428" name="a7c1b63209cf1ea24fc883cd878b3ba1faa21236475ead46231cd2d5c1736a1428"></a>inetUdp&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00126">126</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  127</span>    {</div>
+<div class="line"><span class="lineno">  128</span>        <a class="code hl_enumvalue" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1fa035f1c9c5b40ee5319893599395dd119">boostTcp</a>,</div>
+<div class="line"><span class="lineno">  129</span>        <a class="code hl_enumvalue" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1fa3cd943e502fb66b1006ae938431bec8d">boostUdp</a>,</div>
+<div class="line"><span class="lineno">  130</span>        <a class="code hl_enumvalue" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1fa0b23d540f859506a243c2f216492e84a">unixStream</a>,</div>
+<div class="line"><span class="lineno">  131</span>        <a class="code hl_enumvalue" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1fa062c400c0e1f599aa5d978d6d11080bb">unixDgram</a>,</div>
+<div class="line"><span class="lineno">  132</span>        <a class="code hl_enumvalue" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1fa5456e39798caad5101a9209a8b8f5cba">inetTcp</a>,</div>
+<div class="line"><span class="lineno">  133</span>        <a class="code hl_enumvalue" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1faa21236475ead46231cd2d5c1736a1428">inetUdp</a>,</div>
+<div class="line"><span class="lineno">  134</span>    };</div>
+<div class="ttc" id="aclassnexilis_1_1server_1_1User_html_a7c1b63209cf1ea24fc883cd878b3ba1fa035f1c9c5b40ee5319893599395dd119"><div class="ttname"><a href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1fa035f1c9c5b40ee5319893599395dd119">nexilis::server::User::Transport::boostTcp</a></div><div class="ttdeci">@ boostTcp</div></div>
+<div class="ttc" id="aclassnexilis_1_1server_1_1User_html_a7c1b63209cf1ea24fc883cd878b3ba1fa062c400c0e1f599aa5d978d6d11080bb"><div class="ttname"><a href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1fa062c400c0e1f599aa5d978d6d11080bb">nexilis::server::User::Transport::unixDgram</a></div><div class="ttdeci">@ unixDgram</div></div>
+<div class="ttc" id="aclassnexilis_1_1server_1_1User_html_a7c1b63209cf1ea24fc883cd878b3ba1fa0b23d540f859506a243c2f216492e84a"><div class="ttname"><a href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1fa0b23d540f859506a243c2f216492e84a">nexilis::server::User::Transport::unixStream</a></div><div class="ttdeci">@ unixStream</div></div>
+<div class="ttc" id="aclassnexilis_1_1server_1_1User_html_a7c1b63209cf1ea24fc883cd878b3ba1fa3cd943e502fb66b1006ae938431bec8d"><div class="ttname"><a href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1fa3cd943e502fb66b1006ae938431bec8d">nexilis::server::User::Transport::boostUdp</a></div><div class="ttdeci">@ boostUdp</div></div>
+<div class="ttc" id="aclassnexilis_1_1server_1_1User_html_a7c1b63209cf1ea24fc883cd878b3ba1fa5456e39798caad5101a9209a8b8f5cba"><div class="ttname"><a href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1fa5456e39798caad5101a9209a8b8f5cba">nexilis::server::User::Transport::inetTcp</a></div><div class="ttdeci">@ inetTcp</div></div>
+<div class="ttc" id="aclassnexilis_1_1server_1_1User_html_a7c1b63209cf1ea24fc883cd878b3ba1faa21236475ead46231cd2d5c1736a1428"><div class="ttname"><a href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1faa21236475ead46231cd2d5c1736a1428">nexilis::server::User::Transport::inetUdp</a></div><div class="ttdeci">@ inetUdp</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7710968efe499a793664c2f8425e1ba3" name="a7710968efe499a793664c2f8425e1ba3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7710968efe499a793664c2f8425e1ba3">&#9670;&#160;</a></span>User() <span class="overload">[1/3]</span></h2>
 
@@ -322,26 +433,42 @@ Here is the call graph for this function:</div>
 <div class="line"><span class="lineno">   42</span>      m_udpToken(std::move(other.m_udpToken)),</div>
 <div class="line"><span class="lineno">   43</span>      m_udpTokenSent(other.m_udpTokenSent.load()),</div>
 <div class="line"><span class="lineno">   44</span>      m_replayWindow(std::move(other.m_replayWindow)),</div>
-<div class="line"><span class="lineno">   45</span>      m_username(std::move(other.m_username)),</div>
-<div class="line"><span class="lineno">   46</span>      m_roomId(std::move(other.m_roomId)),</div>
-<div class="line"><span class="lineno">   47</span>      m_boostTCPSendToClient(std::move(other.m_boostTCPSendToClient)),</div>
-<div class="line"><span class="lineno">   48</span>      m_boostUDPSendToClient(std::move(other.m_boostUDPSendToClient)),</div>
-<div class="line"><span class="lineno">   49</span>      m_unixStreamSendToClient(std::move(other.m_unixStreamSendToClient)),</div>
-<div class="line"><span class="lineno">   50</span>      m_unixDgramSendToClient(std::move(other.m_unixDgramSendToClient)),</div>
-<div class="line"><span class="lineno">   51</span>      m_inetTCPSendToClient(std::move(other.m_inetTCPSendToClient)),</div>
-<div class="line"><span class="lineno">   52</span>      m_inetUDPSendToClient(std::move(other.m_inetUDPSendToClient)),</div>
-<div class="line"><span class="lineno">   53</span>      m_hasRootAccess(other.m_hasRootAccess.load()),</div>
-<div class="line"><span class="lineno">   54</span>      m_hasCommonAccess(other.m_hasCommonAccess.load())</div>
-<div class="line"><span class="lineno">   55</span>{</div>
-<div class="line"><span class="lineno">   56</span>    std::lock_guard&lt;std::mutex&gt; lock(other.m_shotMutex);</div>
-<div class="line"><span class="lineno">   57</span>    m_lastShotTime = other.m_lastShotTime;</div>
-<div class="line"><span class="lineno">   58</span>    std::lock_guard&lt;std::mutex&gt; broadcastLock(other.m_broadcastMutex);</div>
-<div class="line"><span class="lineno">   59</span>    m_lastBroadcastTime = other.m_lastBroadcastTime;</div>
-<div class="line"><span class="lineno">   60</span>    std::lock_guard&lt;std::mutex&gt; commandLock(other.m_commandMutex);</div>
-<div class="line"><span class="lineno">   61</span>    m_commandLimiterInitialized = other.m_commandLimiterInitialized;</div>
-<div class="line"><span class="lineno">   62</span>    m_commandLastRefill = other.m_commandLastRefill;</div>
-<div class="line"><span class="lineno">   63</span>    m_commandTokens = other.m_commandTokens;</div>
-<div class="line"><span class="lineno">   64</span>}</div>
+<div class="line"><span class="lineno">   45</span>      m_roomId(other.m_roomId.load()),</div>
+<div class="line"><span class="lineno">   46</span>      m_hasRootAccess(other.m_hasRootAccess.load()),</div>
+<div class="line"><span class="lineno">   47</span>      m_hasCommonAccess(other.m_hasCommonAccess.load())</div>
+<div class="line"><span class="lineno">   48</span>{</div>
+<div class="line"><span class="lineno">   49</span>    {</div>
+<div class="line"><span class="lineno">   50</span>        std::lock_guard&lt;std::mutex&gt; lock(other.m_shotMutex);</div>
+<div class="line"><span class="lineno">   51</span>        m_lastShotTime = other.m_lastShotTime;</div>
+<div class="line"><span class="lineno">   52</span>    }</div>
+<div class="line"><span class="lineno">   53</span>    {</div>
+<div class="line"><span class="lineno">   54</span>        std::lock_guard&lt;std::mutex&gt; lock(other.m_broadcastMutex);</div>
+<div class="line"><span class="lineno">   55</span>        m_lastBroadcastTime = other.m_lastBroadcastTime;</div>
+<div class="line"><span class="lineno">   56</span>    }</div>
+<div class="line"><span class="lineno">   57</span>    {</div>
+<div class="line"><span class="lineno">   58</span>        std::lock_guard&lt;std::mutex&gt; lock(other.m_commandMutex);</div>
+<div class="line"><span class="lineno">   59</span>        m_commandLimiterInitialized = other.m_commandLimiterInitialized;</div>
+<div class="line"><span class="lineno">   60</span>        m_commandLastRefill = other.m_commandLastRefill;</div>
+<div class="line"><span class="lineno">   61</span>        m_commandTokens = other.m_commandTokens;</div>
+<div class="line"><span class="lineno">   62</span>    }</div>
+<div class="line"><span class="lineno">   63</span>    {</div>
+<div class="line"><span class="lineno">   64</span>        std::lock_guard&lt;std::mutex&gt; lock(other.m_sendMutex);</div>
+<div class="line"><span class="lineno">   65</span>        m_boostTCPSendToClient = std::move(other.m_boostTCPSendToClient);</div>
+<div class="line"><span class="lineno">   66</span>        m_boostUDPSendToClient = std::move(other.m_boostUDPSendToClient);</div>
+<div class="line"><span class="lineno">   67</span>        m_unixStreamSendToClient = std::move(other.m_unixStreamSendToClient);</div>
+<div class="line"><span class="lineno">   68</span>        m_unixDgramSendToClient = std::move(other.m_unixDgramSendToClient);</div>
+<div class="line"><span class="lineno">   69</span>        m_inetTCPSendToClient = std::move(other.m_inetTCPSendToClient);</div>
+<div class="line"><span class="lineno">   70</span>        m_inetUDPSendToClient = std::move(other.m_inetUDPSendToClient);</div>
+<div class="line"><span class="lineno">   71</span>    }</div>
+<div class="line"><span class="lineno">   72</span>    {</div>
+<div class="line"><span class="lineno">   73</span>        std::lock_guard&lt;std::mutex&gt; lock(other.m_transportMutex);</div>
+<div class="line"><span class="lineno">   74</span>        m_streamTransportConnections = other.m_streamTransportConnections;</div>
+<div class="line"><span class="lineno">   75</span>        m_datagramTransportActive = other.m_datagramTransportActive;</div>
+<div class="line"><span class="lineno">   76</span>        m_datagramLastActivity = other.m_datagramLastActivity;</div>
+<div class="line"><span class="lineno">   77</span>        m_pendingHandshakes = other.m_pendingHandshakes;</div>
+<div class="line"><span class="lineno">   78</span>        m_pendingHandshakeSince = other.m_pendingHandshakeSince;</div>
+<div class="line"><span class="lineno">   79</span>    }</div>
+<div class="line"><span class="lineno">   80</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -410,14 +537,14 @@ Here is the call graph for this function:</div>
 
 <p>Atomically check and record the last accepted broadcast across transports. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00132">132</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  134</span>    {</div>
-<div class="line"><span class="lineno">  135</span>        std::lock_guard&lt;std::mutex&gt; lock(m_broadcastMutex);</div>
-<div class="line"><span class="lineno">  136</span>        <span class="keywordflow">if</span> (now - m_lastBroadcastTime &lt; interval)</div>
-<div class="line"><span class="lineno">  137</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  138</span>        m_lastBroadcastTime = now;</div>
-<div class="line"><span class="lineno">  139</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  140</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00202">202</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  204</span>    {</div>
+<div class="line"><span class="lineno">  205</span>        std::lock_guard&lt;std::mutex&gt; lock(m_broadcastMutex);</div>
+<div class="line"><span class="lineno">  206</span>        <span class="keywordflow">if</span> (now - m_lastBroadcastTime &lt; interval)</div>
+<div class="line"><span class="lineno">  207</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  208</span>        m_lastBroadcastTime = now;</div>
+<div class="line"><span class="lineno">  209</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  210</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -462,34 +589,34 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True when the command may be dispatched. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/df1/user_8cc_source.html#l00136">136</a> of file <a class="el" href="../../d3/df1/user_8cc_source.html">user.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  139</span>{</div>
-<div class="line"><span class="lineno">  140</span>    <span class="keywordflow">if</span> (!(ratePerSecond &gt; 0.0f))</div>
-<div class="line"><span class="lineno">  141</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  142</span> </div>
-<div class="line"><span class="lineno">  143</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> capacity = std::max(1.0, <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(burstCapacity));</div>
-<div class="line"><span class="lineno">  144</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> rate = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(ratePerSecond);</div>
-<div class="line"><span class="lineno">  145</span> </div>
-<div class="line"><span class="lineno">  146</span>    std::lock_guard&lt;std::mutex&gt; lock(m_commandMutex);</div>
-<div class="line"><span class="lineno">  147</span>    <span class="keywordflow">if</span> (!m_commandLimiterInitialized)</div>
-<div class="line"><span class="lineno">  148</span>    {</div>
-<div class="line"><span class="lineno">  149</span>        m_commandTokens = capacity;</div>
-<div class="line"><span class="lineno">  150</span>        m_commandLastRefill = now;</div>
-<div class="line"><span class="lineno">  151</span>        m_commandLimiterInitialized = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  152</span>    }</div>
-<div class="line"><span class="lineno">  153</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (now &gt; m_commandLastRefill)</div>
-<div class="line"><span class="lineno">  154</span>    {</div>
-<div class="line"><span class="lineno">  155</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> elapsed = std::chrono::duration&lt;double&gt;(now - m_commandLastRefill).count();</div>
-<div class="line"><span class="lineno">  156</span>        m_commandTokens = std::min(capacity, m_commandTokens + elapsed * rate);</div>
-<div class="line"><span class="lineno">  157</span>        m_commandLastRefill = now;</div>
-<div class="line"><span class="lineno">  158</span>    }</div>
-<div class="line"><span class="lineno">  159</span> </div>
-<div class="line"><span class="lineno">  160</span>    <span class="keywordflow">if</span> (m_commandTokens &lt; 1.0)</div>
-<div class="line"><span class="lineno">  161</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  162</span> </div>
-<div class="line"><span class="lineno">  163</span>    m_commandTokens -= 1.0;</div>
-<div class="line"><span class="lineno">  164</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  165</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/df1/user_8cc_source.html#l00162">162</a> of file <a class="el" href="../../d3/df1/user_8cc_source.html">user.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  165</span>{</div>
+<div class="line"><span class="lineno">  166</span>    <span class="keywordflow">if</span> (!(ratePerSecond &gt; 0.0f))</div>
+<div class="line"><span class="lineno">  167</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  168</span> </div>
+<div class="line"><span class="lineno">  169</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> capacity = std::max(1.0, <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(burstCapacity));</div>
+<div class="line"><span class="lineno">  170</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> rate = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(ratePerSecond);</div>
+<div class="line"><span class="lineno">  171</span> </div>
+<div class="line"><span class="lineno">  172</span>    std::lock_guard&lt;std::mutex&gt; lock(m_commandMutex);</div>
+<div class="line"><span class="lineno">  173</span>    <span class="keywordflow">if</span> (!m_commandLimiterInitialized)</div>
+<div class="line"><span class="lineno">  174</span>    {</div>
+<div class="line"><span class="lineno">  175</span>        m_commandTokens = capacity;</div>
+<div class="line"><span class="lineno">  176</span>        m_commandLastRefill = now;</div>
+<div class="line"><span class="lineno">  177</span>        m_commandLimiterInitialized = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  178</span>    }</div>
+<div class="line"><span class="lineno">  179</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (now &gt; m_commandLastRefill)</div>
+<div class="line"><span class="lineno">  180</span>    {</div>
+<div class="line"><span class="lineno">  181</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> elapsed = std::chrono::duration&lt;double&gt;(now - m_commandLastRefill).count();</div>
+<div class="line"><span class="lineno">  182</span>        m_commandTokens = std::min(capacity, m_commandTokens + elapsed * rate);</div>
+<div class="line"><span class="lineno">  183</span>        m_commandLastRefill = now;</div>
+<div class="line"><span class="lineno">  184</span>    }</div>
+<div class="line"><span class="lineno">  185</span> </div>
+<div class="line"><span class="lineno">  186</span>    <span class="keywordflow">if</span> (m_commandTokens &lt; 1.0)</div>
+<div class="line"><span class="lineno">  187</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  188</span> </div>
+<div class="line"><span class="lineno">  189</span>    m_commandTokens -= 1.0;</div>
+<div class="line"><span class="lineno">  190</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  191</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -511,36 +638,36 @@ Here is the call graph for this function:</div>
 
 <p>Accept a fresh request ID in the bounded, out-of-order replay window. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/df1/user_8cc_source.html#l00105">105</a> of file <a class="el" href="../../d3/df1/user_8cc_source.html">user.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  106</span>{</div>
-<div class="line"><span class="lineno">  107</span>    <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == 0 || !m_replayWindow)</div>
-<div class="line"><span class="lineno">  108</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  109</span> </div>
-<div class="line"><span class="lineno">  110</span>    std::lock_guard&lt;std::mutex&gt; lock(m_replayWindow-&gt;mutex);</div>
-<div class="line"><span class="lineno">  111</span>    <span class="keyword">auto</span>&amp; window = *m_replayWindow;</div>
-<div class="line"><span class="lineno">  112</span>    <span class="keywordflow">if</span> (window.highest == 0)</div>
-<div class="line"><span class="lineno">  113</span>    {</div>
-<div class="line"><span class="lineno">  114</span>        window.highest = id;</div>
-<div class="line"><span class="lineno">  115</span>        window.seen.set(0);</div>
-<div class="line"><span class="lineno">  116</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  117</span>    }</div>
-<div class="line"><span class="lineno">  118</span>    <span class="keywordflow">if</span> (<span class="keywordtype">id</span> &gt; window.highest)</div>
-<div class="line"><span class="lineno">  119</span>    {</div>
-<div class="line"><span class="lineno">  120</span>        uint64_t delta = <span class="keywordtype">id</span> - window.highest;</div>
-<div class="line"><span class="lineno">  121</span>        <span class="keywordflow">if</span> (delta &gt;= window.seen.size())</div>
-<div class="line"><span class="lineno">  122</span>            window.seen.reset();</div>
-<div class="line"><span class="lineno">  123</span>        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  124</span>            window.seen &lt;&lt;= delta;</div>
-<div class="line"><span class="lineno">  125</span>        window.highest = id;</div>
-<div class="line"><span class="lineno">  126</span>        window.seen.set(0);</div>
-<div class="line"><span class="lineno">  127</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  128</span>    }</div>
-<div class="line"><span class="lineno">  129</span>    uint64_t behind = window.highest - id;</div>
-<div class="line"><span class="lineno">  130</span>    <span class="keywordflow">if</span> (behind &gt;= window.seen.size() || window.seen.test(behind))</div>
-<div class="line"><span class="lineno">  131</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  132</span>    window.seen.set(behind);</div>
-<div class="line"><span class="lineno">  133</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  134</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/df1/user_8cc_source.html#l00131">131</a> of file <a class="el" href="../../d3/df1/user_8cc_source.html">user.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  132</span>{</div>
+<div class="line"><span class="lineno">  133</span>    <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == 0 || !m_replayWindow)</div>
+<div class="line"><span class="lineno">  134</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  135</span> </div>
+<div class="line"><span class="lineno">  136</span>    std::lock_guard&lt;std::mutex&gt; lock(m_replayWindow-&gt;mutex);</div>
+<div class="line"><span class="lineno">  137</span>    <span class="keyword">auto</span>&amp; window = *m_replayWindow;</div>
+<div class="line"><span class="lineno">  138</span>    <span class="keywordflow">if</span> (window.highest == 0)</div>
+<div class="line"><span class="lineno">  139</span>    {</div>
+<div class="line"><span class="lineno">  140</span>        window.highest = id;</div>
+<div class="line"><span class="lineno">  141</span>        window.seen.set(0);</div>
+<div class="line"><span class="lineno">  142</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  143</span>    }</div>
+<div class="line"><span class="lineno">  144</span>    <span class="keywordflow">if</span> (<span class="keywordtype">id</span> &gt; window.highest)</div>
+<div class="line"><span class="lineno">  145</span>    {</div>
+<div class="line"><span class="lineno">  146</span>        uint64_t delta = <span class="keywordtype">id</span> - window.highest;</div>
+<div class="line"><span class="lineno">  147</span>        <span class="keywordflow">if</span> (delta &gt;= window.seen.size())</div>
+<div class="line"><span class="lineno">  148</span>            window.seen.reset();</div>
+<div class="line"><span class="lineno">  149</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  150</span>            window.seen &lt;&lt;= delta;</div>
+<div class="line"><span class="lineno">  151</span>        window.highest = id;</div>
+<div class="line"><span class="lineno">  152</span>        window.seen.set(0);</div>
+<div class="line"><span class="lineno">  153</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  154</span>    }</div>
+<div class="line"><span class="lineno">  155</span>    uint64_t behind = window.highest - id;</div>
+<div class="line"><span class="lineno">  156</span>    <span class="keywordflow">if</span> (behind &gt;= window.seen.size() || window.seen.test(behind))</div>
+<div class="line"><span class="lineno">  157</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  158</span>    window.seen.set(behind);</div>
+<div class="line"><span class="lineno">  159</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  160</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -580,14 +707,87 @@ Here is the call graph for this function:</div>
 
 <p>Atomically check and record the last accepted shot across transports. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00121">121</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  123</span>    {</div>
-<div class="line"><span class="lineno">  124</span>        std::lock_guard&lt;std::mutex&gt; lock(m_shotMutex);</div>
-<div class="line"><span class="lineno">  125</span>        <span class="keywordflow">if</span> (now - m_lastShotTime &lt; interval)</div>
-<div class="line"><span class="lineno">  126</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  127</span>        m_lastShotTime = now;</div>
-<div class="line"><span class="lineno">  128</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  129</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00191">191</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  193</span>    {</div>
+<div class="line"><span class="lineno">  194</span>        std::lock_guard&lt;std::mutex&gt; lock(m_shotMutex);</div>
+<div class="line"><span class="lineno">  195</span>        <span class="keywordflow">if</span> (now - m_lastShotTime &lt; interval)</div>
+<div class="line"><span class="lineno">  196</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  197</span>        m_lastShotTime = now;</div>
+<div class="line"><span class="lineno">  198</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  199</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9f7c4a602b26313177eaf8735c6ca16c" name="a9f7c4a602b26313177eaf8735c6ca16c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f7c4a602b26313177eaf8735c6ca16c">&#9670;&#160;</a></span>beginPendingHandshake()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nexilis::server::User::beginPendingHandshake </td>
+          <td>(</td>
+          <td class="paramtype">std::chrono::steady_clock::time_point&#160;</td>
+          <td class="paramname"><em>now</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Activate pending-handshake presence. Multiple handshakes on one user are counted so a failed attempt cannot cancel another one. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/df1/user_8cc_source.html#l00360">360</a> of file <a class="el" href="../../d3/df1/user_8cc_source.html">user.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  361</span>{</div>
+<div class="line"><span class="lineno">  362</span>    std::lock_guard&lt;std::mutex&gt; lock(m_transportMutex);</div>
+<div class="line"><span class="lineno">  363</span>    <span class="keywordflow">if</span> (m_pendingHandshakes == 0)</div>
+<div class="line"><span class="lineno">  364</span>        m_pendingHandshakeSince = now;</div>
+<div class="line"><span class="lineno">  365</span>    ++m_pendingHandshakes;</div>
+<div class="line"><span class="lineno">  366</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d3a/classnexilis_1_1server_1_1User_a9f7c4a602b26313177eaf8735c6ca16c_icgraph.png" border="0" usemap="#ad4/d3a/classnexilis_1_1server_1_1User_a9f7c4a602b26313177eaf8735c6ca16c_icgraph" alt=""/></div>
+<map name="ad4/d3a/classnexilis_1_1server_1_1User_a9f7c4a602b26313177eaf8735c6ca16c_icgraph" id="ad4/d3a/classnexilis_1_1server_1_1User_a9f7c4a602b26313177eaf8735c6ca16c_icgraph">
+<area shape="rect" title=" " alt="" coords="271,5,461,45"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#ab46d86ba8a9ef0c084bad5c1bfa835f6" title="Track a successful authentication that has not opened its session yet." alt="" coords="5,5,223,45"/>
+<area shape="poly" title=" " alt="" coords="257,28,223,28,223,23,257,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5d5583ebe804896d757b0029e942edb1" name="a5d5583ebe804896d757b0029e942edb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d5583ebe804896d757b0029e942edb1">&#9670;&#160;</a></span>cancelPendingHandshakes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="../../d6/d1f/structnexilis_1_1server_1_1User_1_1TransportStatus.html">User::TransportStatus</a> &gt; nexilis::server::User::cancelPendingHandshakes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Atomically cancel every pending handshake for cleanup. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/df1/user_8cc_source.html#l00407">407</a> of file <a class="el" href="../../d3/df1/user_8cc_source.html">user.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  408</span>{</div>
+<div class="line"><span class="lineno">  409</span>    std::lock_guard&lt;std::mutex&gt; lock(m_transportMutex);</div>
+<div class="line"><span class="lineno">  410</span>    <span class="keywordflow">if</span> (m_pendingHandshakes == 0)</div>
+<div class="line"><span class="lineno">  411</span>        <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><span class="lineno">  412</span> </div>
+<div class="line"><span class="lineno">  413</span>    m_pendingHandshakes = 0;</div>
+<div class="line"><span class="lineno">  414</span>    m_pendingHandshakeSince = {};</div>
+<div class="line"><span class="lineno">  415</span> </div>
+<div class="line"><span class="lineno">  416</span>    TransportStatus status;</div>
+<div class="line"><span class="lineno">  417</span>    status.anyActive = hasPresenceLocked(</div>
+<div class="line"><span class="lineno">  418</span>            m_streamTransportConnections, m_datagramTransportActive, m_pendingHandshakes);</div>
+<div class="line"><span class="lineno">  419</span>    <span class="keyword">const</span> <span class="keyword">auto</span> boostTcpIndex = transportIndex(<a class="code hl_enumvalue" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1fa035f1c9c5b40ee5319893599395dd119">Transport::boostTcp</a>);</div>
+<div class="line"><span class="lineno">  420</span>    status.transportActive = m_streamTransportConnections[boostTcpIndex] != 0;</div>
+<div class="line"><span class="lineno">  421</span>    <span class="keywordflow">return</span> status;</div>
+<div class="line"><span class="lineno">  422</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -616,11 +816,11 @@ Here is the call graph for this function:</div>
 
 <p>The UDP capability is disclosed only by the initial ID response. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00073">73</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   74</span>    {</div>
-<div class="line"><span class="lineno">   75</span>        <span class="keywordtype">bool</span> expected = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   76</span>        <span class="keywordflow">return</span> m_udpTokenSent.compare_exchange_strong(expected, <span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">   77</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00077">77</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   78</span>    {</div>
+<div class="line"><span class="lineno">   79</span>        <span class="keywordtype">bool</span> expected = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   80</span>        <span class="keywordflow">return</span> m_udpTokenSent.compare_exchange_strong(expected, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   81</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -638,6 +838,345 @@ Here is the caller graph for this function:</div>
 </map>
 </div>
 
+</div>
+</div>
+<a id="a62fc8b1c44df9ceb64daac949e9c6caf" name="a62fc8b1c44df9ceb64daac949e9c6caf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62fc8b1c44df9ceb64daac949e9c6caf">&#9670;&#160;</a></span>clearSendCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nexilis::server::User::clearSendCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1f">Transport</a>&#160;</td>
+          <td class="paramname"><em>transport</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear the send callback associated with a closed transport. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/df1/user_8cc_source.html#l00469">469</a> of file <a class="el" href="../../d3/df1/user_8cc_source.html">user.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  470</span>{</div>
+<div class="line"><span class="lineno">  471</span>    std::lock_guard&lt;std::mutex&gt; lock(m_sendMutex);</div>
+<div class="line"><span class="lineno">  472</span>    <span class="keywordflow">switch</span> (transport)</div>
+<div class="line"><span class="lineno">  473</span>    {</div>
+<div class="line"><span class="lineno">  474</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1fa035f1c9c5b40ee5319893599395dd119">Transport::boostTcp</a>:</div>
+<div class="line"><span class="lineno">  475</span>            m_boostTCPSendToClient = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  476</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  477</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1fa3cd943e502fb66b1006ae938431bec8d">Transport::boostUdp</a>:</div>
+<div class="line"><span class="lineno">  478</span>            m_boostUDPSendToClient = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  479</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  480</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1fa0b23d540f859506a243c2f216492e84a">Transport::unixStream</a>:</div>
+<div class="line"><span class="lineno">  481</span>            m_unixStreamSendToClient = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  482</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  483</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1fa062c400c0e1f599aa5d978d6d11080bb">Transport::unixDgram</a>:</div>
+<div class="line"><span class="lineno">  484</span>            m_unixDgramSendToClient = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  485</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  486</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1fa5456e39798caad5101a9209a8b8f5cba">Transport::inetTcp</a>:</div>
+<div class="line"><span class="lineno">  487</span>            m_inetTCPSendToClient = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  488</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  489</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1faa21236475ead46231cd2d5c1736a1428">Transport::inetUdp</a>:</div>
+<div class="line"><span class="lineno">  490</span>            m_inetUDPSendToClient = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  491</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  492</span>    }</div>
+<div class="line"><span class="lineno">  493</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d3a/classnexilis_1_1server_1_1User_a62fc8b1c44df9ceb64daac949e9c6caf_icgraph.png" border="0" usemap="#ad4/d3a/classnexilis_1_1server_1_1User_a62fc8b1c44df9ceb64daac949e9c6caf_icgraph" alt=""/></div>
+<map name="ad4/d3a/classnexilis_1_1server_1_1User_a62fc8b1c44df9ceb64daac949e9c6caf_icgraph" id="ad4/d3a/classnexilis_1_1server_1_1User_a62fc8b1c44df9ceb64daac949e9c6caf_icgraph">
+<area shape="rect" title="Clear the send callback associated with a closed transport." alt="" coords="1028,101,1180,141"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a403a5e9ead7cf3031c09b29abbbbcdfd" title="Finish a handshake that did not open a session." alt="" coords="763,37,980,77"/>
+<area shape="poly" title=" " alt="" coords="1017,100,944,80,945,75,1018,95"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a8fbd4d6d8a95879846c9afe499df098b" title="Finish an active datagram transport, removing the user when nothing remains." alt="" coords="763,101,980,141"/>
+<area shape="poly" title=" " alt="" coords="1015,124,980,124,980,119,1015,119"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#ab74ef68626912c23af6914758648a6e0" title="Finish one stream connection, removing the user when nothing remains." alt="" coords="763,165,980,205"/>
+<area shape="poly" title=" " alt="" coords="1018,148,945,168,944,163,1017,142"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a62494bb2dd0c80e8e20e33aa712748d1" title="Drop every active datagram transport of the given kind on stop." alt="" coords="497,101,715,141"/>
+<area shape="poly" title=" " alt="" coords="749,124,715,124,715,119,749,119"/>
+<area shape="rect" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a9f160f664a411ee41ab01634930ebe3f" title="NXProtocol::stop() implementation." alt="" coords="278,69,446,109"/>
+<area shape="poly" title=" " alt="" coords="483,108,446,103,446,98,484,103"/>
+<area shape="rect" href="../../d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#abc53a16b7207a2992af5e36f7d18b0cd" title="NXProtocol::stop() implementation." alt="" coords="275,133,449,173"/>
+<area shape="poly" title=" " alt="" coords="484,140,450,145,449,139,483,135"/>
+<area shape="rect" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#abeef8102fec80fb7e42fe3745083a21f" title="Move assignment operator." alt="" coords="13,5,219,45"/>
+<area shape="poly" title=" " alt="" coords="271,68,193,48,194,43,272,63"/>
+<area shape="rect" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a50bf92a30646e072df669e53bacfeea0" title="Destructor." alt="" coords="5,69,227,109"/>
+<area shape="poly" title=" " alt="" coords="264,92,227,92,227,87,264,87"/>
+<area shape="rect" href="../../d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#a31d5dc5934fcde97b0e6c9afa4ea755a" title="Move assignment operator." alt="" coords="29,133,203,173"/>
+<area shape="poly" title=" " alt="" coords="261,156,203,156,203,151,261,151"/>
+<area shape="rect" href="../../d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#a4642f3d0d8ed9baf31087321b6e0948b" title="Destructor." alt="" coords="21,197,211,237"/>
+<area shape="poly" title=" " alt="" coords="272,179,194,200,193,195,271,174"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aea70bacfc678863b82a72d7f8ee7f2a0" name="aea70bacfc678863b82a72d7f8ee7f2a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea70bacfc678863b82a72d7f8ee7f2a0">&#9670;&#160;</a></span>endDatagramTransport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d1f/structnexilis_1_1server_1_1User_1_1TransportStatus.html">User::TransportStatus</a> nexilis::server::User::endDatagramTransport </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1f">Transport</a>&#160;</td>
+          <td class="paramname"><em>transport</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>End an active datagram transport and return the remaining presence. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/df1/user_8cc_source.html#l00344">344</a> of file <a class="el" href="../../d3/df1/user_8cc_source.html">user.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  345</span>{</div>
+<div class="line"><span class="lineno">  346</span>    <span class="keyword">const</span> <span class="keyword">auto</span> index = transportIndex(transport);</div>
+<div class="line"><span class="lineno">  347</span>    TransportStatus status;</div>
+<div class="line"><span class="lineno">  348</span>    <span class="keywordflow">if</span> (index &gt;= <a class="code hl_variable" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#ab13ef2cc86d67d91d35ae66b9dc7ba12">transportCount</a>)</div>
+<div class="line"><span class="lineno">  349</span>        <span class="keywordflow">return</span> status;</div>
+<div class="line"><span class="lineno">  350</span> </div>
+<div class="line"><span class="lineno">  351</span>    std::lock_guard&lt;std::mutex&gt; lock(m_transportMutex);</div>
+<div class="line"><span class="lineno">  352</span>    m_datagramTransportActive[index] = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  353</span>    m_datagramLastActivity[index] = {};</div>
+<div class="line"><span class="lineno">  354</span>    status.anyActive = hasPresenceLocked(</div>
+<div class="line"><span class="lineno">  355</span>            m_streamTransportConnections, m_datagramTransportActive, m_pendingHandshakes);</div>
+<div class="line"><span class="lineno">  356</span>    status.transportActive = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  357</span>    <span class="keywordflow">return</span> status;</div>
+<div class="line"><span class="lineno">  358</span>}</div>
+<div class="ttc" id="aclassnexilis_1_1server_1_1User_html_ab13ef2cc86d67d91d35ae66b9dc7ba12"><div class="ttname"><a href="../../d4/d3a/classnexilis_1_1server_1_1User.html#ab13ef2cc86d67d91d35ae66b9dc7ba12">nexilis::server::User::transportCount</a></div><div class="ttdeci">static constexpr std::size_t transportCount</div><div class="ttdef"><b>Definition</b> <a href="../../d8/ddf/user_8hh_source.html#l00136">user.hh:136</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d3a/classnexilis_1_1server_1_1User_aea70bacfc678863b82a72d7f8ee7f2a0_icgraph.png" border="0" usemap="#ad4/d3a/classnexilis_1_1server_1_1User_aea70bacfc678863b82a72d7f8ee7f2a0_icgraph" alt=""/></div>
+<map name="ad4/d3a/classnexilis_1_1server_1_1User_aea70bacfc678863b82a72d7f8ee7f2a0_icgraph" id="ad4/d3a/classnexilis_1_1server_1_1User_aea70bacfc678863b82a72d7f8ee7f2a0_icgraph">
+<area shape="rect" title="End an active datagram transport and return the remaining presence." alt="" coords="1028,101,1207,141"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a8fbd4d6d8a95879846c9afe499df098b" title="Finish an active datagram transport, removing the user when nothing remains." alt="" coords="763,101,980,141"/>
+<area shape="poly" title=" " alt="" coords="1014,124,980,124,980,119,1014,119"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a62494bb2dd0c80e8e20e33aa712748d1" title="Drop every active datagram transport of the given kind on stop." alt="" coords="497,101,715,141"/>
+<area shape="poly" title=" " alt="" coords="749,124,715,124,715,119,749,119"/>
+<area shape="rect" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a9f160f664a411ee41ab01634930ebe3f" title="NXProtocol::stop() implementation." alt="" coords="278,69,446,109"/>
+<area shape="poly" title=" " alt="" coords="483,108,446,103,446,98,484,103"/>
+<area shape="rect" href="../../d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#abc53a16b7207a2992af5e36f7d18b0cd" title="NXProtocol::stop() implementation." alt="" coords="275,133,449,173"/>
+<area shape="poly" title=" " alt="" coords="484,140,450,145,449,139,483,135"/>
+<area shape="rect" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#abeef8102fec80fb7e42fe3745083a21f" title="Move assignment operator." alt="" coords="13,5,219,45"/>
+<area shape="poly" title=" " alt="" coords="271,68,193,48,194,43,272,63"/>
+<area shape="rect" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a50bf92a30646e072df669e53bacfeea0" title="Destructor." alt="" coords="5,69,227,109"/>
+<area shape="poly" title=" " alt="" coords="264,92,227,92,227,87,264,87"/>
+<area shape="rect" href="../../d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#a31d5dc5934fcde97b0e6c9afa4ea755a" title="Move assignment operator." alt="" coords="29,133,203,173"/>
+<area shape="poly" title=" " alt="" coords="261,156,203,156,203,151,261,151"/>
+<area shape="rect" href="../../d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#a4642f3d0d8ed9baf31087321b6e0948b" title="Destructor." alt="" coords="21,197,211,237"/>
+<area shape="poly" title=" " alt="" coords="272,179,194,200,193,195,271,174"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af1a6e3a0be483133f74d8fd669dec8e7" name="af1a6e3a0be483133f74d8fd669dec8e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1a6e3a0be483133f74d8fd669dec8e7">&#9670;&#160;</a></span>endPendingHandshake()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d1f/structnexilis_1_1server_1_1User_1_1TransportStatus.html">User::TransportStatus</a> nexilis::server::User::endPendingHandshake </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>End one pending handshake and return the remaining presence. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/df1/user_8cc_source.html#l00368">368</a> of file <a class="el" href="../../d3/df1/user_8cc_source.html">user.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  369</span>{</div>
+<div class="line"><span class="lineno">  370</span>    TransportStatus status;</div>
+<div class="line"><span class="lineno">  371</span>    std::lock_guard&lt;std::mutex&gt; lock(m_transportMutex);</div>
+<div class="line"><span class="lineno">  372</span>    <span class="keywordflow">if</span> (m_pendingHandshakes != 0)</div>
+<div class="line"><span class="lineno">  373</span>        --m_pendingHandshakes;</div>
+<div class="line"><span class="lineno">  374</span>    <span class="keywordflow">if</span> (m_pendingHandshakes == 0)</div>
+<div class="line"><span class="lineno">  375</span>        m_pendingHandshakeSince = {};</div>
+<div class="line"><span class="lineno">  376</span> </div>
+<div class="line"><span class="lineno">  377</span>    status.anyActive = hasPresenceLocked(</div>
+<div class="line"><span class="lineno">  378</span>            m_streamTransportConnections, m_datagramTransportActive, m_pendingHandshakes);</div>
+<div class="line"><span class="lineno">  379</span>    <span class="keyword">const</span> <span class="keyword">auto</span> boostTcpIndex = transportIndex(<a class="code hl_enumvalue" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1fa035f1c9c5b40ee5319893599395dd119">Transport::boostTcp</a>);</div>
+<div class="line"><span class="lineno">  380</span>    status.transportActive = m_streamTransportConnections[boostTcpIndex] != 0 ||</div>
+<div class="line"><span class="lineno">  381</span>                             m_pendingHandshakes != 0;</div>
+<div class="line"><span class="lineno">  382</span>    <span class="keywordflow">return</span> status;</div>
+<div class="line"><span class="lineno">  383</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d3a/classnexilis_1_1server_1_1User_af1a6e3a0be483133f74d8fd669dec8e7_icgraph.png" border="0" usemap="#ad4/d3a/classnexilis_1_1server_1_1User_af1a6e3a0be483133f74d8fd669dec8e7_icgraph" alt=""/></div>
+<map name="ad4/d3a/classnexilis_1_1server_1_1User_af1a6e3a0be483133f74d8fd669dec8e7_icgraph" id="ad4/d3a/classnexilis_1_1server_1_1User_af1a6e3a0be483133f74d8fd669dec8e7_icgraph">
+<area shape="rect" title="End one pending handshake and return the remaining presence." alt="" coords="271,37,449,77"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a403a5e9ead7cf3031c09b29abbbbcdfd" title="Finish a handshake that did not open a session." alt="" coords="5,5,223,45"/>
+<area shape="poly" title=" " alt="" coords="257,47,222,42,223,37,258,41"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#afa1eee7a244639a9c6c9e27a2015bb0f" title="Consume pending presence when the session connection identifies the user." alt="" coords="5,69,223,109"/>
+<area shape="poly" title=" " alt="" coords="258,73,223,78,222,73,257,68"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a107b8bb9504e3b661f373270bebaa622" name="a107b8bb9504e3b661f373270bebaa622"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a107b8bb9504e3b661f373270bebaa622">&#9670;&#160;</a></span>endStreamTransport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d1f/structnexilis_1_1server_1_1User_1_1TransportStatus.html">User::TransportStatus</a> nexilis::server::User::endStreamTransport </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1f">Transport</a>&#160;</td>
+          <td class="paramname"><em>transport</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>End one stream connection and return the remaining presence. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/df1/user_8cc_source.html#l00316">316</a> of file <a class="el" href="../../d3/df1/user_8cc_source.html">user.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  317</span>{</div>
+<div class="line"><span class="lineno">  318</span>    <span class="keyword">const</span> <span class="keyword">auto</span> index = transportIndex(transport);</div>
+<div class="line"><span class="lineno">  319</span>    TransportStatus status;</div>
+<div class="line"><span class="lineno">  320</span>    <span class="keywordflow">if</span> (index &gt;= <a class="code hl_variable" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#ab13ef2cc86d67d91d35ae66b9dc7ba12">transportCount</a>)</div>
+<div class="line"><span class="lineno">  321</span>        <span class="keywordflow">return</span> status;</div>
+<div class="line"><span class="lineno">  322</span> </div>
+<div class="line"><span class="lineno">  323</span>    std::lock_guard&lt;std::mutex&gt; lock(m_transportMutex);</div>
+<div class="line"><span class="lineno">  324</span>    <span class="keywordflow">if</span> (m_streamTransportConnections[index] != 0)</div>
+<div class="line"><span class="lineno">  325</span>        --m_streamTransportConnections[index];</div>
+<div class="line"><span class="lineno">  326</span>    status.anyActive = hasPresenceLocked(</div>
+<div class="line"><span class="lineno">  327</span>            m_streamTransportConnections, m_datagramTransportActive, m_pendingHandshakes);</div>
+<div class="line"><span class="lineno">  328</span>    status.transportActive = m_streamTransportConnections[index] != 0;</div>
+<div class="line"><span class="lineno">  329</span>    <span class="keywordflow">return</span> status;</div>
+<div class="line"><span class="lineno">  330</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d3a/classnexilis_1_1server_1_1User_a107b8bb9504e3b661f373270bebaa622_icgraph.png" border="0" usemap="#ad4/d3a/classnexilis_1_1server_1_1User_a107b8bb9504e3b661f373270bebaa622_icgraph" alt=""/></div>
+<map name="ad4/d3a/classnexilis_1_1server_1_1User_a107b8bb9504e3b661f373270bebaa622_icgraph" id="ad4/d3a/classnexilis_1_1server_1_1User_a107b8bb9504e3b661f373270bebaa622_icgraph">
+<area shape="rect" title="End one stream connection and return the remaining presence." alt="" coords="271,5,432,45"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#ab74ef68626912c23af6914758648a6e0" title="Finish one stream connection, removing the user when nothing remains." alt="" coords="5,5,223,45"/>
+<area shape="poly" title=" " alt="" coords="257,28,223,28,223,23,257,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a461891fb214b28f7f6140a20f68f15a3" name="a461891fb214b28f7f6140a20f68f15a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a461891fb214b28f7f6140a20f68f15a3">&#9670;&#160;</a></span>expireDatagramTransport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="../../d6/d1f/structnexilis_1_1server_1_1User_1_1TransportStatus.html">User::TransportStatus</a> &gt; nexilis::server::User::expireDatagramTransport </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1f">Transport</a>&#160;</td>
+          <td class="paramname"><em>transport</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::chrono::steady_clock::time_point&#160;</td>
+          <td class="paramname"><em>now</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::chrono::milliseconds&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Atomically claim an idle datagram transport for cleanup. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/df1/user_8cc_source.html#l00424">424</a> of file <a class="el" href="../../d3/df1/user_8cc_source.html">user.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  428</span>{</div>
+<div class="line"><span class="lineno">  429</span>    <span class="keywordflow">if</span> (timeout &lt;= std::chrono::milliseconds::zero())</div>
+<div class="line"><span class="lineno">  430</span>        <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><span class="lineno">  431</span> </div>
+<div class="line"><span class="lineno">  432</span>    <span class="keyword">const</span> <span class="keyword">auto</span> index = transportIndex(transport);</div>
+<div class="line"><span class="lineno">  433</span>    <span class="keywordflow">if</span> (index &gt;= <a class="code hl_variable" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#ab13ef2cc86d67d91d35ae66b9dc7ba12">transportCount</a>)</div>
+<div class="line"><span class="lineno">  434</span>        <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><span class="lineno">  435</span> </div>
+<div class="line"><span class="lineno">  436</span>    std::lock_guard&lt;std::mutex&gt; lock(m_transportMutex);</div>
+<div class="line"><span class="lineno">  437</span>    <span class="keywordflow">if</span> (!m_datagramTransportActive[index] ||</div>
+<div class="line"><span class="lineno">  438</span>        now - m_datagramLastActivity[index] &lt; timeout)</div>
+<div class="line"><span class="lineno">  439</span>        <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><span class="lineno">  440</span> </div>
+<div class="line"><span class="lineno">  441</span>    m_datagramTransportActive[index] = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  442</span>    m_datagramLastActivity[index] = {};</div>
+<div class="line"><span class="lineno">  443</span> </div>
+<div class="line"><span class="lineno">  444</span>    TransportStatus status;</div>
+<div class="line"><span class="lineno">  445</span>    status.anyActive = hasPresenceLocked(</div>
+<div class="line"><span class="lineno">  446</span>            m_streamTransportConnections, m_datagramTransportActive, m_pendingHandshakes);</div>
+<div class="line"><span class="lineno">  447</span>    status.transportActive = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  448</span>    <span class="keywordflow">return</span> status;</div>
+<div class="line"><span class="lineno">  449</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4f2d0e4da42280dea7afd903e819cab7" name="a4f2d0e4da42280dea7afd903e819cab7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f2d0e4da42280dea7afd903e819cab7">&#9670;&#160;</a></span>expirePendingHandshakes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="../../d6/d1f/structnexilis_1_1server_1_1User_1_1TransportStatus.html">User::TransportStatus</a> &gt; nexilis::server::User::expirePendingHandshakes </td>
+          <td>(</td>
+          <td class="paramtype">std::chrono::steady_clock::time_point&#160;</td>
+          <td class="paramname"><em>now</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::chrono::milliseconds&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Atomically claim idle pending handshakes for cleanup. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/df1/user_8cc_source.html#l00385">385</a> of file <a class="el" href="../../d3/df1/user_8cc_source.html">user.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  388</span>{</div>
+<div class="line"><span class="lineno">  389</span>    <span class="keywordflow">if</span> (timeout &lt;= std::chrono::milliseconds::zero())</div>
+<div class="line"><span class="lineno">  390</span>        <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><span class="lineno">  391</span> </div>
+<div class="line"><span class="lineno">  392</span>    std::lock_guard&lt;std::mutex&gt; lock(m_transportMutex);</div>
+<div class="line"><span class="lineno">  393</span>    <span class="keywordflow">if</span> (m_pendingHandshakes == 0 || now - m_pendingHandshakeSince &lt; timeout)</div>
+<div class="line"><span class="lineno">  394</span>        <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><span class="lineno">  395</span> </div>
+<div class="line"><span class="lineno">  396</span>    m_pendingHandshakes = 0;</div>
+<div class="line"><span class="lineno">  397</span>    m_pendingHandshakeSince = {};</div>
+<div class="line"><span class="lineno">  398</span> </div>
+<div class="line"><span class="lineno">  399</span>    TransportStatus status;</div>
+<div class="line"><span class="lineno">  400</span>    status.anyActive = hasPresenceLocked(</div>
+<div class="line"><span class="lineno">  401</span>            m_streamTransportConnections, m_datagramTransportActive, m_pendingHandshakes);</div>
+<div class="line"><span class="lineno">  402</span>    <span class="keyword">const</span> <span class="keyword">auto</span> boostTcpIndex = transportIndex(<a class="code hl_enumvalue" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1fa035f1c9c5b40ee5319893599395dd119">Transport::boostTcp</a>);</div>
+<div class="line"><span class="lineno">  403</span>    status.transportActive = m_streamTransportConnections[boostTcpIndex] != 0;</div>
+<div class="line"><span class="lineno">  404</span>    <span class="keywordflow">return</span> status;</div>
+<div class="line"><span class="lineno">  405</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a455c27a0c6e2ed96a2a820b58b4976d7" name="a455c27a0c6e2ed96a2a820b58b4976d7"></a>
@@ -664,10 +1203,10 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Getter for the ip address. </p><dl class="section return"><dt>Returns</dt><dd>The ip address of the connection. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00061">61</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   62</span>    {</div>
-<div class="line"><span class="lineno">   63</span>        <span class="keywordflow">return</span> m_ip_address;</div>
-<div class="line"><span class="lineno">   64</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00065">65</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   66</span>    {</div>
+<div class="line"><span class="lineno">   67</span>        <span class="keywordflow">return</span> m_ip_address;</div>
+<div class="line"><span class="lineno">   68</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -694,106 +1233,141 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00115">115</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  116</span>    {</div>
-<div class="line"><span class="lineno">  117</span>        <span class="keywordflow">return</span> m_roomId;</div>
-<div class="line"><span class="lineno">  118</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00120">120</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  121</span>    {</div>
+<div class="line"><span class="lineno">  122</span>        <span class="keywordflow">return</span> m_roomId.load();</div>
+<div class="line"><span class="lineno">  123</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d4/d3a/classnexilis_1_1server_1_1User_a37bf38b5fc17e97faecf5637c8ad7e47_icgraph.png" border="0" usemap="#ad4/d3a/classnexilis_1_1server_1_1User_a37bf38b5fc17e97faecf5637c8ad7e47_icgraph" alt=""/></div>
 <map name="ad4/d3a/classnexilis_1_1server_1_1User_a37bf38b5fc17e97faecf5637c8ad7e47_icgraph" id="ad4/d3a/classnexilis_1_1server_1_1User_a37bf38b5fc17e97faecf5637c8ad7e47_icgraph">
-<area shape="rect" title=" " alt="" coords="1261,96,1413,136"/>
-<area shape="rect" href="../../df/d3b/classnexilis_1_1server_1_1Movement.html#a2c95a2b92dda15de1a7d0b0586219909" title=" " alt="" coords="772,60,964,100"/>
-<area shape="poly" title=" " alt="" coords="1247,112,964,90,965,85,1248,107"/>
-<area shape="rect" href="../../df/d3b/classnexilis_1_1server_1_1Movement.html#aa2e2a88fff2507cdec3151cb8f2c0bfe" title=" " alt="" coords="772,124,964,164"/>
-<area shape="poly" title=" " alt="" coords="1248,124,964,141,964,136,1247,119"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a288590751f4e72ca1a4d0333101a90f4" title=" " alt="" coords="1020,5,1213,45"/>
-<area shape="poly" title=" " alt="" coords="1274,93,1165,48,1167,43,1276,88"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#ae1b6f4a7a7b7a3aa79c34d492d2cd786" title="Send message in room context." alt="" coords="1022,801,1211,841"/>
-<area shape="poly" title=" " alt="" coords="1328,150,1127,802,1122,800,1323,148"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a97175caef23eb9fad365629c3d78e107" title=" " alt="" coords="487,175,709,215"/>
-<area shape="poly" title=" " alt="" coords="785,107,765,114,696,146,636,177,634,172,694,141,763,110,783,102"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a205831cf4657d0a80391beba1cfd953d" title=" " alt="" coords="243,779,432,819"/>
-<area shape="poly" title=" " alt="" coords="486,225,482,228,468,247,454,271,428,336,406,414,387,500,359,666,344,779,338,778,353,665,382,499,401,413,423,334,449,269,463,244,478,225,482,221"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a523ea35f6efde10413e9718e50a96e70" title=" " alt="" coords="5,747,195,787"/>
-<area shape="poly" title=" " alt="" coords="229,787,194,782,195,777,230,781"/>
-<area shape="rect" href="../../d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="15,811,185,851"/>
-<area shape="poly" title=" " alt="" coords="230,816,186,822,185,817,229,811"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#abb949f0528da98933c7ed71b1b7c8913" title=" " alt="" coords="487,239,709,279"/>
-<area shape="poly" title=" " alt="" coords="825,174,774,202,717,229,683,241,681,236,715,224,772,198,822,169"/>
-<area shape="poly" title=" " alt="" coords="505,287,482,306,439,364,405,429,380,498,363,568,351,634,345,693,341,778,336,778,340,693,346,633,358,567,375,497,400,427,434,361,478,302,502,283"/>
-<area shape="poly" title=" " alt="" coords="1006,15,881,13,810,19,737,30,665,49,597,76,535,114,507,138,482,164,467,186,453,214,427,287,405,375,386,471,358,655,343,779,338,778,352,655,380,470,400,374,422,286,448,212,463,183,478,161,504,134,532,110,595,72,664,44,736,25,809,13,880,8,1006,10"/>
-<area shape="poly" title=" " alt="" coords="1110,788,1097,643,1071,441,1052,338,1029,244,1002,166,986,136,970,114,956,102,960,98,974,110,991,134,1007,164,1034,242,1057,337,1076,440,1103,643,1116,787"/>
-<area shape="poly" title=" " alt="" coords="1109,788,1095,663,1067,495,1048,411,1026,335,1000,274,985,251,970,234,953,223,928,214,862,202,785,196,709,195,709,189,786,191,863,197,929,209,955,218,974,230,990,248,1004,271,1031,333,1054,410,1072,494,1100,663,1115,787"/>
-<area shape="poly" title=" " alt="" coords="1109,788,1094,657,1065,476,1046,384,1024,301,998,232,984,205,970,185,946,166,950,162,974,181,989,202,1003,229,1029,299,1051,383,1070,475,1099,656,1115,787"/>
-<area shape="poly" title=" " alt="" coords="1109,788,1093,672,1065,517,1046,440,1024,371,998,315,985,294,970,279,938,258,901,243,863,234,823,229,745,231,676,241,675,236,745,225,824,224,864,228,903,238,940,253,974,275,989,291,1003,312,1029,369,1051,438,1070,516,1098,671,1114,787"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#af3e224168bd0155316f390244bcfe54e" title=" " alt="" coords="483,779,713,819"/>
-<area shape="poly" title=" " alt="" coords="1028,847,969,858,902,865,832,865,763,856,739,846,715,833,679,821,680,816,717,828,741,841,765,851,832,860,902,859,968,852,1027,842"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a6815bcee9409ea91a5ec13a9b5481688" title=" " alt="" coords="501,843,695,883"/>
-<area shape="poly" title=" " alt="" coords="1055,849,1015,861,972,871,900,879,827,881,695,876,695,870,827,876,900,873,972,865,1013,856,1053,843"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a8cb5e91b231801378be77af6b11dabba" title=" " alt="" coords="501,907,695,947"/>
-<area shape="poly" title=" " alt="" coords="1066,850,1021,869,973,885,901,901,828,913,696,926,695,920,828,908,900,896,971,880,1019,864,1064,845"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a1bd1a413de19b5e2727b3fd1d9bcc347" title=" " alt="" coords="501,971,695,1011"/>
-<area shape="poly" title=" " alt="" coords="1084,852,1034,890,973,924,902,948,829,966,695,987,694,981,828,961,901,943,971,919,1031,886,1081,848"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a72dfb4f3c457e4d857a91d0587daea58" title=" " alt="" coords="497,1035,699,1075"/>
-<area shape="poly" title=" " alt="" coords="1098,855,1047,920,1013,954,973,982,906,1013,834,1034,763,1047,699,1054,699,1049,763,1042,833,1029,904,1008,971,978,1009,950,1043,917,1094,852"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#ad0a908b618c8d6be35139158efc6dfb6" title=" " alt="" coords="491,1099,705,1139"/>
-<area shape="poly" title=" " alt="" coords="1107,856,1088,901,1060,954,1022,1006,999,1030,974,1050,943,1069,909,1084,840,1106,770,1118,706,1123,705,1118,769,1113,839,1100,907,1079,940,1064,970,1046,995,1026,1018,1003,1055,951,1083,898,1102,854"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a8df9e4f9dcb8c7657b8cd669cfb87b9f" title=" " alt="" coords="480,1163,716,1203"/>
-<area shape="poly" title=" " alt="" coords="1112,856,1098,914,1072,987,1053,1025,1031,1061,1005,1094,974,1122,945,1141,913,1156,847,1178,780,1189,716,1192,716,1187,779,1183,846,1172,911,1151,942,1136,970,1118,1001,1090,1027,1058,1049,1022,1067,985,1093,913,1107,854"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a7702a108e1318abd0fb19b32529b4bb8" title=" " alt="" coords="501,1227,695,1267"/>
-<area shape="poly" title=" " alt="" coords="1116,855,1106,927,1083,1020,1065,1068,1041,1115,1011,1158,974,1194,942,1215,908,1231,873,1244,836,1252,762,1260,695,1260,695,1255,762,1255,835,1247,871,1239,906,1227,940,1211,970,1190,1007,1154,1036,1112,1060,1066,1078,1018,1101,926,1111,854"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#ac290394beb932c9c173f09b69f724d86" title=" " alt="" coords="501,1291,695,1331"/>
-<area shape="poly" title=" " alt="" coords="1118,855,1113,940,1106,994,1093,1052,1075,1111,1050,1168,1017,1220,974,1265,953,1277,926,1286,855,1300,773,1309,695,1312,695,1307,773,1303,854,1295,924,1281,951,1272,970,1261,1012,1217,1045,1165,1070,1109,1088,1050,1100,993,1108,939,1113,855"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a59c439e5e3875bb02dc8f086df42f226" title=" " alt="" coords="501,1355,695,1395"/>
-<area shape="poly" title=" " alt="" coords="1113,855,1094,960,1064,1097,1045,1166,1023,1228,1000,1279,974,1313,954,1326,926,1336,855,1353,774,1365,695,1372,695,1367,773,1360,854,1348,925,1331,951,1321,970,1309,995,1276,1018,1226,1040,1165,1059,1096,1089,959,1108,854"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a179b17009debe269a88815c62704617d" title=" " alt="" coords="501,1419,695,1459"/>
-<area shape="poly" title=" " alt="" coords="1114,856,1097,971,1067,1125,1048,1203,1026,1273,1002,1330,974,1369,954,1382,927,1394,855,1412,774,1426,695,1434,694,1429,773,1420,854,1407,925,1389,951,1377,970,1365,997,1327,1021,1271,1043,1201,1062,1124,1092,971,1108,855"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#aa29db2fd95c0aa075d254f73e2207c4c" title=" " alt="" coords="771,1441,965,1481"/>
-<area shape="poly" title=" " alt="" coords="1114,855,1097,978,1067,1146,1047,1231,1025,1309,1001,1374,974,1419,959,1433,942,1444,939,1439,956,1429,970,1416,996,1371,1020,1307,1042,1230,1061,1145,1091,977,1109,854"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a088623a3b46479acc62adb59af07c217" title=" " alt="" coords="771,1507,965,1547"/>
-<area shape="poly" title=" " alt="" coords="1115,855,1101,993,1074,1184,1055,1282,1032,1371,1005,1444,990,1473,974,1495,958,1509,954,1504,970,1492,986,1470,1000,1442,1027,1369,1049,1280,1068,1183,1096,992,1110,854"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a7bcf6c1c97e41879c205761652523e43" title=" " alt="" coords="767,289,969,329"/>
-<area shape="poly" title=" " alt="" coords="1113,788,1107,700,1100,642,1088,580,1070,516,1045,454,1012,395,970,343,955,332,959,328,974,339,1016,392,1050,451,1075,515,1093,579,1105,641,1113,699,1118,787"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a2ab39913db19a51bb2358d6684b1749a" title=" " alt="" coords="765,353,971,393"/>
-<area shape="poly" title=" " alt="" coords="1111,788,1102,710,1079,608,1061,554,1038,500,1007,451,970,407,955,396,958,391,974,403,1012,448,1042,498,1066,552,1085,606,1107,709,1116,787"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a200e4503dbb419dba8d77ffbc75d4603" title=" " alt="" coords="771,417,965,457"/>
-<area shape="poly" title=" " alt="" coords="1109,788,1096,722,1071,636,1053,592,1030,548,1003,507,970,471,954,460,957,455,974,467,1007,504,1035,545,1058,589,1076,635,1101,720,1114,787"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a8f483ee55df5538051cc1f037fe295b4" title=" " alt="" coords="771,481,965,521"/>
-<area shape="poly" title=" " alt="" coords="1105,789,1089,734,1062,665,1023,595,999,563,970,535,953,524,956,519,974,531,1003,560,1028,592,1067,663,1094,732,1111,787"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a90eb595fb37d7ddef4e4ad2e5447faff" title=" " alt="" coords="764,545,972,585"/>
-<area shape="poly" title=" " alt="" coords="1101,790,1081,747,1053,695,1016,644,970,599,951,588,954,583,974,595,1020,640,1057,692,1086,744,1105,788"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a87d6805bee7b08064fbd10a328df579f" title=" " alt="" coords="767,609,969,649"/>
-<area shape="poly" title=" " alt="" coords="1093,791,1042,726,1008,693,971,664,948,652,950,647,973,659,1012,689,1046,723,1097,788"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#af690c313968733268b9bbec9d5443425" title=" " alt="" coords="765,673,971,713"/>
-<area shape="poly" title=" " alt="" coords="1078,795,1028,761,971,728,942,716,944,711,973,723,1031,756,1081,791"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a02f82557e240dadd7338438092a85ed1" title=" " alt="" coords="771,737,965,777"/>
-<area shape="poly" title=" " alt="" coords="1025,800,946,780,947,775,1026,795"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#aba19bd1310d901fa8a7247da19e32974" title=" " alt="" coords="771,801,965,841"/>
-<area shape="poly" title=" " alt="" coords="1008,824,965,824,965,819,1008,819"/>
-<area shape="poly" title=" " alt="" coords="469,801,432,801,432,796,469,796"/>
-<area shape="poly" title=" " alt="" coords="502,842,419,821,420,816,503,837"/>
-<area shape="poly" title=" " alt="" coords="497,905,479,897,414,860,362,821,365,817,417,855,481,892,499,900"/>
-<area shape="poly" title=" " alt="" coords="490,967,479,961,436,928,399,889,349,820,353,817,403,886,440,924,481,956,492,963"/>
-<area shape="poly" title=" " alt="" coords="487,1031,478,1025,452,1002,428,976,389,918,361,863,343,820,348,818,366,861,394,916,432,972,456,998,482,1021,490,1026"/>
-<area shape="poly" title=" " alt="" coords="485,1094,478,1089,447,1058,421,1023,398,985,380,946,354,874,340,820,345,818,359,872,385,944,403,982,425,1020,451,1055,482,1085,488,1089"/>
-<area shape="poly" title=" " alt="" coords="484,1157,478,1153,442,1114,413,1070,390,1022,371,973,348,884,338,819,343,818,353,883,377,972,395,1020,418,1067,447,1111,482,1149,487,1153"/>
-<area shape="poly" title=" " alt="" coords="488,1224,478,1217,438,1170,406,1116,381,1059,363,1001,343,894,337,819,342,819,348,893,369,999,386,1057,411,1114,442,1167,482,1213,491,1220"/>
-<area shape="poly" title=" " alt="" coords="488,1288,478,1281,433,1225,398,1162,373,1095,356,1027,345,962,338,903,335,819,341,819,344,903,350,961,361,1026,378,1094,403,1160,437,1222,482,1277,491,1284"/>
-<area shape="poly" title=" " alt="" coords="487,1353,478,1344,450,1303,425,1242,403,1167,384,1086,354,928,339,819,344,819,360,927,389,1085,408,1166,430,1240,455,1300,482,1341,491,1349"/>
-<area shape="poly" title=" " alt="" coords="488,1417,478,1408,462,1388,448,1361,421,1292,399,1208,380,1116,352,939,338,819,343,818,357,938,385,1115,404,1206,426,1290,453,1359,467,1385,482,1405,491,1413"/>
-<area shape="poly" title=" " alt="" coords="758,1482,678,1491,597,1495,526,1491,499,1484,478,1473,459,1452,442,1424,412,1348,388,1255,370,1152,346,952,337,819,342,819,352,952,375,1151,393,1254,417,1346,446,1421,463,1449,482,1469,501,1479,527,1485,597,1490,678,1486,757,1477"/>
-<area shape="poly" title=" " alt="" coords="770,1552,699,1559,621,1557,582,1550,545,1539,510,1522,478,1499,459,1477,441,1447,412,1368,388,1270,370,1163,346,956,337,819,342,819,352,956,375,1162,393,1269,417,1366,446,1445,463,1474,482,1495,513,1518,547,1534,584,1545,622,1551,698,1554,769,1546"/>
-<area shape="poly" title=" " alt="" coords="753,312,686,319,613,335,543,363,511,382,482,405,443,448,412,498,388,551,370,606,349,708,342,779,337,778,344,707,365,605,383,549,407,495,439,445,478,401,508,377,541,358,612,330,685,314,753,306"/>
-<area shape="poly" title=" " alt="" coords="751,377,684,385,613,401,543,428,511,446,482,467,447,503,419,543,396,588,378,633,354,718,344,779,338,778,349,716,373,631,391,585,415,541,443,499,478,463,508,441,541,423,611,396,683,379,751,371"/>
-<area shape="poly" title=" " alt="" coords="758,441,690,449,618,464,546,490,513,508,482,529,452,556,426,589,404,624,386,660,360,728,346,779,340,778,355,726,381,658,400,621,422,586,448,553,478,525,510,503,544,485,616,459,689,444,757,436"/>
-<area shape="poly" title=" " alt="" coords="758,505,691,513,619,527,547,551,513,567,482,586,456,607,433,631,394,685,366,738,348,779,343,777,361,736,390,682,429,628,452,603,478,582,511,562,545,546,618,522,690,508,757,500"/>
-<area shape="poly" title=" " alt="" coords="750,569,686,576,616,588,547,609,481,638,438,670,402,709,373,748,352,780,348,777,368,745,398,705,435,666,479,634,545,604,615,583,685,571,750,564"/>
-<area shape="poly" title=" " alt="" coords="753,631,689,635,620,644,549,660,481,684,444,705,410,730,358,780,354,777,406,726,441,700,479,679,547,655,619,639,689,630,753,626"/>
-<area shape="poly" title=" " alt="" coords="750,689,688,689,619,693,549,703,481,719,448,731,417,747,366,781,363,776,415,742,446,726,479,713,548,697,619,688,688,684,750,683"/>
-<area shape="poly" title=" " alt="" coords="758,742,694,736,624,733,552,735,481,744,426,760,378,781,376,776,424,755,479,739,551,729,624,727,695,730,758,737"/>
-<area shape="poly" title=" " alt="" coords="784,799,763,792,739,779,715,769,637,759,557,760,481,769,416,781,415,776,480,764,556,755,637,754,717,764,742,774,765,787,786,794"/>
+<area shape="rect" title=" " alt="" coords="1825,344,1977,384"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#ab254c9ce12f43951410492942d854d7b" title="Broadcast leave and remove a disconnected user from the registry." alt="" coords="1053,165,1271,205"/>
+<area shape="poly" title=" " alt="" coords="1875,335,1833,288,1806,266,1776,249,1713,224,1646,205,1578,192,1510,183,1380,176,1271,178,1271,173,1381,170,1510,177,1579,186,1647,200,1714,219,1778,244,1809,262,1837,285,1879,331"/>
+<area shape="rect" href="../../df/d3b/classnexilis_1_1server_1_1Movement.html#a2c95a2b92dda15de1a7d0b0586219909" title=" " alt="" coords="1336,344,1528,384"/>
+<area shape="poly" title=" " alt="" coords="1811,367,1528,367,1528,361,1811,361"/>
+<area shape="rect" href="../../df/d3b/classnexilis_1_1server_1_1Movement.html#aa2e2a88fff2507cdec3151cb8f2c0bfe" title=" " alt="" coords="1336,408,1528,448"/>
+<area shape="poly" title=" " alt="" coords="1812,379,1529,418,1528,412,1811,374"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a288590751f4e72ca1a4d0333101a90f4" title=" " alt="" coords="1584,259,1777,299"/>
+<area shape="poly" title=" " alt="" coords="1835,342,1732,301,1734,296,1837,337"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#ae1b6f4a7a7b7a3aa79c34d492d2cd786" title="Send message in room context." alt="" coords="1586,955,1775,995"/>
+<area shape="poly" title=" " alt="" coords="1891,398,1692,955,1687,953,1886,396"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a403a5e9ead7cf3031c09b29abbbbcdfd" title="Finish a handshake that did not open a session." alt="" coords="774,197,991,237"/>
+<area shape="poly" title=" " alt="" coords="1040,202,992,208,991,202,1040,197"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a1579630f6d5ce660dd271816fa0441e6" title="Cancel remaining handshakes when the protocol stops." alt="" coords="774,261,991,301"/>
+<area shape="poly" title=" " alt="" coords="1082,212,1045,226,997,252,963,264,962,259,995,247,1043,222,1080,207"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a8fbd4d6d8a95879846c9afe499df098b" title="Finish an active datagram transport, removing the user when nothing remains." alt="" coords="774,325,991,365"/>
+<area shape="poly" title=" " alt="" coords="1064,214,1046,226,1029,247,1023,270,1016,293,998,315,979,327,976,323,994,311,1011,290,1018,268,1025,245,1042,222,1061,209"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a1b0ce5181d4092e523452f050874c1d7" title="Expire datagram transports that have been idle for too long." alt="" coords="769,5,996,45"/>
+<area shape="poly" title=" " alt="" coords="1129,158,1069,108,1033,82,995,60,967,48,969,43,997,55,1036,77,1072,103,1132,154"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#ac7eb5c5c9a1c9637ab263c1020622bdf" title="Expire handshakes that never opened a session." alt="" coords="774,69,991,109"/>
+<area shape="poly" title=" " alt="" coords="1099,163,995,124,957,112,959,107,997,119,1101,158"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#ab74ef68626912c23af6914758648a6e0" title="Finish one stream connection, removing the user when nothing remains." alt="" coords="774,133,991,173"/>
+<area shape="poly" title=" " alt="" coords="1040,174,991,168,992,163,1040,169"/>
+<area shape="rect" href="../../d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#a25730adef60b0adcd5a4d1d408d02244" title="NXProtocol::stop() implementation." alt="" coords="525,261,700,301"/>
+<area shape="poly" title=" " alt="" coords="760,284,700,284,700,279,760,279"/>
+<area shape="rect" href="../../d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#a7523a615b69382cd9fd719034423d13e" title="Move assignment operator." alt="" coords="278,197,453,237"/>
+<area shape="poly" title=" " alt="" coords="521,260,442,240,444,235,522,255"/>
+<area shape="rect" href="../../d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#a82fccf956c3f0110a339642081ff9c68" title="Destructor." alt="" coords="275,261,456,301"/>
+<area shape="poly" title=" " alt="" coords="511,284,456,284,456,279,511,279"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a62494bb2dd0c80e8e20e33aa712748d1" title="Drop every active datagram transport of the given kind on stop." alt="" coords="504,325,721,365"/>
+<area shape="poly" title=" " alt="" coords="760,348,721,348,721,343,760,343"/>
+<area shape="rect" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a9f160f664a411ee41ab01634930ebe3f" title="NXProtocol::stop() implementation." alt="" coords="281,325,449,365"/>
+<area shape="poly" title=" " alt="" coords="490,348,449,348,449,343,490,343"/>
+<area shape="rect" href="../../d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#abc53a16b7207a2992af5e36f7d18b0cd" title="NXProtocol::stop() implementation." alt="" coords="278,389,453,429"/>
+<area shape="poly" title=" " alt="" coords="522,371,444,392,442,387,521,366"/>
+<area shape="rect" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#abeef8102fec80fb7e42fe3745083a21f" title="Move assignment operator." alt="" coords="13,261,219,301"/>
+<area shape="poly" title=" " alt="" coords="273,324,194,304,195,299,274,319"/>
+<area shape="rect" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a50bf92a30646e072df669e53bacfeea0" title="Destructor." alt="" coords="5,325,227,365"/>
+<area shape="poly" title=" " alt="" coords="268,348,227,348,227,343,268,343"/>
+<area shape="rect" href="../../d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#a31d5dc5934fcde97b0e6c9afa4ea755a" title="Move assignment operator." alt="" coords="29,389,203,429"/>
+<area shape="poly" title=" " alt="" coords="264,412,204,412,204,407,264,407"/>
+<area shape="rect" href="../../d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#a4642f3d0d8ed9baf31087321b6e0948b" title="Destructor." alt="" coords="21,453,211,493"/>
+<area shape="poly" title=" " alt="" coords="274,435,195,456,194,451,273,430"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a97175caef23eb9fad365629c3d78e107" title=" " alt="" coords="1051,439,1273,479"/>
+<area shape="poly" title=" " alt="" coords="1352,391,1329,399,1214,441,1213,436,1327,393,1350,386"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a205831cf4657d0a80391beba1cfd953d" title=" " alt="" coords="788,1032,977,1072"/>
+<area shape="poly" title=" " alt="" coords="1050,489,1046,493,1018,523,994,557,954,631,925,710,906,790,894,867,888,935,886,1032,881,1032,883,935,889,866,901,789,920,709,949,629,989,554,1014,520,1042,489,1047,485"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a523ea35f6efde10413e9718e50a96e70" title=" " alt="" coords="518,1000,707,1040"/>
+<area shape="poly" title=" " alt="" coords="774,1042,707,1034,708,1029,775,1037"/>
+<area shape="rect" href="../../d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="527,1064,698,1104"/>
+<area shape="poly" title=" " alt="" coords="775,1067,698,1077,698,1071,774,1062"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#abb949f0528da98933c7ed71b1b7c8913" title=" " alt="" coords="1051,503,1273,543"/>
+<area shape="poly" title=" " alt="" coords="1375,456,1281,493,1243,505,1241,500,1279,488,1373,451"/>
+<area shape="poly" title=" " alt="" coords="1050,553,1046,557,998,613,961,678,933,747,913,817,900,885,892,945,887,1032,881,1032,887,945,895,884,908,816,928,745,956,675,994,610,1042,553,1047,549"/>
+<area shape="poly" title=" " alt="" coords="1581,259,1457,242,1386,239,1311,243,1238,254,1167,275,1102,308,1073,330,1046,355,1029,378,1012,409,982,489,957,587,935,693,904,897,889,1032,883,1031,899,896,930,692,952,585,977,488,1007,407,1024,375,1042,352,1069,326,1099,304,1165,270,1236,249,1311,237,1386,234,1458,237,1582,253"/>
+<area shape="poly" title=" " alt="" coords="1673,941,1656,821,1626,658,1607,575,1585,500,1561,439,1534,398,1520,386,1523,382,1538,394,1566,437,1591,499,1613,574,1632,657,1661,820,1678,941"/>
+<area shape="poly" title=" " alt="" coords="1676,941,1669,859,1661,808,1648,752,1630,695,1606,640,1574,589,1534,545,1506,523,1475,505,1408,479,1339,465,1273,459,1274,453,1339,459,1410,474,1478,500,1509,518,1538,541,1578,586,1610,637,1635,693,1653,751,1666,807,1674,859,1681,940"/>
+<area shape="poly" title=" " alt="" coords="1677,941,1672,849,1665,789,1653,724,1635,656,1610,588,1577,525,1534,469,1510,450,1513,446,1538,465,1581,522,1615,586,1640,654,1658,722,1670,788,1678,849,1682,941"/>
+<area shape="poly" title=" " alt="" coords="1674,942,1664,870,1641,778,1623,729,1599,682,1570,639,1534,602,1506,581,1475,564,1408,540,1338,527,1274,521,1274,516,1339,521,1409,535,1477,559,1509,577,1538,598,1574,636,1604,680,1628,727,1646,776,1669,869,1680,941"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#af3e224168bd0155316f390244bcfe54e" title=" " alt="" coords="1047,1393,1277,1433"/>
+<area shape="poly" title=" " alt="" coords="1677,1008,1660,1113,1630,1249,1611,1316,1589,1377,1565,1425,1538,1457,1511,1473,1486,1482,1462,1485,1438,1482,1388,1470,1327,1457,1235,1436,1237,1431,1329,1452,1389,1465,1439,1477,1462,1479,1485,1477,1508,1469,1534,1453,1560,1422,1584,1375,1606,1315,1625,1247,1654,1112,1672,1008"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a6815bcee9409ea91a5ec13a9b5481688" title=" " alt="" coords="1065,1457,1259,1497"/>
+<area shape="poly" title=" " alt="" coords="1678,1009,1661,1119,1632,1265,1613,1337,1591,1402,1566,1455,1552,1474,1538,1489,1517,1499,1489,1506,1418,1509,1337,1505,1259,1495,1259,1490,1337,1499,1418,1504,1488,1500,1515,1494,1534,1484,1548,1471,1562,1452,1586,1400,1608,1336,1627,1264,1656,1118,1673,1008"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a8cb5e91b231801378be77af6b11dabba" title=" " alt="" coords="1065,1521,1259,1561"/>
+<area shape="poly" title=" " alt="" coords="1678,1009,1662,1124,1633,1277,1614,1353,1592,1422,1567,1477,1553,1498,1538,1514,1507,1535,1472,1551,1436,1562,1398,1568,1324,1570,1256,1564,1256,1559,1324,1565,1398,1563,1435,1556,1470,1546,1504,1531,1534,1510,1548,1495,1562,1475,1587,1420,1609,1351,1628,1275,1656,1123,1673,1008"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a1bd1a413de19b5e2727b3fd1d9bcc347" title=" " alt="" coords="1065,1585,1259,1625"/>
+<area shape="poly" title=" " alt="" coords="1679,1009,1665,1135,1637,1306,1619,1392,1596,1470,1569,1533,1554,1557,1538,1575,1507,1597,1474,1613,1438,1624,1401,1631,1327,1634,1259,1628,1259,1623,1327,1629,1400,1625,1436,1619,1472,1608,1504,1592,1534,1571,1550,1554,1564,1531,1591,1469,1613,1391,1632,1305,1659,1134,1674,1008"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a72dfb4f3c457e4d857a91d0587daea58" title=" " alt="" coords="1331,280,1533,320"/>
+<area shape="poly" title=" " alt="" coords="1674,941,1659,808,1631,626,1612,534,1589,450,1563,381,1549,354,1534,334,1520,322,1524,318,1538,330,1554,351,1568,378,1594,448,1617,533,1636,625,1664,808,1679,940"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#ad0a908b618c8d6be35139158efc6dfb6" title=" " alt="" coords="1055,1649,1269,1689"/>
+<area shape="poly" title=" " alt="" coords="1680,1008,1668,1146,1642,1337,1623,1433,1600,1520,1572,1591,1555,1618,1538,1638,1507,1660,1474,1676,1438,1687,1401,1694,1327,1698,1259,1692,1259,1687,1327,1692,1401,1689,1437,1682,1472,1671,1505,1655,1534,1634,1551,1615,1567,1589,1595,1519,1618,1432,1637,1336,1662,1146,1675,1008"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a8df9e4f9dcb8c7657b8cd669cfb87b9f" title=" " alt="" coords="1044,1713,1280,1753"/>
+<area shape="poly" title=" " alt="" coords="1680,1009,1670,1158,1646,1368,1628,1475,1604,1571,1574,1650,1557,1680,1538,1702,1507,1724,1474,1741,1438,1752,1400,1759,1325,1762,1257,1756,1257,1751,1325,1757,1400,1754,1436,1747,1472,1736,1505,1720,1534,1698,1553,1677,1570,1647,1599,1570,1623,1474,1641,1367,1665,1158,1675,1008"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a7702a108e1318abd0fb19b32529b4bb8" title=" " alt="" coords="1065,567,1259,607"/>
+<area shape="poly" title=" " alt="" coords="1672,942,1659,879,1634,801,1616,761,1593,722,1566,687,1534,657,1504,636,1470,620,1398,597,1325,586,1259,583,1259,578,1326,581,1399,592,1472,615,1506,631,1538,653,1570,683,1598,720,1620,759,1639,800,1664,878,1677,941"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#ac290394beb932c9c173f09b69f724d86" title=" " alt="" coords="1065,631,1259,671"/>
+<area shape="poly" title=" " alt="" coords="1669,942,1653,889,1627,824,1588,760,1563,732,1534,708,1503,689,1469,674,1397,654,1325,646,1259,645,1259,639,1325,640,1398,649,1471,669,1505,684,1538,703,1567,728,1592,757,1632,822,1658,887,1674,940"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a59c439e5e3875bb02dc8f086df42f226" title=" " alt="" coords="1065,695,1259,735"/>
+<area shape="poly" title=" " alt="" coords="1666,943,1648,897,1621,844,1583,793,1560,770,1535,752,1502,735,1468,722,1396,707,1324,702,1259,704,1259,699,1324,697,1397,701,1470,717,1505,730,1537,747,1564,766,1587,789,1625,842,1653,895,1671,941"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a179b17009debe269a88815c62704617d" title=" " alt="" coords="1065,759,1259,799"/>
+<area shape="poly" title=" " alt="" coords="1663,943,1643,905,1615,862,1579,821,1558,803,1535,789,1502,775,1467,765,1394,755,1323,755,1259,761,1259,756,1323,750,1395,749,1468,760,1503,770,1537,784,1561,799,1583,817,1619,858,1648,902,1668,941"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#aa29db2fd95c0aa075d254f73e2207c4c" title=" " alt="" coords="1065,823,1259,863"/>
+<area shape="poly" title=" " alt="" coords="1660,944,1639,912,1611,876,1576,842,1535,817,1506,806,1481,800,1435,800,1388,809,1328,817,1259,826,1258,821,1328,812,1387,803,1435,795,1481,795,1507,801,1537,812,1579,838,1615,872,1643,909,1664,942"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a088623a3b46479acc62adb59af07c217" title=" " alt="" coords="1335,827,1529,867"/>
+<area shape="poly" title=" " alt="" coords="1642,949,1592,914,1535,881,1506,869,1508,864,1537,876,1595,909,1645,944"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a7bcf6c1c97e41879c205761652523e43" title=" " alt="" coords="1331,891,1533,931"/>
+<area shape="poly" title=" " alt="" coords="1589,954,1510,933,1511,928,1590,949"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a2ab39913db19a51bb2358d6684b1749a" title=" " alt="" coords="1329,955,1535,995"/>
+<area shape="poly" title=" " alt="" coords="1572,977,1536,977,1536,972,1572,972"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a200e4503dbb419dba8d77ffbc75d4603" title=" " alt="" coords="1335,1019,1529,1059"/>
+<area shape="poly" title=" " alt="" coords="1590,1001,1511,1021,1510,1016,1589,996"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a8f483ee55df5538051cc1f037fe295b4" title=" " alt="" coords="1335,1083,1529,1123"/>
+<area shape="poly" title=" " alt="" coords="1645,1005,1595,1040,1537,1073,1508,1085,1506,1080,1535,1068,1592,1035,1642,1001"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a90eb595fb37d7ddef4e4ad2e5447faff" title=" " alt="" coords="1328,1147,1536,1187"/>
+<area shape="poly" title=" " alt="" coords="1661,1008,1610,1073,1576,1107,1537,1137,1514,1149,1512,1144,1535,1132,1572,1103,1606,1070,1657,1005"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a87d6805bee7b08064fbd10a328df579f" title=" " alt="" coords="1331,1211,1533,1251"/>
+<area shape="poly" title=" " alt="" coords="1669,1008,1650,1052,1621,1104,1584,1156,1538,1201,1518,1213,1515,1208,1534,1197,1580,1152,1617,1101,1645,1049,1665,1006"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#af690c313968733268b9bbec9d5443425" title=" " alt="" coords="1329,1275,1535,1315"/>
+<area shape="poly" title=" " alt="" coords="1675,1009,1658,1064,1631,1133,1592,1204,1567,1236,1538,1265,1520,1277,1517,1272,1534,1261,1563,1233,1587,1201,1626,1131,1653,1062,1669,1007"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a02f82557e240dadd7338438092a85ed1" title=" " alt="" coords="1335,1339,1529,1379"/>
+<area shape="poly" title=" " alt="" coords="1678,1009,1665,1076,1640,1161,1622,1207,1599,1251,1571,1292,1538,1329,1521,1341,1518,1336,1534,1325,1567,1289,1594,1248,1617,1204,1635,1160,1660,1074,1673,1008"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#aba19bd1310d901fa8a7247da19e32974" title=" " alt="" coords="1335,1403,1529,1443"/>
+<area shape="poly" title=" " alt="" coords="1680,1009,1671,1087,1649,1190,1630,1244,1606,1298,1576,1348,1538,1393,1522,1405,1519,1400,1534,1389,1571,1345,1602,1296,1625,1242,1643,1188,1666,1086,1675,1008"/>
+<area shape="poly" title=" " alt="" coords="1060,1389,1042,1377,1008,1341,978,1301,953,1258,932,1214,902,1132,886,1073,891,1072,907,1131,937,1212,957,1255,982,1298,1012,1338,1046,1373,1063,1385"/>
+<area shape="poly" title=" " alt="" coords="1052,1455,1042,1447,1002,1404,968,1353,942,1300,921,1245,895,1144,883,1073,889,1072,900,1143,926,1243,947,1297,973,1351,1006,1400,1046,1443,1055,1450"/>
+<area shape="poly" title=" " alt="" coords="1051,1518,1042,1511,997,1459,961,1400,934,1336,913,1272,899,1210,890,1154,882,1073,887,1072,895,1153,904,1209,918,1270,939,1334,966,1397,1001,1456,1046,1507,1054,1514"/>
+<area shape="poly" title=" " alt="" coords="1052,1583,1042,1575,1016,1546,992,1515,954,1446,925,1373,906,1298,893,1227,885,1163,881,1073,886,1072,891,1163,898,1227,911,1297,930,1371,959,1444,997,1512,1020,1543,1046,1571,1055,1579"/>
+<area shape="poly" title=" " alt="" coords="1370,277,1209,208,1211,203,1372,272"/>
+<area shape="poly" title=" " alt="" coords="1318,311,1249,324,1176,346,1106,380,1074,402,1046,428,1030,449,1015,476,987,547,962,634,940,728,907,909,889,1032,884,1031,902,908,935,727,957,632,982,546,1011,474,1026,446,1042,425,1071,398,1103,376,1174,341,1247,319,1317,306"/>
+<area shape="poly" title=" " alt="" coords="1047,1643,1042,1639,1026,1620,1011,1594,984,1528,959,1447,937,1359,903,1189,884,1073,890,1072,908,1188,942,1358,964,1446,989,1526,1016,1592,1031,1617,1046,1636,1050,1640"/>
+<area shape="poly" title=" " alt="" coords="1046,1707,1042,1703,1025,1681,1009,1652,980,1578,954,1488,932,1389,900,1199,884,1072,889,1072,905,1199,938,1388,959,1486,985,1576,1014,1650,1029,1678,1046,1700,1050,1703"/>
+<area shape="poly" title=" " alt="" coords="1055,613,1046,621,1003,669,969,724,942,783,921,844,907,902,897,955,888,1032,883,1031,892,954,902,901,916,842,937,782,964,722,999,666,1042,617,1052,609"/>
+<area shape="poly" title=" " alt="" coords="1055,678,1046,685,1008,725,976,771,950,820,929,871,902,965,889,1032,884,1031,897,964,924,869,945,818,971,768,1003,721,1042,681,1052,673"/>
+<area shape="poly" title=" " alt="" coords="1054,743,1046,749,1012,781,983,818,958,858,938,899,908,976,891,1032,886,1031,903,974,933,897,954,855,979,815,1008,777,1042,745,1051,738"/>
+<area shape="poly" title=" " alt="" coords="1054,807,1046,813,1016,837,990,865,946,928,914,987,894,1033,889,1031,909,985,942,925,986,862,1013,833,1042,809,1051,803"/>
+<area shape="poly" title=" " alt="" coords="1070,871,1045,884,999,919,958,960,900,1033,896,1030,954,957,996,915,1043,879,1068,866"/>
+<area shape="poly" title=" " alt="" coords="1325,872,1167,910,1096,930,1045,948,1007,968,970,990,910,1034,907,1030,967,986,1004,963,1043,943,1094,925,1166,905,1323,867"/>
+<area shape="poly" title=" " alt="" coords="1318,932,1186,959,1045,995,933,1034,931,1029,1043,989,1185,954,1317,927"/>
+<area shape="poly" title=" " alt="" coords="1315,992,1044,1029,978,1039,977,1034,1044,1024,1314,987"/>
+<area shape="poly" title=" " alt="" coords="1321,1044,978,1052,977,1047,1321,1039"/>
+<area shape="poly" title=" " alt="" coords="1321,1095,977,1063,978,1058,1321,1090"/>
+<area shape="poly" title=" " alt="" coords="1314,1148,1043,1095,960,1075,961,1069,1045,1089,1315,1143"/>
+<area shape="poly" title=" " alt="" coords="1317,1216,1184,1189,1112,1169,1043,1145,971,1110,912,1074,915,1070,974,1106,1045,1140,1114,1164,1185,1183,1318,1211"/>
+<area shape="poly" title=" " alt="" coords="1314,1289,1250,1279,1180,1264,1110,1242,1043,1212,996,1180,955,1142,896,1074,900,1070,958,1138,999,1176,1045,1207,1111,1237,1182,1258,1251,1274,1315,1283"/>
+<area shape="poly" title=" " alt="" coords="1321,1345,1151,1316,1082,1301,1043,1288,1013,1265,986,1237,941,1177,909,1119,889,1073,894,1071,914,1116,946,1174,990,1234,1016,1261,1045,1283,1083,1296,1152,1311,1322,1340"/>
+<area shape="poly" title=" " alt="" coords="1349,1402,1279,1384,1243,1378,1211,1376,1155,1376,1129,1375,1102,1370,1074,1358,1042,1339,1009,1310,979,1276,954,1239,934,1200,903,1127,886,1073,891,1071,908,1125,938,1198,959,1236,984,1273,1012,1307,1046,1335,1076,1354,1104,1365,1130,1370,1156,1371,1212,1370,1244,1372,1281,1379,1350,1396"/>
 </map>
 </div>
 
@@ -824,10 +1398,10 @@ Here is the caller graph for this function:</div>
 
 <p>Random per-session capability used to authenticate UDP datagrams. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00067">67</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   68</span>    {</div>
-<div class="line"><span class="lineno">   69</span>        <span class="keywordflow">return</span> m_udpToken;</div>
-<div class="line"><span class="lineno">   70</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00071">71</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   72</span>    {</div>
+<div class="line"><span class="lineno">   73</span>        <span class="keywordflow">return</span> m_udpToken;</div>
+<div class="line"><span class="lineno">   74</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -872,10 +1446,10 @@ Here is the caller graph for this function:</div>
 
 <p>Passphrase has been initialized correctly for server. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00099">99</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  100</span>    {</div>
-<div class="line"><span class="lineno">  101</span>        <span class="keywordflow">return</span> m_hasCommonAccess.load();</div>
-<div class="line"><span class="lineno">  102</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00103">103</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  104</span>    {</div>
+<div class="line"><span class="lineno">  105</span>        <span class="keywordflow">return</span> m_hasCommonAccess.load();</div>
+<div class="line"><span class="lineno">  106</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -902,10 +1476,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00087">87</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   88</span>    {</div>
-<div class="line"><span class="lineno">   89</span>        <span class="keywordflow">return</span> m_hasRootAccess.load();</div>
-<div class="line"><span class="lineno">   90</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00091">91</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   92</span>    {</div>
+<div class="line"><span class="lineno">   93</span>        <span class="keywordflow">return</span> m_hasRootAccess.load();</div>
+<div class="line"><span class="lineno">   94</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -928,6 +1502,63 @@ Here is the caller graph for this function:</div>
 </map>
 </div>
 
+</div>
+</div>
+<a id="a44b2493d892d7962c1dbf0897e9cc221" name="a44b2493d892d7962c1dbf0897e9cc221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44b2493d892d7962c1dbf0897e9cc221">&#9670;&#160;</a></span>hasTransport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool nexilis::server::User::hasTransport </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1f">Transport</a>&#160;</td>
+          <td class="paramname"><em>transport</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether the given transport is currently active. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/df1/user_8cc_source.html#l00458">458</a> of file <a class="el" href="../../d3/df1/user_8cc_source.html">user.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  459</span>{</div>
+<div class="line"><span class="lineno">  460</span>    <span class="keyword">const</span> <span class="keyword">auto</span> index = transportIndex(transport);</div>
+<div class="line"><span class="lineno">  461</span>    <span class="keywordflow">if</span> (index &gt;= <a class="code hl_variable" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#ab13ef2cc86d67d91d35ae66b9dc7ba12">transportCount</a>)</div>
+<div class="line"><span class="lineno">  462</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  463</span> </div>
+<div class="line"><span class="lineno">  464</span>    std::lock_guard&lt;std::mutex&gt; lock(m_transportMutex);</div>
+<div class="line"><span class="lineno">  465</span>    <span class="keywordflow">return</span> m_streamTransportConnections[index] != 0 ||</div>
+<div class="line"><span class="lineno">  466</span>           m_datagramTransportActive[index];</div>
+<div class="line"><span class="lineno">  467</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9f037e26479be0ff86e55eeeeca29a18" name="a9f037e26479be0ff86e55eeeeca29a18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f037e26479be0ff86e55eeeeca29a18">&#9670;&#160;</a></span>hasTransportPresence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool nexilis::server::User::hasTransportPresence </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether any transport or pending handshake keeps this user alive. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/df1/user_8cc_source.html#l00451">451</a> of file <a class="el" href="../../d3/df1/user_8cc_source.html">user.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  452</span>{</div>
+<div class="line"><span class="lineno">  453</span>    std::lock_guard&lt;std::mutex&gt; lock(m_transportMutex);</div>
+<div class="line"><span class="lineno">  454</span>    <span class="keywordflow">return</span> hasPresenceLocked(</div>
+<div class="line"><span class="lineno">  455</span>            m_streamTransportConnections, m_datagramTransportActive, m_pendingHandshakes);</div>
+<div class="line"><span class="lineno">  456</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aef835fcdbb10325d7d558591f082ed4e" name="aef835fcdbb10325d7d558591f082ed4e"></a>
@@ -984,44 +1615,54 @@ Here is the caller graph for this function:</div>
 
 <p>Move assignment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/df1/user_8cc_source.html#l00067">67</a> of file <a class="el" href="../../d3/df1/user_8cc_source.html">user.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   68</span>{</div>
-<div class="line"><span class="lineno">   69</span>    <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;other)</div>
-<div class="line"><span class="lineno">   70</span>    {</div>
-<div class="line"><span class="lineno">   71</span>        m_ip_address = std::move(other.m_ip_address);</div>
-<div class="line"><span class="lineno">   72</span>        m_udpToken = std::move(other.m_udpToken);</div>
-<div class="line"><span class="lineno">   73</span>        m_udpTokenSent.store(other.m_udpTokenSent.load());</div>
-<div class="line"><span class="lineno">   74</span>        m_replayWindow = std::move(other.m_replayWindow);</div>
-<div class="line"><span class="lineno">   75</span>        m_username = std::move(other.m_username);</div>
-<div class="line"><span class="lineno">   76</span>        m_roomId = std::move(other.m_roomId);</div>
-<div class="line"><span class="lineno">   77</span>        {</div>
-<div class="line"><span class="lineno">   78</span>            std::scoped_lock lock(m_shotMutex, other.m_shotMutex);</div>
-<div class="line"><span class="lineno">   79</span>            m_lastShotTime = other.m_lastShotTime;</div>
-<div class="line"><span class="lineno">   80</span>        }</div>
-<div class="line"><span class="lineno">   81</span>        {</div>
-<div class="line"><span class="lineno">   82</span>            std::scoped_lock lock(m_broadcastMutex, other.m_broadcastMutex);</div>
-<div class="line"><span class="lineno">   83</span>            m_lastBroadcastTime = other.m_lastBroadcastTime;</div>
-<div class="line"><span class="lineno">   84</span>        }</div>
-<div class="line"><span class="lineno">   85</span>        {</div>
-<div class="line"><span class="lineno">   86</span>            std::scoped_lock lock(m_commandMutex, other.m_commandMutex);</div>
-<div class="line"><span class="lineno">   87</span>            m_commandLimiterInitialized = other.m_commandLimiterInitialized;</div>
-<div class="line"><span class="lineno">   88</span>            m_commandLastRefill = other.m_commandLastRefill;</div>
-<div class="line"><span class="lineno">   89</span>            m_commandTokens = other.m_commandTokens;</div>
-<div class="line"><span class="lineno">   90</span>        }</div>
-<div class="line"><span class="lineno">   91</span>        m_boostTCPSendToClient = std::move(other.m_boostTCPSendToClient);</div>
-<div class="line"><span class="lineno">   92</span>        m_boostUDPSendToClient = std::move(other.m_boostUDPSendToClient);</div>
-<div class="line"><span class="lineno">   93</span>        m_unixStreamSendToClient = std::move(other.m_unixStreamSendToClient);</div>
-<div class="line"><span class="lineno">   94</span>        m_unixDgramSendToClient = std::move(other.m_unixDgramSendToClient);</div>
-<div class="line"><span class="lineno">   95</span>        m_inetTCPSendToClient = std::move(other.m_inetTCPSendToClient);</div>
-<div class="line"><span class="lineno">   96</span>        m_inetUDPSendToClient = std::move(other.m_inetUDPSendToClient);</div>
-<div class="line"><span class="lineno">   97</span>        m_hasRootAccess.store(other.m_hasRootAccess.load());</div>
-<div class="line"><span class="lineno">   98</span>        m_hasCommonAccess.store(other.m_hasCommonAccess.load());</div>
-<div class="line"><span class="lineno">   99</span> </div>
-<div class="line"><span class="lineno">  100</span>        <a class="code hl_function" href="../../dc/dcb/classnexilis_1_1BaseClient.html#ab5540ba31b4f84f06a22356fe46a6767">BaseClient::operator=</a>(std::move(other));</div>
-<div class="line"><span class="lineno">  101</span>    }</div>
-<div class="line"><span class="lineno">  102</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  103</span>}</div>
-<div class="ttc" id="aclassnexilis_1_1BaseClient_html_ab5540ba31b4f84f06a22356fe46a6767"><div class="ttname"><a href="../../dc/dcb/classnexilis_1_1BaseClient.html#ab5540ba31b4f84f06a22356fe46a6767">nexilis::BaseClient::operator=</a></div><div class="ttdeci">BaseClient &amp; operator=(BaseClient &amp;&amp;other) noexcept</div><div class="ttdoc">Move assignment operator.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d89/base__client_8cc_source.html#l00039">base_client.cc:39</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d3/df1/user_8cc_source.html#l00083">83</a> of file <a class="el" href="../../d3/df1/user_8cc_source.html">user.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   84</span>{</div>
+<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;other)</div>
+<div class="line"><span class="lineno">   86</span>    {</div>
+<div class="line"><span class="lineno">   87</span>        m_ip_address = std::move(other.m_ip_address);</div>
+<div class="line"><span class="lineno">   88</span>        m_udpToken = std::move(other.m_udpToken);</div>
+<div class="line"><span class="lineno">   89</span>        m_udpTokenSent.store(other.m_udpTokenSent.load());</div>
+<div class="line"><span class="lineno">   90</span>        m_replayWindow = std::move(other.m_replayWindow);</div>
+<div class="line"><span class="lineno">   91</span>        m_roomId.store(other.m_roomId.load());</div>
+<div class="line"><span class="lineno">   92</span>        {</div>
+<div class="line"><span class="lineno">   93</span>            std::scoped_lock lock(m_shotMutex, other.m_shotMutex);</div>
+<div class="line"><span class="lineno">   94</span>            m_lastShotTime = other.m_lastShotTime;</div>
+<div class="line"><span class="lineno">   95</span>        }</div>
+<div class="line"><span class="lineno">   96</span>        {</div>
+<div class="line"><span class="lineno">   97</span>            std::scoped_lock lock(m_broadcastMutex, other.m_broadcastMutex);</div>
+<div class="line"><span class="lineno">   98</span>            m_lastBroadcastTime = other.m_lastBroadcastTime;</div>
+<div class="line"><span class="lineno">   99</span>        }</div>
+<div class="line"><span class="lineno">  100</span>        {</div>
+<div class="line"><span class="lineno">  101</span>            std::scoped_lock lock(m_commandMutex, other.m_commandMutex);</div>
+<div class="line"><span class="lineno">  102</span>            m_commandLimiterInitialized = other.m_commandLimiterInitialized;</div>
+<div class="line"><span class="lineno">  103</span>            m_commandLastRefill = other.m_commandLastRefill;</div>
+<div class="line"><span class="lineno">  104</span>            m_commandTokens = other.m_commandTokens;</div>
+<div class="line"><span class="lineno">  105</span>        }</div>
+<div class="line"><span class="lineno">  106</span>        {</div>
+<div class="line"><span class="lineno">  107</span>            std::scoped_lock lock(m_sendMutex, other.m_sendMutex);</div>
+<div class="line"><span class="lineno">  108</span>            m_boostTCPSendToClient = std::move(other.m_boostTCPSendToClient);</div>
+<div class="line"><span class="lineno">  109</span>            m_boostUDPSendToClient = std::move(other.m_boostUDPSendToClient);</div>
+<div class="line"><span class="lineno">  110</span>            m_unixStreamSendToClient = std::move(other.m_unixStreamSendToClient);</div>
+<div class="line"><span class="lineno">  111</span>            m_unixDgramSendToClient = std::move(other.m_unixDgramSendToClient);</div>
+<div class="line"><span class="lineno">  112</span>            m_inetTCPSendToClient = std::move(other.m_inetTCPSendToClient);</div>
+<div class="line"><span class="lineno">  113</span>            m_inetUDPSendToClient = std::move(other.m_inetUDPSendToClient);</div>
+<div class="line"><span class="lineno">  114</span>        }</div>
+<div class="line"><span class="lineno">  115</span>        {</div>
+<div class="line"><span class="lineno">  116</span>            std::scoped_lock lock(m_transportMutex, other.m_transportMutex);</div>
+<div class="line"><span class="lineno">  117</span>            m_streamTransportConnections = other.m_streamTransportConnections;</div>
+<div class="line"><span class="lineno">  118</span>            m_datagramTransportActive = other.m_datagramTransportActive;</div>
+<div class="line"><span class="lineno">  119</span>            m_datagramLastActivity = other.m_datagramLastActivity;</div>
+<div class="line"><span class="lineno">  120</span>            m_pendingHandshakes = other.m_pendingHandshakes;</div>
+<div class="line"><span class="lineno">  121</span>            m_pendingHandshakeSince = other.m_pendingHandshakeSince;</div>
+<div class="line"><span class="lineno">  122</span>        }</div>
+<div class="line"><span class="lineno">  123</span>        m_hasRootAccess.store(other.m_hasRootAccess.load());</div>
+<div class="line"><span class="lineno">  124</span>        m_hasCommonAccess.store(other.m_hasCommonAccess.load());</div>
+<div class="line"><span class="lineno">  125</span> </div>
+<div class="line"><span class="lineno">  126</span>        <a class="code hl_function" href="../../dc/dcb/classnexilis_1_1BaseClient.html#ab5540ba31b4f84f06a22356fe46a6767">BaseClient::operator=</a>(std::move(other));</div>
+<div class="line"><span class="lineno">  127</span>    }</div>
+<div class="line"><span class="lineno">  128</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  129</span>}</div>
+<div class="ttc" id="aclassnexilis_1_1BaseClient_html_ab5540ba31b4f84f06a22356fe46a6767"><div class="ttname"><a href="../../dc/dcb/classnexilis_1_1BaseClient.html#ab5540ba31b4f84f06a22356fe46a6767">nexilis::BaseClient::operator=</a></div><div class="ttdeci">BaseClient &amp; operator=(BaseClient &amp;&amp;other) noexcept</div><div class="ttdoc">Move assignment operator.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d89/base__client_8cc_source.html#l00040">base_client.cc:40</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1061,11 +1702,11 @@ Here is the call graph for this function:</div>
 
 <p>Operator overload for comparison operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00054">54</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   55</span>    {</div>
-<div class="line"><span class="lineno">   56</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../dc/dcb/classnexilis_1_1BaseClient.html#a2ef1dddc83ce3e9f573e144673189546">getId</a>() == other.getId();</div>
-<div class="line"><span class="lineno">   57</span>    }</div>
-<div class="ttc" id="aclassnexilis_1_1BaseClient_html_a2ef1dddc83ce3e9f573e144673189546"><div class="ttname"><a href="../../dc/dcb/classnexilis_1_1BaseClient.html#a2ef1dddc83ce3e9f573e144673189546">nexilis::BaseClient::getId</a></div><div class="ttdeci">uint64_t getId() const</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d89/base__client_8hh_source.html#l00065">base_client.hh:65</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00058">58</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   59</span>    {</div>
+<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../dc/dcb/classnexilis_1_1BaseClient.html#a2ef1dddc83ce3e9f573e144673189546">getId</a>() == other.getId();</div>
+<div class="line"><span class="lineno">   61</span>    }</div>
+<div class="ttc" id="aclassnexilis_1_1BaseClient_html_a2ef1dddc83ce3e9f573e144673189546"><div class="ttname"><a href="../../dc/dcb/classnexilis_1_1BaseClient.html#a2ef1dddc83ce3e9f573e144673189546">nexilis::BaseClient::getId</a></div><div class="ttdeci">uint64_t getId() const</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d89/base__client_8hh_source.html#l00072">base_client.hh:72</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1074,6 +1715,46 @@ Here is the call graph for this function:</div>
 <area shape="rect" title="Operator overload for comparison operator." alt="" coords="5,5,157,45"/>
 <area shape="rect" href="../../dc/dcb/classnexilis_1_1BaseClient.html#a2ef1dddc83ce3e9f573e144673189546" title=" " alt="" coords="205,5,348,45"/>
 <area shape="poly" title=" " alt="" coords="158,23,192,23,192,28,158,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3d12364411f9a592b314ab2d5993776c" name="a3d12364411f9a592b314ab2d5993776c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d12364411f9a592b314ab2d5993776c">&#9670;&#160;</a></span>registerStreamTransport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nexilis::server::User::registerStreamTransport </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1f">Transport</a>&#160;</td>
+          <td class="paramname"><em>transport</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register one stream connection for a transport. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/df1/user_8cc_source.html#l00306">306</a> of file <a class="el" href="../../d3/df1/user_8cc_source.html">user.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  307</span>{</div>
+<div class="line"><span class="lineno">  308</span>    <span class="keyword">const</span> <span class="keyword">auto</span> index = transportIndex(transport);</div>
+<div class="line"><span class="lineno">  309</span>    <span class="keywordflow">if</span> (index &gt;= <a class="code hl_variable" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#ab13ef2cc86d67d91d35ae66b9dc7ba12">transportCount</a>)</div>
+<div class="line"><span class="lineno">  310</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  311</span> </div>
+<div class="line"><span class="lineno">  312</span>    std::lock_guard&lt;std::mutex&gt; lock(m_transportMutex);</div>
+<div class="line"><span class="lineno">  313</span>    ++m_streamTransportConnections[index];</div>
+<div class="line"><span class="lineno">  314</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d3a/classnexilis_1_1server_1_1User_a3d12364411f9a592b314ab2d5993776c_icgraph.png" border="0" usemap="#ad4/d3a/classnexilis_1_1server_1_1User_a3d12364411f9a592b314ab2d5993776c_icgraph" alt=""/></div>
+<map name="ad4/d3a/classnexilis_1_1server_1_1User_a3d12364411f9a592b314ab2d5993776c_icgraph" id="ad4/d3a/classnexilis_1_1server_1_1User_a3d12364411f9a592b314ab2d5993776c_icgraph">
+<area shape="rect" title="Register one stream connection for a transport." alt="" coords="271,5,457,45"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a634b5f45b76a08cd5a30523b052d9541" title="Register a stream connection after a message identifies its user." alt="" coords="5,5,223,45"/>
+<area shape="poly" title=" " alt="" coords="257,28,223,28,223,23,257,23"/>
 </map>
 </div>
 
@@ -1105,10 +1786,10 @@ Here is the call graph for this function:</div>
 
 <p>Access redeemed by the passphrase. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00093">93</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   94</span>    {</div>
-<div class="line"><span class="lineno">   95</span>        m_hasCommonAccess.store(hasAccess);</div>
-<div class="line"><span class="lineno">   96</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00097">97</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   98</span>    {</div>
+<div class="line"><span class="lineno">   99</span>        m_hasCommonAccess.store(hasAccess);</div>
+<div class="line"><span class="lineno">  100</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1136,13 +1817,14 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00104">104</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  105</span>    {</div>
-<div class="line"><span class="lineno">  106</span>        assert(<a class="code hl_function" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#adc7c8eb7a3e4d0931b7bf355fa5bbfa5">hasRootAccess</a>());</div>
-<div class="line"><span class="lineno">  107</span>        <a class="code hl_function" href="../../dc/dcb/classnexilis_1_1BaseClient.html#af962e129369619828020a06ef78ce7b0">BaseClient::setId</a>(<span class="keywordtype">id</span>);</div>
-<div class="line"><span class="lineno">  108</span>    }</div>
-<div class="ttc" id="aclassnexilis_1_1BaseClient_html_af962e129369619828020a06ef78ce7b0"><div class="ttname"><a href="../../dc/dcb/classnexilis_1_1BaseClient.html#af962e129369619828020a06ef78ce7b0">nexilis::BaseClient::setId</a></div><div class="ttdeci">void setId(uint64_t id)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d89/base__client_8hh_source.html#l00086">base_client.hh:86</a></div></div>
-<div class="ttc" id="aclassnexilis_1_1server_1_1User_html_adc7c8eb7a3e4d0931b7bf355fa5bbfa5"><div class="ttname"><a href="../../d4/d3a/classnexilis_1_1server_1_1User.html#adc7c8eb7a3e4d0931b7bf355fa5bbfa5">nexilis::server::User::hasRootAccess</a></div><div class="ttdeci">bool hasRootAccess() const</div><div class="ttdef"><b>Definition</b> <a href="../../d8/ddf/user_8hh_source.html#l00087">user.hh:87</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00108">108</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  109</span>    {</div>
+<div class="line"><span class="lineno">  110</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#adc7c8eb7a3e4d0931b7bf355fa5bbfa5">hasRootAccess</a>())</div>
+<div class="line"><span class="lineno">  111</span>            <span class="keywordflow">throw</span> std::logic_error(<span class="stringliteral">&quot;Root access required to change user ID&quot;</span>);</div>
+<div class="line"><span class="lineno">  112</span>        <a class="code hl_function" href="../../dc/dcb/classnexilis_1_1BaseClient.html#af962e129369619828020a06ef78ce7b0">BaseClient::setId</a>(<span class="keywordtype">id</span>);</div>
+<div class="line"><span class="lineno">  113</span>    }</div>
+<div class="ttc" id="aclassnexilis_1_1BaseClient_html_af962e129369619828020a06ef78ce7b0"><div class="ttname"><a href="../../dc/dcb/classnexilis_1_1BaseClient.html#af962e129369619828020a06ef78ce7b0">nexilis::BaseClient::setId</a></div><div class="ttdeci">void setId(uint64_t id)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d89/base__client_8hh_source.html#l00094">base_client.hh:94</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1server_1_1User_html_adc7c8eb7a3e4d0931b7bf355fa5bbfa5"><div class="ttname"><a href="../../d4/d3a/classnexilis_1_1server_1_1User.html#adc7c8eb7a3e4d0931b7bf355fa5bbfa5">nexilis::server::User::hasRootAccess</a></div><div class="ttdeci">bool hasRootAccess() const</div><div class="ttdef"><b>Definition</b> <a href="../../d8/ddf/user_8hh_source.html#l00091">user.hh:91</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1200,10 +1882,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00110">110</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  111</span>    {</div>
-<div class="line"><span class="lineno">  112</span>        m_roomId = roomId;</div>
-<div class="line"><span class="lineno">  113</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00115">115</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  116</span>    {</div>
+<div class="line"><span class="lineno">  117</span>        m_roomId.store(roomId);</div>
+<div class="line"><span class="lineno">  118</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1247,10 +1929,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00082">82</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   83</span>    {</div>
-<div class="line"><span class="lineno">   84</span>        m_hasRootAccess.store(hasAccess);</div>
-<div class="line"><span class="lineno">   85</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00086">86</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   87</span>    {</div>
+<div class="line"><span class="lineno">   88</span>        m_hasRootAccess.store(hasAccess);</div>
+<div class="line"><span class="lineno">   89</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1278,11 +1960,11 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00153">153</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  154</span>    {</div>
-<div class="line"><span class="lineno">  155</span>        <a class="code hl_function" href="../../dc/dcb/classnexilis_1_1BaseClient.html#aa9e2dd19b1e8b6381e6a436d3362282d">BaseClient::setBaseUsername</a>(username);</div>
-<div class="line"><span class="lineno">  156</span>    }</div>
-<div class="ttc" id="aclassnexilis_1_1BaseClient_html_aa9e2dd19b1e8b6381e6a436d3362282d"><div class="ttname"><a href="../../dc/dcb/classnexilis_1_1BaseClient.html#aa9e2dd19b1e8b6381e6a436d3362282d">nexilis::BaseClient::setBaseUsername</a></div><div class="ttdeci">void setBaseUsername(const std::string &amp;username)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d89/base__client_8hh_source.html#l00091">base_client.hh:91</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00223">223</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  224</span>    {</div>
+<div class="line"><span class="lineno">  225</span>        <a class="code hl_function" href="../../dc/dcb/classnexilis_1_1BaseClient.html#aa9e2dd19b1e8b6381e6a436d3362282d">BaseClient::setBaseUsername</a>(username);</div>
+<div class="line"><span class="lineno">  226</span>    }</div>
+<div class="ttc" id="aclassnexilis_1_1BaseClient_html_aa9e2dd19b1e8b6381e6a436d3362282d"><div class="ttname"><a href="../../dc/dcb/classnexilis_1_1BaseClient.html#aa9e2dd19b1e8b6381e6a436d3362282d">nexilis::BaseClient::setBaseUsername</a></div><div class="ttdeci">void setBaseUsername(const std::string &amp;username)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d89/base__client_8hh_source.html#l00099">base_client.hh:99</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1293,6 +1975,82 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="158,23,192,23,192,28,158,28"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="ae28d614e7b7fe541b74dfcc9f928467c" name="ae28d614e7b7fe541b74dfcc9f928467c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae28d614e7b7fe541b74dfcc9f928467c">&#9670;&#160;</a></span>touchDatagramTransport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nexilis::server::User::touchDatagramTransport </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1f">Transport</a>&#160;</td>
+          <td class="paramname"><em>transport</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::chrono::steady_clock::time_point&#160;</td>
+          <td class="paramname"><em>now</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Record datagram activity, activating the transport if needed. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/df1/user_8cc_source.html#l00332">332</a> of file <a class="el" href="../../d3/df1/user_8cc_source.html">user.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  334</span>{</div>
+<div class="line"><span class="lineno">  335</span>    <span class="keyword">const</span> <span class="keyword">auto</span> index = transportIndex(transport);</div>
+<div class="line"><span class="lineno">  336</span>    <span class="keywordflow">if</span> (index &gt;= <a class="code hl_variable" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#ab13ef2cc86d67d91d35ae66b9dc7ba12">transportCount</a>)</div>
+<div class="line"><span class="lineno">  337</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  338</span> </div>
+<div class="line"><span class="lineno">  339</span>    std::lock_guard&lt;std::mutex&gt; lock(m_transportMutex);</div>
+<div class="line"><span class="lineno">  340</span>    m_datagramTransportActive[index] = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  341</span>    m_datagramLastActivity[index] = now;</div>
+<div class="line"><span class="lineno">  342</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d3a/classnexilis_1_1server_1_1User_ae28d614e7b7fe541b74dfcc9f928467c_icgraph.png" border="0" usemap="#ad4/d3a/classnexilis_1_1server_1_1User_ae28d614e7b7fe541b74dfcc9f928467c_icgraph" alt=""/></div>
+<map name="ad4/d3a/classnexilis_1_1server_1_1User_ae28d614e7b7fe541b74dfcc9f928467c_icgraph" id="ad4/d3a/classnexilis_1_1server_1_1User_ae28d614e7b7fe541b74dfcc9f928467c_icgraph">
+<area shape="rect" title="Record datagram activity, activating the transport if needed." alt="" coords="271,5,461,45"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a1489b78ef0f8832ae7c2cccfbe81c9ee" title="Record datagram activity and activate that transport for the user." alt="" coords="5,5,223,45"/>
+<area shape="poly" title=" " alt="" coords="257,28,223,28,223,23,257,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab13ef2cc86d67d91d35ae66b9dc7ba12" name="ab13ef2cc86d67d91d35ae66b9dc7ba12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab13ef2cc86d67d91d35ae66b9dc7ba12">&#9670;&#160;</a></span>transportCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::size_t nexilis::server::User::transportCount = 6</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/ddf/user_8hh_source.html#l00136">136</a> of file <a class="el" href="../../d8/ddf/user_8hh_source.html">user.hh</a>.</p>
 
 </div>
 </div>

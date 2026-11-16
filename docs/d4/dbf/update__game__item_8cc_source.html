@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.9-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.10-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -136,7 +136,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                                                 (ch &gt;= <span class="stringliteral">&#39;A&#39;</span> &amp;&amp; ch &lt;= <span class="stringliteral">&#39;Z&#39;</span>) ||</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                                                 (ch &gt;= <span class="stringliteral">&#39;0&#39;</span> &amp;&amp; ch &lt;= <span class="stringliteral">&#39;9&#39;</span>) || ch == <span class="stringliteral">&#39;_&#39;</span> || ch == <span class="stringliteral">&#39;-&#39;</span>; })))</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="../../d5/dc9/namespacenexilis_1_1server.html#ad2a6e9324ab4a6d38ffee623ce29a9d8a1080ed39e08a161dc545804658700e33">CommandResult::invalid_input</a>;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">if</span> (!<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>-&gt;getGameItemById(itemId))</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">if</span> (!<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>-&gt;hasGameItem(itemId))</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="../../d5/dc9/namespacenexilis_1_1server.html#ad2a6e9324ab4a6d38ffee623ce29a9d8a1080ed39e08a161dc545804658700e33">CommandResult::invalid_input</a>;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordflow">if</span> (handledPickup &amp;&amp;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        (status != <span class="stringliteral">&quot;picked_up&quot;</span> || !<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>-&gt;onGameItemPickup(user.getId(), itemId)))</div>

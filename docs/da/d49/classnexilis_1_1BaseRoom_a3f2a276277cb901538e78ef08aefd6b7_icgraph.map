@@ -1,0 +1,7 @@
+<map id="nexilis::BaseRoom::getObject3DById" name="nexilis::BaseRoom::getObject3DById">
+<area shape="rect" id="Node000001" title=" " alt="" coords="213,37,364,77"/>
+<area shape="rect" id="Node000002" href="$d1/d01/classnexilis_1_1server_1_1Room.html#a2ce71424b94490c6f73f283583bdd7c3" title=" " alt="" coords="5,5,165,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,46,165,41,166,35,200,41"/>
+<area shape="rect" id="Node000003" href="$d1/d01/classnexilis_1_1server_1_1Room.html#a91290e3814ef9e86c9d6a6537d874041" title=" " alt="" coords="5,69,165,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="200,74,166,79,165,74,199,69"/>
+</map>

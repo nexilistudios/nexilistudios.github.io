@@ -9,5 +9,7 @@ var searchData=
   ['waituntilunixdgramready_6',['waitUntilUnixDgramReady',['../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a528794b5d8aadca2cb1c196948e76b27',1,'nexilis::client::ClientAPI']]],
   ['waituntilunixstreamready_7',['waitUntilUnixStreamReady',['../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a7ed744f06b2070ebd3e0e69206cf9d55',1,'nexilis::client::ClientAPI']]],
   ['warning_8',['warning',['../df/de2/classnexilis_1_1FileLog.html#ac495355c7fd8cb826e662d662e417840',1,'nexilis::FileLog::warning()'],['../dc/dbc/classnexilis_1_1Log.html#a191e4c013bad219e746e8e56682d65e1',1,'nexilis::Log::warning()'],['../db/d91/classnexilis_1_1logger_1_1Logger.html#a68409cb1a072641188aa5b1053c81fbc',1,'nexilis::logger::Logger::warning()']]],
-  ['writeporttofile_9',['writePortToFile',['../dd/d04/group__PortHandling.html#gae95993b3b515cdb8e8eb84ad7027eb24',1,'nexilis::Util']]]
+  ['withobject2d_9',['withObject2D',['../d1/d01/classnexilis_1_1server_1_1Room.html#a74e82ee47dd13e2b54d4943af5327fcd',1,'nexilis::server::Room']]],
+  ['withobject3d_10',['withObject3D',['../d1/d01/classnexilis_1_1server_1_1Room.html#a91290e3814ef9e86c9d6a6537d874041',1,'nexilis::server::Room']]],
+  ['writeporttofile_11',['writePortToFile',['../dd/d04/group__PortHandling.html#gae95993b3b515cdb8e8eb84ad7027eb24',1,'nexilis::Util']]]
 ];

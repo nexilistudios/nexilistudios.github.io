@@ -1,0 +1,7 @@
+<map id="nexilis::server::User::endPendingHandshake" name="nexilis::server::User::endPendingHandshake">
+<area shape="rect" id="Node000001" title="End one pending handshake and return the remaining presence." alt="" coords="271,37,449,77"/>
+<area shape="rect" id="Node000002" href="$de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a403a5e9ead7cf3031c09b29abbbbcdfd" title="Finish a handshake that did not open a session." alt="" coords="5,5,223,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="257,47,222,42,223,37,258,41"/>
+<area shape="rect" id="Node000003" href="$de/df0/classnexilis_1_1server_1_1ServerProtocol.html#afa1eee7a244639a9c6c9e27a2015bb0f" title="Consume pending presence when the session connection identifies the user." alt="" coords="5,69,223,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="258,73,223,78,222,73,257,68"/>
+</map>

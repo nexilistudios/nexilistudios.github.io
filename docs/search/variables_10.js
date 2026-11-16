@@ -5,5 +5,7 @@ var searchData=
   ['targetid_2',['targetId',['../d6/d57/structnexilis_1_1server_1_1Room_1_1ShotHit.html#ab829eded77ad3a936fbd80c29e76bc38',1,'nexilis::server::Room::ShotHit']]],
   ['team_3',['team',['../d6/d2f/structnexilis_1_1client_1_1ClientAPI_1_1LeaderboardEntry.html#a27a15f401e8b6ed82f5ab1f913d6d293',1,'nexilis::client::ClientAPI::LeaderboardEntry::team'],['../d2/dab/structnexilis_1_1client_1_1ClientAPI_1_1BombMatchEvent.html#a244becc40de61e312385cf6d14400edd',1,'nexilis::client::ClientAPI::BombMatchEvent::team']]],
   ['terrorist_5fscore_4',['terrorist_score',['../d2/dab/structnexilis_1_1client_1_1ClientAPI_1_1BombMatchEvent.html#a03dfc313daac621ddb3fea0a9a437251',1,'nexilis::client::ClientAPI::BombMatchEvent']]],
-  ['token_5fsize_5',['token_size',['../db/d44/namespacenexilis_1_1udp__auth.html#adaedecfef98423fd40aa321748b99766',1,'nexilis::udp_auth']]]
+  ['token_5fsize_5',['token_size',['../db/d44/namespacenexilis_1_1udp__auth.html#adaedecfef98423fd40aa321748b99766',1,'nexilis::udp_auth']]],
+  ['transportactive_6',['transportActive',['../d6/d1f/structnexilis_1_1server_1_1User_1_1TransportStatus.html#a8597640a685d7e761d8f9bceb6a3b9cd',1,'nexilis::server::User::TransportStatus']]],
+  ['transportcount_7',['transportCount',['../d4/d3a/classnexilis_1_1server_1_1User.html#ab13ef2cc86d67d91d35ae66b9dc7ba12',1,'nexilis::server::User']]]
 ];

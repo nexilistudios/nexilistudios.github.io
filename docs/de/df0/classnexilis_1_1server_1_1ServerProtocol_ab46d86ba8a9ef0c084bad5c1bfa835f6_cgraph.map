@@ -1,0 +1,5 @@
+<map id="nexilis::server::ServerProtocol::beginPendingHandshake" name="nexilis::server::ServerProtocol::beginPendingHandshake">
+<area shape="rect" id="Node000001" title="Track a successful authentication that has not opened its session yet." alt="" coords="5,5,223,45"/>
+<area shape="rect" id="Node000002" href="$d4/d3a/classnexilis_1_1server_1_1User.html#a9f7c4a602b26313177eaf8735c6ca16c" title=" " alt="" coords="271,5,461,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,23,257,23,257,28,223,28"/>
+</map>

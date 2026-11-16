@@ -1,0 +1,5 @@
+<map id="nexilis::server::User::endStreamTransport" name="nexilis::server::User::endStreamTransport">
+<area shape="rect" id="Node000001" title="End one stream connection and return the remaining presence." alt="" coords="271,5,432,45"/>
+<area shape="rect" id="Node000002" href="$de/df0/classnexilis_1_1server_1_1ServerProtocol.html#ab74ef68626912c23af6914758648a6e0" title="Finish one stream connection, removing the user when nothing remains." alt="" coords="5,5,223,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="257,28,223,28,223,23,257,23"/>
+</map>

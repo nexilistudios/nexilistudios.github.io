@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.9-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.10-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -214,53 +214,53 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="comment">// Get data from clients in a room.</span></div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        boost::json::array clientArray;</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        clientArray.reserve(<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>-&gt;getClients().size());</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <span class="keyword">auto</span>&amp; roomClients = <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>-&gt;getClients();</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; client : roomClients)</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        {</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            <span class="keyword">auto</span> clientPointer = <a class="code hl_function" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#acdb61fe86e1f6a500b143675bd774503">ClientStorage::getClientById</a>(client);</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            <span class="keywordflow">if</span> (clientPointer)</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            {</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                boost::json::object clientObj;</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                clientObj[<span class="stringliteral">&quot;id&quot;</span>] = clientPointer-&gt;getId();</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                <span class="keywordflow">if</span> (clientPointer-&gt;getUsername().empty())</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                {</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a191e4c013bad219e746e8e56682d65e1">Log::warning</a>(<span class="stringliteral">&quot;Client has empty username!&quot;</span>);</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                    clientObj[<span class="stringliteral">&quot;name&quot;</span>] = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                }</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                {</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                    clientObj[<span class="stringliteral">&quot;name&quot;</span>] = clientPointer-&gt;getUsername();</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                }</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                <span class="keyword">auto</span> position2D = clientPointer-&gt;getObject2D().getPosition();</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                clientObj[<span class="stringliteral">&quot;x&quot;</span>] = std::move(position2D.x);</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                clientObj[<span class="stringliteral">&quot;y&quot;</span>] = std::move(position2D.y);</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                <span class="keyword">auto</span> dimension2D = clientPointer-&gt;getObject2D().getDimensions();</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                clientObj[<span class="stringliteral">&quot;width&quot;</span>] = std::move(dimension2D.x);</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>                clientObj[<span class="stringliteral">&quot;height&quot;</span>] = std::move(dimension2D.y);</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                clientArray.emplace_back(std::move(clientObj));</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            }</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        }</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <span class="keywordflow">if</span> (roomClients.size() &gt; 0)</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        {</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            roomObj[<span class="stringliteral">&quot;clients&quot;</span>] = std::move(clientArray);</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        }</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="comment">// 2D context cannot have 3D objects.</span></div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        <span class="keywordflow">if</span> (ctx != <a class="code hl_enumvalue" href="../../de/d38/classnexilis_1_1RoomData.html#a30cb19551acfa5508f5f29d096c8f76ea8cf93a3cf4b8ee9a975671c37039d549">RoomData::Context::_2D</a>)</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        {</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            <span class="keywordflow">if</span> (!<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>-&gt;getObjects3D().empty())</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <span class="keyword">auto</span> roomClients = <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>-&gt;getClients();</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        clientArray.reserve(roomClients.size());</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; client : roomClients)</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            <span class="keyword">auto</span> clientPointer = <a class="code hl_function" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#acdb61fe86e1f6a500b143675bd774503">ClientStorage::getClientById</a>(client);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            <span class="keywordflow">if</span> (clientPointer)</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            {</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                boost::json::object clientObj;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                clientObj[<span class="stringliteral">&quot;id&quot;</span>] = clientPointer-&gt;getId();</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                <span class="keywordflow">if</span> (clientPointer-&gt;getUsername().empty())</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                {</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a191e4c013bad219e746e8e56682d65e1">Log::warning</a>(<span class="stringliteral">&quot;Client has empty username!&quot;</span>);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                    clientObj[<span class="stringliteral">&quot;name&quot;</span>] = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                }</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                {</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                    clientObj[<span class="stringliteral">&quot;name&quot;</span>] = clientPointer-&gt;getUsername();</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                }</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                <span class="keyword">auto</span> position2D = clientPointer-&gt;getObject2D().getPosition();</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                clientObj[<span class="stringliteral">&quot;x&quot;</span>] = std::move(position2D.x);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                clientObj[<span class="stringliteral">&quot;y&quot;</span>] = std::move(position2D.y);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                <span class="keyword">auto</span> dimension2D = clientPointer-&gt;getObject2D().getDimensions();</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                clientObj[<span class="stringliteral">&quot;width&quot;</span>] = std::move(dimension2D.x);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                clientObj[<span class="stringliteral">&quot;height&quot;</span>] = std::move(dimension2D.y);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                clientArray.emplace_back(std::move(clientObj));</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            }</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        }</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        <span class="keywordflow">if</span> (roomClients.size() &gt; 0)</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        {</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            roomObj[<span class="stringliteral">&quot;clients&quot;</span>] = std::move(clientArray);</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        }</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        <span class="comment">// 2D context cannot have 3D objects.</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="keywordflow">if</span> (ctx != <a class="code hl_enumvalue" href="../../de/d38/classnexilis_1_1RoomData.html#a30cb19551acfa5508f5f29d096c8f76ea8cf93a3cf4b8ee9a975671c37039d549">RoomData::Context::_2D</a>)</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        {</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            <span class="keyword">const</span> <span class="keyword">auto</span> objects3D = <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>-&gt;getObjects3DSnapshot();</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            <span class="keywordflow">if</span> (!objects3D.empty())</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            {</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                boost::json::array obj3DArray;</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>                <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; obj : <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>-&gt;getObjects3D())</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>                <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; obj : objects3D)</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                {</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                    <span class="keyword">auto</span> pos = obj.getPosition();</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                    <span class="keyword">auto</span> dim = obj.getDimensions();</div>
@@ -280,37 +280,38 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        }</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        <span class="comment">// 3D context can have 2D objects, they just don&#39;t have depth.</span></div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        <span class="keywordflow">if</span> (!<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>-&gt;getObjects2D().empty())</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        {</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            boost::json::array obj2DArray;</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; obj : <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>-&gt;getObjects2D())</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>            {</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                <span class="keyword">auto</span> pos = obj.getPosition();</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>                <span class="keyword">auto</span> dim = obj.getDimensions();</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>                boost::json::object objData;</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>                objData[<span class="stringliteral">&quot;id&quot;</span>] = obj.getId();</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                objData[<span class="stringliteral">&quot;x&quot;</span>] = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(pos.x);</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>                objData[<span class="stringliteral">&quot;y&quot;</span>] = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(pos.y);</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>                objData[<span class="stringliteral">&quot;w&quot;</span>] = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(dim.x);</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                objData[<span class="stringliteral">&quot;h&quot;</span>] = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(dim.y);</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                objData[<span class="stringliteral">&quot;filepath&quot;</span>] = obj.getFilepath();</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                obj2DArray.emplace_back(std::move(objData));</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            }</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            roomObj[<span class="stringliteral">&quot;objects_2d&quot;</span>] = std::move(obj2DArray);</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        }</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        resultingArray.emplace_back(std::move(roomObj));</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    }</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    <span class="keywordflow">return</span> resultingArray;</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>}</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>} <span class="comment">// namespace nexilis::server</span></div>
-<div class="ttc" id="aclassnexilis_1_1Json_html_a59fe0c8498a692d754af7aa490c39f8f"><div class="ttname"><a href="../../d7/de9/classnexilis_1_1Json.html#a59fe0c8498a692d754af7aa490c39f8f">nexilis::Json::emplace</a></div><div class="ttdeci">static void emplace(boost::json::object &amp;first, const boost::json::object &amp;second)</div><div class="ttdoc">Merge second object to the first one.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/de6/json_8cc_source.html#l00041">json.cc:41</a></div></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        <span class="keyword">const</span> <span class="keyword">auto</span> objects2D = <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>-&gt;getObjects2DSnapshot();</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        <span class="keywordflow">if</span> (!objects2D.empty())</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        {</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            boost::json::array obj2DArray;</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; obj : objects2D)</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>            {</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>                <span class="keyword">auto</span> pos = obj.getPosition();</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>                <span class="keyword">auto</span> dim = obj.getDimensions();</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>                boost::json::object objData;</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                objData[<span class="stringliteral">&quot;id&quot;</span>] = obj.getId();</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>                objData[<span class="stringliteral">&quot;x&quot;</span>] = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(pos.x);</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>                objData[<span class="stringliteral">&quot;y&quot;</span>] = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(pos.y);</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                objData[<span class="stringliteral">&quot;w&quot;</span>] = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(dim.x);</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                objData[<span class="stringliteral">&quot;h&quot;</span>] = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(dim.y);</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                objData[<span class="stringliteral">&quot;filepath&quot;</span>] = obj.getFilepath();</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                obj2DArray.emplace_back(std::move(objData));</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            }</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            roomObj[<span class="stringliteral">&quot;objects_2d&quot;</span>] = std::move(obj2DArray);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        }</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        resultingArray.emplace_back(std::move(roomObj));</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    }</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    <span class="keywordflow">return</span> resultingArray;</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>}</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>} <span class="comment">// namespace nexilis::server</span></div>
+<div class="ttc" id="aclassnexilis_1_1Json_html_a59fe0c8498a692d754af7aa490c39f8f"><div class="ttname"><a href="../../d7/de9/classnexilis_1_1Json.html#a59fe0c8498a692d754af7aa490c39f8f">nexilis::Json::emplace</a></div><div class="ttdeci">static void emplace(boost::json::object &amp;first, const boost::json::object &amp;second)</div><div class="ttdoc">Merge second object to the first one.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/de6/json_8cc_source.html#l00042">json.cc:42</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1Log_html_a191e4c013bad219e746e8e56682d65e1"><div class="ttname"><a href="../../dc/dbc/classnexilis_1_1Log.html#a191e4c013bad219e746e8e56682d65e1">nexilis::Log::warning</a></div><div class="ttdeci">static void warning(const T &amp;data, const Args &amp;... args)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de3/log_8hh_source.html#l00117">log.hh:117</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1Log_html_a66755adfac1917c8b8791a018f31c643"><div class="ttname"><a href="../../dc/dbc/classnexilis_1_1Log.html#a66755adfac1917c8b8791a018f31c643">nexilis::Log::info</a></div><div class="ttdeci">static void info(const T &amp;data, const Args &amp;... args)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de3/log_8hh_source.html#l00111">log.hh:111</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1RoomData_html_a30cb19551acfa5508f5f29d096c8f76ea8cf93a3cf4b8ee9a975671c37039d549"><div class="ttname"><a href="../../de/d38/classnexilis_1_1RoomData.html#a30cb19551acfa5508f5f29d096c8f76ea8cf93a3cf4b8ee9a975671c37039d549">nexilis::RoomData::Context::_2D</a></div><div class="ttdeci">@ _2D</div></div>
-<div class="ttc" id="aclassnexilis_1_1server_1_1ClientStorage_html_aaea84dd6f0296109d1c006d421650dc2"><div class="ttname"><a href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#aaea84dd6f0296109d1c006d421650dc2">nexilis::server::ClientStorage::getAllClients</a></div><div class="ttdeci">static std::vector&lt; std::shared_ptr&lt; User &gt; &gt; getAllClients()</div><div class="ttdoc">Snapshot of owning handles. This does not lock mutable user fields.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d56/client__storage_8cc_source.html#l00045">client_storage.cc:45</a></div></div>
-<div class="ttc" id="aclassnexilis_1_1server_1_1ClientStorage_html_acdb61fe86e1f6a500b143675bd774503"><div class="ttname"><a href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#acdb61fe86e1f6a500b143675bd774503">nexilis::server::ClientStorage::getClientById</a></div><div class="ttdeci">static std::shared_ptr&lt; User &gt; getClientById(uint64_t id)</div><div class="ttdoc">Retain the returned handle throughout the operation on the user.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d56/client__storage_8cc_source.html#l00051">client_storage.cc:51</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1server_1_1ClientStorage_html_aaea84dd6f0296109d1c006d421650dc2"><div class="ttname"><a href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#aaea84dd6f0296109d1c006d421650dc2">nexilis::server::ClientStorage::getAllClients</a></div><div class="ttdeci">static std::vector&lt; std::shared_ptr&lt; User &gt; &gt; getAllClients()</div><div class="ttdoc">Snapshot of owning handles. This does not lock mutable user fields.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d56/client__storage_8cc_source.html#l00047">client_storage.cc:47</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1server_1_1ClientStorage_html_acdb61fe86e1f6a500b143675bd774503"><div class="ttname"><a href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#acdb61fe86e1f6a500b143675bd774503">nexilis::server::ClientStorage::getClientById</a></div><div class="ttdeci">static std::shared_ptr&lt; User &gt; getClientById(uint64_t id)</div><div class="ttdoc">Retain the returned handle throughout the operation on the user.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d56/client__storage_8cc_source.html#l00053">client_storage.cc:53</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1server_1_1RoomStorage_html_a1a34d89eff94828154b7bb44e545dcc6"><div class="ttname"><a href="../../db/d96/classnexilis_1_1server_1_1RoomStorage.html#a1a34d89eff94828154b7bb44e545dcc6">nexilis::server::RoomStorage::getAllRooms</a></div><div class="ttdeci">static std::vector&lt; std::shared_ptr&lt; Room &gt; &gt; getAllRooms()</div><div class="ttdef"><b>Definition</b> <a href="../../df/d00/room__storage_8cc_source.html#l00038">room_storage.cc:38</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1server_1_1ServerJson_html_a644be521790ad79ccf5752920e3c9e56"><div class="ttname"><a href="../../d6/dc0/classnexilis_1_1server_1_1ServerJson.html#a644be521790ad79ccf5752920e3c9e56">nexilis::server::ServerJson::getClientData</a></div><div class="ttdeci">static boost::json::object getClientData()</div><div class="ttdoc">Get data about the clients in the server.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d48/server__json_8cc_source.html#l00049">server_json.cc:49</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1server_1_1ServerJson_html_a869d0093fb9e50ceae2e1e72a59cce1f"><div class="ttname"><a href="../../d6/dc0/classnexilis_1_1server_1_1ServerJson.html#a869d0093fb9e50ceae2e1e72a59cce1f">nexilis::server::ServerJson::getRoomData</a></div><div class="ttdeci">static boost::json::object getRoomData()</div><div class="ttdoc">Get data about the rooms in the server.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d48/server__json_8cc_source.html#l00029">server_json.cc:29</a></div></div>

@@ -1,0 +1,15 @@
+<map id="nexilis::server::Room::tryJoinRoom" name="nexilis::server::Room::tryJoinRoom">
+<area shape="rect" id="Node000001" title="Atomically enforce the room capacity and insert a new member." alt="" coords="5,69,165,109"/>
+<area shape="rect" id="Node000002" href="$da/d49/classnexilis_1_1BaseRoom.html#a3f1693ee56cc7a471dc72ca29cf0da70" title="Get the identifier of the room." alt="" coords="213,5,364,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,67,211,47,212,52,150,72"/>
+<area shape="rect" id="Node000004" href="$da/d49/classnexilis_1_1BaseRoom.html#a7285580f34d0842bc050c7706fa46353" title="Get the maximum amount of players in a room." alt="" coords="213,69,364,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="165,87,199,87,199,92,165,92"/>
+<area shape="rect" id="Node000006" href="$dc/dbc/classnexilis_1_1Log.html#a66755adfac1917c8b8791a018f31c643" title=" " alt="" coords="224,137,353,162"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="155,107,233,130,231,135,153,112"/>
+<area shape="rect" id="Node000003" href="$de/d38/classnexilis_1_1RoomData.html#a5ab25015ce226b342c76d4859bdd1468" title="Get the identifier of the room." alt="" coords="420,5,571,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="364,23,406,23,406,28,364,28"/>
+<area shape="rect" id="Node000005" href="$de/d38/classnexilis_1_1RoomData.html#a198bc353ab3de44710b4e9cecabfaea7" title="Get the maximum amount of players in a room." alt="" coords="420,69,571,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="364,87,406,87,406,92,364,92"/>
+<area shape="rect" id="Node000007" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#abbfff214c9149463f4d7a15990b9361a" title="Send info message." alt="" coords="412,133,579,173"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="353,148,399,149,398,154,353,153"/>
+</map>

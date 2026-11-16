@@ -1,5 +1,7 @@
 <map id="nexilis::server::nxboost::UDPServer::stop" name="nexilis::server::nxboost::UDPServer::stop">
-<area shape="rect" id="Node000001" title="NXProtocol::stop() implementation." alt="" coords="243,5,417,45"/>
-<area shape="rect" id="Node000002" href="$d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#a4642f3d0d8ed9baf31087321b6e0948b" title="Destructor." alt="" coords="5,5,195,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,28,195,28,195,23,229,23"/>
+<area shape="rect" id="Node000001" title="NXProtocol::stop() implementation." alt="" coords="243,37,417,77"/>
+<area shape="rect" id="Node000002" href="$d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#a31d5dc5934fcde97b0e6c9afa4ea755a" title="Move assignment operator." alt="" coords="13,5,187,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,46,187,40,188,35,229,41"/>
+<area shape="rect" id="Node000003" href="$d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#a4642f3d0d8ed9baf31087321b6e0948b" title="Destructor." alt="" coords="5,69,195,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="229,74,195,79,195,74,228,69"/>
 </map>

@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.9-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.10-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -118,7 +118,7 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">if</span> (payload.size() != 8)</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="../../d5/dc9/namespacenexilis_1_1server.html#ad2a6e9324ab4a6d38ffee623ce29a9d8a1080ed39e08a161dc545804658700e33">CommandResult::invalid_input</a>;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">auto</span> objectId = <a class="code hl_function" href="../../dc/dc3/group__FrontConversions.html#gaa69ac5b84ac2f72561afb8cc9d391072">Util::uint64FromFront</a>(payload);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">if</span> (!<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>-&gt;getObject2DById(objectId))</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">if</span> (!<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>-&gt;hasObject2D(objectId))</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="../../d5/dc9/namespacenexilis_1_1server.html#ad2a6e9324ab4a6d38ffee623ce29a9d8a1080ed39e08a161dc545804658700e33">CommandResult::invalid_input</a>;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="comment">// Remove from storage.</span></div>

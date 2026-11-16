@@ -1,0 +1,13 @@
+<map id="nexilis::server::Room::getGameItemsSnapshot" name="nexilis::server::Room::getGameItemsSnapshot">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,192,79"/>
+<area shape="rect" id="Node000002" href="$da/d49/classnexilis_1_1BaseRoom.html#aa5ee203cd29be2dafc16845ac81fa916" title=" " alt="" coords="240,39,391,79"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,56,226,56,226,61,193,61"/>
+<area shape="rect" id="Node000003" href="$dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="447,15,581,41"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="390,44,433,38,433,43,391,50"/>
+<area shape="rect" id="Node000005" href="$da/d49/classnexilis_1_1BaseRoom.html#a5850da119501071f3a9e9d8032238fdf" title="Get the 2D/3D context for the room." alt="" coords="439,67,589,107"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="391,67,425,72,425,77,390,72"/>
+<area shape="rect" id="Node000004" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#acc02567dd7e4103305110bafbfd40c08" title="Send error message." alt="" coords="637,5,804,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="582,24,623,24,624,29,582,30"/>
+<area shape="rect" id="Node000006" href="$de/d38/classnexilis_1_1RoomData.html#a2458b902600bffeb1a475792c89823a7" title="Get the context of the room." alt="" coords="645,69,796,109"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="590,85,632,86,632,91,590,90"/>
+</map>

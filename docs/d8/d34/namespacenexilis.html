@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.9-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.10-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -253,6 +253,9 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a717456a24bf765b810c02091955de914" id="r_a717456a24bf765b810c02091955de914"><td class="memItemLeft" align="right" valign="top">constexpr uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d34/namespacenexilis.html#a717456a24bf765b810c02091955de914">NEXILIS_BUFFER</a> = 1024</td></tr>
 <tr class="separator:a717456a24bf765b810c02091955de914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55ce89b28f747effbc16956e848bccaf" id="r_a55ce89b28f747effbc16956e848bccaf"><td class="memItemLeft" align="right" valign="top">constexpr uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d34/namespacenexilis.html#a55ce89b28f747effbc16956e848bccaf">NEXILIS_MAX_JSON_MESSAGE</a> = 16 * 1024 * 1024</td></tr>
+<tr class="memdesc:a55ce89b28f747effbc16956e848bccaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum size of one server JSON response, excluding its newline delimiter.  <br /></td></tr>
+<tr class="separator:a55ce89b28f747effbc16956e848bccaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a411c214c17dbae9c7be3e61441eee2c9" id="r_a411c214c17dbae9c7be3e61441eee2c9"><td class="memItemLeft" align="right" valign="top">constexpr uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d34/namespacenexilis.html#a411c214c17dbae9c7be3e61441eee2c9">NEXILIS_MAX</a> = std::numeric_limits&lt;uint64_t&gt;::max()</td></tr>
 <tr class="separator:a411c214c17dbae9c7be3e61441eee2c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14d00d572ca514d2555238e30e065ce1" id="r_a14d00d572ca514d2555238e30e065ce1"><td class="memItemLeft" align="right" valign="top">constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d34/namespacenexilis.html#a14d00d572ca514d2555238e30e065ce1">NEXILIS_DEFAULT_MAX_CLIENTS</a> = 1024</td></tr>
@@ -1160,7 +1163,7 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="aclassnexilis_1_1TCPClient_html_a86ff1a43689a14c35d0c32f8a0bf7e64"><div class="ttname"><a href="../../dc/d34/classnexilis_1_1TCPClient.html#a86ff1a43689a14c35d0c32f8a0bf7e64">nexilis::TCPClient::getProtocolStatus</a></div><div class="ttdeci">nexilis::client::ProtocolStatus getProtocolStatus()</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d2e/tcp__client_8cc_source.html#l00068">tcp_client.cc:68</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1client_1_1ClientAPI_html_a00dc28d9a0740ba302b9fb449d24a202"><div class="ttname"><a href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a00dc28d9a0740ba302b9fb449d24a202">nexilis::client::ClientAPI::getActiveRooms</a></div><div class="ttdeci">std::vector&lt; client::Room &gt; getActiveRooms() const</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d13/client__api_8hh_source.html#l00614">client_api.hh:614</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1client_1_1ClientAPI_html_a1a217bf8d2dfcc6a0f37b7fb0b1eb010"><div class="ttname"><a href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a1a217bf8d2dfcc6a0f37b7fb0b1eb010">nexilis::client::ClientAPI::isInitialized</a></div><div class="ttdeci">bool isInitialized() const</div><div class="ttdoc">Is the server aware of the client, is the ClientAPI and Packet ready for use.</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d13/client__api_8hh_source.html#l00526">client_api.hh:526</a></div></div>
-<div class="ttc" id="aclassnexilis_1_1client_1_1ClientAPI_html_a1f032ceb40b93315772ef74432e26482"><div class="ttname"><a href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a1f032ceb40b93315772ef74432e26482">nexilis::client::ClientAPI::waitUntilRoomsCreated</a></div><div class="ttdeci">std::function&lt; void()&gt; waitUntilRoomsCreated(std::promise&lt; void &gt; &amp;future, const uint16_t max_attempts=50, const uint16_t timeout=100)</div><div class="ttdoc">Let the program wait until nexilis has created all the rooms.</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d60/client__api_8cc_source.html#l00210">client_api.cc:210</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1client_1_1ClientAPI_html_a1f032ceb40b93315772ef74432e26482"><div class="ttname"><a href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a1f032ceb40b93315772ef74432e26482">nexilis::client::ClientAPI::waitUntilRoomsCreated</a></div><div class="ttdeci">std::function&lt; void()&gt; waitUntilRoomsCreated(std::promise&lt; void &gt; &amp;future, const uint16_t max_attempts=50, const uint16_t timeout=100)</div><div class="ttdoc">Let the program wait until nexilis has created all the rooms.</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d60/client__api_8cc_source.html#l00213">client_api.cc:213</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1397,7 +1400,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html#l00033">33</a> of file <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html">nexilis_constants.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html#l00035">35</a> of file <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html">nexilis_constants.hh</a>.</p>
 
 </div>
 </div>
@@ -1421,7 +1424,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html#l00028">28</a> of file <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html">nexilis_constants.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html#l00030">30</a> of file <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html">nexilis_constants.hh</a>.</p>
 
 </div>
 </div>
@@ -1445,7 +1448,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html#l00034">34</a> of file <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html">nexilis_constants.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html#l00036">36</a> of file <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html">nexilis_constants.hh</a>.</p>
 
 </div>
 </div>
@@ -1469,7 +1472,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html#l00035">35</a> of file <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html">nexilis_constants.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html#l00037">37</a> of file <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html">nexilis_constants.hh</a>.</p>
 
 </div>
 </div>
@@ -1493,7 +1496,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html#l00036">36</a> of file <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html">nexilis_constants.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html#l00038">38</a> of file <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html">nexilis_constants.hh</a>.</p>
 
 </div>
 </div>
@@ -1517,7 +1520,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html#l00029">29</a> of file <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html">nexilis_constants.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html#l00031">31</a> of file <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html">nexilis_constants.hh</a>.</p>
 
 </div>
 </div>
@@ -1541,7 +1544,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html#l00027">27</a> of file <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html">nexilis_constants.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html#l00029">29</a> of file <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html">nexilis_constants.hh</a>.</p>
 
 </div>
 </div>
@@ -1565,7 +1568,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html#l00032">32</a> of file <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html">nexilis_constants.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html#l00034">34</a> of file <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html">nexilis_constants.hh</a>.</p>
 
 </div>
 </div>
@@ -1589,7 +1592,33 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html#l00031">31</a> of file <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html">nexilis_constants.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html#l00033">33</a> of file <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html">nexilis_constants.hh</a>.</p>
+
+</div>
+</div>
+<a id="a55ce89b28f747effbc16956e848bccaf" name="a55ce89b28f747effbc16956e848bccaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55ce89b28f747effbc16956e848bccaf">&#9670;&#160;</a></span>NEXILIS_MAX_JSON_MESSAGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint64_t nexilis::NEXILIS_MAX_JSON_MESSAGE = 16 * 1024 * 1024</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maximum size of one server JSON response, excluding its newline delimiter. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html#l00028">28</a> of file <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html">nexilis_constants.hh</a>.</p>
 
 </div>
 </div>
@@ -1613,7 +1642,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html#l00030">30</a> of file <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html">nexilis_constants.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html#l00032">32</a> of file <a class="el" href="../../dd/da5/nexilis__constants_8hh_source.html">nexilis_constants.hh</a>.</p>
 
 </div>
 </div>

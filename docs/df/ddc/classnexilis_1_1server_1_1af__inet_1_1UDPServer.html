@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.9-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.10-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -75,6 +75,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="../../d9/d8d/classnexilis_1_1server_1_1af__inet_1_1UDPServer-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">nexilis::server::af_inet::UDPServer Class Reference</div></div>
@@ -107,6 +108,11 @@ Collaboration diagram for nexilis::server::af_inet::UDPServer:</div>
 </map>
 <center><span class="legend">[<a href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d67/structnexilis_1_1server_1_1af__inet_1_1UDPServer_1_1SocketState.html">SocketState</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a25107546042534bd83076db39dbd5f9d" id="r_a25107546042534bd83076db39dbd5f9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a25107546042534bd83076db39dbd5f9d">UDPServer</a> (const <a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html">ServerConfig</a> &amp;settings, uint16_t port)</td></tr>
@@ -233,6 +239,42 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a8ae318a14230dd8d16ad924af3604660 inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol" id="r_a8ae318a14230dd8d16ad924af3604660"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a8ae318a14230dd8d16ad924af3604660">connectionClosed</a> ()</td></tr>
 <tr class="memdesc:a8ae318a14230dd8d16ad924af3604660 inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived class calls when a connection is closed.  <br /></td></tr>
 <tr class="separator:a8ae318a14230dd8d16ad924af3604660 inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a634b5f45b76a08cd5a30523b052d9541 inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol" id="r_a634b5f45b76a08cd5a30523b052d9541"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a634b5f45b76a08cd5a30523b052d9541">registerStreamTransport</a> (<a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html">User</a> &amp;user, <a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1f">User::Transport</a> transport)</td></tr>
+<tr class="memdesc:a634b5f45b76a08cd5a30523b052d9541 inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a stream connection after a message identifies its user.  <br /></td></tr>
+<tr class="separator:a634b5f45b76a08cd5a30523b052d9541 inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1489b78ef0f8832ae7c2cccfbe81c9ee inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol" id="r_a1489b78ef0f8832ae7c2cccfbe81c9ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a1489b78ef0f8832ae7c2cccfbe81c9ee">touchDatagramTransport</a> (<a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html">User</a> &amp;user, <a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1f">User::Transport</a> transport)</td></tr>
+<tr class="memdesc:a1489b78ef0f8832ae7c2cccfbe81c9ee inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record datagram activity and activate that transport for the user.  <br /></td></tr>
+<tr class="separator:a1489b78ef0f8832ae7c2cccfbe81c9ee inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74ef68626912c23af6914758648a6e0 inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol" id="r_ab74ef68626912c23af6914758648a6e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#ab74ef68626912c23af6914758648a6e0">streamTransportEnded</a> (<a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html">User</a> &amp;user, <a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1f">User::Transport</a> transport, <a class="el" href="../../d5/da4/classnexilis_1_1NXProtocol.html">NXProtocol</a> &amp;protocol)</td></tr>
+<tr class="memdesc:ab74ef68626912c23af6914758648a6e0 inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finish one stream connection, removing the user when nothing remains.  <br /></td></tr>
+<tr class="separator:ab74ef68626912c23af6914758648a6e0 inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fbd4d6d8a95879846c9afe499df098b inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol" id="r_a8fbd4d6d8a95879846c9afe499df098b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a8fbd4d6d8a95879846c9afe499df098b">datagramTransportEnded</a> (<a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html">User</a> &amp;user, <a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1f">User::Transport</a> transport, <a class="el" href="../../d5/da4/classnexilis_1_1NXProtocol.html">NXProtocol</a> &amp;protocol)</td></tr>
+<tr class="memdesc:a8fbd4d6d8a95879846c9afe499df098b inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finish an active datagram transport, removing the user when nothing remains.  <br /></td></tr>
+<tr class="separator:a8fbd4d6d8a95879846c9afe499df098b inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab46d86ba8a9ef0c084bad5c1bfa835f6 inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol" id="r_ab46d86ba8a9ef0c084bad5c1bfa835f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#ab46d86ba8a9ef0c084bad5c1bfa835f6">beginPendingHandshake</a> (<a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html">User</a> &amp;user)</td></tr>
+<tr class="memdesc:ab46d86ba8a9ef0c084bad5c1bfa835f6 inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol"><td class="mdescLeft">&#160;</td><td class="mdescRight">Track a successful authentication that has not opened its session yet.  <br /></td></tr>
+<tr class="separator:ab46d86ba8a9ef0c084bad5c1bfa835f6 inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa1eee7a244639a9c6c9e27a2015bb0f inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol" id="r_afa1eee7a244639a9c6c9e27a2015bb0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#afa1eee7a244639a9c6c9e27a2015bb0f">completePendingHandshake</a> (<a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html">User</a> &amp;user)</td></tr>
+<tr class="memdesc:afa1eee7a244639a9c6c9e27a2015bb0f inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consume pending presence when the session connection identifies the user.  <br /></td></tr>
+<tr class="separator:afa1eee7a244639a9c6c9e27a2015bb0f inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a403a5e9ead7cf3031c09b29abbbbcdfd inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol" id="r_a403a5e9ead7cf3031c09b29abbbbcdfd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a403a5e9ead7cf3031c09b29abbbbcdfd">abandonPendingHandshake</a> (<a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html">User</a> &amp;user, <a class="el" href="../../d5/da4/classnexilis_1_1NXProtocol.html">NXProtocol</a> &amp;protocol)</td></tr>
+<tr class="memdesc:a403a5e9ead7cf3031c09b29abbbbcdfd inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finish a handshake that did not open a session.  <br /></td></tr>
+<tr class="separator:a403a5e9ead7cf3031c09b29abbbbcdfd inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7eb5c5c9a1c9637ab263c1020622bdf inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol" id="r_ac7eb5c5c9a1c9637ab263c1020622bdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#ac7eb5c5c9a1c9637ab263c1020622bdf">expirePendingHandshakes</a> (<a class="el" href="../../d5/da4/classnexilis_1_1NXProtocol.html">NXProtocol</a> &amp;protocol)</td></tr>
+<tr class="memdesc:ac7eb5c5c9a1c9637ab263c1020622bdf inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expire handshakes that never opened a session.  <br /></td></tr>
+<tr class="separator:ac7eb5c5c9a1c9637ab263c1020622bdf inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1579630f6d5ce660dd271816fa0441e6 inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol" id="r_a1579630f6d5ce660dd271816fa0441e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a1579630f6d5ce660dd271816fa0441e6">cleanupPendingHandshakes</a> (<a class="el" href="../../d5/da4/classnexilis_1_1NXProtocol.html">NXProtocol</a> &amp;protocol)</td></tr>
+<tr class="memdesc:a1579630f6d5ce660dd271816fa0441e6 inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel remaining handshakes when the protocol stops.  <br /></td></tr>
+<tr class="separator:a1579630f6d5ce660dd271816fa0441e6 inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b0ce5181d4092e523452f050874c1d7 inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol" id="r_a1b0ce5181d4092e523452f050874c1d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a1b0ce5181d4092e523452f050874c1d7">expireIdleDatagramTransports</a> (<a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1f">User::Transport</a> transport, <a class="el" href="../../d5/da4/classnexilis_1_1NXProtocol.html">NXProtocol</a> &amp;protocol)</td></tr>
+<tr class="memdesc:a1b0ce5181d4092e523452f050874c1d7 inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expire datagram transports that have been idle for too long.  <br /></td></tr>
+<tr class="separator:a1b0ce5181d4092e523452f050874c1d7 inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62494bb2dd0c80e8e20e33aa712748d1 inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol" id="r_a62494bb2dd0c80e8e20e33aa712748d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a62494bb2dd0c80e8e20e33aa712748d1">cleanupDatagramTransports</a> (<a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1f">User::Transport</a> transport, <a class="el" href="../../d5/da4/classnexilis_1_1NXProtocol.html">NXProtocol</a> &amp;protocol)</td></tr>
+<tr class="memdesc:a62494bb2dd0c80e8e20e33aa712748d1 inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drop every active datagram transport of the given kind on stop.  <br /></td></tr>
+<tr class="separator:a62494bb2dd0c80e8e20e33aa712748d1 inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab254c9ce12f43951410492942d854d7b inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol" id="r_ab254c9ce12f43951410492942d854d7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#ab254c9ce12f43951410492942d854d7b">leaveAndRemoveUser</a> (<a class="el" href="../../d4/d3a/classnexilis_1_1server_1_1User.html">User</a> &amp;user, <a class="el" href="../../d5/da4/classnexilis_1_1NXProtocol.html">NXProtocol</a> &amp;protocol)</td></tr>
+<tr class="memdesc:ab254c9ce12f43951410492942d854d7b inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast leave and remove a disconnected user from the registry.  <br /></td></tr>
+<tr class="separator:ab254c9ce12f43951410492942d854d7b inherit pro_methods_classnexilis_1_1server_1_1ServerProtocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>AF_INET UDP server protocol using raw sockets. Works similarly to the boost UDP server but over a plain UDP socket. </p>
@@ -272,19 +314,19 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/de7/af__inet_2udp__server_8cc_source.html#l00042">42</a> of file <a class="el" href="../../d7/de7/af__inet_2udp__server_8cc_source.html">udp_server.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   43</span>    : <a class="code hl_function" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#af3c78251fef035465c2b71962bad2c57">ServerProtocol</a>(settings),</div>
-<div class="line"><span class="lineno">   44</span>      m_port(port == 0 ? <a class="code hl_function" href="../../db/d41/classnexilis_1_1Ports.html#ab89ea23b0a8b2582af7166fa19d5cf33">Ports::getInetUDPPort</a>() : port),</div>
-<div class="line"><span class="lineno">   45</span>      m_mutex(std::make_unique&lt;std::mutex&gt;()),</div>
-<div class="line"><span class="lineno">   46</span>      m_stopped(std::make_unique&lt;std::atomic&lt;bool&gt;&gt;(false))</div>
-<div class="line"><span class="lineno">   47</span>{</div>
-<div class="line"><span class="lineno">   48</span>    createSocket();</div>
-<div class="line"><span class="lineno">   49</span>    bindSocket();</div>
-<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">if</span> (RAND_bytes(m_cookieKey.data(), m_cookieKey.size()) != 1)</div>
-<div class="line"><span class="lineno">   51</span>        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Failed to create UDP cookie key&quot;</span>);</div>
-<div class="line"><span class="lineno">   52</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d7/de7/af__inet_2udp__server_8cc_source.html#l00090">90</a> of file <a class="el" href="../../d7/de7/af__inet_2udp__server_8cc_source.html">udp_server.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   91</span>    : <a class="code hl_function" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#af3c78251fef035465c2b71962bad2c57">ServerProtocol</a>(settings),</div>
+<div class="line"><span class="lineno">   92</span>      m_port(port == 0 ? <a class="code hl_function" href="../../db/d41/classnexilis_1_1Ports.html#ab89ea23b0a8b2582af7166fa19d5cf33">Ports::getInetUDPPort</a>() : port),</div>
+<div class="line"><span class="lineno">   93</span>      m_socketState(std::make_shared&lt;SocketState&gt;()),</div>
+<div class="line"><span class="lineno">   94</span>      m_stopped(std::make_unique&lt;std::atomic&lt;bool&gt;&gt;(false))</div>
+<div class="line"><span class="lineno">   95</span>{</div>
+<div class="line"><span class="lineno">   96</span>    createSocket();</div>
+<div class="line"><span class="lineno">   97</span>    bindSocket();</div>
+<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">if</span> (RAND_bytes(m_cookieKey.data(), m_cookieKey.size()) != 1)</div>
+<div class="line"><span class="lineno">   99</span>        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Failed to create UDP cookie key&quot;</span>);</div>
+<div class="line"><span class="lineno">  100</span>}</div>
 <div class="ttc" id="aclassnexilis_1_1Ports_html_ab89ea23b0a8b2582af7166fa19d5cf33"><div class="ttname"><a href="../../db/d41/classnexilis_1_1Ports.html#ab89ea23b0a8b2582af7166fa19d5cf33">nexilis::Ports::getInetUDPPort</a></div><div class="ttdeci">static uint16_t getInetUDPPort()</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dfb/ports_8cc_source.html#l00067">ports.cc:67</a></div></div>
-<div class="ttc" id="aclassnexilis_1_1server_1_1ServerProtocol_html_af3c78251fef035465c2b71962bad2c57"><div class="ttname"><a href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#af3c78251fef035465c2b71962bad2c57">nexilis::server::ServerProtocol::ServerProtocol</a></div><div class="ttdeci">ServerProtocol(const ServerConfig &amp;settings)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dfa/server__protocol_8cc_source.html#l00022">server_protocol.cc:22</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1server_1_1ServerProtocol_html_af3c78251fef035465c2b71962bad2c57"><div class="ttname"><a href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#af3c78251fef035465c2b71962bad2c57">nexilis::server::ServerProtocol::ServerProtocol</a></div><div class="ttdeci">ServerProtocol(const ServerConfig &amp;settings)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dfa/server__protocol_8cc_source.html#l00040">server_protocol.cc:40</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -305,42 +347,130 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/de7/af__inet_2udp__server_8cc_source.html#l00054">54</a> of file <a class="el" href="../../d7/de7/af__inet_2udp__server_8cc_source.html">udp_server.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   55</span>{</div>
-<div class="line"><span class="lineno">   56</span>    <a class="code hl_function" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a9f160f664a411ee41ab01634930ebe3f">stop</a>();</div>
-<div class="line"><span class="lineno">   57</span>    <a class="code hl_function" href="../../dd/d04/group__PortHandling.html#ga510daefca8fad8c7b1b9af82773e3f70">Util::cleanupPortFile</a>(<a class="code hl_function" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a4063ede8829f763deee61703341a97ef">getType</a>());</div>
-<div class="line"><span class="lineno">   58</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d7/de7/af__inet_2udp__server_8cc_source.html#l00102">102</a> of file <a class="el" href="../../d7/de7/af__inet_2udp__server_8cc_source.html">udp_server.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  103</span>{</div>
+<div class="line"><span class="lineno">  104</span>    <a class="code hl_function" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a9f160f664a411ee41ab01634930ebe3f">stop</a>();</div>
+<div class="line"><span class="lineno">  105</span>    <a class="code hl_function" href="../../dd/d04/group__PortHandling.html#ga510daefca8fad8c7b1b9af82773e3f70">Util::cleanupPortFile</a>(<a class="code hl_function" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a4063ede8829f763deee61703341a97ef">getType</a>());</div>
+<div class="line"><span class="lineno">  106</span>}</div>
 <div class="ttc" id="aclassnexilis_1_1server_1_1af__inet_1_1UDPServer_html_a4063ede8829f763deee61703341a97ef"><div class="ttname"><a href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a4063ede8829f763deee61703341a97ef">nexilis::server::af_inet::UDPServer::getType</a></div><div class="ttdeci">NXProtocol::Type getType() override</div><div class="ttdoc">NXProtocol::getType() implementation.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d21/af__inet_2udp__server_8hh_source.html#l00069">udp_server.hh:69</a></div></div>
-<div class="ttc" id="aclassnexilis_1_1server_1_1af__inet_1_1UDPServer_html_a9f160f664a411ee41ab01634930ebe3f"><div class="ttname"><a href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a9f160f664a411ee41ab01634930ebe3f">nexilis::server::af_inet::UDPServer::stop</a></div><div class="ttdeci">void stop() override</div><div class="ttdoc">NXProtocol::stop() implementation.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/de7/af__inet_2udp__server_8cc_source.html#l00137">udp_server.cc:137</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1server_1_1af__inet_1_1UDPServer_html_a9f160f664a411ee41ab01634930ebe3f"><div class="ttname"><a href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a9f160f664a411ee41ab01634930ebe3f">nexilis::server::af_inet::UDPServer::stop</a></div><div class="ttdeci">void stop() override</div><div class="ttdoc">NXProtocol::stop() implementation.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/de7/af__inet_2udp__server_8cc_source.html#l00175">udp_server.cc:175</a></div></div>
 <div class="ttc" id="agroup__PortHandling_html_ga510daefca8fad8c7b1b9af82773e3f70"><div class="ttname"><a href="../../dd/d04/group__PortHandling.html#ga510daefca8fad8c7b1b9af82773e3f70">nexilis::Util::cleanupPortFile</a></div><div class="ttdeci">static void cleanupPortFile(NXProtocol::Type protocol_type)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d6f/util_8cc_source.html#l00621">util.cc:621</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer_a50bf92a30646e072df669e53bacfeea0_cgraph.png" border="0" usemap="#adf/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer_a50bf92a30646e072df669e53bacfeea0_cgraph" alt=""/></div>
 <map name="adf/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer_a50bf92a30646e072df669e53bacfeea0_cgraph" id="adf/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer_a50bf92a30646e072df669e53bacfeea0_cgraph">
-<area shape="rect" title="Destructor." alt="" coords="5,116,227,156"/>
-<area shape="rect" href="../../dd/d04/group__PortHandling.html#ga510daefca8fad8c7b1b9af82773e3f70" title=" " alt="" coords="275,66,479,91"/>
-<area shape="poly" title=" " alt="" coords="207,113,304,92,305,97,208,119"/>
-<area shape="rect" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a4063ede8829f763deee61703341a97ef" title="NXProtocol::getType() implementation." alt="" coords="281,116,472,156"/>
-<area shape="poly" title=" " alt="" coords="227,133,268,133,268,139,227,139"/>
-<area shape="rect" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a9f160f664a411ee41ab01634930ebe3f" title="NXProtocol::stop() implementation." alt="" coords="293,180,461,220"/>
-<area shape="poly" title=" " alt="" coords="199,153,282,174,281,179,198,159"/>
-<area shape="rect" href="../../dd/de4/classnexilis_1_1Util.html#ad4e4e317fd172fff57099fc3284d6299" title="File stuff." alt="" coords="531,22,725,47"/>
-<area shape="poly" title=" " alt="" coords="449,63,541,47,542,52,450,69"/>
-<area shape="rect" href="../../dd/d04/group__PortHandling.html#ga8dc341fe44a9de8bb4e0b93a4f447a64" title=" " alt="" coords="527,71,729,97"/>
-<area shape="poly" title=" " alt="" coords="479,78,513,79,513,84,479,83"/>
-<area shape="rect" href="../../dd/de4/classnexilis_1_1Util.html#a0066197f79b612d78444f59dafeeb466" title=" " alt="" coords="777,5,948,45"/>
-<area shape="poly" title=" " alt="" coords="679,69,768,46,769,51,680,74"/>
-<area shape="rect" href="../../d5/da4/classnexilis_1_1NXProtocol.html#a0359edd948a8adfcf565c6e57da29480" title="Returns a string value of the Type." alt="" coords="790,69,935,109"/>
-<area shape="poly" title=" " alt="" coords="729,84,776,85,776,90,729,89"/>
-<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982" title="All the overloaded printing functions." alt="" coords="556,155,700,181"/>
-<area shape="poly" title=" " alt="" coords="460,187,542,176,543,181,461,192"/>
-<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="561,210,695,235"/>
-<area shape="poly" title=" " alt="" coords="461,205,547,213,546,218,461,210"/>
-<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#aa9bd79fb1a1804924e3440947c6ab117" title="Send debug message." alt="" coords="779,144,946,184"/>
-<area shape="poly" title=" " alt="" coords="700,164,766,163,766,168,700,169"/>
-<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#acc02567dd7e4103305110bafbfd40c08" title="Send error message." alt="" coords="779,208,946,248"/>
-<area shape="poly" title=" " alt="" coords="696,222,766,223,765,228,696,227"/>
+<area shape="rect" title="Destructor." alt="" coords="5,363,227,403"/>
+<area shape="rect" href="../../dd/d04/group__PortHandling.html#ga510daefca8fad8c7b1b9af82773e3f70" title=" " alt="" coords="275,310,479,335"/>
+<area shape="poly" title=" " alt="" coords="203,360,307,336,308,341,204,365"/>
+<area shape="rect" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a4063ede8829f763deee61703341a97ef" title="NXProtocol::getType() implementation." alt="" coords="281,363,472,403"/>
+<area shape="poly" title=" " alt="" coords="227,380,268,380,268,385,227,385"/>
+<area shape="rect" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a9f160f664a411ee41ab01634930ebe3f" title="NXProtocol::stop() implementation." alt="" coords="293,429,461,469"/>
+<area shape="poly" title=" " alt="" coords="195,400,285,423,284,428,194,405"/>
+<area shape="rect" href="../../dd/de4/classnexilis_1_1Util.html#ad4e4e317fd172fff57099fc3284d6299" title="File stuff." alt="" coords="539,261,732,286"/>
+<area shape="poly" title=" " alt="" coords="443,307,554,286,555,291,444,313"/>
+<area shape="rect" href="../../dd/d04/group__PortHandling.html#ga8dc341fe44a9de8bb4e0b93a4f447a64" title=" " alt="" coords="534,310,737,335"/>
+<area shape="poly" title=" " alt="" coords="479,320,520,320,520,325,479,325"/>
+<area shape="rect" href="../../dd/de4/classnexilis_1_1Util.html#a0066197f79b612d78444f59dafeeb466" title=" " alt="" coords="815,303,986,343"/>
+<area shape="poly" title=" " alt="" coords="737,320,801,320,801,325,737,325"/>
+<area shape="rect" href="../../d5/da4/classnexilis_1_1NXProtocol.html#a0359edd948a8adfcf565c6e57da29480" title="Returns a string value of the Type." alt="" coords="828,239,973,279"/>
+<area shape="poly" title=" " alt="" coords="695,307,743,296,814,278,815,284,745,301,696,313"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a62494bb2dd0c80e8e20e33aa712748d1" title="Drop every active datagram transport of the given kind on stop." alt="" coords="527,429,744,469"/>
+<area shape="poly" title=" " alt="" coords="461,447,513,447,513,452,461,452"/>
+<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982" title="All the overloaded printing functions." alt="" coords="563,497,707,522"/>
+<area shape="poly" title=" " alt="" coords="461,466,567,491,566,496,460,471"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a8fbd4d6d8a95879846c9afe499df098b" title="Finish an active datagram transport, removing the user when nothing remains." alt="" coords="792,431,1009,471"/>
+<area shape="poly" title=" " alt="" coords="744,447,779,447,779,453,744,453"/>
+<area shape="rect" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#aaea84dd6f0296109d1c006d421650dc2" title="Snapshot of owning handles. This does not lock mutable user fields." alt="" coords="795,367,1006,407"/>
+<area shape="poly" title=" " alt="" coords="720,427,802,407,803,412,721,432"/>
+<area shape="rect" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a62fc8b1c44df9ceb64daac949e9c6caf" title="Clear the send callback associated with a closed transport." alt="" coords="1090,367,1242,407"/>
+<area shape="poly" title=" " alt="" coords="984,428,1076,406,1077,411,985,433"/>
+<area shape="rect" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#aea70bacfc678863b82a72d7f8ee7f2a0" title="End an active datagram transport and return the remaining presence." alt="" coords="1077,431,1255,471"/>
+<area shape="poly" title=" " alt="" coords="1010,448,1063,448,1063,453,1010,453"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#ab254c9ce12f43951410492942d854d7b" title="Broadcast leave and remove a disconnected user from the registry." alt="" coords="1057,495,1275,535"/>
+<area shape="poly" title=" " alt="" coords="985,468,1070,489,1069,494,984,473"/>
+<area shape="rect" href="../../dc/dcb/classnexilis_1_1BaseClient.html#a2ef1dddc83ce3e9f573e144673189546" title=" " alt="" coords="1874,120,2017,160"/>
+<area shape="poly" title=" " alt="" coords="1256,492,1273,481,1284,469,1291,457,1297,431,1303,405,1321,377,1381,323,1449,278,1522,241,1596,211,1670,187,1741,169,1860,147,1861,152,1742,174,1672,193,1598,216,1524,246,1452,283,1384,328,1325,380,1308,407,1302,433,1296,459,1288,472,1276,485,1259,497"/>
+<area shape="rect" href="../../db/d96/classnexilis_1_1server_1_1RoomStorage.html#ab485886b13f88d861cf50ad148391fb5" title=" " alt="" coords="1581,259,1792,299"/>
+<area shape="poly" title=" " alt="" coords="1242,492,1274,480,1362,437,1427,396,1492,354,1580,310,1602,301,1604,306,1582,314,1495,359,1430,400,1364,441,1276,485,1243,497"/>
+<area shape="rect" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a37bf38b5fc17e97faecf5637c8ad7e47" title=" " alt="" coords="1869,833,2021,873"/>
+<area shape="poly" title=" " alt="" coords="1191,533,1253,586,1346,658,1459,732,1520,766,1582,794,1652,816,1724,832,1794,842,1856,847,1855,853,1793,847,1723,837,1651,821,1580,798,1518,770,1456,737,1343,663,1250,591,1187,537"/>
+<area shape="rect" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#aabd05a96502a6e23a5edcac8da44a430" title=" " alt="" coords="1323,859,1533,899"/>
+<area shape="poly" title=" " alt="" coords="1174,534,1189,593,1218,675,1238,718,1262,762,1291,802,1324,838,1341,850,1338,854,1321,842,1287,806,1258,765,1233,721,1213,677,1184,595,1169,536"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a72dfb4f3c457e4d857a91d0587daea58" title=" " alt="" coords="1327,495,1529,535"/>
+<area shape="poly" title=" " alt="" coords="1275,512,1314,512,1314,517,1275,517"/>
+<area shape="poly" title=" " alt="" coords="1445,493,1531,385,1544,364,1552,345,1562,328,1580,310,1590,303,1593,307,1583,314,1566,331,1557,348,1549,366,1536,388,1449,496"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#aebfc9a226b33efebbd8025f46fc94d87" title=" " alt="" coords="1592,437,1781,477"/>
+<area shape="poly" title=" " alt="" coords="1518,492,1582,478,1583,483,1519,497"/>
+<area shape="rect" href="../../d9/df3/classnexilis_1_1server_1_1DefaultArgs.html#ad025461696f36ad9e397171a8c8c37c0" title=" " alt="" coords="1601,552,1772,592"/>
+<area shape="poly" title=" " alt="" coords="1519,532,1588,548,1587,553,1518,537"/>
+<area shape="rect" href="../../d9/df3/classnexilis_1_1server_1_1DefaultArgs.html#a8fe32f1095d007598edf936e5be53f1d" title=" " alt="" coords="1601,616,1772,656"/>
+<area shape="poly" title=" " alt="" coords="1460,533,1516,567,1582,602,1601,609,1599,614,1580,606,1513,572,1458,537"/>
+<area shape="rect" href="../../d9/df3/classnexilis_1_1server_1_1DefaultArgs.html#a4ad6243462ef5478a30b330f35a1f6ef" title=" " alt="" coords="1601,744,1772,784"/>
+<area shape="poly" title=" " alt="" coords="1440,534,1460,575,1491,628,1533,683,1557,708,1583,730,1591,735,1588,740,1580,734,1553,712,1528,686,1487,631,1456,577,1435,536"/>
+<area shape="rect" href="../../d9/df3/classnexilis_1_1server_1_1DefaultArgs.html#ab0f8e94e52cb97cba7df5c6a44093e25" title=" " alt="" coords="1601,373,1772,413"/>
+<area shape="poly" title=" " alt="" coords="1458,492,1513,457,1580,423,1599,416,1601,420,1582,428,1516,462,1460,497"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a8dc941be1df851c4d426e39dcad676d1" title="Send message to every protocol that is avainable for a client." alt="" coords="1851,641,2040,681"/>
+<area shape="poly" title=" " alt="" coords="1529,503,1590,503,1657,507,1726,518,1793,538,1830,556,1864,580,1919,629,1915,633,1861,584,1827,561,1791,542,1725,523,1657,512,1590,508,1529,509"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#ae1b6f4a7a7b7a3aa79c34d492d2cd786" title="Send message in room context." alt="" coords="1592,680,1781,720"/>
+<area shape="poly" title=" " alt="" coords="1446,533,1501,598,1540,634,1583,666,1594,672,1592,677,1580,670,1536,639,1498,602,1442,536"/>
+<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a191e4c013bad219e746e8e56682d65e1" title=" " alt="" coords="1609,323,1765,349"/>
+<area shape="poly" title=" " alt="" coords="1442,493,1497,426,1536,390,1580,359,1597,351,1599,356,1583,364,1539,394,1501,430,1446,496"/>
+<area shape="poly" title=" " alt="" coords="1777,435,1790,424,1810,392,1818,361,1818,330,1813,299,1809,267,1808,235,1817,203,1838,170,1859,154,1862,158,1842,174,1822,205,1814,236,1814,267,1819,298,1823,330,1824,362,1815,395,1794,427,1780,439"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#ac07fa7fe08cfa3955f7fdb9d3c2f7267" title="Convert ClientMsgType to nx_data (and add a &#39; &#39;) as a last character." alt="" coords="1851,373,2040,413"/>
+<area shape="poly" title=" " alt="" coords="1768,435,1850,414,1852,419,1769,440"/>
+<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="2361,223,2496,249"/>
+<area shape="poly" title=" " alt="" coords="1768,475,1840,487,2091,487,2312,484,2338,463,2361,436,2379,406,2393,374,2412,312,2422,262,2427,263,2418,313,2398,376,2383,409,2365,439,2342,466,2314,489,2092,493,1840,492,1768,480"/>
+<area shape="rect" href="../../d5/dc9/namespacenexilis_1_1server.html#adee8e06d497179f171db8f4136c42690" title=" " alt="" coords="1847,248,2044,288"/>
+<area shape="poly" title=" " alt="" coords="1770,435,1790,423,1806,409,1816,394,1824,378,1838,360,1907,295,1910,299,1842,363,1829,381,1820,397,1810,412,1794,427,1772,440"/>
+<area shape="rect" href="../../db/d0c/classnexilis_1_1RoomCommandType.html#a3683e50c3fdd22409f2ec118bb9cbdb3" title=" " alt="" coords="1841,437,2049,477"/>
+<area shape="poly" title=" " alt="" coords="1782,455,1828,455,1828,460,1782,460"/>
+<area shape="rect" href="../../d9/d3d/group__BytevectorConversions.html#ga38e516c60d98cb71153ded26ce2b67e5" title=" " alt="" coords="2123,336,2289,376"/>
+<area shape="poly" title=" " alt="" coords="2040,377,2108,367,2109,373,2041,382"/>
+<area shape="rect" href="../../d7/de9/classnexilis_1_1Json.html#a176086cccd2bb63f85a178a5b7eca0bd" title=" " alt="" coords="2115,401,2297,426"/>
+<area shape="poly" title=" " alt="" coords="2040,398,2101,403,2101,408,2040,403"/>
+<area shape="poly" title=" " alt="" coords="2165,336,2162,326,2169,317,2184,311,2206,309,2232,312,2246,320,2244,324,2230,317,2206,315,2185,317,2172,321,2167,327,2170,335"/>
+<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#acc02567dd7e4103305110bafbfd40c08" title="Send error message." alt="" coords="2544,216,2711,256"/>
+<area shape="poly" title=" " alt="" coords="2496,233,2530,233,2530,239,2496,239"/>
+<area shape="poly" title=" " alt="" coords="2028,246,2049,234,2064,218,2071,201,2080,184,2097,170,2155,148,2204,144,2253,153,2314,169,2362,189,2401,213,2399,218,2359,193,2312,175,2252,158,2203,150,2156,153,2100,174,2084,187,2076,203,2068,221,2052,238,2031,250"/>
+<area shape="rect" href="../../db/d0c/classnexilis_1_1RoomCommandType.html#a1661871cb06f8ac4420fe20a3d4fec3b" title=" " alt="" coords="2099,184,2313,224"/>
+<area shape="poly" title=" " alt="" coords="2027,245,2110,225,2111,230,2028,251"/>
+<area shape="rect" href="../../db/d0c/classnexilis_1_1RoomCommandType.html#aa6192a299f9c13b7591c52c79192dd95" title=" " alt="" coords="2102,248,2310,288"/>
+<area shape="poly" title=" " alt="" coords="2044,265,2088,265,2088,271,2044,271"/>
+<area shape="rect" href="../../db/d0c/classnexilis_1_1RoomCommandType.html#a6a08025bc5078426d320e06333ce7d09" title=" " alt="" coords="2102,5,2310,45"/>
+<area shape="poly" title=" " alt="" coords="2034,246,2049,234,2064,213,2072,191,2072,147,2072,101,2080,78,2097,56,2101,52,2104,56,2101,59,2085,81,2078,102,2077,147,2077,192,2069,215,2053,238,2037,250"/>
+<area shape="rect" href="../../db/d0c/classnexilis_1_1RoomCommandType.html#a9c059830b8f6aa7d3078dd0d18a3c3da" title=" " alt="" coords="2102,69,2310,109"/>
+<area shape="poly" title=" " alt="" coords="2032,246,2049,234,2060,221,2067,209,2072,182,2078,154,2085,140,2097,126,2113,114,2116,118,2100,130,2089,143,2083,156,2078,183,2072,210,2065,224,2052,238,2035,250"/>
+<area shape="poly" title=" " alt="" coords="2314,217,2348,222,2347,227,2313,222"/>
+<area shape="poly" title=" " alt="" coords="2310,250,2347,245,2348,250,2311,256"/>
+<area shape="poly" title=" " alt="" coords="2295,43,2315,55,2352,91,2382,133,2405,175,2420,209,2415,211,2400,177,2377,136,2348,95,2312,59,2292,48"/>
+<area shape="poly" title=" " alt="" coords="2277,107,2315,126,2369,168,2410,211,2406,214,2365,172,2312,130,2274,112"/>
+<area shape="poly" title=" " alt="" coords="2050,475,2113,479,2181,477,2249,464,2282,452,2312,436,2334,419,2354,399,2385,351,2406,302,2419,262,2424,263,2411,304,2389,354,2358,402,2338,423,2315,441,2284,457,2251,469,2182,482,2113,485,2049,480"/>
+<area shape="poly" title=" " alt="" coords="1984,639,2037,613,2098,588,2131,579,2161,574,2213,571,2237,569,2261,563,2285,551,2312,531,2339,501,2362,467,2381,430,2395,391,2414,318,2422,262,2428,263,2419,320,2400,393,2385,432,2367,469,2343,505,2315,535,2288,556,2263,568,2238,574,2213,577,2161,579,2132,584,2100,593,2040,618,1986,644"/>
+<area shape="rect" href="../../d2/d8d/group__UserBoostTCP.html#gad64b1d7881430c9dc278fcab25c7e4a6" title=" " alt="" coords="2130,731,2282,771"/>
+<area shape="poly" title=" " alt="" coords="2019,679,2052,691,2100,716,2119,724,2118,729,2098,721,2050,696,2017,684"/>
+<area shape="rect" href="../../db/daa/group__UserBoostUDP.html#ga99f955fd99e8c615cf07aa5361078c3b" title=" " alt="" coords="2130,795,2282,835"/>
+<area shape="poly" title=" " alt="" coords="2034,679,2052,691,2070,714,2077,737,2084,759,2100,781,2119,792,2116,797,2097,785,2079,762,2072,739,2066,717,2049,695,2031,684"/>
+<area shape="rect" href="../../d5/da4/classnexilis_1_1NXProtocol.html#a7f48d98a5081e37c9616930a8f932cf1" title=" " alt="" coords="2133,859,2279,899"/>
+<area shape="poly" title=" " alt="" coords="2037,679,2053,691,2068,711,2075,731,2077,770,2079,808,2086,826,2101,845,2122,860,2119,864,2097,849,2082,829,2074,809,2072,770,2070,732,2063,714,2049,695,2034,684"/>
+<area shape="rect" href="../../d3/d43/group__UserInetTCP.html#ga711d29b0e1d12b1a5733b9b7e943c46f" title=" " alt="" coords="2130,923,2282,963"/>
+<area shape="poly" title=" " alt="" coords="2038,679,2053,692,2072,719,2080,747,2080,775,2077,802,2074,829,2075,856,2082,882,2101,909,2119,923,2116,927,2097,912,2078,885,2070,857,2069,829,2072,802,2075,775,2074,748,2067,722,2049,695,2035,683"/>
+<area shape="rect" href="../../d6/df2/group__UserInetUDP.html#gab9d1020d0109228f277f3a6261aac652" title=" " alt="" coords="2130,987,2282,1027"/>
+<area shape="poly" title=" " alt="" coords="2039,680,2053,692,2076,728,2084,764,2083,799,2077,835,2071,869,2070,904,2078,938,2101,973,2119,987,2116,992,2097,976,2073,940,2065,904,2066,869,2072,834,2078,799,2079,764,2071,730,2049,695,2035,684"/>
+<area shape="rect" href="../../d5/d20/group__UserUnixDgram.html#gafd2d99a4d3b410b2a01010744b270473" title=" " alt="" coords="2130,603,2282,643"/>
+<area shape="poly" title=" " alt="" coords="2040,645,2116,633,2117,639,2041,650"/>
+<area shape="rect" href="../../db/d8a/group__UserUnixStream.html#gaaf38268746172416550eaaed936fe794" title=" " alt="" coords="2130,667,2282,707"/>
+<area shape="poly" title=" " alt="" coords="2040,668,2117,675,2116,681,2040,673"/>
+<area shape="poly" title=" " alt="" coords="1775,718,1794,730,1812,753,1819,776,1825,798,1842,819,1859,830,1856,835,1838,823,1820,801,1813,777,1807,755,1790,734,1772,722"/>
+<area shape="poly" title=" " alt="" coords="1781,683,1837,675,1837,680,1782,689"/>
+<area shape="rect" href="../../db/d96/classnexilis_1_1server_1_1RoomStorage.html#a1a34d89eff94828154b7bb44e545dcc6" title=" " alt="" coords="1840,769,2051,809"/>
+<area shape="poly" title=" " alt="" coords="1761,718,1793,730,1841,755,1860,762,1859,767,1839,760,1791,734,1759,723"/>
+<area shape="rect" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#acdb61fe86e1f6a500b143675bd774503" title="Retain the returned handle throughout the operation on the user." alt="" coords="1840,705,2051,745"/>
+<area shape="poly" title=" " alt="" coords="1782,707,1826,711,1826,716,1781,712"/>
+<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#a68409cb1a072641188aa5b1053c81fbc" title="Send warning message." alt="" coords="1862,184,2029,224"/>
+<area shape="poly" title=" " alt="" coords="1764,322,1790,309,1806,291,1814,273,1821,253,1838,234,1848,227,1851,232,1842,238,1826,256,1819,275,1811,294,1794,313,1766,327"/>
+<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#aa9bd79fb1a1804924e3440947c6ab117" title="Send debug message." alt="" coords="817,495,984,535"/>
+<area shape="poly" title=" " alt="" coords="707,508,804,510,804,515,707,513"/>
 </map>
 </div>
 
@@ -364,28 +494,22 @@ Here is the call graph for this function:</div>
 
 <p>Move constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/de7/af__inet_2udp__server_8cc_source.html#l00060">60</a> of file <a class="el" href="../../d7/de7/af__inet_2udp__server_8cc_source.html">udp_server.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   61</span>    : <a class="code hl_function" href="../../d5/da4/classnexilis_1_1NXProtocol.html#af09e9806c3da63398b852d39c3a2c06b">NXProtocol</a>(std::move(other)),</div>
-<div class="line"><span class="lineno">   62</span>      <a class="code hl_function" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#af3c78251fef035465c2b71962bad2c57">ServerProtocol</a>(std::move(other)),</div>
-<div class="line"><span class="lineno">   63</span>      m_port(std::move(other.m_port)),</div>
-<div class="line"><span class="lineno">   64</span>      m_serverSocket(std::move(other.m_serverSocket)),</div>
-<div class="line"><span class="lineno">   65</span>      m_serverAddr(std::move(other.m_serverAddr)),</div>
-<div class="line"><span class="lineno">   66</span>      m_receiveThread(std::move(other.m_receiveThread)),</div>
-<div class="line"><span class="lineno">   67</span>      m_mutex(std::move(other.m_mutex)),</div>
-<div class="line"><span class="lineno">   68</span>      m_stopped(std::move(other.m_stopped))</div>
-<div class="line"><span class="lineno">   69</span>{</div>
-<div class="line"><span class="lineno">   70</span>    m_cookieKey = other.m_cookieKey;</div>
-<div class="line"><span class="lineno">   71</span>    m_clientEndpoints = std::move(other.m_clientEndpoints);</div>
-<div class="line"><span class="lineno">   72</span>    other.m_serverSocket = -1;</div>
-<div class="line"><span class="lineno">   73</span>    <span class="keywordflow">if</span> (!m_mutex)</div>
-<div class="line"><span class="lineno">   74</span>    {</div>
-<div class="line"><span class="lineno">   75</span>        m_mutex = std::make_unique&lt;std::mutex&gt;();</div>
-<div class="line"><span class="lineno">   76</span>    }</div>
-<div class="line"><span class="lineno">   77</span>    <span class="keywordflow">if</span> (!m_stopped)</div>
-<div class="line"><span class="lineno">   78</span>    {</div>
-<div class="line"><span class="lineno">   79</span>        m_stopped = std::make_unique&lt;std::atomic&lt;bool&gt;&gt;(<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">   80</span>    }</div>
-<div class="line"><span class="lineno">   81</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d7/de7/af__inet_2udp__server_8cc_source.html#l00108">108</a> of file <a class="el" href="../../d7/de7/af__inet_2udp__server_8cc_source.html">udp_server.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  109</span>    : <a class="code hl_function" href="../../d5/da4/classnexilis_1_1NXProtocol.html#af09e9806c3da63398b852d39c3a2c06b">NXProtocol</a>(std::move(movable(other))),</div>
+<div class="line"><span class="lineno">  110</span>      <a class="code hl_function" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#af3c78251fef035465c2b71962bad2c57">ServerProtocol</a>(std::move(other)),</div>
+<div class="line"><span class="lineno">  111</span>      m_port(std::move(other.m_port)),</div>
+<div class="line"><span class="lineno">  112</span>      m_socketState(std::move(other.m_socketState)),</div>
+<div class="line"><span class="lineno">  113</span>      m_serverAddr(std::move(other.m_serverAddr)),</div>
+<div class="line"><span class="lineno">  114</span>      m_receiveThread(std::move(other.m_receiveThread)),</div>
+<div class="line"><span class="lineno">  115</span>      m_stopped(std::move(other.m_stopped))</div>
+<div class="line"><span class="lineno">  116</span>{</div>
+<div class="line"><span class="lineno">  117</span>    m_cookieKey = other.m_cookieKey;</div>
+<div class="line"><span class="lineno">  118</span>    m_clientEndpoints = std::move(other.m_clientEndpoints);</div>
+<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">if</span> (!m_stopped)</div>
+<div class="line"><span class="lineno">  120</span>    {</div>
+<div class="line"><span class="lineno">  121</span>        m_stopped = std::make_unique&lt;std::atomic&lt;bool&gt;&gt;(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  122</span>    }</div>
+<div class="line"><span class="lineno">  123</span>}</div>
 <div class="ttc" id="aclassnexilis_1_1NXProtocol_html_af09e9806c3da63398b852d39c3a2c06b"><div class="ttname"><a href="../../d5/da4/classnexilis_1_1NXProtocol.html#af09e9806c3da63398b852d39c3a2c06b">nexilis::NXProtocol::NXProtocol</a></div><div class="ttdeci">NXProtocol()=default</div><div class="ttdoc">Default constructor.</div></div>
 </div><!-- fragment -->
 </div>
@@ -544,35 +668,140 @@ Here is the caller graph for this function:</div>
 
 <p>Move assignment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/de7/af__inet_2udp__server_8cc_source.html#l00083">83</a> of file <a class="el" href="../../d7/de7/af__inet_2udp__server_8cc_source.html">udp_server.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   84</span>{</div>
-<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;other)</div>
-<div class="line"><span class="lineno">   86</span>    {</div>
-<div class="line"><span class="lineno">   87</span>        <span class="keyword">static_cast&lt;</span><a class="code hl_function" href="../../d5/da4/classnexilis_1_1NXProtocol.html#af09e9806c3da63398b852d39c3a2c06b">NXProtocol</a>&amp;<span class="keyword">&gt;</span>(*this) = <span class="keyword">static_cast&lt;</span><a class="code hl_function" href="../../d5/da4/classnexilis_1_1NXProtocol.html#af09e9806c3da63398b852d39c3a2c06b">NXProtocol</a>&amp;&amp;<span class="keyword">&gt;</span>(other);</div>
-<div class="line"><span class="lineno">   88</span>        <span class="keyword">static_cast&lt;</span><a class="code hl_function" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#af3c78251fef035465c2b71962bad2c57">ServerProtocol</a>&amp;<span class="keyword">&gt;</span>(*this) = <span class="keyword">static_cast&lt;</span><a class="code hl_function" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#af3c78251fef035465c2b71962bad2c57">ServerProtocol</a>&amp;&amp;<span class="keyword">&gt;</span>(other);</div>
-<div class="line"><span class="lineno">   89</span> </div>
-<div class="line"><span class="lineno">   90</span>        m_port = std::move(other.m_port);</div>
-<div class="line"><span class="lineno">   91</span>        m_serverSocket = std::move(other.m_serverSocket);</div>
-<div class="line"><span class="lineno">   92</span>        m_serverAddr = std::move(other.m_serverAddr);</div>
-<div class="line"><span class="lineno">   93</span>        m_receiveThread = std::move(other.m_receiveThread);</div>
-<div class="line"><span class="lineno">   94</span>        m_mutex = std::move(other.m_mutex);</div>
-<div class="line"><span class="lineno">   95</span>        m_stopped = std::move(other.m_stopped);</div>
-<div class="line"><span class="lineno">   96</span>        m_cookieKey = other.m_cookieKey;</div>
-<div class="line"><span class="lineno">   97</span>        m_clientEndpoints = std::move(other.m_clientEndpoints);</div>
-<div class="line"><span class="lineno">   98</span> </div>
-<div class="line"><span class="lineno">   99</span>        other.m_serverSocket = -1;</div>
-<div class="line"><span class="lineno">  100</span>        <span class="keywordflow">if</span> (!m_mutex)</div>
-<div class="line"><span class="lineno">  101</span>        {</div>
-<div class="line"><span class="lineno">  102</span>            m_mutex = std::make_unique&lt;std::mutex&gt;();</div>
-<div class="line"><span class="lineno">  103</span>        }</div>
-<div class="line"><span class="lineno">  104</span>        <span class="keywordflow">if</span> (!m_stopped)</div>
-<div class="line"><span class="lineno">  105</span>        {</div>
-<div class="line"><span class="lineno">  106</span>            m_stopped = std::make_unique&lt;std::atomic&lt;bool&gt;&gt;(<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  107</span>        }</div>
-<div class="line"><span class="lineno">  108</span>    }</div>
-<div class="line"><span class="lineno">  109</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  110</span>}</div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d7/de7/af__inet_2udp__server_8cc_source.html#l00125">125</a> of file <a class="el" href="../../d7/de7/af__inet_2udp__server_8cc_source.html">udp_server.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  126</span>{</div>
+<div class="line"><span class="lineno">  127</span>    <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;other)</div>
+<div class="line"><span class="lineno">  128</span>    {</div>
+<div class="line"><span class="lineno">  129</span>        movable(other);</div>
+<div class="line"><span class="lineno">  130</span>        <a class="code hl_function" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a9f160f664a411ee41ab01634930ebe3f">stop</a>();</div>
+<div class="line"><span class="lineno">  131</span>        <span class="keyword">static_cast&lt;</span><a class="code hl_function" href="../../d5/da4/classnexilis_1_1NXProtocol.html#af09e9806c3da63398b852d39c3a2c06b">NXProtocol</a>&amp;<span class="keyword">&gt;</span>(*this) = <span class="keyword">static_cast&lt;</span><a class="code hl_function" href="../../d5/da4/classnexilis_1_1NXProtocol.html#af09e9806c3da63398b852d39c3a2c06b">NXProtocol</a>&amp;&amp;<span class="keyword">&gt;</span>(other);</div>
+<div class="line"><span class="lineno">  132</span>        <span class="keyword">static_cast&lt;</span><a class="code hl_function" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#af3c78251fef035465c2b71962bad2c57">ServerProtocol</a>&amp;<span class="keyword">&gt;</span>(*this) = <span class="keyword">static_cast&lt;</span><a class="code hl_function" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#af3c78251fef035465c2b71962bad2c57">ServerProtocol</a>&amp;&amp;<span class="keyword">&gt;</span>(other);</div>
+<div class="line"><span class="lineno">  133</span> </div>
+<div class="line"><span class="lineno">  134</span>        m_port = std::move(other.m_port);</div>
+<div class="line"><span class="lineno">  135</span>        m_socketState = std::move(other.m_socketState);</div>
+<div class="line"><span class="lineno">  136</span>        m_serverAddr = std::move(other.m_serverAddr);</div>
+<div class="line"><span class="lineno">  137</span>        m_receiveThread = std::move(other.m_receiveThread);</div>
+<div class="line"><span class="lineno">  138</span>        m_stopped = std::move(other.m_stopped);</div>
+<div class="line"><span class="lineno">  139</span>        m_cookieKey = other.m_cookieKey;</div>
+<div class="line"><span class="lineno">  140</span>        m_clientEndpoints = std::move(other.m_clientEndpoints);</div>
+<div class="line"><span class="lineno">  141</span> </div>
+<div class="line"><span class="lineno">  142</span>        <span class="keywordflow">if</span> (!m_stopped)</div>
+<div class="line"><span class="lineno">  143</span>        {</div>
+<div class="line"><span class="lineno">  144</span>            m_stopped = std::make_unique&lt;std::atomic&lt;bool&gt;&gt;(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  145</span>        }</div>
+<div class="line"><span class="lineno">  146</span>    }</div>
+<div class="line"><span class="lineno">  147</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  148</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer_abeef8102fec80fb7e42fe3745083a21f_cgraph.png" border="0" usemap="#adf/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer_abeef8102fec80fb7e42fe3745083a21f_cgraph" alt=""/></div>
+<map name="adf/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer_abeef8102fec80fb7e42fe3745083a21f_cgraph" id="adf/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer_abeef8102fec80fb7e42fe3745083a21f_cgraph">
+<area shape="rect" title="Move assignment operator." alt="" coords="5,440,212,480"/>
+<area shape="rect" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a9f160f664a411ee41ab01634930ebe3f" title="NXProtocol::stop() implementation." alt="" coords="260,440,428,480"/>
+<area shape="poly" title=" " alt="" coords="212,457,246,457,246,463,212,463"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a62494bb2dd0c80e8e20e33aa712748d1" title="Drop every active datagram transport of the given kind on stop." alt="" coords="476,408,693,448"/>
+<area shape="poly" title=" " alt="" coords="428,446,462,442,463,447,429,451"/>
+<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982" title="All the overloaded printing functions." alt="" coords="513,475,657,501"/>
+<area shape="poly" title=" " alt="" coords="429,467,500,475,499,481,428,472"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a8fbd4d6d8a95879846c9afe499df098b" title="Finish an active datagram transport, removing the user when nothing remains." alt="" coords="741,408,959,448"/>
+<area shape="poly" title=" " alt="" coords="694,425,728,425,728,431,694,431"/>
+<area shape="rect" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#aaea84dd6f0296109d1c006d421650dc2" title="Snapshot of owning handles. This does not lock mutable user fields." alt="" coords="745,344,955,384"/>
+<area shape="poly" title=" " alt="" coords="668,405,753,385,754,390,669,411"/>
+<area shape="rect" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a62fc8b1c44df9ceb64daac949e9c6caf" title="Clear the send callback associated with a closed transport." alt="" coords="1039,344,1191,384"/>
+<area shape="poly" title=" " alt="" coords="933,405,1025,383,1027,388,934,411"/>
+<area shape="rect" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#aea70bacfc678863b82a72d7f8ee7f2a0" title="End an active datagram transport and return the remaining presence." alt="" coords="1026,408,1205,448"/>
+<area shape="poly" title=" " alt="" coords="959,425,1012,425,1012,431,959,431"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#ab254c9ce12f43951410492942d854d7b" title="Broadcast leave and remove a disconnected user from the registry." alt="" coords="1007,472,1224,512"/>
+<area shape="poly" title=" " alt="" coords="934,445,1019,466,1018,471,933,451"/>
+<area shape="rect" href="../../dc/dcb/classnexilis_1_1BaseClient.html#a2ef1dddc83ce3e9f573e144673189546" title=" " alt="" coords="1823,5,1966,45"/>
+<area shape="poly" title=" " alt="" coords="1205,470,1222,458,1234,445,1241,433,1247,407,1253,379,1270,350,1331,291,1400,238,1473,191,1547,151,1621,116,1691,87,1809,46,1811,51,1693,92,1623,121,1550,155,1475,196,1403,242,1335,295,1274,354,1258,381,1252,408,1246,435,1238,449,1226,462,1208,474"/>
+<area shape="rect" href="../../db/d96/classnexilis_1_1server_1_1RoomStorage.html#ab485886b13f88d861cf50ad148391fb5" title=" " alt="" coords="1531,229,1741,269"/>
+<area shape="poly" title=" " alt="" coords="1192,469,1223,458,1311,413,1376,370,1441,326,1530,280,1551,271,1553,276,1532,285,1444,331,1379,374,1314,417,1225,462,1193,474"/>
+<area shape="rect" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a37bf38b5fc17e97faecf5637c8ad7e47" title=" " alt="" coords="1819,907,1971,947"/>
+<area shape="poly" title=" " alt="" coords="1139,510,1200,569,1294,649,1408,736,1469,776,1532,812,1601,844,1673,870,1806,906,1804,911,1672,875,1599,849,1529,817,1466,781,1405,740,1290,653,1197,573,1135,514"/>
+<area shape="rect" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#aabd05a96502a6e23a5edcac8da44a430" title=" " alt="" coords="1272,877,1483,917"/>
+<area shape="poly" title=" " alt="" coords="1122,512,1135,577,1162,670,1182,720,1207,769,1238,816,1274,857,1289,869,1286,873,1270,861,1233,819,1203,772,1177,722,1157,671,1130,579,1117,513"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a72dfb4f3c457e4d857a91d0587daea58" title=" " alt="" coords="1277,472,1478,512"/>
+<area shape="poly" title=" " alt="" coords="1224,489,1263,489,1263,495,1224,495"/>
+<area shape="poly" title=" " alt="" coords="1394,470,1480,359,1493,336,1501,317,1511,299,1529,281,1539,274,1542,278,1532,285,1515,302,1506,319,1498,339,1485,361,1398,474"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#aebfc9a226b33efebbd8025f46fc94d87" title=" " alt="" coords="1541,472,1731,512"/>
+<area shape="poly" title=" " alt="" coords="1478,489,1528,489,1528,495,1478,495"/>
+<area shape="rect" href="../../d9/df3/classnexilis_1_1server_1_1DefaultArgs.html#ad025461696f36ad9e397171a8c8c37c0" title=" " alt="" coords="1551,699,1721,739"/>
+<area shape="poly" title=" " alt="" coords="1391,511,1413,548,1444,595,1485,643,1532,685,1542,690,1539,695,1529,689,1481,647,1440,598,1408,551,1387,514"/>
+<area shape="rect" href="../../d9/df3/classnexilis_1_1server_1_1DefaultArgs.html#a8fe32f1095d007598edf936e5be53f1d" title=" " alt="" coords="1551,763,1721,803"/>
+<area shape="poly" title=" " alt="" coords="1387,511,1405,560,1435,624,1477,691,1503,722,1532,749,1540,754,1537,758,1529,753,1499,725,1473,694,1430,626,1400,562,1382,513"/>
+<area shape="rect" href="../../d9/df3/classnexilis_1_1server_1_1DefaultArgs.html#a4ad6243462ef5478a30b330f35a1f6ef" title=" " alt="" coords="1551,344,1721,384"/>
+<area shape="poly" title=" " alt="" coords="1404,470,1460,432,1530,394,1547,386,1549,391,1532,398,1463,436,1407,474"/>
+<area shape="rect" href="../../d9/df3/classnexilis_1_1server_1_1DefaultArgs.html#ab0f8e94e52cb97cba7df5c6a44093e25" title=" " alt="" coords="1551,408,1721,448"/>
+<area shape="poly" title=" " alt="" coords="1458,469,1541,449,1542,454,1460,475"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a8dc941be1df851c4d426e39dcad676d1" title="Send message to every protocol that is avainable for a client." alt="" coords="1800,715,1989,755"/>
+<area shape="poly" title=" " alt="" coords="1454,510,1591,554,1668,585,1743,620,1808,662,1862,704,1858,708,1804,666,1740,625,1666,590,1589,559,1453,515"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#ae1b6f4a7a7b7a3aa79c34d492d2cd786" title="Send message in room context." alt="" coords="1541,635,1731,675"/>
+<area shape="poly" title=" " alt="" coords="1412,510,1593,625,1590,630,1409,515"/>
+<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a191e4c013bad219e746e8e56682d65e1" title=" " alt="" coords="1558,294,1714,319"/>
+<area shape="poly" title=" " alt="" coords="1390,470,1445,401,1484,362,1529,330,1546,322,1548,326,1532,334,1488,366,1449,404,1394,473"/>
+<area shape="poly" title=" " alt="" coords="1727,470,1739,458,1757,433,1769,408,1776,383,1779,358,1774,309,1763,259,1751,209,1747,159,1749,134,1756,108,1769,82,1787,55,1809,38,1812,43,1791,59,1773,84,1761,110,1755,135,1752,159,1756,209,1768,258,1779,308,1784,358,1781,384,1774,410,1762,436,1743,462,1730,474"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#ac07fa7fe08cfa3955f7fdb9d3c2f7267" title="Convert ClientMsgType to nx_data (and add a &#39; &#39;) as a last character." alt="" coords="1800,197,1989,237"/>
+<area shape="poly" title=" " alt="" coords="1725,470,1739,458,1757,433,1764,409,1766,384,1763,359,1761,333,1762,307,1770,281,1787,254,1800,243,1803,247,1791,258,1775,283,1767,308,1767,333,1769,358,1771,384,1770,410,1762,436,1743,462,1729,474"/>
+<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="2311,447,2445,473"/>
+<area shape="poly" title=" " alt="" coords="1708,469,1740,458,1788,435,1827,413,1891,370,1956,330,1997,312,2047,297,2108,282,2158,272,2182,272,2207,276,2264,298,2302,326,2332,362,2355,401,2370,434,2365,436,2350,403,2328,365,2298,330,2261,302,2206,281,2182,277,2159,278,2109,287,2049,303,1999,317,1958,335,1893,374,1830,418,1790,440,1742,462,1710,474"/>
+<area shape="rect" href="../../d5/dc9/namespacenexilis_1_1server.html#adee8e06d497179f171db8f4136c42690" title=" " alt="" coords="1796,472,1993,512"/>
+<area shape="poly" title=" " alt="" coords="1731,489,1782,489,1782,495,1731,495"/>
+<area shape="rect" href="../../db/d0c/classnexilis_1_1RoomCommandType.html#a3683e50c3fdd22409f2ec118bb9cbdb3" title=" " alt="" coords="1791,133,1999,173"/>
+<area shape="poly" title=" " alt="" coords="1726,470,1739,458,1761,424,1769,391,1768,357,1763,323,1757,289,1756,254,1765,219,1787,184,1791,180,1794,184,1791,187,1770,221,1761,255,1762,288,1768,322,1774,357,1775,391,1766,426,1743,462,1729,474"/>
+<area shape="rect" href="../../d9/d3d/group__BytevectorConversions.html#ga38e516c60d98cb71153ded26ce2b67e5" title=" " alt="" coords="2072,197,2239,237"/>
+<area shape="poly" title=" " alt="" coords="1990,215,2058,215,2058,220,1990,220"/>
+<area shape="rect" href="../../d7/de9/classnexilis_1_1Json.html#a176086cccd2bb63f85a178a5b7eca0bd" title=" " alt="" coords="2065,123,2246,149"/>
+<area shape="poly" title=" " alt="" coords="1966,195,1999,183,2023,171,2047,159,2076,150,2078,155,2049,164,2025,175,2001,188,1968,200"/>
+<area shape="poly" title=" " alt="" coords="2114,198,2111,188,2118,178,2133,173,2155,171,2181,174,2195,181,2193,186,2180,179,2155,176,2134,178,2121,183,2117,189,2119,196"/>
+<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#acc02567dd7e4103305110bafbfd40c08" title="Send error message." alt="" coords="2493,440,2660,480"/>
+<area shape="poly" title=" " alt="" coords="2446,457,2480,457,2480,463,2446,463"/>
+<area shape="poly" title=" " alt="" coords="1914,510,1937,537,1969,567,2007,596,2049,618,2108,637,2157,646,2205,640,2261,618,2298,590,2328,555,2350,517,2365,484,2370,486,2355,519,2332,558,2302,594,2264,622,2207,646,2157,651,2107,643,2047,622,2004,601,1965,571,1933,540,1910,514"/>
+<area shape="rect" href="../../db/d0c/classnexilis_1_1RoomCommandType.html#a1661871cb06f8ac4420fe20a3d4fec3b" title=" " alt="" coords="2048,312,2263,352"/>
+<area shape="poly" title=" " alt="" coords="1913,470,1969,416,2007,387,2047,362,2061,355,2063,360,2049,366,2010,391,1973,420,1917,474"/>
+<area shape="rect" href="../../db/d0c/classnexilis_1_1RoomCommandType.html#aa6192a299f9c13b7591c52c79192dd95" title=" " alt="" coords="2051,376,2259,416"/>
+<area shape="poly" title=" " alt="" coords="1939,470,2047,426,2070,418,2071,423,2049,430,1941,474"/>
+<area shape="rect" href="../../db/d0c/classnexilis_1_1RoomCommandType.html#a6a08025bc5078426d320e06333ce7d09" title=" " alt="" coords="2051,440,2259,480"/>
+<area shape="poly" title=" " alt="" coords="1993,477,2037,472,2038,477,1994,483"/>
+<area shape="rect" href="../../db/d0c/classnexilis_1_1RoomCommandType.html#a9c059830b8f6aa7d3078dd0d18a3c3da" title=" " alt="" coords="2051,504,2259,544"/>
+<area shape="poly" title=" " alt="" coords="1994,501,2038,507,2037,512,1993,507"/>
+<area shape="rect" href="../../db/d0c/classnexilis_1_1RoomCommandType.html#a32c03fad903d3c6c37b17b29fda73d2c" title=" " alt="" coords="2051,568,2259,608"/>
+<area shape="poly" title=" " alt="" coords="1941,510,2049,554,2071,561,2070,566,2047,558,1939,514"/>
+<area shape="poly" title=" " alt="" coords="2237,350,2264,362,2316,398,2357,435,2353,439,2313,402,2261,366,2235,355"/>
+<area shape="poly" title=" " alt="" coords="2226,414,2320,441,2319,446,2225,419"/>
+<area shape="poly" title=" " alt="" coords="2260,457,2297,457,2297,463,2260,463"/>
+<area shape="poly" title=" " alt="" coords="2225,501,2319,474,2320,479,2226,506"/>
+<area shape="poly" title=" " alt="" coords="2235,565,2261,554,2313,518,2353,481,2357,485,2316,522,2264,558,2237,570"/>
+<area shape="poly" title=" " alt="" coords="1962,131,2047,109,2110,96,2161,84,2186,81,2210,84,2236,93,2264,110,2300,143,2328,184,2348,229,2362,276,2377,366,2380,434,2375,434,2372,366,2357,277,2343,231,2323,186,2296,147,2261,114,2234,98,2209,89,2186,87,2162,89,2111,101,2049,115,1964,136"/>
+<area shape="poly" title=" " alt="" coords="1972,752,2001,764,2025,782,2035,790,2049,796,2110,816,2161,827,2185,828,2209,823,2234,813,2261,797,2295,765,2322,727,2342,684,2356,639,2371,552,2375,486,2380,487,2376,553,2361,640,2347,686,2326,729,2299,768,2264,801,2236,818,2210,829,2185,833,2160,833,2108,821,2047,801,2032,794,2022,786,1999,769,1970,757"/>
+<area shape="rect" href="../../d2/d8d/group__UserBoostTCP.html#gad64b1d7881430c9dc278fcab25c7e4a6" title=" " alt="" coords="2079,861,2231,901"/>
+<area shape="poly" title=" " alt="" coords="1982,752,2002,765,2019,784,2027,803,2034,822,2050,841,2068,853,2066,857,2046,845,2030,825,2022,805,2014,787,1998,769,1979,757"/>
+<area shape="rect" href="../../db/daa/group__UserBoostUDP.html#ga99f955fd99e8c615cf07aa5361078c3b" title=" " alt="" coords="2079,925,2231,965"/>
+<area shape="poly" title=" " alt="" coords="1986,753,2002,765,2016,783,2024,803,2027,840,2029,876,2036,894,2050,911,2068,925,2065,929,2046,915,2032,897,2024,878,2021,840,2019,804,2012,786,1998,769,1983,757"/>
+<area shape="rect" href="../../d5/da4/classnexilis_1_1NXProtocol.html#a7f48d98a5081e37c9616930a8f932cf1" title=" " alt="" coords="2083,989,2228,1029"/>
+<area shape="poly" title=" " alt="" coords="1987,753,2002,765,2021,792,2028,819,2029,846,2027,872,2024,898,2025,924,2032,950,2050,975,2072,991,2069,996,2046,979,2027,952,2019,925,2019,898,2021,872,2024,846,2023,820,2016,794,1998,768,1984,757"/>
+<area shape="rect" href="../../d3/d43/group__UserInetTCP.html#ga711d29b0e1d12b1a5733b9b7e943c46f" title=" " alt="" coords="2079,1053,2231,1093"/>
+<area shape="poly" title=" " alt="" coords="1988,753,2002,765,2025,800,2033,835,2032,870,2027,905,2021,938,2020,972,2028,1006,2050,1040,2068,1054,2065,1058,2046,1043,2023,1008,2015,973,2016,938,2021,904,2027,870,2028,836,2020,802,1998,768,1985,757"/>
+<area shape="rect" href="../../d6/df2/group__UserInetUDP.html#gab9d1020d0109228f277f3a6261aac652" title=" " alt="" coords="2079,1117,2231,1157"/>
+<area shape="poly" title=" " alt="" coords="1988,753,2002,765,2018,787,2029,809,2038,852,2035,895,2026,937,2018,978,2015,1020,2024,1062,2035,1082,2050,1103,2068,1118,2065,1123,2046,1107,2030,1085,2019,1063,2010,1020,2013,978,2021,936,2030,894,2033,852,2024,811,2013,790,1998,768,1985,757"/>
+<area shape="rect" href="../../d5/d20/group__UserUnixDgram.html#gafd2d99a4d3b410b2a01010744b270473" title=" " alt="" coords="2079,683,2231,723"/>
+<area shape="poly" title=" " alt="" coords="1989,720,2065,711,2066,716,1990,726"/>
+<area shape="rect" href="../../db/d8a/group__UserUnixStream.html#gaaf38268746172416550eaaed936fe794" title=" " alt="" coords="2079,747,2231,787"/>
+<area shape="poly" title=" " alt="" coords="1990,744,2066,753,2065,758,1989,749"/>
+<area shape="poly" title=" " alt="" coords="1729,673,1743,685,1762,712,1770,738,1771,765,1768,791,1765,817,1766,842,1774,867,1791,893,1808,906,1804,910,1787,896,1769,870,1761,843,1760,817,1763,790,1765,765,1764,739,1757,714,1739,688,1725,677"/>
+<area shape="poly" title=" " alt="" coords="1704,672,1742,684,1818,708,1817,713,1741,689,1702,677"/>
+<area shape="rect" href="../../db/d96/classnexilis_1_1server_1_1RoomStorage.html#a1a34d89eff94828154b7bb44e545dcc6" title=" " alt="" coords="1789,843,2000,883"/>
+<area shape="poly" title=" " alt="" coords="1727,673,1743,685,1758,703,1765,722,1768,758,1771,794,1778,812,1791,829,1796,833,1792,837,1787,832,1773,814,1766,796,1763,759,1760,723,1753,706,1739,689,1724,677"/>
+<area shape="rect" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#acdb61fe86e1f6a500b143675bd774503" title="Retain the returned handle throughout the operation on the user." alt="" coords="1789,779,2000,819"/>
+<area shape="poly" title=" " alt="" coords="1724,673,1743,685,1760,705,1768,726,1775,746,1791,765,1798,770,1795,774,1788,769,1770,748,1763,728,1756,708,1740,689,1721,677"/>
+<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#a68409cb1a072641188aa5b1053c81fbc" title="Send warning message." alt="" coords="1811,69,1978,109"/>
+<area shape="poly" title=" " alt="" coords="1713,295,1740,279,1754,261,1762,242,1763,202,1765,161,1772,140,1787,120,1798,111,1801,115,1791,123,1777,142,1770,162,1769,202,1767,243,1759,263,1743,283,1716,300"/>
+<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#aa9bd79fb1a1804924e3440947c6ab117" title="Send debug message." alt="" coords="767,472,933,512"/>
+<area shape="poly" title=" " alt="" coords="657,486,753,488,753,493,657,492"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a7286f8712e5f49cb762d7e3736a25c14" name="a7286f8712e5f49cb762d7e3736a25c14"></a>
@@ -602,30 +831,30 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="../../d5/da4/classnexilis_1_1NXProtocol.html#a92a8797ca6658c3bef4e7937a6e5918a">nexilis::NXProtocol</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/de7/af__inet_2udp__server_8cc_source.html#l00112">112</a> of file <a class="el" href="../../d7/de7/af__inet_2udp__server_8cc_source.html">udp_server.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  113</span>{</div>
-<div class="line"><span class="lineno">  114</span>    <span class="keywordflow">if</span> (m_stopped-&gt;load())</div>
-<div class="line"><span class="lineno">  115</span>    {</div>
-<div class="line"><span class="lineno">  116</span>        <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">Log::debug</a>(<span class="stringliteral">&quot;UDPServer already stopped, cannot start&quot;</span>);</div>
-<div class="line"><span class="lineno">  117</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  118</span>    }</div>
-<div class="line"><span class="lineno">  119</span> </div>
-<div class="line"><span class="lineno">  120</span>    <span class="keywordflow">if</span> (m_serverSocket == -1)</div>
-<div class="line"><span class="lineno">  121</span>    {</div>
-<div class="line"><span class="lineno">  122</span>        <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<span class="stringliteral">&quot;UDPServer: cannot start, socket is not open&quot;</span>);</div>
-<div class="line"><span class="lineno">  123</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  124</span>    }</div>
-<div class="line"><span class="lineno">  125</span> </div>
-<div class="line"><span class="lineno">  126</span>    <span class="comment">// Announce the port so clients can discover it, mirroring the boost UDP</span></div>
-<div class="line"><span class="lineno">  127</span>    <span class="comment">// server behaviour.</span></div>
-<div class="line"><span class="lineno">  128</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../dd/d04/group__PortHandling.html#gae95993b3b515cdb8e8eb84ad7027eb24">Util::writePortToFile</a>(m_port, <a class="code hl_function" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a4063ede8829f763deee61703341a97ef">getType</a>()))</div>
-<div class="line"><span class="lineno">  129</span>    {</div>
-<div class="line"><span class="lineno">  130</span>        <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<span class="stringliteral">&quot;UDPServer: Failed to write server port to a file&quot;</span>);</div>
-<div class="line"><span class="lineno">  131</span>    }</div>
-<div class="line"><span class="lineno">  132</span> </div>
-<div class="line"><span class="lineno">  133</span>    m_receiveThread = std::thread(&amp;UDPServer::receiveFromClients, <span class="keyword">this</span>);</div>
-<div class="line"><span class="lineno">  134</span>    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a66755adfac1917c8b8791a018f31c643">Log::info</a>(<span class="stringliteral">&quot;UDPServer started on port: &quot;</span>, m_port);</div>
-<div class="line"><span class="lineno">  135</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d7/de7/af__inet_2udp__server_8cc_source.html#l00150">150</a> of file <a class="el" href="../../d7/de7/af__inet_2udp__server_8cc_source.html">udp_server.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  151</span>{</div>
+<div class="line"><span class="lineno">  152</span>    <span class="keywordflow">if</span> (!m_stopped || m_stopped-&gt;load() || m_receiveThread.joinable())</div>
+<div class="line"><span class="lineno">  153</span>    {</div>
+<div class="line"><span class="lineno">  154</span>        <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">Log::debug</a>(<span class="stringliteral">&quot;UDPServer already stopped, cannot start&quot;</span>);</div>
+<div class="line"><span class="lineno">  155</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  156</span>    }</div>
+<div class="line"><span class="lineno">  157</span> </div>
+<div class="line"><span class="lineno">  158</span>    <span class="keywordflow">if</span> (m_socketState-&gt;fd == -1)</div>
+<div class="line"><span class="lineno">  159</span>    {</div>
+<div class="line"><span class="lineno">  160</span>        <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<span class="stringliteral">&quot;UDPServer: cannot start, socket is not open&quot;</span>);</div>
+<div class="line"><span class="lineno">  161</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  162</span>    }</div>
+<div class="line"><span class="lineno">  163</span> </div>
+<div class="line"><span class="lineno">  164</span>    <span class="comment">// Announce the port so clients can discover it, mirroring the boost UDP</span></div>
+<div class="line"><span class="lineno">  165</span>    <span class="comment">// server behaviour.</span></div>
+<div class="line"><span class="lineno">  166</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../dd/d04/group__PortHandling.html#gae95993b3b515cdb8e8eb84ad7027eb24">Util::writePortToFile</a>(m_port, <a class="code hl_function" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a4063ede8829f763deee61703341a97ef">getType</a>()))</div>
+<div class="line"><span class="lineno">  167</span>    {</div>
+<div class="line"><span class="lineno">  168</span>        <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<span class="stringliteral">&quot;UDPServer: Failed to write server port to a file&quot;</span>);</div>
+<div class="line"><span class="lineno">  169</span>    }</div>
+<div class="line"><span class="lineno">  170</span> </div>
+<div class="line"><span class="lineno">  171</span>    m_receiveThread = std::thread(&amp;UDPServer::receiveFromClients, <span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">  172</span>    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a66755adfac1917c8b8791a018f31c643">Log::info</a>(<span class="stringliteral">&quot;UDPServer started on port: &quot;</span>, m_port);</div>
+<div class="line"><span class="lineno">  173</span>}</div>
 <div class="ttc" id="aclassnexilis_1_1Log_html_a49959aac4210e93d1ccd1977e08dba80"><div class="ttname"><a href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">nexilis::Log::error</a></div><div class="ttdeci">static void error(const T &amp;data, const Args &amp;... args)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de3/log_8hh_source.html#l00123">log.hh:123</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1Log_html_a66755adfac1917c8b8791a018f31c643"><div class="ttname"><a href="../../dc/dbc/classnexilis_1_1Log.html#a66755adfac1917c8b8791a018f31c643">nexilis::Log::info</a></div><div class="ttdeci">static void info(const T &amp;data, const Args &amp;... args)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de3/log_8hh_source.html#l00111">log.hh:111</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1Log_html_a8818a693340eed14a9110c9988eac982"><div class="ttname"><a href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">nexilis::Log::debug</a></div><div class="ttdeci">static void debug(const T &amp;data, const Args &amp;... args)</div><div class="ttdoc">All the overloaded printing functions.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de3/log_8hh_source.html#l00105">log.hh:105</a></div></div>
@@ -690,48 +919,128 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="../../d5/da4/classnexilis_1_1NXProtocol.html#a5b08f5492a6471e803b3dc73b9f5ce50">nexilis::NXProtocol</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/de7/af__inet_2udp__server_8cc_source.html#l00137">137</a> of file <a class="el" href="../../d7/de7/af__inet_2udp__server_8cc_source.html">udp_server.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  138</span>{</div>
-<div class="line"><span class="lineno">  139</span>    <span class="keywordflow">if</span> (!m_stopped || m_stopped-&gt;exchange(<span class="keyword">true</span>))</div>
-<div class="line"><span class="lineno">  140</span>    {</div>
-<div class="line"><span class="lineno">  141</span>        <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">Log::debug</a>(<span class="stringliteral">&quot;UDPServer stop already in progress or completed&quot;</span>);</div>
-<div class="line"><span class="lineno">  142</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  143</span>    }</div>
-<div class="line"><span class="lineno">  144</span> </div>
-<div class="line"><span class="lineno">  145</span>    std::unique_lock&lt;std::mutex&gt; lock(*m_mutex);</div>
-<div class="line"><span class="lineno">  146</span> </div>
-<div class="line"><span class="lineno">  147</span>    <span class="keywordflow">if</span> (m_serverSocket != -1)</div>
-<div class="line"><span class="lineno">  148</span>    {</div>
-<div class="line"><span class="lineno">  149</span>        <span class="keywordflow">if</span> (close(m_serverSocket) == -1)</div>
-<div class="line"><span class="lineno">  150</span>        {</div>
-<div class="line"><span class="lineno">  151</span>            <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<span class="stringliteral">&quot;UDPServer: Error closing server socket: &quot;</span>, strerror(errno));</div>
-<div class="line"><span class="lineno">  152</span>        }</div>
-<div class="line"><span class="lineno">  153</span>        m_serverSocket = -1;</div>
-<div class="line"><span class="lineno">  154</span>    }</div>
-<div class="line"><span class="lineno">  155</span>    lock.unlock();</div>
-<div class="line"><span class="lineno">  156</span> </div>
-<div class="line"><span class="lineno">  157</span>    <span class="keywordflow">if</span> (m_receiveThread.joinable())</div>
-<div class="line"><span class="lineno">  158</span>    {</div>
-<div class="line"><span class="lineno">  159</span>        <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">Log::debug</a>(<span class="stringliteral">&quot;UDPServer closing receiveThread&quot;</span>);</div>
-<div class="line"><span class="lineno">  160</span>        m_receiveThread.join();</div>
-<div class="line"><span class="lineno">  161</span>    }</div>
-<div class="line"><span class="lineno">  162</span> </div>
-<div class="line"><span class="lineno">  163</span>    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">Log::debug</a>(<span class="stringliteral">&quot;UDPServer stopped&quot;</span>);</div>
-<div class="line"><span class="lineno">  164</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d7/de7/af__inet_2udp__server_8cc_source.html#l00175">175</a> of file <a class="el" href="../../d7/de7/af__inet_2udp__server_8cc_source.html">udp_server.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  176</span>{</div>
+<div class="line"><span class="lineno">  177</span>    <span class="keywordflow">if</span> (!m_stopped || !m_socketState)</div>
+<div class="line"><span class="lineno">  178</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  179</span>    m_stopped-&gt;store(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  180</span>    m_socketState-&gt;disableSends();</div>
+<div class="line"><span class="lineno">  181</span>    <span class="keywordflow">if</span> (m_receiveThread.joinable() &amp;&amp; m_receiveThread.get_id() == std::this_thread::get_id())</div>
+<div class="line"><span class="lineno">  182</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  183</span>    <span class="keywordflow">if</span> (m_receiveThread.joinable())</div>
+<div class="line"><span class="lineno">  184</span>        m_receiveThread.join();</div>
+<div class="line"><span class="lineno">  185</span>    <a class="code hl_function" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a62494bb2dd0c80e8e20e33aa712748d1">cleanupDatagramTransports</a>(<a class="code hl_enumvalue" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1faa21236475ead46231cd2d5c1736a1428">User::Transport::inetUdp</a>, *<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">  186</span>    m_socketState-&gt;close();</div>
+<div class="line"><span class="lineno">  187</span> </div>
+<div class="line"><span class="lineno">  188</span>    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">Log::debug</a>(<span class="stringliteral">&quot;UDPServer stopped&quot;</span>);</div>
+<div class="line"><span class="lineno">  189</span>}</div>
+<div class="ttc" id="aclassnexilis_1_1server_1_1ServerProtocol_html_a62494bb2dd0c80e8e20e33aa712748d1"><div class="ttname"><a href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a62494bb2dd0c80e8e20e33aa712748d1">nexilis::server::ServerProtocol::cleanupDatagramTransports</a></div><div class="ttdeci">void cleanupDatagramTransports(User::Transport transport, NXProtocol &amp;protocol)</div><div class="ttdoc">Drop every active datagram transport of the given kind on stop.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dfa/server__protocol_8cc_source.html#l00194">server_protocol.cc:194</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1server_1_1User_html_a7c1b63209cf1ea24fc883cd878b3ba1faa21236475ead46231cd2d5c1736a1428"><div class="ttname"><a href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1faa21236475ead46231cd2d5c1736a1428">nexilis::server::User::Transport::inetUdp</a></div><div class="ttdeci">@ inetUdp</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer_a9f160f664a411ee41ab01634930ebe3f_cgraph.png" border="0" usemap="#adf/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer_a9f160f664a411ee41ab01634930ebe3f_cgraph" alt=""/></div>
 <map name="adf/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer_a9f160f664a411ee41ab01634930ebe3f_cgraph" id="adf/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer_a9f160f664a411ee41ab01634930ebe3f_cgraph">
-<area shape="rect" title="NXProtocol::stop() implementation." alt="" coords="5,39,173,79"/>
-<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982" title="All the overloaded printing functions." alt="" coords="221,17,365,42"/>
-<area shape="poly" title=" " alt="" coords="173,44,207,39,208,44,174,49"/>
-<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="226,70,361,95"/>
-<area shape="poly" title=" " alt="" coords="174,66,213,71,212,76,173,71"/>
-<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#aa9bd79fb1a1804924e3440947c6ab117" title="Send debug message." alt="" coords="413,5,580,45"/>
-<area shape="poly" title=" " alt="" coords="365,25,400,25,400,30,365,31"/>
-<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#acc02567dd7e4103305110bafbfd40c08" title="Send error message." alt="" coords="413,69,580,109"/>
-<area shape="poly" title=" " alt="" coords="361,82,400,83,399,89,361,88"/>
+<area shape="rect" title="NXProtocol::stop() implementation." alt="" coords="5,440,173,480"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a62494bb2dd0c80e8e20e33aa712748d1" title="Drop every active datagram transport of the given kind on stop." alt="" coords="221,408,439,448"/>
+<area shape="poly" title=" " alt="" coords="173,446,207,442,208,447,174,451"/>
+<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982" title="All the overloaded printing functions." alt="" coords="258,475,402,501"/>
+<area shape="poly" title=" " alt="" coords="174,467,245,475,244,481,173,472"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a8fbd4d6d8a95879846c9afe499df098b" title="Finish an active datagram transport, removing the user when nothing remains." alt="" coords="487,408,704,448"/>
+<area shape="poly" title=" " alt="" coords="439,425,473,425,473,431,439,431"/>
+<area shape="rect" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#aaea84dd6f0296109d1c006d421650dc2" title="Snapshot of owning handles. This does not lock mutable user fields." alt="" coords="490,344,701,384"/>
+<area shape="poly" title=" " alt="" coords="413,405,498,385,499,390,414,411"/>
+<area shape="rect" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a62fc8b1c44df9ceb64daac949e9c6caf" title="Clear the send callback associated with a closed transport." alt="" coords="785,344,937,384"/>
+<area shape="poly" title=" " alt="" coords="678,405,771,383,772,388,680,411"/>
+<area shape="rect" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#aea70bacfc678863b82a72d7f8ee7f2a0" title="End an active datagram transport and return the remaining presence." alt="" coords="771,408,950,448"/>
+<area shape="poly" title=" " alt="" coords="704,425,757,425,757,431,704,431"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#ab254c9ce12f43951410492942d854d7b" title="Broadcast leave and remove a disconnected user from the registry." alt="" coords="752,472,969,512"/>
+<area shape="poly" title=" " alt="" coords="680,445,765,466,764,471,678,451"/>
+<area shape="rect" href="../../dc/dcb/classnexilis_1_1BaseClient.html#a2ef1dddc83ce3e9f573e144673189546" title=" " alt="" coords="1569,5,1711,45"/>
+<area shape="poly" title=" " alt="" coords="950,470,968,458,979,445,986,433,992,407,998,379,1015,350,1077,291,1145,238,1218,191,1292,151,1366,116,1436,87,1555,46,1556,51,1438,92,1368,121,1295,155,1221,196,1148,242,1080,295,1019,354,1003,381,998,408,991,435,983,449,971,462,953,474"/>
+<area shape="rect" href="../../db/d96/classnexilis_1_1server_1_1RoomStorage.html#ab485886b13f88d861cf50ad148391fb5" title=" " alt="" coords="1276,229,1487,269"/>
+<area shape="poly" title=" " alt="" coords="937,469,968,458,1057,413,1121,370,1186,326,1275,280,1297,271,1299,276,1277,285,1189,331,1124,374,1059,417,970,462,939,474"/>
+<area shape="rect" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a37bf38b5fc17e97faecf5637c8ad7e47" title=" " alt="" coords="1564,907,1716,947"/>
+<area shape="poly" title=" " alt="" coords="884,510,946,569,1039,649,1153,736,1214,776,1277,812,1347,844,1419,870,1551,906,1550,911,1417,875,1344,849,1275,817,1212,781,1150,740,1035,653,942,573,880,514"/>
+<area shape="rect" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#aabd05a96502a6e23a5edcac8da44a430" title=" " alt="" coords="1017,877,1228,917"/>
+<area shape="poly" title=" " alt="" coords="867,512,881,577,908,670,928,720,953,769,983,816,1019,857,1035,869,1031,873,1016,861,979,819,948,772,923,722,903,671,875,579,862,513"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a72dfb4f3c457e4d857a91d0587daea58" title=" " alt="" coords="1022,472,1223,512"/>
+<area shape="poly" title=" " alt="" coords="969,489,1009,489,1009,495,969,495"/>
+<area shape="poly" title=" " alt="" coords="1139,470,1226,359,1238,336,1246,317,1256,299,1274,281,1284,274,1287,278,1278,285,1260,302,1251,319,1243,339,1230,361,1143,474"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#aebfc9a226b33efebbd8025f46fc94d87" title=" " alt="" coords="1287,472,1476,512"/>
+<area shape="poly" title=" " alt="" coords="1223,489,1273,489,1273,495,1223,495"/>
+<area shape="rect" href="../../d9/df3/classnexilis_1_1server_1_1DefaultArgs.html#ad025461696f36ad9e397171a8c8c37c0" title=" " alt="" coords="1296,699,1467,739"/>
+<area shape="poly" title=" " alt="" coords="1137,511,1158,548,1190,595,1230,643,1278,685,1287,690,1284,695,1274,689,1226,647,1185,598,1154,551,1132,514"/>
+<area shape="rect" href="../../d9/df3/classnexilis_1_1server_1_1DefaultArgs.html#a8fe32f1095d007598edf936e5be53f1d" title=" " alt="" coords="1296,763,1467,803"/>
+<area shape="poly" title=" " alt="" coords="1133,511,1150,560,1180,624,1223,691,1248,722,1278,749,1285,754,1282,758,1274,753,1245,725,1218,694,1176,626,1146,562,1128,513"/>
+<area shape="rect" href="../../d9/df3/classnexilis_1_1server_1_1DefaultArgs.html#a4ad6243462ef5478a30b330f35a1f6ef" title=" " alt="" coords="1296,344,1467,384"/>
+<area shape="poly" title=" " alt="" coords="1149,470,1206,432,1275,394,1292,386,1294,391,1277,398,1208,436,1152,474"/>
+<area shape="rect" href="../../d9/df3/classnexilis_1_1server_1_1DefaultArgs.html#ab0f8e94e52cb97cba7df5c6a44093e25" title=" " alt="" coords="1296,408,1467,448"/>
+<area shape="poly" title=" " alt="" coords="1204,469,1286,449,1288,454,1205,475"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a8dc941be1df851c4d426e39dcad676d1" title="Send message to every protocol that is avainable for a client." alt="" coords="1545,715,1735,755"/>
+<area shape="poly" title=" " alt="" coords="1200,510,1336,554,1414,585,1488,620,1553,662,1607,704,1604,708,1550,666,1485,625,1411,590,1335,559,1198,515"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#ae1b6f4a7a7b7a3aa79c34d492d2cd786" title="Send message in room context." alt="" coords="1287,635,1476,675"/>
+<area shape="poly" title=" " alt="" coords="1157,510,1338,625,1335,630,1154,515"/>
+<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a191e4c013bad219e746e8e56682d65e1" title=" " alt="" coords="1303,294,1459,319"/>
+<area shape="poly" title=" " alt="" coords="1135,470,1190,401,1230,362,1275,330,1291,322,1294,326,1277,334,1233,366,1194,404,1139,473"/>
+<area shape="poly" title=" " alt="" coords="1472,470,1485,458,1503,433,1515,408,1521,383,1524,358,1520,309,1508,259,1497,209,1492,159,1495,134,1502,108,1514,82,1533,55,1554,38,1558,43,1537,59,1519,84,1507,110,1500,135,1497,159,1502,209,1513,258,1525,308,1529,358,1527,384,1520,410,1507,436,1489,462,1476,474"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#ac07fa7fe08cfa3955f7fdb9d3c2f7267" title="Convert ClientMsgType to nx_data (and add a &#39; &#39;) as a last character." alt="" coords="1545,197,1735,237"/>
+<area shape="poly" title=" " alt="" coords="1471,470,1485,458,1502,433,1510,409,1511,384,1509,359,1507,333,1507,307,1515,281,1533,254,1545,243,1549,247,1537,258,1520,283,1513,308,1512,333,1514,358,1516,384,1515,410,1507,436,1489,462,1474,474"/>
+<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="2056,447,2191,473"/>
+<area shape="poly" title=" " alt="" coords="1453,469,1486,458,1533,435,1572,413,1636,370,1701,330,1742,312,1793,297,1853,282,1903,272,1927,272,1952,276,2009,298,2047,326,2077,362,2100,401,2115,434,2110,436,2095,403,2073,365,2044,330,2007,302,1951,281,1927,277,1904,278,1855,287,1794,303,1744,317,1704,335,1639,374,1575,418,1536,440,1488,462,1455,474"/>
+<area shape="rect" href="../../d5/dc9/namespacenexilis_1_1server.html#adee8e06d497179f171db8f4136c42690" title=" " alt="" coords="1541,472,1739,512"/>
+<area shape="poly" title=" " alt="" coords="1476,489,1527,489,1527,495,1476,495"/>
+<area shape="rect" href="../../db/d0c/classnexilis_1_1RoomCommandType.html#a3683e50c3fdd22409f2ec118bb9cbdb3" title=" " alt="" coords="1536,133,1744,173"/>
+<area shape="poly" title=" " alt="" coords="1471,470,1485,458,1506,424,1515,391,1514,357,1508,323,1502,289,1501,254,1510,219,1533,184,1536,180,1540,184,1537,187,1515,221,1507,255,1508,288,1513,322,1519,357,1520,391,1511,426,1489,462,1475,474"/>
+<area shape="rect" href="../../d9/d3d/group__BytevectorConversions.html#ga38e516c60d98cb71153ded26ce2b67e5" title=" " alt="" coords="1817,197,1984,237"/>
+<area shape="poly" title=" " alt="" coords="1735,215,1803,215,1803,220,1735,220"/>
+<area shape="rect" href="../../d7/de9/classnexilis_1_1Json.html#a176086cccd2bb63f85a178a5b7eca0bd" title=" " alt="" coords="1810,123,1991,149"/>
+<area shape="poly" title=" " alt="" coords="1711,195,1744,183,1768,171,1792,159,1821,150,1823,155,1794,164,1770,175,1746,188,1713,200"/>
+<area shape="poly" title=" " alt="" coords="1859,198,1857,188,1863,178,1878,173,1901,171,1927,174,1941,181,1938,186,1925,179,1901,176,1879,178,1867,183,1862,189,1864,196"/>
+<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#acc02567dd7e4103305110bafbfd40c08" title="Send error message." alt="" coords="2239,440,2405,480"/>
+<area shape="poly" title=" " alt="" coords="2191,457,2225,457,2225,463,2191,463"/>
+<area shape="poly" title=" " alt="" coords="1659,510,1682,537,1714,567,1752,596,1794,618,1853,637,1903,646,1951,640,2007,618,2044,590,2073,555,2095,517,2110,484,2115,486,2100,519,2077,558,2047,594,2009,622,1952,646,1902,651,1852,643,1792,622,1749,601,1710,571,1678,540,1655,514"/>
+<area shape="rect" href="../../db/d0c/classnexilis_1_1RoomCommandType.html#a1661871cb06f8ac4420fe20a3d4fec3b" title=" " alt="" coords="1793,312,2008,352"/>
+<area shape="poly" title=" " alt="" coords="1658,470,1715,416,1752,387,1792,362,1806,355,1808,360,1795,366,1755,391,1718,420,1662,474"/>
+<area shape="rect" href="../../db/d0c/classnexilis_1_1RoomCommandType.html#aa6192a299f9c13b7591c52c79192dd95" title=" " alt="" coords="1797,376,2005,416"/>
+<area shape="poly" title=" " alt="" coords="1684,470,1792,426,1815,418,1817,423,1794,430,1686,474"/>
+<area shape="rect" href="../../db/d0c/classnexilis_1_1RoomCommandType.html#a6a08025bc5078426d320e06333ce7d09" title=" " alt="" coords="1797,440,2005,480"/>
+<area shape="poly" title=" " alt="" coords="1739,477,1783,472,1783,477,1739,483"/>
+<area shape="rect" href="../../db/d0c/classnexilis_1_1RoomCommandType.html#a9c059830b8f6aa7d3078dd0d18a3c3da" title=" " alt="" coords="1797,504,2005,544"/>
+<area shape="poly" title=" " alt="" coords="1739,501,1783,507,1783,512,1739,507"/>
+<area shape="rect" href="../../db/d0c/classnexilis_1_1RoomCommandType.html#a32c03fad903d3c6c37b17b29fda73d2c" title=" " alt="" coords="1797,568,2005,608"/>
+<area shape="poly" title=" " alt="" coords="1686,510,1794,554,1817,561,1815,566,1792,558,1684,514"/>
+<area shape="poly" title=" " alt="" coords="1983,350,2009,362,2061,398,2102,435,2099,439,2058,402,2007,366,1980,355"/>
+<area shape="poly" title=" " alt="" coords="1972,414,2066,441,2064,446,1970,419"/>
+<area shape="poly" title=" " alt="" coords="2005,457,2042,457,2042,463,2005,463"/>
+<area shape="poly" title=" " alt="" coords="1970,501,2064,474,2066,479,1972,506"/>
+<area shape="poly" title=" " alt="" coords="1980,565,2007,554,2058,518,2099,481,2102,485,2061,522,2009,558,1983,570"/>
+<area shape="poly" title=" " alt="" coords="1708,131,1793,109,1855,96,1907,84,1931,81,1956,84,1982,93,2010,110,2045,143,2073,184,2093,229,2108,276,2123,366,2125,434,2120,434,2117,366,2103,277,2088,231,2068,186,2041,147,2006,114,1979,98,1955,89,1931,87,1908,89,1856,101,1794,115,1709,136"/>
+<area shape="poly" title=" " alt="" coords="1717,752,1747,764,1770,782,1780,790,1794,796,1855,816,1906,827,1930,828,1954,823,1979,813,2006,797,2040,765,2067,727,2087,684,2101,639,2116,552,2120,486,2125,487,2122,553,2106,640,2092,686,2072,729,2045,768,2010,801,1981,818,1955,829,1930,833,1906,833,1854,821,1792,801,1777,794,1767,786,1744,769,1715,757"/>
+<area shape="rect" href="../../d2/d8d/group__UserBoostTCP.html#gad64b1d7881430c9dc278fcab25c7e4a6" title=" " alt="" coords="1825,861,1977,901"/>
+<area shape="poly" title=" " alt="" coords="1727,752,1747,765,1764,784,1772,803,1779,822,1795,841,1814,853,1811,857,1792,845,1775,825,1767,805,1760,787,1744,769,1724,757"/>
+<area shape="rect" href="../../db/daa/group__UserBoostUDP.html#ga99f955fd99e8c615cf07aa5361078c3b" title=" " alt="" coords="1825,925,1977,965"/>
+<area shape="poly" title=" " alt="" coords="1731,753,1747,765,1762,783,1769,803,1772,840,1775,876,1782,894,1795,911,1813,925,1810,929,1791,915,1777,897,1769,878,1767,840,1764,804,1757,786,1743,769,1728,757"/>
+<area shape="rect" href="../../d5/da4/classnexilis_1_1NXProtocol.html#a7f48d98a5081e37c9616930a8f932cf1" title=" " alt="" coords="1828,989,1973,1029"/>
+<area shape="poly" title=" " alt="" coords="1733,753,1747,765,1766,792,1774,819,1775,846,1772,872,1769,898,1770,924,1778,950,1795,975,1817,991,1814,996,1791,979,1773,952,1765,925,1764,898,1767,872,1769,846,1769,820,1761,794,1743,768,1729,757"/>
+<area shape="rect" href="../../d3/d43/group__UserInetTCP.html#ga711d29b0e1d12b1a5733b9b7e943c46f" title=" " alt="" coords="1825,1053,1977,1093"/>
+<area shape="poly" title=" " alt="" coords="1733,753,1747,765,1770,800,1779,835,1778,870,1772,905,1766,938,1765,972,1773,1006,1795,1040,1814,1054,1810,1058,1791,1043,1769,1008,1760,973,1761,938,1767,904,1772,870,1773,836,1765,802,1743,768,1730,757"/>
+<area shape="rect" href="../../d6/df2/group__UserInetUDP.html#gab9d1020d0109228f277f3a6261aac652" title=" " alt="" coords="1825,1117,1977,1157"/>
+<area shape="poly" title=" " alt="" coords="1734,753,1747,765,1763,787,1774,809,1783,852,1780,895,1772,937,1763,978,1761,1020,1769,1062,1780,1082,1795,1103,1814,1118,1810,1123,1791,1107,1775,1085,1764,1063,1755,1020,1758,978,1767,936,1775,894,1778,852,1769,811,1759,790,1743,768,1730,757"/>
+<area shape="rect" href="../../d5/d20/group__UserUnixDgram.html#gafd2d99a4d3b410b2a01010744b270473" title=" " alt="" coords="1825,683,1977,723"/>
+<area shape="poly" title=" " alt="" coords="1735,720,1811,711,1811,716,1735,726"/>
+<area shape="rect" href="../../db/d8a/group__UserUnixStream.html#gaaf38268746172416550eaaed936fe794" title=" " alt="" coords="1825,747,1977,787"/>
+<area shape="poly" title=" " alt="" coords="1735,744,1811,753,1811,758,1735,749"/>
+<area shape="poly" title=" " alt="" coords="1474,673,1489,685,1507,712,1515,738,1516,765,1513,791,1511,817,1512,842,1519,867,1537,893,1553,906,1550,910,1533,896,1514,870,1506,843,1505,817,1508,790,1511,765,1510,739,1502,714,1485,688,1471,677"/>
+<area shape="poly" title=" " alt="" coords="1449,672,1487,684,1563,708,1562,713,1486,689,1447,677"/>
+<area shape="rect" href="../../db/d96/classnexilis_1_1server_1_1RoomStorage.html#a1a34d89eff94828154b7bb44e545dcc6" title=" " alt="" coords="1535,843,1745,883"/>
+<area shape="poly" title=" " alt="" coords="1472,673,1489,685,1503,703,1510,722,1513,758,1516,794,1523,812,1537,829,1541,833,1538,837,1533,832,1518,814,1511,796,1508,759,1505,723,1498,706,1485,689,1469,677"/>
+<area shape="rect" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#acdb61fe86e1f6a500b143675bd774503" title="Retain the returned handle throughout the operation on the user." alt="" coords="1535,779,1745,819"/>
+<area shape="poly" title=" " alt="" coords="1469,673,1488,685,1506,705,1513,726,1520,746,1536,765,1544,770,1540,774,1533,769,1516,748,1508,728,1501,708,1485,689,1466,677"/>
+<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#a68409cb1a072641188aa5b1053c81fbc" title="Send warning message." alt="" coords="1557,69,1723,109"/>
+<area shape="poly" title=" " alt="" coords="1458,295,1485,279,1500,261,1507,242,1509,202,1510,161,1517,140,1533,120,1543,111,1547,115,1537,123,1522,142,1515,162,1514,202,1512,243,1504,263,1488,283,1461,300"/>
+<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#aa9bd79fb1a1804924e3440947c6ab117" title="Send debug message." alt="" coords="512,472,679,512"/>
+<area shape="poly" title=" " alt="" coords="402,486,499,488,498,493,402,492"/>
 </map>
 </div>
 <div class="dynheader">
@@ -739,9 +1048,11 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer_a9f160f664a411ee41ab01634930ebe3f_icgraph.png" border="0" usemap="#adf/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer_a9f160f664a411ee41ab01634930ebe3f_icgraph" alt=""/></div>
 <map name="adf/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer_a9f160f664a411ee41ab01634930ebe3f_icgraph" id="adf/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer_a9f160f664a411ee41ab01634930ebe3f_icgraph">
-<area shape="rect" title="NXProtocol::stop() implementation." alt="" coords="275,5,443,45"/>
-<area shape="rect" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a50bf92a30646e072df669e53bacfeea0" title="Destructor." alt="" coords="5,5,227,45"/>
-<area shape="poly" title=" " alt="" coords="261,28,227,28,227,23,261,23"/>
+<area shape="rect" title="NXProtocol::stop() implementation." alt="" coords="275,37,443,77"/>
+<area shape="rect" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#abeef8102fec80fb7e42fe3745083a21f" title="Move assignment operator." alt="" coords="13,5,219,45"/>
+<area shape="poly" title=" " alt="" coords="261,47,219,42,220,36,261,42"/>
+<area shape="rect" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a50bf92a30646e072df669e53bacfeea0" title="Destructor." alt="" coords="5,69,227,109"/>
+<area shape="poly" title=" " alt="" coords="261,73,227,77,227,72,261,68"/>
 </map>
 </div>
 

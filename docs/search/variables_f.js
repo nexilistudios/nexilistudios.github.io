@@ -7,7 +7,8 @@ var searchData=
   ['session_4',['session',['../db/d44/namespacenexilis_1_1udp__auth.html#ae849a5db5bf868abc55dd820b6070f2b',1,'nexilis::udp_auth']]],
   ['settings_5',['settings',['../d2/ddb/classnexilis_1_1CommandSpec.html#afc50e6b00cc7d7d6682756270bee864f',1,'nexilis::CommandSpec']]],
   ['shooter_5fid_6',['shooter_id',['../d4/da4/structnexilis_1_1client_1_1ClientAPI_1_1DamageEvent.html#aec7f3dc6363890898f12faefad5417be',1,'nexilis::client::ClientAPI::DamageEvent::shooter_id'],['../da/d3c/structnexilis_1_1client_1_1ClientAPI_1_1Player2DShootEvent.html#a777ae637dc117c2f6ad9d7d0216078b7',1,'nexilis::client::ClientAPI::Player2DShootEvent::shooter_id']]],
-  ['sound_7',['sound',['../dc/dfc/structnexilis_1_1client_1_1ClientAPI_1_1AudioEvent.html#a64abce5860e93e5069fea62a65589bca',1,'nexilis::client::ClientAPI::AudioEvent']]],
-  ['state_8',['state',['../d1/d4f/structnexilis_1_1client_1_1ClientAPI_1_1AnimationEvent.html#a93fce18250e6455cf806a4262546288c',1,'nexilis::client::ClientAPI::AnimationEvent']]],
-  ['status_9',['status',['../d7/d79/structnexilis_1_1client_1_1ClientAPI_1_1RemoteGameItemSnapshot.html#a7c790eb4892419a510351ba76dfeb8b5',1,'nexilis::client::ClientAPI::RemoteGameItemSnapshot']]]
+  ['socket_7',['socket',['../d0/de6/structnexilis_1_1server_1_1nxboost_1_1UDPServer_1_1SocketState.html#a585826ea64a2c4e231ae27839db2e993',1,'nexilis::server::nxboost::UDPServer::SocketState']]],
+  ['sound_8',['sound',['../dc/dfc/structnexilis_1_1client_1_1ClientAPI_1_1AudioEvent.html#a64abce5860e93e5069fea62a65589bca',1,'nexilis::client::ClientAPI::AudioEvent']]],
+  ['state_9',['state',['../d1/d4f/structnexilis_1_1client_1_1ClientAPI_1_1AnimationEvent.html#a93fce18250e6455cf806a4262546288c',1,'nexilis::client::ClientAPI::AnimationEvent']]],
+  ['status_10',['status',['../d7/d79/structnexilis_1_1client_1_1ClientAPI_1_1RemoteGameItemSnapshot.html#a7c790eb4892419a510351ba76dfeb8b5',1,'nexilis::client::ClientAPI::RemoteGameItemSnapshot']]]
 ];

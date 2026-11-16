@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.9-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.10-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -351,29 +351,31 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">   53</span>    <span class="keywordflow">if</span> (!movement)</div>
 <div class="line"><span class="lineno">   54</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">   55</span>    <span class="keyword">auto</span> <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a> = <a class="code hl_function" href="../../db/d96/classnexilis_1_1server_1_1RoomStorage.html#ab485886b13f88d861cf50ad148391fb5">RoomStorage::getRoomById</a>(user.getRoomId());</div>
-<div class="line"><span class="lineno">   56</span>    <span class="keyword">auto</span>* <span class="keywordtype">object</span> = <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a> ? <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>-&gt;getObject2DById(movement-&gt;getObjectId()) : <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">if</span> (!<span class="keywordtype">object</span>)</div>
-<div class="line"><span class="lineno">   58</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   59</span> </div>
-<div class="line"><span class="lineno">   60</span>    <span class="keyword">const</span> <span class="keyword">auto</span> start = <span class="keywordtype">object</span>-&gt;getPosition();</div>
-<div class="line"><span class="lineno">   61</span>    <span class="keyword">const</span> <span class="keyword">auto</span> amount = movement-&gt;getAmount();</div>
-<div class="line"><span class="lineno">   62</span>    <span class="keyword">const</span> <span class="keyword">auto</span> func = movement-&gt;getMovementFunc();</div>
-<div class="line"><span class="lineno">   63</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; limits = <a class="code hl_function" href="../../dd/d16/classnexilis_1_1server_1_1GameplayLimits.html#a9b88aeeb73f66ec125e1c23f78612560">GameplayLimits::get</a>();</div>
-<div class="line"><span class="lineno">   64</span>    <span class="comment">// Complete the displacement during dispatch; no task retains the user,</span></div>
-<div class="line"><span class="lineno">   65</span>    <span class="comment">// protocol, room, or object after the command returns.</span></div>
-<div class="line"><span class="lineno">   66</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a66c81b5d9a82dd24f6bb045ab576df99">Vector2f</a> position(limits.clampHorizontal(start.x + func(1.0, amount.x)),</div>
-<div class="line"><span class="lineno">   67</span>                            limits.clampHorizontal(start.y + func(1.0, amount.y)));</div>
-<div class="line"><span class="lineno">   68</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../d3/db2/namespacenexilis_1_1server_1_1validation.html#a87ce80444ea5942f6d2df93cf58778b0">validation::isFinite</a>(position))</div>
-<div class="line"><span class="lineno">   69</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   70</span>    <span class="keywordtype">object</span>-&gt;setPosition(position);</div>
-<div class="line"><span class="lineno">   71</span>    std::map&lt;std::string, boost::json::value&gt; params{</div>
-<div class="line"><span class="lineno">   72</span>            {<span class="stringliteral">&quot;createMovingType&quot;</span>, boost::json::value(<span class="stringliteral">&quot;update&quot;</span>)},</div>
-<div class="line"><span class="lineno">   73</span>            {<span class="stringliteral">&quot;id&quot;</span>, boost::json::value(object-&gt;getId())},</div>
-<div class="line"><span class="lineno">   74</span>            {<span class="stringliteral">&quot;x&quot;</span>, boost::json::value(position.x)},</div>
-<div class="line"><span class="lineno">   75</span>            {<span class="stringliteral">&quot;y&quot;</span>, boost::json::value(position.y)}};</div>
-<div class="line"><span class="lineno">   76</span>    <span class="keyword">auto</span> command = <a class="code hl_function" href="../../da/d15/classnexilis_1_1server_1_1Command.html#aebfc9a226b33efebbd8025f46fc94d87">Command::createRoomCommand</a>(user.getRoomId(), user, movement-&gt;getMessageData(), params, movement-&gt;getMessageId());</div>
-<div class="line"><span class="lineno">   77</span>    <a class="code hl_function" href="../../da/d15/classnexilis_1_1server_1_1Command.html#ae1b6f4a7a7b7a3aa79c34d492d2cd786">Command::sendRoomCommand</a>(command, user, protocol);</div>
-<div class="line"><span class="lineno">   78</span>}</div>
+<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">if</span> (!<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>)</div>
+<div class="line"><span class="lineno">   57</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   58</span>    <span class="keyword">const</span> <span class="keyword">auto</span> amount = movement-&gt;getAmount();</div>
+<div class="line"><span class="lineno">   59</span>    <span class="keyword">const</span> <span class="keyword">auto</span> func = movement-&gt;getMovementFunc();</div>
+<div class="line"><span class="lineno">   60</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; limits = <a class="code hl_function" href="../../dd/d16/classnexilis_1_1server_1_1GameplayLimits.html#a9b88aeeb73f66ec125e1c23f78612560">GameplayLimits::get</a>();</div>
+<div class="line"><span class="lineno">   61</span>    <span class="comment">// Complete the displacement during dispatch; no task retains the user,</span></div>
+<div class="line"><span class="lineno">   62</span>    <span class="comment">// protocol, room, or object after the command returns.</span></div>
+<div class="line"><span class="lineno">   63</span>    <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a66c81b5d9a82dd24f6bb045ab576df99">Vector2f</a> position;</div>
+<div class="line"><span class="lineno">   64</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> found = <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>-&gt;withObject2D(movement-&gt;getObjectId(), [&amp;](Object2D&amp; <span class="keywordtype">object</span>)</div>
+<div class="line"><span class="lineno">   65</span>                                          {</div>
+<div class="line"><span class="lineno">   66</span>        const auto start = object.getPosition();</div>
+<div class="line"><span class="lineno">   67</span>        position = Vector2f(limits.clampHorizontal(start.x + func(1.0, amount.x)),</div>
+<div class="line"><span class="lineno">   68</span>                            limits.clampHorizontal(start.y + func(1.0, amount.y)));</div>
+<div class="line"><span class="lineno">   69</span>        if (validation::isFinite(position))</div>
+<div class="line"><span class="lineno">   70</span>            object.setPosition(position); });</div>
+<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">if</span> (!found || !<a class="code hl_function" href="../../d3/db2/namespacenexilis_1_1server_1_1validation.html#a87ce80444ea5942f6d2df93cf58778b0">validation::isFinite</a>(position))</div>
+<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   73</span>    std::map&lt;std::string, boost::json::value&gt; params{</div>
+<div class="line"><span class="lineno">   74</span>            {<span class="stringliteral">&quot;createMovingType&quot;</span>, boost::json::value(<span class="stringliteral">&quot;update&quot;</span>)},</div>
+<div class="line"><span class="lineno">   75</span>            {<span class="stringliteral">&quot;id&quot;</span>, boost::json::value(movement-&gt;getObjectId())},</div>
+<div class="line"><span class="lineno">   76</span>            {<span class="stringliteral">&quot;x&quot;</span>, boost::json::value(position.x)},</div>
+<div class="line"><span class="lineno">   77</span>            {<span class="stringliteral">&quot;y&quot;</span>, boost::json::value(position.y)}};</div>
+<div class="line"><span class="lineno">   78</span>    <span class="keyword">auto</span> command = <a class="code hl_function" href="../../da/d15/classnexilis_1_1server_1_1Command.html#aebfc9a226b33efebbd8025f46fc94d87">Command::createRoomCommand</a>(user.getRoomId(), user, movement-&gt;getMessageData(), params, movement-&gt;getMessageId());</div>
+<div class="line"><span class="lineno">   79</span>    <a class="code hl_function" href="../../da/d15/classnexilis_1_1server_1_1Command.html#ae1b6f4a7a7b7a3aa79c34d492d2cd786">Command::sendRoomCommand</a>(command, user, protocol);</div>
+<div class="line"><span class="lineno">   80</span>}</div>
 <div class="ttc" id="aclassnexilis_1_1server_1_1Command_html_ae1b6f4a7a7b7a3aa79c34d492d2cd786"><div class="ttname"><a href="../../da/d15/classnexilis_1_1server_1_1Command.html#ae1b6f4a7a7b7a3aa79c34d492d2cd786">nexilis::server::Command::sendRoomCommand</a></div><div class="ttdeci">static bool sendRoomCommand(const nx_data &amp;data, User &amp;user, NXProtocol &amp;protocol)</div><div class="ttdoc">Send message in room context.</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dfb/command_8cc_source.html#l00763">command.cc:763</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1server_1_1Command_html_aebfc9a226b33efebbd8025f46fc94d87"><div class="ttname"><a href="../../da/d15/classnexilis_1_1server_1_1Command.html#aebfc9a226b33efebbd8025f46fc94d87">nexilis::server::Command::createRoomCommand</a></div><div class="ttdeci">static nx_data createRoomCommand(uint64_t roomId, User &amp;user, const nx_data &amp;messageData, const ClientMsgType &amp;params, uint64_t messageId)</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dfb/command_8cc_source.html#l00694">command.cc:694</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1server_1_1GameplayLimits_html_a9b88aeeb73f66ec125e1c23f78612560"><div class="ttname"><a href="../../dd/d16/classnexilis_1_1server_1_1GameplayLimits.html#a9b88aeeb73f66ec125e1c23f78612560">nexilis::server::GameplayLimits::get</a></div><div class="ttdeci">static const GameplayLimits &amp; get()</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d9f/gameplay__limits_8hh_source.html#l00213">gameplay_limits.hh:213</a></div></div>
@@ -516,34 +518,36 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d0f/movement_8cc_source.html#l00080">80</a> of file <a class="el" href="../../d8/d0f/movement_8cc_source.html">movement.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   81</span>{</div>
-<div class="line"><span class="lineno">   82</span>    <span class="keywordflow">if</span> (!movement)</div>
-<div class="line"><span class="lineno">   83</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   84</span>    <span class="keyword">auto</span> <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a> = <a class="code hl_function" href="../../db/d96/classnexilis_1_1server_1_1RoomStorage.html#ab485886b13f88d861cf50ad148391fb5">RoomStorage::getRoomById</a>(user.getRoomId());</div>
-<div class="line"><span class="lineno">   85</span>    <span class="keyword">auto</span>* <span class="keywordtype">object</span> = <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a> ? <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>-&gt;getObject3DById(movement-&gt;getObjectId()) : <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   86</span>    <span class="keywordflow">if</span> (!<span class="keywordtype">object</span>)</div>
-<div class="line"><span class="lineno">   87</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   88</span> </div>
-<div class="line"><span class="lineno">   89</span>    <span class="keyword">const</span> <span class="keyword">auto</span> start = <span class="keywordtype">object</span>-&gt;getPosition();</div>
-<div class="line"><span class="lineno">   90</span>    <span class="keyword">const</span> <span class="keyword">auto</span> amount = movement-&gt;getAmount();</div>
-<div class="line"><span class="lineno">   91</span>    <span class="keyword">const</span> <span class="keyword">auto</span> func = movement-&gt;getMovementFunc();</div>
-<div class="line"><span class="lineno">   92</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; limits = <a class="code hl_function" href="../../dd/d16/classnexilis_1_1server_1_1GameplayLimits.html#a9b88aeeb73f66ec125e1c23f78612560">GameplayLimits::get</a>();</div>
-<div class="line"><span class="lineno">   93</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a6d4456bc63926293b47b68c62361ce2d">Vector3f</a> position(limits.clampHorizontal(start.x + func(1.0, amount.x)),</div>
-<div class="line"><span class="lineno">   94</span>                            limits.clampHeight(start.y + func(1.0, amount.y)),</div>
-<div class="line"><span class="lineno">   95</span>                            limits.clampHorizontal(start.z + func(1.0, amount.z)));</div>
-<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../d3/db2/namespacenexilis_1_1server_1_1validation.html#a87ce80444ea5942f6d2df93cf58778b0">validation::isFinite</a>(position))</div>
-<div class="line"><span class="lineno">   97</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   98</span>    <span class="keywordtype">object</span>-&gt;setPosition(position);</div>
-<div class="line"><span class="lineno">   99</span>    std::map&lt;std::string, boost::json::value&gt; params{</div>
-<div class="line"><span class="lineno">  100</span>            {<span class="stringliteral">&quot;createMovingType&quot;</span>, boost::json::value(<span class="stringliteral">&quot;update&quot;</span>)},</div>
-<div class="line"><span class="lineno">  101</span>            {<span class="stringliteral">&quot;id&quot;</span>, boost::json::value(object-&gt;getId())},</div>
-<div class="line"><span class="lineno">  102</span>            {<span class="stringliteral">&quot;x&quot;</span>, boost::json::value(position.x)},</div>
-<div class="line"><span class="lineno">  103</span>            {<span class="stringliteral">&quot;y&quot;</span>, boost::json::value(position.y)},</div>
-<div class="line"><span class="lineno">  104</span>            {<span class="stringliteral">&quot;z&quot;</span>, boost::json::value(position.z)}};</div>
-<div class="line"><span class="lineno">  105</span>    <span class="keyword">auto</span> command = <a class="code hl_function" href="../../da/d15/classnexilis_1_1server_1_1Command.html#aebfc9a226b33efebbd8025f46fc94d87">Command::createRoomCommand</a>(user.getRoomId(), user, movement-&gt;getMessageData(), params, movement-&gt;getMessageId());</div>
-<div class="line"><span class="lineno">  106</span>    <a class="code hl_function" href="../../da/d15/classnexilis_1_1server_1_1Command.html#ae1b6f4a7a7b7a3aa79c34d492d2cd786">Command::sendRoomCommand</a>(command, user, protocol);</div>
-<div class="line"><span class="lineno">  107</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/d0f/movement_8cc_source.html#l00082">82</a> of file <a class="el" href="../../d8/d0f/movement_8cc_source.html">movement.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   83</span>{</div>
+<div class="line"><span class="lineno">   84</span>    <span class="keywordflow">if</span> (!movement)</div>
+<div class="line"><span class="lineno">   85</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   86</span>    <span class="keyword">auto</span> <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a> = <a class="code hl_function" href="../../db/d96/classnexilis_1_1server_1_1RoomStorage.html#ab485886b13f88d861cf50ad148391fb5">RoomStorage::getRoomById</a>(user.getRoomId());</div>
+<div class="line"><span class="lineno">   87</span>    <span class="keywordflow">if</span> (!<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>)</div>
+<div class="line"><span class="lineno">   88</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   89</span>    <span class="keyword">const</span> <span class="keyword">auto</span> amount = movement-&gt;getAmount();</div>
+<div class="line"><span class="lineno">   90</span>    <span class="keyword">const</span> <span class="keyword">auto</span> func = movement-&gt;getMovementFunc();</div>
+<div class="line"><span class="lineno">   91</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; limits = <a class="code hl_function" href="../../dd/d16/classnexilis_1_1server_1_1GameplayLimits.html#a9b88aeeb73f66ec125e1c23f78612560">GameplayLimits::get</a>();</div>
+<div class="line"><span class="lineno">   92</span>    <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a6d4456bc63926293b47b68c62361ce2d">Vector3f</a> position;</div>
+<div class="line"><span class="lineno">   93</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> found = <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>-&gt;withObject3D(movement-&gt;getObjectId(), [&amp;](Object3D&amp; <span class="keywordtype">object</span>)</div>
+<div class="line"><span class="lineno">   94</span>                                          {</div>
+<div class="line"><span class="lineno">   95</span>        const auto start = object.getPosition();</div>
+<div class="line"><span class="lineno">   96</span>        position = Vector3f(limits.clampHorizontal(start.x + func(1.0, amount.x)),</div>
+<div class="line"><span class="lineno">   97</span>                            limits.clampHeight(start.y + func(1.0, amount.y)),</div>
+<div class="line"><span class="lineno">   98</span>                            limits.clampHorizontal(start.z + func(1.0, amount.z)));</div>
+<div class="line"><span class="lineno">   99</span>        if (validation::isFinite(position))</div>
+<div class="line"><span class="lineno">  100</span>            object.setPosition(position); });</div>
+<div class="line"><span class="lineno">  101</span>    <span class="keywordflow">if</span> (!found || !<a class="code hl_function" href="../../d3/db2/namespacenexilis_1_1server_1_1validation.html#a87ce80444ea5942f6d2df93cf58778b0">validation::isFinite</a>(position))</div>
+<div class="line"><span class="lineno">  102</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  103</span>    std::map&lt;std::string, boost::json::value&gt; params{</div>
+<div class="line"><span class="lineno">  104</span>            {<span class="stringliteral">&quot;createMovingType&quot;</span>, boost::json::value(<span class="stringliteral">&quot;update&quot;</span>)},</div>
+<div class="line"><span class="lineno">  105</span>            {<span class="stringliteral">&quot;id&quot;</span>, boost::json::value(movement-&gt;getObjectId())},</div>
+<div class="line"><span class="lineno">  106</span>            {<span class="stringliteral">&quot;x&quot;</span>, boost::json::value(position.x)},</div>
+<div class="line"><span class="lineno">  107</span>            {<span class="stringliteral">&quot;y&quot;</span>, boost::json::value(position.y)},</div>
+<div class="line"><span class="lineno">  108</span>            {<span class="stringliteral">&quot;z&quot;</span>, boost::json::value(position.z)}};</div>
+<div class="line"><span class="lineno">  109</span>    <span class="keyword">auto</span> command = <a class="code hl_function" href="../../da/d15/classnexilis_1_1server_1_1Command.html#aebfc9a226b33efebbd8025f46fc94d87">Command::createRoomCommand</a>(user.getRoomId(), user, movement-&gt;getMessageData(), params, movement-&gt;getMessageId());</div>
+<div class="line"><span class="lineno">  110</span>    <a class="code hl_function" href="../../da/d15/classnexilis_1_1server_1_1Command.html#ae1b6f4a7a7b7a3aa79c34d492d2cd786">Command::sendRoomCommand</a>(command, user, protocol);</div>
+<div class="line"><span class="lineno">  111</span>}</div>
 <div class="ttc" id="anamespacenexilis_html_a6d4456bc63926293b47b68c62361ce2d"><div class="ttname"><a href="../../d8/d34/namespacenexilis.html#a6d4456bc63926293b47b68c62361ce2d">nexilis::Vector3f</a></div><div class="ttdeci">Vector3&lt; float &gt; Vector3f</div><div class="ttdef"><b>Definition</b> <a href="../../db/d36/vector3_8hh_source.html#l00153">vector3.hh:153</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>

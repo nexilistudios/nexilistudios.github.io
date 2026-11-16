@@ -1,5 +1,9 @@
 <map id="nexilis::BaseRoom::getGameItemById" name="nexilis::BaseRoom::getGameItemById">
-<area shape="rect" id="Node000001" title=" " alt="" coords="231,5,381,45"/>
-<area shape="rect" id="Node000002" href="$da/d49/classnexilis_1_1BaseRoom.html#a93cead961711422d7e22a1eaaab87615" title=" " alt="" coords="5,5,183,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,28,183,28,183,23,217,23"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="464,37,615,77"/>
+<area shape="rect" id="Node000002" href="$d1/d01/classnexilis_1_1server_1_1Room.html#a3c54e842534d4a181a848b982799ede1" title=" " alt="" coords="247,5,407,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="450,47,407,40,408,35,451,41"/>
+<area shape="rect" id="Node000003" href="$da/d49/classnexilis_1_1BaseRoom.html#a93cead961711422d7e22a1eaaab87615" title=" " alt="" coords="239,69,416,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="451,73,416,79,416,73,450,68"/>
+<area shape="rect" id="Node000004" href="$d1/d01/classnexilis_1_1server_1_1Room.html#a2a36ed3af5bbceb666598854364147d8" title=" " alt="" coords="5,69,191,109"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="225,92,191,92,191,87,225,87"/>
 </map>

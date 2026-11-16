@@ -1,0 +1,96 @@
+<map id="nexilis::server::ServerProtocol::cleanupDatagramTransports" name="nexilis::server::ServerProtocol::cleanupDatagramTransports">
+<area shape="rect" id="Node000001" title="Drop every active datagram transport of the given kind on stop." alt="" coords="5,440,223,480"/>
+<area shape="rect" id="Node000002" href="$de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a8fbd4d6d8a95879846c9afe499df098b" title="Finish an active datagram transport, removing the user when nothing remains." alt="" coords="271,408,488,448"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,444,257,440,258,445,223,450"/>
+<area shape="rect" id="Node000041" href="$da/de9/classnexilis_1_1server_1_1ClientStorage.html#aaea84dd6f0296109d1c006d421650dc2" title="Snapshot of owning handles. This does not lock mutable user fields." alt="" coords="274,472,485,512"/>
+<area shape="poly" id="edge53_Node000001_Node000041" title=" " alt="" coords="223,470,261,475,260,480,223,476"/>
+<area shape="rect" id="Node000003" href="$d4/d3a/classnexilis_1_1server_1_1User.html#a62fc8b1c44df9ceb64daac949e9c6caf" title="Clear the send callback associated with a closed transport." alt="" coords="569,344,721,384"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="462,405,555,383,556,388,464,411"/>
+<area shape="rect" id="Node000004" href="$d4/d3a/classnexilis_1_1server_1_1User.html#aea70bacfc678863b82a72d7f8ee7f2a0" title="End an active datagram transport and return the remaining presence." alt="" coords="555,408,734,448"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="488,425,541,425,541,431,488,431"/>
+<area shape="rect" id="Node000005" href="$de/df0/classnexilis_1_1server_1_1ServerProtocol.html#ab254c9ce12f43951410492942d854d7b" title="Broadcast leave and remove a disconnected user from the registry." alt="" coords="536,472,753,512"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="464,445,549,466,548,471,462,451"/>
+<area shape="rect" id="Node000006" href="$dc/dcb/classnexilis_1_1BaseClient.html#a2ef1dddc83ce3e9f573e144673189546" title=" " alt="" coords="1353,5,1495,45"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="734,470,752,458,763,446,770,433,776,408,782,380,799,352,861,292,929,239,1002,192,1077,152,1150,117,1220,88,1339,46,1340,51,1222,93,1153,122,1079,156,1005,197,932,243,864,296,803,355,787,382,782,409,775,435,767,449,755,462,737,474"/>
+<area shape="rect" id="Node000007" href="$db/d96/classnexilis_1_1server_1_1RoomStorage.html#ab485886b13f88d861cf50ad148391fb5" title=" " alt="" coords="1060,229,1271,269"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="721,469,752,458,841,412,905,369,970,325,1059,279,1077,272,1079,276,1061,284,973,329,908,373,843,417,754,462,723,474"/>
+<area shape="rect" id="Node000008" href="$d4/d3a/classnexilis_1_1server_1_1User.html#a37bf38b5fc17e97faecf5637c8ad7e47" title=" " alt="" coords="1348,907,1500,947"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="668,510,730,569,823,649,937,736,998,776,1061,812,1131,844,1203,870,1335,906,1334,911,1201,875,1128,849,1059,817,996,781,934,740,819,653,726,573,664,514"/>
+<area shape="rect" id="Node000009" href="$da/de9/classnexilis_1_1server_1_1ClientStorage.html#aabd05a96502a6e23a5edcac8da44a430" title=" " alt="" coords="801,877,1012,917"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="651,512,665,577,692,670,712,720,737,769,767,816,803,857,819,869,815,873,800,861,763,819,732,772,707,722,687,671,659,579,646,513"/>
+<area shape="rect" id="Node000010" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a72dfb4f3c457e4d857a91d0587daea58" title=" " alt="" coords="806,472,1007,512"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="753,489,793,489,793,495,753,495"/>
+<area shape="poly" id="edge35_Node000010_Node000007" title=" " alt="" coords="923,470,1010,359,1022,336,1030,316,1040,298,1058,279,1066,274,1069,278,1062,283,1044,301,1035,319,1027,338,1014,361,927,474"/>
+<area shape="rect" id="Node000011" href="$da/d15/classnexilis_1_1server_1_1Command.html#aebfc9a226b33efebbd8025f46fc94d87" title=" " alt="" coords="1071,472,1260,512"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1007,489,1057,489,1057,495,1007,495"/>
+<area shape="rect" id="Node000024" href="$d9/df3/classnexilis_1_1server_1_1DefaultArgs.html#ad025461696f36ad9e397171a8c8c37c0" title=" " alt="" coords="1080,699,1251,739"/>
+<area shape="poly" id="edge32_Node000010_Node000024" title=" " alt="" coords="921,511,942,548,974,595,1014,643,1062,685,1071,690,1068,695,1058,689,1010,647,969,598,938,551,916,514"/>
+<area shape="rect" id="Node000025" href="$d9/df3/classnexilis_1_1server_1_1DefaultArgs.html#a8fe32f1095d007598edf936e5be53f1d" title=" " alt="" coords="1080,763,1251,803"/>
+<area shape="poly" id="edge33_Node000010_Node000025" title=" " alt="" coords="917,511,934,560,964,624,1007,691,1032,722,1062,749,1069,754,1066,758,1058,753,1029,725,1002,694,960,626,930,562,912,513"/>
+<area shape="rect" id="Node000026" href="$d9/df3/classnexilis_1_1server_1_1DefaultArgs.html#a4ad6243462ef5478a30b330f35a1f6ef" title=" " alt="" coords="1080,344,1251,384"/>
+<area shape="poly" id="edge34_Node000010_Node000026" title=" " alt="" coords="933,470,990,432,1059,394,1076,386,1078,391,1061,398,992,436,936,474"/>
+<area shape="rect" id="Node000027" href="$d9/df3/classnexilis_1_1server_1_1DefaultArgs.html#ab0f8e94e52cb97cba7df5c6a44093e25" title=" " alt="" coords="1080,408,1251,448"/>
+<area shape="poly" id="edge36_Node000010_Node000027" title=" " alt="" coords="988,469,1070,449,1072,454,989,475"/>
+<area shape="rect" id="Node000028" href="$da/d15/classnexilis_1_1server_1_1Command.html#a8dc941be1df851c4d426e39dcad676d1" title="Send message to every protocol that is avainable for a client." alt="" coords="1329,715,1519,755"/>
+<area shape="poly" id="edge37_Node000010_Node000028" title=" " alt="" coords="984,510,1120,554,1198,585,1272,620,1337,662,1391,704,1388,708,1334,666,1269,625,1195,590,1119,559,982,515"/>
+<area shape="rect" id="Node000036" href="$da/d15/classnexilis_1_1server_1_1Command.html#ae1b6f4a7a7b7a3aa79c34d492d2cd786" title="Send message in room context." alt="" coords="1071,635,1260,675"/>
+<area shape="poly" id="edge46_Node000010_Node000036" title=" " alt="" coords="941,510,1122,625,1119,630,938,515"/>
+<area shape="rect" id="Node000039" href="$dc/dbc/classnexilis_1_1Log.html#a191e4c013bad219e746e8e56682d65e1" title=" " alt="" coords="1087,294,1243,319"/>
+<area shape="poly" id="edge51_Node000010_Node000039" title=" " alt="" coords="919,470,974,401,1014,362,1059,330,1075,322,1078,326,1061,334,1017,366,978,404,923,473"/>
+<area shape="poly" id="edge17_Node000011_Node000006" title=" " alt="" coords="1256,470,1269,458,1287,433,1299,408,1305,383,1308,358,1304,309,1292,259,1281,209,1276,159,1279,134,1286,108,1298,82,1317,55,1338,38,1342,43,1321,59,1303,84,1291,110,1284,135,1281,159,1286,209,1297,258,1309,308,1313,358,1311,384,1304,410,1291,436,1273,462,1260,474"/>
+<area shape="rect" id="Node000012" href="$da/d15/classnexilis_1_1server_1_1Command.html#ac07fa7fe08cfa3955f7fdb9d3c2f7267" title="Convert ClientMsgType to nx_data (and add a &#39; &#39;) as a last character." alt="" coords="1329,197,1519,237"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1255,470,1269,458,1286,433,1294,409,1295,384,1293,359,1291,333,1291,307,1299,281,1317,254,1329,243,1333,247,1321,258,1304,283,1297,308,1296,333,1298,358,1300,384,1299,410,1291,436,1273,462,1258,474"/>
+<area shape="rect" id="Node000015" href="$dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="1840,447,1975,473"/>
+<area shape="poly" id="edge15_Node000011_Node000015" title=" " alt="" coords="1237,469,1270,458,1317,435,1356,413,1420,370,1485,330,1526,312,1577,297,1637,282,1687,272,1711,272,1736,276,1793,298,1831,326,1861,362,1884,401,1899,434,1894,436,1879,403,1857,365,1828,330,1791,302,1735,281,1711,277,1688,278,1639,287,1578,303,1528,317,1488,335,1423,374,1359,418,1320,440,1272,462,1239,474"/>
+<area shape="rect" id="Node000017" href="$d5/dc9/namespacenexilis_1_1server.html#adee8e06d497179f171db8f4136c42690" title=" " alt="" coords="1325,472,1523,512"/>
+<area shape="poly" id="edge18_Node000011_Node000017" title=" " alt="" coords="1260,489,1311,489,1311,495,1260,495"/>
+<area shape="rect" id="Node000023" href="$db/d0c/classnexilis_1_1RoomCommandType.html#a3683e50c3fdd22409f2ec118bb9cbdb3" title=" " alt="" coords="1320,133,1528,173"/>
+<area shape="poly" id="edge30_Node000011_Node000023" title=" " alt="" coords="1255,470,1269,458,1290,424,1299,391,1298,357,1292,323,1286,289,1285,254,1294,219,1317,184,1320,180,1324,184,1321,187,1299,221,1291,255,1292,288,1297,322,1303,357,1304,391,1295,426,1273,462,1259,474"/>
+<area shape="rect" id="Node000013" href="$d9/d3d/group__BytevectorConversions.html#ga38e516c60d98cb71153ded26ce2b67e5" title=" " alt="" coords="1601,197,1768,237"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="1519,215,1587,215,1587,220,1519,220"/>
+<area shape="rect" id="Node000014" href="$d7/de9/classnexilis_1_1Json.html#a176086cccd2bb63f85a178a5b7eca0bd" title=" " alt="" coords="1594,123,1775,149"/>
+<area shape="poly" id="edge14_Node000012_Node000014" title=" " alt="" coords="1495,195,1528,183,1552,171,1576,159,1605,150,1607,155,1578,164,1554,175,1530,188,1497,200"/>
+<area shape="poly" id="edge13_Node000013_Node000013" title=" " alt="" coords="1643,198,1641,188,1647,178,1662,173,1685,171,1711,174,1725,181,1722,186,1709,179,1685,176,1663,178,1651,183,1646,189,1648,196"/>
+<area shape="rect" id="Node000016" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#acc02567dd7e4103305110bafbfd40c08" title="Send error message." alt="" coords="2023,440,2189,480"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="1975,457,2009,457,2009,463,1975,463"/>
+<area shape="poly" id="edge21_Node000017_Node000015" title=" " alt="" coords="1443,510,1466,537,1498,567,1536,596,1578,618,1637,637,1687,646,1735,640,1791,618,1828,590,1857,555,1879,517,1894,484,1899,486,1884,519,1861,558,1831,594,1793,622,1736,646,1686,651,1636,643,1576,622,1533,601,1494,571,1462,540,1439,514"/>
+<area shape="rect" id="Node000018" href="$db/d0c/classnexilis_1_1RoomCommandType.html#a1661871cb06f8ac4420fe20a3d4fec3b" title=" " alt="" coords="1577,312,1792,352"/>
+<area shape="poly" id="edge19_Node000017_Node000018" title=" " alt="" coords="1442,470,1499,416,1536,387,1576,362,1590,355,1592,360,1579,366,1539,391,1502,420,1446,474"/>
+<area shape="rect" id="Node000019" href="$db/d0c/classnexilis_1_1RoomCommandType.html#aa6192a299f9c13b7591c52c79192dd95" title=" " alt="" coords="1581,376,1789,416"/>
+<area shape="poly" id="edge22_Node000017_Node000019" title=" " alt="" coords="1468,470,1576,426,1599,418,1601,423,1578,430,1470,474"/>
+<area shape="rect" id="Node000020" href="$db/d0c/classnexilis_1_1RoomCommandType.html#a6a08025bc5078426d320e06333ce7d09" title=" " alt="" coords="1581,440,1789,480"/>
+<area shape="poly" id="edge24_Node000017_Node000020" title=" " alt="" coords="1523,477,1567,472,1567,477,1523,483"/>
+<area shape="rect" id="Node000021" href="$db/d0c/classnexilis_1_1RoomCommandType.html#a9c059830b8f6aa7d3078dd0d18a3c3da" title=" " alt="" coords="1581,504,1789,544"/>
+<area shape="poly" id="edge26_Node000017_Node000021" title=" " alt="" coords="1523,501,1567,507,1567,512,1523,507"/>
+<area shape="rect" id="Node000022" href="$db/d0c/classnexilis_1_1RoomCommandType.html#a32c03fad903d3c6c37b17b29fda73d2c" title=" " alt="" coords="1581,568,1789,608"/>
+<area shape="poly" id="edge28_Node000017_Node000022" title=" " alt="" coords="1470,510,1578,554,1601,561,1599,566,1576,558,1468,514"/>
+<area shape="poly" id="edge20_Node000018_Node000015" title=" " alt="" coords="1767,350,1793,362,1845,398,1886,435,1883,439,1842,402,1791,366,1764,355"/>
+<area shape="poly" id="edge23_Node000019_Node000015" title=" " alt="" coords="1756,414,1850,441,1848,446,1754,419"/>
+<area shape="poly" id="edge25_Node000020_Node000015" title=" " alt="" coords="1789,457,1826,457,1826,463,1789,463"/>
+<area shape="poly" id="edge27_Node000021_Node000015" title=" " alt="" coords="1754,501,1848,474,1850,479,1756,506"/>
+<area shape="poly" id="edge29_Node000022_Node000015" title=" " alt="" coords="1764,565,1791,554,1842,518,1883,481,1886,485,1845,522,1793,558,1767,570"/>
+<area shape="poly" id="edge31_Node000023_Node000015" title=" " alt="" coords="1489,131,1577,108,1639,95,1691,82,1715,80,1740,83,1766,92,1794,109,1829,142,1857,183,1878,228,1892,275,1907,365,1909,433,1904,434,1901,366,1887,276,1873,230,1852,185,1825,146,1790,113,1763,96,1739,88,1715,85,1692,87,1640,100,1578,113,1491,136"/>
+<area shape="poly" id="edge40_Node000028_Node000015" title=" " alt="" coords="1501,752,1531,764,1554,782,1564,790,1578,796,1639,816,1690,827,1714,828,1738,823,1763,813,1790,797,1824,765,1851,727,1871,684,1885,639,1900,552,1904,486,1909,487,1906,553,1890,640,1876,686,1856,729,1829,768,1794,801,1765,818,1739,829,1714,833,1690,833,1638,821,1576,801,1561,794,1551,786,1528,769,1499,757"/>
+<area shape="rect" id="Node000029" href="$d2/d8d/group__UserBoostTCP.html#gad64b1d7881430c9dc278fcab25c7e4a6" title=" " alt="" coords="1609,861,1761,901"/>
+<area shape="poly" id="edge38_Node000028_Node000029" title=" " alt="" coords="1511,752,1531,765,1548,784,1556,803,1563,822,1579,841,1598,853,1595,857,1576,845,1559,825,1551,805,1544,787,1528,769,1508,757"/>
+<area shape="rect" id="Node000030" href="$db/daa/group__UserBoostUDP.html#ga99f955fd99e8c615cf07aa5361078c3b" title=" " alt="" coords="1609,925,1761,965"/>
+<area shape="poly" id="edge39_Node000028_Node000030" title=" " alt="" coords="1515,753,1531,765,1546,783,1553,803,1556,840,1559,876,1566,894,1579,911,1597,925,1594,929,1575,915,1561,897,1553,878,1551,840,1548,804,1541,786,1527,769,1512,757"/>
+<area shape="rect" id="Node000031" href="$d5/da4/classnexilis_1_1NXProtocol.html#a7f48d98a5081e37c9616930a8f932cf1" title=" " alt="" coords="1612,989,1757,1029"/>
+<area shape="poly" id="edge41_Node000028_Node000031" title=" " alt="" coords="1517,753,1531,765,1550,792,1558,819,1559,846,1556,872,1553,898,1554,924,1562,950,1579,975,1601,991,1598,996,1575,979,1557,952,1549,925,1548,898,1551,872,1553,846,1553,820,1545,794,1527,768,1513,757"/>
+<area shape="rect" id="Node000032" href="$d3/d43/group__UserInetTCP.html#ga711d29b0e1d12b1a5733b9b7e943c46f" title=" " alt="" coords="1609,1053,1761,1093"/>
+<area shape="poly" id="edge42_Node000028_Node000032" title=" " alt="" coords="1517,753,1531,765,1554,800,1563,835,1562,870,1556,905,1550,938,1549,972,1557,1006,1579,1040,1598,1054,1594,1058,1575,1043,1553,1008,1544,973,1545,938,1551,904,1556,870,1557,836,1549,802,1527,768,1514,757"/>
+<area shape="rect" id="Node000033" href="$d6/df2/group__UserInetUDP.html#gab9d1020d0109228f277f3a6261aac652" title=" " alt="" coords="1609,1117,1761,1157"/>
+<area shape="poly" id="edge43_Node000028_Node000033" title=" " alt="" coords="1518,753,1531,765,1547,787,1558,809,1567,852,1564,895,1556,937,1547,978,1545,1020,1553,1062,1564,1082,1579,1103,1598,1118,1594,1123,1575,1107,1559,1085,1548,1063,1539,1020,1542,978,1551,936,1559,894,1562,852,1553,811,1543,790,1527,768,1514,757"/>
+<area shape="rect" id="Node000034" href="$d5/d20/group__UserUnixDgram.html#gafd2d99a4d3b410b2a01010744b270473" title=" " alt="" coords="1609,683,1761,723"/>
+<area shape="poly" id="edge44_Node000028_Node000034" title=" " alt="" coords="1519,720,1595,711,1595,716,1519,726"/>
+<area shape="rect" id="Node000035" href="$db/d8a/group__UserUnixStream.html#gaaf38268746172416550eaaed936fe794" title=" " alt="" coords="1609,747,1761,787"/>
+<area shape="poly" id="edge45_Node000028_Node000035" title=" " alt="" coords="1519,744,1595,753,1595,758,1519,749"/>
+<area shape="poly" id="edge49_Node000036_Node000008" title=" " alt="" coords="1258,673,1273,685,1291,712,1299,738,1300,765,1297,791,1295,817,1296,842,1303,867,1321,893,1337,906,1334,910,1317,896,1298,870,1290,843,1289,817,1292,790,1295,765,1294,739,1286,714,1269,688,1255,677"/>
+<area shape="poly" id="edge50_Node000036_Node000028" title=" " alt="" coords="1233,672,1271,684,1347,708,1346,713,1270,689,1231,677"/>
+<area shape="rect" id="Node000037" href="$db/d96/classnexilis_1_1server_1_1RoomStorage.html#a1a34d89eff94828154b7bb44e545dcc6" title=" " alt="" coords="1319,843,1529,883"/>
+<area shape="poly" id="edge47_Node000036_Node000037" title=" " alt="" coords="1256,673,1273,685,1287,703,1294,722,1297,758,1300,794,1307,812,1321,829,1325,833,1322,837,1317,832,1302,814,1295,796,1292,759,1289,723,1282,706,1269,689,1253,677"/>
+<area shape="rect" id="Node000038" href="$da/de9/classnexilis_1_1server_1_1ClientStorage.html#acdb61fe86e1f6a500b143675bd774503" title="Retain the returned handle throughout the operation on the user." alt="" coords="1319,779,1529,819"/>
+<area shape="poly" id="edge48_Node000036_Node000038" title=" " alt="" coords="1253,673,1272,685,1290,705,1297,726,1304,746,1320,765,1328,770,1324,774,1317,769,1300,748,1292,728,1285,708,1269,689,1250,677"/>
+<area shape="rect" id="Node000040" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#a68409cb1a072641188aa5b1053c81fbc" title="Send warning message." alt="" coords="1341,69,1507,109"/>
+<area shape="poly" id="edge52_Node000039_Node000040" title=" " alt="" coords="1242,295,1269,279,1284,261,1291,242,1293,202,1294,161,1301,140,1317,120,1327,111,1331,115,1321,123,1306,142,1299,162,1298,202,1296,243,1288,263,1272,283,1245,300"/>
+</map>

@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.9-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.10-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -76,6 +76,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="../../dd/d9e/classnexilis_1_1server_1_1ClientStorage-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">nexilis::server::ClientStorage Class Reference</div></div>
 </div><!--header-->
@@ -108,6 +109,11 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ae358e954fbc75f4c9917a2c98af9a854"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b9bf413dc0e0c1d9a4b559c84a95362" id="r_a9b9bf413dc0e0c1d9a4b559c84a95362"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#a9b9bf413dc0e0c1d9a4b559c84a95362">clear</a> ()</td></tr>
 <tr class="separator:a9b9bf413dc0e0c1d9a4b559c84a95362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a67f4b3389f01ff944d83084b6f8183db" id="r_a67f4b3389f01ff944d83084b6f8183db"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#a67f4b3389f01ff944d83084b6f8183db">maximumClients</a> = <a class="el" href="../../d8/d34/namespacenexilis.html#a14d00d572ca514d2555238e30e065ce1">NEXILIS_DEFAULT_MAX_CLIENTS</a></td></tr>
+<tr class="separator:a67f4b3389f01ff944d83084b6f8183db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Static lifetime for the clients in the server context. </p>
@@ -144,12 +150,15 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   30</span>    <span class="keywordflow">if</span> (!client)</div>
 <div class="line"><span class="lineno">   31</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   32</span>    std::lock_guard lock(m_mutex);</div>
-<div class="line"><span class="lineno">   33</span>    <span class="keywordflow">if</span> (std::any_of(m_clients.begin(), m_clients.end(), [&amp;](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; existing)</div>
-<div class="line"><span class="lineno">   34</span>                    { return existing-&gt;getId() == client-&gt;getId(); }))</div>
-<div class="line"><span class="lineno">   35</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   36</span>    m_clients.emplace_back(std::move(client));</div>
-<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   38</span>}</div>
+<div class="line"><span class="lineno">   33</span>    <span class="keywordflow">if</span> (m_clients.size() &gt;= <a class="code hl_variable" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#a67f4b3389f01ff944d83084b6f8183db">maximumClients</a>)</div>
+<div class="line"><span class="lineno">   34</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">if</span> (std::any_of(m_clients.begin(), m_clients.end(), [&amp;](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; existing)</div>
+<div class="line"><span class="lineno">   36</span>                    { return existing-&gt;getId() == client-&gt;getId(); }))</div>
+<div class="line"><span class="lineno">   37</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   38</span>    m_clients.emplace_back(std::move(client));</div>
+<div class="line"><span class="lineno">   39</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   40</span>}</div>
+<div class="ttc" id="aclassnexilis_1_1server_1_1ClientStorage_html_a67f4b3389f01ff944d83084b6f8183db"><div class="ttname"><a href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#a67f4b3389f01ff944d83084b6f8183db">nexilis::server::ClientStorage::maximumClients</a></div><div class="ttdeci">static constexpr std::size_t maximumClients</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d77/client__storage_8hh_source.html#l00033">client_storage.hh:33</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -186,17 +195,17 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d56/client__storage_8cc_source.html#l00070">70</a> of file <a class="el" href="../../d6/d56/client__storage_8cc_source.html">client_storage.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   71</span>{</div>
-<div class="line"><span class="lineno">   72</span>    std::vector&lt;std::shared_ptr&lt;User&gt;&gt; removed;</div>
-<div class="line"><span class="lineno">   73</span>    {</div>
-<div class="line"><span class="lineno">   74</span>        std::lock_guard lock(m_mutex);</div>
-<div class="line"><span class="lineno">   75</span>        removed.swap(m_clients);</div>
-<div class="line"><span class="lineno">   76</span>    }</div>
-<div class="line"><span class="lineno">   77</span>    <span class="comment">// Explicitly release users after unlocking: callback destructors may</span></div>
-<div class="line"><span class="lineno">   78</span>    <span class="comment">// reenter the registry.</span></div>
-<div class="line"><span class="lineno">   79</span>    removed.clear();</div>
-<div class="line"><span class="lineno">   80</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d56/client__storage_8cc_source.html#l00072">72</a> of file <a class="el" href="../../d6/d56/client__storage_8cc_source.html">client_storage.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   73</span>{</div>
+<div class="line"><span class="lineno">   74</span>    std::vector&lt;std::shared_ptr&lt;User&gt;&gt; removed;</div>
+<div class="line"><span class="lineno">   75</span>    {</div>
+<div class="line"><span class="lineno">   76</span>        std::lock_guard lock(m_mutex);</div>
+<div class="line"><span class="lineno">   77</span>        removed.swap(m_clients);</div>
+<div class="line"><span class="lineno">   78</span>    }</div>
+<div class="line"><span class="lineno">   79</span>    <span class="comment">// Explicitly release users after unlocking: callback destructors may</span></div>
+<div class="line"><span class="lineno">   80</span>    <span class="comment">// reenter the registry.</span></div>
+<div class="line"><span class="lineno">   81</span>    removed.clear();</div>
+<div class="line"><span class="lineno">   82</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -224,11 +233,11 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d56/client__storage_8cc_source.html#l00040">40</a> of file <a class="el" href="../../d6/d56/client__storage_8cc_source.html">client_storage.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   41</span>{</div>
-<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#acdb61fe86e1f6a500b143675bd774503">getClientById</a>(<span class="keywordtype">id</span>) != <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   43</span>}</div>
-<div class="ttc" id="aclassnexilis_1_1server_1_1ClientStorage_html_acdb61fe86e1f6a500b143675bd774503"><div class="ttname"><a href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#acdb61fe86e1f6a500b143675bd774503">nexilis::server::ClientStorage::getClientById</a></div><div class="ttdeci">static std::shared_ptr&lt; User &gt; getClientById(uint64_t id)</div><div class="ttdoc">Retain the returned handle throughout the operation on the user.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d56/client__storage_8cc_source.html#l00051">client_storage.cc:51</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d56/client__storage_8cc_source.html#l00042">42</a> of file <a class="el" href="../../d6/d56/client__storage_8cc_source.html">client_storage.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   43</span>{</div>
+<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#acdb61fe86e1f6a500b143675bd774503">getClientById</a>(<span class="keywordtype">id</span>) != <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   45</span>}</div>
+<div class="ttc" id="aclassnexilis_1_1server_1_1ClientStorage_html_acdb61fe86e1f6a500b143675bd774503"><div class="ttname"><a href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#acdb61fe86e1f6a500b143675bd774503">nexilis::server::ClientStorage::getClientById</a></div><div class="ttdeci">static std::shared_ptr&lt; User &gt; getClientById(uint64_t id)</div><div class="ttdoc">Retain the returned handle throughout the operation on the user.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d56/client__storage_8cc_source.html#l00053">client_storage.cc:53</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -267,32 +276,58 @@ Here is the call graph for this function:</div>
 
 <p>Snapshot of owning handles. This does not lock mutable user fields. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d56/client__storage_8cc_source.html#l00045">45</a> of file <a class="el" href="../../d6/d56/client__storage_8cc_source.html">client_storage.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   46</span>{</div>
-<div class="line"><span class="lineno">   47</span>    std::lock_guard lock(m_mutex);</div>
-<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">return</span> m_clients;</div>
-<div class="line"><span class="lineno">   49</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d56/client__storage_8cc_source.html#l00047">47</a> of file <a class="el" href="../../d6/d56/client__storage_8cc_source.html">client_storage.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   48</span>{</div>
+<div class="line"><span class="lineno">   49</span>    std::lock_guard lock(m_mutex);</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">return</span> m_clients;</div>
+<div class="line"><span class="lineno">   51</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../da/de9/classnexilis_1_1server_1_1ClientStorage_aaea84dd6f0296109d1c006d421650dc2_icgraph.png" border="0" usemap="#ada/de9/classnexilis_1_1server_1_1ClientStorage_aaea84dd6f0296109d1c006d421650dc2_icgraph" alt=""/></div>
 <map name="ada/de9/classnexilis_1_1server_1_1ClientStorage_aaea84dd6f0296109d1c006d421650dc2_icgraph" id="ada/de9/classnexilis_1_1server_1_1ClientStorage_aaea84dd6f0296109d1c006d421650dc2_icgraph">
-<area shape="rect" title="Snapshot of owning handles. This does not lock mutable user fields." alt="" coords="960,69,1171,109"/>
-<area shape="rect" href="../../d6/dc0/classnexilis_1_1server_1_1ServerJson.html#a644be521790ad79ccf5752920e3c9e56" title="Get data about the clients in the server." alt="" coords="721,69,912,109"/>
-<area shape="poly" title=" " alt="" coords="946,92,912,92,912,87,946,87"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a0ba5ed7b2f74ac9315bd2cadfd343580" title=" " alt="" coords="480,5,673,45"/>
-<area shape="poly" title=" " alt="" coords="727,68,651,48,653,43,728,63"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#aa80de18cfcf90a60cddef6d19e10abf4" title=" " alt="" coords="480,69,673,109"/>
-<area shape="poly" title=" " alt="" coords="707,92,674,92,674,87,707,87"/>
-<area shape="rect" href="../../d6/dc0/classnexilis_1_1server_1_1ServerJson.html#afbd6e9270f8afc7020939ea5e41505de" title="Return all data from the server." alt="" coords="481,133,672,173"/>
-<area shape="poly" title=" " alt="" coords="728,116,653,136,651,131,727,110"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a205831cf4657d0a80391beba1cfd953d" title=" " alt="" coords="243,37,432,77"/>
-<area shape="poly" title=" " alt="" coords="467,43,433,47,432,42,466,37"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a523ea35f6efde10413e9718e50a96e70" title=" " alt="" coords="5,5,195,45"/>
-<area shape="poly" title=" " alt="" coords="229,45,194,41,195,35,230,40"/>
-<area shape="rect" href="../../d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="15,69,185,109"/>
-<area shape="poly" title=" " alt="" coords="230,75,186,80,185,75,229,69"/>
-<area shape="poly" title=" " alt="" coords="466,77,432,73,433,67,467,72"/>
+<area shape="rect" title="Snapshot of owning handles. This does not lock mutable user fields." alt="" coords="1028,293,1239,333"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a62494bb2dd0c80e8e20e33aa712748d1" title="Drop every active datagram transport of the given kind on stop." alt="" coords="758,149,975,189"/>
+<area shape="poly" title=" " alt="" coords="1090,288,1038,254,979,220,918,192,921,187,981,215,1041,249,1093,283"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a1579630f6d5ce660dd271816fa0441e6" title="Cancel remaining handshakes when the protocol stops." alt="" coords="758,229,975,269"/>
+<area shape="poly" title=" " alt="" coords="1035,293,950,272,951,267,1037,287"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a1b0ce5181d4092e523452f050874c1d7" title="Expire datagram transports that have been idle for too long." alt="" coords="753,293,980,333"/>
+<area shape="poly" title=" " alt="" coords="1014,316,980,316,980,311,1014,311"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#ac7eb5c5c9a1c9637ab263c1020622bdf" title="Expire handshakes that never opened a session." alt="" coords="758,357,975,397"/>
+<area shape="poly" title=" " alt="" coords="1037,339,951,360,950,355,1035,334"/>
+<area shape="rect" href="../../d6/dc0/classnexilis_1_1server_1_1ServerJson.html#a644be521790ad79ccf5752920e3c9e56" title="Get data about the clients in the server." alt="" coords="771,421,962,461"/>
+<area shape="poly" title=" " alt="" coords="1096,344,1043,379,981,412,950,424,948,419,979,407,1040,374,1093,339"/>
+<area shape="rect" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a9f160f664a411ee41ab01634930ebe3f" title="NXProtocol::stop() implementation." alt="" coords="525,69,693,109"/>
+<area shape="poly" title=" " alt="" coords="787,148,673,112,675,107,789,142"/>
+<area shape="rect" href="../../d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#abc53a16b7207a2992af5e36f7d18b0cd" title="NXProtocol::stop() implementation." alt="" coords="521,149,696,189"/>
+<area shape="poly" title=" " alt="" coords="744,172,696,172,696,167,744,167"/>
+<area shape="rect" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#abeef8102fec80fb7e42fe3745083a21f" title="Move assignment operator." alt="" coords="250,5,457,45"/>
+<area shape="poly" title=" " alt="" coords="514,68,433,48,434,43,515,63"/>
+<area shape="rect" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a50bf92a30646e072df669e53bacfeea0" title="Destructor." alt="" coords="243,69,464,109"/>
+<area shape="poly" title=" " alt="" coords="511,92,464,92,464,87,511,87"/>
+<area shape="rect" href="../../d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#a31d5dc5934fcde97b0e6c9afa4ea755a" title="Move assignment operator." alt="" coords="266,133,441,173"/>
+<area shape="poly" title=" " alt="" coords="507,166,441,161,441,156,508,160"/>
+<area shape="rect" href="../../d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#a4642f3d0d8ed9baf31087321b6e0948b" title="Destructor." alt="" coords="259,197,448,237"/>
+<area shape="poly" title=" " alt="" coords="508,191,449,202,448,197,507,186"/>
+<area shape="rect" href="../../d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#a25730adef60b0adcd5a4d1d408d02244" title="NXProtocol::stop() implementation." alt="" coords="521,261,696,301"/>
+<area shape="poly" title=" " alt="" coords="745,267,696,273,696,268,744,262"/>
+<area shape="rect" href="../../d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#a7523a615b69382cd9fd719034423d13e" title="Move assignment operator." alt="" coords="266,261,441,301"/>
+<area shape="poly" title=" " alt="" coords="508,284,441,284,441,279,508,279"/>
+<area shape="rect" href="../../d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#a82fccf956c3f0110a339642081ff9c68" title="Destructor." alt="" coords="263,325,444,365"/>
+<area shape="poly" title=" " alt="" coords="515,307,434,328,433,323,514,302"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a0ba5ed7b2f74ac9315bd2cadfd343580" title=" " alt="" coords="512,357,705,397"/>
+<area shape="poly" title=" " alt="" coords="772,421,689,400,690,395,773,415"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#aa80de18cfcf90a60cddef6d19e10abf4" title=" " alt="" coords="512,421,705,461"/>
+<area shape="poly" title=" " alt="" coords="757,444,706,444,706,439,757,439"/>
+<area shape="rect" href="../../d6/dc0/classnexilis_1_1server_1_1ServerJson.html#afbd6e9270f8afc7020939ea5e41505de" title="Return all data from the server." alt="" coords="513,485,704,525"/>
+<area shape="poly" title=" " alt="" coords="773,467,690,488,689,483,772,462"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a205831cf4657d0a80391beba1cfd953d" title=" " alt="" coords="259,389,448,429"/>
+<area shape="poly" title=" " alt="" coords="499,394,449,400,448,395,498,388"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a523ea35f6efde10413e9718e50a96e70" title=" " alt="" coords="5,357,195,397"/>
+<area shape="poly" title=" " alt="" coords="245,398,194,392,195,387,246,393"/>
+<area shape="rect" href="../../d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="15,421,185,461"/>
+<area shape="poly" title=" " alt="" coords="245,426,186,433,185,428,245,420"/>
+<area shape="poly" title=" " alt="" coords="498,430,448,424,449,419,499,425"/>
 </map>
 </div>
 
@@ -324,122 +359,148 @@ Here is the caller graph for this function:</div>
 
 <p>Retain the returned handle throughout the operation on the user. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d56/client__storage_8cc_source.html#l00051">51</a> of file <a class="el" href="../../d6/d56/client__storage_8cc_source.html">client_storage.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   52</span>{</div>
-<div class="line"><span class="lineno">   53</span>    std::lock_guard lock(m_mutex);</div>
-<div class="line"><span class="lineno">   54</span>    <span class="keyword">auto</span> it = std::find_if(m_clients.begin(), m_clients.end(),</div>
-<div class="line"><span class="lineno">   55</span>                           [<span class="keywordtype">id</span>](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; client)</div>
-<div class="line"><span class="lineno">   56</span>                           { return client-&gt;getId() == id; });</div>
-<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">return</span> it == m_clients.end() ? nullptr : *it;</div>
-<div class="line"><span class="lineno">   58</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d56/client__storage_8cc_source.html#l00053">53</a> of file <a class="el" href="../../d6/d56/client__storage_8cc_source.html">client_storage.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   54</span>{</div>
+<div class="line"><span class="lineno">   55</span>    std::lock_guard lock(m_mutex);</div>
+<div class="line"><span class="lineno">   56</span>    <span class="keyword">auto</span> it = std::find_if(m_clients.begin(), m_clients.end(),</div>
+<div class="line"><span class="lineno">   57</span>                           [<span class="keywordtype">id</span>](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; client)</div>
+<div class="line"><span class="lineno">   58</span>                           { return client-&gt;getId() == id; });</div>
+<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">return</span> it == m_clients.end() ? nullptr : *it;</div>
+<div class="line"><span class="lineno">   60</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../da/de9/classnexilis_1_1server_1_1ClientStorage_acdb61fe86e1f6a500b143675bd774503_icgraph.png" border="0" usemap="#ada/de9/classnexilis_1_1server_1_1ClientStorage_acdb61fe86e1f6a500b143675bd774503_icgraph" alt=""/></div>
 <map name="ada/de9/classnexilis_1_1server_1_1ClientStorage_acdb61fe86e1f6a500b143675bd774503_icgraph" id="ada/de9/classnexilis_1_1server_1_1ClientStorage_acdb61fe86e1f6a500b143675bd774503_icgraph">
-<area shape="rect" title="Retain the returned handle throughout the operation on the user." alt="" coords="1285,241,1496,281"/>
-<area shape="rect" href="../../d1/d01/classnexilis_1_1server_1_1Room.html#a8be5c2fb690749127fd5fc2530b9e3d6" title=" " alt="" coords="1052,5,1212,45"/>
-<area shape="poly" title=" " alt="" coords="1371,230,1349,191,1319,145,1281,99,1236,60,1211,46,1214,41,1239,55,1284,95,1323,142,1354,188,1376,228"/>
-<area shape="rect" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#ad3a84147044005a57768f74ab5d01438" title=" " alt="" coords="1027,69,1237,109"/>
-<area shape="poly" title=" " alt="" coords="1362,233,1307,177,1273,148,1236,124,1211,112,1213,107,1239,119,1276,144,1311,173,1366,229"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#acc25c71aa48b549e2626f4cf5431ae14" title=" " alt="" coords="1037,133,1227,173"/>
-<area shape="poly" title=" " alt="" coords="1334,238,1236,194,1189,176,1191,171,1238,190,1336,233"/>
-<area shape="rect" href="../../d6/db8/classnexilis_1_1server_1_1MessageHandler.html#a5f33dc0df903c132243ed14c13cf8826" title=" " alt="" coords="1042,1719,1222,1759"/>
-<area shape="poly" title=" " alt="" coords="1391,295,1376,586,1345,1032,1324,1260,1300,1462,1272,1616,1256,1669,1239,1702,1217,1721,1214,1717,1235,1698,1251,1667,1266,1615,1295,1461,1319,1259,1340,1032,1370,586,1385,295"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#ad0a908b618c8d6be35139158efc6dfb6" title=" " alt="" coords="764,164,979,204"/>
-<area shape="poly" title=" " alt="" coords="1271,245,1237,240,978,202,979,197,1238,235,1272,240"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a2ab39913db19a51bb2358d6684b1749a" title=" " alt="" coords="768,228,975,268"/>
-<area shape="poly" title=" " alt="" coords="1271,261,975,253,975,248,1271,256"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#af690c313968733268b9bbec9d5443425" title=" " alt="" coords="768,292,975,332"/>
-<area shape="poly" title=" " alt="" coords="1272,276,975,305,975,299,1271,270"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#ae1b6f4a7a7b7a3aa79c34d492d2cd786" title="Send message in room context." alt="" coords="1037,852,1227,892"/>
-<area shape="poly" title=" " alt="" coords="1378,295,1144,853,1139,851,1373,293"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a2b966ab982b96ce50f2cabb471bd7b56" title=" " alt="" coords="501,1661,695,1701"/>
-<area shape="poly" title=" " alt="" coords="1387,296,1345,567,1308,766,1261,984,1204,1201,1172,1303,1138,1398,1102,1483,1064,1556,1023,1615,980,1658,947,1679,912,1694,874,1704,835,1710,759,1711,690,1704,690,1699,759,1706,835,1704,873,1699,910,1689,945,1674,977,1654,1019,1612,1059,1554,1097,1481,1133,1396,1167,1301,1199,1199,1255,983,1302,765,1340,566,1382,295"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a29b5e4bb44e4ee840033319acfee74f8" title=" " alt="" coords="501,112,695,152"/>
-<area shape="poly" title=" " alt="" coords="1023,152,695,138,695,133,1023,146"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a205831cf4657d0a80391beba1cfd953d" title=" " alt="" coords="243,847,432,887"/>
-<area shape="poly" title=" " alt="" coords="500,161,482,176,466,200,451,231,423,310,401,407,382,512,355,713,343,847,338,846,350,713,376,511,395,406,418,309,446,229,461,197,478,173,496,157"/>
-<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a523ea35f6efde10413e9718e50a96e70" title=" " alt="" coords="5,815,195,855"/>
-<area shape="poly" title=" " alt="" coords="229,855,194,850,195,845,230,849"/>
-<area shape="rect" href="../../d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="15,879,185,919"/>
-<area shape="poly" title=" " alt="" coords="230,884,186,890,185,885,229,879"/>
-<area shape="poly" title=" " alt="" coords="750,169,682,169,610,177,575,186,542,199,510,216,482,238,465,257,450,284,422,354,399,441,381,537,355,722,343,846,338,846,350,721,375,536,394,440,417,353,445,282,461,254,478,234,507,212,539,194,574,181,609,172,682,164,750,164"/>
-<area shape="poly" title=" " alt="" coords="754,229,686,225,613,231,578,239,543,250,511,266,482,287,466,305,451,329,425,393,402,472,383,560,356,730,343,847,338,846,351,730,378,559,397,471,420,391,447,326,462,302,478,283,508,262,541,245,576,234,612,226,686,220,755,224"/>
-<area shape="poly" title=" " alt="" coords="782,292,710,282,631,281,590,286,552,296,515,311,482,333,467,348,453,370,427,428,404,501,386,581,358,738,344,847,338,846,353,737,380,580,399,499,422,426,448,367,463,345,478,329,512,306,550,290,589,280,630,275,711,276,783,287"/>
-<area shape="poly" title=" " alt="" coords="1125,838,1108,703,1078,517,1058,422,1034,336,1007,266,992,238,977,218,962,206,966,202,981,214,997,235,1012,263,1039,335,1063,421,1083,516,1114,703,1130,838"/>
-<area shape="poly" title=" " alt="" coords="1124,839,1106,716,1074,548,1054,464,1031,387,1005,324,977,282,962,270,966,266,981,278,1009,322,1036,385,1059,463,1079,547,1111,715,1129,838"/>
-<area shape="poly" title=" " alt="" coords="1128,838,1122,744,1115,682,1102,614,1083,545,1056,475,1021,410,977,353,952,334,955,330,981,349,1026,407,1061,473,1088,543,1107,613,1120,681,1128,743,1133,838"/>
-<area shape="rect" href="../../df/d3b/classnexilis_1_1server_1_1Movement.html#a2c95a2b92dda15de1a7d0b0586219909" title=" " alt="" coords="775,1287,967,1327"/>
-<area shape="poly" title=" " alt="" coords="1130,906,1117,980,1091,1077,1072,1129,1047,1180,1017,1227,980,1270,953,1289,950,1284,977,1266,1013,1224,1043,1177,1067,1127,1086,1075,1112,979,1124,905"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a97175caef23eb9fad365629c3d78e107" title=" " alt="" coords="487,1229,709,1269"/>
-<area shape="poly" title=" " alt="" coords="1130,906,1118,976,1093,1064,1073,1110,1048,1154,1018,1193,980,1226,960,1236,933,1244,865,1254,786,1257,709,1257,709,1252,786,1252,864,1248,932,1239,958,1231,977,1222,1014,1190,1044,1151,1068,1108,1088,1063,1113,975,1125,905"/>
-<area shape="rect" href="../../df/d3b/classnexilis_1_1server_1_1Movement.html#aa2e2a88fff2507cdec3151cb8f2c0bfe" title=" " alt="" coords="775,1401,967,1441"/>
-<area shape="poly" title=" " alt="" coords="1133,906,1127,999,1119,1060,1106,1126,1086,1195,1060,1263,1025,1327,981,1385,955,1403,952,1399,977,1381,1021,1324,1055,1261,1081,1193,1100,1125,1113,1059,1122,998,1128,905"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#abb949f0528da98933c7ed71b1b7c8913" title=" " alt="" coords="487,1341,709,1381"/>
-<area shape="poly" title=" " alt="" coords="1134,906,1130,996,1122,1054,1110,1116,1091,1179,1063,1239,1027,1295,980,1341,960,1352,934,1360,865,1369,787,1372,710,1371,710,1365,787,1367,865,1364,933,1354,958,1347,977,1337,1023,1291,1059,1237,1086,1177,1105,1115,1117,1053,1124,996,1129,906"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#af3e224168bd0155316f390244bcfe54e" title=" " alt="" coords="483,1405,713,1445"/>
-<area shape="poly" title=" " alt="" coords="1130,906,1114,1030,1084,1197,1064,1281,1040,1356,1012,1416,997,1439,980,1456,959,1466,929,1472,854,1472,769,1462,689,1448,690,1443,770,1457,854,1467,929,1466,957,1461,977,1451,993,1435,1008,1413,1035,1354,1059,1279,1079,1196,1109,1029,1125,905"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a6815bcee9409ea91a5ec13a9b5481688" title=" " alt="" coords="501,1469,695,1509"/>
-<area shape="poly" title=" " alt="" coords="1130,906,1115,1034,1085,1208,1065,1296,1041,1374,1013,1438,997,1462,980,1479,945,1502,905,1518,864,1527,821,1530,738,1525,666,1512,667,1507,739,1520,821,1525,863,1521,904,1513,942,1498,977,1475,993,1458,1008,1435,1036,1373,1060,1294,1080,1207,1109,1034,1125,906"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a8cb5e91b231801378be77af6b11dabba" title=" " alt="" coords="501,1533,695,1573"/>
-<area shape="poly" title=" " alt="" coords="1131,906,1117,1044,1089,1235,1069,1331,1045,1419,1015,1489,999,1516,980,1535,946,1558,908,1575,868,1584,826,1589,745,1587,674,1576,674,1571,746,1582,826,1584,867,1579,906,1569,944,1554,977,1531,994,1512,1011,1486,1040,1417,1064,1330,1084,1234,1112,1044,1125,905"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a1bd1a413de19b5e2727b3fd1d9bcc347" title=" " alt="" coords="501,1597,695,1637"/>
-<area shape="poly" title=" " alt="" coords="1131,906,1120,1055,1093,1264,1073,1370,1048,1466,1018,1544,1000,1573,980,1595,947,1619,910,1635,870,1646,829,1651,749,1650,677,1640,678,1635,749,1645,829,1646,869,1640,908,1630,944,1614,977,1591,996,1570,1013,1542,1043,1465,1068,1369,1088,1263,1114,1055,1126,905"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a72dfb4f3c457e4d857a91d0587daea58" title=" " alt="" coords="497,343,699,383"/>
-<area shape="poly" title=" " alt="" coords="1127,839,1119,756,1110,704,1096,648,1077,590,1051,535,1018,483,977,439,947,417,913,399,878,385,841,375,767,363,699,359,699,354,768,357,842,369,879,380,916,394,949,412,980,435,1022,480,1056,532,1082,588,1101,646,1115,703,1124,756,1132,838"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a8df9e4f9dcb8c7657b8cd669cfb87b9f" title=" " alt="" coords="480,407,716,447"/>
-<area shape="poly" title=" " alt="" coords="1125,839,1114,765,1089,671,1070,621,1045,574,1015,530,977,493,948,473,917,457,850,435,781,424,716,421,716,415,782,418,851,430,919,452,951,468,980,489,1019,527,1050,571,1075,619,1094,669,1119,764,1131,838"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a7702a108e1318abd0fb19b32529b4bb8" title=" " alt="" coords="501,471,695,511"/>
-<area shape="poly" title=" " alt="" coords="1123,839,1110,774,1083,692,1064,650,1040,610,1011,573,977,542,945,522,911,507,837,488,763,481,695,482,695,476,763,475,838,482,912,502,948,518,980,538,1015,569,1045,607,1069,648,1088,690,1115,773,1129,838"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#ac290394beb932c9c173f09b69f724d86" title=" " alt="" coords="501,535,695,575"/>
-<area shape="poly" title=" " alt="" coords="1122,839,1106,781,1078,711,1059,675,1036,641,1009,610,977,585,945,567,910,554,836,539,762,536,695,540,695,535,762,530,836,533,911,549,947,562,980,580,1012,606,1040,637,1063,672,1083,708,1111,780,1127,838"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a59c439e5e3875bb02dc8f086df42f226" title=" " alt="" coords="501,599,695,639"/>
-<area shape="poly" title=" " alt="" coords="1120,840,1102,788,1073,726,1055,696,1032,667,1007,642,977,621,941,604,901,593,861,587,820,584,741,589,673,601,672,596,740,584,820,579,861,581,903,588,942,599,980,616,1010,637,1036,663,1059,693,1078,724,1107,786,1125,838"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a179b17009debe269a88815c62704617d" title=" " alt="" coords="501,663,695,703"/>
-<area shape="poly" title=" " alt="" coords="1117,840,1098,794,1069,741,1028,690,1004,668,977,650,948,637,922,630,899,628,876,630,826,640,764,651,678,665,678,660,764,645,825,635,875,625,899,623,923,625,950,632,980,646,1008,664,1032,686,1073,738,1103,792,1122,838"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#aa29db2fd95c0aa075d254f73e2207c4c" title=" " alt="" coords="775,660,968,700"/>
-<area shape="poly" title=" " alt="" coords="1107,842,1052,777,1017,743,977,714,954,703,956,698,980,710,1020,739,1056,774,1111,839"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a088623a3b46479acc62adb59af07c217" title=" " alt="" coords="775,724,968,764"/>
-<area shape="poly" title=" " alt="" coords="1091,846,1039,811,978,778,947,767,949,762,980,774,1041,807,1094,842"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a7bcf6c1c97e41879c205761652523e43" title=" " alt="" coords="770,788,973,828"/>
-<area shape="poly" title=" " alt="" coords="1036,851,953,831,954,825,1037,846"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a200e4503dbb419dba8d77ffbc75d4603" title=" " alt="" coords="775,852,968,892"/>
-<area shape="poly" title=" " alt="" coords="1024,875,968,875,968,869,1024,869"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a8f483ee55df5538051cc1f037fe295b4" title=" " alt="" coords="775,916,968,956"/>
-<area shape="poly" title=" " alt="" coords="1037,898,954,919,953,913,1036,893"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a90eb595fb37d7ddef4e4ad2e5447faff" title=" " alt="" coords="767,980,975,1020"/>
-<area shape="poly" title=" " alt="" coords="1094,902,1041,937,980,970,949,982,947,977,978,966,1039,933,1091,898"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a87d6805bee7b08064fbd10a328df579f" title=" " alt="" coords="770,1044,973,1084"/>
-<area shape="poly" title=" " alt="" coords="1111,905,1056,970,1020,1005,980,1034,956,1046,954,1041,977,1030,1017,1001,1052,967,1107,902"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a02f82557e240dadd7338438092a85ed1" title=" " alt="" coords="775,1108,968,1148"/>
-<area shape="poly" title=" " alt="" coords="1120,906,1098,949,1068,1001,1028,1053,980,1098,960,1110,957,1106,977,1094,1024,1050,1063,998,1094,947,1115,904"/>
-<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#aba19bd1310d901fa8a7247da19e32974" title=" " alt="" coords="775,1172,968,1212"/>
-<area shape="poly" title=" " alt="" coords="1125,906,1107,962,1078,1031,1036,1101,1010,1134,980,1162,962,1174,959,1170,977,1158,1006,1130,1032,1098,1073,1028,1102,960,1120,904"/>
-<area shape="poly" title=" " alt="" coords="762,1286,693,1272,694,1267,763,1281"/>
-<area shape="poly" title=" " alt="" coords="513,1226,478,1201,446,1162,419,1120,396,1075,378,1030,352,947,339,887,344,886,357,946,383,1028,401,1073,423,1117,450,1159,482,1197,516,1221"/>
-<area shape="poly" title=" " alt="" coords="766,1401,689,1384,690,1379,767,1396"/>
-<area shape="poly" title=" " alt="" coords="541,1336,507,1313,478,1283,444,1231,416,1175,393,1118,374,1060,350,958,338,887,344,886,355,957,379,1059,398,1116,421,1173,449,1229,482,1280,511,1309,544,1332"/>
-<area shape="poly" title=" " alt="" coords="483,1399,478,1395,451,1355,426,1296,404,1224,385,1145,355,993,339,887,344,887,360,992,390,1144,409,1223,431,1294,456,1352,482,1392,486,1396"/>
-<area shape="poly" title=" " alt="" coords="488,1467,478,1459,463,1439,448,1413,422,1346,400,1265,381,1176,353,1004,338,887,343,886,358,1003,386,1175,405,1263,427,1345,453,1411,467,1436,482,1456,491,1463"/>
-<area shape="poly" title=" " alt="" coords="487,1531,478,1523,461,1501,446,1472,419,1397,396,1305,377,1206,350,1015,338,887,343,887,355,1014,382,1205,401,1304,424,1395,451,1470,466,1498,482,1520,491,1527"/>
-<area shape="poly" title=" " alt="" coords="487,1596,478,1587,460,1563,443,1530,415,1447,391,1346,373,1236,348,1026,337,887,342,887,353,1025,378,1235,397,1345,420,1445,448,1528,465,1560,482,1584,491,1592"/>
-<area shape="poly" title=" " alt="" coords="488,391,482,397,438,450,404,511,379,576,362,642,351,706,344,763,341,846,336,846,339,763,345,705,357,641,374,575,399,509,434,447,478,393,484,387"/>
-<area shape="poly" title=" " alt="" coords="487,457,482,461,443,506,411,558,387,613,370,670,349,774,342,847,337,846,344,773,364,668,382,611,407,555,438,503,478,457,483,453"/>
-<area shape="poly" title=" " alt="" coords="491,518,482,525,447,562,419,604,396,650,378,697,354,784,343,847,338,846,349,783,372,695,391,648,414,602,443,558,478,521,488,513"/>
-<area shape="poly" title=" " alt="" coords="490,582,482,589,452,618,426,651,404,688,386,725,360,795,345,847,340,846,355,793,381,723,399,685,421,648,448,614,478,585,487,578"/>
-<area shape="poly" title=" " alt="" coords="490,647,482,653,456,674,433,699,395,753,366,806,349,848,344,845,362,804,390,751,429,696,453,670,478,649,487,643"/>
-<area shape="poly" title=" " alt="" coords="507,710,481,724,442,753,407,787,355,848,351,845,403,783,439,749,479,719,505,705"/>
-<area shape="poly" title=" " alt="" coords="771,706,596,748,481,780,418,814,366,849,363,844,415,809,479,775,594,743,769,701"/>
-<area shape="poly" title=" " alt="" coords="761,764,627,789,481,823,395,849,393,844,479,817,626,784,760,759"/>
-<area shape="poly" title=" " alt="" coords="756,823,432,859,432,854,756,818"/>
-<area shape="poly" title=" " alt="" coords="761,874,432,870,432,865,761,868"/>
-<area shape="poly" title=" " alt="" coords="761,924,432,882,433,876,761,919"/>
-<area shape="poly" title=" " alt="" coords="753,984,621,959,479,924,384,889,386,884,481,919,622,954,754,979"/>
-<area shape="poly" title=" " alt="" coords="756,1056,691,1046,620,1031,548,1010,479,982,442,961,408,936,356,889,359,885,412,932,445,957,481,978,550,1005,621,1026,692,1041,757,1051"/>
-<area shape="poly" title=" " alt="" coords="761,1130,694,1123,621,1110,547,1088,479,1054,432,1016,394,970,365,924,345,888,350,885,369,922,398,967,436,1012,481,1050,549,1083,622,1105,695,1118,761,1125"/>
-<area shape="poly" title=" " alt="" coords="761,1202,693,1199,619,1189,546,1167,511,1151,478,1131,448,1105,422,1074,400,1040,381,1005,355,938,340,888,346,886,360,936,386,1003,404,1038,426,1071,452,1101,482,1127,513,1147,547,1162,620,1184,693,1194,761,1197"/>
-<area shape="poly" title=" " alt="" coords="487,1660,478,1651,459,1624,441,1589,411,1497,387,1386,369,1266,346,1036,337,887,342,887,351,1036,374,1265,392,1385,416,1496,446,1587,463,1621,482,1648,491,1656"/>
+<area shape="rect" title="Retain the returned handle throughout the operation on the user." alt="" coords="1580,241,1791,281"/>
+<area shape="rect" href="../../d1/d01/classnexilis_1_1server_1_1Room.html#a8be5c2fb690749127fd5fc2530b9e3d6" title=" " alt="" coords="1347,5,1507,45"/>
+<area shape="poly" title=" " alt="" coords="1666,230,1644,191,1613,145,1575,99,1530,60,1506,46,1508,41,1534,55,1579,95,1618,142,1648,188,1671,228"/>
+<area shape="rect" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#ad3a84147044005a57768f74ab5d01438" title=" " alt="" coords="1321,69,1532,109"/>
+<area shape="poly" title=" " alt="" coords="1654,233,1600,181,1566,154,1531,130,1492,112,1495,107,1533,126,1569,150,1603,177,1658,229"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#acc25c71aa48b549e2626f4cf5431ae14" title=" " alt="" coords="1332,184,1521,224"/>
+<area shape="poly" title=" " alt="" coords="1581,241,1517,227,1518,221,1582,236"/>
+<area shape="rect" href="../../d6/db8/classnexilis_1_1server_1_1MessageHandler.html#a5f33dc0df903c132243ed14c13cf8826" title=" " alt="" coords="1337,1008,1517,1048"/>
+<area shape="poly" title=" " alt="" coords="1684,295,1670,445,1642,655,1622,762,1597,861,1568,942,1552,974,1534,998,1518,1011,1515,1007,1530,994,1547,971,1563,940,1592,859,1616,761,1636,654,1665,444,1679,295"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#ad0a908b618c8d6be35139158efc6dfb6" title=" " alt="" coords="1059,235,1273,275"/>
+<area shape="poly" title=" " alt="" coords="1566,262,1273,259,1274,253,1566,257"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a2ab39913db19a51bb2358d6684b1749a" title=" " alt="" coords="1063,299,1269,339"/>
+<area shape="poly" title=" " alt="" coords="1566,277,1270,310,1269,305,1566,272"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#af690c313968733268b9bbec9d5443425" title=" " alt="" coords="1063,363,1269,403"/>
+<area shape="poly" title=" " alt="" coords="1609,288,1533,309,1396,341,1270,366,1269,361,1395,336,1531,304,1608,283"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#ae1b6f4a7a7b7a3aa79c34d492d2cd786" title="Send message in room context." alt="" coords="1332,944,1521,984"/>
+<area shape="poly" title=" " alt="" coords="1674,295,1438,945,1433,943,1669,294"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a2b966ab982b96ce50f2cabb471bd7b56" title=" " alt="" coords="796,139,989,179"/>
+<area shape="poly" title=" " alt="" coords="1647,235,1594,201,1563,186,1531,175,1460,158,1386,146,1312,140,1239,137,1102,139,990,149,990,143,1102,134,1239,131,1312,134,1387,141,1461,153,1533,169,1565,181,1597,197,1650,231"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a29b5e4bb44e4ee840033319acfee74f8" title=" " alt="" coords="796,204,989,244"/>
+<area shape="poly" title=" " alt="" coords="1318,211,990,223,989,218,1318,205"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a205831cf4657d0a80391beba1cfd953d" title=" " alt="" coords="519,900,708,940"/>
+<area shape="poly" title=" " alt="" coords="793,253,777,267,761,289,745,318,717,393,691,484,670,583,637,773,620,900,614,899,632,772,664,582,686,482,712,391,740,316,756,286,773,264,790,249"/>
+<area shape="rect" href="../../da/d15/classnexilis_1_1server_1_1Command.html#a523ea35f6efde10413e9718e50a96e70" title=" " alt="" coords="249,868,438,908"/>
+<area shape="poly" title=" " alt="" coords="505,910,438,902,438,897,505,905"/>
+<area shape="rect" href="../../d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="258,932,429,972"/>
+<area shape="poly" title=" " alt="" coords="505,935,429,945,428,939,505,930"/>
+<area shape="poly" title=" " alt="" coords="1045,271,967,283,887,299,820,320,795,332,776,345,761,363,747,387,719,451,694,530,672,617,638,785,620,900,615,899,633,784,667,616,689,529,714,450,742,385,757,360,773,341,792,327,818,315,886,294,966,278,1045,265"/>
+<area shape="poly" title=" " alt="" coords="1049,318,980,324,908,339,838,366,806,384,776,407,750,435,727,465,688,531,660,603,640,676,628,746,621,809,617,900,612,899,615,809,623,745,635,675,655,601,684,529,722,462,746,431,773,403,803,380,835,361,906,334,980,319,1049,312"/>
+<area shape="poly" title=" " alt="" coords="1049,382,981,388,909,403,838,429,806,448,776,470,731,519,696,577,668,639,648,702,634,764,625,819,618,900,613,899,620,818,629,763,643,701,663,637,691,574,727,516,773,466,803,443,836,424,907,398,980,383,1049,377"/>
+<area shape="poly" title=" " alt="" coords="1420,931,1404,792,1374,599,1354,501,1330,411,1303,338,1287,310,1271,289,1257,277,1261,273,1275,285,1292,307,1307,336,1335,410,1359,499,1379,598,1409,791,1425,930"/>
+<area shape="poly" title=" " alt="" coords="1419,931,1401,804,1370,630,1350,542,1326,462,1300,397,1286,372,1271,353,1257,341,1260,337,1275,349,1291,369,1305,394,1331,460,1355,541,1375,629,1406,803,1424,930"/>
+<area shape="poly" title=" " alt="" coords="1424,930,1421,830,1414,764,1402,693,1383,618,1356,545,1319,477,1297,445,1271,417,1257,405,1260,401,1275,413,1301,442,1324,474,1361,543,1388,617,1407,691,1419,764,1426,830,1429,930"/>
+<area shape="rect" href="../../df/d3b/classnexilis_1_1server_1_1Movement.html#a2c95a2b92dda15de1a7d0b0586219909" title=" " alt="" coords="1070,747,1262,787"/>
+<area shape="poly" title=" " alt="" coords="1401,935,1346,871,1311,837,1272,808,1236,789,1238,784,1275,803,1314,833,1350,867,1405,931"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a97175caef23eb9fad365629c3d78e107" title=" " alt="" coords="781,740,1004,780"/>
+<area shape="poly" title=" " alt="" coords="1393,937,1339,893,1306,870,1272,852,979,783,980,777,1274,847,1309,866,1342,888,1396,933"/>
+<area shape="rect" href="../../df/d3b/classnexilis_1_1server_1_1Movement.html#aa2e2a88fff2507cdec3151cb8f2c0bfe" title=" " alt="" coords="1070,861,1262,901"/>
+<area shape="poly" title=" " alt="" coords="1349,942,1229,904,1231,899,1351,937"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#abb949f0528da98933c7ed71b1b7c8913" title=" " alt="" coords="781,804,1004,844"/>
+<area shape="poly" title=" " alt="" coords="1318,960,1170,945,1104,932,1057,916,1041,902,1032,887,1024,872,1009,858,987,847,989,842,1012,854,1028,869,1037,884,1045,898,1060,911,1105,927,1171,939,1319,955"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#af3e224168bd0155316f390244bcfe54e" title=" " alt="" coords="777,868,1008,908"/>
+<area shape="poly" title=" " alt="" coords="1318,982,1258,986,1191,985,1123,977,1058,960,1042,952,1032,942,1023,932,1009,922,981,911,983,906,1012,918,1027,928,1036,938,1045,947,1060,955,1124,972,1192,979,1258,980,1318,977"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a6815bcee9409ea91a5ec13a9b5481688" title=" " alt="" coords="796,932,989,972"/>
+<area shape="poly" title=" " alt="" coords="1347,991,1274,1011,1166,1024,1118,1022,1058,1011,1033,1000,1010,986,975,975,976,970,1012,982,1036,995,1059,1005,1118,1016,1165,1019,1273,1005,1345,985"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a8cb5e91b231801378be77af6b11dabba" title=" " alt="" coords="795,996,990,1036"/>
+<area shape="poly" title=" " alt="" coords="1339,991,1323,998,1299,1015,1289,1023,1274,1029,1201,1044,1126,1048,1054,1045,990,1037,991,1032,1055,1040,1126,1043,1200,1038,1273,1024,1286,1018,1296,1011,1320,994,1337,986"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a1bd1a413de19b5e2727b3fd1d9bcc347" title=" " alt="" coords="796,1060,989,1100"/>
+<area shape="poly" title=" " alt="" coords="1334,992,1323,998,1309,1011,1300,1025,1291,1039,1275,1052,1240,1066,1203,1078,1128,1091,1055,1096,989,1094,990,1089,1055,1090,1128,1086,1202,1073,1238,1061,1272,1047,1287,1036,1296,1022,1304,1008,1320,994,1331,987"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a72dfb4f3c457e4d857a91d0587daea58" title=" " alt="" coords="1065,1675,1267,1715"/>
+<area shape="poly" title=" " alt="" coords="1326,995,1324,998,1309,1022,1299,1054,1293,1091,1291,1133,1293,1227,1300,1329,1308,1431,1310,1526,1307,1568,1301,1606,1291,1638,1275,1664,1263,1676,1259,1672,1271,1661,1286,1636,1296,1605,1302,1568,1304,1526,1302,1432,1295,1330,1287,1228,1285,1133,1288,1090,1294,1053,1304,1020,1319,994,1322,991"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a8df9e4f9dcb8c7657b8cd669cfb87b9f" title=" " alt="" coords="775,1124,1011,1164"/>
+<area shape="poly" title=" " alt="" coords="1329,994,1323,998,1312,1010,1306,1022,1301,1049,1295,1075,1288,1088,1275,1099,1245,1118,1213,1133,1145,1152,1075,1160,1011,1160,1011,1155,1075,1154,1144,1146,1211,1128,1242,1113,1272,1095,1283,1084,1290,1073,1296,1047,1301,1021,1308,1007,1320,994,1325,989"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a7702a108e1318abd0fb19b32529b4bb8" title=" " alt="" coords="796,1188,989,1228"/>
+<area shape="poly" title=" " alt="" coords="1327,994,1323,998,1309,1018,1302,1039,1302,1081,1303,1103,1301,1124,1292,1145,1275,1165,1244,1187,1209,1204,1172,1216,1134,1224,1059,1230,989,1226,990,1221,1059,1224,1134,1218,1171,1211,1207,1199,1241,1182,1272,1161,1288,1142,1295,1123,1297,1102,1296,1081,1297,1038,1304,1016,1319,994,1323,990"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#ac290394beb932c9c173f09b69f724d86" title=" " alt="" coords="796,1252,989,1292"/>
+<area shape="poly" title=" " alt="" coords="1327,994,1323,998,1304,1027,1297,1056,1298,1086,1303,1116,1307,1146,1307,1176,1298,1206,1275,1234,1244,1257,1210,1274,1173,1286,1135,1294,1059,1298,989,1293,990,1288,1059,1293,1135,1288,1172,1281,1208,1269,1241,1252,1271,1230,1293,1203,1302,1175,1302,1147,1297,1117,1293,1087,1292,1056,1299,1025,1319,994,1323,990"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a59c439e5e3875bb02dc8f086df42f226" title=" " alt="" coords="796,1316,989,1356"/>
+<area shape="poly" title=" " alt="" coords="1326,995,1323,998,1309,1017,1300,1036,1293,1074,1296,1113,1304,1151,1311,1190,1313,1228,1303,1265,1291,1284,1275,1302,1244,1326,1210,1343,1173,1355,1134,1362,1057,1365,987,1359,987,1353,1058,1360,1134,1357,1172,1350,1208,1338,1241,1321,1272,1298,1287,1281,1298,1263,1308,1227,1306,1190,1298,1152,1290,1113,1287,1074,1295,1034,1305,1014,1319,994,1322,991"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a179b17009debe269a88815c62704617d" title=" " alt="" coords="796,1380,989,1420"/>
+<area shape="poly" title=" " alt="" coords="1326,994,1323,998,1307,1021,1296,1045,1290,1068,1288,1092,1293,1139,1305,1186,1316,1233,1319,1279,1316,1302,1308,1325,1295,1348,1275,1370,1255,1383,1227,1393,1154,1404,1070,1408,990,1408,990,1402,1070,1403,1154,1399,1226,1387,1253,1378,1272,1366,1290,1345,1303,1323,1311,1301,1314,1279,1310,1234,1300,1187,1288,1140,1283,1092,1285,1067,1291,1043,1302,1019,1319,994,1322,991"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#aa29db2fd95c0aa075d254f73e2207c4c" title=" " alt="" coords="796,1444,989,1484"/>
+<area shape="poly" title=" " alt="" coords="1326,995,1323,998,1305,1024,1293,1050,1287,1076,1285,1102,1291,1154,1304,1206,1317,1258,1321,1310,1318,1336,1310,1362,1296,1387,1275,1413,1256,1426,1228,1438,1155,1453,1071,1462,990,1466,990,1461,1070,1457,1154,1448,1226,1433,1253,1422,1272,1409,1292,1384,1305,1360,1313,1335,1316,1310,1312,1259,1299,1208,1286,1155,1279,1102,1281,1075,1288,1048,1300,1021,1319,994,1322,991"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a088623a3b46479acc62adb59af07c217" title=" " alt="" coords="1069,1483,1263,1523"/>
+<area shape="poly" title=" " alt="" coords="1326,995,1323,998,1303,1027,1289,1057,1281,1086,1279,1114,1284,1171,1298,1228,1313,1286,1319,1344,1317,1374,1309,1404,1296,1435,1275,1466,1253,1485,1250,1481,1271,1462,1291,1432,1304,1402,1311,1373,1314,1344,1307,1287,1293,1229,1279,1172,1273,1114,1276,1085,1284,1055,1298,1025,1319,994,1322,991"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a7bcf6c1c97e41879c205761652523e43" title=" " alt="" coords="1065,1547,1267,1587"/>
+<area shape="poly" title=" " alt="" coords="1326,995,1323,998,1312,1018,1303,1043,1295,1107,1296,1183,1300,1265,1305,1348,1305,1424,1297,1489,1288,1515,1275,1536,1263,1548,1259,1544,1271,1533,1283,1513,1291,1488,1300,1424,1299,1348,1295,1266,1290,1183,1290,1106,1298,1042,1307,1015,1319,994,1322,991"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a200e4503dbb419dba8d77ffbc75d4603" title=" " alt="" coords="1069,1611,1263,1651"/>
+<area shape="poly" title=" " alt="" coords="1326,995,1324,998,1310,1020,1301,1048,1293,1120,1294,1205,1300,1297,1306,1390,1307,1475,1299,1548,1289,1577,1275,1600,1263,1612,1259,1608,1271,1597,1284,1575,1294,1546,1302,1475,1301,1390,1295,1298,1289,1205,1288,1120,1296,1047,1305,1018,1319,994,1322,991"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a8f483ee55df5538051cc1f037fe295b4" title=" " alt="" coords="1069,427,1263,467"/>
+<area shape="poly" title=" " alt="" coords="1422,930,1416,841,1407,783,1394,720,1375,655,1349,592,1315,533,1271,481,1256,469,1259,465,1275,477,1319,530,1353,590,1380,653,1399,719,1412,782,1421,840,1428,930"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a90eb595fb37d7ddef4e4ad2e5447faff" title=" " alt="" coords="1062,491,1270,531"/>
+<area shape="poly" title=" " alt="" coords="1421,931,1410,852,1386,748,1367,693,1342,639,1310,589,1272,545,1255,533,1259,529,1275,541,1314,586,1346,637,1372,691,1391,747,1415,851,1426,930"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a87d6805bee7b08064fbd10a328df579f" title=" " alt="" coords="1065,555,1267,595"/>
+<area shape="poly" title=" " alt="" coords="1418,931,1404,863,1377,776,1358,731,1334,686,1306,645,1272,609,1255,597,1258,593,1275,605,1310,642,1339,683,1363,728,1382,775,1409,862,1423,930"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a02f82557e240dadd7338438092a85ed1" title=" " alt="" coords="1069,619,1263,659"/>
+<area shape="poly" title=" " alt="" coords="1415,931,1397,875,1368,805,1327,734,1301,701,1272,673,1254,661,1257,657,1275,669,1305,698,1331,731,1373,803,1402,873,1420,930"/>
+<area shape="rect" href="../../dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#aba19bd1310d901fa8a7247da19e32974" title=" " alt="" coords="1069,683,1263,723"/>
+<area shape="poly" title=" " alt="" coords="1410,932,1389,888,1359,835,1319,782,1272,737,1252,725,1255,720,1275,733,1323,778,1363,832,1394,885,1415,930"/>
+<area shape="poly" title=" " alt="" coords="1056,767,1004,765,1004,760,1056,761"/>
+<area shape="poly" title=" " alt="" coords="791,787,776,794,734,819,696,848,636,902,633,898,692,844,731,815,773,790,789,783"/>
+<area shape="poly" title=" " alt="" coords="1056,861,988,847,989,841,1057,856"/>
+<area shape="poly" title=" " alt="" coords="801,851,776,859,662,902,660,897,774,853,799,846"/>
+<area shape="poly" title=" " alt="" coords="764,905,709,912,708,907,763,900"/>
+<area shape="poly" title=" " alt="" coords="782,942,708,933,709,928,783,937"/>
+<area shape="poly" title=" " alt="" coords="799,994,774,987,660,943,662,938,776,981,801,989"/>
+<area shape="poly" title=" " alt="" coords="789,1057,773,1050,731,1025,692,996,633,942,636,938,696,992,734,1021,776,1046,791,1053"/>
+<area shape="poly" title=" " alt="" coords="1051,1696,971,1692,890,1683,820,1668,793,1657,773,1645,762,1629,751,1604,727,1528,680,1315,639,1090,615,940,620,940,644,1089,685,1314,732,1527,756,1602,766,1626,777,1641,795,1653,821,1663,890,1678,971,1687,1052,1691"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#ab254c9ce12f43951410492942d854d7b" title="Broadcast leave and remove a disconnected user from the registry." alt="" coords="784,1711,1001,1751"/>
+<area shape="poly" title=" " alt="" coords="1052,1712,1002,1719,1001,1714,1051,1707"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a403a5e9ead7cf3031c09b29abbbbcdfd" title="Finish a handshake that did not open a session." alt="" coords="505,1615,722,1655"/>
+<area shape="poly" title=" " alt="" coords="811,1709,774,1694,726,1669,692,1657,694,1652,728,1664,776,1690,813,1704"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a1579630f6d5ce660dd271816fa0441e6" title="Cancel remaining handshakes when the protocol stops." alt="" coords="505,1679,722,1719"/>
+<area shape="poly" title=" " alt="" coords="770,1719,722,1714,723,1708,771,1714"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a8fbd4d6d8a95879846c9afe499df098b" title="Finish an active datagram transport, removing the user when nothing remains." alt="" coords="505,1743,722,1783"/>
+<area shape="poly" title=" " alt="" coords="771,1747,723,1753,722,1748,770,1742"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a1b0ce5181d4092e523452f050874c1d7" title="Expire datagram transports that have been idle for too long." alt="" coords="500,1807,727,1847"/>
+<area shape="poly" title=" " alt="" coords="831,1758,728,1797,689,1809,688,1804,726,1792,829,1753"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#ac7eb5c5c9a1c9637ab263c1020622bdf" title="Expire handshakes that never opened a session." alt="" coords="505,1871,722,1911"/>
+<area shape="poly" title=" " alt="" coords="863,1762,803,1813,766,1839,728,1861,700,1873,698,1868,725,1856,764,1834,800,1808,859,1758"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#ab74ef68626912c23af6914758648a6e0" title="Finish one stream connection, removing the user when nothing remains." alt="" coords="505,1551,722,1591"/>
+<area shape="poly" title=" " alt="" coords="792,1707,773,1694,755,1671,748,1648,742,1626,725,1605,707,1593,710,1589,728,1601,746,1623,753,1646,760,1669,776,1690,795,1702"/>
+<area shape="rect" href="../../d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#a25730adef60b0adcd5a4d1d408d02244" title="NXProtocol::stop() implementation." alt="" coords="256,1679,431,1719"/>
+<area shape="poly" title=" " alt="" coords="491,1701,431,1701,431,1696,491,1696"/>
+<area shape="rect" href="../../d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#a7523a615b69382cd9fd719034423d13e" title="Move assignment operator." alt="" coords="9,1615,183,1655"/>
+<area shape="poly" title=" " alt="" coords="251,1678,173,1657,174,1652,253,1673"/>
+<area shape="rect" href="../../d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#a82fccf956c3f0110a339642081ff9c68" title="Destructor." alt="" coords="5,1679,187,1719"/>
+<area shape="poly" title=" " alt="" coords="242,1701,187,1701,187,1696,242,1696"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a62494bb2dd0c80e8e20e33aa712748d1" title="Drop every active datagram transport of the given kind on stop." alt="" coords="235,1743,452,1783"/>
+<area shape="poly" title=" " alt="" coords="491,1765,452,1765,452,1760,491,1760"/>
+<area shape="rect" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a9f160f664a411ee41ab01634930ebe3f" title="NXProtocol::stop() implementation." alt="" coords="12,1743,180,1783"/>
+<area shape="poly" title=" " alt="" coords="221,1765,180,1765,180,1760,221,1760"/>
+<area shape="rect" href="../../d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#abc53a16b7207a2992af5e36f7d18b0cd" title="NXProtocol::stop() implementation." alt="" coords="9,1807,183,1847"/>
+<area shape="poly" title=" " alt="" coords="253,1789,174,1809,173,1804,251,1784"/>
+<area shape="poly" title=" " alt="" coords="784,1120,773,1114,723,1073,680,1026,646,979,624,942,628,939,651,976,684,1022,727,1070,776,1110,786,1116"/>
+<area shape="poly" title=" " alt="" coords="782,1184,773,1178,742,1152,715,1121,670,1054,638,990,619,941,624,939,643,987,675,1051,719,1118,746,1148,776,1174,785,1180"/>
+<area shape="poly" title=" " alt="" coords="782,1249,773,1242,738,1208,708,1168,682,1125,661,1081,632,1000,616,941,621,939,637,998,666,1079,687,1123,712,1165,742,1204,776,1238,785,1244"/>
+<area shape="poly" title=" " alt="" coords="782,1313,773,1306,733,1263,700,1215,674,1162,653,1109,626,1010,614,941,620,940,631,1009,658,1107,679,1160,705,1212,737,1260,776,1302,786,1309"/>
+<area shape="poly" title=" " alt="" coords="782,1377,773,1370,728,1319,693,1261,665,1199,645,1135,631,1075,621,1020,613,940,618,940,626,1019,636,1074,650,1134,670,1197,697,1258,733,1316,777,1366,786,1373"/>
+<area shape="poly" title=" " alt="" coords="782,1442,773,1434,747,1406,723,1375,685,1307,657,1235,637,1162,624,1092,617,1029,612,940,617,940,622,1029,629,1091,642,1161,662,1233,690,1305,728,1372,751,1402,776,1430,786,1438"/>
+<area shape="poly" title=" " alt="" coords="1088,1529,1016,1543,933,1547,890,1544,848,1535,809,1520,773,1498,756,1481,740,1457,710,1393,685,1314,663,1227,631,1057,614,941,620,940,636,1056,668,1226,690,1313,715,1391,744,1454,760,1477,776,1494,811,1516,850,1530,891,1539,933,1542,1015,1537,1087,1523"/>
+<area shape="poly" title=" " alt="" coords="1079,1592,1007,1603,926,1605,885,1600,845,1590,807,1574,773,1551,755,1532,738,1505,707,1435,681,1348,660,1253,629,1067,614,941,619,940,634,1066,665,1252,687,1347,712,1433,742,1503,759,1529,776,1547,810,1569,847,1585,886,1594,926,1599,1007,1598,1079,1587"/>
+<area shape="poly" title=" " alt="" coords="1055,1640,975,1641,892,1638,821,1627,793,1618,773,1606,753,1584,735,1555,704,1478,678,1382,656,1278,627,1075,614,940,619,940,632,1075,662,1277,683,1381,709,1476,740,1553,758,1581,776,1602,795,1613,822,1622,893,1632,975,1636,1055,1635"/>
+<area shape="poly" title=" " alt="" coords="1056,446,987,451,913,465,841,490,807,508,776,530,736,572,702,621,676,674,655,728,630,829,619,900,614,900,624,828,650,727,671,672,698,618,731,569,773,526,804,503,838,485,912,460,986,446,1055,440"/>
+<area shape="poly" title=" " alt="" coords="1048,509,981,514,910,527,839,551,807,567,776,587,740,622,709,663,683,707,662,753,634,838,620,900,615,899,629,837,657,751,678,705,704,660,736,618,773,583,804,563,837,546,908,522,981,509,1048,504"/>
+<area shape="poly" title=" " alt="" coords="1051,571,984,574,912,585,841,607,807,622,776,641,743,669,714,702,690,738,669,776,639,847,622,901,617,899,634,845,664,773,685,735,710,698,739,665,773,636,805,617,839,602,911,580,984,569,1051,566"/>
+<area shape="poly" title=" " alt="" coords="1055,632,989,632,916,640,843,658,809,672,776,689,746,711,720,737,675,796,644,855,624,901,619,899,639,853,671,794,716,733,743,707,773,684,806,667,842,653,915,635,988,627,1055,626"/>
+<area shape="poly" title=" " alt="" coords="1056,690,989,688,917,691,844,705,809,716,776,730,749,747,724,767,681,815,648,862,627,901,622,898,644,860,677,811,720,763,746,743,773,726,807,711,843,700,917,686,989,682,1056,685"/>
+<area shape="poly" title=" " alt="" coords="786,186,777,194,759,218,742,250,711,334,685,436,664,547,633,760,619,900,614,900,628,759,658,546,680,435,706,332,737,248,754,215,773,190,782,182"/>
 </map>
 </div>
 
@@ -471,15 +532,15 @@ Here is the caller graph for this function:</div>
 
 <p>Diagnostic lookup only. IP addresses are not session identities. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d56/client__storage_8cc_source.html#l00060">60</a> of file <a class="el" href="../../d6/d56/client__storage_8cc_source.html">client_storage.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   61</span>{</div>
-<div class="line"><span class="lineno">   62</span>    std::lock_guard lock(m_mutex);</div>
-<div class="line"><span class="lineno">   63</span>    std::vector&lt;std::shared_ptr&lt;User&gt;&gt; result;</div>
-<div class="line"><span class="lineno">   64</span>    std::copy_if(m_clients.begin(), m_clients.end(), std::back_inserter(result),</div>
-<div class="line"><span class="lineno">   65</span>                 [&amp;](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; client)</div>
-<div class="line"><span class="lineno">   66</span>                 { return client-&gt;getIPAddress() == ip_address; });</div>
-<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno">   68</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d56/client__storage_8cc_source.html#l00062">62</a> of file <a class="el" href="../../d6/d56/client__storage_8cc_source.html">client_storage.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   63</span>{</div>
+<div class="line"><span class="lineno">   64</span>    std::lock_guard lock(m_mutex);</div>
+<div class="line"><span class="lineno">   65</span>    std::vector&lt;std::shared_ptr&lt;User&gt;&gt; result;</div>
+<div class="line"><span class="lineno">   66</span>    std::copy_if(m_clients.begin(), m_clients.end(), std::back_inserter(result),</div>
+<div class="line"><span class="lineno">   67</span>                 [&amp;](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; client)</div>
+<div class="line"><span class="lineno">   68</span>                 { return client-&gt;getIPAddress() == ip_address; });</div>
+<div class="line"><span class="lineno">   69</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">   70</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -507,24 +568,66 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d56/client__storage_8cc_source.html#l00101">101</a> of file <a class="el" href="../../d6/d56/client__storage_8cc_source.html">client_storage.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  102</span>{</div>
-<div class="line"><span class="lineno">  103</span>    std::shared_ptr&lt;User&gt; removed;</div>
-<div class="line"><span class="lineno">  104</span>    {</div>
-<div class="line"><span class="lineno">  105</span>        std::lock_guard lock(m_mutex);</div>
-<div class="line"><span class="lineno">  106</span>        <span class="keyword">auto</span> it = std::find_if(m_clients.begin(), m_clients.end(),</div>
-<div class="line"><span class="lineno">  107</span>                               [<span class="keywordtype">id</span>](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; client)</div>
-<div class="line"><span class="lineno">  108</span>                               { return client-&gt;getId() == id; });</div>
-<div class="line"><span class="lineno">  109</span>        <span class="keywordflow">if</span> (it == m_clients.end())</div>
-<div class="line"><span class="lineno">  110</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  111</span>        removed = std::move(*it);</div>
-<div class="line"><span class="lineno">  112</span>        m_clients.erase(it);</div>
-<div class="line"><span class="lineno">  113</span>    }</div>
-<div class="line"><span class="lineno">  114</span>    <span class="comment">// User send callbacks may own resources whose destructors reenter storage.</span></div>
-<div class="line"><span class="lineno">  115</span>    <span class="comment">// Release the last registry reference after unlocking.</span></div>
-<div class="line"><span class="lineno">  116</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  117</span>}</div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d6/d56/client__storage_8cc_source.html#l00103">103</a> of file <a class="el" href="../../d6/d56/client__storage_8cc_source.html">client_storage.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  104</span>{</div>
+<div class="line"><span class="lineno">  105</span>    std::shared_ptr&lt;User&gt; removed;</div>
+<div class="line"><span class="lineno">  106</span>    {</div>
+<div class="line"><span class="lineno">  107</span>        std::lock_guard lock(m_mutex);</div>
+<div class="line"><span class="lineno">  108</span>        <span class="keyword">auto</span> it = std::find_if(m_clients.begin(), m_clients.end(),</div>
+<div class="line"><span class="lineno">  109</span>                               [<span class="keywordtype">id</span>](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; client)</div>
+<div class="line"><span class="lineno">  110</span>                               { return client-&gt;getId() == id; });</div>
+<div class="line"><span class="lineno">  111</span>        <span class="keywordflow">if</span> (it == m_clients.end())</div>
+<div class="line"><span class="lineno">  112</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  113</span>        removed = std::move(*it);</div>
+<div class="line"><span class="lineno">  114</span>        m_clients.erase(it);</div>
+<div class="line"><span class="lineno">  115</span>    }</div>
+<div class="line"><span class="lineno">  116</span>    <span class="comment">// User send callbacks may own resources whose destructors reenter storage.</span></div>
+<div class="line"><span class="lineno">  117</span>    <span class="comment">// Release the last registry reference after unlocking.</span></div>
+<div class="line"><span class="lineno">  118</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  119</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/de9/classnexilis_1_1server_1_1ClientStorage_aabd05a96502a6e23a5edcac8da44a430_icgraph.png" border="0" usemap="#ada/de9/classnexilis_1_1server_1_1ClientStorage_aabd05a96502a6e23a5edcac8da44a430_icgraph" alt=""/></div>
+<map name="ada/de9/classnexilis_1_1server_1_1ClientStorage_aabd05a96502a6e23a5edcac8da44a430_icgraph" id="ada/de9/classnexilis_1_1server_1_1ClientStorage_aabd05a96502a6e23a5edcac8da44a430_icgraph">
+<area shape="rect" title=" " alt="" coords="1309,165,1520,205"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#ab254c9ce12f43951410492942d854d7b" title="Broadcast leave and remove a disconnected user from the registry." alt="" coords="1044,165,1261,205"/>
+<area shape="poly" title=" " alt="" coords="1295,188,1262,188,1262,183,1295,183"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a403a5e9ead7cf3031c09b29abbbbcdfd" title="Finish a handshake that did not open a session." alt="" coords="774,5,991,45"/>
+<area shape="poly" title=" " alt="" coords="1121,157,1065,107,1031,82,995,60,968,48,970,43,997,55,1034,77,1068,103,1124,153"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a1579630f6d5ce660dd271816fa0441e6" title="Cancel remaining handshakes when the protocol stops." alt="" coords="774,69,991,109"/>
+<area shape="poly" title=" " alt="" coords="1093,162,995,124,958,112,959,107,997,119,1095,157"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a8fbd4d6d8a95879846c9afe499df098b" title="Finish an active datagram transport, removing the user when nothing remains." alt="" coords="774,133,991,173"/>
+<area shape="poly" title=" " alt="" coords="1030,173,991,169,992,164,1031,168"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a1b0ce5181d4092e523452f050874c1d7" title="Expire datagram transports that have been idle for too long." alt="" coords="769,197,996,237"/>
+<area shape="poly" title=" " alt="" coords="1031,202,996,207,996,201,1030,197"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#ac7eb5c5c9a1c9637ab263c1020622bdf" title="Expire handshakes that never opened a session." alt="" coords="774,261,991,301"/>
+<area shape="poly" title=" " alt="" coords="1095,213,997,252,959,264,958,259,995,247,1093,208"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#ab74ef68626912c23af6914758648a6e0" title="Finish one stream connection, removing the user when nothing remains." alt="" coords="774,325,991,365"/>
+<area shape="poly" title=" " alt="" coords="1124,217,1068,268,1034,293,997,316,970,328,968,323,995,311,1031,289,1065,263,1121,213"/>
+<area shape="rect" href="../../d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#a25730adef60b0adcd5a4d1d408d02244" title="NXProtocol::stop() implementation." alt="" coords="525,69,700,109"/>
+<area shape="poly" title=" " alt="" coords="760,92,700,92,700,87,760,87"/>
+<area shape="rect" href="../../d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#a7523a615b69382cd9fd719034423d13e" title="Move assignment operator." alt="" coords="278,5,453,45"/>
+<area shape="poly" title=" " alt="" coords="521,68,442,48,444,43,522,63"/>
+<area shape="rect" href="../../d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#a82fccf956c3f0110a339642081ff9c68" title="Destructor." alt="" coords="275,69,456,109"/>
+<area shape="poly" title=" " alt="" coords="511,92,456,92,456,87,511,87"/>
+<area shape="rect" href="../../de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a62494bb2dd0c80e8e20e33aa712748d1" title="Drop every active datagram transport of the given kind on stop." alt="" coords="504,133,721,173"/>
+<area shape="poly" title=" " alt="" coords="760,156,721,156,721,151,760,151"/>
+<area shape="rect" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a9f160f664a411ee41ab01634930ebe3f" title="NXProtocol::stop() implementation." alt="" coords="281,133,449,173"/>
+<area shape="poly" title=" " alt="" coords="490,156,449,156,449,151,490,151"/>
+<area shape="rect" href="../../d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#abc53a16b7207a2992af5e36f7d18b0cd" title="NXProtocol::stop() implementation." alt="" coords="278,197,453,237"/>
+<area shape="poly" title=" " alt="" coords="522,179,444,200,442,195,521,174"/>
+<area shape="rect" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#abeef8102fec80fb7e42fe3745083a21f" title="Move assignment operator." alt="" coords="13,69,219,109"/>
+<area shape="poly" title=" " alt="" coords="273,132,194,112,195,107,274,127"/>
+<area shape="rect" href="../../df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a50bf92a30646e072df669e53bacfeea0" title="Destructor." alt="" coords="5,133,227,173"/>
+<area shape="poly" title=" " alt="" coords="268,156,227,156,227,151,268,151"/>
+<area shape="rect" href="../../d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#a31d5dc5934fcde97b0e6c9afa4ea755a" title="Move assignment operator." alt="" coords="29,197,203,237"/>
+<area shape="poly" title=" " alt="" coords="264,220,204,220,204,215,264,215"/>
+<area shape="rect" href="../../d0/d73/classnexilis_1_1server_1_1nxboost_1_1UDPServer.html#a4642f3d0d8ed9baf31087321b6e0948b" title="Destructor." alt="" coords="21,261,211,301"/>
+<area shape="poly" title=" " alt="" coords="274,243,195,264,194,259,273,238"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="ae358e954fbc75f4c9917a2c98af9a854" name="ae358e954fbc75f4c9917a2c98af9a854"></a>
@@ -563,24 +666,24 @@ Here is the caller graph for this function:</div>
 
 <p>Change a registered user's ID under the registry lock; reject collisions. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d56/client__storage_8cc_source.html#l00082">82</a> of file <a class="el" href="../../d6/d56/client__storage_8cc_source.html">client_storage.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   83</span>{</div>
-<div class="line"><span class="lineno">   84</span>    <span class="keywordflow">if</span> (!user.hasRootAccess())</div>
-<div class="line"><span class="lineno">   85</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   86</span>    std::lock_guard lock(m_mutex);</div>
-<div class="line"><span class="lineno">   87</span>    <span class="keywordtype">bool</span> found = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; client : m_clients)</div>
-<div class="line"><span class="lineno">   89</span>    {</div>
-<div class="line"><span class="lineno">   90</span>        <span class="keywordflow">if</span> (client.get() == &amp;user)</div>
-<div class="line"><span class="lineno">   91</span>            found = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   92</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (client-&gt;getId() == <span class="keywordtype">id</span>)</div>
-<div class="line"><span class="lineno">   93</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   94</span>    }</div>
-<div class="line"><span class="lineno">   95</span>    <span class="keywordflow">if</span> (!found)</div>
-<div class="line"><span class="lineno">   96</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   97</span>    user.setId(<span class="keywordtype">id</span>);</div>
-<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   99</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d56/client__storage_8cc_source.html#l00084">84</a> of file <a class="el" href="../../d6/d56/client__storage_8cc_source.html">client_storage.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   85</span>{</div>
+<div class="line"><span class="lineno">   86</span>    <span class="keywordflow">if</span> (!user.hasRootAccess())</div>
+<div class="line"><span class="lineno">   87</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   88</span>    std::lock_guard lock(m_mutex);</div>
+<div class="line"><span class="lineno">   89</span>    <span class="keywordtype">bool</span> found = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   90</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; client : m_clients)</div>
+<div class="line"><span class="lineno">   91</span>    {</div>
+<div class="line"><span class="lineno">   92</span>        <span class="keywordflow">if</span> (client.get() == &amp;user)</div>
+<div class="line"><span class="lineno">   93</span>            found = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   94</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (client-&gt;getId() == <span class="keywordtype">id</span>)</div>
+<div class="line"><span class="lineno">   95</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   96</span>    }</div>
+<div class="line"><span class="lineno">   97</span>    <span class="keywordflow">if</span> (!found)</div>
+<div class="line"><span class="lineno">   98</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   99</span>    user.setId(<span class="keywordtype">id</span>);</div>
+<div class="line"><span class="lineno">  100</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  101</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -612,6 +715,31 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="230,75,186,80,185,75,229,69"/>
 </map>
 </div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a67f4b3389f01ff944d83084b6f8183db" name="a67f4b3389f01ff944d83084b6f8183db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67f4b3389f01ff944d83084b6f8183db">&#9670;&#160;</a></span>maximumClients</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::size_t nexilis::server::ClientStorage::maximumClients = <a class="el" href="../../d8/d34/namespacenexilis.html#a14d00d572ca514d2555238e30e065ce1">NEXILIS_DEFAULT_MAX_CLIENTS</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d77/client__storage_8hh_source.html#l00033">33</a> of file <a class="el" href="../../d5/d77/client__storage_8hh_source.html">client_storage.hh</a>.</p>
 
 </div>
 </div>
