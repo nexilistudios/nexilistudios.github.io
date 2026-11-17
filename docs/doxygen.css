@@ -2061,10 +2061,14 @@ html, html.dark-mode, html:not(.dark-mode) {
 
   --header-background-color: #191e18;
   --header-separator-color: #30382e;
+  --header-gradient-image: none;
   --group-header-separator-color: #37432a;
   --group-header-color: #c6f36b;
   --title-background-color: #111512;
   --title-separator-color: #30382e;
+  --separator-color: #30382e;
+  --directory-separator-color: #30382e;
+  --glow-color: #d9ff96;
   --footer-foreground-color: #969e93;
   --citation-label-color: #c6f36b;
   --blockquote-background-color: #1d2319;
@@ -2073,6 +2077,13 @@ html, html.dark-mode, html:not(.dark-mode) {
   --nav-background-color: #151b14;
   --nav-foreground-color: #eeefe9;
   --nav-border-color: #30382e;
+  --nav-gradient-image: none;
+  --nav-gradient-hover-image: none;
+  --nav-gradient-active-image: none;
+  --nav-gradient-active-image-parent: none;
+  --nav-separator-image: none;
+  --nav-breadcrumb-image: none;
+  --nav-splitbar-image: none;
   --nav-breadcrumb-separator-color: #30382e;
   --nav-breadcrumb-active-bg: #232c1c;
   --nav-breadcrumb-color: #c6f36b;
@@ -2099,13 +2110,16 @@ html, html.dark-mode, html:not(.dark-mode) {
   --search-results-foreground-color: #c6f36b;
   --search-results-border-color: #4c5a42;
   --search-box-border-color: #4c5a42;
+  --search-box-shadow: inset 0.5px 0.5px 3px 0px #30382e;
 
   --memdecl-background-color: #191e18;
   --memdecl-foreground-color: #bec6b7;
   --memdecl-template-color: #c6f36b;
   --memdecl-border-color: #30382e;
+  --memdecl-separator-color: #30382e;
   --memdef-border-color: #4c5a42;
   --memdef-title-background-color: #273320;
+  --memdef-title-gradient-image: none;
   --memdef-proto-background-color: #1d2319;
   --memdef-proto-text-color: #eeefe9;
   --memdef-param-name-color: #c6f36b;
@@ -2135,6 +2149,8 @@ html, html.dark-mode, html:not(.dark-mode) {
   --code-preprocessor-color: #75d4e8;
   --code-string-literal-color: #d9c58f;
   --code-char-literal-color: #d9c58f;
+  --code-link-color: #c6f36b;
+  --code-external-link-color: #c6f36b;
 
   --icon-background-color: #37432a;
   --icon-foreground-color: #eeefe9;
