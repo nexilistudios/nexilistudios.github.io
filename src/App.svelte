@@ -1,9 +1,26 @@
 <script lang="ts">
+  import { onMount } from "svelte";
   import Arena from "./Arena.svelte";
   let copied = $state(false);
   let copyError = $state(false);
   let tab = $state<"connect" | "movement">("connect");
+  let version = $state("…");
   const repo = "https://github.com/nexilistudios/nexilis";
+  const versionUrl =
+    "https://raw.githubusercontent.com/nexilistudios/nexilis/refs/heads/main/VERSION.txt";
+
+  onMount(() => {
+    fetch(versionUrl, { cache: "no-store" })
+      .then((response) => {
+        if (!response.ok) throw new Error(String(response.status));
+        return response.text();
+      })
+      .then((text) => {
+        const value = text.trim();
+        if (value) version = value;
+      })
+      .catch(() => {});
+  });
   const examples = {
     connect: `using Nexilis.Util;\n\nusing var client = new NexilisClient\n{\n    ServerAddress = "127.0.0.1",\n    Password = "password"\n};\n\nclient.OnReady += () =>\n    Console.WriteLine("Welcome to the room.");\n\nawait client.ConnectAsync();\n\n// Keep the client alive for your game loop.\n// Call client.Update() each frame.`,
     movement: `// After connecting, wire up remote players.\nclient.OnRemoteClientPosition += (id, position) =>\n{\n    // Apply position.X, .Y, .Z to your player.\n};\n\n// In your game loop, process incoming updates.\nclient.Update();\n\n// Send your player's world position.\nclient.SendPosition(x: 1.0f, y: 0.0f, z: 2.5f);\n\n// Or send movement with the frame delta.\nclient.SendMovement(1.0f, 0.0f, 0.0f, 0.016f);`,
@@ -42,7 +59,7 @@
   <section class="hero">
     <div class="hero-copy">
       <a class="release" href={`${repo}/blob/main/VERSION.txt`}
-        ><span class="status-dot"></span> 0.0.4-unstable
+        ><span class="status-dot"></span> {version}
         <span class="release-divider">/</span>
         OPEN SOURCE <span>↗</span></a
       >
