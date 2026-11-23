@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.10-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.11-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -138,7 +138,7 @@ Public Member Functions</h2></td></tr>
 <p><code>Protocol</code> then sends the <code>MessageHandler::Message</code> to <code><a class="el" href="../../da/d15/classnexilis_1_1server_1_1Command.html">Command</a></code> for parsing.</p>
 <p><code><a class="el" href="../../d1/d87/classnexilis_1_1server_1_1Message.html">Message</a></code> holds the nexilis bytevector containing pure command data. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/de8/message__handler_8hh_source.html#l00042">42</a> of file <a class="el" href="../../da/de8/message__handler_8hh_source.html">message_handler.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/de8/message__handler_8hh_source.html#l00043">43</a> of file <a class="el" href="../../da/de8/message__handler_8hh_source.html">message_handler.hh</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a30f2a2b5c3f348d1c6cd183b696df95b" name="a30f2a2b5c3f348d1c6cd183b696df95b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a30f2a2b5c3f348d1c6cd183b696df95b">&#9670;&#160;</a></span>MessageHandler()</h2>
@@ -206,264 +206,331 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d3b/message__handler_8cc_source.html#l00084">84</a> of file <a class="el" href="../../da/d3b/message__handler_8cc_source.html">message_handler.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   85</span>{</div>
-<div class="line"><span class="lineno">   86</span>    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">Log::debug</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Payload size: &quot;</span>, payload.size());</div>
-<div class="line"><span class="lineno">   87</span> </div>
-<div class="line"><span class="lineno">   88</span>    <span class="comment">// In password_protected mode the very first message from an unidentified</span></div>
-<div class="line"><span class="lineno">   89</span>    <span class="comment">// client is the raw password, which may be shorter than 8 bytes. Only attempt</span></div>
-<div class="line"><span class="lineno">   90</span>    <span class="comment">// to read a client id when the payload is large enough; a short payload would</span></div>
-<div class="line"><span class="lineno">   91</span>    <span class="comment">// otherwise parse as a zero client id and get rejected before the password</span></div>
-<div class="line"><span class="lineno">   92</span>    <span class="comment">// comparison runs, leaking the length of the correct password.</span></div>
-<div class="line"><span class="lineno">   93</span>    uint64_t clientId = 0;</div>
-<div class="line"><span class="lineno">   94</span>    <span class="keywordflow">if</span> (payload.size() &gt;= <span class="keyword">sizeof</span>(uint64_t))</div>
-<div class="line"><span class="lineno">   95</span>    {</div>
-<div class="line"><span class="lineno">   96</span>        clientId = <a class="code hl_function" href="../../dc/dc3/group__FrontConversions.html#gaa69ac5b84ac2f72561afb8cc9d391072">Util::uint64FromFront</a>(payload);</div>
-<div class="line"><span class="lineno">   97</span>    }</div>
-<div class="line"><span class="lineno">   98</span> </div>
-<div class="line"><span class="lineno">   99</span>    <span class="comment">// Reject a zero client id in every mode except password_protected and skip:</span></div>
-<div class="line"><span class="lineno">  100</span>    <span class="comment">// in password_protected the first message from an unidentified client is the</span></div>
-<div class="line"><span class="lineno">  101</span>    <span class="comment">// password itself, and in skip mode the client has not been assigned an id</span></div>
-<div class="line"><span class="lineno">  102</span>    <span class="comment">// yet and sends a &quot;getting client_id&quot; handshake to learn it.</span></div>
-<div class="line"><span class="lineno">  103</span>    <span class="keywordflow">if</span> (clientId == 0 &amp;&amp; <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027ba6fa691d2c07bea6ae78b7022c80e9d20">authentication</a>-&gt;getMode() != <a class="code hl_enumvalue" href="../../d5/dc9/namespacenexilis_1_1server.html#acc371b1360f86610e42c4eb65bce21b7a50e5526edd0d52c30e1f7e839786623d">AuthenticationMode::password_protected</a> &amp;&amp; <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027ba6fa691d2c07bea6ae78b7022c80e9d20">authentication</a>-&gt;getMode() != <a class="code hl_enumvalue" href="../../d5/dc9/namespacenexilis_1_1server.html#acc371b1360f86610e42c4eb65bce21b7a08b43519a7e36ee4c6c5615d1663bcfd">AuthenticationMode::skip</a>)</div>
-<div class="line"><span class="lineno">  104</span>    {</div>
-<div class="line"><span class="lineno">  105</span>        <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Client id is zero&quot;</span>);</div>
-<div class="line"><span class="lineno">  106</span>        <span class="keywordflow">return</span> std::make_unique&lt;ErrorMessage&gt;(address, <a class="code hl_enumvalue" href="../../d0/de2/classnexilis_1_1server_1_1ErrorMessage.html#aa94feefb60f3bc4223973ffcbfd775ceaee396b808c287771d8277def6c64045c">ErrorMessage::Type::client_id_failure</a>);</div>
-<div class="line"><span class="lineno">  107</span>    }</div>
-<div class="line"><span class="lineno">  108</span> </div>
-<div class="line"><span class="lineno">  109</span>    <span class="comment">// Authentication modes that never admit a client must not allocate a User:</span></div>
-<div class="line"><span class="lineno">  110</span>    <span class="comment">// reject before creating registry state.</span></div>
-<div class="line"><span class="lineno">  111</span>    <span class="keywordflow">if</span> (<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027ba6fa691d2c07bea6ae78b7022c80e9d20">authentication</a>-&gt;getMode() == <a class="code hl_enumvalue" href="../../d5/dc9/namespacenexilis_1_1server.html#acc371b1360f86610e42c4eb65bce21b7aa2e4822a98337283e39f7b60acf85ec9">AuthenticationMode::empty</a>)</div>
-<div class="line"><span class="lineno">  112</span>    {</div>
-<div class="line"><span class="lineno">  113</span>        <span class="keywordflow">return</span> std::make_unique&lt;ErrorMessage&gt;(address, <a class="code hl_enumvalue" href="../../d0/de2/classnexilis_1_1server_1_1ErrorMessage.html#aa94feefb60f3bc4223973ffcbfd775cea169d488fee16afa55c094a2c2e48f214">ErrorMessage::Type::empty_authentication_mode</a>);</div>
-<div class="line"><span class="lineno">  114</span>    }</div>
-<div class="line"><span class="lineno">  115</span>    <span class="keywordflow">if</span> (<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027ba6fa691d2c07bea6ae78b7022c80e9d20">authentication</a>-&gt;getMode() == <a class="code hl_enumvalue" href="../../d5/dc9/namespacenexilis_1_1server.html#acc371b1360f86610e42c4eb65bce21b7a7af9861b3323a309721c92706bfc440e">AuthenticationMode::admin_access</a> ||</div>
-<div class="line"><span class="lineno">  116</span>        <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027ba6fa691d2c07bea6ae78b7022c80e9d20">authentication</a>-&gt;getMode() == <a class="code hl_enumvalue" href="../../d5/dc9/namespacenexilis_1_1server.html#acc371b1360f86610e42c4eb65bce21b7a4867bad8b1ecfbf87ee78f3477f28230">AuthenticationMode::root_access</a>)</div>
-<div class="line"><span class="lineno">  117</span>    {</div>
-<div class="line"><span class="lineno">  118</span>        <span class="keywordflow">return</span> std::make_unique&lt;ErrorMessage&gt;(address, <a class="code hl_enumvalue" href="../../d0/de2/classnexilis_1_1server_1_1ErrorMessage.html#aa94feefb60f3bc4223973ffcbfd775cea63877363c706f5095d05a54f8b57b0ae">ErrorMessage::Type::not_implemented</a>);</div>
-<div class="line"><span class="lineno">  119</span>    }</div>
-<div class="line"><span class="lineno">  120</span> </div>
-<div class="line"><span class="lineno">  121</span>    <span class="comment">// Unknown identifiers are not users until their handshake succeeds.</span></div>
-<div class="line"><span class="lineno">  122</span>    <span class="keyword">auto</span> user = <a class="code hl_function" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#acdb61fe86e1f6a500b143675bd774503">ClientStorage::getClientById</a>(clientId);</div>
-<div class="line"><span class="lineno">  123</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> newUser = !user;</div>
-<div class="line"><span class="lineno">  124</span>    <span class="keyword">auto</span> createUser = [&amp;]() -&gt; <span class="keywordtype">bool</span></div>
-<div class="line"><span class="lineno">  125</span>    {</div>
-<div class="line"><span class="lineno">  126</span>        <span class="keywordflow">if</span> (!acceptRegistration(address))</div>
-<div class="line"><span class="lineno">  127</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  128</span>        uint64_t newId = <a class="code hl_function" href="../../df/d06/group__RandFunctions.html#gacb4f385a6c9480e76c639947e185ff07">Util::getRandomUint64</a>();</div>
-<div class="line"><span class="lineno">  129</span>        user = std::make_shared&lt;User&gt;(newId, address);</div>
-<div class="line"><span class="lineno">  130</span>        <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a66755adfac1917c8b8791a018f31c643">Log::info</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Created new user: &quot;</span>, newId);</div>
-<div class="line"><span class="lineno">  131</span>        <span class="keyword">auto</span> username = <a class="code hl_function" href="../../df/d06/group__RandFunctions.html#ga69add1fd213bfb28b5ecfb656a436870">Util::getRandomString</a>(10);</div>
-<div class="line"><span class="lineno">  132</span>        user-&gt;setUsername(username);</div>
-<div class="line"><span class="lineno">  133</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  134</span>    };</div>
-<div class="line"><span class="lineno">  135</span> </div>
-<div class="line"><span class="lineno">  136</span>    <span class="keyword">auto</span> authenticatedMessage = [&amp;]() -&gt; std::unique_ptr&lt;BaseMessage&gt;</div>
-<div class="line"><span class="lineno">  137</span>    {</div>
-<div class="line"><span class="lineno">  138</span>        <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> verified;</div>
-<div class="line"><span class="lineno">  139</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../dc/dfa/namespacenexilis_1_1message__auth.html#ab343be943c05bf9c867e77894669ef8b">message_auth::verify</a>(payload, user-&gt;getUdpToken(), verified))</div>
-<div class="line"><span class="lineno">  140</span>        {</div>
-<div class="line"><span class="lineno">  141</span>            <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a191e4c013bad219e746e8e56682d65e1">Log::warning</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Rejected request with an invalid session MAC&quot;</span>);</div>
-<div class="line"><span class="lineno">  142</span>            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  143</span>        }</div>
-<div class="line"><span class="lineno">  144</span>        <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> idBytes(verified.begin() + 8, verified.begin() + 16);</div>
-<div class="line"><span class="lineno">  145</span>        <span class="keywordflow">if</span> (!user-&gt;acceptMessageId(<a class="code hl_function" href="../../dc/dc3/group__FrontConversions.html#gaa69ac5b84ac2f72561afb8cc9d391072">Util::uint64FromFront</a>(idBytes)))</div>
-<div class="line"><span class="lineno">  146</span>        {</div>
-<div class="line"><span class="lineno">  147</span>            <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a191e4c013bad219e746e8e56682d65e1">Log::warning</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Rejected duplicate or stale message ID&quot;</span>);</div>
-<div class="line"><span class="lineno">  148</span>            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  149</span>        }</div>
-<div class="line"><span class="lineno">  150</span> </div>
-<div class="line"><span class="lineno">  151</span>        <span class="comment">// Drop excess authenticated traffic before parsing or dispatching it.</span></div>
-<div class="line"><span class="lineno">  152</span>        <span class="comment">// The token bucket allows a one-second burst at the configured rate;</span></div>
-<div class="line"><span class="lineno">  153</span>        <span class="comment">// a non-positive rate disables the limit.</span></div>
-<div class="line"><span class="lineno">  154</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> maxCommandRate = <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027ba6fa691d2c07bea6ae78b7022c80e9d20">authentication</a>-&gt;getMaxCommandRate();</div>
-<div class="line"><span class="lineno">  155</span>        <span class="keywordflow">if</span> (!user-&gt;acceptCommand(std::chrono::steady_clock::now(), maxCommandRate, maxCommandRate))</div>
-<div class="line"><span class="lineno">  156</span>        {</div>
-<div class="line"><span class="lineno">  157</span>            <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">Log::debug</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Dropped command over the per-client rate limit&quot;</span>);</div>
-<div class="line"><span class="lineno">  158</span>            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  159</span>        }</div>
-<div class="line"><span class="lineno">  160</span> </div>
-<div class="line"><span class="lineno">  161</span>        <span class="keywordflow">return</span> std::make_unique&lt;Message&gt;(handlePayload(verified, user, address));</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d3b/message__handler_8cc_source.html#l00100">100</a> of file <a class="el" href="../../da/d3b/message__handler_8cc_source.html">message_handler.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  101</span>{</div>
+<div class="line"><span class="lineno">  102</span>    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">Log::debug</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Payload size: &quot;</span>, payload.size());</div>
+<div class="line"><span class="lineno">  103</span> </div>
+<div class="line"><span class="lineno">  104</span>    <span class="comment">// In password_protected mode the very first message from an unidentified</span></div>
+<div class="line"><span class="lineno">  105</span>    <span class="comment">// client is the raw password, which may be shorter than 8 bytes. Only attempt</span></div>
+<div class="line"><span class="lineno">  106</span>    <span class="comment">// to read a client id when the payload is large enough; a short payload would</span></div>
+<div class="line"><span class="lineno">  107</span>    <span class="comment">// otherwise parse as a zero client id and get rejected before the password</span></div>
+<div class="line"><span class="lineno">  108</span>    <span class="comment">// comparison runs, leaking the length of the correct password.</span></div>
+<div class="line"><span class="lineno">  109</span>    uint64_t clientId = 0;</div>
+<div class="line"><span class="lineno">  110</span>    <span class="keywordflow">if</span> (payload.size() &gt;= <span class="keyword">sizeof</span>(uint64_t))</div>
+<div class="line"><span class="lineno">  111</span>    {</div>
+<div class="line"><span class="lineno">  112</span>        clientId = <a class="code hl_function" href="../../dc/dc3/group__FrontConversions.html#gaa69ac5b84ac2f72561afb8cc9d391072">Util::uint64FromFront</a>(payload);</div>
+<div class="line"><span class="lineno">  113</span>    }</div>
+<div class="line"><span class="lineno">  114</span> </div>
+<div class="line"><span class="lineno">  115</span>    <span class="comment">// Reject a zero client id in every mode except password_protected and skip:</span></div>
+<div class="line"><span class="lineno">  116</span>    <span class="comment">// in password_protected the first message from an unidentified client is the</span></div>
+<div class="line"><span class="lineno">  117</span>    <span class="comment">// password itself, and in skip mode the client has not been assigned an id</span></div>
+<div class="line"><span class="lineno">  118</span>    <span class="comment">// yet and sends a &quot;getting client_id&quot; handshake to learn it.</span></div>
+<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">if</span> (clientId == 0 &amp;&amp; <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027ba6fa691d2c07bea6ae78b7022c80e9d20">authentication</a>-&gt;getMode() != <a class="code hl_enumvalue" href="../../d5/dc9/namespacenexilis_1_1server.html#acc371b1360f86610e42c4eb65bce21b7a50e5526edd0d52c30e1f7e839786623d">AuthenticationMode::password_protected</a> &amp;&amp; <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027ba6fa691d2c07bea6ae78b7022c80e9d20">authentication</a>-&gt;getMode() != <a class="code hl_enumvalue" href="../../d5/dc9/namespacenexilis_1_1server.html#acc371b1360f86610e42c4eb65bce21b7a08b43519a7e36ee4c6c5615d1663bcfd">AuthenticationMode::skip</a>)</div>
+<div class="line"><span class="lineno">  120</span>    {</div>
+<div class="line"><span class="lineno">  121</span>        <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Client id is zero&quot;</span>);</div>
+<div class="line"><span class="lineno">  122</span>        <span class="keywordflow">return</span> std::make_unique&lt;ErrorMessage&gt;(address, <a class="code hl_enumvalue" href="../../d0/de2/classnexilis_1_1server_1_1ErrorMessage.html#aa94feefb60f3bc4223973ffcbfd775ceaee396b808c287771d8277def6c64045c">ErrorMessage::Type::client_id_failure</a>);</div>
+<div class="line"><span class="lineno">  123</span>    }</div>
+<div class="line"><span class="lineno">  124</span> </div>
+<div class="line"><span class="lineno">  125</span>    <span class="comment">// Authentication modes that never admit a client must not allocate a User:</span></div>
+<div class="line"><span class="lineno">  126</span>    <span class="comment">// reject before creating registry state.</span></div>
+<div class="line"><span class="lineno">  127</span>    <span class="keywordflow">if</span> (<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027ba6fa691d2c07bea6ae78b7022c80e9d20">authentication</a>-&gt;getMode() == <a class="code hl_enumvalue" href="../../d5/dc9/namespacenexilis_1_1server.html#acc371b1360f86610e42c4eb65bce21b7aa2e4822a98337283e39f7b60acf85ec9">AuthenticationMode::empty</a>)</div>
+<div class="line"><span class="lineno">  128</span>    {</div>
+<div class="line"><span class="lineno">  129</span>        <span class="keywordflow">return</span> std::make_unique&lt;ErrorMessage&gt;(address, <a class="code hl_enumvalue" href="../../d0/de2/classnexilis_1_1server_1_1ErrorMessage.html#aa94feefb60f3bc4223973ffcbfd775cea169d488fee16afa55c094a2c2e48f214">ErrorMessage::Type::empty_authentication_mode</a>);</div>
+<div class="line"><span class="lineno">  130</span>    }</div>
+<div class="line"><span class="lineno">  131</span>    <span class="keywordflow">if</span> (<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027ba6fa691d2c07bea6ae78b7022c80e9d20">authentication</a>-&gt;getMode() == <a class="code hl_enumvalue" href="../../d5/dc9/namespacenexilis_1_1server.html#acc371b1360f86610e42c4eb65bce21b7a7af9861b3323a309721c92706bfc440e">AuthenticationMode::admin_access</a> ||</div>
+<div class="line"><span class="lineno">  132</span>        <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027ba6fa691d2c07bea6ae78b7022c80e9d20">authentication</a>-&gt;getMode() == <a class="code hl_enumvalue" href="../../d5/dc9/namespacenexilis_1_1server.html#acc371b1360f86610e42c4eb65bce21b7a4867bad8b1ecfbf87ee78f3477f28230">AuthenticationMode::root_access</a>)</div>
+<div class="line"><span class="lineno">  133</span>    {</div>
+<div class="line"><span class="lineno">  134</span>        <span class="keywordflow">return</span> std::make_unique&lt;ErrorMessage&gt;(address, <a class="code hl_enumvalue" href="../../d0/de2/classnexilis_1_1server_1_1ErrorMessage.html#aa94feefb60f3bc4223973ffcbfd775cea63877363c706f5095d05a54f8b57b0ae">ErrorMessage::Type::not_implemented</a>);</div>
+<div class="line"><span class="lineno">  135</span>    }</div>
+<div class="line"><span class="lineno">  136</span> </div>
+<div class="line"><span class="lineno">  137</span>    <span class="comment">// Unknown identifiers are not users until their handshake succeeds.</span></div>
+<div class="line"><span class="lineno">  138</span>    <span class="keyword">auto</span> user = <a class="code hl_function" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#acdb61fe86e1f6a500b143675bd774503">ClientStorage::getClientById</a>(clientId);</div>
+<div class="line"><span class="lineno">  139</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> newUser = !user;</div>
+<div class="line"><span class="lineno">  140</span>    std::string accountId;</div>
+<div class="line"><span class="lineno">  141</span>    <span class="keyword">auto</span> createUser = [&amp;]() -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><span class="lineno">  142</span>    {</div>
+<div class="line"><span class="lineno">  143</span>        uint64_t newId = <a class="code hl_function" href="../../df/d06/group__RandFunctions.html#gacb4f385a6c9480e76c639947e185ff07">Util::getRandomUint64</a>();</div>
+<div class="line"><span class="lineno">  144</span>        user = std::make_shared&lt;User&gt;(newId, address, accountId);</div>
+<div class="line"><span class="lineno">  145</span>        <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a66755adfac1917c8b8791a018f31c643">Log::info</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Created new user: &quot;</span>, newId);</div>
+<div class="line"><span class="lineno">  146</span>        <span class="keyword">auto</span> username = <a class="code hl_function" href="../../df/d06/group__RandFunctions.html#ga69add1fd213bfb28b5ecfb656a436870">Util::getRandomString</a>(10);</div>
+<div class="line"><span class="lineno">  147</span>        user-&gt;setUsername(username);</div>
+<div class="line"><span class="lineno">  148</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  149</span>    };</div>
+<div class="line"><span class="lineno">  150</span>    <span class="keyword">auto</span> publishUser = [&amp;](<span class="keywordtype">bool</span> accountMode) -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><span class="lineno">  151</span>    {</div>
+<div class="line"><span class="lineno">  152</span>        <span class="keywordflow">return</span> acceptRegistration(address, [&amp;]()</div>
+<div class="line"><span class="lineno">  153</span>                                  {</div>
+<div class="line"><span class="lineno">  154</span>                                      <span class="keywordflow">if</span> (accountMode)</div>
+<div class="line"><span class="lineno">  155</span>                                          <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#a436ca2d9d0df712e4f4ff5c9bb38c981">ClientStorage::addWithAccountLimit</a>(</div>
+<div class="line"><span class="lineno">  156</span>                                                  user, <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027ba6fa691d2c07bea6ae78b7022c80e9d20">authentication</a>-&gt;getMaxSessionsPerAccount(),</div>
+<div class="line"><span class="lineno">  157</span>                                                  <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027ba6fa691d2c07bea6ae78b7022c80e9d20">authentication</a>-&gt;getMaxClients(),</div>
+<div class="line"><span class="lineno">  158</span>                                                  <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027ba6fa691d2c07bea6ae78b7022c80e9d20">authentication</a>-&gt;getMaxSessionsPerAddress());</div>
+<div class="line"><span class="lineno">  159</span>                                      <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#a253c76a4a35ade0e5e386047b98c28dd">ClientStorage::add</a>(</div>
+<div class="line"><span class="lineno">  160</span>                                              user, <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027ba6fa691d2c07bea6ae78b7022c80e9d20">authentication</a>-&gt;getMaxClients(),</div>
+<div class="line"><span class="lineno">  161</span>                                              <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027ba6fa691d2c07bea6ae78b7022c80e9d20">authentication</a>-&gt;getMaxSessionsPerAddress()); });</div>
 <div class="line"><span class="lineno">  162</span>    };</div>
 <div class="line"><span class="lineno">  163</span> </div>
-<div class="line"><span class="lineno">  164</span>    <span class="keywordflow">switch</span> (<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027ba6fa691d2c07bea6ae78b7022c80e9d20">authentication</a>-&gt;getMode())</div>
+<div class="line"><span class="lineno">  164</span>    <span class="keyword">auto</span> authenticatedMessage = [&amp;]() -&gt; std::unique_ptr&lt;BaseMessage&gt;</div>
 <div class="line"><span class="lineno">  165</span>    {</div>
-<div class="line"><span class="lineno">  166</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d5/dc9/namespacenexilis_1_1server.html#acc371b1360f86610e42c4eb65bce21b7aa2e4822a98337283e39f7b60acf85ec9">AuthenticationMode::empty</a>:</div>
-<div class="line"><span class="lineno">  167</span>        {</div>
-<div class="line"><span class="lineno">  168</span>            <span class="keywordflow">return</span> std::make_unique&lt;ErrorMessage&gt;(address, <a class="code hl_enumvalue" href="../../d0/de2/classnexilis_1_1server_1_1ErrorMessage.html#aa94feefb60f3bc4223973ffcbfd775cea169d488fee16afa55c094a2c2e48f214">ErrorMessage::Type::empty_authentication_mode</a>);</div>
-<div class="line"><span class="lineno">  169</span>        }</div>
-<div class="line"><span class="lineno">  170</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d5/dc9/namespacenexilis_1_1server.html#acc371b1360f86610e42c4eb65bce21b7a08b43519a7e36ee4c6c5615d1663bcfd">AuthenticationMode::skip</a>:</div>
-<div class="line"><span class="lineno">  171</span>        {</div>
-<div class="line"><span class="lineno">  172</span>            <span class="keywordflow">if</span> (!newUser)</div>
-<div class="line"><span class="lineno">  173</span>            {</div>
-<div class="line"><span class="lineno">  174</span>                <span class="comment">// Registered client: process the payload as a normal command.</span></div>
-<div class="line"><span class="lineno">  175</span>                <span class="keywordflow">return</span> authenticatedMessage();</div>
-<div class="line"><span class="lineno">  176</span>            }</div>
-<div class="line"><span class="lineno">  177</span> </div>
-<div class="line"><span class="lineno">  178</span>            <span class="comment">// A new skip-mode session is created only for the canonical</span></div>
-<div class="line"><span class="lineno">  179</span>            <span class="comment">// getting/client_id handshake, not arbitrary unknown payloads.</span></div>
-<div class="line"><span class="lineno">  180</span>            <span class="keywordflow">if</span> (clientId != 0 || payload.size() != 19 ||</div>
-<div class="line"><span class="lineno">  181</span>                payload[16] != <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027badf9831df9099278e4ae2d2e21f626e13">CommandType::getting</a>) ||</div>
-<div class="line"><span class="lineno">  182</span>                payload[17] != 0 || payload[18] != 0)</div>
-<div class="line"><span class="lineno">  183</span>                <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  184</span> </div>
-<div class="line"><span class="lineno">  185</span>            <span class="comment">// Brand new client. Register it so its client id stays stable and</span></div>
-<div class="line"><span class="lineno">  186</span>            <span class="comment">// hand its id back through the same AuthMessage handshake used by</span></div>
-<div class="line"><span class="lineno">  187</span>            <span class="comment">// password_protected mode (no credentials are verified here).</span></div>
-<div class="line"><span class="lineno">  188</span>            <span class="keywordflow">if</span> (!createUser() || !<a class="code hl_function" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#ab3ac04b1582e9c0ec1a6a5e700643d50">ClientStorage::add</a>(user))</div>
-<div class="line"><span class="lineno">  189</span>                <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  190</span> </div>
-<div class="line"><span class="lineno">  191</span>            <span class="comment">// This message is equal to Packet::getId (without client id):</span></div>
-<div class="line"><span class="lineno">  192</span>            <span class="comment">// a &quot;getting&quot; / &quot;client_id&quot; command that delivers the assigned id.</span></div>
-<div class="line"><span class="lineno">  193</span>            <span class="comment">// The session port is negotiated separately by the transport</span></div>
-<div class="line"><span class="lineno">  194</span>            <span class="comment">// (e.g. Boost TCP opens a switched session port after auth).</span></div>
-<div class="line"><span class="lineno">  195</span>            <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> message{1, 0, 0};</div>
-<div class="line"><span class="lineno">  196</span>            <span class="keyword">auto</span> idBytes = <a class="code hl_function" href="../../d9/d3d/group__BytevectorConversions.html#ga38e516c60d98cb71153ded26ce2b67e5">Util::convertToByteVector</a>(user-&gt;getId());</div>
-<div class="line"><span class="lineno">  197</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; <span class="keywordtype">byte</span> : idBytes)</div>
-<div class="line"><span class="lineno">  198</span>            {</div>
-<div class="line"><span class="lineno">  199</span>                message.emplace_back(<span class="keywordtype">byte</span>);</div>
-<div class="line"><span class="lineno">  200</span>            }</div>
-<div class="line"><span class="lineno">  201</span>            std::vector&lt;nx_data&gt; test{message};</div>
-<div class="line"><span class="lineno">  202</span> </div>
-<div class="line"><span class="lineno">  203</span>            <span class="keyword">auto</span> new_message_id = <a class="code hl_function" href="../../df/d06/group__RandFunctions.html#gacb4f385a6c9480e76c639947e185ff07">Util::getRandomUint64</a>();</div>
-<div class="line"><span class="lineno">  204</span>            BaseMessage::Data base_data(new_message_id, address, user);</div>
-<div class="line"><span class="lineno">  205</span>            <span class="keywordflow">return</span> std::make_unique&lt;AuthMessage&gt;(std::move(base_data), test);</div>
-<div class="line"><span class="lineno">  206</span>        }</div>
-<div class="line"><span class="lineno">  207</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d5/dc9/namespacenexilis_1_1server.html#acc371b1360f86610e42c4eb65bce21b7a7af9861b3323a309721c92706bfc440e">AuthenticationMode::admin_access</a>:</div>
-<div class="line"><span class="lineno">  208</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d5/dc9/namespacenexilis_1_1server.html#acc371b1360f86610e42c4eb65bce21b7a4867bad8b1ecfbf87ee78f3477f28230">AuthenticationMode::root_access</a>:</div>
-<div class="line"><span class="lineno">  209</span>        {</div>
-<div class="line"><span class="lineno">  210</span>            <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Not implemented!&quot;</span>);</div>
-<div class="line"><span class="lineno">  211</span>            <span class="keywordflow">return</span> std::make_unique&lt;ErrorMessage&gt;(address, <a class="code hl_enumvalue" href="../../d0/de2/classnexilis_1_1server_1_1ErrorMessage.html#aa94feefb60f3bc4223973ffcbfd775cea63877363c706f5095d05a54f8b57b0ae">ErrorMessage::Type::not_implemented</a>);</div>
-<div class="line"><span class="lineno">  212</span>        }</div>
-<div class="line"><span class="lineno">  213</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d5/dc9/namespacenexilis_1_1server.html#acc371b1360f86610e42c4eb65bce21b7a50e5526edd0d52c30e1f7e839786623d">AuthenticationMode::password_protected</a>:</div>
-<div class="line"><span class="lineno">  214</span>        {</div>
-<div class="line"><span class="lineno">  215</span>            <span class="keywordflow">if</span> (!newUser)</div>
-<div class="line"><span class="lineno">  216</span>            {</div>
-<div class="line"><span class="lineno">  217</span>                <span class="keywordflow">if</span> (user-&gt;hasCommonAccess())</div>
-<div class="line"><span class="lineno">  218</span>                {</div>
-<div class="line"><span class="lineno">  219</span>                    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">Log::debug</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Message from known user&quot;</span>);</div>
-<div class="line"><span class="lineno">  220</span>                    <span class="keywordflow">return</span> authenticatedMessage();</div>
-<div class="line"><span class="lineno">  221</span>                }</div>
-<div class="line"><span class="lineno">  222</span>                <span class="comment">// Message from verified client that has no access.</span></div>
-<div class="line"><span class="lineno">  223</span>                <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  224</span>                {</div>
-<div class="line"><span class="lineno">  225</span>                    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Message from verified client that has no access&quot;</span>);</div>
-<div class="line"><span class="lineno">  226</span>                    <span class="keywordflow">return</span> std::make_unique&lt;ErrorMessage&gt;(address, <a class="code hl_enumvalue" href="../../d0/de2/classnexilis_1_1server_1_1ErrorMessage.html#aa94feefb60f3bc4223973ffcbfd775cea1f10cb8847408f7122a1c4bfdc2d85ee">ErrorMessage::Type::no_access</a>);</div>
-<div class="line"><span class="lineno">  227</span>                }</div>
+<div class="line"><span class="lineno">  166</span>        <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> verified;</div>
+<div class="line"><span class="lineno">  167</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../dc/dfa/namespacenexilis_1_1message__auth.html#ab343be943c05bf9c867e77894669ef8b">message_auth::verify</a>(payload, user-&gt;getUdpToken(), verified))</div>
+<div class="line"><span class="lineno">  168</span>        {</div>
+<div class="line"><span class="lineno">  169</span>            <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a191e4c013bad219e746e8e56682d65e1">Log::warning</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Rejected request with an invalid session MAC&quot;</span>);</div>
+<div class="line"><span class="lineno">  170</span>            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  171</span>        }</div>
+<div class="line"><span class="lineno">  172</span>        <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> idBytes(verified.begin() + 8, verified.begin() + 16);</div>
+<div class="line"><span class="lineno">  173</span>        <span class="keywordflow">if</span> (!user-&gt;acceptMessageId(<a class="code hl_function" href="../../dc/dc3/group__FrontConversions.html#gaa69ac5b84ac2f72561afb8cc9d391072">Util::uint64FromFront</a>(idBytes)))</div>
+<div class="line"><span class="lineno">  174</span>        {</div>
+<div class="line"><span class="lineno">  175</span>            <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a191e4c013bad219e746e8e56682d65e1">Log::warning</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Rejected duplicate or stale message ID&quot;</span>);</div>
+<div class="line"><span class="lineno">  176</span>            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  177</span>        }</div>
+<div class="line"><span class="lineno">  178</span> </div>
+<div class="line"><span class="lineno">  179</span>        <span class="comment">// Drop excess authenticated traffic before parsing or dispatching it.</span></div>
+<div class="line"><span class="lineno">  180</span>        <span class="comment">// The token bucket allows a one-second burst at the configured rate;</span></div>
+<div class="line"><span class="lineno">  181</span>        <span class="comment">// a non-positive rate disables the limit.</span></div>
+<div class="line"><span class="lineno">  182</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> maxCommandRate = <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027ba6fa691d2c07bea6ae78b7022c80e9d20">authentication</a>-&gt;getMaxCommandRate();</div>
+<div class="line"><span class="lineno">  183</span>        <span class="keywordflow">if</span> (!user-&gt;acceptCommand(std::chrono::steady_clock::now(), maxCommandRate, maxCommandRate))</div>
+<div class="line"><span class="lineno">  184</span>        {</div>
+<div class="line"><span class="lineno">  185</span>            <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">Log::debug</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Dropped command over the per-client rate limit&quot;</span>);</div>
+<div class="line"><span class="lineno">  186</span>            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  187</span>        }</div>
+<div class="line"><span class="lineno">  188</span> </div>
+<div class="line"><span class="lineno">  189</span>        <span class="keywordflow">return</span> std::make_unique&lt;Message&gt;(handlePayload(verified, user, address));</div>
+<div class="line"><span class="lineno">  190</span>    };</div>
+<div class="line"><span class="lineno">  191</span> </div>
+<div class="line"><span class="lineno">  192</span>    <span class="keywordflow">switch</span> (<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027ba6fa691d2c07bea6ae78b7022c80e9d20">authentication</a>-&gt;getMode())</div>
+<div class="line"><span class="lineno">  193</span>    {</div>
+<div class="line"><span class="lineno">  194</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d5/dc9/namespacenexilis_1_1server.html#acc371b1360f86610e42c4eb65bce21b7aa2e4822a98337283e39f7b60acf85ec9">AuthenticationMode::empty</a>:</div>
+<div class="line"><span class="lineno">  195</span>        {</div>
+<div class="line"><span class="lineno">  196</span>            <span class="keywordflow">return</span> std::make_unique&lt;ErrorMessage&gt;(address, <a class="code hl_enumvalue" href="../../d0/de2/classnexilis_1_1server_1_1ErrorMessage.html#aa94feefb60f3bc4223973ffcbfd775cea169d488fee16afa55c094a2c2e48f214">ErrorMessage::Type::empty_authentication_mode</a>);</div>
+<div class="line"><span class="lineno">  197</span>        }</div>
+<div class="line"><span class="lineno">  198</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d5/dc9/namespacenexilis_1_1server.html#acc371b1360f86610e42c4eb65bce21b7a08b43519a7e36ee4c6c5615d1663bcfd">AuthenticationMode::skip</a>:</div>
+<div class="line"><span class="lineno">  199</span>        {</div>
+<div class="line"><span class="lineno">  200</span>            <span class="keywordflow">if</span> (!newUser)</div>
+<div class="line"><span class="lineno">  201</span>            {</div>
+<div class="line"><span class="lineno">  202</span>                <span class="comment">// Registered client: process the payload as a normal command.</span></div>
+<div class="line"><span class="lineno">  203</span>                <span class="keywordflow">return</span> authenticatedMessage();</div>
+<div class="line"><span class="lineno">  204</span>            }</div>
+<div class="line"><span class="lineno">  205</span> </div>
+<div class="line"><span class="lineno">  206</span>            <span class="comment">// A new skip-mode session is created only for the canonical</span></div>
+<div class="line"><span class="lineno">  207</span>            <span class="comment">// getting/client_id handshake, not arbitrary unknown payloads.</span></div>
+<div class="line"><span class="lineno">  208</span>            <span class="keywordflow">if</span> (clientId != 0 || payload.size() != 19 ||</div>
+<div class="line"><span class="lineno">  209</span>                payload[16] != <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027badf9831df9099278e4ae2d2e21f626e13">CommandType::getting</a>) ||</div>
+<div class="line"><span class="lineno">  210</span>                payload[17] != 0 || payload[18] != 0)</div>
+<div class="line"><span class="lineno">  211</span>                <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  212</span> </div>
+<div class="line"><span class="lineno">  213</span>            <span class="comment">// Brand new client. Register it so its client id stays stable and</span></div>
+<div class="line"><span class="lineno">  214</span>            <span class="comment">// hand its id back through the same AuthMessage handshake used by</span></div>
+<div class="line"><span class="lineno">  215</span>            <span class="comment">// password_protected mode (no credentials are verified here).</span></div>
+<div class="line"><span class="lineno">  216</span>            <span class="keywordflow">if</span> (!createUser() || !publishUser(<span class="keyword">false</span>))</div>
+<div class="line"><span class="lineno">  217</span>                <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  218</span> </div>
+<div class="line"><span class="lineno">  219</span>            <span class="comment">// This message is equal to Packet::getId (without client id):</span></div>
+<div class="line"><span class="lineno">  220</span>            <span class="comment">// a &quot;getting&quot; / &quot;client_id&quot; command that delivers the assigned id.</span></div>
+<div class="line"><span class="lineno">  221</span>            <span class="comment">// The session port is negotiated separately by the transport</span></div>
+<div class="line"><span class="lineno">  222</span>            <span class="comment">// (e.g. Boost TCP opens a switched session port after auth).</span></div>
+<div class="line"><span class="lineno">  223</span>            <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> message{1, 0, 0};</div>
+<div class="line"><span class="lineno">  224</span>            <span class="keyword">auto</span> idBytes = <a class="code hl_function" href="../../d9/d3d/group__BytevectorConversions.html#ga38e516c60d98cb71153ded26ce2b67e5">Util::convertToByteVector</a>(user-&gt;getId());</div>
+<div class="line"><span class="lineno">  225</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; <span class="keywordtype">byte</span> : idBytes)</div>
+<div class="line"><span class="lineno">  226</span>            {</div>
+<div class="line"><span class="lineno">  227</span>                message.emplace_back(<span class="keywordtype">byte</span>);</div>
 <div class="line"><span class="lineno">  228</span>            }</div>
-<div class="line"><span class="lineno">  229</span>            <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  230</span>            {</div>
-<div class="line"><span class="lineno">  231</span>                <span class="comment">// Only accept the password as a message from unidentified clients.</span></div>
-<div class="line"><span class="lineno">  232</span>                <span class="comment">// Failed attempts are shared by source address across reconnects to</span></div>
-<div class="line"><span class="lineno">  233</span>                <span class="comment">// this server instance so the shared passphrase cannot be</span></div>
-<div class="line"><span class="lineno">  234</span>                <span class="comment">// brute-forced at line speed.</span></div>
-<div class="line"><span class="lineno">  235</span>                <span class="keywordtype">bool</span> blocked = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  236</span>                {</div>
-<div class="line"><span class="lineno">  237</span>                    <span class="keyword">const</span> <span class="keyword">auto</span> now = std::chrono::steady_clock::now();</div>
-<div class="line"><span class="lineno">  238</span>                    std::lock_guard lock(m_passphraseAuthState-&gt;mutex);</div>
-<div class="line"><span class="lineno">  239</span>                    <span class="keyword">auto</span>&amp; attempts = m_passphraseAuthState-&gt;byAddress;</div>
-<div class="line"><span class="lineno">  240</span>                    <span class="keyword">auto</span> it = attempts.find(address);</div>
-<div class="line"><span class="lineno">  241</span>                    <span class="keywordflow">if</span> (it != attempts.end() &amp;&amp; now - it-&gt;second.firstFailure &gt;= kPassphraseAuthWindow)</div>
-<div class="line"><span class="lineno">  242</span>                    {</div>
-<div class="line"><span class="lineno">  243</span>                        attempts.erase(it);</div>
-<div class="line"><span class="lineno">  244</span>                        it = attempts.end();</div>
-<div class="line"><span class="lineno">  245</span>                    }</div>
-<div class="line"><span class="lineno">  246</span>                    <span class="keywordflow">if</span> (it != attempts.end() &amp;&amp; it-&gt;second.failures &gt;= kMaxPassphraseAuthFailures)</div>
-<div class="line"><span class="lineno">  247</span>                    {</div>
-<div class="line"><span class="lineno">  248</span>                        blocked = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  249</span>                    }</div>
-<div class="line"><span class="lineno">  250</span>                    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (it == attempts.end() &amp;&amp;</div>
-<div class="line"><span class="lineno">  251</span>                             attempts.size() &gt;= kMaxTrackedPassphraseAuthAddresses)</div>
-<div class="line"><span class="lineno">  252</span>                    {</div>
-<div class="line"><span class="lineno">  253</span>                        std::erase_if(attempts,</div>
-<div class="line"><span class="lineno">  254</span>                                      [now](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; entry)</div>
-<div class="line"><span class="lineno">  255</span>                                      {</div>
-<div class="line"><span class="lineno">  256</span>                                          <span class="keywordflow">return</span> now - entry.second.firstFailure &gt;= kPassphraseAuthWindow;</div>
-<div class="line"><span class="lineno">  257</span>                                      });</div>
-<div class="line"><span class="lineno">  258</span>                        <span class="keywordflow">if</span> (attempts.size() &gt;= kMaxTrackedPassphraseAuthAddresses)</div>
-<div class="line"><span class="lineno">  259</span>                        {</div>
-<div class="line"><span class="lineno">  260</span>                            blocked = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  261</span>                        }</div>
-<div class="line"><span class="lineno">  262</span>                    }</div>
-<div class="line"><span class="lineno">  263</span>                }</div>
-<div class="line"><span class="lineno">  264</span> </div>
-<div class="line"><span class="lineno">  265</span>                <span class="keywordflow">if</span> (blocked)</div>
-<div class="line"><span class="lineno">  266</span>                {</div>
-<div class="line"><span class="lineno">  267</span>                    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a191e4c013bad219e746e8e56682d65e1">Log::warning</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Too many failed passphrase attempts from &quot;</span>, address);</div>
-<div class="line"><span class="lineno">  268</span>                    <span class="keywordflow">return</span> std::make_unique&lt;ErrorMessage&gt;(address, <a class="code hl_enumvalue" href="../../d0/de2/classnexilis_1_1server_1_1ErrorMessage.html#aa94feefb60f3bc4223973ffcbfd775cea6ecb2eff6214721d84a6185b253dc6a5">ErrorMessage::Type::authentication_error</a>);</div>
-<div class="line"><span class="lineno">  269</span>                }</div>
-<div class="line"><span class="lineno">  270</span> </div>
-<div class="line"><span class="lineno">  271</span>                <span class="comment">// The comparison runs over the stored password length only, so the</span></div>
-<div class="line"><span class="lineno">  272</span>                <span class="comment">// response does not reveal the length of the correct password.</span></div>
-<div class="line"><span class="lineno">  273</span>                <span class="keywordflow">if</span> (<a class="code hl_function" href="../../dd/de4/classnexilis_1_1Util.html#a64405d1c0bd549b08621f4c4787e2482">Util::constantTimeEquals</a>(<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027ba6fa691d2c07bea6ae78b7022c80e9d20">authentication</a>-&gt;getPassphrase(), payload))</div>
-<div class="line"><span class="lineno">  274</span>                {</div>
-<div class="line"><span class="lineno">  275</span>                    <span class="keywordflow">if</span> (!createUser())</div>
-<div class="line"><span class="lineno">  276</span>                        <span class="keywordflow">return</span> std::make_unique&lt;ErrorMessage&gt;(address, <a class="code hl_enumvalue" href="../../d0/de2/classnexilis_1_1server_1_1ErrorMessage.html#aa94feefb60f3bc4223973ffcbfd775cea6ecb2eff6214721d84a6185b253dc6a5">ErrorMessage::Type::authentication_error</a>);</div>
-<div class="line"><span class="lineno">  277</span>                    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a66755adfac1917c8b8791a018f31c643">Log::info</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Correct password by user &quot;</span>, user-&gt;getId());</div>
-<div class="line"><span class="lineno">  278</span> </div>
-<div class="line"><span class="lineno">  279</span>                    {</div>
-<div class="line"><span class="lineno">  280</span>                        std::lock_guard lock(m_passphraseAuthState-&gt;mutex);</div>
-<div class="line"><span class="lineno">  281</span>                        m_passphraseAuthState-&gt;byAddress.erase(address);</div>
-<div class="line"><span class="lineno">  282</span>                    }</div>
-<div class="line"><span class="lineno">  283</span> </div>
-<div class="line"><span class="lineno">  284</span>                    user-&gt;setCommonAccess(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  229</span>            std::vector&lt;nx_data&gt; test{message};</div>
+<div class="line"><span class="lineno">  230</span> </div>
+<div class="line"><span class="lineno">  231</span>            <span class="keyword">auto</span> new_message_id = <a class="code hl_function" href="../../df/d06/group__RandFunctions.html#gacb4f385a6c9480e76c639947e185ff07">Util::getRandomUint64</a>();</div>
+<div class="line"><span class="lineno">  232</span>            BaseMessage::Data base_data(new_message_id, address, user);</div>
+<div class="line"><span class="lineno">  233</span>            <span class="keywordflow">return</span> std::make_unique&lt;AuthMessage&gt;(std::move(base_data), test);</div>
+<div class="line"><span class="lineno">  234</span>        }</div>
+<div class="line"><span class="lineno">  235</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d5/dc9/namespacenexilis_1_1server.html#acc371b1360f86610e42c4eb65bce21b7a7af9861b3323a309721c92706bfc440e">AuthenticationMode::admin_access</a>:</div>
+<div class="line"><span class="lineno">  236</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d5/dc9/namespacenexilis_1_1server.html#acc371b1360f86610e42c4eb65bce21b7a4867bad8b1ecfbf87ee78f3477f28230">AuthenticationMode::root_access</a>:</div>
+<div class="line"><span class="lineno">  237</span>        {</div>
+<div class="line"><span class="lineno">  238</span>            <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Not implemented!&quot;</span>);</div>
+<div class="line"><span class="lineno">  239</span>            <span class="keywordflow">return</span> std::make_unique&lt;ErrorMessage&gt;(address, <a class="code hl_enumvalue" href="../../d0/de2/classnexilis_1_1server_1_1ErrorMessage.html#aa94feefb60f3bc4223973ffcbfd775cea63877363c706f5095d05a54f8b57b0ae">ErrorMessage::Type::not_implemented</a>);</div>
+<div class="line"><span class="lineno">  240</span>        }</div>
+<div class="line"><span class="lineno">  241</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d5/dc9/namespacenexilis_1_1server.html#acc371b1360f86610e42c4eb65bce21b7a50e5526edd0d52c30e1f7e839786623d">AuthenticationMode::password_protected</a>:</div>
+<div class="line"><span class="lineno">  242</span>        {</div>
+<div class="line"><span class="lineno">  243</span>            <span class="keywordflow">if</span> (!newUser)</div>
+<div class="line"><span class="lineno">  244</span>            {</div>
+<div class="line"><span class="lineno">  245</span>                <span class="keywordflow">if</span> (user-&gt;hasCommonAccess())</div>
+<div class="line"><span class="lineno">  246</span>                {</div>
+<div class="line"><span class="lineno">  247</span>                    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">Log::debug</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Message from known user&quot;</span>);</div>
+<div class="line"><span class="lineno">  248</span>                    <span class="keywordflow">return</span> authenticatedMessage();</div>
+<div class="line"><span class="lineno">  249</span>                }</div>
+<div class="line"><span class="lineno">  250</span>                <span class="comment">// Message from verified client that has no access.</span></div>
+<div class="line"><span class="lineno">  251</span>                <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  252</span>                {</div>
+<div class="line"><span class="lineno">  253</span>                    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Message from verified client that has no access&quot;</span>);</div>
+<div class="line"><span class="lineno">  254</span>                    <span class="keywordflow">return</span> std::make_unique&lt;ErrorMessage&gt;(address, <a class="code hl_enumvalue" href="../../d0/de2/classnexilis_1_1server_1_1ErrorMessage.html#aa94feefb60f3bc4223973ffcbfd775cea1f10cb8847408f7122a1c4bfdc2d85ee">ErrorMessage::Type::no_access</a>);</div>
+<div class="line"><span class="lineno">  255</span>                }</div>
+<div class="line"><span class="lineno">  256</span>            }</div>
+<div class="line"><span class="lineno">  257</span>            <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  258</span>            {</div>
+<div class="line"><span class="lineno">  259</span>                <span class="comment">// Only accept the password as a message from unidentified clients.</span></div>
+<div class="line"><span class="lineno">  260</span>                <span class="comment">// Failed attempts are shared by source address across reconnects to</span></div>
+<div class="line"><span class="lineno">  261</span>                <span class="comment">// this server instance so the shared passphrase cannot be</span></div>
+<div class="line"><span class="lineno">  262</span>                <span class="comment">// brute-forced at line speed.</span></div>
+<div class="line"><span class="lineno">  263</span>                <span class="keywordtype">bool</span> blocked = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  264</span>                {</div>
+<div class="line"><span class="lineno">  265</span>                    <span class="keyword">const</span> <span class="keyword">auto</span> now = std::chrono::steady_clock::now();</div>
+<div class="line"><span class="lineno">  266</span>                    std::lock_guard lock(m_passphraseAuthState-&gt;mutex);</div>
+<div class="line"><span class="lineno">  267</span>                    <span class="keyword">auto</span>&amp; attempts = m_passphraseAuthState-&gt;byAddress;</div>
+<div class="line"><span class="lineno">  268</span>                    <span class="keyword">auto</span> it = attempts.find(address);</div>
+<div class="line"><span class="lineno">  269</span>                    <span class="keywordflow">if</span> (it != attempts.end() &amp;&amp; now - it-&gt;second.firstFailure &gt;= kPassphraseAuthWindow)</div>
+<div class="line"><span class="lineno">  270</span>                    {</div>
+<div class="line"><span class="lineno">  271</span>                        attempts.erase(it);</div>
+<div class="line"><span class="lineno">  272</span>                        it = attempts.end();</div>
+<div class="line"><span class="lineno">  273</span>                    }</div>
+<div class="line"><span class="lineno">  274</span>                    <span class="keywordflow">if</span> (it != attempts.end() &amp;&amp; it-&gt;second.failures &gt;= kMaxPassphraseAuthFailures)</div>
+<div class="line"><span class="lineno">  275</span>                    {</div>
+<div class="line"><span class="lineno">  276</span>                        blocked = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  277</span>                    }</div>
+<div class="line"><span class="lineno">  278</span>                }</div>
+<div class="line"><span class="lineno">  279</span> </div>
+<div class="line"><span class="lineno">  280</span>                <span class="keywordflow">if</span> (blocked)</div>
+<div class="line"><span class="lineno">  281</span>                {</div>
+<div class="line"><span class="lineno">  282</span>                    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a191e4c013bad219e746e8e56682d65e1">Log::warning</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Too many failed passphrase attempts from &quot;</span>, address);</div>
+<div class="line"><span class="lineno">  283</span>                    <span class="keywordflow">return</span> std::make_unique&lt;ErrorMessage&gt;(address, <a class="code hl_enumvalue" href="../../d0/de2/classnexilis_1_1server_1_1ErrorMessage.html#aa94feefb60f3bc4223973ffcbfd775cea6ecb2eff6214721d84a6185b253dc6a5">ErrorMessage::Type::authentication_error</a>);</div>
+<div class="line"><span class="lineno">  284</span>                }</div>
 <div class="line"><span class="lineno">  285</span> </div>
-<div class="line"><span class="lineno">  286</span>                    <span class="comment">// Add to storage only if this was a new user.</span></div>
-<div class="line"><span class="lineno">  287</span>                    <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#ab3ac04b1582e9c0ec1a6a5e700643d50">ClientStorage::add</a>(user))</div>
-<div class="line"><span class="lineno">  288</span>                        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  289</span> </div>
-<div class="line"><span class="lineno">  290</span>                    <span class="comment">// This message is equal to Packet::getId (without client id).</span></div>
-<div class="line"><span class="lineno">  291</span>                    <span class="comment">// The session port is negotiated separately by the</span></div>
-<div class="line"><span class="lineno">  292</span>                    <span class="comment">// transport (e.g. Boost TCP opens a switched session</span></div>
-<div class="line"><span class="lineno">  293</span>                    <span class="comment">// port after auth completes).</span></div>
-<div class="line"><span class="lineno">  294</span>                    <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> message{1, 0, 0};</div>
-<div class="line"><span class="lineno">  295</span>                    <span class="keyword">auto</span> idBytes = <a class="code hl_function" href="../../d9/d3d/group__BytevectorConversions.html#ga38e516c60d98cb71153ded26ce2b67e5">Util::convertToByteVector</a>(user-&gt;getId());</div>
-<div class="line"><span class="lineno">  296</span>                    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; <span class="keywordtype">byte</span> : idBytes)</div>
-<div class="line"><span class="lineno">  297</span>                    {</div>
-<div class="line"><span class="lineno">  298</span>                        message.emplace_back(<span class="keywordtype">byte</span>);</div>
-<div class="line"><span class="lineno">  299</span>                    }</div>
-<div class="line"><span class="lineno">  300</span>                    std::vector&lt;nx_data&gt; test{message};</div>
-<div class="line"><span class="lineno">  301</span> </div>
-<div class="line"><span class="lineno">  302</span>                    <span class="keyword">auto</span> new_message_id = <a class="code hl_function" href="../../df/d06/group__RandFunctions.html#gacb4f385a6c9480e76c639947e185ff07">Util::getRandomUint64</a>();</div>
-<div class="line"><span class="lineno">  303</span>                    BaseMessage::Data base_data(new_message_id, address, user);</div>
-<div class="line"><span class="lineno">  304</span>                    <span class="keywordflow">return</span> std::make_unique&lt;AuthMessage&gt;(std::move(base_data), test);</div>
-<div class="line"><span class="lineno">  305</span>                }</div>
-<div class="line"><span class="lineno">  306</span>                <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  307</span>                {</div>
-<div class="line"><span class="lineno">  308</span>                    <span class="keyword">const</span> <span class="keyword">auto</span> now = std::chrono::steady_clock::now();</div>
-<div class="line"><span class="lineno">  309</span>                    {</div>
-<div class="line"><span class="lineno">  310</span>                        std::lock_guard lock(m_passphraseAuthState-&gt;mutex);</div>
-<div class="line"><span class="lineno">  311</span>                        <span class="keyword">auto</span>&amp; attempts = m_passphraseAuthState-&gt;byAddress;</div>
-<div class="line"><span class="lineno">  312</span>                        <span class="keyword">auto</span> it = attempts.find(address);</div>
-<div class="line"><span class="lineno">  313</span>                        <span class="keywordflow">if</span> (it != attempts.end())</div>
-<div class="line"><span class="lineno">  314</span>                        {</div>
-<div class="line"><span class="lineno">  315</span>                            ++it-&gt;second.failures;</div>
-<div class="line"><span class="lineno">  316</span>                        }</div>
-<div class="line"><span class="lineno">  317</span>                        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  318</span>                        {</div>
-<div class="line"><span class="lineno">  319</span>                            attempts.emplace(address, PassphraseAuthState::Attempt{now, 1});</div>
+<div class="line"><span class="lineno">  286</span>                <span class="comment">// Account mode requires a distinct private credential for each</span></div>
+<div class="line"><span class="lineno">  287</span>                <span class="comment">// stable account. The 8-byte zero ID and NXAC marker distinguish</span></div>
+<div class="line"><span class="lineno">  288</span>                <span class="comment">// this first frame from the legacy raw passphrase.</span></div>
+<div class="line"><span class="lineno">  289</span>                <span class="keywordtype">bool</span> accepted = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  290</span>                <span class="keyword">const</span> <span class="keyword">auto</span>&amp; authenticator = <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027ba6fa691d2c07bea6ae78b7022c80e9d20">authentication</a>-&gt;getAccountAuthenticator();</div>
+<div class="line"><span class="lineno">  291</span>                <span class="keywordflow">if</span> (authenticator)</div>
+<div class="line"><span class="lineno">  292</span>                {</div>
+<div class="line"><span class="lineno">  293</span>                    <span class="keywordflow">if</span> (payload.size() &gt;= 15 &amp;&amp;</div>
+<div class="line"><span class="lineno">  294</span>                        std::all_of(payload.begin(), payload.begin() + 8,</div>
+<div class="line"><span class="lineno">  295</span>                                    [](uint8_t <span class="keywordtype">byte</span>)</div>
+<div class="line"><span class="lineno">  296</span>                                    { return byte == 0; }) &amp;&amp;</div>
+<div class="line"><span class="lineno">  297</span>                        std::equal(payload.begin() + 8, payload.begin() + 12, <span class="stringliteral">&quot;NXAC&quot;</span>))</div>
+<div class="line"><span class="lineno">  298</span>                    {</div>
+<div class="line"><span class="lineno">  299</span>                        <span class="keyword">const</span> std::size_t passwordLength = payload[12];</div>
+<div class="line"><span class="lineno">  300</span>                        <span class="keyword">const</span> std::size_t accountLength = payload[13];</div>
+<div class="line"><span class="lineno">  301</span>                        <span class="keyword">const</span> std::size_t credentialLength = payload[14];</div>
+<div class="line"><span class="lineno">  302</span>                        <span class="keywordflow">if</span> (accountLength &gt; 0 &amp;&amp; credentialLength &gt; 0 &amp;&amp;</div>
+<div class="line"><span class="lineno">  303</span>                            payload.size() == 15 + passwordLength + accountLength + credentialLength)</div>
+<div class="line"><span class="lineno">  304</span>                        {</div>
+<div class="line"><span class="lineno">  305</span>                            <span class="keyword">const</span> <span class="keyword">auto</span> passwordEnd = payload.begin() + 15 + passwordLength;</div>
+<div class="line"><span class="lineno">  306</span>                            <span class="keyword">const</span> <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> password(payload.begin() + 15, passwordEnd);</div>
+<div class="line"><span class="lineno">  307</span>                            accountId.assign(passwordEnd, passwordEnd + accountLength);</div>
+<div class="line"><span class="lineno">  308</span>                            <span class="keyword">const</span> std::string credential(passwordEnd + accountLength, payload.end());</div>
+<div class="line"><span class="lineno">  309</span>                            <span class="keywordflow">if</span> (<a class="code hl_function" href="../../dd/de4/classnexilis_1_1Util.html#a64405d1c0bd549b08621f4c4787e2482">Util::constantTimeEquals</a>(<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027ba6fa691d2c07bea6ae78b7022c80e9d20">authentication</a>-&gt;getPassphrase(), password))</div>
+<div class="line"><span class="lineno">  310</span>                            {</div>
+<div class="line"><span class="lineno">  311</span>                                <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  312</span>                                {</div>
+<div class="line"><span class="lineno">  313</span>                                    accepted = authenticator(accountId, credential);</div>
+<div class="line"><span class="lineno">  314</span>                                }</div>
+<div class="line"><span class="lineno">  315</span>                                <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><span class="lineno">  316</span>                                {</div>
+<div class="line"><span class="lineno">  317</span>                                    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Account authenticator failed&quot;</span>);</div>
+<div class="line"><span class="lineno">  318</span>                                }</div>
+<div class="line"><span class="lineno">  319</span>                            }</div>
 <div class="line"><span class="lineno">  320</span>                        }</div>
 <div class="line"><span class="lineno">  321</span>                    }</div>
-<div class="line"><span class="lineno">  322</span>                    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Authentication error: incorrect password&quot;</span>);</div>
-<div class="line"><span class="lineno">  323</span>                    <span class="keywordflow">return</span> std::make_unique&lt;ErrorMessage&gt;(address, <a class="code hl_enumvalue" href="../../d0/de2/classnexilis_1_1server_1_1ErrorMessage.html#aa94feefb60f3bc4223973ffcbfd775cea6ecb2eff6214721d84a6185b253dc6a5">ErrorMessage::Type::authentication_error</a>);</div>
-<div class="line"><span class="lineno">  324</span>                }</div>
-<div class="line"><span class="lineno">  325</span>            }</div>
-<div class="line"><span class="lineno">  326</span>        }</div>
-<div class="line"><span class="lineno">  327</span>        <span class="keywordflow">default</span>:</div>
-<div class="line"><span class="lineno">  328</span>        {</div>
-<div class="line"><span class="lineno">  329</span>            <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Missing authentication mode&quot;</span>);</div>
-<div class="line"><span class="lineno">  330</span>            <span class="keywordflow">return</span> std::make_unique&lt;ErrorMessage&gt;(address, <a class="code hl_enumvalue" href="../../d0/de2/classnexilis_1_1server_1_1ErrorMessage.html#aa94feefb60f3bc4223973ffcbfd775ceaae341b042eb094e5c15e88ade9f59e9f">ErrorMessage::Type::missing_authentication_mode</a>);</div>
-<div class="line"><span class="lineno">  331</span>        }</div>
-<div class="line"><span class="lineno">  332</span>    }</div>
-<div class="line"><span class="lineno">  333</span>}</div>
+<div class="line"><span class="lineno">  322</span>                }</div>
+<div class="line"><span class="lineno">  323</span>                <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  324</span>                {</div>
+<div class="line"><span class="lineno">  325</span>                    <span class="comment">// The comparison runs over the stored password length only.</span></div>
+<div class="line"><span class="lineno">  326</span>                    accepted = <a class="code hl_function" href="../../dd/de4/classnexilis_1_1Util.html#a64405d1c0bd549b08621f4c4787e2482">Util::constantTimeEquals</a>(<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027ba6fa691d2c07bea6ae78b7022c80e9d20">authentication</a>-&gt;getPassphrase(), payload);</div>
+<div class="line"><span class="lineno">  327</span>                }</div>
+<div class="line"><span class="lineno">  328</span> </div>
+<div class="line"><span class="lineno">  329</span>                <span class="keywordflow">if</span> (accepted)</div>
+<div class="line"><span class="lineno">  330</span>                {</div>
+<div class="line"><span class="lineno">  331</span>                    <span class="keywordflow">if</span> (!createUser())</div>
+<div class="line"><span class="lineno">  332</span>                        <span class="keywordflow">return</span> std::make_unique&lt;ErrorMessage&gt;(address, <a class="code hl_enumvalue" href="../../d0/de2/classnexilis_1_1server_1_1ErrorMessage.html#aa94feefb60f3bc4223973ffcbfd775cea6ecb2eff6214721d84a6185b253dc6a5">ErrorMessage::Type::authentication_error</a>);</div>
+<div class="line"><span class="lineno">  333</span>                    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a66755adfac1917c8b8791a018f31c643">Log::info</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Correct password by user &quot;</span>, user-&gt;getId());</div>
+<div class="line"><span class="lineno">  334</span> </div>
+<div class="line"><span class="lineno">  335</span>                    user-&gt;setCommonAccess(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  336</span> </div>
+<div class="line"><span class="lineno">  337</span>                    <span class="keyword">const</span> <span class="keywordtype">bool</span> published = publishUser(<span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>(authenticator));</div>
+<div class="line"><span class="lineno">  338</span>                    <span class="keywordflow">if</span> (!published)</div>
+<div class="line"><span class="lineno">  339</span>                        <span class="keywordflow">return</span> std::make_unique&lt;ErrorMessage&gt;(address, <a class="code hl_enumvalue" href="../../d0/de2/classnexilis_1_1server_1_1ErrorMessage.html#aa94feefb60f3bc4223973ffcbfd775cea6ecb2eff6214721d84a6185b253dc6a5">ErrorMessage::Type::authentication_error</a>);</div>
+<div class="line"><span class="lineno">  340</span> </div>
+<div class="line"><span class="lineno">  341</span>                    {</div>
+<div class="line"><span class="lineno">  342</span>                        std::lock_guard lock(m_passphraseAuthState-&gt;mutex);</div>
+<div class="line"><span class="lineno">  343</span>                        m_passphraseAuthState-&gt;byAddress.erase(address);</div>
+<div class="line"><span class="lineno">  344</span>                    }</div>
+<div class="line"><span class="lineno">  345</span> </div>
+<div class="line"><span class="lineno">  346</span>                    <span class="comment">// This message is equal to Packet::getId (without client id).</span></div>
+<div class="line"><span class="lineno">  347</span>                    <span class="comment">// The session port is negotiated separately by the</span></div>
+<div class="line"><span class="lineno">  348</span>                    <span class="comment">// transport (e.g. Boost TCP opens a switched session</span></div>
+<div class="line"><span class="lineno">  349</span>                    <span class="comment">// port after auth completes).</span></div>
+<div class="line"><span class="lineno">  350</span>                    <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> message{1, 0, 0};</div>
+<div class="line"><span class="lineno">  351</span>                    <span class="keyword">auto</span> idBytes = <a class="code hl_function" href="../../d9/d3d/group__BytevectorConversions.html#ga38e516c60d98cb71153ded26ce2b67e5">Util::convertToByteVector</a>(user-&gt;getId());</div>
+<div class="line"><span class="lineno">  352</span>                    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; <span class="keywordtype">byte</span> : idBytes)</div>
+<div class="line"><span class="lineno">  353</span>                    {</div>
+<div class="line"><span class="lineno">  354</span>                        message.emplace_back(<span class="keywordtype">byte</span>);</div>
+<div class="line"><span class="lineno">  355</span>                    }</div>
+<div class="line"><span class="lineno">  356</span>                    std::vector&lt;nx_data&gt; test{message};</div>
+<div class="line"><span class="lineno">  357</span> </div>
+<div class="line"><span class="lineno">  358</span>                    <span class="keyword">auto</span> new_message_id = <a class="code hl_function" href="../../df/d06/group__RandFunctions.html#gacb4f385a6c9480e76c639947e185ff07">Util::getRandomUint64</a>();</div>
+<div class="line"><span class="lineno">  359</span>                    BaseMessage::Data base_data(new_message_id, address, user);</div>
+<div class="line"><span class="lineno">  360</span>                    <span class="keywordflow">return</span> std::make_unique&lt;AuthMessage&gt;(std::move(base_data), test);</div>
+<div class="line"><span class="lineno">  361</span>                }</div>
+<div class="line"><span class="lineno">  362</span>                <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  363</span>                {</div>
+<div class="line"><span class="lineno">  364</span>                    <span class="keyword">const</span> <span class="keyword">auto</span> now = std::chrono::steady_clock::now();</div>
+<div class="line"><span class="lineno">  365</span>                    {</div>
+<div class="line"><span class="lineno">  366</span>                        std::lock_guard lock(m_passphraseAuthState-&gt;mutex);</div>
+<div class="line"><span class="lineno">  367</span>                        <span class="keyword">auto</span>&amp; attempts = m_passphraseAuthState-&gt;byAddress;</div>
+<div class="line"><span class="lineno">  368</span>                        <span class="keyword">auto</span> it = attempts.find(address);</div>
+<div class="line"><span class="lineno">  369</span>                        <span class="keywordflow">if</span> (it != attempts.end() &amp;&amp;</div>
+<div class="line"><span class="lineno">  370</span>                            now - it-&gt;second.firstFailure &gt;= kPassphraseAuthWindow)</div>
+<div class="line"><span class="lineno">  371</span>                            it = attempts.erase(it);</div>
+<div class="line"><span class="lineno">  372</span>                        <span class="keywordflow">if</span> (it != attempts.end())</div>
+<div class="line"><span class="lineno">  373</span>                        {</div>
+<div class="line"><span class="lineno">  374</span>                            ++it-&gt;second.failures;</div>
+<div class="line"><span class="lineno">  375</span>                        }</div>
+<div class="line"><span class="lineno">  376</span>                        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  377</span>                        {</div>
+<div class="line"><span class="lineno">  378</span>                            <span class="keywordflow">if</span> (attempts.size() &gt;= kMaxTrackedPassphraseAuthAddresses)</div>
+<div class="line"><span class="lineno">  379</span>                                std::erase_if(attempts, [now](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; entry)</div>
+<div class="line"><span class="lineno">  380</span>                                              { <span class="keywordflow">return</span> now - entry.second.firstFailure &gt;= kPassphraseAuthWindow; });</div>
+<div class="line"><span class="lineno">  381</span>                            <span class="keywordflow">if</span> (attempts.size() &gt;= kMaxTrackedPassphraseAuthAddresses)</div>
+<div class="line"><span class="lineno">  382</span>                            {</div>
+<div class="line"><span class="lineno">  383</span>                                <span class="comment">// Preserve locked addresses when possible. A</span></div>
+<div class="line"><span class="lineno">  384</span>                                <span class="comment">// full table must not reject valid credentials</span></div>
+<div class="line"><span class="lineno">  385</span>                                <span class="comment">// from an address that has no failure record.</span></div>
+<div class="line"><span class="lineno">  386</span>                                <span class="keyword">auto</span> oldest = attempts.end();</div>
+<div class="line"><span class="lineno">  387</span>                                <span class="keywordflow">for</span> (<span class="keyword">auto</span> candidate = attempts.begin(); candidate != attempts.end(); ++candidate)</div>
+<div class="line"><span class="lineno">  388</span>                                {</div>
+<div class="line"><span class="lineno">  389</span>                                    <span class="keywordflow">if</span> (oldest == attempts.end() ||</div>
+<div class="line"><span class="lineno">  390</span>                                        (oldest-&gt;second.failures &gt;= kMaxPassphraseAuthFailures &amp;&amp;</div>
+<div class="line"><span class="lineno">  391</span>                                         candidate-&gt;second.failures &lt; kMaxPassphraseAuthFailures) ||</div>
+<div class="line"><span class="lineno">  392</span>                                        ((candidate-&gt;second.failures &gt;= kMaxPassphraseAuthFailures) ==</div>
+<div class="line"><span class="lineno">  393</span>                                                 (oldest-&gt;second.failures &gt;= kMaxPassphraseAuthFailures) &amp;&amp;</div>
+<div class="line"><span class="lineno">  394</span>                                         candidate-&gt;second.firstFailure &lt; oldest-&gt;second.firstFailure))</div>
+<div class="line"><span class="lineno">  395</span>                                        oldest = candidate;</div>
+<div class="line"><span class="lineno">  396</span>                                }</div>
+<div class="line"><span class="lineno">  397</span>                                attempts.erase(oldest);</div>
+<div class="line"><span class="lineno">  398</span>                                <span class="keywordflow">if</span> (++m_passphraseAuthState-&gt;evictions % 256 == 1)</div>
+<div class="line"><span class="lineno">  399</span>                                    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a191e4c013bad219e746e8e56682d65e1">Log::warning</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Passphrase failure table saturated; evicted an old address&quot;</span>);</div>
+<div class="line"><span class="lineno">  400</span>                            }</div>
+<div class="line"><span class="lineno">  401</span>                            attempts.emplace(address, PassphraseAuthState::Attempt{now, 1});</div>
+<div class="line"><span class="lineno">  402</span>                        }</div>
+<div class="line"><span class="lineno">  403</span>                    }</div>
+<div class="line"><span class="lineno">  404</span>                    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Authentication error: incorrect password&quot;</span>);</div>
+<div class="line"><span class="lineno">  405</span>                    <span class="keywordflow">return</span> std::make_unique&lt;ErrorMessage&gt;(address, <a class="code hl_enumvalue" href="../../d0/de2/classnexilis_1_1server_1_1ErrorMessage.html#aa94feefb60f3bc4223973ffcbfd775cea6ecb2eff6214721d84a6185b253dc6a5">ErrorMessage::Type::authentication_error</a>);</div>
+<div class="line"><span class="lineno">  406</span>                }</div>
+<div class="line"><span class="lineno">  407</span>            }</div>
+<div class="line"><span class="lineno">  408</span>        }</div>
+<div class="line"><span class="lineno">  409</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  410</span>        {</div>
+<div class="line"><span class="lineno">  411</span>            <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Missing authentication mode&quot;</span>);</div>
+<div class="line"><span class="lineno">  412</span>            <span class="keywordflow">return</span> std::make_unique&lt;ErrorMessage&gt;(address, <a class="code hl_enumvalue" href="../../d0/de2/classnexilis_1_1server_1_1ErrorMessage.html#aa94feefb60f3bc4223973ffcbfd775ceaae341b042eb094e5c15e88ade9f59e9f">ErrorMessage::Type::missing_authentication_mode</a>);</div>
+<div class="line"><span class="lineno">  413</span>        }</div>
+<div class="line"><span class="lineno">  414</span>    }</div>
+<div class="line"><span class="lineno">  415</span>}</div>
 <div class="ttc" id="aclassnexilis_1_1Log_html_a191e4c013bad219e746e8e56682d65e1"><div class="ttname"><a href="../../dc/dbc/classnexilis_1_1Log.html#a191e4c013bad219e746e8e56682d65e1">nexilis::Log::warning</a></div><div class="ttdeci">static void warning(const T &amp;data, const Args &amp;... args)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de3/log_8hh_source.html#l00117">log.hh:117</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1Log_html_a49959aac4210e93d1ccd1977e08dba80"><div class="ttname"><a href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">nexilis::Log::error</a></div><div class="ttdeci">static void error(const T &amp;data, const Args &amp;... args)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de3/log_8hh_source.html#l00123">log.hh:123</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1Log_html_a66755adfac1917c8b8791a018f31c643"><div class="ttname"><a href="../../dc/dbc/classnexilis_1_1Log.html#a66755adfac1917c8b8791a018f31c643">nexilis::Log::info</a></div><div class="ttdeci">static void info(const T &amp;data, const Args &amp;... args)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de3/log_8hh_source.html#l00111">log.hh:111</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1Log_html_a8818a693340eed14a9110c9988eac982"><div class="ttname"><a href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">nexilis::Log::debug</a></div><div class="ttdeci">static void debug(const T &amp;data, const Args &amp;... args)</div><div class="ttdoc">All the overloaded printing functions.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de3/log_8hh_source.html#l00105">log.hh:105</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1NxClass_html_aacbc1ef37e00748730aa9f6faa55e2ae"><div class="ttname"><a href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">nexilis::NxClass::header</a></div><div class="ttdeci">const std::string &amp; header() const</div><div class="ttdoc">Get the classes name as header for log messages.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d9e/nx__class_8hh_source.html#l00053">nx_class.hh:53</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1Util_html_a64405d1c0bd549b08621f4c4787e2482"><div class="ttname"><a href="../../dd/de4/classnexilis_1_1Util.html#a64405d1c0bd549b08621f4c4787e2482">nexilis::Util::constantTimeEquals</a></div><div class="ttdeci">static bool constantTimeEquals(const std::string &amp;expected, const std::string &amp;given)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d6f/util_8cc_source.html#l00073">util.cc:73</a></div></div>
-<div class="ttc" id="aclassnexilis_1_1server_1_1ClientStorage_html_ab3ac04b1582e9c0ec1a6a5e700643d50"><div class="ttname"><a href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#ab3ac04b1582e9c0ec1a6a5e700643d50">nexilis::server::ClientStorage::add</a></div><div class="ttdeci">static bool add(std::shared_ptr&lt; User &gt; client)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d56/client__storage_8cc_source.html#l00028">client_storage.cc:28</a></div></div>
-<div class="ttc" id="aclassnexilis_1_1server_1_1ClientStorage_html_acdb61fe86e1f6a500b143675bd774503"><div class="ttname"><a href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#acdb61fe86e1f6a500b143675bd774503">nexilis::server::ClientStorage::getClientById</a></div><div class="ttdeci">static std::shared_ptr&lt; User &gt; getClientById(uint64_t id)</div><div class="ttdoc">Retain the returned handle throughout the operation on the user.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d56/client__storage_8cc_source.html#l00053">client_storage.cc:53</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1server_1_1ClientStorage_html_a253c76a4a35ade0e5e386047b98c28dd"><div class="ttname"><a href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#a253c76a4a35ade0e5e386047b98c28dd">nexilis::server::ClientStorage::add</a></div><div class="ttdeci">static bool add(std::shared_ptr&lt; User &gt; client, std::size_t maximum=maximumClients, std::size_t maximumPerAddress=maximumClients)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d56/client__storage_8cc_source.html#l00028">client_storage.cc:28</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1server_1_1ClientStorage_html_a436ca2d9d0df712e4f4ff5c9bb38c981"><div class="ttname"><a href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#a436ca2d9d0df712e4f4ff5c9bb38c981">nexilis::server::ClientStorage::addWithAccountLimit</a></div><div class="ttdeci">static bool addWithAccountLimit(std::shared_ptr&lt; User &gt; client, std::size_t maximumPerAccount, std::size_t maximum=maximumClients, std::size_t maximumPerAddress=maximumClients)</div><div class="ttdoc">Publish an account user only while its session quota has room.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d56/client__storage_8cc_source.html#l00050">client_storage.cc:50</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1server_1_1ClientStorage_html_acdb61fe86e1f6a500b143675bd774503"><div class="ttname"><a href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#acdb61fe86e1f6a500b143675bd774503">nexilis::server::ClientStorage::getClientById</a></div><div class="ttdeci">static std::shared_ptr&lt; User &gt; getClientById(uint64_t id)</div><div class="ttdoc">Retain the returned handle throughout the operation on the user.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d56/client__storage_8cc_source.html#l00088">client_storage.cc:88</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1server_1_1ErrorMessage_html_aa94feefb60f3bc4223973ffcbfd775cea169d488fee16afa55c094a2c2e48f214"><div class="ttname"><a href="../../d0/de2/classnexilis_1_1server_1_1ErrorMessage.html#aa94feefb60f3bc4223973ffcbfd775cea169d488fee16afa55c094a2c2e48f214">nexilis::server::ErrorMessage::Type::empty_authentication_mode</a></div><div class="ttdeci">@ empty_authentication_mode</div></div>
 <div class="ttc" id="aclassnexilis_1_1server_1_1ErrorMessage_html_aa94feefb60f3bc4223973ffcbfd775cea1f10cb8847408f7122a1c4bfdc2d85ee"><div class="ttname"><a href="../../d0/de2/classnexilis_1_1server_1_1ErrorMessage.html#aa94feefb60f3bc4223973ffcbfd775cea1f10cb8847408f7122a1c4bfdc2d85ee">nexilis::server::ErrorMessage::Type::no_access</a></div><div class="ttdeci">@ no_access</div></div>
 <div class="ttc" id="aclassnexilis_1_1server_1_1ErrorMessage_html_aa94feefb60f3bc4223973ffcbfd775cea63877363c706f5095d05a54f8b57b0ae"><div class="ttname"><a href="../../d0/de2/classnexilis_1_1server_1_1ErrorMessage.html#aa94feefb60f3bc4223973ffcbfd775cea63877363c706f5095d05a54f8b57b0ae">nexilis::server::ErrorMessage::Type::not_implemented</a></div><div class="ttdeci">@ not_implemented</div></div>
@@ -488,49 +555,51 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d6/db8/classnexilis_1_1server_1_1MessageHandler_a5f33dc0df903c132243ed14c13cf8826_cgraph.png" border="0" usemap="#ad6/db8/classnexilis_1_1server_1_1MessageHandler_a5f33dc0df903c132243ed14c13cf8826_cgraph" alt=""/></div>
 <map name="ad6/db8/classnexilis_1_1server_1_1MessageHandler_a5f33dc0df903c132243ed14c13cf8826_cgraph" id="ad6/db8/classnexilis_1_1server_1_1MessageHandler_a5f33dc0df903c132243ed14c13cf8826_cgraph">
-<area shape="rect" title=" " alt="" coords="5,373,185,413"/>
-<area shape="rect" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#ab3ac04b1582e9c0ec1a6a5e700643d50" title=" " alt="" coords="233,5,476,31"/>
-<area shape="poly" title=" " alt="" coords="95,372,104,307,126,218,143,169,166,122,196,79,232,41,240,35,243,39,235,45,200,82,171,125,148,172,131,219,109,308,101,373"/>
-<area shape="rect" href="../../dd/de4/classnexilis_1_1Util.html#a64405d1c0bd549b08621f4c4787e2482" title=" " alt="" coords="258,55,451,95"/>
-<area shape="poly" title=" " alt="" coords="98,372,111,318,136,246,153,208,175,170,201,136,232,105,244,96,247,101,235,109,205,139,180,173,158,210,141,248,116,320,103,373"/>
-<area shape="rect" href="../../d9/d3d/group__BytevectorConversions.html#ga38e516c60d98cb71153ded26ce2b67e5" title=" " alt="" coords="271,143,438,183"/>
-<area shape="poly" title=" " alt="" coords="103,371,121,333,149,285,186,235,232,193,257,180,259,184,235,198,190,239,153,288,125,336,107,373"/>
-<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982" title="All the overloaded printing functions." alt="" coords="283,208,427,233"/>
-<area shape="poly" title=" " alt="" coords="109,371,158,311,193,278,232,250,268,234,270,239,235,255,196,282,162,315,113,374"/>
-<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="555,380,690,405"/>
-<area shape="poly" title=" " alt="" coords="115,370,165,329,198,309,232,294,300,276,355,270,409,276,477,294,513,309,546,328,600,369,596,373,543,333,510,313,475,299,408,282,354,276,301,281,234,299,200,314,168,334,118,375"/>
-<area shape="rect" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#acdb61fe86e1f6a500b143675bd774503" title="Retain the returned handle throughout the operation on the user." alt="" coords="249,309,460,349"/>
-<area shape="poly" title=" " alt="" coords="177,370,259,349,261,355,178,375"/>
-<area shape="rect" href="../../df/d06/group__RandFunctions.html#ga69add1fd213bfb28b5ecfb656a436870" title=" " alt="" coords="265,373,444,413"/>
-<area shape="poly" title=" " alt="" coords="185,390,252,390,252,395,185,395"/>
-<area shape="rect" href="../../df/d06/group__RandFunctions.html#gacb4f385a6c9480e76c639947e185ff07" title=" " alt="" coords="265,437,444,477"/>
-<area shape="poly" title=" " alt="" coords="178,410,261,431,259,436,177,415"/>
-<area shape="rect" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae" title="Get the classes name as header for log messages." alt="" coords="265,501,444,527"/>
-<area shape="poly" title=" " alt="" coords="121,411,171,450,202,469,234,486,259,495,257,500,232,491,199,474,168,454,117,415"/>
-<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a66755adfac1917c8b8791a018f31c643" title=" " alt="" coords="290,616,419,641"/>
-<area shape="poly" title=" " alt="" coords="106,412,123,452,150,504,187,557,210,581,235,601,255,612,277,619,276,624,253,617,232,606,206,585,183,561,145,507,118,455,101,414"/>
-<area shape="rect" href="../../dc/dc3/group__FrontConversions.html#gaa69ac5b84ac2f72561afb8cc9d391072" title=" " alt="" coords="265,551,444,591"/>
-<area shape="poly" title=" " alt="" coords="112,411,161,473,196,507,235,536,253,545,251,550,232,540,192,511,158,477,108,415"/>
-<area shape="rect" href="../../dc/dfa/namespacenexilis_1_1message__auth.html#ab343be943c05bf9c867e77894669ef8b" title=" " alt="" coords="271,666,439,706"/>
-<area shape="poly" title=" " alt="" coords="104,412,118,461,144,525,183,593,207,624,235,651,259,665,256,670,232,655,203,627,178,596,139,528,113,463,99,414"/>
-<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a191e4c013bad219e746e8e56682d65e1" title=" " alt="" coords="277,731,433,756"/>
-<area shape="poly" title=" " alt="" coords="101,412,111,473,134,556,152,600,174,643,201,682,235,716,265,732,262,737,232,720,197,685,169,645,147,602,129,557,106,474,96,413"/>
-<area shape="poly" title=" " alt="" coords="307,144,304,134,312,124,329,119,355,117,385,120,401,127,399,132,383,125,355,122,330,124,314,129,309,135,312,142"/>
-<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#aa9bd79fb1a1804924e3440947c6ab117" title="Send debug message." alt="" coords="539,201,706,241"/>
-<area shape="poly" title=" " alt="" coords="427,218,525,218,525,223,427,223"/>
-<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#acc02567dd7e4103305110bafbfd40c08" title="Send error message." alt="" coords="770,373,937,413"/>
-<area shape="poly" title=" " alt="" coords="691,390,756,390,756,395,691,395"/>
-<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#abbfff214c9149463f4d7a15990b9361a" title="Send info message." alt="" coords="539,609,706,649"/>
-<area shape="poly" title=" " alt="" coords="420,626,525,626,525,631,420,631"/>
-<area shape="poly" title=" " alt="" coords="443,550,475,536,514,508,549,476,602,415,606,418,553,479,517,512,477,540,445,555"/>
-<area shape="rect" href="../../d2/def/classnexilis_1_1server_1_1Config.html#a4524682844dcfc71ad49250c36f399ca" title=" " alt="" coords="541,545,704,585"/>
-<area shape="poly" title=" " alt="" coords="444,566,527,564,528,570,444,572"/>
-<area shape="rect" href="../../dc/dfa/namespacenexilis_1_1message__auth.html#a3bffff3bf649a82f183135f488be12f9" title=" " alt="" coords="524,673,721,699"/>
-<area shape="poly" title=" " alt="" coords="439,683,510,683,510,689,439,689"/>
-<area shape="rect" href="../../dc/dfa/namespacenexilis_1_1message__auth.html#ab8ae1f049786d898466a6d38b12efae4" title=" " alt="" coords="769,666,937,706"/>
-<area shape="poly" title=" " alt="" coords="721,683,756,683,756,689,721,689"/>
-<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#a68409cb1a072641188aa5b1053c81fbc" title="Send warning message." alt="" coords="539,723,706,763"/>
-<area shape="poly" title=" " alt="" coords="433,741,526,741,526,746,433,746"/>
+<area shape="rect" title=" " alt="" coords="5,405,185,445"/>
+<area shape="rect" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#a253c76a4a35ade0e5e386047b98c28dd" title=" " alt="" coords="233,5,476,31"/>
+<area shape="poly" title=" " alt="" coords="95,404,102,334,122,236,139,183,163,131,193,83,232,41,239,36,242,40,235,45,197,86,167,134,144,185,127,237,107,335,100,405"/>
+<area shape="rect" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#a436ca2d9d0df712e4f4ff5c9bb38c981" title="Publish an account user only while its session quota has room." alt="" coords="249,55,460,95"/>
+<area shape="poly" title=" " alt="" coords="97,404,108,345,131,265,149,221,171,179,199,140,232,105,237,101,241,105,235,109,203,143,176,182,154,224,136,266,113,346,102,405"/>
+<area shape="rect" href="../../dd/de4/classnexilis_1_1Util.html#a64405d1c0bd549b08621f4c4787e2482" title=" " alt="" coords="258,119,451,159"/>
+<area shape="poly" title=" " alt="" coords="99,404,114,355,140,292,179,226,203,196,232,169,244,161,247,165,235,173,207,199,183,229,145,294,119,357,104,405"/>
+<area shape="rect" href="../../d9/d3d/group__BytevectorConversions.html#ga38e516c60d98cb71153ded26ce2b67e5" title=" " alt="" coords="271,207,438,247"/>
+<area shape="poly" title=" " alt="" coords="105,403,154,331,190,291,232,257,257,244,259,249,235,262,193,295,158,335,110,406"/>
+<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982" title="All the overloaded printing functions." alt="" coords="283,272,427,297"/>
+<area shape="poly" title=" " alt="" coords="115,403,165,358,198,335,232,314,272,299,274,304,234,319,201,339,169,362,118,407"/>
+<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="555,444,690,469"/>
+<area shape="poly" title=" " alt="" coords="128,402,176,378,233,358,301,344,355,338,410,342,477,358,513,373,546,392,600,433,596,437,543,397,510,377,475,363,409,347,355,343,302,349,234,363,178,382,130,407"/>
+<area shape="rect" href="../../da/de9/classnexilis_1_1server_1_1ClientStorage.html#acdb61fe86e1f6a500b143675bd774503" title="Retain the returned handle throughout the operation on the user." alt="" coords="249,373,460,413"/>
+<area shape="poly" title=" " alt="" coords="185,411,235,405,236,410,186,416"/>
+<area shape="rect" href="../../df/d06/group__RandFunctions.html#ga69add1fd213bfb28b5ecfb656a436870" title=" " alt="" coords="265,437,444,477"/>
+<area shape="poly" title=" " alt="" coords="186,433,252,441,251,447,185,438"/>
+<area shape="rect" href="../../df/d06/group__RandFunctions.html#gacb4f385a6c9480e76c639947e185ff07" title=" " alt="" coords="265,501,444,541"/>
+<area shape="poly" title=" " alt="" coords="136,442,234,486,258,494,256,499,232,491,134,447"/>
+<area shape="rect" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae" title="Get the classes name as header for log messages." alt="" coords="265,565,444,591"/>
+<area shape="poly" title=" " alt="" coords="114,443,164,498,198,526,235,550,254,559,251,563,232,555,194,531,160,502,110,447"/>
+<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a66755adfac1917c8b8791a018f31c643" title=" " alt="" coords="290,680,419,705"/>
+<area shape="poly" title=" " alt="" coords="104,444,119,490,145,551,184,613,208,641,235,665,255,676,277,684,276,689,253,681,232,670,204,645,179,616,141,553,114,492,99,446"/>
+<area shape="rect" href="../../dc/dc3/group__FrontConversions.html#gaa69ac5b84ac2f72561afb8cc9d391072" title=" " alt="" coords="265,615,444,655"/>
+<area shape="poly" title=" " alt="" coords="109,444,128,478,156,520,192,563,235,600,254,610,251,615,232,604,188,567,152,524,124,481,104,446"/>
+<area shape="rect" href="../../dc/dfa/namespacenexilis_1_1message__auth.html#ab343be943c05bf9c867e77894669ef8b" title=" " alt="" coords="271,730,439,770"/>
+<area shape="poly" title=" " alt="" coords="103,444,115,498,140,572,157,611,179,649,205,684,235,715,260,730,257,734,232,719,201,687,174,652,153,613,135,574,110,500,98,445"/>
+<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a191e4c013bad219e746e8e56682d65e1" title=" " alt="" coords="277,795,433,820"/>
+<area shape="poly" title=" " alt="" coords="101,445,109,510,130,602,147,650,170,698,199,742,235,780,265,797,262,801,232,784,195,746,165,701,142,652,125,603,104,511,95,445"/>
+<area shape="poly" title=" " alt="" coords="307,208,304,198,312,188,329,183,355,181,385,184,401,191,399,196,383,189,355,186,330,188,314,193,309,199,312,206"/>
+<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#aa9bd79fb1a1804924e3440947c6ab117" title="Send debug message." alt="" coords="539,265,706,305"/>
+<area shape="poly" title=" " alt="" coords="427,282,525,282,525,287,427,287"/>
+<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#acc02567dd7e4103305110bafbfd40c08" title="Send error message." alt="" coords="770,437,937,477"/>
+<area shape="poly" title=" " alt="" coords="691,454,756,454,756,459,691,459"/>
+<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#abbfff214c9149463f4d7a15990b9361a" title="Send info message." alt="" coords="539,673,706,713"/>
+<area shape="poly" title=" " alt="" coords="420,690,525,690,525,695,420,695"/>
+<area shape="poly" title=" " alt="" coords="443,614,475,600,514,572,549,540,602,479,606,482,553,543,517,576,477,604,445,619"/>
+<area shape="rect" href="../../d2/def/classnexilis_1_1server_1_1Config.html#a4524682844dcfc71ad49250c36f399ca" title=" " alt="" coords="541,609,704,649"/>
+<area shape="poly" title=" " alt="" coords="444,630,527,628,528,634,444,636"/>
+<area shape="rect" href="../../dc/dfa/namespacenexilis_1_1message__auth.html#a3bffff3bf649a82f183135f488be12f9" title=" " alt="" coords="524,737,721,763"/>
+<area shape="poly" title=" " alt="" coords="439,747,510,747,510,753,439,753"/>
+<area shape="rect" href="../../dc/dfa/namespacenexilis_1_1message__auth.html#ab8ae1f049786d898466a6d38b12efae4" title=" " alt="" coords="769,730,937,770"/>
+<area shape="poly" title=" " alt="" coords="721,747,756,747,756,753,721,753"/>
+<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#a68409cb1a072641188aa5b1053c81fbc" title="Send warning message." alt="" coords="539,787,706,827"/>
+<area shape="poly" title=" " alt="" coords="433,805,526,805,526,810,433,810"/>
 </map>
 </div>
 

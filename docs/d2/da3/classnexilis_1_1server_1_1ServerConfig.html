@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.10-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.11-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -75,6 +75,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="../../d0/df5/classnexilis_1_1server_1_1ServerConfig-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">nexilis::server::ServerConfig Class Reference</div></div>
@@ -103,6 +104,11 @@ Collaboration diagram for nexilis::server::ServerConfig:</div>
 </map>
 <center><span class="legend">[<a href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aa4ddb69eb93bebadc9f8e2c6e8e62193" id="r_aa4ddb69eb93bebadc9f8e2c6e8e62193"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#aa4ddb69eb93bebadc9f8e2c6e8e62193">AccountAuthenticator</a> = std::function&lt; bool(std::string_view, std::string_view)&gt;</td></tr>
+<tr class="separator:aa4ddb69eb93bebadc9f8e2c6e8e62193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2dcc75a3effd9d6c04fbb3ba85a9d63f" id="r_a2dcc75a3effd9d6c04fbb3ba85a9d63f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#a2dcc75a3effd9d6c04fbb3ba85a9d63f">ServerConfig</a> ()=default</td></tr>
@@ -115,6 +121,23 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3e0eb9bd4ad494cc35e981daf2210750"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e635639c70e29526b0a378b21facb41" id="r_a4e635639c70e29526b0a378b21facb41"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#a4e635639c70e29526b0a378b21facb41">getPassphrase</a> () const</td></tr>
 <tr class="separator:a4e635639c70e29526b0a378b21facb41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae83ad5a300e2dbd9a05de35fde68d40e" id="r_ae83ad5a300e2dbd9a05de35fde68d40e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#ae83ad5a300e2dbd9a05de35fde68d40e">setAccountAuthenticator</a> (<a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#aa4ddb69eb93bebadc9f8e2c6e8e62193">AccountAuthenticator</a> authenticator)</td></tr>
+<tr class="separator:ae83ad5a300e2dbd9a05de35fde68d40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55cbb10f5530f3381f4d0f8ef560333c" id="r_a55cbb10f5530f3381f4d0f8ef560333c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#aa4ddb69eb93bebadc9f8e2c6e8e62193">AccountAuthenticator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#a55cbb10f5530f3381f4d0f8ef560333c">getAccountAuthenticator</a> () const</td></tr>
+<tr class="separator:a55cbb10f5530f3381f4d0f8ef560333c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb6978a3171230e74a7ee12ace105b1c" id="r_acb6978a3171230e74a7ee12ace105b1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#acb6978a3171230e74a7ee12ace105b1c">setMaxSessionsPerAccount</a> (std::size_t maximum)</td></tr>
+<tr class="memdesc:acb6978a3171230e74a7ee12ace105b1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum concurrent sessions for one authenticated account.  <br /></td></tr>
+<tr class="separator:acb6978a3171230e74a7ee12ace105b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5d4b88c7b009c802c6c89254c7fc960" id="r_af5d4b88c7b009c802c6c89254c7fc960"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#af5d4b88c7b009c802c6c89254c7fc960">getMaxSessionsPerAccount</a> () const</td></tr>
+<tr class="separator:af5d4b88c7b009c802c6c89254c7fc960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2006d9f99d271c11cee7e9ce402208ff" id="r_a2006d9f99d271c11cee7e9ce402208ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#a2006d9f99d271c11cee7e9ce402208ff">setMaxClients</a> (std::size_t maximum)</td></tr>
+<tr class="separator:a2006d9f99d271c11cee7e9ce402208ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a031e40863d738effb7adee20ab0bc5be" id="r_a031e40863d738effb7adee20ab0bc5be"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#a031e40863d738effb7adee20ab0bc5be">getMaxClients</a> () const</td></tr>
+<tr class="separator:a031e40863d738effb7adee20ab0bc5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbd5d2deb3ff19f5e7238932728a05c0" id="r_adbd5d2deb3ff19f5e7238932728a05c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#adbd5d2deb3ff19f5e7238932728a05c0">setMaxSessionsPerAddress</a> (std::size_t maximum)</td></tr>
+<tr class="separator:adbd5d2deb3ff19f5e7238932728a05c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a357906e20c3489be68aec47a2fc4f8" id="r_a9a357906e20c3489be68aec47a2fc4f8"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#a9a357906e20c3489be68aec47a2fc4f8">getMaxSessionsPerAddress</a> () const</td></tr>
+<tr class="separator:a9a357906e20c3489be68aec47a2fc4f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fd5e7c60f10acbf9838223560b7f2bc" id="r_a3fd5e7c60f10acbf9838223560b7f2bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#a3fd5e7c60f10acbf9838223560b7f2bc">setRootPassword</a> (const std::string &amp;password)</td></tr>
 <tr class="separator:a3fd5e7c60f10acbf9838223560b7f2bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf7263919c7accddbb3d6f9ff160edfe" id="r_acf7263919c7accddbb3d6f9ff160edfe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#acf7263919c7accddbb3d6f9ff160edfe">isRootPassword</a> (const std::string &amp;password)</td></tr>
@@ -131,6 +154,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1808a6df076159e5796d9bdd22d789db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace7ea8f1322ebfc00d4795ac63b85760" id="r_ace7ea8f1322ebfc00d4795ac63b85760"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#ace7ea8f1322ebfc00d4795ac63b85760">getMaxCommandRate</a> () const</td></tr>
 <tr class="separator:ace7ea8f1322ebfc00d4795ac63b85760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94a0f861e8fe610d4a34fb3894e8308d" id="r_a94a0f861e8fe610d4a34fb3894e8308d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#a94a0f861e8fe610d4a34fb3894e8308d">setMaxPendingBoostTcpConnections</a> (std::size_t maximum)</td></tr>
+<tr class="separator:a94a0f861e8fe610d4a34fb3894e8308d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab005d92d1781ba07011455a36e12db8d" id="r_ab005d92d1781ba07011455a36e12db8d"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#ab005d92d1781ba07011455a36e12db8d">getMaxPendingBoostTcpConnections</a> () const</td></tr>
+<tr class="separator:ab005d92d1781ba07011455a36e12db8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a120e3a33431e45660feea362ff1d28ee" id="r_a120e3a33431e45660feea362ff1d28ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#a120e3a33431e45660feea362ff1d28ee">setMaxBoostTcpConnections</a> (std::size_t maximum)</td></tr>
+<tr class="separator:a120e3a33431e45660feea362ff1d28ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73ce0692adb287592438dda4452cda57" id="r_a73ce0692adb287592438dda4452cda57"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#a73ce0692adb287592438dda4452cda57">getMaxBoostTcpConnections</a> () const</td></tr>
+<tr class="separator:a73ce0692adb287592438dda4452cda57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a681de832ecb87d9b6ac192de9e1b2670" id="r_a681de832ecb87d9b6ac192de9e1b2670"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#a681de832ecb87d9b6ac192de9e1b2670">setDatagramIdleTimeout</a> (std::chrono::milliseconds timeout)</td></tr>
 <tr class="separator:a681de832ecb87d9b6ac192de9e1b2670"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f16d9bcffd20d331b32ade9e75611da" id="r_a0f16d9bcffd20d331b32ade9e75611da"><td class="memItemLeft" align="right" valign="top">std::chrono::milliseconds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#a0f16d9bcffd20d331b32ade9e75611da">getDatagramIdleTimeout</a> () const</td></tr>
@@ -146,9 +177,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae0ce95b8673bd258c146a8ddb78c3c34" id="r_ae0ce95b8673bd258c146a8ddb78c3c34"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d9/d73/classnexilis_1_1server_1_1RoomLimits.html">RoomLimits</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#ae0ce95b8673bd258c146a8ddb78c3c34">getRoomLimits</a> () const</td></tr>
 <tr class="separator:ae0ce95b8673bd258c146a8ddb78c3c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fab33322d238aab82cd252128c09981" id="r_a4fab33322d238aab82cd252128c09981"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#a4fab33322d238aab82cd252128c09981">isTlsEnabled</a> () const</td></tr>
+<tr class="memdesc:a4fab33322d238aab82cd252128c09981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether Boost TCP uses certificate-based TLS. On by default.  <br /></td></tr>
 <tr class="separator:a4fab33322d238aab82cd252128c09981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88e618096529428336f805207efb7408" id="r_a88e618096529428336f805207efb7408"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#a88e618096529428336f805207efb7408">setTls</a> (bool enabled)</td></tr>
 <tr class="separator:a88e618096529428336f805207efb7408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abce0efdfb8c2acdef179fac5db953fa0" id="r_abce0efdfb8c2acdef179fac5db953fa0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#abce0efdfb8c2acdef179fac5db953fa0">setTlsIdentity</a> (std::string certificatePem, std::string privateKeyPem)</td></tr>
+<tr class="separator:abce0efdfb8c2acdef179fac5db953fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa872f27086a151846b51aafd7d7a38e8" id="r_aa872f27086a151846b51aafd7d7a38e8"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#aa872f27086a151846b51aafd7d7a38e8">getTlsCertificatePem</a> () const</td></tr>
+<tr class="separator:aa872f27086a151846b51aafd7d7a38e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41fadc2c925c1a6d62bbf9fb6ace00d9" id="r_a41fadc2c925c1a6d62bbf9fb6ace00d9"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#a41fadc2c925c1a6d62bbf9fb6ace00d9">getTlsPrivateKeyPem</a> () const</td></tr>
+<tr class="separator:a41fadc2c925c1a6d62bbf9fb6ace00d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96de7c9925ac9342059942ba7190ecd7" id="r_a96de7c9925ac9342059942ba7190ecd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#a96de7c9925ac9342059942ba7190ecd7">AuthConfig</a> ()=default</td></tr>
 <tr class="separator:a96de7c9925ac9342059942ba7190ecd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe01b87a4a9ef91f454082962770ad4d" id="r_abe01b87a4a9ef91f454082962770ad4d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#abe01b87a4a9ef91f454082962770ad4d">AuthConfig</a> (<a class="el" href="../../d0/db6/classnexilis_1_1AuthConfig.html">AuthConfig</a> &amp;&amp;other)</td></tr>
@@ -185,8 +223,26 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00031">31</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00034">34</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="aa4ddb69eb93bebadc9f8e2c6e8e62193" name="aa4ddb69eb93bebadc9f8e2c6e8e62193"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4ddb69eb93bebadc9f8e2c6e8e62193">&#9670;&#160;</a></span>AccountAuthenticator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#aa4ddb69eb93bebadc9f8e2c6e8e62193">nexilis::server::ServerConfig::AccountAuthenticator</a> =  std::function&lt;bool(std::string_view, std::string_view)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Validate a stable account ID and private credential after the shared passphrase. Configure before starting the server. When set, legacy password-only handshakes are refused. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00062">62</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2dcc75a3effd9d6c04fbb3ba85a9d63f" name="a2dcc75a3effd9d6c04fbb3ba85a9d63f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2dcc75a3effd9d6c04fbb3ba85a9d63f">&#9670;&#160;</a></span>ServerConfig()</h2>
 
@@ -328,6 +384,36 @@ Public Member Functions</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="a55cbb10f5530f3381f4d0f8ef560333c" name="a55cbb10f5530f3381f4d0f8ef560333c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55cbb10f5530f3381f4d0f8ef560333c">&#9670;&#160;</a></span>getAccountAuthenticator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#aa4ddb69eb93bebadc9f8e2c6e8e62193">AccountAuthenticator</a> &amp; nexilis::server::ServerConfig::getAccountAuthenticator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00067">67</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   68</span>    {</div>
+<div class="line"><span class="lineno">   69</span>        <span class="keywordflow">return</span> m_accountAuthenticator;</div>
+<div class="line"><span class="lineno">   70</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a0f16d9bcffd20d331b32ade9e75611da" name="a0f16d9bcffd20d331b32ade9e75611da"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0f16d9bcffd20d331b32ade9e75611da">&#9670;&#160;</a></span>getDatagramIdleTimeout()</h2>
 
@@ -351,10 +437,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00091">91</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   92</span>    {</div>
-<div class="line"><span class="lineno">   93</span>        <span class="keywordflow">return</span> m_datagramIdleTimeout;</div>
-<div class="line"><span class="lineno">   94</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00161">161</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  162</span>    {</div>
+<div class="line"><span class="lineno">  163</span>        <span class="keywordflow">return</span> m_datagramIdleTimeout;</div>
+<div class="line"><span class="lineno">  164</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -393,10 +479,10 @@ Here is the caller graph for this function:</div>
 
 <p>Gameplay limits enforced on player actions. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00097">97</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   98</span>    {</div>
-<div class="line"><span class="lineno">   99</span>        <span class="keywordflow">return</span> m_gameplayLimits;</div>
-<div class="line"><span class="lineno">  100</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00167">167</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  168</span>    {</div>
+<div class="line"><span class="lineno">  169</span>        <span class="keywordflow">return</span> m_gameplayLimits;</div>
+<div class="line"><span class="lineno">  170</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -423,10 +509,70 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00101">101</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  102</span>    {</div>
-<div class="line"><span class="lineno">  103</span>        <span class="keywordflow">return</span> m_gameplayLimits;</div>
-<div class="line"><span class="lineno">  104</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00171">171</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  172</span>    {</div>
+<div class="line"><span class="lineno">  173</span>        <span class="keywordflow">return</span> m_gameplayLimits;</div>
+<div class="line"><span class="lineno">  174</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a73ce0692adb287592438dda4452cda57" name="a73ce0692adb287592438dda4452cda57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73ce0692adb287592438dda4452cda57">&#9670;&#160;</a></span>getMaxBoostTcpConnections()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t nexilis::server::ServerConfig::getMaxBoostTcpConnections </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00150">150</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  151</span>    {</div>
+<div class="line"><span class="lineno">  152</span>        <span class="keywordflow">return</span> m_maxBoostTcpConnections;</div>
+<div class="line"><span class="lineno">  153</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a031e40863d738effb7adee20ab0bc5be" name="a031e40863d738effb7adee20ab0bc5be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a031e40863d738effb7adee20ab0bc5be">&#9670;&#160;</a></span>getMaxClients()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t nexilis::server::ServerConfig::getMaxClients </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00087">87</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   88</span>    {</div>
+<div class="line"><span class="lineno">   89</span>        <span class="keywordflow">return</span> m_maxClients;</div>
+<div class="line"><span class="lineno">   90</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -453,10 +599,100 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00080">80</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   81</span>    {</div>
-<div class="line"><span class="lineno">   82</span>        <span class="keywordflow">return</span> m_maxCommandRate;</div>
-<div class="line"><span class="lineno">   83</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00127">127</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  128</span>    {</div>
+<div class="line"><span class="lineno">  129</span>        <span class="keywordflow">return</span> m_maxCommandRate;</div>
+<div class="line"><span class="lineno">  130</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab005d92d1781ba07011455a36e12db8d" name="ab005d92d1781ba07011455a36e12db8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab005d92d1781ba07011455a36e12db8d">&#9670;&#160;</a></span>getMaxPendingBoostTcpConnections()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t nexilis::server::ServerConfig::getMaxPendingBoostTcpConnections </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00139">139</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  140</span>    {</div>
+<div class="line"><span class="lineno">  141</span>        <span class="keywordflow">return</span> m_maxPendingBoostTcpConnections;</div>
+<div class="line"><span class="lineno">  142</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af5d4b88c7b009c802c6c89254c7fc960" name="af5d4b88c7b009c802c6c89254c7fc960"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5d4b88c7b009c802c6c89254c7fc960">&#9670;&#160;</a></span>getMaxSessionsPerAccount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t nexilis::server::ServerConfig::getMaxSessionsPerAccount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00076">76</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   77</span>    {</div>
+<div class="line"><span class="lineno">   78</span>        <span class="keywordflow">return</span> m_maxSessionsPerAccount;</div>
+<div class="line"><span class="lineno">   79</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9a357906e20c3489be68aec47a2fc4f8" name="a9a357906e20c3489be68aec47a2fc4f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a357906e20c3489be68aec47a2fc4f8">&#9670;&#160;</a></span>getMaxSessionsPerAddress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t nexilis::server::ServerConfig::getMaxSessionsPerAddress </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00098">98</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   99</span>    {</div>
+<div class="line"><span class="lineno">  100</span>        <span class="keywordflow">return</span> m_maxSessionsPerAddress;</div>
+<div class="line"><span class="lineno">  101</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -483,10 +719,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00051">51</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   52</span>    {</div>
-<div class="line"><span class="lineno">   53</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../d0/db6/classnexilis_1_1AuthConfig.html#a224803f2acfd5f3b94cba96ec7de4aef">getPassword</a>();</div>
-<div class="line"><span class="lineno">   54</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00054">54</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   55</span>    {</div>
+<div class="line"><span class="lineno">   56</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../d0/db6/classnexilis_1_1AuthConfig.html#a224803f2acfd5f3b94cba96ec7de4aef">getPassword</a>();</div>
+<div class="line"><span class="lineno">   57</span>    }</div>
 <div class="ttc" id="aclassnexilis_1_1AuthConfig_html_a224803f2acfd5f3b94cba96ec7de4aef"><div class="ttname"><a href="../../d0/db6/classnexilis_1_1AuthConfig.html#a224803f2acfd5f3b94cba96ec7de4aef">nexilis::AuthConfig::getPassword</a></div><div class="ttdeci">const std::string &amp; getPassword() const</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d62/auth__config_8hh_source.html#l00055">auth_config.hh:55</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -526,10 +762,10 @@ Here is the call graph for this function:</div>
 
 <p>Limits enforced on client-requested room creation. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00107">107</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  108</span>    {</div>
-<div class="line"><span class="lineno">  109</span>        <span class="keywordflow">return</span> m_roomLimits;</div>
-<div class="line"><span class="lineno">  110</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00177">177</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  178</span>    {</div>
+<div class="line"><span class="lineno">  179</span>        <span class="keywordflow">return</span> m_roomLimits;</div>
+<div class="line"><span class="lineno">  180</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -556,10 +792,10 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00111">111</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  112</span>    {</div>
-<div class="line"><span class="lineno">  113</span>        <span class="keywordflow">return</span> m_roomLimits;</div>
-<div class="line"><span class="lineno">  114</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00181">181</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  182</span>    {</div>
+<div class="line"><span class="lineno">  183</span>        <span class="keywordflow">return</span> m_roomLimits;</div>
+<div class="line"><span class="lineno">  184</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -586,10 +822,10 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00060">60</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   61</span>    {</div>
-<div class="line"><span class="lineno">   62</span>        <span class="keywordflow">return</span> m_rootPassword;</div>
-<div class="line"><span class="lineno">   63</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00107">107</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  108</span>    {</div>
+<div class="line"><span class="lineno">  109</span>        <span class="keywordflow">return</span> m_rootPassword;</div>
+<div class="line"><span class="lineno">  110</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -616,10 +852,70 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00067">67</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   68</span>    {</div>
-<div class="line"><span class="lineno">   69</span>        <span class="keywordflow">return</span> m_tickrate;</div>
-<div class="line"><span class="lineno">   70</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00114">114</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  115</span>    {</div>
+<div class="line"><span class="lineno">  116</span>        <span class="keywordflow">return</span> m_tickrate;</div>
+<div class="line"><span class="lineno">  117</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa872f27086a151846b51aafd7d7a38e8" name="aa872f27086a151846b51aafd7d7a38e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa872f27086a151846b51aafd7d7a38e8">&#9670;&#160;</a></span>getTlsCertificatePem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; nexilis::server::ServerConfig::getTlsCertificatePem </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00204">204</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  205</span>    {</div>
+<div class="line"><span class="lineno">  206</span>        <span class="keywordflow">return</span> m_tlsCertificatePem;</div>
+<div class="line"><span class="lineno">  207</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a41fadc2c925c1a6d62bbf9fb6ace00d9" name="a41fadc2c925c1a6d62bbf9fb6ace00d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41fadc2c925c1a6d62bbf9fb6ace00d9">&#9670;&#160;</a></span>getTlsPrivateKeyPem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; nexilis::server::ServerConfig::getTlsPrivateKeyPem </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00208">208</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  209</span>    {</div>
+<div class="line"><span class="lineno">  210</span>        <span class="keywordflow">return</span> m_tlsPrivateKeyPem;</div>
+<div class="line"><span class="lineno">  211</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -646,10 +942,10 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00047">47</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   48</span>    {</div>
-<div class="line"><span class="lineno">   49</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../d0/db6/classnexilis_1_1AuthConfig.html#a1b954b37f4b8245dc07acff69ebfe5f2">AuthConfig::hasPassword</a>();</div>
-<div class="line"><span class="lineno">   50</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00050">50</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   51</span>    {</div>
+<div class="line"><span class="lineno">   52</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../d0/db6/classnexilis_1_1AuthConfig.html#a1b954b37f4b8245dc07acff69ebfe5f2">AuthConfig::hasPassword</a>();</div>
+<div class="line"><span class="lineno">   53</span>    }</div>
 <div class="ttc" id="aclassnexilis_1_1AuthConfig_html_a1b954b37f4b8245dc07acff69ebfe5f2"><div class="ttname"><a href="../../d0/db6/classnexilis_1_1AuthConfig.html#a1b954b37f4b8245dc07acff69ebfe5f2">nexilis::AuthConfig::hasPassword</a></div><div class="ttdeci">bool hasPassword() const</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d62/auth__config_8hh_source.html#l00070">auth_config.hh:70</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -710,10 +1006,10 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00043">43</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   44</span>    {</div>
-<div class="line"><span class="lineno">   45</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../d0/db6/classnexilis_1_1AuthConfig.html#aeb0f227d0880bc62191e943869a80358">AuthConfig::isPassword</a>(password);</div>
-<div class="line"><span class="lineno">   46</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00046">46</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   47</span>    {</div>
+<div class="line"><span class="lineno">   48</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../d0/db6/classnexilis_1_1AuthConfig.html#aeb0f227d0880bc62191e943869a80358">AuthConfig::isPassword</a>(password);</div>
+<div class="line"><span class="lineno">   49</span>    }</div>
 <div class="ttc" id="aclassnexilis_1_1AuthConfig_html_aeb0f227d0880bc62191e943869a80358"><div class="ttname"><a href="../../d0/db6/classnexilis_1_1AuthConfig.html#aeb0f227d0880bc62191e943869a80358">nexilis::AuthConfig::isPassword</a></div><div class="ttdeci">bool isPassword(const std::string &amp;password) const</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d62/auth__config_8hh_source.html#l00065">auth_config.hh:65</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -786,12 +1082,44 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Whether TCP connections are encrypted with TLS-PSK. </p><dl class="section note"><dt>Note</dt><dd>The pre-shared key is derived from the passphrase, so a client only connects when it knows the same passphrase. On by default for Boost TCP; a passphrase is required unless disabled. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00120">120</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  121</span>    {</div>
-<div class="line"><span class="lineno">  122</span>        <span class="keywordflow">return</span> m_tls;</div>
-<div class="line"><span class="lineno">  123</span>    }</div>
+<p>Whether Boost TCP uses certificate-based TLS. On by default. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00187">187</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  188</span>    {</div>
+<div class="line"><span class="lineno">  189</span>        <span class="keywordflow">return</span> m_tls;</div>
+<div class="line"><span class="lineno">  190</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae83ad5a300e2dbd9a05de35fde68d40e" name="ae83ad5a300e2dbd9a05de35fde68d40e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae83ad5a300e2dbd9a05de35fde68d40e">&#9670;&#160;</a></span>setAccountAuthenticator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nexilis::server::ServerConfig::setAccountAuthenticator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/da3/classnexilis_1_1server_1_1ServerConfig.html#aa4ddb69eb93bebadc9f8e2c6e8e62193">AccountAuthenticator</a>&#160;</td>
+          <td class="paramname"><em>authenticator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00063">63</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   64</span>    {</div>
+<div class="line"><span class="lineno">   65</span>        m_accountAuthenticator = std::move(authenticator);</div>
+<div class="line"><span class="lineno">   66</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -820,10 +1148,74 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>How long a datagram transport may stay idle before the user is considered disconnected. A non-positive value disables idle expiry. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00087">87</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   88</span>    {</div>
-<div class="line"><span class="lineno">   89</span>        m_datagramIdleTimeout = timeout;</div>
-<div class="line"><span class="lineno">   90</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00157">157</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  158</span>    {</div>
+<div class="line"><span class="lineno">  159</span>        m_datagramIdleTimeout = timeout;</div>
+<div class="line"><span class="lineno">  160</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a120e3a33431e45660feea362ff1d28ee" name="a120e3a33431e45660feea362ff1d28ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a120e3a33431e45660feea362ff1d28ee">&#9670;&#160;</a></span>setMaxBoostTcpConnections()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nexilis::server::ServerConfig::setMaxBoostTcpConnections </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>maximum</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Maximum total Boost TCP connection workers, including active sessions. Zero refuses all new connections. Configure before starting the server. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00146">146</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  147</span>    {</div>
+<div class="line"><span class="lineno">  148</span>        m_maxBoostTcpConnections = maximum;</div>
+<div class="line"><span class="lineno">  149</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2006d9f99d271c11cee7e9ce402208ff" name="a2006d9f99d271c11cee7e9ce402208ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2006d9f99d271c11cee7e9ce402208ff">&#9670;&#160;</a></span>setMaxClients()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nexilis::server::ServerConfig::setMaxClients </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>maximum</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Maximum live clients admitted by this server. The registry's compile-time maximum remains an upper bound. Zero refuses new clients. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00083">83</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   84</span>    {</div>
+<div class="line"><span class="lineno">   85</span>        m_maxClients = maximum;</div>
+<div class="line"><span class="lineno">   86</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -852,10 +1244,107 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Maximum sustained commands per second accepted from one client. Commands over the limit are dropped before dispatch. The limiter allows a burst of up to one second's worth of commands. A non-positive value disables the limit. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00076">76</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   77</span>    {</div>
-<div class="line"><span class="lineno">   78</span>        m_maxCommandRate = maxCommandRate;</div>
-<div class="line"><span class="lineno">   79</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00123">123</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  124</span>    {</div>
+<div class="line"><span class="lineno">  125</span>        m_maxCommandRate = maxCommandRate;</div>
+<div class="line"><span class="lineno">  126</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a94a0f861e8fe610d4a34fb3894e8308d" name="a94a0f861e8fe610d4a34fb3894e8308d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94a0f861e8fe610d4a34fb3894e8308d">&#9670;&#160;</a></span>setMaxPendingBoostTcpConnections()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nexilis::server::ServerConfig::setMaxPendingBoostTcpConnections </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>maximum</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Maximum simultaneous Boost TCP workers waiting for initial authentication or a session switch proof. Zero refuses new pending connections. Configure before starting the server. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00135">135</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  136</span>    {</div>
+<div class="line"><span class="lineno">  137</span>        m_maxPendingBoostTcpConnections = maximum;</div>
+<div class="line"><span class="lineno">  138</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acb6978a3171230e74a7ee12ace105b1c" name="acb6978a3171230e74a7ee12ace105b1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb6978a3171230e74a7ee12ace105b1c">&#9670;&#160;</a></span>setMaxSessionsPerAccount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nexilis::server::ServerConfig::setMaxSessionsPerAccount </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>maximum</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maximum concurrent sessions for one authenticated account. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00072">72</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   73</span>    {</div>
+<div class="line"><span class="lineno">   74</span>        m_maxSessionsPerAccount = maximum;</div>
+<div class="line"><span class="lineno">   75</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adbd5d2deb3ff19f5e7238932728a05c0" name="adbd5d2deb3ff19f5e7238932728a05c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbd5d2deb3ff19f5e7238932728a05c0">&#9670;&#160;</a></span>setMaxSessionsPerAddress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nexilis::server::ServerConfig::setMaxSessionsPerAddress </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>maximum</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Maximum live sessions from one source address. Zero refuses new clients. Address limits also apply when account authentication is configured. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00094">94</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   95</span>    {</div>
+<div class="line"><span class="lineno">   96</span>        m_maxSessionsPerAddress = maximum;</div>
+<div class="line"><span class="lineno">   97</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -883,10 +1372,10 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00039">39</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   40</span>    {</div>
-<div class="line"><span class="lineno">   41</span>        <a class="code hl_function" href="../../d0/db6/classnexilis_1_1AuthConfig.html#a8163d62db05ab246309990462de8e896">setPassword</a>(password);</div>
-<div class="line"><span class="lineno">   42</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00042">42</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   43</span>    {</div>
+<div class="line"><span class="lineno">   44</span>        <a class="code hl_function" href="../../d0/db6/classnexilis_1_1AuthConfig.html#a8163d62db05ab246309990462de8e896">setPassword</a>(password);</div>
+<div class="line"><span class="lineno">   45</span>    }</div>
 <div class="ttc" id="aclassnexilis_1_1AuthConfig_html_a8163d62db05ab246309990462de8e896"><div class="ttname"><a href="../../d0/db6/classnexilis_1_1AuthConfig.html#a8163d62db05ab246309990462de8e896">nexilis::AuthConfig::setPassword</a></div><div class="ttdeci">void setPassword(const std::string &amp;password)</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d62/auth__config_8hh_source.html#l00060">auth_config.hh:60</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -971,10 +1460,53 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00125">125</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  126</span>    {</div>
-<div class="line"><span class="lineno">  127</span>        m_tls = enabled;</div>
-<div class="line"><span class="lineno">  128</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00192">192</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  193</span>    {</div>
+<div class="line"><span class="lineno">  194</span>        m_tls = enabled;</div>
+<div class="line"><span class="lineno">  195</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abce0efdfb8c2acdef179fac5db953fa0" name="abce0efdfb8c2acdef179fac5db953fa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abce0efdfb8c2acdef179fac5db953fa0">&#9670;&#160;</a></span>setTlsIdentity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nexilis::server::ServerConfig::setTlsIdentity </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>certificatePem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>privateKeyPem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Install a PEM certificate and its private key. Keep the key on the server and publish only the certificate's public-key SHA-256 pin. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d27/server__config_8hh_source.html#l00199">199</a> of file <a class="el" href="../../df/d27/server__config_8hh_source.html">server_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  200</span>    {</div>
+<div class="line"><span class="lineno">  201</span>        m_tlsCertificatePem = std::move(certificatePem);</div>
+<div class="line"><span class="lineno">  202</span>        m_tlsPrivateKeyPem = std::move(privateKeyPem);</div>
+<div class="line"><span class="lineno">  203</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>

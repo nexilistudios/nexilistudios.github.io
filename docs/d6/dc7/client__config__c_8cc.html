@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.10-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.11-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -80,14 +80,17 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;nexilisc/client/client_config_c.h&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for client_config_c.cc:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d3/d70/client__config__c_8cc__incl.png" border="0" usemap="#asrc_2nexilisc_2client_2client__config__c_8cc" alt=""/></div>
 <map name="asrc_2nexilisc_2client_2client__config__c_8cc" id="asrc_2nexilisc_2client_2client__config__c_8cc">
-<area shape="rect" title=" " alt="" coords="11,5,151,45"/>
+<area shape="rect" title=" " alt="" coords="78,5,218,45"/>
 <area shape="rect" title=" " alt="" coords="5,93,157,133"/>
-<area shape="poly" title=" " alt="" coords="84,46,84,79,79,79,79,46"/>
+<area shape="poly" title=" " alt="" coords="135,47,107,84,102,81,131,44"/>
+<area shape="rect" title=" " alt="" coords="182,101,247,126"/>
+<area shape="poly" title=" " alt="" coords="165,44,199,88,195,91,161,47"/>
 </map>
 </div>
 </div>
@@ -99,8 +102,12 @@ Functions</h2></td></tr>
 <tr class="separator:a7ed272d4b03ab14fcf1733cac3b779ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d72e78630062c9f7e452771177f7baa" id="r_a1d72e78630062c9f7e452771177f7baa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc7/client__config__c_8cc.html#a1d72e78630062c9f7e452771177f7baa">nexilis_client_config_destroy</a> (nexilis_ClientConfigC *config)</td></tr>
 <tr class="separator:a1d72e78630062c9f7e452771177f7baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aead01d729121291dce71d05dcb4bf514" id="r_aead01d729121291dce71d05dcb4bf514"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc7/client__config__c_8cc.html#aead01d729121291dce71d05dcb4bf514">nexilis_string_free</a> (const char *value)</td></tr>
+<tr class="separator:aead01d729121291dce71d05dcb4bf514"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a312b59eab95058823f244617a4b6eff4" id="r_a312b59eab95058823f244617a4b6eff4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc7/client__config__c_8cc.html#a312b59eab95058823f244617a4b6eff4">nexilis_client_config_set_password</a> (nexilis_ClientConfigC *config, const char *password)</td></tr>
 <tr class="separator:a312b59eab95058823f244617a4b6eff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47beae65a05cc791c839158881703423" id="r_a47beae65a05cc791c839158881703423"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc7/client__config__c_8cc.html#a47beae65a05cc791c839158881703423">nexilis_client_config_set_account_credentials</a> (nexilis_ClientConfigC *config, const char *account_id, const char *credential)</td></tr>
+<tr class="separator:a47beae65a05cc791c839158881703423"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23079bc64a5a2c112e8b870967af67c9" id="r_a23079bc64a5a2c112e8b870967af67c9"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc7/client__config__c_8cc.html#a23079bc64a5a2c112e8b870967af67c9">nexilis_client_config_get_password</a> (const nexilis_ClientConfigC *config)</td></tr>
 <tr class="separator:a23079bc64a5a2c112e8b870967af67c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb49f475745c760b12c860fde50c0861" id="r_afb49f475745c760b12c860fde50c0861"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc7/client__config__c_8cc.html#afb49f475745c760b12c860fde50c0861">nexilis_client_config_set_mode</a> (nexilis_ClientConfigC *config, int mode)</td></tr>
@@ -113,6 +120,10 @@ Functions</h2></td></tr>
 <tr class="separator:a4f2e99cbab15992ee2d11a6fcb8ef16c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0555007b93b612cdb9b93869bea1fc1e" id="r_a0555007b93b612cdb9b93869bea1fc1e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc7/client__config__c_8cc.html#a0555007b93b612cdb9b93869bea1fc1e">nexilis_client_config_get_tls</a> (const nexilis_ClientConfigC *config)</td></tr>
 <tr class="separator:a0555007b93b612cdb9b93869bea1fc1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10975d2310ceec04d7dd338dcdd6aeab" id="r_a10975d2310ceec04d7dd338dcdd6aeab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc7/client__config__c_8cc.html#a10975d2310ceec04d7dd338dcdd6aeab">nexilis_client_config_set_server_public_key_sha256</a> (nexilis_ClientConfigC *config, const char *hex)</td></tr>
+<tr class="separator:a10975d2310ceec04d7dd338dcdd6aeab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a683e85ac122a40df5c5b09ab0b6565b2" id="r_a683e85ac122a40df5c5b09ab0b6565b2"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc7/client__config__c_8cc.html#a683e85ac122a40df5c5b09ab0b6565b2">nexilis_client_config_get_server_public_key_sha256</a> (const nexilis_ClientConfigC *config)</td></tr>
+<tr class="separator:a683e85ac122a40df5c5b09ab0b6565b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ca2ec776e1e88b415287c36cb1f282e" id="r_a9ca2ec776e1e88b415287c36cb1f282e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc7/client__config__c_8cc.html#a9ca2ec776e1e88b415287c36cb1f282e">nexilis_client_config_set_inet_udp</a> (nexilis_ClientConfigC *config, const char *server_address)</td></tr>
 <tr class="separator:a9ca2ec776e1e88b415287c36cb1f282e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7d906e84fc1652d613004f73214d0e6" id="r_ab7d906e84fc1652d613004f73214d0e6"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc7/client__config__c_8cc.html#ab7d906e84fc1652d613004f73214d0e6">nexilis_client_config_get_inet_udp_server_address</a> (const nexilis_ClientConfigC *config)</td></tr>
@@ -154,13 +165,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00019">19</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   20</span>{</div>
-<div class="line"><span class="lineno">   21</span>    <span class="keyword">auto</span> config = <span class="keyword">new</span> nexilis_ClientConfigC();</div>
-<div class="line"><span class="lineno">   22</span>    <span class="keyword">auto</span> cpp_data = <span class="keyword">new</span> <a class="code hl_class" href="../../d1/dd9/classnexilis_1_1client_1_1ClientConfig.html">nexilis::client::ClientConfig</a>();</div>
-<div class="line"><span class="lineno">   23</span>    config-&gt;data = cpp_data;</div>
-<div class="line"><span class="lineno">   24</span>    <span class="keywordflow">return</span> config;</div>
-<div class="line"><span class="lineno">   25</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00021">21</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   22</span>{</div>
+<div class="line"><span class="lineno">   23</span>    <span class="keyword">auto</span> config = <span class="keyword">new</span> nexilis_ClientConfigC();</div>
+<div class="line"><span class="lineno">   24</span>    <span class="keyword">auto</span> cpp_data = <span class="keyword">new</span> <a class="code hl_class" href="../../d1/dd9/classnexilis_1_1client_1_1ClientConfig.html">nexilis::client::ClientConfig</a>();</div>
+<div class="line"><span class="lineno">   25</span>    config-&gt;data = cpp_data;</div>
+<div class="line"><span class="lineno">   26</span>    <span class="keywordflow">return</span> config;</div>
+<div class="line"><span class="lineno">   27</span>}</div>
 <div class="ttc" id="aclassnexilis_1_1client_1_1ClientConfig_html"><div class="ttname"><a href="../../d1/dd9/classnexilis_1_1client_1_1ClientConfig.html">nexilis::client::ClientConfig</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/d9a/client__config_8hh_source.html#l00028">client_config.hh:29</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -181,18 +192,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00027">27</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   28</span>{</div>
-<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">if</span> (config)</div>
-<div class="line"><span class="lineno">   30</span>    {</div>
-<div class="line"><span class="lineno">   31</span>        <span class="keywordflow">if</span> (config-&gt;data)</div>
-<div class="line"><span class="lineno">   32</span>        {</div>
-<div class="line"><span class="lineno">   33</span>            <span class="keyword">delete</span> config-&gt;data;</div>
-<div class="line"><span class="lineno">   34</span>            config-&gt;data = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   35</span>        }</div>
-<div class="line"><span class="lineno">   36</span>        <span class="keyword">delete</span> config;</div>
-<div class="line"><span class="lineno">   37</span>    }</div>
-<div class="line"><span class="lineno">   38</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00029">29</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   30</span>{</div>
+<div class="line"><span class="lineno">   31</span>    <span class="keywordflow">if</span> (config)</div>
+<div class="line"><span class="lineno">   32</span>    {</div>
+<div class="line"><span class="lineno">   33</span>        <span class="keywordflow">if</span> (config-&gt;data)</div>
+<div class="line"><span class="lineno">   34</span>        {</div>
+<div class="line"><span class="lineno">   35</span>            <span class="keyword">delete</span> config-&gt;data;</div>
+<div class="line"><span class="lineno">   36</span>            config-&gt;data = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   37</span>        }</div>
+<div class="line"><span class="lineno">   38</span>        <span class="keyword">delete</span> config;</div>
+<div class="line"><span class="lineno">   39</span>    }</div>
+<div class="line"><span class="lineno">   40</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -212,20 +223,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00159">159</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  160</span>{</div>
-<div class="line"><span class="lineno">  161</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
-<div class="line"><span class="lineno">  162</span>    {</div>
-<div class="line"><span class="lineno">  163</span>        std::string address = config-&gt;data-&gt;getBoostTCPServerAddress();</div>
-<div class="line"><span class="lineno">  164</span>        <span class="keywordtype">char</span>* cstr = (<span class="keywordtype">char</span>*)malloc(address.size() + 1);</div>
-<div class="line"><span class="lineno">  165</span>        <span class="keywordflow">if</span> (cstr)</div>
-<div class="line"><span class="lineno">  166</span>        {</div>
-<div class="line"><span class="lineno">  167</span>            std::strcpy(cstr, address.c_str());</div>
-<div class="line"><span class="lineno">  168</span>        }</div>
-<div class="line"><span class="lineno">  169</span>        <span class="keywordflow">return</span> cstr;</div>
-<div class="line"><span class="lineno">  170</span>    }</div>
-<div class="line"><span class="lineno">  171</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  172</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00190">190</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  191</span>{</div>
+<div class="line"><span class="lineno">  192</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
+<div class="line"><span class="lineno">  193</span>    {</div>
+<div class="line"><span class="lineno">  194</span>        std::string address = config-&gt;data-&gt;getBoostTCPServerAddress();</div>
+<div class="line"><span class="lineno">  195</span>        <span class="keywordtype">char</span>* cstr = (<span class="keywordtype">char</span>*)malloc(address.size() + 1);</div>
+<div class="line"><span class="lineno">  196</span>        <span class="keywordflow">if</span> (cstr)</div>
+<div class="line"><span class="lineno">  197</span>        {</div>
+<div class="line"><span class="lineno">  198</span>            std::strcpy(cstr, address.c_str());</div>
+<div class="line"><span class="lineno">  199</span>        }</div>
+<div class="line"><span class="lineno">  200</span>        <span class="keywordflow">return</span> cstr;</div>
+<div class="line"><span class="lineno">  201</span>    }</div>
+<div class="line"><span class="lineno">  202</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  203</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -245,20 +256,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00182">182</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  183</span>{</div>
-<div class="line"><span class="lineno">  184</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
-<div class="line"><span class="lineno">  185</span>    {</div>
-<div class="line"><span class="lineno">  186</span>        std::string address = config-&gt;data-&gt;getBoostUDPServerAddress();</div>
-<div class="line"><span class="lineno">  187</span>        <span class="keywordtype">char</span>* cstr = (<span class="keywordtype">char</span>*)malloc(address.size() + 1);</div>
-<div class="line"><span class="lineno">  188</span>        <span class="keywordflow">if</span> (cstr)</div>
-<div class="line"><span class="lineno">  189</span>        {</div>
-<div class="line"><span class="lineno">  190</span>            std::strcpy(cstr, address.c_str());</div>
-<div class="line"><span class="lineno">  191</span>        }</div>
-<div class="line"><span class="lineno">  192</span>        <span class="keywordflow">return</span> cstr;</div>
-<div class="line"><span class="lineno">  193</span>    }</div>
-<div class="line"><span class="lineno">  194</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  195</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00213">213</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  214</span>{</div>
+<div class="line"><span class="lineno">  215</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
+<div class="line"><span class="lineno">  216</span>    {</div>
+<div class="line"><span class="lineno">  217</span>        std::string address = config-&gt;data-&gt;getBoostUDPServerAddress();</div>
+<div class="line"><span class="lineno">  218</span>        <span class="keywordtype">char</span>* cstr = (<span class="keywordtype">char</span>*)malloc(address.size() + 1);</div>
+<div class="line"><span class="lineno">  219</span>        <span class="keywordflow">if</span> (cstr)</div>
+<div class="line"><span class="lineno">  220</span>        {</div>
+<div class="line"><span class="lineno">  221</span>            std::strcpy(cstr, address.c_str());</div>
+<div class="line"><span class="lineno">  222</span>        }</div>
+<div class="line"><span class="lineno">  223</span>        <span class="keywordflow">return</span> cstr;</div>
+<div class="line"><span class="lineno">  224</span>    }</div>
+<div class="line"><span class="lineno">  225</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  226</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -278,20 +289,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00136">136</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  137</span>{</div>
-<div class="line"><span class="lineno">  138</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
-<div class="line"><span class="lineno">  139</span>    {</div>
-<div class="line"><span class="lineno">  140</span>        std::string address = config-&gt;data-&gt;getInetTCPServerAddress();</div>
-<div class="line"><span class="lineno">  141</span>        <span class="keywordtype">char</span>* cstr = (<span class="keywordtype">char</span>*)malloc(address.size() + 1);</div>
-<div class="line"><span class="lineno">  142</span>        <span class="keywordflow">if</span> (cstr)</div>
-<div class="line"><span class="lineno">  143</span>        {</div>
-<div class="line"><span class="lineno">  144</span>            std::strcpy(cstr, address.c_str());</div>
-<div class="line"><span class="lineno">  145</span>        }</div>
-<div class="line"><span class="lineno">  146</span>        <span class="keywordflow">return</span> cstr;</div>
-<div class="line"><span class="lineno">  147</span>    }</div>
-<div class="line"><span class="lineno">  148</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  149</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00167">167</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  168</span>{</div>
+<div class="line"><span class="lineno">  169</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
+<div class="line"><span class="lineno">  170</span>    {</div>
+<div class="line"><span class="lineno">  171</span>        std::string address = config-&gt;data-&gt;getInetTCPServerAddress();</div>
+<div class="line"><span class="lineno">  172</span>        <span class="keywordtype">char</span>* cstr = (<span class="keywordtype">char</span>*)malloc(address.size() + 1);</div>
+<div class="line"><span class="lineno">  173</span>        <span class="keywordflow">if</span> (cstr)</div>
+<div class="line"><span class="lineno">  174</span>        {</div>
+<div class="line"><span class="lineno">  175</span>            std::strcpy(cstr, address.c_str());</div>
+<div class="line"><span class="lineno">  176</span>        }</div>
+<div class="line"><span class="lineno">  177</span>        <span class="keywordflow">return</span> cstr;</div>
+<div class="line"><span class="lineno">  178</span>    }</div>
+<div class="line"><span class="lineno">  179</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  180</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -311,20 +322,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00113">113</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  114</span>{</div>
-<div class="line"><span class="lineno">  115</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
-<div class="line"><span class="lineno">  116</span>    {</div>
-<div class="line"><span class="lineno">  117</span>        std::string address = config-&gt;data-&gt;getInetUDPServerAddress();</div>
-<div class="line"><span class="lineno">  118</span>        <span class="keywordtype">char</span>* cstr = (<span class="keywordtype">char</span>*)malloc(address.size() + 1);</div>
-<div class="line"><span class="lineno">  119</span>        <span class="keywordflow">if</span> (cstr)</div>
-<div class="line"><span class="lineno">  120</span>        {</div>
-<div class="line"><span class="lineno">  121</span>            std::strcpy(cstr, address.c_str());</div>
-<div class="line"><span class="lineno">  122</span>        }</div>
-<div class="line"><span class="lineno">  123</span>        <span class="keywordflow">return</span> cstr;</div>
-<div class="line"><span class="lineno">  124</span>    }</div>
-<div class="line"><span class="lineno">  125</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  126</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00144">144</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  145</span>{</div>
+<div class="line"><span class="lineno">  146</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
+<div class="line"><span class="lineno">  147</span>    {</div>
+<div class="line"><span class="lineno">  148</span>        std::string address = config-&gt;data-&gt;getInetUDPServerAddress();</div>
+<div class="line"><span class="lineno">  149</span>        <span class="keywordtype">char</span>* cstr = (<span class="keywordtype">char</span>*)malloc(address.size() + 1);</div>
+<div class="line"><span class="lineno">  150</span>        <span class="keywordflow">if</span> (cstr)</div>
+<div class="line"><span class="lineno">  151</span>        {</div>
+<div class="line"><span class="lineno">  152</span>            std::strcpy(cstr, address.c_str());</div>
+<div class="line"><span class="lineno">  153</span>        }</div>
+<div class="line"><span class="lineno">  154</span>        <span class="keywordflow">return</span> cstr;</div>
+<div class="line"><span class="lineno">  155</span>    }</div>
+<div class="line"><span class="lineno">  156</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  157</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -344,14 +355,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00079">79</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   80</span>{</div>
-<div class="line"><span class="lineno">   81</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
-<div class="line"><span class="lineno">   82</span>    {</div>
-<div class="line"><span class="lineno">   83</span>        <span class="keywordflow">return</span> config-&gt;data-&gt;isMessageEncryptionEnabled() ? 1 : 0;</div>
-<div class="line"><span class="lineno">   84</span>    }</div>
-<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   86</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00093">93</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   94</span>{</div>
+<div class="line"><span class="lineno">   95</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
+<div class="line"><span class="lineno">   96</span>    {</div>
+<div class="line"><span class="lineno">   97</span>        <span class="keywordflow">return</span> config-&gt;data-&gt;isMessageEncryptionEnabled() ? 1 : 0;</div>
+<div class="line"><span class="lineno">   98</span>    }</div>
+<div class="line"><span class="lineno">   99</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  100</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -371,20 +382,49 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00048">48</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   49</span>{</div>
-<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
-<div class="line"><span class="lineno">   51</span>    {</div>
-<div class="line"><span class="lineno">   52</span>        std::string password = config-&gt;data-&gt;getPassword();</div>
-<div class="line"><span class="lineno">   53</span>        <span class="keywordtype">char</span>* cstr = (<span class="keywordtype">char</span>*)malloc(password.size() + 1);</div>
-<div class="line"><span class="lineno">   54</span>        <span class="keywordflow">if</span> (cstr)</div>
-<div class="line"><span class="lineno">   55</span>        {</div>
-<div class="line"><span class="lineno">   56</span>            std::strcpy(cstr, password.c_str());</div>
-<div class="line"><span class="lineno">   57</span>        }</div>
-<div class="line"><span class="lineno">   58</span>        <span class="keywordflow">return</span> cstr;</div>
-<div class="line"><span class="lineno">   59</span>    }</div>
-<div class="line"><span class="lineno">   60</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   61</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00062">62</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   63</span>{</div>
+<div class="line"><span class="lineno">   64</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
+<div class="line"><span class="lineno">   65</span>    {</div>
+<div class="line"><span class="lineno">   66</span>        std::string password = config-&gt;data-&gt;getPassword();</div>
+<div class="line"><span class="lineno">   67</span>        <span class="keywordtype">char</span>* cstr = (<span class="keywordtype">char</span>*)malloc(password.size() + 1);</div>
+<div class="line"><span class="lineno">   68</span>        <span class="keywordflow">if</span> (cstr)</div>
+<div class="line"><span class="lineno">   69</span>        {</div>
+<div class="line"><span class="lineno">   70</span>            std::strcpy(cstr, password.c_str());</div>
+<div class="line"><span class="lineno">   71</span>        }</div>
+<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">return</span> cstr;</div>
+<div class="line"><span class="lineno">   73</span>    }</div>
+<div class="line"><span class="lineno">   74</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   75</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a683e85ac122a40df5c5b09ab0b6565b2" name="a683e85ac122a40df5c5b09ab0b6565b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a683e85ac122a40df5c5b09ab0b6565b2">&#9670;&#160;</a></span>nexilis_client_config_get_server_public_key_sha256()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * nexilis_client_config_get_server_public_key_sha256 </td>
+          <td>(</td>
+          <td class="paramtype">const nexilis_ClientConfigC *&#160;</td>
+          <td class="paramname"><em>config</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00125">125</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  126</span>{</div>
+<div class="line"><span class="lineno">  127</span>    <span class="keywordflow">if</span> (!config || !config-&gt;data)</div>
+<div class="line"><span class="lineno">  128</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  129</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; pin = config-&gt;data-&gt;getServerPublicKeySha256();</div>
+<div class="line"><span class="lineno">  130</span>    <span class="keywordtype">char</span>* result = <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(malloc(pin.size() + 1));</div>
+<div class="line"><span class="lineno">  131</span>    <span class="keywordflow">if</span> (result)</div>
+<div class="line"><span class="lineno">  132</span>        std::memcpy(result, pin.c_str(), pin.size() + 1);</div>
+<div class="line"><span class="lineno">  133</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  134</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -404,14 +444,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00096">96</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   97</span>{</div>
-<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
-<div class="line"><span class="lineno">   99</span>    {</div>
-<div class="line"><span class="lineno">  100</span>        <span class="keywordflow">return</span> config-&gt;data-&gt;isTlsEnabled() ? 1 : 0;</div>
-<div class="line"><span class="lineno">  101</span>    }</div>
-<div class="line"><span class="lineno">  102</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  103</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00110">110</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  111</span>{</div>
+<div class="line"><span class="lineno">  112</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
+<div class="line"><span class="lineno">  113</span>    {</div>
+<div class="line"><span class="lineno">  114</span>        <span class="keywordflow">return</span> config-&gt;data-&gt;isTlsEnabled() ? 1 : 0;</div>
+<div class="line"><span class="lineno">  115</span>    }</div>
+<div class="line"><span class="lineno">  116</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  117</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -431,20 +471,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00205">205</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  206</span>{</div>
-<div class="line"><span class="lineno">  207</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
-<div class="line"><span class="lineno">  208</span>    {</div>
-<div class="line"><span class="lineno">  209</span>        std::string path = config-&gt;data-&gt;getUnixDgramServerPath();</div>
-<div class="line"><span class="lineno">  210</span>        <span class="keywordtype">char</span>* cstr = (<span class="keywordtype">char</span>*)malloc(path.size() + 1);</div>
-<div class="line"><span class="lineno">  211</span>        <span class="keywordflow">if</span> (cstr)</div>
-<div class="line"><span class="lineno">  212</span>        {</div>
-<div class="line"><span class="lineno">  213</span>            std::strcpy(cstr, path.c_str());</div>
-<div class="line"><span class="lineno">  214</span>        }</div>
-<div class="line"><span class="lineno">  215</span>        <span class="keywordflow">return</span> cstr;</div>
-<div class="line"><span class="lineno">  216</span>    }</div>
-<div class="line"><span class="lineno">  217</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  218</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00236">236</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  237</span>{</div>
+<div class="line"><span class="lineno">  238</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
+<div class="line"><span class="lineno">  239</span>    {</div>
+<div class="line"><span class="lineno">  240</span>        std::string path = config-&gt;data-&gt;getUnixDgramServerPath();</div>
+<div class="line"><span class="lineno">  241</span>        <span class="keywordtype">char</span>* cstr = (<span class="keywordtype">char</span>*)malloc(path.size() + 1);</div>
+<div class="line"><span class="lineno">  242</span>        <span class="keywordflow">if</span> (cstr)</div>
+<div class="line"><span class="lineno">  243</span>        {</div>
+<div class="line"><span class="lineno">  244</span>            std::strcpy(cstr, path.c_str());</div>
+<div class="line"><span class="lineno">  245</span>        }</div>
+<div class="line"><span class="lineno">  246</span>        <span class="keywordflow">return</span> cstr;</div>
+<div class="line"><span class="lineno">  247</span>    }</div>
+<div class="line"><span class="lineno">  248</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  249</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -464,20 +504,60 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00228">228</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  229</span>{</div>
-<div class="line"><span class="lineno">  230</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
-<div class="line"><span class="lineno">  231</span>    {</div>
-<div class="line"><span class="lineno">  232</span>        std::string path = config-&gt;data-&gt;getUnixStreamServerPath();</div>
-<div class="line"><span class="lineno">  233</span>        <span class="keywordtype">char</span>* cstr = (<span class="keywordtype">char</span>*)malloc(path.size() + 1);</div>
-<div class="line"><span class="lineno">  234</span>        <span class="keywordflow">if</span> (cstr)</div>
-<div class="line"><span class="lineno">  235</span>        {</div>
-<div class="line"><span class="lineno">  236</span>            std::strcpy(cstr, path.c_str());</div>
-<div class="line"><span class="lineno">  237</span>        }</div>
-<div class="line"><span class="lineno">  238</span>        <span class="keywordflow">return</span> cstr;</div>
-<div class="line"><span class="lineno">  239</span>    }</div>
-<div class="line"><span class="lineno">  240</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  241</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00259">259</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  260</span>{</div>
+<div class="line"><span class="lineno">  261</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
+<div class="line"><span class="lineno">  262</span>    {</div>
+<div class="line"><span class="lineno">  263</span>        std::string path = config-&gt;data-&gt;getUnixStreamServerPath();</div>
+<div class="line"><span class="lineno">  264</span>        <span class="keywordtype">char</span>* cstr = (<span class="keywordtype">char</span>*)malloc(path.size() + 1);</div>
+<div class="line"><span class="lineno">  265</span>        <span class="keywordflow">if</span> (cstr)</div>
+<div class="line"><span class="lineno">  266</span>        {</div>
+<div class="line"><span class="lineno">  267</span>            std::strcpy(cstr, path.c_str());</div>
+<div class="line"><span class="lineno">  268</span>        }</div>
+<div class="line"><span class="lineno">  269</span>        <span class="keywordflow">return</span> cstr;</div>
+<div class="line"><span class="lineno">  270</span>    }</div>
+<div class="line"><span class="lineno">  271</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  272</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a47beae65a05cc791c839158881703423" name="a47beae65a05cc791c839158881703423"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47beae65a05cc791c839158881703423">&#9670;&#160;</a></span>nexilis_client_config_set_account_credentials()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nexilis_client_config_set_account_credentials </td>
+          <td>(</td>
+          <td class="paramtype">nexilis_ClientConfigC *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>account_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>credential</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00055">55</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   57</span>{</div>
+<div class="line"><span class="lineno">   58</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data &amp;&amp; account_id &amp;&amp; credential)</div>
+<div class="line"><span class="lineno">   59</span>        config-&gt;data-&gt;setAccountCredentials(account_id, credential);</div>
+<div class="line"><span class="lineno">   60</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -507,13 +587,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00151">151</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  152</span>{</div>
-<div class="line"><span class="lineno">  153</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data &amp;&amp; server_address)</div>
-<div class="line"><span class="lineno">  154</span>    {</div>
-<div class="line"><span class="lineno">  155</span>        config-&gt;data-&gt;setBoostTCPAddress(server_address);</div>
-<div class="line"><span class="lineno">  156</span>    }</div>
-<div class="line"><span class="lineno">  157</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00182">182</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  183</span>{</div>
+<div class="line"><span class="lineno">  184</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data &amp;&amp; server_address)</div>
+<div class="line"><span class="lineno">  185</span>    {</div>
+<div class="line"><span class="lineno">  186</span>        config-&gt;data-&gt;setBoostTCPAddress(server_address);</div>
+<div class="line"><span class="lineno">  187</span>    }</div>
+<div class="line"><span class="lineno">  188</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -543,13 +623,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00174">174</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  175</span>{</div>
-<div class="line"><span class="lineno">  176</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data &amp;&amp; server_address)</div>
-<div class="line"><span class="lineno">  177</span>    {</div>
-<div class="line"><span class="lineno">  178</span>        config-&gt;data-&gt;setBoostUDPAddress(server_address);</div>
-<div class="line"><span class="lineno">  179</span>    }</div>
-<div class="line"><span class="lineno">  180</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00205">205</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  206</span>{</div>
+<div class="line"><span class="lineno">  207</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data &amp;&amp; server_address)</div>
+<div class="line"><span class="lineno">  208</span>    {</div>
+<div class="line"><span class="lineno">  209</span>        config-&gt;data-&gt;setBoostUDPAddress(server_address);</div>
+<div class="line"><span class="lineno">  210</span>    }</div>
+<div class="line"><span class="lineno">  211</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -579,13 +659,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00128">128</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  129</span>{</div>
-<div class="line"><span class="lineno">  130</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data &amp;&amp; server_address)</div>
-<div class="line"><span class="lineno">  131</span>    {</div>
-<div class="line"><span class="lineno">  132</span>        config-&gt;data-&gt;setInetTCP(server_address);</div>
-<div class="line"><span class="lineno">  133</span>    }</div>
-<div class="line"><span class="lineno">  134</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00159">159</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  160</span>{</div>
+<div class="line"><span class="lineno">  161</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data &amp;&amp; server_address)</div>
+<div class="line"><span class="lineno">  162</span>    {</div>
+<div class="line"><span class="lineno">  163</span>        config-&gt;data-&gt;setInetTCP(server_address);</div>
+<div class="line"><span class="lineno">  164</span>    }</div>
+<div class="line"><span class="lineno">  165</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -615,13 +695,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00105">105</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  106</span>{</div>
-<div class="line"><span class="lineno">  107</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data &amp;&amp; server_address)</div>
-<div class="line"><span class="lineno">  108</span>    {</div>
-<div class="line"><span class="lineno">  109</span>        config-&gt;data-&gt;setInetUDP(server_address);</div>
-<div class="line"><span class="lineno">  110</span>    }</div>
-<div class="line"><span class="lineno">  111</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00136">136</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  137</span>{</div>
+<div class="line"><span class="lineno">  138</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data &amp;&amp; server_address)</div>
+<div class="line"><span class="lineno">  139</span>    {</div>
+<div class="line"><span class="lineno">  140</span>        config-&gt;data-&gt;setInetUDP(server_address);</div>
+<div class="line"><span class="lineno">  141</span>    }</div>
+<div class="line"><span class="lineno">  142</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -651,13 +731,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00071">71</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   72</span>{</div>
-<div class="line"><span class="lineno">   73</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
-<div class="line"><span class="lineno">   74</span>    {</div>
-<div class="line"><span class="lineno">   75</span>        config-&gt;data-&gt;setMessageEncryption(enabled != 0);</div>
-<div class="line"><span class="lineno">   76</span>    }</div>
-<div class="line"><span class="lineno">   77</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00085">85</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   86</span>{</div>
+<div class="line"><span class="lineno">   87</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
+<div class="line"><span class="lineno">   88</span>    {</div>
+<div class="line"><span class="lineno">   89</span>        config-&gt;data-&gt;setMessageEncryption(enabled != 0);</div>
+<div class="line"><span class="lineno">   90</span>    }</div>
+<div class="line"><span class="lineno">   91</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -687,13 +767,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00063">63</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   64</span>{</div>
-<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
-<div class="line"><span class="lineno">   66</span>    {</div>
-<div class="line"><span class="lineno">   67</span>        config-&gt;data-&gt;setMode(<span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="../../d5/dc9/namespacenexilis_1_1server.html#acc371b1360f86610e42c4eb65bce21b7">nexilis::server::AuthenticationMode</a><span class="keyword">&gt;</span>(mode));</div>
-<div class="line"><span class="lineno">   68</span>    }</div>
-<div class="line"><span class="lineno">   69</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00077">77</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   78</span>{</div>
+<div class="line"><span class="lineno">   79</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
+<div class="line"><span class="lineno">   80</span>    {</div>
+<div class="line"><span class="lineno">   81</span>        config-&gt;data-&gt;setMode(<span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="../../d5/dc9/namespacenexilis_1_1server.html#acc371b1360f86610e42c4eb65bce21b7">nexilis::server::AuthenticationMode</a><span class="keyword">&gt;</span>(mode));</div>
+<div class="line"><span class="lineno">   82</span>    }</div>
+<div class="line"><span class="lineno">   83</span>}</div>
 <div class="ttc" id="anamespacenexilis_1_1server_html_acc371b1360f86610e42c4eb65bce21b7"><div class="ttname"><a href="../../d5/dc9/namespacenexilis_1_1server.html#acc371b1360f86610e42c4eb65bce21b7">nexilis::server::AuthenticationMode</a></div><div class="ttdeci">AuthenticationMode</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dcd/authentication__mode_8hh_source.html#l00023">authentication_mode.hh:24</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -724,13 +804,47 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00040">40</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   41</span>{</div>
-<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data &amp;&amp; password)</div>
-<div class="line"><span class="lineno">   43</span>    {</div>
-<div class="line"><span class="lineno">   44</span>        config-&gt;data-&gt;setPassword(password);</div>
-<div class="line"><span class="lineno">   45</span>    }</div>
-<div class="line"><span class="lineno">   46</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00047">47</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   48</span>{</div>
+<div class="line"><span class="lineno">   49</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data &amp;&amp; password)</div>
+<div class="line"><span class="lineno">   50</span>    {</div>
+<div class="line"><span class="lineno">   51</span>        config-&gt;data-&gt;setPassword(password);</div>
+<div class="line"><span class="lineno">   52</span>    }</div>
+<div class="line"><span class="lineno">   53</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a10975d2310ceec04d7dd338dcdd6aeab" name="a10975d2310ceec04d7dd338dcdd6aeab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10975d2310ceec04d7dd338dcdd6aeab">&#9670;&#160;</a></span>nexilis_client_config_set_server_public_key_sha256()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nexilis_client_config_set_server_public_key_sha256 </td>
+          <td>(</td>
+          <td class="paramtype">nexilis_ClientConfigC *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>hex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00119">119</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  120</span>{</div>
+<div class="line"><span class="lineno">  121</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data &amp;&amp; hex)</div>
+<div class="line"><span class="lineno">  122</span>        config-&gt;data-&gt;setServerPublicKeySha256(hex);</div>
+<div class="line"><span class="lineno">  123</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -760,13 +874,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00088">88</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   89</span>{</div>
-<div class="line"><span class="lineno">   90</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
-<div class="line"><span class="lineno">   91</span>    {</div>
-<div class="line"><span class="lineno">   92</span>        config-&gt;data-&gt;setTls(enabled != 0);</div>
-<div class="line"><span class="lineno">   93</span>    }</div>
-<div class="line"><span class="lineno">   94</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00102">102</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  103</span>{</div>
+<div class="line"><span class="lineno">  104</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
+<div class="line"><span class="lineno">  105</span>    {</div>
+<div class="line"><span class="lineno">  106</span>        config-&gt;data-&gt;setTls(enabled != 0);</div>
+<div class="line"><span class="lineno">  107</span>    }</div>
+<div class="line"><span class="lineno">  108</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -796,13 +910,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00197">197</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  198</span>{</div>
-<div class="line"><span class="lineno">  199</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data &amp;&amp; socket_path)</div>
-<div class="line"><span class="lineno">  200</span>    {</div>
-<div class="line"><span class="lineno">  201</span>        config-&gt;data-&gt;setUnixDgramServerPath(socket_path);</div>
-<div class="line"><span class="lineno">  202</span>    }</div>
-<div class="line"><span class="lineno">  203</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00228">228</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  229</span>{</div>
+<div class="line"><span class="lineno">  230</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data &amp;&amp; socket_path)</div>
+<div class="line"><span class="lineno">  231</span>    {</div>
+<div class="line"><span class="lineno">  232</span>        config-&gt;data-&gt;setUnixDgramServerPath(socket_path);</div>
+<div class="line"><span class="lineno">  233</span>    }</div>
+<div class="line"><span class="lineno">  234</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -832,13 +946,36 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00220">220</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  221</span>{</div>
-<div class="line"><span class="lineno">  222</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
-<div class="line"><span class="lineno">  223</span>    {</div>
-<div class="line"><span class="lineno">  224</span>        config-&gt;data-&gt;setUnixStreamServerPath(socket_path);</div>
-<div class="line"><span class="lineno">  225</span>    }</div>
-<div class="line"><span class="lineno">  226</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00251">251</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  252</span>{</div>
+<div class="line"><span class="lineno">  253</span>    <span class="keywordflow">if</span> (config &amp;&amp; config-&gt;data)</div>
+<div class="line"><span class="lineno">  254</span>    {</div>
+<div class="line"><span class="lineno">  255</span>        config-&gt;data-&gt;setUnixStreamServerPath(socket_path);</div>
+<div class="line"><span class="lineno">  256</span>    }</div>
+<div class="line"><span class="lineno">  257</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aead01d729121291dce71d05dcb4bf514" name="aead01d729121291dce71d05dcb4bf514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aead01d729121291dce71d05dcb4bf514">&#9670;&#160;</a></span>nexilis_string_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nexilis_string_free </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html#l00042">42</a> of file <a class="el" href="../../d6/dc7/client__config__c_8cc_source.html">client_config_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   43</span>{</div>
+<div class="line"><span class="lineno">   44</span>    std::free(<span class="keyword">const_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(value));</div>
+<div class="line"><span class="lineno">   45</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

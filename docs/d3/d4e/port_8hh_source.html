@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.10-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.11-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -102,52 +102,66 @@ $(document).ready(function() { init_codefold(1); });
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define NEXILIS_CLIENT_COMMAND_SET_PORT_HH</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;<a class="code" href="../../d4/d3c/base__api__command_8hh.html">nexilis/client/base_api_command.hh</a>&gt;</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d2/dbe/namespacenexilis_1_1client.html">nexilis::client</a></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../df/d9a/classnexilis_1_1client_1_1SetPortCommand.html">   28</a></span><span class="keyword">class </span><a class="code hl_class" href="../../df/d9a/classnexilis_1_1client_1_1SetPortCommand.html">SetPortCommand</a> : <span class="keyword">public</span> <a class="code hl_class" href="../../d1/d17/classnexilis_1_1client_1_1BaseAPICommand.html">BaseAPICommand</a></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">public</span>:</div>
-<div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../df/d9a/classnexilis_1_1client_1_1SetPortCommand.html#a7e56598eaf2ec6488249c76982f9afc9">   31</a></span>    <a class="code hl_function" href="../../df/d9a/classnexilis_1_1client_1_1SetPortCommand.html#a7e56598eaf2ec6488249c76982f9afc9">SetPortCommand</a>(std::string protocol, uint16_t port)</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        : m_protocol(std::move(protocol)), m_port(port)</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    {</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;<a class="code" href="../../d4/d3d/udp__auth_8hh.html">nexilis/udp_auth.hh</a>&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d2/dbe/namespacenexilis_1_1client.html">nexilis::client</a></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../df/d9a/classnexilis_1_1client_1_1SetPortCommand.html">   30</a></span><span class="keyword">class </span><a class="code hl_class" href="../../df/d9a/classnexilis_1_1client_1_1SetPortCommand.html">SetPortCommand</a> : <span class="keyword">public</span> <a class="code hl_class" href="../../d1/d17/classnexilis_1_1client_1_1BaseAPICommand.html">BaseAPICommand</a></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../df/d9a/classnexilis_1_1client_1_1SetPortCommand.html#a32497994746861a0804f978375df9bff">   33</a></span>    <a class="code hl_function" href="../../df/d9a/classnexilis_1_1client_1_1SetPortCommand.html#a32497994746861a0804f978375df9bff">SetPortCommand</a>(std::string protocol, uint16_t port, std::string switchToken = {})</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        : m_protocol(std::move(protocol)), m_port(port), m_switchToken(std::move(switchToken))</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
 </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../df/d9a/classnexilis_1_1client_1_1SetPortCommand.html#ab6d97565a6a697ccbdedc9a40b8d2b78">   36</a></span>    <a class="code hl_enumeration" href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865">ReadResult</a> <a class="code hl_function" href="../../df/d9a/classnexilis_1_1client_1_1SetPortCommand.html#ab6d97565a6a697ccbdedc9a40b8d2b78">execute</a>(<a class="code hl_class" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html">ClientAPI</a>&amp; api, <a class="code hl_class" href="../../d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html">ClientAPI::ClientAPIData</a>&amp;)<span class="keyword"> override</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        api.<a class="code hl_function" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a946b2edf5cd580bf62206c7291de4fed">setProtocolPort</a>(m_protocol, m_port);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865a260ca9dd8a4577fc00b7bd5810298076">ReadResult::success</a>;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../df/d9a/classnexilis_1_1client_1_1SetPortCommand.html#ab6d97565a6a697ccbdedc9a40b8d2b78">   38</a></span>    <a class="code hl_enumeration" href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865">ReadResult</a> <a class="code hl_function" href="../../df/d9a/classnexilis_1_1client_1_1SetPortCommand.html#ab6d97565a6a697ccbdedc9a40b8d2b78">execute</a>(<a class="code hl_class" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html">ClientAPI</a>&amp; api, <a class="code hl_class" href="../../d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html">ClientAPI::ClientAPIData</a>&amp;)<span class="keyword"> override</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordflow">if</span> (!m_switchToken.empty())</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            std::array&lt;uint8_t, udp_auth::token_size&gt; parsed{};</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keywordflow">if</span> (m_protocol != <span class="stringliteral">&quot;boost_tcp&quot;</span> || !<a class="code hl_function" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a8ebdfdbacb3e3300981bb53464c13439">udp_auth::fromHex</a>(m_switchToken, parsed))</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865a1080ed39e08a161dc545804658700e33">ReadResult::invalid_input</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            api.<a class="code hl_function" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#ade2fc0a94488e36b6d2c41555ccd5150">setBoostTcpSwitchToken</a>(m_switchToken);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        api.<a class="code hl_function" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a946b2edf5cd580bf62206c7291de4fed">setProtocolPort</a>(m_protocol, m_port);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865a260ca9dd8a4577fc00b7bd5810298076">ReadResult::success</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
 </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    std::string m_protocol;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    uint16_t m_port;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    std::string m_protocol;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    uint16_t m_port;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    std::string m_switchToken;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>};</div>
 </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>} <span class="comment">// namespace nexilis::client</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>} <span class="comment">// namespace nexilis::client</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="abase__api__command_8hh_html"><div class="ttname"><a href="../../d4/d3c/base__api__command_8hh.html">base_api_command.hh</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1client_1_1BaseAPICommand_html"><div class="ttname"><a href="../../d1/d17/classnexilis_1_1client_1_1BaseAPICommand.html">nexilis::client::BaseAPICommand</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d3c/base__api__command_8hh_source.html#l00026">base_api_command.hh:27</a></div></div>
-<div class="ttc" id="aclassnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData_html"><div class="ttname"><a href="../../d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html">nexilis::client::ClientAPI::ClientAPIData</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d13/client__api_8hh_source.html#l00242">client_api.hh:243</a></div></div>
-<div class="ttc" id="aclassnexilis_1_1client_1_1ClientAPI_html"><div class="ttname"><a href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html">nexilis::client::ClientAPI</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d13/client__api_8hh_source.html#l00049">client_api.hh:50</a></div></div>
-<div class="ttc" id="aclassnexilis_1_1client_1_1ClientAPI_html_a946b2edf5cd580bf62206c7291de4fed"><div class="ttname"><a href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a946b2edf5cd580bf62206c7291de4fed">nexilis::client::ClientAPI::setProtocolPort</a></div><div class="ttdeci">void setProtocolPort(const std::string &amp;protocol, uint16_t port)</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d13/client__api_8hh_source.html#l00827">client_api.hh:827</a></div></div>
-<div class="ttc" id="aclassnexilis_1_1client_1_1SetPortCommand_html"><div class="ttname"><a href="../../df/d9a/classnexilis_1_1client_1_1SetPortCommand.html">nexilis::client::SetPortCommand</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/d4e/port_8hh_source.html#l00028">port.hh:29</a></div></div>
-<div class="ttc" id="aclassnexilis_1_1client_1_1SetPortCommand_html_a7e56598eaf2ec6488249c76982f9afc9"><div class="ttname"><a href="../../df/d9a/classnexilis_1_1client_1_1SetPortCommand.html#a7e56598eaf2ec6488249c76982f9afc9">nexilis::client::SetPortCommand::SetPortCommand</a></div><div class="ttdeci">SetPortCommand(std::string protocol, uint16_t port)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d4e/port_8hh_source.html#l00031">port.hh:31</a></div></div>
-<div class="ttc" id="aclassnexilis_1_1client_1_1SetPortCommand_html_ab6d97565a6a697ccbdedc9a40b8d2b78"><div class="ttname"><a href="../../df/d9a/classnexilis_1_1client_1_1SetPortCommand.html#ab6d97565a6a697ccbdedc9a40b8d2b78">nexilis::client::SetPortCommand::execute</a></div><div class="ttdeci">ReadResult execute(ClientAPI &amp;api, ClientAPI::ClientAPIData &amp;) override</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d4e/port_8hh_source.html#l00036">port.hh:36</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData_html"><div class="ttname"><a href="../../d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html">nexilis::client::ClientAPI::ClientAPIData</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d13/client__api_8hh_source.html#l00307">client_api.hh:308</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1client_1_1ClientAPI_html"><div class="ttname"><a href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html">nexilis::client::ClientAPI</a></div><div class="ttdef"><b>Definition</b> <a href="../../d5/d13/client__api_8hh_source.html#l00052">client_api.hh:53</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1client_1_1ClientAPI_html_a946b2edf5cd580bf62206c7291de4fed"><div class="ttname"><a href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a946b2edf5cd580bf62206c7291de4fed">nexilis::client::ClientAPI::setProtocolPort</a></div><div class="ttdeci">void setProtocolPort(const std::string &amp;protocol, uint16_t port)</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d13/client__api_8hh_source.html#l00974">client_api.hh:974</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1client_1_1ClientAPI_html_ade2fc0a94488e36b6d2c41555ccd5150"><div class="ttname"><a href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#ade2fc0a94488e36b6d2c41555ccd5150">nexilis::client::ClientAPI::setBoostTcpSwitchToken</a></div><div class="ttdeci">void setBoostTcpSwitchToken(std::string token)</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d13/client__api_8hh_source.html#l00666">client_api.hh:666</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1client_1_1SetPortCommand_html"><div class="ttname"><a href="../../df/d9a/classnexilis_1_1client_1_1SetPortCommand.html">nexilis::client::SetPortCommand</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/d4e/port_8hh_source.html#l00030">port.hh:31</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1client_1_1SetPortCommand_html_a32497994746861a0804f978375df9bff"><div class="ttname"><a href="../../df/d9a/classnexilis_1_1client_1_1SetPortCommand.html#a32497994746861a0804f978375df9bff">nexilis::client::SetPortCommand::SetPortCommand</a></div><div class="ttdeci">SetPortCommand(std::string protocol, uint16_t port, std::string switchToken={})</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d4e/port_8hh_source.html#l00033">port.hh:33</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1client_1_1SetPortCommand_html_ab6d97565a6a697ccbdedc9a40b8d2b78"><div class="ttname"><a href="../../df/d9a/classnexilis_1_1client_1_1SetPortCommand.html#ab6d97565a6a697ccbdedc9a40b8d2b78">nexilis::client::SetPortCommand::execute</a></div><div class="ttdeci">ReadResult execute(ClientAPI &amp;api, ClientAPI::ClientAPIData &amp;) override</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d4e/port_8hh_source.html#l00038">port.hh:38</a></div></div>
 <div class="ttc" id="anamespacenexilis_1_1client_html"><div class="ttname"><a href="../../d2/dbe/namespacenexilis_1_1client.html">nexilis::client</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d3c/base__api__command_8hh_source.html#l00023">base_api_command.hh:24</a></div></div>
 <div class="ttc" id="anamespacenexilis_1_1client_html_ac26aef7623575a5f6e0f89c9ffa31865"><div class="ttname"><a href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865">nexilis::client::ReadResult</a></div><div class="ttdeci">ReadResult</div><div class="ttdoc">Result from ClientAPI::readMessage(const nx_data&amp;).</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dcb/read__result_8hh_source.html#l00028">read_result.hh:29</a></div></div>
+<div class="ttc" id="anamespacenexilis_1_1client_html_ac26aef7623575a5f6e0f89c9ffa31865a1080ed39e08a161dc545804658700e33"><div class="ttname"><a href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865a1080ed39e08a161dc545804658700e33">nexilis::client::ReadResult::invalid_input</a></div><div class="ttdeci">@ invalid_input</div><div class="ttdoc">The input for command is not valid.</div></div>
 <div class="ttc" id="anamespacenexilis_1_1client_html_ac26aef7623575a5f6e0f89c9ffa31865a260ca9dd8a4577fc00b7bd5810298076"><div class="ttname"><a href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865a260ca9dd8a4577fc00b7bd5810298076">nexilis::client::ReadResult::success</a></div><div class="ttdeci">@ success</div><div class="ttdoc">Command success.</div></div>
+<div class="ttc" id="anamespacenexilis_1_1udp__auth_html_a8ebdfdbacb3e3300981bb53464c13439"><div class="ttname"><a href="../../db/d44/namespacenexilis_1_1udp__auth.html#a8ebdfdbacb3e3300981bb53464c13439">nexilis::udp_auth::fromHex</a></div><div class="ttdeci">bool fromHex(std::string_view hex, std::array&lt; uint8_t, token_size &gt; &amp;bytes)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d3d/udp__auth_8hh_source.html#l00074">udp_auth.hh:74</a></div></div>
+<div class="ttc" id="audp__auth_8hh_html"><div class="ttname"><a href="../../d4/d3d/udp__auth_8hh.html">udp_auth.hh</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

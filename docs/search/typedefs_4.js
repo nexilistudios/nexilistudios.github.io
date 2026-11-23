@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['movementfunc_0',['MovementFunc',['../da/d67/classnexilis_1_1Movement.html#a0a2d908eaec3df6c73455dd7385e948b',1,'nexilis::Movement']]],
-  ['movementinputhandler_1',['MovementInputHandler',['../d1/d01/classnexilis_1_1server_1_1Room.html#abd1aafc46266b8454c7dcb63f0b8b39e',1,'nexilis::server::Room']]]
+  ['gameitemcreationhandler_0',['GameItemCreationHandler',['../d1/d01/classnexilis_1_1server_1_1Room.html#a4b50e3f851145532e93cdb43f3e70438',1,'nexilis::server::Room']]],
+  ['gameitemmutationhandler_1',['GameItemMutationHandler',['../d1/d01/classnexilis_1_1server_1_1Room.html#aa2e0ebba57a6391b939970a423f5dbf1',1,'nexilis::server::Room']]],
+  ['gameitempickuphandler_2',['GameItemPickupHandler',['../d1/d01/classnexilis_1_1server_1_1Room.html#ad7583b21b8739637a56f1d3ce89a5e00',1,'nexilis::server::Room']]]
 ];

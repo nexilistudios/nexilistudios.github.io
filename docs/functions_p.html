@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.10-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.11-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -74,6 +74,7 @@ $(function() {
 
 <h3><a id="index_p" name="index_p"></a>- p -</h3><ul>
 <li>parse()&#160;:&#160;<a class="el" href="db/d64/classnexilis_1_1client_1_1CommandParser.html#aca2f982d6b44dbff9fba0da6e949d570">nexilis::client::CommandParser</a>, <a class="el" href="d2/ddb/classnexilis_1_1CommandSpec.html#a98f7323e03cb6ceeaa5db28ccc1ad2e2">nexilis::CommandSpec</a></li>
+<li>payload&#160;:&#160;<a class="el" href="da/d2b/structnexilis_1_1client_1_1ClientAPI_1_1ServerRoomEvent.html#a8be13e670ec750c1d88418d1687b1aea">nexilis::client::ClientAPI::ServerRoomEvent</a></li>
 <li>phase&#160;:&#160;<a class="el" href="d2/dab/structnexilis_1_1client_1_1ClientAPI_1_1BombMatchEvent.html#ac8e970128dd3888d0e8c1bb05db0f2d1">nexilis::client::ClientAPI::BombMatchEvent</a></li>
 <li>player_id&#160;:&#160;<a class="el" href="db/d57/structnexilis_1_1client_1_1ClientAPI_1_1DeathmatchMatchEvent.html#a22bd39bd323006ac46572c339a32bee8">nexilis::client::ClientAPI::DeathmatchMatchEvent</a></li>
 <li>playerStatsEntries()&#160;:&#160;<a class="el" href="da/d15/classnexilis_1_1server_1_1Command.html#acc25c71aa48b549e2626f4cf5431ae14">nexilis::server::Command</a></li>
@@ -81,10 +82,14 @@ $(function() {
 <li>PlayerTypeToString()&#160;:&#160;<a class="el" href="db/d0c/classnexilis_1_1RoomCommandType.html#a32c03fad903d3c6c37b17b29fda73d2c">nexilis::RoomCommandType</a></li>
 <li>port()&#160;:&#160;<a class="el" href="d4/d47/structCommandPacketBase_1_1Set_1_1Protocol_1_1BoostTCP.html#a1c671f12a9b08b0772ab46f2b3670c30">CommandPacketBase&lt; Impl &gt;::Set::Protocol::BoostTCP</a></li>
 <li>position()&#160;:&#160;<a class="el" href="d1/da7/structCommandPacketBase_1_1Room_1_1Player2D.html#a974d29e096c1582f2ca8982f6ab124df">CommandPacketBase&lt; Impl &gt;::Room::Player2D</a>, <a class="el" href="df/da5/structCommandPacketBase_1_1Room_1_1Player3D.html#ae9fccc8420ffdf2b039c794f34ff2444">CommandPacketBase&lt; Impl &gt;::Room::Player3D</a></li>
+<li>Position2DHandler&#160;:&#160;<a class="el" href="d1/d01/classnexilis_1_1server_1_1Room.html#ad50c788e3e3393946cfed9456cda8a74">nexilis::server::Room</a></li>
+<li>Position3DHandler&#160;:&#160;<a class="el" href="d1/d01/classnexilis_1_1server_1_1Room.html#a81ed69719698d5ca0081689bc3da28b7">nexilis::server::Room</a></li>
 <li>print()&#160;:&#160;<a class="el" href="d7/de9/classnexilis_1_1Json.html#aab7fed79162a1945d0d0d68bde99b60d">nexilis::Json</a></li>
 <li>printColorMessageToConsole()&#160;:&#160;<a class="el" href="dd/de4/classnexilis_1_1Util.html#a0eff3b0606895a6f09a41e9ef0d6de4e">nexilis::Util</a></li>
+<li>privateKeyPem&#160;:&#160;<a class="el" href="d2/d94/structnexilis_1_1tls_1_1ServerIdentity.html#a05b68339042d9b515749e8997dff990f">nexilis::tls::ServerIdentity</a></li>
 <li>protocol&#160;:&#160;<a class="el" href="d2/ddb/classnexilis_1_1CommandSpec.html#ae4669e20ce677b215fff3bafe1b0aace">nexilis::CommandSpec</a></li>
 <li>ProtocolData()&#160;:&#160;<a class="el" href="da/d97/classnexilis_1_1ProtocolManager_1_1ProtocolData.html#a7a5929984f7b08d90424eec1a38db19c">nexilis::ProtocolManager::ProtocolData</a></li>
+<li>publicKeySha256&#160;:&#160;<a class="el" href="d2/d94/structnexilis_1_1tls_1_1ServerIdentity.html#a795d218bb223e8d711ceb14d90475c3a">nexilis::tls::ServerIdentity</a></li>
 <li>pushAnimationEvent()&#160;:&#160;<a class="el" href="d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a61d5721f7e87bf169adcf9aed41b1b19">nexilis::client::ClientAPI::ClientAPIData</a></li>
 <li>pushAudioEvent()&#160;:&#160;<a class="el" href="d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#ae1ad4bac1bab203f579014ed4c693c0e">nexilis::client::ClientAPI::ClientAPIData</a></li>
 <li>pushDamageEvent()&#160;:&#160;<a class="el" href="d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#adead19e44d027fe431500761566b178e">nexilis::client::ClientAPI::ClientAPIData</a></li>
@@ -92,6 +97,7 @@ $(function() {
 <li>pushMatchEvent()&#160;:&#160;<a class="el" href="d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a0e989b5247db5e53d6e89e1f22f7ac36">nexilis::client::ClientAPI::ClientAPIData</a></li>
 <li>pushPlayer2DShootEvent()&#160;:&#160;<a class="el" href="d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a44b6a74ac98c3e0326a0ff7d2ec30e86">nexilis::client::ClientAPI::ClientAPIData</a></li>
 <li>pushRespawnEvent()&#160;:&#160;<a class="el" href="d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a1f55de0762fc91b515ea629cfaba37b7">nexilis::client::ClientAPI::ClientAPIData</a></li>
+<li>pushServerRoomEvent()&#160;:&#160;<a class="el" href="d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a446608a0eaee34d02a711adcea9eb9dd">nexilis::client::ClientAPI::ClientAPIData</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

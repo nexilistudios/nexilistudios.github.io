@@ -7,5 +7,5 @@ var searchData=
   ['unixdgram_4',['unixDgram',['../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1fa062c400c0e1f599aa5d978d6d11080bb',1,'nexilis::server::User']]],
   ['unixstream_5',['unixStream',['../d4/d3a/classnexilis_1_1server_1_1User.html#a7c1b63209cf1ea24fc883cd878b3ba1fa0b23d540f859506a243c2f216492e84a',1,'nexilis::server::User']]],
   ['unknown_6',['unknown',['../d5/da4/classnexilis_1_1NXProtocol.html#a369b4d31659356389601322319be1490a696b031073e74bf2cb98e5ef201d4aa3',1,'nexilis::NXProtocol::UNKNOWN'],['../d5/da4/classnexilis_1_1NXProtocol.html#a4652f0825ccf416e0a297349d5f6e663a696b031073e74bf2cb98e5ef201d4aa3',1,'nexilis::NXProtocol::UNKNOWN']]],
-  ['update_7',['update',['../db/d0c/classnexilis_1_1RoomCommandType.html#adc73c38fa6c6a724a4399e742686a87ea3ac340832f29c11538fbe2d6f75e8bcc',1,'nexilis::RoomCommandType']]]
+  ['update_7',['update',['../db/d0c/classnexilis_1_1RoomCommandType.html#adc73c38fa6c6a724a4399e742686a87ea3ac340832f29c11538fbe2d6f75e8bcc',1,'nexilis::RoomCommandType::update'],['../d1/d01/classnexilis_1_1server_1_1Room.html#a742532b552b0f9966e251e51f7ee8feca3ac340832f29c11538fbe2d6f75e8bcc',1,'nexilis::server::Room::update']]]
 ];

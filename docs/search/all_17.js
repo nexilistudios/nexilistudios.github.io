@@ -15,5 +15,6 @@ var searchData=
   ['windowstart_12',['windowStart',['../d4/d7f/structnexilis_1_1server_1_1MessageHandler_1_1RegistrationState_1_1Attempt.html#a0f4024c1beee6efe5c73e8368700d232',1,'nexilis::server::MessageHandler::RegistrationState::Attempt']]],
   ['withobject2d_13',['withObject2D',['../d1/d01/classnexilis_1_1server_1_1Room.html#a74e82ee47dd13e2b54d4943af5327fcd',1,'nexilis::server::Room']]],
   ['withobject3d_14',['withObject3D',['../d1/d01/classnexilis_1_1server_1_1Room.html#a91290e3814ef9e86c9d6a6537d874041',1,'nexilis::server::Room']]],
-  ['writeporttofile_15',['writePortToFile',['../dd/d04/group__PortHandling.html#gae95993b3b515cdb8e8eb84ad7027eb24',1,'nexilis::Util']]]
+  ['workercount_15',['workerCount',['../d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#a991c2b67797d3d08fe12002dee2ff9c1',1,'nexilis::server::nxboost::TCPServer']]],
+  ['writeporttofile_16',['writePortToFile',['../dd/d04/group__PortHandling.html#gae95993b3b515cdb8e8eb84ad7027eb24',1,'nexilis::Util']]]
 ];

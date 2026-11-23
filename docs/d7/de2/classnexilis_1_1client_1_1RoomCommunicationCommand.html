@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.10-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.11-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -216,54 +216,50 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   42</span> </div>
 <div class="line"><span class="lineno">   43</span>        <span class="keywordflow">if</span> (m_action == <span class="stringliteral">&quot;broadcast&quot;</span> || m_action == <span class="stringliteral">&quot;broadcast_encrypted&quot;</span>)</div>
 <div class="line"><span class="lineno">   44</span>        {</div>
-<div class="line"><span class="lineno">   45</span>            <span class="comment">// End-to-end encrypted messages are relayed by the server as an</span></div>
-<div class="line"><span class="lineno">   46</span>            <span class="comment">// opaque base64 ciphertext blob. Only the receiving client can</span></div>
-<div class="line"><span class="lineno">   47</span>            <span class="comment">// turn that back into the original message.</span></div>
-<div class="line"><span class="lineno">   48</span>            std::string payload = m_message;</div>
-<div class="line"><span class="lineno">   49</span>            <span class="keywordflow">if</span> (m_action == <span class="stringliteral">&quot;broadcast_encrypted&quot;</span>)</div>
-<div class="line"><span class="lineno">   50</span>            {</div>
-<div class="line"><span class="lineno">   51</span>                <span class="keyword">const</span> <span class="keyword">auto</span> key = <a class="code hl_function" href="../../d0/dd2/namespacenexilis_1_1crypto.html#a25750d1a862b6c76306e8fecd8cab6ac">crypto::deriveMessageKey</a>(api.getClientPassword(), m_room_id);</div>
-<div class="line"><span class="lineno">   52</span>                <span class="keyword">const</span> <span class="keyword">auto</span> sealed = <a class="code hl_function" href="../../d0/dd2/namespacenexilis_1_1crypto.html#ad3d0b0446a8906d86bb5adcbd4f887e7">crypto::fromBase64</a>(m_message);</div>
-<div class="line"><span class="lineno">   53</span>                <span class="keywordflow">if</span> (!key.empty() &amp;&amp; !sealed.empty() &amp;&amp; <a class="code hl_function" href="../../d0/dd2/namespacenexilis_1_1crypto.html#a357b18a5a56166871a3766fa89d16dea">crypto::decrypt</a>(key, sealed, payload))</div>
-<div class="line"><span class="lineno">   54</span>                {</div>
-<div class="line"><span class="lineno">   55</span>                    <span class="comment">// Successfully decrypted into payload.</span></div>
+<div class="line"><span class="lineno">   45</span>            <span class="comment">// Encrypted messages are relayed as base64 ciphertext. Invalid</span></div>
+<div class="line"><span class="lineno">   46</span>            <span class="comment">// ciphertext must not become an application message.</span></div>
+<div class="line"><span class="lineno">   47</span>            std::string payload = m_message;</div>
+<div class="line"><span class="lineno">   48</span>            <span class="keywordflow">if</span> (m_action == <span class="stringliteral">&quot;broadcast_encrypted&quot;</span>)</div>
+<div class="line"><span class="lineno">   49</span>            {</div>
+<div class="line"><span class="lineno">   50</span>                <span class="keyword">const</span> <span class="keyword">auto</span> key = <a class="code hl_function" href="../../d0/dd2/namespacenexilis_1_1crypto.html#a25750d1a862b6c76306e8fecd8cab6ac">crypto::deriveMessageKey</a>(api.getClientPassword(), m_room_id);</div>
+<div class="line"><span class="lineno">   51</span>                <span class="keyword">const</span> <span class="keyword">auto</span> sealed = <a class="code hl_function" href="../../d0/dd2/namespacenexilis_1_1crypto.html#ad3d0b0446a8906d86bb5adcbd4f887e7">crypto::fromBase64</a>(m_message);</div>
+<div class="line"><span class="lineno">   52</span>                <span class="keywordflow">if</span> (key.empty() || sealed.empty() || !<a class="code hl_function" href="../../d0/dd2/namespacenexilis_1_1crypto.html#a357b18a5a56166871a3766fa89d16dea">crypto::decrypt</a>(key, sealed, payload))</div>
+<div class="line"><span class="lineno">   53</span>                {</div>
+<div class="line"><span class="lineno">   54</span>                    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<span class="stringliteral">&quot;broadcast_encrypted: failed to decrypt message&quot;</span>);</div>
+<div class="line"><span class="lineno">   55</span>                    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865a3ee28fe1a60c95b89d29317f122c7021">ReadResult::failure</a>;</div>
 <div class="line"><span class="lineno">   56</span>                }</div>
-<div class="line"><span class="lineno">   57</span>                <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   58</span>                {</div>
-<div class="line"><span class="lineno">   59</span>                    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<span class="stringliteral">&quot;broadcast_encrypted: failed to decrypt message, keeping the raw ciphertext&quot;</span>);</div>
-<div class="line"><span class="lineno">   60</span>                }</div>
-<div class="line"><span class="lineno">   61</span>            }</div>
-<div class="line"><span class="lineno">   62</span> </div>
-<div class="line"><span class="lineno">   63</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a> = rooms.begin(); <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a> != rooms.end(); <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>++)</div>
-<div class="line"><span class="lineno">   64</span>            {</div>
-<div class="line"><span class="lineno">   65</span>                ClientSession* sender = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   66</span>                <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; client : <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>-&gt;getClients())</div>
-<div class="line"><span class="lineno">   67</span>                {</div>
-<div class="line"><span class="lineno">   68</span>                    <span class="keywordflow">if</span> (client.getId() == m_client_id)</div>
-<div class="line"><span class="lineno">   69</span>                    {</div>
-<div class="line"><span class="lineno">   70</span>                        sender = &amp;client;</div>
-<div class="line"><span class="lineno">   71</span>                    }</div>
-<div class="line"><span class="lineno">   72</span>                }</div>
-<div class="line"><span class="lineno">   73</span> </div>
-<div class="line"><span class="lineno">   74</span>                <span class="keywordflow">if</span> (<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>-&gt;getId() == m_room_id)</div>
-<div class="line"><span class="lineno">   75</span>                {</div>
-<div class="line"><span class="lineno">   76</span>                    Room::Communication newMessage(payload, sender);</div>
-<div class="line"><span class="lineno">   77</span>                    [[maybe_unused]] <span class="keyword">auto</span> message_id = newMessage.getId();</div>
-<div class="line"><span class="lineno">   78</span>                    <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>-&gt;addMessage(std::move(newMessage));</div>
-<div class="line"><span class="lineno">   79</span> </div>
-<div class="line"><span class="lineno">   80</span>                    assert(<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>-&gt;containsCommunication(message_id));</div>
-<div class="line"><span class="lineno">   81</span>                    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865a260ca9dd8a4577fc00b7bd5810298076">ReadResult::success</a>;</div>
-<div class="line"><span class="lineno">   82</span>                }</div>
-<div class="line"><span class="lineno">   83</span>            }</div>
-<div class="line"><span class="lineno">   84</span>            <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865a3ee28fe1a60c95b89d29317f122c7021">ReadResult::failure</a>;</div>
-<div class="line"><span class="lineno">   85</span>        }</div>
-<div class="line"><span class="lineno">   86</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (m_action == <span class="stringliteral">&quot;multicast&quot;</span>)</div>
-<div class="line"><span class="lineno">   87</span>        {</div>
-<div class="line"><span class="lineno">   88</span>            <span class="comment">// Multicast implementation would go here</span></div>
-<div class="line"><span class="lineno">   89</span>            <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865a63877363c706f5095d05a54f8b57b0ae">ReadResult::not_implemented</a>;</div>
-<div class="line"><span class="lineno">   90</span>        }</div>
-<div class="line"><span class="lineno">   91</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865a3ee28fe1a60c95b89d29317f122c7021">ReadResult::failure</a>;</div>
-<div class="line"><span class="lineno">   92</span>    }</div>
+<div class="line"><span class="lineno">   57</span>            }</div>
+<div class="line"><span class="lineno">   58</span> </div>
+<div class="line"><span class="lineno">   59</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a> = rooms.begin(); <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a> != rooms.end(); <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>++)</div>
+<div class="line"><span class="lineno">   60</span>            {</div>
+<div class="line"><span class="lineno">   61</span>                ClientSession* sender = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   62</span>                <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; client : <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>-&gt;getClients())</div>
+<div class="line"><span class="lineno">   63</span>                {</div>
+<div class="line"><span class="lineno">   64</span>                    <span class="keywordflow">if</span> (client.getId() == m_client_id)</div>
+<div class="line"><span class="lineno">   65</span>                    {</div>
+<div class="line"><span class="lineno">   66</span>                        sender = &amp;client;</div>
+<div class="line"><span class="lineno">   67</span>                    }</div>
+<div class="line"><span class="lineno">   68</span>                }</div>
+<div class="line"><span class="lineno">   69</span> </div>
+<div class="line"><span class="lineno">   70</span>                <span class="keywordflow">if</span> (<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>-&gt;getId() == m_room_id)</div>
+<div class="line"><span class="lineno">   71</span>                {</div>
+<div class="line"><span class="lineno">   72</span>                    Room::Communication newMessage(payload, sender);</div>
+<div class="line"><span class="lineno">   73</span>                    [[maybe_unused]] <span class="keyword">auto</span> message_id = newMessage.getId();</div>
+<div class="line"><span class="lineno">   74</span>                    <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>-&gt;addMessage(std::move(newMessage));</div>
+<div class="line"><span class="lineno">   75</span> </div>
+<div class="line"><span class="lineno">   76</span>                    assert(<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>-&gt;containsCommunication(message_id));</div>
+<div class="line"><span class="lineno">   77</span>                    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865a260ca9dd8a4577fc00b7bd5810298076">ReadResult::success</a>;</div>
+<div class="line"><span class="lineno">   78</span>                }</div>
+<div class="line"><span class="lineno">   79</span>            }</div>
+<div class="line"><span class="lineno">   80</span>            <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865a3ee28fe1a60c95b89d29317f122c7021">ReadResult::failure</a>;</div>
+<div class="line"><span class="lineno">   81</span>        }</div>
+<div class="line"><span class="lineno">   82</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (m_action == <span class="stringliteral">&quot;multicast&quot;</span>)</div>
+<div class="line"><span class="lineno">   83</span>        {</div>
+<div class="line"><span class="lineno">   84</span>            <span class="comment">// Multicast implementation would go here</span></div>
+<div class="line"><span class="lineno">   85</span>            <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865a63877363c706f5095d05a54f8b57b0ae">ReadResult::not_implemented</a>;</div>
+<div class="line"><span class="lineno">   86</span>        }</div>
+<div class="line"><span class="lineno">   87</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865a3ee28fe1a60c95b89d29317f122c7021">ReadResult::failure</a>;</div>
+<div class="line"><span class="lineno">   88</span>    }</div>
 <div class="ttc" id="aclassnexilis_1_1Log_html_a49959aac4210e93d1ccd1977e08dba80"><div class="ttname"><a href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">nexilis::Log::error</a></div><div class="ttdeci">static void error(const T &amp;data, const Args &amp;... args)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de3/log_8hh_source.html#l00123">log.hh:123</a></div></div>
 <div class="ttc" id="anamespacenexilis_1_1client_html_ac26aef7623575a5f6e0f89c9ffa31865a260ca9dd8a4577fc00b7bd5810298076"><div class="ttname"><a href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865a260ca9dd8a4577fc00b7bd5810298076">nexilis::client::ReadResult::success</a></div><div class="ttdeci">@ success</div><div class="ttdoc">Command success.</div></div>
 <div class="ttc" id="anamespacenexilis_1_1client_html_ac26aef7623575a5f6e0f89c9ffa31865a3ee28fe1a60c95b89d29317f122c7021"><div class="ttname"><a href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865a3ee28fe1a60c95b89d29317f122c7021">nexilis::client::ReadResult::failure</a></div><div class="ttdeci">@ failure</div><div class="ttdoc">Successfull failure.</div></div>

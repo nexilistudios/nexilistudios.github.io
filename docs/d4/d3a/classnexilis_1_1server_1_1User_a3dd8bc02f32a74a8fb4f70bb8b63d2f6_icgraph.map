@@ -1,0 +1,14 @@
+<map id="nexilis::server::User::roomTransitionMutex" name="nexilis::server::User::roomTransitionMutex">
+<area shape="rect" id="Node000001" title=" " alt="" coords="743,37,911,77"/>
+<area shape="rect" id="Node000002" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#a288590751f4e72ca1a4d0333101a90f4" title=" " alt="" coords="491,5,684,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="729,47,684,41,685,36,730,42"/>
+<area shape="rect" id="Node000006" href="$dc/dcd/structnexilis_1_1server_1_1ServerImpl.html#ad0a908b618c8d6be35139158efc6dfb6" title=" " alt="" coords="480,69,695,109"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="730,73,695,78,694,72,729,68"/>
+<area shape="rect" id="Node000003" href="$da/d15/classnexilis_1_1server_1_1Command.html#a205831cf4657d0a80391beba1cfd953d" title=" " alt="" coords="243,37,432,77"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="477,42,432,48,432,43,476,37"/>
+<area shape="rect" id="Node000004" href="$da/d15/classnexilis_1_1server_1_1Command.html#a523ea35f6efde10413e9718e50a96e70" title=" " alt="" coords="5,5,195,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="229,45,194,41,195,35,230,40"/>
+<area shape="rect" id="Node000005" href="$d2/ddb/classnexilis_1_1CommandSpec.html#aef29f82a5d0156d94bc168e0ee7fdeb0" title="Shorthand for server&#45;side command dispatch." alt="" coords="15,69,185,109"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="230,75,186,80,185,75,229,69"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="466,76,432,72,432,67,467,71"/>
+</map>

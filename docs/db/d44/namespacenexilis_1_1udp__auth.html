@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.10-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.11-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -99,6 +99,12 @@ Functions</h2></td></tr>
 <tr class="separator:a3513b7d5da077eec133888bd8cfc6a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac127abf0749d7323ce021c673dc4b880" id="r_ac127abf0749d7323ce021c673dc4b880"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d44/namespacenexilis_1_1udp__auth.html#ac127abf0749d7323ce021c673dc4b880">readSession</a> (const <a class="el" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> &amp;packet, std::string_view token, <a class="el" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> &amp;payload)</td></tr>
 <tr class="separator:ac127abf0749d7323ce021c673dc4b880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73193d2edf81a85fdc4b3ecf49acef0b" id="r_a73193d2edf81a85fdc4b3ecf49acef0b"><td class="memItemLeft" align="right" valign="top">std::optional&lt; std::array&lt; uint8_t, <a class="el" href="../../dc/dfa/namespacenexilis_1_1message__auth.html#a1a932ed7c1e6f0209a0d14f3269ac53e">message_auth::tag_size</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a73193d2edf81a85fdc4b3ecf49acef0b">responseTag</a> (const <a class="el" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> &amp;data, std::string_view token)</td></tr>
+<tr class="separator:a73193d2edf81a85fdc4b3ecf49acef0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9360319b682102f1df18c00e921761e5" id="r_a9360319b682102f1df18c00e921761e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a9360319b682102f1df18c00e921761e5">makeResponse</a> (const <a class="el" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> &amp;payload, std::string_view token, uint64_t sequence)</td></tr>
+<tr class="separator:a9360319b682102f1df18c00e921761e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e3ba500c5e7b0134c4d090398e498b8" id="r_a4e3ba500c5e7b0134c4d090398e498b8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a4e3ba500c5e7b0134c4d090398e498b8">readResponse</a> (const <a class="el" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> &amp;packet, std::string_view token, uint64_t &amp;sequence, <a class="el" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> &amp;payload)</td></tr>
+<tr class="separator:a4e3ba500c5e7b0134c4d090398e498b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1167b1733e74c5df7c39852d9f51c1ba" id="r_a1167b1733e74c5df7c39852d9f51c1ba"><td class="memItemLeft" align="right" valign="top">std::optional&lt; std::array&lt; uint8_t, <a class="el" href="../../db/d44/namespacenexilis_1_1udp__auth.html#aa1666b33e3ad9bd5ce43a623eccea0fe">cookie_size</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a1167b1733e74c5df7c39852d9f51c1ba">cookieFor</a> (const std::array&lt; uint8_t, 32 &gt; &amp;key, std::string_view endpoint, uint64_t bucket)</td></tr>
 <tr class="separator:a1167b1733e74c5df7c39852d9f51c1ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01c27787ea192f10299346520f705ee9" id="r_a01c27787ea192f10299346520f705ee9"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a01c27787ea192f10299346520f705ee9">currentBucket</a> ()</td></tr>
@@ -118,6 +124,8 @@ Variables</h2></td></tr>
 <tr class="separator:ab0a0711e1fb0261d6b0f4c3d43496c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae849a5db5bf868abc55dd820b6070f2b" id="r_ae849a5db5bf868abc55dd820b6070f2b"><td class="memItemLeft" align="right" valign="top">constexpr std::array&lt; uint8_t, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d44/namespacenexilis_1_1udp__auth.html#ae849a5db5bf868abc55dd820b6070f2b">session</a> {'N', 'X', 'U', 'S'}</td></tr>
 <tr class="separator:ae849a5db5bf868abc55dd820b6070f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2246f45fc86c5750728159feffd01253" id="r_a2246f45fc86c5750728159feffd01253"><td class="memItemLeft" align="right" valign="top">constexpr std::array&lt; uint8_t, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a2246f45fc86c5750728159feffd01253">response</a> {'N', 'X', 'U', 'R'}</td></tr>
+<tr class="separator:a2246f45fc86c5750728159feffd01253"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaedecfef98423fd40aa321748b99766" id="r_adaedecfef98423fd40aa321748b99766"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d44/namespacenexilis_1_1udp__auth.html#adaedecfef98423fd40aa321748b99766">token_size</a> = 16</td></tr>
 <tr class="separator:adaedecfef98423fd40aa321748b99766"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1666b33e3ad9bd5ce43a623eccea0fe" id="r_aa1666b33e3ad9bd5ce43a623eccea0fe"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d44/namespacenexilis_1_1udp__auth.html#aa1666b33e3ad9bd5ce43a623eccea0fe">cookie_size</a> = 16</td></tr>
@@ -170,25 +178,25 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00170">170</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  172</span>{</div>
-<div class="line"><span class="lineno">  173</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../db/d44/namespacenexilis_1_1udp__auth.html#ac24e4dfcb23f571c85e27a44d0554bab">hasPrefix</a>(packet, authentication) || packet.size() &lt;= 4 + cookie_size)</div>
-<div class="line"><span class="lineno">  174</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  175</span>    <span class="keyword">auto</span> bucket = <a class="code hl_function" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a01c27787ea192f10299346520f705ee9">currentBucket</a>();</div>
-<div class="line"><span class="lineno">  176</span>    <span class="keyword">auto</span> current = <a class="code hl_function" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a1167b1733e74c5df7c39852d9f51c1ba">cookieFor</a>(key, endpoint, bucket);</div>
-<div class="line"><span class="lineno">  177</span>    <span class="keyword">auto</span> previous = bucket &gt; 0 ? <a class="code hl_function" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a1167b1733e74c5df7c39852d9f51c1ba">cookieFor</a>(key, endpoint, bucket - 1) : std::nullopt;</div>
-<div class="line"><span class="lineno">  178</span>    <span class="keywordflow">if</span> (!current)</div>
-<div class="line"><span class="lineno">  179</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  180</span>    <span class="keyword">const</span> <span class="keyword">auto</span>* received = packet.data() + 4;</div>
-<div class="line"><span class="lineno">  181</span>    <span class="keywordflow">if</span> (CRYPTO_memcmp(current-&gt;data(), received, cookie_size) != 0 &amp;&amp;</div>
-<div class="line"><span class="lineno">  182</span>        (!previous || CRYPTO_memcmp(previous-&gt;data(), received, cookie_size) != 0))</div>
-<div class="line"><span class="lineno">  183</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  184</span>    payload.assign(packet.begin() + 4 + cookie_size, packet.end());</div>
-<div class="line"><span class="lineno">  185</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  186</span>}</div>
-<div class="ttc" id="anamespacenexilis_1_1udp__auth_html_a01c27787ea192f10299346520f705ee9"><div class="ttname"><a href="../../db/d44/namespacenexilis_1_1udp__auth.html#a01c27787ea192f10299346520f705ee9">nexilis::udp_auth::currentBucket</a></div><div class="ttdeci">uint64_t currentBucket()</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d3d/udp__auth_8hh_source.html#l00145">udp_auth.hh:145</a></div></div>
-<div class="ttc" id="anamespacenexilis_1_1udp__auth_html_a1167b1733e74c5df7c39852d9f51c1ba"><div class="ttname"><a href="../../db/d44/namespacenexilis_1_1udp__auth.html#a1167b1733e74c5df7c39852d9f51c1ba">nexilis::udp_auth::cookieFor</a></div><div class="ttdeci">std::optional&lt; std::array&lt; uint8_t, cookie_size &gt; &gt; cookieFor(const std::array&lt; uint8_t, 32 &gt; &amp;key, std::string_view endpoint, uint64_t bucket)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d3d/udp__auth_8hh_source.html#l00128">udp_auth.hh:128</a></div></div>
-<div class="ttc" id="anamespacenexilis_1_1udp__auth_html_ac24e4dfcb23f571c85e27a44d0554bab"><div class="ttname"><a href="../../db/d44/namespacenexilis_1_1udp__auth.html#ac24e4dfcb23f571c85e27a44d0554bab">nexilis::udp_auth::hasPrefix</a></div><div class="ttdeci">bool hasPrefix(const nx_data &amp;packet, const std::array&lt; uint8_t, 4 &gt; &amp;prefix)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d3d/udp__auth_8hh_source.html#l00045">udp_auth.hh:45</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00226">226</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  228</span>{</div>
+<div class="line"><span class="lineno">  229</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../db/d44/namespacenexilis_1_1udp__auth.html#ac24e4dfcb23f571c85e27a44d0554bab">hasPrefix</a>(packet, authentication) || packet.size() &lt;= 4 + cookie_size)</div>
+<div class="line"><span class="lineno">  230</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  231</span>    <span class="keyword">auto</span> bucket = <a class="code hl_function" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a01c27787ea192f10299346520f705ee9">currentBucket</a>();</div>
+<div class="line"><span class="lineno">  232</span>    <span class="keyword">auto</span> current = <a class="code hl_function" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a1167b1733e74c5df7c39852d9f51c1ba">cookieFor</a>(key, endpoint, bucket);</div>
+<div class="line"><span class="lineno">  233</span>    <span class="keyword">auto</span> previous = bucket &gt; 0 ? <a class="code hl_function" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a1167b1733e74c5df7c39852d9f51c1ba">cookieFor</a>(key, endpoint, bucket - 1) : std::nullopt;</div>
+<div class="line"><span class="lineno">  234</span>    <span class="keywordflow">if</span> (!current)</div>
+<div class="line"><span class="lineno">  235</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  236</span>    <span class="keyword">const</span> <span class="keyword">auto</span>* received = packet.data() + 4;</div>
+<div class="line"><span class="lineno">  237</span>    <span class="keywordflow">if</span> (CRYPTO_memcmp(current-&gt;data(), received, cookie_size) != 0 &amp;&amp;</div>
+<div class="line"><span class="lineno">  238</span>        (!previous || CRYPTO_memcmp(previous-&gt;data(), received, cookie_size) != 0))</div>
+<div class="line"><span class="lineno">  239</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  240</span>    payload.assign(packet.begin() + 4 + cookie_size, packet.end());</div>
+<div class="line"><span class="lineno">  241</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  242</span>}</div>
+<div class="ttc" id="anamespacenexilis_1_1udp__auth_html_a01c27787ea192f10299346520f705ee9"><div class="ttname"><a href="../../db/d44/namespacenexilis_1_1udp__auth.html#a01c27787ea192f10299346520f705ee9">nexilis::udp_auth::currentBucket</a></div><div class="ttdeci">uint64_t currentBucket()</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d3d/udp__auth_8hh_source.html#l00201">udp_auth.hh:201</a></div></div>
+<div class="ttc" id="anamespacenexilis_1_1udp__auth_html_a1167b1733e74c5df7c39852d9f51c1ba"><div class="ttname"><a href="../../db/d44/namespacenexilis_1_1udp__auth.html#a1167b1733e74c5df7c39852d9f51c1ba">nexilis::udp_auth::cookieFor</a></div><div class="ttdeci">std::optional&lt; std::array&lt; uint8_t, cookie_size &gt; &gt; cookieFor(const std::array&lt; uint8_t, 32 &gt; &amp;key, std::string_view endpoint, uint64_t bucket)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d3d/udp__auth_8hh_source.html#l00184">udp_auth.hh:184</a></div></div>
+<div class="ttc" id="anamespacenexilis_1_1udp__auth_html_ac24e4dfcb23f571c85e27a44d0554bab"><div class="ttname"><a href="../../db/d44/namespacenexilis_1_1udp__auth.html#ac24e4dfcb23f571c85e27a44d0554bab">nexilis::udp_auth::hasPrefix</a></div><div class="ttdeci">bool hasPrefix(const nx_data &amp;packet, const std::array&lt; uint8_t, 4 &gt; &amp;prefix)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d3d/udp__auth_8hh_source.html#l00046">udp_auth.hh:46</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -246,21 +254,21 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00128">128</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  130</span>{</div>
-<div class="line"><span class="lineno">  131</span>    std::string input(endpoint);</div>
-<div class="line"><span class="lineno">  132</span>    input += <span class="charliteral">&#39;:&#39;</span>;</div>
-<div class="line"><span class="lineno">  133</span>    input += std::to_string(bucket);</div>
-<div class="line"><span class="lineno">  134</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> digest_size = 0;</div>
-<div class="line"><span class="lineno">  135</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> digest[EVP_MAX_MD_SIZE]{};</div>
-<div class="line"><span class="lineno">  136</span>    <span class="keywordflow">if</span> (!HMAC(EVP_sha256(), key.data(), <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(key.size()),</div>
-<div class="line"><span class="lineno">  137</span>              <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(input.data()), input.size(), digest, &amp;digest_size) ||</div>
-<div class="line"><span class="lineno">  138</span>        digest_size &lt; cookie_size)</div>
-<div class="line"><span class="lineno">  139</span>        <span class="keywordflow">return</span> std::nullopt;</div>
-<div class="line"><span class="lineno">  140</span>    std::array&lt;uint8_t, cookie_size&gt; result{};</div>
-<div class="line"><span class="lineno">  141</span>    std::copy_n(digest, cookie_size, result.begin());</div>
-<div class="line"><span class="lineno">  142</span>    <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno">  143</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00184">184</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  186</span>{</div>
+<div class="line"><span class="lineno">  187</span>    std::string input(endpoint);</div>
+<div class="line"><span class="lineno">  188</span>    input += <span class="charliteral">&#39;:&#39;</span>;</div>
+<div class="line"><span class="lineno">  189</span>    input += std::to_string(bucket);</div>
+<div class="line"><span class="lineno">  190</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> digest_size = 0;</div>
+<div class="line"><span class="lineno">  191</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> digest[EVP_MAX_MD_SIZE]{};</div>
+<div class="line"><span class="lineno">  192</span>    <span class="keywordflow">if</span> (!HMAC(EVP_sha256(), key.data(), <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(key.size()),</div>
+<div class="line"><span class="lineno">  193</span>              <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(input.data()), input.size(), digest, &amp;digest_size) ||</div>
+<div class="line"><span class="lineno">  194</span>        digest_size &lt; cookie_size)</div>
+<div class="line"><span class="lineno">  195</span>        <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><span class="lineno">  196</span>    std::array&lt;uint8_t, cookie_size&gt; result{};</div>
+<div class="line"><span class="lineno">  197</span>    std::copy_n(digest, cookie_size, result.begin());</div>
+<div class="line"><span class="lineno">  198</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  199</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -299,13 +307,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00145">145</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  146</span>{</div>
-<div class="line"><span class="lineno">  147</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(std::chrono::duration_cast&lt;std::chrono::seconds&gt;(</div>
-<div class="line"><span class="lineno">  148</span>                                         std::chrono::steady_clock::now().time_since_epoch())</div>
-<div class="line"><span class="lineno">  149</span>                                         .count() /</div>
-<div class="line"><span class="lineno">  150</span>                                 60);</div>
-<div class="line"><span class="lineno">  151</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00201">201</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  202</span>{</div>
+<div class="line"><span class="lineno">  203</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(std::chrono::duration_cast&lt;std::chrono::seconds&gt;(</div>
+<div class="line"><span class="lineno">  204</span>                                         std::chrono::steady_clock::now().time_since_epoch())</div>
+<div class="line"><span class="lineno">  205</span>                                         .count() /</div>
+<div class="line"><span class="lineno">  206</span>                                 60);</div>
+<div class="line"><span class="lineno">  207</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -355,22 +363,22 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00073">73</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   74</span>{</div>
-<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">if</span> (hex.size() != token_size * 2)</div>
-<div class="line"><span class="lineno">   76</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   77</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="../../db/d44/namespacenexilis_1_1udp__auth.html#adaedecfef98423fd40aa321748b99766">token_size</a>; ++i)</div>
-<div class="line"><span class="lineno">   78</span>    {</div>
-<div class="line"><span class="lineno">   79</span>        <span class="keywordtype">int</span> high = <a class="code hl_function" href="../../db/d44/namespacenexilis_1_1udp__auth.html#aa1f541692b6481211358719845a76ad3">hexValue</a>(hex[i * 2]);</div>
-<div class="line"><span class="lineno">   80</span>        <span class="keywordtype">int</span> low = <a class="code hl_function" href="../../db/d44/namespacenexilis_1_1udp__auth.html#aa1f541692b6481211358719845a76ad3">hexValue</a>(hex[i * 2 + 1]);</div>
-<div class="line"><span class="lineno">   81</span>        <span class="keywordflow">if</span> (high &lt; 0 || low &lt; 0)</div>
-<div class="line"><span class="lineno">   82</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   83</span>        bytes[i] = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>((high &lt;&lt; 4) | low);</div>
-<div class="line"><span class="lineno">   84</span>    }</div>
-<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   86</span>}</div>
-<div class="ttc" id="anamespacenexilis_1_1udp__auth_html_aa1f541692b6481211358719845a76ad3"><div class="ttname"><a href="../../db/d44/namespacenexilis_1_1udp__auth.html#aa1f541692b6481211358719845a76ad3">nexilis::udp_auth::hexValue</a></div><div class="ttdeci">int hexValue(char c)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d3d/udp__auth_8hh_source.html#l00051">udp_auth.hh:51</a></div></div>
-<div class="ttc" id="anamespacenexilis_1_1udp__auth_html_adaedecfef98423fd40aa321748b99766"><div class="ttname"><a href="../../db/d44/namespacenexilis_1_1udp__auth.html#adaedecfef98423fd40aa321748b99766">nexilis::udp_auth::token_size</a></div><div class="ttdeci">constexpr size_t token_size</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d3d/udp__auth_8hh_source.html#l00042">udp_auth.hh:42</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00074">74</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   75</span>{</div>
+<div class="line"><span class="lineno">   76</span>    <span class="keywordflow">if</span> (hex.size() != token_size * 2)</div>
+<div class="line"><span class="lineno">   77</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="../../db/d44/namespacenexilis_1_1udp__auth.html#adaedecfef98423fd40aa321748b99766">token_size</a>; ++i)</div>
+<div class="line"><span class="lineno">   79</span>    {</div>
+<div class="line"><span class="lineno">   80</span>        <span class="keywordtype">int</span> high = <a class="code hl_function" href="../../db/d44/namespacenexilis_1_1udp__auth.html#aa1f541692b6481211358719845a76ad3">hexValue</a>(hex[i * 2]);</div>
+<div class="line"><span class="lineno">   81</span>        <span class="keywordtype">int</span> low = <a class="code hl_function" href="../../db/d44/namespacenexilis_1_1udp__auth.html#aa1f541692b6481211358719845a76ad3">hexValue</a>(hex[i * 2 + 1]);</div>
+<div class="line"><span class="lineno">   82</span>        <span class="keywordflow">if</span> (high &lt; 0 || low &lt; 0)</div>
+<div class="line"><span class="lineno">   83</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   84</span>        bytes[i] = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>((high &lt;&lt; 4) | low);</div>
+<div class="line"><span class="lineno">   85</span>    }</div>
+<div class="line"><span class="lineno">   86</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   87</span>}</div>
+<div class="ttc" id="anamespacenexilis_1_1udp__auth_html_aa1f541692b6481211358719845a76ad3"><div class="ttname"><a href="../../db/d44/namespacenexilis_1_1udp__auth.html#aa1f541692b6481211358719845a76ad3">nexilis::udp_auth::hexValue</a></div><div class="ttdeci">int hexValue(char c)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d3d/udp__auth_8hh_source.html#l00052">udp_auth.hh:52</a></div></div>
+<div class="ttc" id="anamespacenexilis_1_1udp__auth_html_adaedecfef98423fd40aa321748b99766"><div class="ttname"><a href="../../db/d44/namespacenexilis_1_1udp__auth.html#adaedecfef98423fd40aa321748b99766">nexilis::udp_auth::token_size</a></div><div class="ttdeci">constexpr size_t token_size</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d3d/udp__auth_8hh_source.html#l00043">udp_auth.hh:43</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -386,9 +394,11 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../db/d44/namespacenexilis_1_1udp__auth_a8ebdfdbacb3e3300981bb53464c13439_icgraph.png" border="0" usemap="#adb/d44/namespacenexilis_1_1udp__auth_a8ebdfdbacb3e3300981bb53464c13439_icgraph" alt=""/></div>
 <map name="adb/d44/namespacenexilis_1_1udp__auth_a8ebdfdbacb3e3300981bb53464c13439_icgraph" id="adb/d44/namespacenexilis_1_1udp__auth_a8ebdfdbacb3e3300981bb53464c13439_icgraph">
-<area shape="rect" title=" " alt="" coords="232,5,373,45"/>
-<area shape="rect" href="../../d8/dcb/classnexilis_1_1client_1_1GetClientIdCommand.html#a47303a84c43b6869d7f3508510eb84fd" title=" " alt="" coords="5,5,184,45"/>
-<area shape="poly" title=" " alt="" coords="218,28,184,28,184,23,218,23"/>
+<area shape="rect" title=" " alt="" coords="232,37,373,77"/>
+<area shape="rect" href="../../df/d9a/classnexilis_1_1client_1_1SetPortCommand.html#ab6d97565a6a697ccbdedc9a40b8d2b78" title=" " alt="" coords="13,5,177,45"/>
+<area shape="poly" title=" " alt="" coords="218,47,176,41,177,35,219,42"/>
+<area shape="rect" href="../../d8/dcb/classnexilis_1_1client_1_1GetClientIdCommand.html#a47303a84c43b6869d7f3508510eb84fd" title=" " alt="" coords="5,69,184,109"/>
+<area shape="poly" title=" " alt="" coords="219,73,184,78,184,73,218,68"/>
 </map>
 </div>
 
@@ -428,21 +438,23 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00045">45</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   46</span>{</div>
-<div class="line"><span class="lineno">   47</span>    <span class="keywordflow">return</span> packet.size() &gt;= prefix.size() &amp;&amp;</div>
-<div class="line"><span class="lineno">   48</span>           std::equal(prefix.begin(), prefix.end(), packet.begin());</div>
-<div class="line"><span class="lineno">   49</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00046">46</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   47</span>{</div>
+<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">return</span> packet.size() &gt;= prefix.size() &amp;&amp;</div>
+<div class="line"><span class="lineno">   49</span>           std::equal(prefix.begin(), prefix.end(), packet.begin());</div>
+<div class="line"><span class="lineno">   50</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../db/d44/namespacenexilis_1_1udp__auth_ac24e4dfcb23f571c85e27a44d0554bab_icgraph.png" border="0" usemap="#adb/d44/namespacenexilis_1_1udp__auth_ac24e4dfcb23f571c85e27a44d0554bab_icgraph" alt=""/></div>
 <map name="adb/d44/namespacenexilis_1_1udp__auth_ac24e4dfcb23f571c85e27a44d0554bab_icgraph" id="adb/d44/namespacenexilis_1_1udp__auth_ac24e4dfcb23f571c85e27a44d0554bab_icgraph">
-<area shape="rect" title=" " alt="" coords="208,37,349,77"/>
+<area shape="rect" title=" " alt="" coords="208,69,349,109"/>
 <area shape="rect" href="../../db/d44/namespacenexilis_1_1udp__auth.html#aa3a67319a2b678c52788d1ae2c04eca8" title=" " alt="" coords="5,5,160,45"/>
-<area shape="poly" title=" " alt="" coords="194,46,160,41,161,35,194,41"/>
-<area shape="rect" href="../../db/d44/namespacenexilis_1_1udp__auth.html#ac127abf0749d7323ce021c673dc4b880" title=" " alt="" coords="12,69,153,109"/>
-<area shape="poly" title=" " alt="" coords="195,74,154,80,153,75,194,68"/>
+<area shape="poly" title=" " alt="" coords="203,68,144,48,145,43,205,63"/>
+<area shape="rect" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a4e3ba500c5e7b0134c4d090398e498b8" title=" " alt="" coords="12,69,153,109"/>
+<area shape="poly" title=" " alt="" coords="194,92,154,92,154,87,194,87"/>
+<area shape="rect" href="../../db/d44/namespacenexilis_1_1udp__auth.html#ac127abf0749d7323ce021c673dc4b880" title=" " alt="" coords="12,133,153,173"/>
+<area shape="poly" title=" " alt="" coords="205,116,145,136,144,131,203,111"/>
 </map>
 </div>
 
@@ -472,24 +484,26 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00051">51</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   52</span>{</div>
-<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">if</span> (c &gt;= <span class="charliteral">&#39;0&#39;</span> &amp;&amp; c &lt;= <span class="charliteral">&#39;9&#39;</span>)</div>
-<div class="line"><span class="lineno">   54</span>        <span class="keywordflow">return</span> c - <span class="charliteral">&#39;0&#39;</span>;</div>
-<div class="line"><span class="lineno">   55</span>    <span class="keywordflow">if</span> (c &gt;= <span class="charliteral">&#39;a&#39;</span> &amp;&amp; c &lt;= <span class="charliteral">&#39;f&#39;</span>)</div>
-<div class="line"><span class="lineno">   56</span>        <span class="keywordflow">return</span> c - <span class="charliteral">&#39;a&#39;</span> + 10;</div>
-<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">return</span> -1;</div>
-<div class="line"><span class="lineno">   58</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00052">52</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   53</span>{</div>
+<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">if</span> (c &gt;= <span class="charliteral">&#39;0&#39;</span> &amp;&amp; c &lt;= <span class="charliteral">&#39;9&#39;</span>)</div>
+<div class="line"><span class="lineno">   55</span>        <span class="keywordflow">return</span> c - <span class="charliteral">&#39;0&#39;</span>;</div>
+<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">if</span> (c &gt;= <span class="charliteral">&#39;a&#39;</span> &amp;&amp; c &lt;= <span class="charliteral">&#39;f&#39;</span>)</div>
+<div class="line"><span class="lineno">   57</span>        <span class="keywordflow">return</span> c - <span class="charliteral">&#39;a&#39;</span> + 10;</div>
+<div class="line"><span class="lineno">   58</span>    <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno">   59</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../db/d44/namespacenexilis_1_1udp__auth_aa1f541692b6481211358719845a76ad3_icgraph.png" border="0" usemap="#adb/d44/namespacenexilis_1_1udp__auth_aa1f541692b6481211358719845a76ad3_icgraph" alt=""/></div>
 <map name="adb/d44/namespacenexilis_1_1udp__auth_aa1f541692b6481211358719845a76ad3_icgraph" id="adb/d44/namespacenexilis_1_1udp__auth_aa1f541692b6481211358719845a76ad3_icgraph">
-<area shape="rect" title=" " alt="" coords="421,5,563,45"/>
-<area shape="rect" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a8ebdfdbacb3e3300981bb53464c13439" title=" " alt="" coords="232,5,373,45"/>
-<area shape="poly" title=" " alt="" coords="407,28,374,28,374,23,407,23"/>
-<area shape="rect" href="../../d8/dcb/classnexilis_1_1client_1_1GetClientIdCommand.html#a47303a84c43b6869d7f3508510eb84fd" title=" " alt="" coords="5,5,184,45"/>
-<area shape="poly" title=" " alt="" coords="218,28,184,28,184,23,218,23"/>
+<area shape="rect" title=" " alt="" coords="421,37,563,77"/>
+<area shape="rect" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a8ebdfdbacb3e3300981bb53464c13439" title=" " alt="" coords="232,37,373,77"/>
+<area shape="poly" title=" " alt="" coords="407,60,374,60,374,55,407,55"/>
+<area shape="rect" href="../../df/d9a/classnexilis_1_1client_1_1SetPortCommand.html#ab6d97565a6a697ccbdedc9a40b8d2b78" title=" " alt="" coords="13,5,177,45"/>
+<area shape="poly" title=" " alt="" coords="218,47,176,41,177,35,219,42"/>
+<area shape="rect" href="../../d8/dcb/classnexilis_1_1client_1_1GetClientIdCommand.html#a47303a84c43b6869d7f3508510eb84fd" title=" " alt="" coords="5,69,184,109"/>
+<area shape="poly" title=" " alt="" coords="219,73,184,78,184,73,218,68"/>
 </map>
 </div>
 
@@ -529,13 +543,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00095">95</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   96</span>{</div>
-<div class="line"><span class="lineno">   97</span>    <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> packet(<a class="code hl_variable" href="../../db/d44/namespacenexilis_1_1udp__auth.html#ab0a0711e1fb0261d6b0f4c3d43496c2c">authentication</a>.begin(), <a class="code hl_variable" href="../../db/d44/namespacenexilis_1_1udp__auth.html#ab0a0711e1fb0261d6b0f4c3d43496c2c">authentication</a>.end());</div>
-<div class="line"><span class="lineno">   98</span>    packet.insert(packet.end(), cookie.begin(), cookie.end());</div>
-<div class="line"><span class="lineno">   99</span>    packet.insert(packet.end(), payload.begin(), payload.end());</div>
-<div class="line"><span class="lineno">  100</span>    <span class="keywordflow">return</span> packet;</div>
-<div class="line"><span class="lineno">  101</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00096">96</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   97</span>{</div>
+<div class="line"><span class="lineno">   98</span>    <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> packet(<a class="code hl_variable" href="../../db/d44/namespacenexilis_1_1udp__auth.html#ab0a0711e1fb0261d6b0f4c3d43496c2c">authentication</a>.begin(), <a class="code hl_variable" href="../../db/d44/namespacenexilis_1_1udp__auth.html#ab0a0711e1fb0261d6b0f4c3d43496c2c">authentication</a>.end());</div>
+<div class="line"><span class="lineno">   99</span>    packet.insert(packet.end(), cookie.begin(), cookie.end());</div>
+<div class="line"><span class="lineno">  100</span>    packet.insert(packet.end(), payload.begin(), payload.end());</div>
+<div class="line"><span class="lineno">  101</span>    <span class="keywordflow">return</span> packet;</div>
+<div class="line"><span class="lineno">  102</span>}</div>
 <div class="ttc" id="anamespacenexilis_1_1udp__auth_html_ab0a0711e1fb0261d6b0f4c3d43496c2c"><div class="ttname"><a href="../../db/d44/namespacenexilis_1_1udp__auth.html#ab0a0711e1fb0261d6b0f4c3d43496c2c">nexilis::udp_auth::authentication</a></div><div class="ttdeci">constexpr std::array&lt; uint8_t, 4 &gt; authentication</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d3d/udp__auth_8hh_source.html#l00040">udp_auth.hh:40</a></div></div>
 <div class="ttc" id="anamespacenexilis_html_a279ce2b95cb6cfebfb8a884fcf615072"><div class="ttname"><a href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nexilis::nx_data</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; nx_data</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dd2/nx__data_8hh_source.html#l00026">nx_data.hh:26</a></div></div>
 </div><!-- fragment -->
@@ -575,22 +589,22 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00153">153</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  154</span>{</div>
-<div class="line"><span class="lineno">  155</span>    <span class="keyword">auto</span> cookie = <a class="code hl_function" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a1167b1733e74c5df7c39852d9f51c1ba">cookieFor</a>(key, endpoint, <a class="code hl_function" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a01c27787ea192f10299346520f705ee9">currentBucket</a>());</div>
-<div class="line"><span class="lineno">  156</span>    <span class="keywordflow">if</span> (!cookie)</div>
-<div class="line"><span class="lineno">  157</span>        <span class="keywordflow">return</span> {};</div>
-<div class="line"><span class="lineno">  158</span>    <span class="comment">// Copy the cookie out of the optional and assemble the packet in a single</span></div>
-<div class="line"><span class="lineno">  159</span>    <span class="comment">// exactly sized buffer. Deriving the copy source through</span></div>
-<div class="line"><span class="lineno">  160</span>    <span class="comment">// std::optional::operator-&gt; inside vector::insert makes GCC 13 emit a</span></div>
-<div class="line"><span class="lineno">  161</span>    <span class="comment">// false-positive -Warray-bounds warning when this is inlined into</span></div>
-<div class="line"><span class="lineno">  162</span>    <span class="comment">// UDPServer::receiveFromClients.</span></div>
-<div class="line"><span class="lineno">  163</span>    <span class="keyword">const</span> std::array&lt;uint8_t, cookie_size&gt; cookieBytes = *cookie;</div>
-<div class="line"><span class="lineno">  164</span>    <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> packet(challenge.size() + cookie_size, 0);</div>
-<div class="line"><span class="lineno">  165</span>    std::copy(challenge.begin(), challenge.end(), packet.begin());</div>
-<div class="line"><span class="lineno">  166</span>    std::copy(cookieBytes.begin(), cookieBytes.end(), packet.begin() + challenge.size());</div>
-<div class="line"><span class="lineno">  167</span>    <span class="keywordflow">return</span> packet;</div>
-<div class="line"><span class="lineno">  168</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00209">209</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  210</span>{</div>
+<div class="line"><span class="lineno">  211</span>    <span class="keyword">auto</span> cookie = <a class="code hl_function" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a1167b1733e74c5df7c39852d9f51c1ba">cookieFor</a>(key, endpoint, <a class="code hl_function" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a01c27787ea192f10299346520f705ee9">currentBucket</a>());</div>
+<div class="line"><span class="lineno">  212</span>    <span class="keywordflow">if</span> (!cookie)</div>
+<div class="line"><span class="lineno">  213</span>        <span class="keywordflow">return</span> {};</div>
+<div class="line"><span class="lineno">  214</span>    <span class="comment">// Copy the cookie out of the optional and assemble the packet in a single</span></div>
+<div class="line"><span class="lineno">  215</span>    <span class="comment">// exactly sized buffer. Deriving the copy source through</span></div>
+<div class="line"><span class="lineno">  216</span>    <span class="comment">// std::optional::operator-&gt; inside vector::insert makes GCC 13 emit a</span></div>
+<div class="line"><span class="lineno">  217</span>    <span class="comment">// false-positive -Warray-bounds warning when this is inlined into</span></div>
+<div class="line"><span class="lineno">  218</span>    <span class="comment">// UDPServer::receiveFromClients.</span></div>
+<div class="line"><span class="lineno">  219</span>    <span class="keyword">const</span> std::array&lt;uint8_t, cookie_size&gt; cookieBytes = *cookie;</div>
+<div class="line"><span class="lineno">  220</span>    <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> packet(challenge.size() + cookie_size, 0);</div>
+<div class="line"><span class="lineno">  221</span>    std::copy(challenge.begin(), challenge.end(), packet.begin());</div>
+<div class="line"><span class="lineno">  222</span>    std::copy(cookieBytes.begin(), cookieBytes.end(), packet.begin() + challenge.size());</div>
+<div class="line"><span class="lineno">  223</span>    <span class="keywordflow">return</span> packet;</div>
+<div class="line"><span class="lineno">  224</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -629,12 +643,12 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00088">88</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   89</span>{</div>
-<div class="line"><span class="lineno">   90</span>    <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> packet(<a class="code hl_variable" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a94beab80b2633df50b91a4cf4b6639b3">hello</a>.begin(), <a class="code hl_variable" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a94beab80b2633df50b91a4cf4b6639b3">hello</a>.end());</div>
-<div class="line"><span class="lineno">   91</span>    packet.resize(<a class="code hl_variable" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a94beab80b2633df50b91a4cf4b6639b3">hello</a>.size() + cookie_size, 0);</div>
-<div class="line"><span class="lineno">   92</span>    <span class="keywordflow">return</span> packet;</div>
-<div class="line"><span class="lineno">   93</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00089">89</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   90</span>{</div>
+<div class="line"><span class="lineno">   91</span>    <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> packet(<a class="code hl_variable" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a94beab80b2633df50b91a4cf4b6639b3">hello</a>.begin(), <a class="code hl_variable" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a94beab80b2633df50b91a4cf4b6639b3">hello</a>.end());</div>
+<div class="line"><span class="lineno">   92</span>    packet.resize(<a class="code hl_variable" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a94beab80b2633df50b91a4cf4b6639b3">hello</a>.size() + cookie_size, 0);</div>
+<div class="line"><span class="lineno">   93</span>    <span class="keywordflow">return</span> packet;</div>
+<div class="line"><span class="lineno">   94</span>}</div>
 <div class="ttc" id="anamespacenexilis_1_1udp__auth_html_a94beab80b2633df50b91a4cf4b6639b3"><div class="ttname"><a href="../../db/d44/namespacenexilis_1_1udp__auth.html#a94beab80b2633df50b91a4cf4b6639b3">nexilis::udp_auth::hello</a></div><div class="ttdeci">constexpr std::array&lt; uint8_t, 4 &gt; hello</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d3d/udp__auth_8hh_source.html#l00038">udp_auth.hh:38</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -654,6 +668,75 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="279,137,186,148,186,143,278,132"/>
 <area shape="rect" href="../../de/d39/classnexilis_1_1UDPClient.html#a5f24688eb9aa0e7791107a975120e831" title="Send nexilis message with a callback." alt="" coords="47,197,186,237"/>
 <area shape="poly" title=" " alt="" coords="329,149,229,188,187,201,186,196,227,183,327,144"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9360319b682102f1df18c00e921761e5" name="a9360319b682102f1df18c00e921761e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9360319b682102f1df18c00e921761e5">&#9670;&#160;</a></span>makeResponse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> nexilis::udp_auth::makeResponse </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> &amp;&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>token</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>sequence</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00146">146</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  147</span>{</div>
+<div class="line"><span class="lineno">  148</span>    <span class="keywordflow">if</span> (sequence == 0)</div>
+<div class="line"><span class="lineno">  149</span>        <span class="keywordflow">return</span> {};</div>
+<div class="line"><span class="lineno">  150</span>    <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> data(response.begin(), response.end());</div>
+<div class="line"><span class="lineno">  151</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> shift = 56; shift &gt;= 0; shift -= 8)</div>
+<div class="line"><span class="lineno">  152</span>        data.push_back(<span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(sequence &gt;&gt; shift));</div>
+<div class="line"><span class="lineno">  153</span>    data.insert(data.end(), payload.begin(), payload.end());</div>
+<div class="line"><span class="lineno">  154</span>    <span class="keyword">auto</span> tag = responseTag(data, token);</div>
+<div class="line"><span class="lineno">  155</span>    <span class="keywordflow">if</span> (!tag)</div>
+<div class="line"><span class="lineno">  156</span>        <span class="keywordflow">return</span> {};</div>
+<div class="line"><span class="lineno">  157</span>    data.insert(data.begin() + 12, tag-&gt;begin(), tag-&gt;end());</div>
+<div class="line"><span class="lineno">  158</span>    <span class="keywordflow">return</span> data;</div>
+<div class="line"><span class="lineno">  159</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d44/namespacenexilis_1_1udp__auth_a9360319b682102f1df18c00e921761e5_cgraph.png" border="0" usemap="#adb/d44/namespacenexilis_1_1udp__auth_a9360319b682102f1df18c00e921761e5_cgraph" alt=""/></div>
+<map name="adb/d44/namespacenexilis_1_1udp__auth_a9360319b682102f1df18c00e921761e5_cgraph" id="adb/d44/namespacenexilis_1_1udp__auth_a9360319b682102f1df18c00e921761e5_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,147,45"/>
+<area shape="rect" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a73193d2edf81a85fdc4b3ecf49acef0b" title=" " alt="" coords="195,5,336,45"/>
+<area shape="poly" title=" " alt="" coords="147,23,181,23,181,28,147,28"/>
+<area shape="rect" href="../../dc/dfa/namespacenexilis_1_1message__auth.html#ab8ae1f049786d898466a6d38b12efae4" title=" " alt="" coords="384,5,552,45"/>
+<area shape="poly" title=" " alt="" coords="336,23,370,23,370,28,336,28"/>
 </map>
 </div>
 
@@ -693,15 +776,15 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00103">103</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  104</span>{</div>
-<div class="line"><span class="lineno">  105</span>    <span class="keyword">auto</span> signedPayload = message_auth::sign(payload, token);</div>
-<div class="line"><span class="lineno">  106</span>    <span class="keywordflow">if</span> (signedPayload.empty())</div>
-<div class="line"><span class="lineno">  107</span>        <span class="keywordflow">return</span> {};</div>
-<div class="line"><span class="lineno">  108</span>    <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> packet(session.begin(), session.end());</div>
-<div class="line"><span class="lineno">  109</span>    packet.insert(packet.end(), signedPayload.begin(), signedPayload.end());</div>
-<div class="line"><span class="lineno">  110</span>    <span class="keywordflow">return</span> packet;</div>
-<div class="line"><span class="lineno">  111</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00104">104</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  105</span>{</div>
+<div class="line"><span class="lineno">  106</span>    <span class="keyword">auto</span> signedPayload = message_auth::sign(payload, token);</div>
+<div class="line"><span class="lineno">  107</span>    <span class="keywordflow">if</span> (signedPayload.empty())</div>
+<div class="line"><span class="lineno">  108</span>        <span class="keywordflow">return</span> {};</div>
+<div class="line"><span class="lineno">  109</span>    <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> packet(session.begin(), session.end());</div>
+<div class="line"><span class="lineno">  110</span>    packet.insert(packet.end(), signedPayload.begin(), signedPayload.end());</div>
+<div class="line"><span class="lineno">  111</span>    <span class="keywordflow">return</span> packet;</div>
+<div class="line"><span class="lineno">  112</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -740,6 +823,88 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="302,171,187,202,185,197,301,166"/>
 <area shape="rect" href="../../de/d39/classnexilis_1_1UDPClient.html#a1809d08048d0fd69aef3427abbdc7555" title="Send async nexilis message." alt="" coords="37,269,196,309"/>
 <area shape="poly" title=" " alt="" coords="262,292,196,292,196,287,262,287"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4e3ba500c5e7b0134c4d090398e498b8" name="a4e3ba500c5e7b0134c4d090398e498b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e3ba500c5e7b0134c4d090398e498b8">&#9670;&#160;</a></span>readResponse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool nexilis::udp_auth::readResponse </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> &amp;&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>token</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>sequence</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> &amp;&#160;</td>
+          <td class="paramname"><em>payload</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00161">161</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  163</span>{</div>
+<div class="line"><span class="lineno">  164</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../db/d44/namespacenexilis_1_1udp__auth.html#ac24e4dfcb23f571c85e27a44d0554bab">hasPrefix</a>(packet, response) || packet.size() &lt;= 12 + message_auth::tag_size)</div>
+<div class="line"><span class="lineno">  165</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  166</span>    <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> signedData(packet.begin(), packet.begin() + 12);</div>
+<div class="line"><span class="lineno">  167</span>    signedData.insert(signedData.end(), packet.begin() + 12 + message_auth::tag_size,</div>
+<div class="line"><span class="lineno">  168</span>                      packet.end());</div>
+<div class="line"><span class="lineno">  169</span>    <span class="keyword">auto</span> tag = <a class="code hl_function" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a73193d2edf81a85fdc4b3ecf49acef0b">responseTag</a>(signedData, token);</div>
+<div class="line"><span class="lineno">  170</span>    <span class="keywordflow">if</span> (!tag || CRYPTO_memcmp(tag-&gt;data(), packet.data() + 12, tag-&gt;size()) != 0)</div>
+<div class="line"><span class="lineno">  171</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  172</span>    sequence = 0;</div>
+<div class="line"><span class="lineno">  173</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 4; i &lt; 12; ++i)</div>
+<div class="line"><span class="lineno">  174</span>        sequence = (sequence &lt;&lt; 8) | packet[i];</div>
+<div class="line"><span class="lineno">  175</span>    <span class="keywordflow">if</span> (sequence == 0)</div>
+<div class="line"><span class="lineno">  176</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  177</span>    payload.assign(packet.begin() + 12 + message_auth::tag_size, packet.end());</div>
+<div class="line"><span class="lineno">  178</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  179</span>}</div>
+<div class="ttc" id="anamespacenexilis_1_1udp__auth_html_a73193d2edf81a85fdc4b3ecf49acef0b"><div class="ttname"><a href="../../db/d44/namespacenexilis_1_1udp__auth.html#a73193d2edf81a85fdc4b3ecf49acef0b">nexilis::udp_auth::responseTag</a></div><div class="ttdeci">std::optional&lt; std::array&lt; uint8_t, message_auth::tag_size &gt; &gt; responseTag(const nx_data &amp;data, std::string_view token)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d3d/udp__auth_8hh_source.html#l00126">udp_auth.hh:126</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d44/namespacenexilis_1_1udp__auth_a4e3ba500c5e7b0134c4d090398e498b8_cgraph.png" border="0" usemap="#adb/d44/namespacenexilis_1_1udp__auth_a4e3ba500c5e7b0134c4d090398e498b8_cgraph" alt=""/></div>
+<map name="adb/d44/namespacenexilis_1_1udp__auth_a4e3ba500c5e7b0134c4d090398e498b8_cgraph" id="adb/d44/namespacenexilis_1_1udp__auth_a4e3ba500c5e7b0134c4d090398e498b8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,37,147,77"/>
+<area shape="rect" href="../../db/d44/namespacenexilis_1_1udp__auth.html#ac24e4dfcb23f571c85e27a44d0554bab" title=" " alt="" coords="195,5,336,45"/>
+<area shape="poly" title=" " alt="" coords="146,43,181,37,182,42,147,48"/>
+<area shape="rect" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a73193d2edf81a85fdc4b3ecf49acef0b" title=" " alt="" coords="195,69,336,109"/>
+<area shape="poly" title=" " alt="" coords="147,67,182,72,181,78,146,72"/>
+<area shape="rect" href="../../dc/dfa/namespacenexilis_1_1message__auth.html#ab8ae1f049786d898466a6d38b12efae4" title=" " alt="" coords="384,69,552,109"/>
+<area shape="poly" title=" " alt="" coords="336,87,370,87,370,92,336,92"/>
 </map>
 </div>
 
@@ -785,17 +950,17 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00113">113</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  114</span>{</div>
-<div class="line"><span class="lineno">  115</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../db/d44/namespacenexilis_1_1udp__auth.html#ac24e4dfcb23f571c85e27a44d0554bab">hasPrefix</a>(packet, session) || packet.size() &lt; 4 + 8 + 8 + 2 + message_auth::tag_size)</div>
-<div class="line"><span class="lineno">  116</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  117</span>    <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> signedPayload(packet.begin() + 4, packet.end());</div>
-<div class="line"><span class="lineno">  118</span>    <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> verified;</div>
-<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">if</span> (!message_auth::verify(signedPayload, token, verified))</div>
-<div class="line"><span class="lineno">  120</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  121</span>    payload = std::move(verified);</div>
-<div class="line"><span class="lineno">  122</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  123</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00114">114</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  115</span>{</div>
+<div class="line"><span class="lineno">  116</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../db/d44/namespacenexilis_1_1udp__auth.html#ac24e4dfcb23f571c85e27a44d0554bab">hasPrefix</a>(packet, session) || packet.size() &lt; 4 + 8 + 8 + 2 + message_auth::tag_size)</div>
+<div class="line"><span class="lineno">  117</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  118</span>    <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> signedPayload(packet.begin() + 4, packet.end());</div>
+<div class="line"><span class="lineno">  119</span>    <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> verified;</div>
+<div class="line"><span class="lineno">  120</span>    <span class="keywordflow">if</span> (!message_auth::verify(signedPayload, token, verified))</div>
+<div class="line"><span class="lineno">  121</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  122</span>    payload = std::move(verified);</div>
+<div class="line"><span class="lineno">  123</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  124</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -810,6 +975,84 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="363,87,397,87,397,92,363,92"/>
 <area shape="rect" href="../../dc/dfa/namespacenexilis_1_1message__auth.html#ab8ae1f049786d898466a6d38b12efae4" title=" " alt="" coords="656,69,824,109"/>
 <area shape="poly" title=" " alt="" coords="608,87,642,87,642,92,608,92"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a73193d2edf81a85fdc4b3ecf49acef0b" name="a73193d2edf81a85fdc4b3ecf49acef0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73193d2edf81a85fdc4b3ecf49acef0b">&#9670;&#160;</a></span>responseTag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; std::array&lt; uint8_t, <a class="el" href="../../dc/dfa/namespacenexilis_1_1message__auth.html#a1a932ed7c1e6f0209a0d14f3269ac53e">message_auth::tag_size</a> &gt; &gt; nexilis::udp_auth::responseTag </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>token</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00126">126</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  128</span>{</div>
+<div class="line"><span class="lineno">  129</span>    std::array&lt;uint8_t, token_size&gt; key{};</div>
+<div class="line"><span class="lineno">  130</span>    <span class="keywordflow">if</span> (!message_auth::decodeKey(token, key))</div>
+<div class="line"><span class="lineno">  131</span>        <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><span class="lineno">  132</span>    <span class="keyword">constexpr</span> std::string_view domain = <span class="stringliteral">&quot;Nexilis UDP response v1&quot;</span>;</div>
+<div class="line"><span class="lineno">  133</span>    <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> input(domain.begin(), domain.end());</div>
+<div class="line"><span class="lineno">  134</span>    input.insert(input.end(), data.begin(), data.end());</div>
+<div class="line"><span class="lineno">  135</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> length = 0;</div>
+<div class="line"><span class="lineno">  136</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> digest[EVP_MAX_MD_SIZE]{};</div>
+<div class="line"><span class="lineno">  137</span>    <span class="keywordflow">if</span> (!HMAC(EVP_sha256(), key.data(), <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(key.size()), input.data(),</div>
+<div class="line"><span class="lineno">  138</span>              input.size(), digest, &amp;length) ||</div>
+<div class="line"><span class="lineno">  139</span>        length &lt; message_auth::tag_size)</div>
+<div class="line"><span class="lineno">  140</span>        <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><span class="lineno">  141</span>    std::array&lt;uint8_t, message_auth::tag_size&gt; tag{};</div>
+<div class="line"><span class="lineno">  142</span>    std::copy_n(digest, <a class="code hl_function" href="../../dc/dfa/namespacenexilis_1_1message__auth.html#a3bffff3bf649a82f183135f488be12f9">tag</a>.size(), <a class="code hl_function" href="../../dc/dfa/namespacenexilis_1_1message__auth.html#a3bffff3bf649a82f183135f488be12f9">tag</a>.begin());</div>
+<div class="line"><span class="lineno">  143</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../dc/dfa/namespacenexilis_1_1message__auth.html#a3bffff3bf649a82f183135f488be12f9">tag</a>;</div>
+<div class="line"><span class="lineno">  144</span>}</div>
+<div class="ttc" id="anamespacenexilis_1_1message__auth_html_a3bffff3bf649a82f183135f488be12f9"><div class="ttname"><a href="../../dc/dfa/namespacenexilis_1_1message__auth.html#a3bffff3bf649a82f183135f488be12f9">nexilis::message_auth::tag</a></div><div class="ttdeci">std::optional&lt; std::array&lt; uint8_t, tag_size &gt; &gt; tag(const nx_data &amp;request, std::string_view keyHex)</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dba/message__auth_8hh_source.html#l00063">message_auth.hh:63</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d44/namespacenexilis_1_1udp__auth_a73193d2edf81a85fdc4b3ecf49acef0b_cgraph.png" border="0" usemap="#adb/d44/namespacenexilis_1_1udp__auth_a73193d2edf81a85fdc4b3ecf49acef0b_cgraph" alt=""/></div>
+<map name="adb/d44/namespacenexilis_1_1udp__auth_a73193d2edf81a85fdc4b3ecf49acef0b_cgraph" id="adb/d44/namespacenexilis_1_1udp__auth_a73193d2edf81a85fdc4b3ecf49acef0b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,147,45"/>
+<area shape="rect" href="../../dc/dfa/namespacenexilis_1_1message__auth.html#ab8ae1f049786d898466a6d38b12efae4" title=" " alt="" coords="195,5,363,45"/>
+<area shape="poly" title=" " alt="" coords="147,23,181,23,181,28,147,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d44/namespacenexilis_1_1udp__auth_a73193d2edf81a85fdc4b3ecf49acef0b_icgraph.png" border="0" usemap="#adb/d44/namespacenexilis_1_1udp__auth_a73193d2edf81a85fdc4b3ecf49acef0b_icgraph" alt=""/></div>
+<map name="adb/d44/namespacenexilis_1_1udp__auth_a73193d2edf81a85fdc4b3ecf49acef0b_icgraph" id="adb/d44/namespacenexilis_1_1udp__auth_a73193d2edf81a85fdc4b3ecf49acef0b_icgraph">
+<area shape="rect" title=" " alt="" coords="195,37,336,77"/>
+<area shape="rect" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a9360319b682102f1df18c00e921761e5" title=" " alt="" coords="5,5,147,45"/>
+<area shape="poly" title=" " alt="" coords="181,46,146,40,147,35,182,41"/>
+<area shape="rect" href="../../db/d44/namespacenexilis_1_1udp__auth.html#a4e3ba500c5e7b0134c4d090398e498b8" title=" " alt="" coords="5,69,147,109"/>
+<area shape="poly" title=" " alt="" coords="182,74,147,80,146,75,181,69"/>
 </map>
 </div>
 
@@ -849,25 +1092,25 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00060">60</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   61</span>{</div>
-<div class="line"><span class="lineno">   62</span>    <span class="keyword">constexpr</span> <span class="keywordtype">char</span> digits[] = <span class="stringliteral">&quot;0123456789abcdef&quot;</span>;</div>
-<div class="line"><span class="lineno">   63</span>    std::string result;</div>
-<div class="line"><span class="lineno">   64</span>    result.reserve(count * 2);</div>
-<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; count; ++i)</div>
-<div class="line"><span class="lineno">   66</span>    {</div>
-<div class="line"><span class="lineno">   67</span>        result += digits[bytes[i] &gt;&gt; 4];</div>
-<div class="line"><span class="lineno">   68</span>        result += digits[bytes[i] &amp; 15];</div>
-<div class="line"><span class="lineno">   69</span>    }</div>
-<div class="line"><span class="lineno">   70</span>    <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno">   71</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00061">61</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   62</span>{</div>
+<div class="line"><span class="lineno">   63</span>    <span class="keyword">constexpr</span> <span class="keywordtype">char</span> digits[] = <span class="stringliteral">&quot;0123456789abcdef&quot;</span>;</div>
+<div class="line"><span class="lineno">   64</span>    std::string result;</div>
+<div class="line"><span class="lineno">   65</span>    result.reserve(count * 2);</div>
+<div class="line"><span class="lineno">   66</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; count; ++i)</div>
+<div class="line"><span class="lineno">   67</span>    {</div>
+<div class="line"><span class="lineno">   68</span>        result += digits[bytes[i] &gt;&gt; 4];</div>
+<div class="line"><span class="lineno">   69</span>        result += digits[bytes[i] &amp; 15];</div>
+<div class="line"><span class="lineno">   70</span>    }</div>
+<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">   72</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../db/d44/namespacenexilis_1_1udp__auth_a683f3158bde207a51ade7700d4091c3f_icgraph.png" border="0" usemap="#adb/d44/namespacenexilis_1_1udp__auth_a683f3158bde207a51ade7700d4091c3f_icgraph" alt=""/></div>
 <map name="adb/d44/namespacenexilis_1_1udp__auth_a683f3158bde207a51ade7700d4091c3f_icgraph" id="adb/d44/namespacenexilis_1_1udp__auth_a683f3158bde207a51ade7700d4091c3f_icgraph">
 <area shape="rect" title=" " alt="" coords="205,5,347,45"/>
-<area shape="rect" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a7710968efe499a793664c2f8425e1ba3" title="Constructor." alt="" coords="5,5,157,45"/>
+<area shape="rect" href="../../d4/d3a/classnexilis_1_1server_1_1User.html#a3ee1fae3585372e238cc35f762a77377" title="Constructor." alt="" coords="5,5,157,45"/>
 <area shape="poly" title=" " alt="" coords="191,28,158,28,158,23,191,23"/>
 </map>
 </div>
@@ -945,7 +1188,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00043">43</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00044">44</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
 
 </div>
 </div>
@@ -971,6 +1214,31 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00038">38</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   38</span>{<span class="charliteral">&#39;N&#39;</span>, <span class="charliteral">&#39;X&#39;</span>, <span class="charliteral">&#39;U&#39;</span>, <span class="charliteral">&#39;H&#39;</span>};</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2246f45fc86c5750728159feffd01253" name="a2246f45fc86c5750728159feffd01253"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2246f45fc86c5750728159feffd01253">&#9670;&#160;</a></span>response</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::array&lt;uint8_t, 4&gt; nexilis::udp_auth::response {'N', 'X', 'U', 'R'}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00042">42</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   42</span>{<span class="charliteral">&#39;N&#39;</span>, <span class="charliteral">&#39;X&#39;</span>, <span class="charliteral">&#39;U&#39;</span>, <span class="charliteral">&#39;R&#39;</span>};</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1019,7 +1287,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00042">42</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html#l00043">43</a> of file <a class="el" href="../../d4/d3d/udp__auth_8hh_source.html">udp_auth.hh</a>.</p>
 
 </div>
 </div>

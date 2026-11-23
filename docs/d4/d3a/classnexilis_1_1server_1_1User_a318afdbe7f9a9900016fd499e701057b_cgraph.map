@@ -1,0 +1,5 @@
+<map id="nexilis::server::User::claimPendingBoostTcpSession" name="nexilis::server::User::claimPendingBoostTcpSession">
+<area shape="rect" id="Node000001" title="Claim the pending Boost TCP switch with its separate one&#45;time secret." alt="" coords="5,5,232,45"/>
+<area shape="rect" id="Node000002" href="$dd/de4/classnexilis_1_1Util.html#a64405d1c0bd549b08621f4c4787e2482" title=" " alt="" coords="280,5,473,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,23,266,23,266,28,232,28"/>
+</map>

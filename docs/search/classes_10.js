@@ -22,6 +22,7 @@ var searchData=
   ['roomplayer2dcommand_19',['RoomPlayer2DCommand',['../d9/d6c/classnexilis_1_1client_1_1RoomPlayer2DCommand.html',1,'nexilis::client']]],
   ['roomplayer2dshootcommand_20',['RoomPlayer2DShootCommand',['../d9/dad/classnexilis_1_1client_1_1RoomPlayer2DShootCommand.html',1,'nexilis::client']]],
   ['roomplayer3dcommand_21',['RoomPlayer3DCommand',['../d9/d3d/classnexilis_1_1client_1_1RoomPlayer3DCommand.html',1,'nexilis::client']]],
-  ['roomstorage_22',['RoomStorage',['../db/d96/classnexilis_1_1server_1_1RoomStorage.html',1,'nexilis::server']]],
-  ['rootauthstate_23',['RootAuthState',['../d1/d06/structnexilis_1_1server_1_1Command_1_1RootAuthState.html',1,'nexilis::server::Command']]]
+  ['roomservereventcommand_22',['RoomServerEventCommand',['../de/d4b/classnexilis_1_1client_1_1RoomServerEventCommand.html',1,'nexilis::client']]],
+  ['roomstorage_23',['RoomStorage',['../db/d96/classnexilis_1_1server_1_1RoomStorage.html',1,'nexilis::server']]],
+  ['rootauthstate_24',['RootAuthState',['../d1/d06/structnexilis_1_1server_1_1Command_1_1RootAuthState.html',1,'nexilis::server::Command']]]
 ];

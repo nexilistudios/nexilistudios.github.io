@@ -1,5 +1,7 @@
 <map id="src/nexilisc/client/client_config_c.cc" name="src/nexilisc/client/client_config_c.cc">
-<area shape="rect" id="Node000001" title=" " alt="" coords="11,5,151,45"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="78,5,218,45"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,93,157,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,46,84,79,79,79,79,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,47,107,84,102,81,131,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="182,101,247,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="165,44,199,88,195,91,161,47"/>
 </map>

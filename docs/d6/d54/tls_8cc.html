@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.10-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.11-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -82,37 +82,62 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="../../d0/d00/tls_8hh_source.html">nexilis/tls.hh</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d8/d42/crypto_8hh_source.html">nexilis/crypto.hh</a>&gt;</code><br />
+<code>#include &lt;openssl/crypto.h&gt;</code><br />
+<code>#include &lt;openssl/pem.h&gt;</code><br />
+<code>#include &lt;openssl/rsa.h&gt;</code><br />
 <code>#include &lt;openssl/ssl.h&gt;</code><br />
+<code>#include &lt;openssl/x509.h&gt;</code><br />
+<code>#include &lt;array&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;ctime&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for tls.cc:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d3/d1a/tls_8cc__incl.png" border="0" usemap="#asrc_2nexilis_2tls_8cc" alt=""/></div>
 <map name="asrc_2nexilis_2tls_8cc" id="asrc_2nexilis_2tls_8cc">
-<area shape="rect" title=" " alt="" coords="521,5,647,31"/>
-<area shape="rect" href="../../d0/d00/tls_8hh.html" title=" " alt="" coords="247,79,353,104"/>
-<area shape="poly" title=" " alt="" coords="539,33,360,78,358,73,538,28"/>
-<area shape="rect" href="../../d8/d42/crypto_8hh.html" title=" " alt="" coords="376,79,507,104"/>
-<area shape="poly" title=" " alt="" coords="562,33,478,75,476,70,560,28"/>
-<area shape="rect" title=" " alt="" coords="531,79,637,104"/>
-<area shape="poly" title=" " alt="" coords="587,31,587,65,581,65,581,31"/>
-<area shape="rect" title=" " alt="" coords="661,79,728,104"/>
-<area shape="poly" title=" " alt="" coords="603,28,666,69,663,73,600,33"/>
-<area shape="rect" title=" " alt="" coords="753,79,815,104"/>
-<area shape="poly" title=" " alt="" coords="617,28,740,72,739,77,615,33"/>
-<area shape="rect" title=" " alt="" coords="107,152,299,177"/>
-<area shape="poly" title=" " alt="" coords="286,106,231,146,228,141,283,102"/>
-<area shape="rect" title=" " alt="" coords="406,152,477,177"/>
-<area shape="poly" title=" " alt="" coords="324,102,407,143,405,148,322,106"/>
-<area shape="rect" title=" " alt="" coords="5,152,83,177"/>
-<area shape="poly" title=" " alt="" coords="260,107,97,152,95,146,258,101"/>
-<area shape="rect" title=" " alt="" coords="323,152,381,177"/>
-<area shape="poly" title=" " alt="" coords="311,103,338,139,333,142,306,106"/>
-<area shape="poly" title=" " alt="" coords="444,104,444,138,439,138,439,104"/>
-<area shape="poly" title=" " alt="" coords="429,106,379,145,376,141,425,102"/>
-<area shape="rect" title=" " alt="" coords="501,152,568,177"/>
-<area shape="poly" title=" " alt="" coords="458,102,510,141,507,146,455,106"/>
+<area shape="rect" title=" " alt="" coords="918,5,1045,31"/>
+<area shape="rect" href="../../d0/d00/tls_8hh.html" title=" " alt="" coords="318,79,423,104"/>
+<area shape="poly" title=" " alt="" coords="918,28,707,50,443,81,438,82,437,77,442,76,706,44,918,23"/>
+<area shape="rect" title=" " alt="" coords="613,152,691,177"/>
+<area shape="poly" title=" " alt="" coords="918,25,801,32,666,44,550,60,510,70,490,80,485,91,490,102,506,116,534,128,601,149,599,154,532,133,504,120,486,106,480,91,486,77,508,65,549,55,666,38,801,27,918,20"/>
+<area shape="rect" href="../../d8/d42/crypto_8hh.html" title=" " alt="" coords="112,79,243,104"/>
+<area shape="poly" title=" " alt="" coords="918,28,256,86,256,80,918,22"/>
+<area shape="rect" title=" " alt="" coords="499,79,629,104"/>
+<area shape="poly" title=" " alt="" coords="918,33,643,79,642,74,918,27"/>
+<area shape="rect" title=" " alt="" coords="653,79,771,104"/>
+<area shape="poly" title=" " alt="" coords="939,33,769,78,768,73,937,28"/>
+<area shape="rect" title=" " alt="" coords="795,79,903,104"/>
+<area shape="poly" title=" " alt="" coords="961,33,884,74,882,70,959,28"/>
+<area shape="rect" title=" " alt="" coords="928,79,1035,104"/>
+<area shape="poly" title=" " alt="" coords="984,31,984,65,979,65,979,31"/>
+<area shape="rect" title=" " alt="" coords="1059,79,1179,104"/>
+<area shape="poly" title=" " alt="" coords="1005,28,1085,70,1083,75,1002,33"/>
+<area shape="rect" title=" " alt="" coords="1203,79,1259,104"/>
+<area shape="poly" title=" " alt="" coords="1022,28,1190,76,1189,81,1021,33"/>
+<area shape="rect" title=" " alt="" coords="1283,79,1349,104"/>
+<area shape="poly" title=" " alt="" coords="1041,28,1270,76,1268,81,1040,33"/>
+<area shape="rect" title=" " alt="" coords="1373,79,1432,104"/>
+<area shape="poly" title=" " alt="" coords="1045,24,1186,44,1360,76,1359,81,1185,50,1045,30"/>
+<area shape="rect" title=" " alt="" coords="1456,79,1531,104"/>
+<area shape="poly" title=" " alt="" coords="1045,23,1220,43,1443,76,1442,81,1220,48,1045,28"/>
+<area shape="rect" title=" " alt="" coords="1555,79,1618,104"/>
+<area shape="poly" title=" " alt="" coords="1045,20,1261,38,1399,54,1542,76,1541,81,1399,60,1261,44,1045,26"/>
+<area shape="rect" title=" " alt="" coords="275,152,467,177"/>
+<area shape="poly" title=" " alt="" coords="373,104,373,138,368,138,368,104"/>
+<area shape="rect" title=" " alt="" coords="97,152,167,177"/>
+<area shape="poly" title=" " alt="" coords="333,107,181,151,180,146,332,101"/>
+<area shape="poly" title=" " alt="" coords="417,101,601,148,599,153,415,107"/>
+<area shape="rect" title=" " alt="" coords="192,152,251,177"/>
+<area shape="poly" title=" " alt="" coords="348,106,259,148,257,144,346,102"/>
+<area shape="rect" title=" " alt="" coords="491,152,589,177"/>
+<area shape="poly" title=" " alt="" coords="399,102,501,144,499,149,397,106"/>
+<area shape="poly" title=" " alt="" coords="172,106,149,142,144,139,168,103"/>
+<area shape="poly" title=" " alt="" coords="187,103,209,139,205,142,182,106"/>
+<area shape="rect" title=" " alt="" coords="5,152,72,177"/>
+<area shape="poly" title=" " alt="" coords="156,106,75,148,72,143,154,102"/>
 </map>
 </div>
 </div>
@@ -131,6 +156,18 @@ Functions</h2></td></tr>
 <tr class="separator:a6aec5afeaeb87833f24d3f1295147d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2da4f30ec86e994dccc7cee18334b9c" id="r_ab2da4f30ec86e994dccc7cee18334b9c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; boost::asio::ssl::context &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d94/namespacenexilis_1_1tls.html#ab2da4f30ec86e994dccc7cee18334b9c">nexilis::tls::createPskContext</a> (const std::string &amp;password, bool server)</td></tr>
 <tr class="separator:ab2da4f30ec86e994dccc7cee18334b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a336680a6f9c4f14f61d5df988f7311aa" id="r_a336680a6f9c4f14f61d5df988f7311aa"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d94/namespacenexilis_1_1tls.html#a336680a6f9c4f14f61d5df988f7311aa">nexilis::tls::publicKeySha256</a> (std::string_view certificatePem)</td></tr>
+<tr class="separator:a336680a6f9c4f14f61d5df988f7311aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9173ea7aa27926677e37cbfc0b34c510" id="r_a9173ea7aa27926677e37cbfc0b34c510"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; boost::asio::ssl::context &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d94/namespacenexilis_1_1tls.html#a9173ea7aa27926677e37cbfc0b34c510">nexilis::tls::createServerContext</a> (std::string_view certificatePem, std::string_view privateKeyPem)</td></tr>
+<tr class="separator:a9173ea7aa27926677e37cbfc0b34c510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a267226e16dbe01afe7ee86b97904b4eb" id="r_a267226e16dbe01afe7ee86b97904b4eb"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; boost::asio::ssl::context &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d94/namespacenexilis_1_1tls.html#a267226e16dbe01afe7ee86b97904b4eb">nexilis::tls::createClientContext</a> ()</td></tr>
+<tr class="separator:a267226e16dbe01afe7ee86b97904b4eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04b474e4a62363a6a97cc1724524cb11" id="r_a04b474e4a62363a6a97cc1724524cb11"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d94/namespacenexilis_1_1tls.html#a04b474e4a62363a6a97cc1724524cb11">nexilis::tls::validPublicKeySha256</a> (std::string_view expectedHex)</td></tr>
+<tr class="separator:a04b474e4a62363a6a97cc1724524cb11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8e52afc79e307ccd0e2e419ea3e223b" id="r_ae8e52afc79e307ccd0e2e419ea3e223b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d94/namespacenexilis_1_1tls.html#ae8e52afc79e307ccd0e2e419ea3e223b">nexilis::tls::verifyServerKey</a> (<a class="el" href="../../d0/d00/tls_8hh.html#a71f21e09bf365489dab9d85bd4785e24">SSL</a> *ssl, std::string_view expectedHex)</td></tr>
+<tr class="separator:ae8e52afc79e307ccd0e2e419ea3e223b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7da0e96276bf82442cfdffa0c3a5658c" id="r_a7da0e96276bf82442cfdffa0c3a5658c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d94/structnexilis_1_1tls_1_1ServerIdentity.html">ServerIdentity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d94/namespacenexilis_1_1tls.html#a7da0e96276bf82442cfdffa0c3a5658c">nexilis::tls::generateSelfSignedIdentity</a> ()</td></tr>
+<tr class="separator:a7da0e96276bf82442cfdffa0c3a5658c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

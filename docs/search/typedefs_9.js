@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['vector2f_0',['Vector2f',['../d8/d34/namespacenexilis.html#a66c81b5d9a82dd24f6bb045ab576df99',1,'nexilis']]],
-  ['vector2i_1',['Vector2i',['../d8/d34/namespacenexilis.html#ae87d7c2d759031351b70cf0baabe2350',1,'nexilis']]],
-  ['vector2u_2',['Vector2u',['../d8/d34/namespacenexilis.html#ae4af4e65164dba6438e4ddfbfc467122',1,'nexilis']]],
-  ['vector3f_3',['Vector3f',['../d8/d34/namespacenexilis.html#a6d4456bc63926293b47b68c62361ce2d',1,'nexilis']]],
-  ['vector3i_4',['Vector3i',['../d8/d34/namespacenexilis.html#aa354e4c2f4935e7267086048971d89f9',1,'nexilis']]],
-  ['vector3u_5',['Vector3u',['../d8/d34/namespacenexilis.html#a1054b555a213fc0d7f624177e9714aa7',1,'nexilis']]]
+  ['shot2dhandler_0',['Shot2DHandler',['../d1/d01/classnexilis_1_1server_1_1Room.html#ab7e961ab99c3e07c7924671c7e51a2cf',1,'nexilis::server::Room']]],
+  ['shothandler_1',['ShotHandler',['../d1/d01/classnexilis_1_1server_1_1Room.html#a453e0dc682c85b1279239ddeb845055f',1,'nexilis::server::Room']]],
+  ['spawnhandler_2',['SpawnHandler',['../d1/d01/classnexilis_1_1server_1_1Room.html#aee8c7bb9a7b3c792248144e947515e86',1,'nexilis::server::Room']]],
+  ['ssl_3',['SSL',['../d0/d00/tls_8hh.html#a71f21e09bf365489dab9d85bd4785e24',1,'tls.hh']]]
 ];

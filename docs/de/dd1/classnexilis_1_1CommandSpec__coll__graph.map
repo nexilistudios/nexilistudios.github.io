@@ -6,7 +6,7 @@
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="163,34,205,28,206,33,164,39"/>
 <area shape="rect" id="Node000010" href="$d1/dd9/classnexilis_1_1client_1_1ClientConfig.html" title=" " alt="" coords="205,55,401,80"/>
 <area shape="poly" id="edge10_Node000010_Node000003" title=" " alt="" coords="164,52,205,56,204,61,164,58"/>
-<area shape="rect" id="Node000004" href="$db/d93/classnexilis_1_1CommandSpec_1_1TestProtocol.html" title="Minimal concrete NXProtocol for testing." alt="" coords="217,105,388,145"/>
+<area shape="rect" id="Node000004" href="$db/d93/classnexilis_1_1CommandSpec_1_1TestProtocol.html" title="Minimal Boost TCP protocol matching the fixture&#39;s send callback." alt="" coords="217,105,388,145"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="402,131,531,143,530,149,402,137"/>
 <area shape="rect" id="Node000005" href="$d5/da4/classnexilis_1_1NXProtocol.html" title=" " alt="" coords="5,112,151,137"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="164,122,217,122,217,127,164,127"/>

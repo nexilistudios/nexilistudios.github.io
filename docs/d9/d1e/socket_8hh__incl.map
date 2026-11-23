@@ -1,15 +1,19 @@
 <map id="include/nexilis/boost_tcp/socket.hh" name="include/nexilis/boost_tcp/socket.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="341,5,497,45"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="539,5,695,45"/>
 <area shape="rect" id="Node000002" href="$d6/d9e/nx__class_8hh.html" title=" " alt="" coords="5,93,151,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="342,47,142,93,140,88,340,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="539,41,165,95,164,90,538,35"/>
 <area shape="rect" id="Node000004" href="$dc/dd2/nx__data_8hh.html" title=" " alt="" coords="175,93,317,119"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="379,48,285,90,283,85,377,43"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="539,46,314,93,313,88,538,41"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="341,93,498,119"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="422,46,422,79,417,79,417,46"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="570,48,462,91,460,86,568,43"/>
 <area shape="rect" id="Node000008" title=" " alt="" coords="522,93,711,119"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="468,43,576,86,574,91,466,48"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="735,93,813,119"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="498,41,722,90,721,96,497,46"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="619,46,619,79,614,79,614,46"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="735,93,802,119"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="654,43,735,84,732,89,652,48"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="827,93,969,119"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="685,43,845,87,843,92,683,48"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="994,93,1071,119"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="695,37,981,90,980,96,694,43"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="49,167,107,192"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="81,119,81,153,75,153,75,119"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="171,167,238,192"/>

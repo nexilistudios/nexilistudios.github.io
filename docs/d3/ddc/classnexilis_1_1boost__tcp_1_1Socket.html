@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.10-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.11-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -168,9 +168,9 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Thin wrapper around a boost::asio TCP connection.</p>
-<p>When a TLS context is supplied via <a class="el" href="../../d3/ddc/classnexilis_1_1boost__tcp_1_1Socket.html#ac70e42f9f888ca896367c850058f93ee">enableTls()</a> the transport is upgraded to TLS-PSK, typically derived from the Nexilis authentication passphrase. Without it the connection stays plaintext. TLS and plaintext are mutually exclusive per connection: the TLS handshake happens lazily on the first I/O operation and a mismatch simply fails the connection instead of silently downgrading. </p>
+<p>When a TLS context is supplied via <a class="el" href="../../d3/ddc/classnexilis_1_1boost__tcp_1_1Socket.html#ac70e42f9f888ca896367c850058f93ee">enableTls()</a> the transport is upgraded to TLS. Without it the connection stays plaintext. TLS and plaintext are mutually exclusive per connection: the TLS handshake happens lazily on the first I/O operation and a mismatch simply fails the connection instead of silently downgrading. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/dab/socket_8hh_source.html#l00039">39</a> of file <a class="el" href="../../d7/dab/socket_8hh_source.html">socket.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/dab/socket_8hh_source.html#l00041">41</a> of file <a class="el" href="../../d7/dab/socket_8hh_source.html">socket.hh</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8efa69a0524a43be600500ec8cfb173b" name="a8efa69a0524a43be600500ec8cfb173b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8efa69a0524a43be600500ec8cfb173b">&#9670;&#160;</a></span>Socket() <span class="overload">[1/3]</span></h2>
@@ -198,13 +198,13 @@ Public Member Functions</h2></td></tr>
 
 <p>Server-side constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00080">80</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   81</span>    : <a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696">NxClass</a>(<span class="stringliteral">&quot;boost_tcp::Socket-server&quot;</span>),</div>
-<div class="line"><span class="lineno">   82</span>      m_io(std::make_shared&lt;boost::asio::io_context&gt;()),</div>
-<div class="line"><span class="lineno">   83</span>      m_context(std::make_shared&lt;boost::asio::ssl::context&gt;(boost::asio::ssl::context::tls)),</div>
-<div class="line"><span class="lineno">   84</span>      m_stream(std::make_shared&lt;TlsStream&gt;(*m_io, *m_context))</div>
-<div class="line"><span class="lineno">   85</span>{</div>
-<div class="line"><span class="lineno">   86</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00087">87</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   88</span>    : <a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696">NxClass</a>(<span class="stringliteral">&quot;boost_tcp::Socket-server&quot;</span>),</div>
+<div class="line"><span class="lineno">   89</span>      m_io(std::make_shared&lt;boost::asio::io_context&gt;()),</div>
+<div class="line"><span class="lineno">   90</span>      m_context(std::make_shared&lt;boost::asio::ssl::context&gt;(boost::asio::ssl::context::tls)),</div>
+<div class="line"><span class="lineno">   91</span>      m_stream(std::make_shared&lt;TlsStream&gt;(*m_io, *m_context))</div>
+<div class="line"><span class="lineno">   92</span>{</div>
+<div class="line"><span class="lineno">   93</span>}</div>
 <div class="ttc" id="aclassnexilis_1_1NxClass_html_a0f756bc77e25ee01bdc0eb3c9f75e696"><div class="ttname"><a href="../../d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696">nexilis::NxClass::NxClass</a></div><div class="ttdeci">NxClass(const std::string &amp;name)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d8b/nx__class_8cc_source.html#l00022">nx_class.cc:22</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -251,15 +251,15 @@ Public Member Functions</h2></td></tr>
 
 <p>Client-side constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00088">88</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   89</span>    : <a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696">NxClass</a>(<span class="stringliteral">&quot;boost_tcp::Socket-client&quot;</span>),</div>
-<div class="line"><span class="lineno">   90</span>      m_io(std::make_shared&lt;boost::asio::io_context&gt;()),</div>
-<div class="line"><span class="lineno">   91</span>      m_context(std::make_shared&lt;boost::asio::ssl::context&gt;(boost::asio::ssl::context::tls)),</div>
-<div class="line"><span class="lineno">   92</span>      m_stream(std::make_shared&lt;TlsStream&gt;(*m_io, *m_context)),</div>
-<div class="line"><span class="lineno">   93</span>      m_tlsServer(<span class="keyword">false</span>),</div>
-<div class="line"><span class="lineno">   94</span>      m_endpointId(<span class="stringliteral">&quot;client:&quot;</span> + host + <span class="stringliteral">&quot;:&quot;</span> + std::to_string(port))</div>
-<div class="line"><span class="lineno">   95</span>{</div>
-<div class="line"><span class="lineno">   96</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00095">95</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   96</span>    : <a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696">NxClass</a>(<span class="stringliteral">&quot;boost_tcp::Socket-client&quot;</span>),</div>
+<div class="line"><span class="lineno">   97</span>      m_io(std::make_shared&lt;boost::asio::io_context&gt;()),</div>
+<div class="line"><span class="lineno">   98</span>      m_context(std::make_shared&lt;boost::asio::ssl::context&gt;(boost::asio::ssl::context::tls)),</div>
+<div class="line"><span class="lineno">   99</span>      m_stream(std::make_shared&lt;TlsStream&gt;(*m_io, *m_context)),</div>
+<div class="line"><span class="lineno">  100</span>      m_tlsServer(<span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">  101</span>      m_endpointId(<span class="stringliteral">&quot;client:&quot;</span> + host + <span class="stringliteral">&quot;:&quot;</span> + std::to_string(port))</div>
+<div class="line"><span class="lineno">  102</span>{</div>
+<div class="line"><span class="lineno">  103</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -289,19 +289,19 @@ Public Member Functions</h2></td></tr>
 
 <p>Move constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00098">98</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   99</span>    : <a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696">NxClass</a>(std::move(other)),</div>
-<div class="line"><span class="lineno">  100</span>      m_io(std::move(other.m_io)),</div>
-<div class="line"><span class="lineno">  101</span>      m_context(std::move(other.m_context)),</div>
-<div class="line"><span class="lineno">  102</span>      m_stream(std::move(other.m_stream)),</div>
-<div class="line"><span class="lineno">  103</span>      m_connected(other.m_connected.load()),</div>
-<div class="line"><span class="lineno">  104</span>      m_tls(other.m_tls.load()),</div>
-<div class="line"><span class="lineno">  105</span>      m_tlsHandshaken(other.m_tlsHandshaken.load()),</div>
-<div class="line"><span class="lineno">  106</span>      m_tlsServer(other.m_tlsServer),</div>
-<div class="line"><span class="lineno">  107</span>      m_endpointId(std::move(other.m_endpointId))</div>
-<div class="line"><span class="lineno">  108</span>{</div>
-<div class="line"><span class="lineno">  109</span>    other.m_connected.store(<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  110</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00105">105</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  106</span>    : <a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696">NxClass</a>(std::move(other)),</div>
+<div class="line"><span class="lineno">  107</span>      m_io(std::move(other.m_io)),</div>
+<div class="line"><span class="lineno">  108</span>      m_context(std::move(other.m_context)),</div>
+<div class="line"><span class="lineno">  109</span>      m_stream(std::move(other.m_stream)),</div>
+<div class="line"><span class="lineno">  110</span>      m_connected(other.m_connected.load()),</div>
+<div class="line"><span class="lineno">  111</span>      m_tls(other.m_tls.load()),</div>
+<div class="line"><span class="lineno">  112</span>      m_tlsHandshaken(other.m_tlsHandshaken.load()),</div>
+<div class="line"><span class="lineno">  113</span>      m_tlsServer(other.m_tlsServer),</div>
+<div class="line"><span class="lineno">  114</span>      m_endpointId(std::move(other.m_endpointId))</div>
+<div class="line"><span class="lineno">  115</span>{</div>
+<div class="line"><span class="lineno">  116</span>    other.m_connected.store(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  117</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -324,20 +324,20 @@ Public Member Functions</h2></td></tr>
 
 <p>Server-side acceptance. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00189">189</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  190</span>{</div>
-<div class="line"><span class="lineno">  191</span>    std::lock_guard&lt;std::mutex&gt; lock(m_mutex);</div>
-<div class="line"><span class="lineno">  192</span>    <span class="comment">// Rebuild the stream around the accepted socket so a TLS context set with</span></div>
-<div class="line"><span class="lineno">  193</span>    <span class="comment">// enableTls() before assign() is picked up automatically.</span></div>
-<div class="line"><span class="lineno">  194</span>    boost::asio::ip::tcp::socket <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#af083ac542feacbb3f43f1dc9ee6cae84af5ddaf0ca7929578b408c909429f68f2">local</a>(*m_io);</div>
-<div class="line"><span class="lineno">  195</span>    <span class="keyword">const</span> <span class="keyword">auto</span> protocol = socket.local_endpoint().protocol();</div>
-<div class="line"><span class="lineno">  196</span>    <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#af083ac542feacbb3f43f1dc9ee6cae84af5ddaf0ca7929578b408c909429f68f2">local</a>.assign(protocol, socket.release());</div>
-<div class="line"><span class="lineno">  197</span>    m_stream = std::make_shared&lt;TlsStream&gt;(std::move(<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#af083ac542feacbb3f43f1dc9ee6cae84af5ddaf0ca7929578b408c909429f68f2">local</a>), *m_context);</div>
-<div class="line"><span class="lineno">  198</span>    m_tlsHandshaken.store(<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  199</span>    m_endpointId = <span class="stringliteral">&quot;server:&quot;</span> + std::to_string(m_stream-&gt;lowest_layer().local_endpoint().port());</div>
-<div class="line"><span class="lineno">  200</span>    m_connected = m_stream-&gt;lowest_layer().is_open();</div>
-<div class="line"><span class="lineno">  201</span>    setSocketOptions();</div>
-<div class="line"><span class="lineno">  202</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00196">196</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  197</span>{</div>
+<div class="line"><span class="lineno">  198</span>    std::lock_guard&lt;std::mutex&gt; lock(m_mutex);</div>
+<div class="line"><span class="lineno">  199</span>    <span class="comment">// Rebuild the stream around the accepted socket so a TLS context set with</span></div>
+<div class="line"><span class="lineno">  200</span>    <span class="comment">// enableTls() before assign() is picked up automatically.</span></div>
+<div class="line"><span class="lineno">  201</span>    boost::asio::ip::tcp::socket <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#af083ac542feacbb3f43f1dc9ee6cae84af5ddaf0ca7929578b408c909429f68f2">local</a>(*m_io);</div>
+<div class="line"><span class="lineno">  202</span>    <span class="keyword">const</span> <span class="keyword">auto</span> protocol = socket.local_endpoint().protocol();</div>
+<div class="line"><span class="lineno">  203</span>    <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#af083ac542feacbb3f43f1dc9ee6cae84af5ddaf0ca7929578b408c909429f68f2">local</a>.assign(protocol, socket.release());</div>
+<div class="line"><span class="lineno">  204</span>    m_stream = std::make_shared&lt;TlsStream&gt;(std::move(<a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#af083ac542feacbb3f43f1dc9ee6cae84af5ddaf0ca7929578b408c909429f68f2">local</a>), *m_context);</div>
+<div class="line"><span class="lineno">  205</span>    m_tlsHandshaken.store(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  206</span>    m_endpointId = <span class="stringliteral">&quot;server:&quot;</span> + std::to_string(m_stream-&gt;lowest_layer().local_endpoint().port());</div>
+<div class="line"><span class="lineno">  207</span>    m_connected = m_stream-&gt;lowest_layer().is_open();</div>
+<div class="line"><span class="lineno">  208</span>    setSocketOptions();</div>
+<div class="line"><span class="lineno">  209</span>}</div>
 <div class="ttc" id="anamespacenexilis_html_af083ac542feacbb3f43f1dc9ee6cae84af5ddaf0ca7929578b408c909429f68f2"><div class="ttname"><a href="../../d8/d34/namespacenexilis.html#af083ac542feacbb3f43f1dc9ee6cae84af5ddaf0ca7929578b408c909429f68f2">nexilis::EnvironmentType::local</a></div><div class="ttdeci">@ local</div></div>
 </div><!-- fragment -->
 </div>
@@ -357,19 +357,19 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00499">499</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  500</span>{</div>
-<div class="line"><span class="lineno">  501</span>    std::lock_guard&lt;std::mutex&gt; lock(m_mutex);</div>
-<div class="line"><span class="lineno">  502</span>    <span class="keywordflow">if</span> (m_connected &amp;&amp; m_stream &amp;&amp; m_stream-&gt;lowest_layer().is_open())</div>
-<div class="line"><span class="lineno">  503</span>    {</div>
-<div class="line"><span class="lineno">  504</span>        boost::system::error_code ec;</div>
-<div class="line"><span class="lineno">  505</span>        ec = m_stream-&gt;lowest_layer().cancel(ec);</div>
-<div class="line"><span class="lineno">  506</span>        <span class="keywordflow">if</span> (ec)</div>
-<div class="line"><span class="lineno">  507</span>        {</div>
-<div class="line"><span class="lineno">  508</span>            <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Error cancelling socket operations: &quot;</span>, ec.message());</div>
-<div class="line"><span class="lineno">  509</span>        }</div>
-<div class="line"><span class="lineno">  510</span>    }</div>
-<div class="line"><span class="lineno">  511</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00517">517</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  518</span>{</div>
+<div class="line"><span class="lineno">  519</span>    std::lock_guard&lt;std::mutex&gt; lock(m_mutex);</div>
+<div class="line"><span class="lineno">  520</span>    <span class="keywordflow">if</span> (m_connected &amp;&amp; m_stream &amp;&amp; m_stream-&gt;lowest_layer().is_open())</div>
+<div class="line"><span class="lineno">  521</span>    {</div>
+<div class="line"><span class="lineno">  522</span>        boost::system::error_code ec;</div>
+<div class="line"><span class="lineno">  523</span>        ec = m_stream-&gt;lowest_layer().cancel(ec);</div>
+<div class="line"><span class="lineno">  524</span>        <span class="keywordflow">if</span> (ec)</div>
+<div class="line"><span class="lineno">  525</span>        {</div>
+<div class="line"><span class="lineno">  526</span>            <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Error cancelling socket operations: &quot;</span>, ec.message());</div>
+<div class="line"><span class="lineno">  527</span>        }</div>
+<div class="line"><span class="lineno">  528</span>    }</div>
+<div class="line"><span class="lineno">  529</span>}</div>
 <div class="ttc" id="aclassnexilis_1_1Log_html_a49959aac4210e93d1ccd1977e08dba80"><div class="ttname"><a href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">nexilis::Log::error</a></div><div class="ttdeci">static void error(const T &amp;data, const Args &amp;... args)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de3/log_8hh_source.html#l00123">log.hh:123</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1NxClass_html_aacbc1ef37e00748730aa9f6faa55e2ae"><div class="ttname"><a href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">nexilis::NxClass::header</a></div><div class="ttdeci">const std::string &amp; header() const</div><div class="ttdoc">Get the classes name as header for log messages.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d9e/nx__class_8hh_source.html#l00053">nx_class.hh:53</a></div></div>
 </div><!-- fragment --><div class="dynheader">
@@ -404,11 +404,11 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00382">382</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  383</span>{</div>
-<div class="line"><span class="lineno">  384</span>    std::lock_guard&lt;std::mutex&gt; lock(m_mutex);</div>
-<div class="line"><span class="lineno">  385</span>    closeInternal();</div>
-<div class="line"><span class="lineno">  386</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00400">400</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  401</span>{</div>
+<div class="line"><span class="lineno">  402</span>    std::lock_guard&lt;std::mutex&gt; lock(m_mutex);</div>
+<div class="line"><span class="lineno">  403</span>    closeInternal();</div>
+<div class="line"><span class="lineno">  404</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -440,41 +440,41 @@ Here is the call graph for this function:</div>
 
 <p>Connect for both the server and the client. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00134">134</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  135</span>{</div>
-<div class="line"><span class="lineno">  136</span>    std::lock_guard&lt;std::mutex&gt; lock(m_mutex);</div>
-<div class="line"><span class="lineno">  137</span>    <span class="keywordflow">if</span> (m_connected)</div>
-<div class="line"><span class="lineno">  138</span>    {</div>
-<div class="line"><span class="lineno">  139</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  140</span>    }</div>
-<div class="line"><span class="lineno">  141</span> </div>
-<div class="line"><span class="lineno">  142</span>    <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  143</span>    {</div>
-<div class="line"><span class="lineno">  144</span>        boost::asio::ip::tcp::resolver resolver(m_stream-&gt;lowest_layer().get_executor());</div>
-<div class="line"><span class="lineno">  145</span>        <span class="keyword">auto</span> endpoints = resolver.resolve(host, std::to_string(port));</div>
-<div class="line"><span class="lineno">  146</span> </div>
-<div class="line"><span class="lineno">  147</span>        boost::asio::connect(m_stream-&gt;lowest_layer(), endpoints);</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00141">141</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  142</span>{</div>
+<div class="line"><span class="lineno">  143</span>    std::lock_guard&lt;std::mutex&gt; lock(m_mutex);</div>
+<div class="line"><span class="lineno">  144</span>    <span class="keywordflow">if</span> (m_connected)</div>
+<div class="line"><span class="lineno">  145</span>    {</div>
+<div class="line"><span class="lineno">  146</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  147</span>    }</div>
 <div class="line"><span class="lineno">  148</span> </div>
-<div class="line"><span class="lineno">  149</span>        <span class="comment">// When TLS is enabled the stream must be rebuilt so its SSL context</span></div>
-<div class="line"><span class="lineno">  150</span>        <span class="comment">// matches the actual connection. lowest_layer() returns the socket as</span></div>
-<div class="line"><span class="lineno">  151</span>        <span class="comment">// its base type, so cast back to tcp::socket before moving.</span></div>
-<div class="line"><span class="lineno">  152</span>        <span class="keywordflow">if</span> (m_tls)</div>
-<div class="line"><span class="lineno">  153</span>        {</div>
-<div class="line"><span class="lineno">  154</span>            <span class="keyword">auto</span>&amp; concrete = <span class="keyword">static_cast&lt;</span>boost::asio::ip::tcp::socket&amp;<span class="keyword">&gt;</span>(m_stream-&gt;lowest_layer());</div>
-<div class="line"><span class="lineno">  155</span>            m_stream = std::make_shared&lt;TlsStream&gt;(std::move(concrete), *m_context);</div>
-<div class="line"><span class="lineno">  156</span>        }</div>
-<div class="line"><span class="lineno">  157</span> </div>
-<div class="line"><span class="lineno">  158</span>        m_endpointId = <span class="stringliteral">&quot;client:&quot;</span> + host + <span class="stringliteral">&quot;:&quot;</span> + std::to_string(port);</div>
-<div class="line"><span class="lineno">  159</span>        m_connected = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  160</span>        setSocketOptions();</div>
-<div class="line"><span class="lineno">  161</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  162</span>    }</div>
-<div class="line"><span class="lineno">  163</span>    <span class="keywordflow">catch</span> (...)</div>
-<div class="line"><span class="lineno">  164</span>    {</div>
-<div class="line"><span class="lineno">  165</span>        closeInternal();</div>
-<div class="line"><span class="lineno">  166</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  167</span>    }</div>
-<div class="line"><span class="lineno">  168</span>}</div>
+<div class="line"><span class="lineno">  149</span>    <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  150</span>    {</div>
+<div class="line"><span class="lineno">  151</span>        boost::asio::ip::tcp::resolver resolver(m_stream-&gt;lowest_layer().get_executor());</div>
+<div class="line"><span class="lineno">  152</span>        <span class="keyword">auto</span> endpoints = resolver.resolve(host, std::to_string(port));</div>
+<div class="line"><span class="lineno">  153</span> </div>
+<div class="line"><span class="lineno">  154</span>        boost::asio::connect(m_stream-&gt;lowest_layer(), endpoints);</div>
+<div class="line"><span class="lineno">  155</span> </div>
+<div class="line"><span class="lineno">  156</span>        <span class="comment">// When TLS is enabled the stream must be rebuilt so its SSL context</span></div>
+<div class="line"><span class="lineno">  157</span>        <span class="comment">// matches the actual connection. lowest_layer() returns the socket as</span></div>
+<div class="line"><span class="lineno">  158</span>        <span class="comment">// its base type, so cast back to tcp::socket before moving.</span></div>
+<div class="line"><span class="lineno">  159</span>        <span class="keywordflow">if</span> (m_tls)</div>
+<div class="line"><span class="lineno">  160</span>        {</div>
+<div class="line"><span class="lineno">  161</span>            <span class="keyword">auto</span>&amp; concrete = <span class="keyword">static_cast&lt;</span>boost::asio::ip::tcp::socket&amp;<span class="keyword">&gt;</span>(m_stream-&gt;lowest_layer());</div>
+<div class="line"><span class="lineno">  162</span>            m_stream = std::make_shared&lt;TlsStream&gt;(std::move(concrete), *m_context);</div>
+<div class="line"><span class="lineno">  163</span>        }</div>
+<div class="line"><span class="lineno">  164</span> </div>
+<div class="line"><span class="lineno">  165</span>        m_endpointId = <span class="stringliteral">&quot;client:&quot;</span> + host + <span class="stringliteral">&quot;:&quot;</span> + std::to_string(port);</div>
+<div class="line"><span class="lineno">  166</span>        m_connected = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  167</span>        setSocketOptions();</div>
+<div class="line"><span class="lineno">  168</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  169</span>    }</div>
+<div class="line"><span class="lineno">  170</span>    <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><span class="lineno">  171</span>    {</div>
+<div class="line"><span class="lineno">  172</span>        closeInternal();</div>
+<div class="line"><span class="lineno">  173</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  174</span>    }</div>
+<div class="line"><span class="lineno">  175</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -495,24 +495,24 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Upgrade the connection to TLS. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">context</td><td>A context from <a class="el" href="../../d7/d94/namespacenexilis_1_1tls.html#ab2da4f30ec86e994dccc7cee18334b9c">tls::createPskContext()</a>, or nullptr to keep the connection plaintext. Must be set before the first <a class="el" href="../../d3/ddc/classnexilis_1_1boost__tcp_1_1Socket.html#a4a66789d06571fc9141f40f8a42dc377">send()</a>/receive(); the handshake runs lazily there. </td></tr>
+    <tr><td class="paramname">context</td><td>A TLS context, or nullptr to keep the connection plaintext. Must be set before the first <a class="el" href="../../d3/ddc/classnexilis_1_1boost__tcp_1_1Socket.html#a4a66789d06571fc9141f40f8a42dc377">send()</a>/receive(); the handshake runs lazily there. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00170">170</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  171</span>{</div>
-<div class="line"><span class="lineno">  172</span>    std::lock_guard&lt;std::mutex&gt; lock(m_mutex);</div>
-<div class="line"><span class="lineno">  173</span>    <span class="keywordflow">if</span> (context)</div>
-<div class="line"><span class="lineno">  174</span>    {</div>
-<div class="line"><span class="lineno">  175</span>        m_context = std::move(context);</div>
-<div class="line"><span class="lineno">  176</span>        m_tls = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  177</span>    }</div>
-<div class="line"><span class="lineno">  178</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  179</span>    {</div>
-<div class="line"><span class="lineno">  180</span>        m_tls = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  181</span>    }</div>
-<div class="line"><span class="lineno">  182</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00177">177</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  178</span>{</div>
+<div class="line"><span class="lineno">  179</span>    std::lock_guard&lt;std::mutex&gt; lock(m_mutex);</div>
+<div class="line"><span class="lineno">  180</span>    <span class="keywordflow">if</span> (context)</div>
+<div class="line"><span class="lineno">  181</span>    {</div>
+<div class="line"><span class="lineno">  182</span>        m_context = std::move(context);</div>
+<div class="line"><span class="lineno">  183</span>        m_tls = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  184</span>    }</div>
+<div class="line"><span class="lineno">  185</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  186</span>    {</div>
+<div class="line"><span class="lineno">  187</span>        m_tls = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  188</span>    }</div>
+<div class="line"><span class="lineno">  189</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -531,57 +531,57 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00418">418</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  419</span>{</div>
-<div class="line"><span class="lineno">  420</span>    std::unique_lock&lt;std::mutex&gt; lock(m_mutex, std::try_to_lock);</div>
-<div class="line"><span class="lineno">  421</span> </div>
-<div class="line"><span class="lineno">  422</span>    <span class="keywordflow">if</span> (!lock.owns_lock())</div>
-<div class="line"><span class="lineno">  423</span>    {</div>
-<div class="line"><span class="lineno">  424</span>        boost::system::error_code ec;</div>
-<div class="line"><span class="lineno">  425</span>        <span class="keywordflow">if</span> (m_stream)</div>
-<div class="line"><span class="lineno">  426</span>        {</div>
-<div class="line"><span class="lineno">  427</span>            <span class="keywordflow">if</span> (m_stream-&gt;lowest_layer().is_open())</div>
-<div class="line"><span class="lineno">  428</span>            {</div>
-<div class="line"><span class="lineno">  429</span>                ec = m_stream-&gt;lowest_layer().cancel(ec);</div>
-<div class="line"><span class="lineno">  430</span>                <span class="keywordflow">if</span> (ec)</div>
-<div class="line"><span class="lineno">  431</span>                {</div>
-<div class="line"><span class="lineno">  432</span>                    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Error cancelling socket&quot;</span>);</div>
-<div class="line"><span class="lineno">  433</span>                }</div>
-<div class="line"><span class="lineno">  434</span> </div>
-<div class="line"><span class="lineno">  435</span>                ec = m_stream-&gt;lowest_layer().close(ec);</div>
-<div class="line"><span class="lineno">  436</span>                <span class="keywordflow">if</span> (ec)</div>
-<div class="line"><span class="lineno">  437</span>                {</div>
-<div class="line"><span class="lineno">  438</span>                    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Error closing socket&quot;</span>);</div>
-<div class="line"><span class="lineno">  439</span>                }</div>
-<div class="line"><span class="lineno">  440</span>            }</div>
-<div class="line"><span class="lineno">  441</span>        }</div>
-<div class="line"><span class="lineno">  442</span> </div>
-<div class="line"><span class="lineno">  443</span>        <span class="keywordflow">if</span> (m_connected &amp;&amp; m_stream)</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00436">436</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  437</span>{</div>
+<div class="line"><span class="lineno">  438</span>    std::unique_lock&lt;std::mutex&gt; lock(m_mutex, std::try_to_lock);</div>
+<div class="line"><span class="lineno">  439</span> </div>
+<div class="line"><span class="lineno">  440</span>    <span class="keywordflow">if</span> (!lock.owns_lock())</div>
+<div class="line"><span class="lineno">  441</span>    {</div>
+<div class="line"><span class="lineno">  442</span>        boost::system::error_code ec;</div>
+<div class="line"><span class="lineno">  443</span>        <span class="keywordflow">if</span> (m_stream)</div>
 <div class="line"><span class="lineno">  444</span>        {</div>
-<div class="line"><span class="lineno">  445</span>            boost::system::error_code close_ec;</div>
-<div class="line"><span class="lineno">  446</span>            close_ec = m_stream-&gt;lowest_layer().cancel(close_ec);</div>
-<div class="line"><span class="lineno">  447</span>            <span class="keywordflow">if</span> (close_ec)</div>
-<div class="line"><span class="lineno">  448</span>            {</div>
-<div class="line"><span class="lineno">  449</span>                <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Error cancelling socket&quot;</span>);</div>
-<div class="line"><span class="lineno">  450</span>            }</div>
-<div class="line"><span class="lineno">  451</span> </div>
-<div class="line"><span class="lineno">  452</span>            close_ec = m_stream-&gt;lowest_layer().shutdown(boost::asio::ip::tcp::socket::shutdown_both, close_ec);</div>
-<div class="line"><span class="lineno">  453</span>            <span class="keywordflow">if</span> (close_ec)</div>
-<div class="line"><span class="lineno">  454</span>            {</div>
-<div class="line"><span class="lineno">  455</span>                <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Error shutting down socket&quot;</span>);</div>
-<div class="line"><span class="lineno">  456</span>            }</div>
-<div class="line"><span class="lineno">  457</span> </div>
-<div class="line"><span class="lineno">  458</span>            close_ec = m_stream-&gt;lowest_layer().close(close_ec);</div>
-<div class="line"><span class="lineno">  459</span>            <span class="keywordflow">if</span> (close_ec)</div>
-<div class="line"><span class="lineno">  460</span>            {</div>
-<div class="line"><span class="lineno">  461</span>                <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Error closing socket&quot;</span>);</div>
-<div class="line"><span class="lineno">  462</span>            }</div>
-<div class="line"><span class="lineno">  463</span> </div>
-<div class="line"><span class="lineno">  464</span>            m_connected = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  465</span>            m_tlsHandshaken.store(<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  466</span>        }</div>
-<div class="line"><span class="lineno">  467</span>    }</div>
-<div class="line"><span class="lineno">  468</span>}</div>
+<div class="line"><span class="lineno">  445</span>            <span class="keywordflow">if</span> (m_stream-&gt;lowest_layer().is_open())</div>
+<div class="line"><span class="lineno">  446</span>            {</div>
+<div class="line"><span class="lineno">  447</span>                ec = m_stream-&gt;lowest_layer().cancel(ec);</div>
+<div class="line"><span class="lineno">  448</span>                <span class="keywordflow">if</span> (ec)</div>
+<div class="line"><span class="lineno">  449</span>                {</div>
+<div class="line"><span class="lineno">  450</span>                    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Error cancelling socket&quot;</span>);</div>
+<div class="line"><span class="lineno">  451</span>                }</div>
+<div class="line"><span class="lineno">  452</span> </div>
+<div class="line"><span class="lineno">  453</span>                ec = m_stream-&gt;lowest_layer().close(ec);</div>
+<div class="line"><span class="lineno">  454</span>                <span class="keywordflow">if</span> (ec)</div>
+<div class="line"><span class="lineno">  455</span>                {</div>
+<div class="line"><span class="lineno">  456</span>                    <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Error closing socket&quot;</span>);</div>
+<div class="line"><span class="lineno">  457</span>                }</div>
+<div class="line"><span class="lineno">  458</span>            }</div>
+<div class="line"><span class="lineno">  459</span>        }</div>
+<div class="line"><span class="lineno">  460</span> </div>
+<div class="line"><span class="lineno">  461</span>        <span class="keywordflow">if</span> (m_connected &amp;&amp; m_stream)</div>
+<div class="line"><span class="lineno">  462</span>        {</div>
+<div class="line"><span class="lineno">  463</span>            boost::system::error_code close_ec;</div>
+<div class="line"><span class="lineno">  464</span>            close_ec = m_stream-&gt;lowest_layer().cancel(close_ec);</div>
+<div class="line"><span class="lineno">  465</span>            <span class="keywordflow">if</span> (close_ec)</div>
+<div class="line"><span class="lineno">  466</span>            {</div>
+<div class="line"><span class="lineno">  467</span>                <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Error cancelling socket&quot;</span>);</div>
+<div class="line"><span class="lineno">  468</span>            }</div>
+<div class="line"><span class="lineno">  469</span> </div>
+<div class="line"><span class="lineno">  470</span>            close_ec = m_stream-&gt;lowest_layer().shutdown(boost::asio::ip::tcp::socket::shutdown_both, close_ec);</div>
+<div class="line"><span class="lineno">  471</span>            <span class="keywordflow">if</span> (close_ec)</div>
+<div class="line"><span class="lineno">  472</span>            {</div>
+<div class="line"><span class="lineno">  473</span>                <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Error shutting down socket&quot;</span>);</div>
+<div class="line"><span class="lineno">  474</span>            }</div>
+<div class="line"><span class="lineno">  475</span> </div>
+<div class="line"><span class="lineno">  476</span>            close_ec = m_stream-&gt;lowest_layer().close(close_ec);</div>
+<div class="line"><span class="lineno">  477</span>            <span class="keywordflow">if</span> (close_ec)</div>
+<div class="line"><span class="lineno">  478</span>            {</div>
+<div class="line"><span class="lineno">  479</span>                <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Error closing socket&quot;</span>);</div>
+<div class="line"><span class="lineno">  480</span>            }</div>
+<div class="line"><span class="lineno">  481</span> </div>
+<div class="line"><span class="lineno">  482</span>            m_connected = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  483</span>            m_tlsHandshaken.store(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  484</span>        }</div>
+<div class="line"><span class="lineno">  485</span>    }</div>
+<div class="line"><span class="lineno">  486</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -614,10 +614,10 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00470">470</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  471</span>{</div>
-<div class="line"><span class="lineno">  472</span>    <span class="keywordflow">return</span> m_endpointId;</div>
-<div class="line"><span class="lineno">  473</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00488">488</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  489</span>{</div>
+<div class="line"><span class="lineno">  490</span>    <span class="keywordflow">return</span> m_endpointId;</div>
+<div class="line"><span class="lineno">  491</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -636,23 +636,23 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00481">481</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  482</span>{</div>
-<div class="line"><span class="lineno">  483</span>    std::lock_guard&lt;std::mutex&gt; lock(m_mutex);</div>
-<div class="line"><span class="lineno">  484</span>    <span class="keywordflow">if</span> (!m_stream || !m_stream-&gt;lowest_layer().is_open())</div>
-<div class="line"><span class="lineno">  485</span>    {</div>
-<div class="line"><span class="lineno">  486</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;disconnected&quot;</span>;</div>
-<div class="line"><span class="lineno">  487</span>    }</div>
-<div class="line"><span class="lineno">  488</span> </div>
-<div class="line"><span class="lineno">  489</span>    <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  490</span>    {</div>
-<div class="line"><span class="lineno">  491</span>        <span class="keywordflow">return</span> m_stream-&gt;lowest_layer().remote_endpoint().address().to_string();</div>
-<div class="line"><span class="lineno">  492</span>    }</div>
-<div class="line"><span class="lineno">  493</span>    <span class="keywordflow">catch</span> (...)</div>
-<div class="line"><span class="lineno">  494</span>    {</div>
-<div class="line"><span class="lineno">  495</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;unknown&quot;</span>;</div>
-<div class="line"><span class="lineno">  496</span>    }</div>
-<div class="line"><span class="lineno">  497</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00499">499</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  500</span>{</div>
+<div class="line"><span class="lineno">  501</span>    std::lock_guard&lt;std::mutex&gt; lock(m_mutex);</div>
+<div class="line"><span class="lineno">  502</span>    <span class="keywordflow">if</span> (!m_stream || !m_stream-&gt;lowest_layer().is_open())</div>
+<div class="line"><span class="lineno">  503</span>    {</div>
+<div class="line"><span class="lineno">  504</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;disconnected&quot;</span>;</div>
+<div class="line"><span class="lineno">  505</span>    }</div>
+<div class="line"><span class="lineno">  506</span> </div>
+<div class="line"><span class="lineno">  507</span>    <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  508</span>    {</div>
+<div class="line"><span class="lineno">  509</span>        <span class="keywordflow">return</span> m_stream-&gt;lowest_layer().remote_endpoint().address().to_string();</div>
+<div class="line"><span class="lineno">  510</span>    }</div>
+<div class="line"><span class="lineno">  511</span>    <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><span class="lineno">  512</span>    {</div>
+<div class="line"><span class="lineno">  513</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;unknown&quot;</span>;</div>
+<div class="line"><span class="lineno">  514</span>    }</div>
+<div class="line"><span class="lineno">  515</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -671,11 +671,11 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00475">475</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  476</span>{</div>
-<div class="line"><span class="lineno">  477</span>    std::lock_guard&lt;std::mutex&gt; lock(m_mutex);</div>
-<div class="line"><span class="lineno">  478</span>    <span class="keywordflow">return</span> m_stream &amp;&amp; m_stream-&gt;lowest_layer().is_open();</div>
-<div class="line"><span class="lineno">  479</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00493">493</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  494</span>{</div>
+<div class="line"><span class="lineno">  495</span>    std::lock_guard&lt;std::mutex&gt; lock(m_mutex);</div>
+<div class="line"><span class="lineno">  496</span>    <span class="keywordflow">return</span> m_stream &amp;&amp; m_stream-&gt;lowest_layer().is_open();</div>
+<div class="line"><span class="lineno">  497</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -715,27 +715,27 @@ Here is the caller graph for this function:</div>
 
 <p>Move assigment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00112">112</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  113</span>{</div>
-<div class="line"><span class="lineno">  114</span>    <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;other)</div>
-<div class="line"><span class="lineno">  115</span>    {</div>
-<div class="line"><span class="lineno">  116</span>        <span class="keyword">static_cast&lt;</span><a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696">NxClass</a>&amp;<span class="keyword">&gt;</span>(*this) = <span class="keyword">static_cast&lt;</span><a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696">NxClass</a>&amp;&amp;<span class="keyword">&gt;</span>(other);</div>
-<div class="line"><span class="lineno">  117</span>        std::lock_guard&lt;std::mutex&gt; lock(m_mutex);</div>
-<div class="line"><span class="lineno">  118</span>        std::lock_guard&lt;std::mutex&gt; other_lock(other.m_mutex);</div>
-<div class="line"><span class="lineno">  119</span> </div>
-<div class="line"><span class="lineno">  120</span>        m_stream.reset();</div>
-<div class="line"><span class="lineno">  121</span>        m_io = std::move(other.m_io);</div>
-<div class="line"><span class="lineno">  122</span>        m_context = std::move(other.m_context);</div>
-<div class="line"><span class="lineno">  123</span>        m_stream = std::move(other.m_stream);</div>
-<div class="line"><span class="lineno">  124</span>        m_connected = other.m_connected.load();</div>
-<div class="line"><span class="lineno">  125</span>        m_tls = other.m_tls.load();</div>
-<div class="line"><span class="lineno">  126</span>        m_tlsHandshaken = other.m_tlsHandshaken.load();</div>
-<div class="line"><span class="lineno">  127</span>        m_tlsServer = other.m_tlsServer;</div>
-<div class="line"><span class="lineno">  128</span>        m_endpointId = std::move(other.m_endpointId);</div>
-<div class="line"><span class="lineno">  129</span>        other.m_connected.store(<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  130</span>    }</div>
-<div class="line"><span class="lineno">  131</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  132</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00119">119</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  120</span>{</div>
+<div class="line"><span class="lineno">  121</span>    <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;other)</div>
+<div class="line"><span class="lineno">  122</span>    {</div>
+<div class="line"><span class="lineno">  123</span>        <span class="keyword">static_cast&lt;</span><a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696">NxClass</a>&amp;<span class="keyword">&gt;</span>(*this) = <span class="keyword">static_cast&lt;</span><a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696">NxClass</a>&amp;&amp;<span class="keyword">&gt;</span>(other);</div>
+<div class="line"><span class="lineno">  124</span>        std::lock_guard&lt;std::mutex&gt; lock(m_mutex);</div>
+<div class="line"><span class="lineno">  125</span>        std::lock_guard&lt;std::mutex&gt; other_lock(other.m_mutex);</div>
+<div class="line"><span class="lineno">  126</span> </div>
+<div class="line"><span class="lineno">  127</span>        m_stream.reset();</div>
+<div class="line"><span class="lineno">  128</span>        m_io = std::move(other.m_io);</div>
+<div class="line"><span class="lineno">  129</span>        m_context = std::move(other.m_context);</div>
+<div class="line"><span class="lineno">  130</span>        m_stream = std::move(other.m_stream);</div>
+<div class="line"><span class="lineno">  131</span>        m_connected = other.m_connected.load();</div>
+<div class="line"><span class="lineno">  132</span>        m_tls = other.m_tls.load();</div>
+<div class="line"><span class="lineno">  133</span>        m_tlsHandshaken = other.m_tlsHandshaken.load();</div>
+<div class="line"><span class="lineno">  134</span>        m_tlsServer = other.m_tlsServer;</div>
+<div class="line"><span class="lineno">  135</span>        m_endpointId = std::move(other.m_endpointId);</div>
+<div class="line"><span class="lineno">  136</span>        other.m_connected.store(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  137</span>    }</div>
+<div class="line"><span class="lineno">  138</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  139</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -766,116 +766,130 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Poll for the first byte, then require a complete frame within five seconds. Frames larger than NEXILIS_BUFFER and incomplete frames close the connection. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00272">272</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  273</span>{</div>
-<div class="line"><span class="lineno">  274</span>    <span class="comment">// The socket mutex must NOT be held while waiting for data in select().</span></div>
-<div class="line"><span class="lineno">  275</span>    <span class="comment">// The server can call send() on this socket from another client&#39;s thread</span></div>
-<div class="line"><span class="lineno">  276</span>    <span class="comment">// (e.g. relaying a room command to this client). Holding the mutex for the</span></div>
-<div class="line"><span class="lineno">  277</span>    <span class="comment">// whole select() duration starves that thread indefinitely and deadlocks</span></div>
-<div class="line"><span class="lineno">  278</span>    <span class="comment">// the server. Check the connection state briefly, then wait for data</span></div>
-<div class="line"><span class="lineno">  279</span>    <span class="comment">// without holding the mutex.</span></div>
-<div class="line"><span class="lineno">  280</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../d3/ddc/classnexilis_1_1boost__tcp_1_1Socket.html#aa2f5d2e813242f7b0424686e3eea6279">isOpen</a>())</div>
-<div class="line"><span class="lineno">  281</span>    {</div>
-<div class="line"><span class="lineno">  282</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  283</span>    }</div>
-<div class="line"><span class="lineno">  284</span> </div>
-<div class="line"><span class="lineno">  285</span>    <span class="comment">// With TLS the handshake runs first, blocking on this worker thread. The</span></div>
-<div class="line"><span class="lineno">  286</span>    <span class="comment">// peer performs its half of the handshake right after the TCP connect, so</span></div>
-<div class="line"><span class="lineno">  287</span>    <span class="comment">// this completes without any application data.</span></div>
-<div class="line"><span class="lineno">  288</span>    <span class="keywordflow">if</span> (m_tls)</div>
-<div class="line"><span class="lineno">  289</span>    {</div>
-<div class="line"><span class="lineno">  290</span>        std::lock_guard&lt;std::mutex&gt; lock(m_mutex);</div>
-<div class="line"><span class="lineno">  291</span>        <span class="keywordflow">if</span> (!ensureHandshakeInternal())</div>
-<div class="line"><span class="lineno">  292</span>        {</div>
-<div class="line"><span class="lineno">  293</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  294</span>        }</div>
-<div class="line"><span class="lineno">  295</span>    }</div>
-<div class="line"><span class="lineno">  296</span> </div>
-<div class="line"><span class="lineno">  297</span>    <span class="comment">// Plaintext data buffered inside the TLS record layer must be consumed</span></div>
-<div class="line"><span class="lineno">  298</span>    <span class="comment">// even when the kernel socket has nothing further to deliver; otherwise</span></div>
-<div class="line"><span class="lineno">  299</span>    <span class="comment">// two messages coalesced into one TLS record would stall until new</span></div>
-<div class="line"><span class="lineno">  300</span>    <span class="comment">// network traffic arrived.</span></div>
-<div class="line"><span class="lineno">  301</span>    <span class="keywordtype">bool</span> pending = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  302</span>    <span class="keywordflow">if</span> (m_tls)</div>
-<div class="line"><span class="lineno">  303</span>    {</div>
-<div class="line"><span class="lineno">  304</span>        pending = SSL_pending(m_stream-&gt;native_handle()) &gt; 0;</div>
-<div class="line"><span class="lineno">  305</span>    }</div>
-<div class="line"><span class="lineno">  306</span> </div>
-<div class="line"><span class="lineno">  307</span>    <span class="keywordflow">if</span> (!pending)</div>
-<div class="line"><span class="lineno">  308</span>    {</div>
-<div class="line"><span class="lineno">  309</span>        fd_set read_fds;</div>
-<div class="line"><span class="lineno">  310</span>        FD_ZERO(&amp;read_fds);</div>
-<div class="line"><span class="lineno">  311</span>        FD_SET(m_stream-&gt;lowest_layer().native_handle(), &amp;read_fds);</div>
-<div class="line"><span class="lineno">  312</span> </div>
-<div class="line"><span class="lineno">  313</span>        timeval timeout;</div>
-<div class="line"><span class="lineno">  314</span>        timeout.tv_sec = timeout_ms / 1000;</div>
-<div class="line"><span class="lineno">  315</span>        timeout.tv_usec = (timeout_ms % 1000) * 1000;</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00276">276</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  277</span>{</div>
+<div class="line"><span class="lineno">  278</span>    <span class="comment">// The socket mutex must NOT be held while waiting for data in select().</span></div>
+<div class="line"><span class="lineno">  279</span>    <span class="comment">// The server can call send() on this socket from another client&#39;s thread</span></div>
+<div class="line"><span class="lineno">  280</span>    <span class="comment">// (e.g. relaying a room command to this client). Holding the mutex for the</span></div>
+<div class="line"><span class="lineno">  281</span>    <span class="comment">// whole select() duration starves that thread indefinitely and deadlocks</span></div>
+<div class="line"><span class="lineno">  282</span>    <span class="comment">// the server. Check the connection state briefly, then wait for data</span></div>
+<div class="line"><span class="lineno">  283</span>    <span class="comment">// without holding the mutex.</span></div>
+<div class="line"><span class="lineno">  284</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../d3/ddc/classnexilis_1_1boost__tcp_1_1Socket.html#aa2f5d2e813242f7b0424686e3eea6279">isOpen</a>())</div>
+<div class="line"><span class="lineno">  285</span>    {</div>
+<div class="line"><span class="lineno">  286</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  287</span>    }</div>
+<div class="line"><span class="lineno">  288</span> </div>
+<div class="line"><span class="lineno">  289</span>    <span class="comment">// With TLS the handshake runs first, blocking on this worker thread. The</span></div>
+<div class="line"><span class="lineno">  290</span>    <span class="comment">// peer performs its half of the handshake right after the TCP connect, so</span></div>
+<div class="line"><span class="lineno">  291</span>    <span class="comment">// this completes without any application data.</span></div>
+<div class="line"><span class="lineno">  292</span>    <span class="keywordflow">if</span> (m_tls)</div>
+<div class="line"><span class="lineno">  293</span>    {</div>
+<div class="line"><span class="lineno">  294</span>        std::lock_guard&lt;std::mutex&gt; lock(m_mutex);</div>
+<div class="line"><span class="lineno">  295</span>        <span class="keywordflow">if</span> (!ensureHandshakeInternal())</div>
+<div class="line"><span class="lineno">  296</span>        {</div>
+<div class="line"><span class="lineno">  297</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  298</span>        }</div>
+<div class="line"><span class="lineno">  299</span>    }</div>
+<div class="line"><span class="lineno">  300</span> </div>
+<div class="line"><span class="lineno">  301</span>    <span class="comment">// A TLS stream can hold encrypted bytes inside Asio as well as OpenSSL.</span></div>
+<div class="line"><span class="lineno">  302</span>    <span class="comment">// Polling only the underlying socket would miss those bytes, so TLS reads</span></div>
+<div class="line"><span class="lineno">  303</span>    <span class="comment">// wait for the first byte through the stream itself below.</span></div>
+<div class="line"><span class="lineno">  304</span>    <span class="keywordflow">if</span> (!m_tls)</div>
+<div class="line"><span class="lineno">  305</span>    {</div>
+<div class="line"><span class="lineno">  306</span>        fd_set read_fds;</div>
+<div class="line"><span class="lineno">  307</span>        FD_ZERO(&amp;read_fds);</div>
+<div class="line"><span class="lineno">  308</span>        FD_SET(m_stream-&gt;lowest_layer().native_handle(), &amp;read_fds);</div>
+<div class="line"><span class="lineno">  309</span> </div>
+<div class="line"><span class="lineno">  310</span>        timeval timeout;</div>
+<div class="line"><span class="lineno">  311</span>        timeout.tv_sec = timeout_ms / 1000;</div>
+<div class="line"><span class="lineno">  312</span>        timeout.tv_usec = (timeout_ms % 1000) * 1000;</div>
+<div class="line"><span class="lineno">  313</span> </div>
+<div class="line"><span class="lineno">  314</span>        <span class="keywordtype">int</span> result = select(m_stream-&gt;lowest_layer().native_handle() + 1, &amp;read_fds, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>,</div>
+<div class="line"><span class="lineno">  315</span>                            timeout_ms &gt; 0 ? &amp;timeout : nullptr);</div>
 <div class="line"><span class="lineno">  316</span> </div>
-<div class="line"><span class="lineno">  317</span>        <span class="keywordtype">int</span> result = select(m_stream-&gt;lowest_layer().native_handle() + 1, &amp;read_fds, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>,</div>
-<div class="line"><span class="lineno">  318</span>                            timeout_ms &gt; 0 ? &amp;timeout : nullptr);</div>
-<div class="line"><span class="lineno">  319</span> </div>
-<div class="line"><span class="lineno">  320</span>        <span class="keywordflow">if</span> (result &lt;= 0)</div>
-<div class="line"><span class="lineno">  321</span>        {</div>
-<div class="line"><span class="lineno">  322</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>; <span class="comment">// Timeout or error</span></div>
-<div class="line"><span class="lineno">  323</span>        }</div>
-<div class="line"><span class="lineno">  324</span>    }</div>
-<div class="line"><span class="lineno">  325</span> </div>
-<div class="line"><span class="lineno">  326</span>    <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  327</span>    {</div>
-<div class="line"><span class="lineno">  328</span>        std::lock_guard&lt;std::mutex&gt; lock(m_mutex);</div>
-<div class="line"><span class="lineno">  329</span>        <span class="keywordflow">if</span> (!m_connected)</div>
-<div class="line"><span class="lineno">  330</span>        {</div>
-<div class="line"><span class="lineno">  331</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  332</span>        }</div>
-<div class="line"><span class="lineno">  333</span> </div>
-<div class="line"><span class="lineno">  334</span>        <span class="comment">// One deadline covers the complete prefix and body, so a peer cannot</span></div>
-<div class="line"><span class="lineno">  335</span>        <span class="comment">// extend it indefinitely by trickling bytes.</span></div>
-<div class="line"><span class="lineno">  336</span>        <span class="keyword">const</span> <span class="keyword">auto</span> deadline = Clock::now() + kReadDeadline;</div>
-<div class="line"><span class="lineno">  337</span>        <span class="keyword">auto</span> readExact = [&amp;](<span class="keyword">auto</span> buffer)</div>
-<div class="line"><span class="lineno">  338</span>        {</div>
-<div class="line"><span class="lineno">  339</span>            <span class="keywordflow">return</span> runUntil(*m_io, m_stream-&gt;next_layer(), deadline, [&amp;](<span class="keyword">auto</span> handler)</div>
-<div class="line"><span class="lineno">  340</span>                            {</div>
-<div class="line"><span class="lineno">  341</span>                if (m_tls)</div>
-<div class="line"><span class="lineno">  342</span>                    boost::asio::async_read(*m_stream, buffer, std::move(handler));</div>
-<div class="line"><span class="lineno">  343</span>                else</div>
-<div class="line"><span class="lineno">  344</span>                    boost::asio::async_read(m_stream-&gt;next_layer(), buffer, std::move(handler)); });</div>
-<div class="line"><span class="lineno">  345</span>        };</div>
-<div class="line"><span class="lineno">  346</span>        uint8_t len_buf[4];</div>
-<div class="line"><span class="lineno">  347</span>        <span class="keywordflow">if</span> (!readExact(boost::asio::buffer(len_buf)))</div>
-<div class="line"><span class="lineno">  348</span>        {</div>
-<div class="line"><span class="lineno">  349</span>            closeInternal();</div>
-<div class="line"><span class="lineno">  350</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  351</span>        }</div>
-<div class="line"><span class="lineno">  352</span> </div>
-<div class="line"><span class="lineno">  353</span>        uint32_t payload_size = (<span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(len_buf[0]) &lt;&lt; 24) |</div>
-<div class="line"><span class="lineno">  354</span>                                (<span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(len_buf[1]) &lt;&lt; 16) |</div>
-<div class="line"><span class="lineno">  355</span>                                (<span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(len_buf[2]) &lt;&lt; 8) |</div>
-<div class="line"><span class="lineno">  356</span>                                (<span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(len_buf[3]));</div>
-<div class="line"><span class="lineno">  357</span> </div>
-<div class="line"><span class="lineno">  358</span>        <span class="keywordflow">if</span> (payload_size &gt; <a class="code hl_variable" href="../../d8/d34/namespacenexilis.html#a717456a24bf765b810c02091955de914">NEXILIS_BUFFER</a>)</div>
-<div class="line"><span class="lineno">  359</span>        {</div>
-<div class="line"><span class="lineno">  360</span>            data.clear();</div>
-<div class="line"><span class="lineno">  361</span>            closeInternal();</div>
-<div class="line"><span class="lineno">  362</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  317</span>        <span class="keywordflow">if</span> (result &lt;= 0)</div>
+<div class="line"><span class="lineno">  318</span>        {</div>
+<div class="line"><span class="lineno">  319</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>; <span class="comment">// Timeout or error</span></div>
+<div class="line"><span class="lineno">  320</span>        }</div>
+<div class="line"><span class="lineno">  321</span>    }</div>
+<div class="line"><span class="lineno">  322</span> </div>
+<div class="line"><span class="lineno">  323</span>    <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  324</span>    {</div>
+<div class="line"><span class="lineno">  325</span>        std::unique_lock&lt;std::mutex&gt; lock(m_mutex);</div>
+<div class="line"><span class="lineno">  326</span>        m_sendCompleted.wait(lock, [<span class="keyword">this</span>]</div>
+<div class="line"><span class="lineno">  327</span>                             { <span class="keywordflow">return</span> m_sendWaiters.load() == 0; });</div>
+<div class="line"><span class="lineno">  328</span>        <span class="keywordflow">if</span> (!m_connected)</div>
+<div class="line"><span class="lineno">  329</span>        {</div>
+<div class="line"><span class="lineno">  330</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  331</span>        }</div>
+<div class="line"><span class="lineno">  332</span> </div>
+<div class="line"><span class="lineno">  333</span>        <span class="comment">// One deadline covers the complete prefix and body, so a peer cannot</span></div>
+<div class="line"><span class="lineno">  334</span>        <span class="comment">// extend it indefinitely by trickling bytes.</span></div>
+<div class="line"><span class="lineno">  335</span>        <span class="keyword">auto</span> deadline = Clock::now() + kReadDeadline;</div>
+<div class="line"><span class="lineno">  336</span>        <span class="keyword">auto</span> readExact = [&amp;](<span class="keyword">auto</span> buffer)</div>
+<div class="line"><span class="lineno">  337</span>        {</div>
+<div class="line"><span class="lineno">  338</span>            <span class="keywordflow">return</span> runUntil(*m_io, m_stream-&gt;next_layer(), deadline, [&amp;](<span class="keyword">auto</span> handler)</div>
+<div class="line"><span class="lineno">  339</span>                            {</div>
+<div class="line"><span class="lineno">  340</span>                if (m_tls)</div>
+<div class="line"><span class="lineno">  341</span>                    boost::asio::async_read(*m_stream, buffer, std::move(handler));</div>
+<div class="line"><span class="lineno">  342</span>                else</div>
+<div class="line"><span class="lineno">  343</span>                    boost::asio::async_read(m_stream-&gt;next_layer(), buffer, std::move(handler)); });</div>
+<div class="line"><span class="lineno">  344</span>        };</div>
+<div class="line"><span class="lineno">  345</span>        uint8_t len_buf[4];</div>
+<div class="line"><span class="lineno">  346</span>        <span class="keywordflow">if</span> (m_tls)</div>
+<div class="line"><span class="lineno">  347</span>        {</div>
+<div class="line"><span class="lineno">  348</span>            <span class="keywordtype">bool</span> idleTimedOut = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  349</span>            <span class="keyword">const</span> <span class="keyword">auto</span> pollDeadline = timeout_ms &gt; 0</div>
+<div class="line"><span class="lineno">  350</span>                                              ? Clock::now() + std::chrono::milliseconds(timeout_ms)</div>
+<div class="line"><span class="lineno">  351</span>                                              : Clock::time_point::max();</div>
+<div class="line"><span class="lineno">  352</span>            <span class="keyword">const</span> <span class="keywordtype">bool</span> gotFirstByte = runUntil(*m_io, m_stream-&gt;next_layer(), pollDeadline, [&amp;](<span class="keyword">auto</span> handler)</div>
+<div class="line"><span class="lineno">  353</span>                                               { boost::asio::async_read(*m_stream,</div>
+<div class="line"><span class="lineno">  354</span>                                                                         boost::asio::buffer(len_buf, 1),</div>
+<div class="line"><span class="lineno">  355</span>                                                                         std::move(handler)); }, &amp;idleTimedOut);</div>
+<div class="line"><span class="lineno">  356</span>            <span class="keywordflow">if</span> (!gotFirstByte)</div>
+<div class="line"><span class="lineno">  357</span>            {</div>
+<div class="line"><span class="lineno">  358</span>                <span class="keywordflow">if</span> (!idleTimedOut)</div>
+<div class="line"><span class="lineno">  359</span>                    closeInternal();</div>
+<div class="line"><span class="lineno">  360</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  361</span>            }</div>
+<div class="line"><span class="lineno">  362</span>            deadline = Clock::now() + kReadDeadline;</div>
 <div class="line"><span class="lineno">  363</span>        }</div>
-<div class="line"><span class="lineno">  364</span> </div>
-<div class="line"><span class="lineno">  365</span>        <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> payload(payload_size);</div>
-<div class="line"><span class="lineno">  366</span>        <span class="keywordflow">if</span> (payload_size != 0 &amp;&amp; !readExact(boost::asio::buffer(payload)))</div>
-<div class="line"><span class="lineno">  367</span>        {</div>
-<div class="line"><span class="lineno">  368</span>            data.clear();</div>
-<div class="line"><span class="lineno">  369</span>            closeInternal();</div>
-<div class="line"><span class="lineno">  370</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  371</span>        }</div>
-<div class="line"><span class="lineno">  372</span>        data = std::move(payload);</div>
-<div class="line"><span class="lineno">  373</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  374</span>    }</div>
-<div class="line"><span class="lineno">  375</span>    <span class="keywordflow">catch</span> (...)</div>
-<div class="line"><span class="lineno">  376</span>    {</div>
-<div class="line"><span class="lineno">  377</span>        closeInternal();</div>
-<div class="line"><span class="lineno">  378</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  379</span>    }</div>
-<div class="line"><span class="lineno">  380</span>}</div>
-<div class="ttc" id="aclassnexilis_1_1boost__tcp_1_1Socket_html_aa2f5d2e813242f7b0424686e3eea6279"><div class="ttname"><a href="../../d3/ddc/classnexilis_1_1boost__tcp_1_1Socket.html#aa2f5d2e813242f7b0424686e3eea6279">nexilis::boost_tcp::Socket::isOpen</a></div><div class="ttdeci">bool isOpen() const</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d88/socket_8cc_source.html#l00475">socket.cc:475</a></div></div>
+<div class="line"><span class="lineno">  364</span>        <span class="keywordflow">if</span> (!readExact(m_tls ? boost::asio::buffer(len_buf + 1, 3)</div>
+<div class="line"><span class="lineno">  365</span>                             : boost::asio::buffer(len_buf)))</div>
+<div class="line"><span class="lineno">  366</span>        {</div>
+<div class="line"><span class="lineno">  367</span>            closeInternal();</div>
+<div class="line"><span class="lineno">  368</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  369</span>        }</div>
+<div class="line"><span class="lineno">  370</span> </div>
+<div class="line"><span class="lineno">  371</span>        uint32_t payload_size = (<span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(len_buf[0]) &lt;&lt; 24) |</div>
+<div class="line"><span class="lineno">  372</span>                                (<span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(len_buf[1]) &lt;&lt; 16) |</div>
+<div class="line"><span class="lineno">  373</span>                                (<span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(len_buf[2]) &lt;&lt; 8) |</div>
+<div class="line"><span class="lineno">  374</span>                                (<span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(len_buf[3]));</div>
+<div class="line"><span class="lineno">  375</span> </div>
+<div class="line"><span class="lineno">  376</span>        <span class="keywordflow">if</span> (payload_size &gt; <a class="code hl_variable" href="../../d8/d34/namespacenexilis.html#a717456a24bf765b810c02091955de914">NEXILIS_BUFFER</a>)</div>
+<div class="line"><span class="lineno">  377</span>        {</div>
+<div class="line"><span class="lineno">  378</span>            data.clear();</div>
+<div class="line"><span class="lineno">  379</span>            closeInternal();</div>
+<div class="line"><span class="lineno">  380</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  381</span>        }</div>
+<div class="line"><span class="lineno">  382</span> </div>
+<div class="line"><span class="lineno">  383</span>        <a class="code hl_typedef" href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nx_data</a> payload(payload_size);</div>
+<div class="line"><span class="lineno">  384</span>        <span class="keywordflow">if</span> (payload_size != 0 &amp;&amp; !readExact(boost::asio::buffer(payload)))</div>
+<div class="line"><span class="lineno">  385</span>        {</div>
+<div class="line"><span class="lineno">  386</span>            data.clear();</div>
+<div class="line"><span class="lineno">  387</span>            closeInternal();</div>
+<div class="line"><span class="lineno">  388</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  389</span>        }</div>
+<div class="line"><span class="lineno">  390</span>        data = std::move(payload);</div>
+<div class="line"><span class="lineno">  391</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  392</span>    }</div>
+<div class="line"><span class="lineno">  393</span>    <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><span class="lineno">  394</span>    {</div>
+<div class="line"><span class="lineno">  395</span>        closeInternal();</div>
+<div class="line"><span class="lineno">  396</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  397</span>    }</div>
+<div class="line"><span class="lineno">  398</span>}</div>
+<div class="ttc" id="aclassnexilis_1_1boost__tcp_1_1Socket_html_aa2f5d2e813242f7b0424686e3eea6279"><div class="ttname"><a href="../../d3/ddc/classnexilis_1_1boost__tcp_1_1Socket.html#aa2f5d2e813242f7b0424686e3eea6279">nexilis::boost_tcp::Socket::isOpen</a></div><div class="ttdeci">bool isOpen() const</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d88/socket_8cc_source.html#l00493">socket.cc:493</a></div></div>
 <div class="ttc" id="anamespacenexilis_html_a279ce2b95cb6cfebfb8a884fcf615072"><div class="ttname"><a href="../../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072">nexilis::nx_data</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; nx_data</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dd2/nx__data_8hh_source.html#l00026">nx_data.hh:26</a></div></div>
 <div class="ttc" id="anamespacenexilis_html_a717456a24bf765b810c02091955de914"><div class="ttname"><a href="../../d8/d34/namespacenexilis.html#a717456a24bf765b810c02091955de914">nexilis::NEXILIS_BUFFER</a></div><div class="ttdeci">constexpr uint64_t NEXILIS_BUFFER</div><div class="ttdef"><b>Definition</b> <a href="../../dd/da5/nexilis__constants_8hh_source.html#l00026">nexilis_constants.hh:26</a></div></div>
 </div><!-- fragment --><div class="dynheader">
@@ -907,44 +921,41 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00233">233</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  234</span>{</div>
-<div class="line"><span class="lineno">  235</span>    std::lock_guard&lt;std::mutex&gt; lock(m_mutex);</div>
-<div class="line"><span class="lineno">  236</span> </div>
-<div class="line"><span class="lineno">  237</span>    <span class="keywordflow">if</span> (!m_connected)</div>
-<div class="line"><span class="lineno">  238</span>    {</div>
-<div class="line"><span class="lineno">  239</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  240</span>    }</div>
-<div class="line"><span class="lineno">  241</span> </div>
-<div class="line"><span class="lineno">  242</span>    <span class="keywordflow">if</span> (m_tls &amp;&amp; !ensureHandshakeInternal())</div>
-<div class="line"><span class="lineno">  243</span>    {</div>
-<div class="line"><span class="lineno">  244</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  245</span>    }</div>
-<div class="line"><span class="lineno">  246</span> </div>
-<div class="line"><span class="lineno">  247</span>    <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  248</span>    {</div>
-<div class="line"><span class="lineno">  249</span>        <span class="keyword">const</span> <span class="keywordtype">bool</span> sent = runUntil(*m_io, m_stream-&gt;next_layer(), Clock::now() + kWriteDeadline,</div>
-<div class="line"><span class="lineno">  250</span>                                   [&amp;](<span class="keyword">auto</span> handler)</div>
-<div class="line"><span class="lineno">  251</span>                                   {</div>
-<div class="line"><span class="lineno">  252</span>                                       if (m_tls)</div>
-<div class="line"><span class="lineno">  253</span>                                           boost::asio::async_write(*m_stream,</div>
-<div class="line"><span class="lineno">  254</span>                                                                    boost::asio::buffer(data),</div>
-<div class="line"><span class="lineno">  255</span>                                                                    std::move(handler));</div>
-<div class="line"><span class="lineno">  256</span>                                       else</div>
-<div class="line"><span class="lineno">  257</span>                                           boost::asio::async_write(m_stream-&gt;next_layer(),</div>
-<div class="line"><span class="lineno">  258</span>                                                                    boost::asio::buffer(data),</div>
-<div class="line"><span class="lineno">  259</span>                                                                    std::move(handler));</div>
-<div class="line"><span class="lineno">  260</span>                                   });</div>
-<div class="line"><span class="lineno">  261</span>        <span class="keywordflow">if</span> (!sent)</div>
-<div class="line"><span class="lineno">  262</span>            closeInternal();</div>
-<div class="line"><span class="lineno">  263</span>        <span class="keywordflow">return</span> sent;</div>
-<div class="line"><span class="lineno">  264</span>    }</div>
-<div class="line"><span class="lineno">  265</span>    <span class="keywordflow">catch</span> (...)</div>
-<div class="line"><span class="lineno">  266</span>    {</div>
-<div class="line"><span class="lineno">  267</span>        closeInternal();</div>
-<div class="line"><span class="lineno">  268</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  269</span>    }</div>
-<div class="line"><span class="lineno">  270</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00240">240</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  241</span>{</div>
+<div class="line"><span class="lineno">  242</span>    <span class="comment">// Let an idle receive poll yield the socket lock to a waiting sender.</span></div>
+<div class="line"><span class="lineno">  243</span>    m_sendWaiters.fetch_add(1);</div>
+<div class="line"><span class="lineno">  244</span>    <span class="keywordtype">bool</span> sent = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  245</span>    {</div>
+<div class="line"><span class="lineno">  246</span>        std::lock_guard&lt;std::mutex&gt; lock(m_mutex);</div>
+<div class="line"><span class="lineno">  247</span>        <span class="keywordflow">if</span> (m_connected &amp;&amp; (!m_tls || ensureHandshakeInternal()))</div>
+<div class="line"><span class="lineno">  248</span>        {</div>
+<div class="line"><span class="lineno">  249</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  250</span>            {</div>
+<div class="line"><span class="lineno">  251</span>                sent = runUntil(*m_io, m_stream-&gt;next_layer(), Clock::now() + kWriteDeadline,</div>
+<div class="line"><span class="lineno">  252</span>                                [&amp;](<span class="keyword">auto</span> handler)</div>
+<div class="line"><span class="lineno">  253</span>                                {</div>
+<div class="line"><span class="lineno">  254</span>                                    if (m_tls)</div>
+<div class="line"><span class="lineno">  255</span>                                        boost::asio::async_write(*m_stream,</div>
+<div class="line"><span class="lineno">  256</span>                                                                 boost::asio::buffer(data),</div>
+<div class="line"><span class="lineno">  257</span>                                                                 std::move(handler));</div>
+<div class="line"><span class="lineno">  258</span>                                    else</div>
+<div class="line"><span class="lineno">  259</span>                                        boost::asio::async_write(m_stream-&gt;next_layer(),</div>
+<div class="line"><span class="lineno">  260</span>                                                                 boost::asio::buffer(data),</div>
+<div class="line"><span class="lineno">  261</span>                                                                 std::move(handler));</div>
+<div class="line"><span class="lineno">  262</span>                                });</div>
+<div class="line"><span class="lineno">  263</span>            }</div>
+<div class="line"><span class="lineno">  264</span>            <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><span class="lineno">  265</span>            {</div>
+<div class="line"><span class="lineno">  266</span>            }</div>
+<div class="line"><span class="lineno">  267</span>        }</div>
+<div class="line"><span class="lineno">  268</span>        <span class="keywordflow">if</span> (!sent &amp;&amp; m_connected)</div>
+<div class="line"><span class="lineno">  269</span>            closeInternal();</div>
+<div class="line"><span class="lineno">  270</span>    }</div>
+<div class="line"><span class="lineno">  271</span>    m_sendWaiters.fetch_sub(1);</div>
+<div class="line"><span class="lineno">  272</span>    m_sendCompleted.notify_all();</div>
+<div class="line"><span class="lineno">  273</span>    <span class="keywordflow">return</span> sent;</div>
+<div class="line"><span class="lineno">  274</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -965,10 +976,10 @@ Here is the call graph for this function:</div>
 
 <p>Whether TLS was enabled for this connection. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00184">184</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  185</span>{</div>
-<div class="line"><span class="lineno">  186</span>    <span class="keywordflow">return</span> m_tls.load();</div>
-<div class="line"><span class="lineno">  187</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d88/socket_8cc_source.html#l00191">191</a> of file <a class="el" href="../../d2/d88/socket_8cc_source.html">socket.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  192</span>{</div>
+<div class="line"><span class="lineno">  193</span>    <span class="keywordflow">return</span> m_tls.load();</div>
+<div class="line"><span class="lineno">  194</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

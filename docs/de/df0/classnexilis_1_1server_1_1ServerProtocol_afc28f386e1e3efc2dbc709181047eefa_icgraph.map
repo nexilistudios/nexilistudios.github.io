@@ -1,7 +1,9 @@
 <map id="nexilis::server::ServerProtocol::getSettings" name="nexilis::server::ServerProtocol::getSettings">
-<area shape="rect" id="Node000001" title="Get the settings for given server protocol." alt="" coords="280,37,497,77"/>
+<area shape="rect" id="Node000001" title="Get the settings for given server protocol." alt="" coords="280,69,497,109"/>
 <area shape="rect" id="Node000002" href="$de/df0/classnexilis_1_1server_1_1ServerProtocol.html#a1b0ce5181d4092e523452f050874c1d7" title="Expire datagram transports that have been idle for too long." alt="" coords="5,5,232,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="266,46,232,41,232,36,267,40"/>
-<area shape="rect" id="Node000003" href="$d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#a35fd3f2e67731e41113c957cd533c7fb" title="NXProtocol::start() implementation." alt="" coords="31,69,206,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="267,74,206,82,206,76,266,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="290,69,203,48,204,43,291,63"/>
+<area shape="rect" id="Node000003" href="$df/ddc/classnexilis_1_1server_1_1af__inet_1_1UDPServer.html#a7286f8712e5f49cb762d7e3736a25c14" title="NXProtocol::start() implementation." alt="" coords="33,69,204,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="266,92,204,92,204,87,266,87"/>
+<area shape="rect" id="Node000004" href="$d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#a35fd3f2e67731e41113c957cd533c7fb" title="NXProtocol::start() implementation." alt="" coords="31,133,206,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="291,115,204,136,203,131,290,110"/>
 </map>

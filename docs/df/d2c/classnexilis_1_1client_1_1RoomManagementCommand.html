@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.10-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.11-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -286,13 +286,26 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   89</span>            rooms.emplace_back(Room(roomData, std::vector&lt;ClientSession&gt;()));</div>
 <div class="line"><span class="lineno">   90</span>            <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865a260ca9dd8a4577fc00b7bd5810298076">ReadResult::success</a>;</div>
 <div class="line"><span class="lineno">   91</span>        }</div>
-<div class="line"><span class="lineno">   92</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (m_action == <span class="stringliteral">&quot;set_overlap&quot;</span>)</div>
+<div class="line"><span class="lineno">   92</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (m_action == <span class="stringliteral">&quot;remove&quot;</span>)</div>
 <div class="line"><span class="lineno">   93</span>        {</div>
-<div class="line"><span class="lineno">   94</span>            api.setOverLapStatus2D(m_overlap_allowed);</div>
-<div class="line"><span class="lineno">   95</span>            <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865a260ca9dd8a4577fc00b7bd5810298076">ReadResult::success</a>;</div>
-<div class="line"><span class="lineno">   96</span>        }</div>
-<div class="line"><span class="lineno">   97</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865a7500611bf7030bc99d25c354e7b64714">ReadResult::not_found</a>;</div>
-<div class="line"><span class="lineno">   98</span>    }</div>
+<div class="line"><span class="lineno">   94</span>            <span class="keyword">const</span> <span class="keywordtype">bool</span> wasCurrentRoom = api.getCurrentRoomId() == m_room_id;</div>
+<div class="line"><span class="lineno">   95</span>            std::erase_if(rooms, [<span class="keyword">this</span>](<span class="keyword">const</span> Room&amp; <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>)</div>
+<div class="line"><span class="lineno">   96</span>                          { <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="../../d8/d34/namespacenexilis.html#a8f790e76d29111011e1f71fb2b20027bafef2576d54dbde017a3a8e4df699ef6d">room</a>.getId() == m_room_id; });</div>
+<div class="line"><span class="lineno">   97</span>            <span class="keywordflow">if</span> (wasCurrentRoom)</div>
+<div class="line"><span class="lineno">   98</span>            {</div>
+<div class="line"><span class="lineno">   99</span>                api.setRoomId(0);</div>
+<div class="line"><span class="lineno">  100</span>                api.setOverLapStatus2D(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  101</span>            }</div>
+<div class="line"><span class="lineno">  102</span>            data.discardRoomEvents(m_room_id, wasCurrentRoom);</div>
+<div class="line"><span class="lineno">  103</span>            <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865a260ca9dd8a4577fc00b7bd5810298076">ReadResult::success</a>;</div>
+<div class="line"><span class="lineno">  104</span>        }</div>
+<div class="line"><span class="lineno">  105</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (m_action == <span class="stringliteral">&quot;set_overlap&quot;</span>)</div>
+<div class="line"><span class="lineno">  106</span>        {</div>
+<div class="line"><span class="lineno">  107</span>            api.setOverLapStatus2D(m_overlap_allowed);</div>
+<div class="line"><span class="lineno">  108</span>            <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865a260ca9dd8a4577fc00b7bd5810298076">ReadResult::success</a>;</div>
+<div class="line"><span class="lineno">  109</span>        }</div>
+<div class="line"><span class="lineno">  110</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865a7500611bf7030bc99d25c354e7b64714">ReadResult::not_found</a>;</div>
+<div class="line"><span class="lineno">  111</span>    }</div>
 <div class="ttc" id="aclassnexilis_1_1RoomData_html_a30cb19551acfa5508f5f29d096c8f76e"><div class="ttname"><a href="../../de/d38/classnexilis_1_1RoomData.html#a30cb19551acfa5508f5f29d096c8f76e">nexilis::RoomData::Context</a></div><div class="ttdeci">Context</div><div class="ttdef"><b>Definition</b> <a href="../../df/d7c/room__data_8hh_source.html#l00028">room_data.hh:29</a></div></div>
 <div class="ttc" id="anamespacenexilis_1_1client_html_ac26aef7623575a5f6e0f89c9ffa31865a260ca9dd8a4577fc00b7bd5810298076"><div class="ttname"><a href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865a260ca9dd8a4577fc00b7bd5810298076">nexilis::client::ReadResult::success</a></div><div class="ttdeci">@ success</div><div class="ttdoc">Command success.</div></div>
 <div class="ttc" id="anamespacenexilis_1_1client_html_ac26aef7623575a5f6e0f89c9ffa31865a2e61ed66f25cad08311fc77e3ba19541"><div class="ttname"><a href="../../d2/dbe/namespacenexilis_1_1client.html#ac26aef7623575a5f6e0f89c9ffa31865a2e61ed66f25cad08311fc77e3ba19541">nexilis::client::ReadResult::command_execution</a></div><div class="ttdeci">@ command_execution</div><div class="ttdoc">Failure during command execution.</div></div>
@@ -304,13 +317,23 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../df/d2c/classnexilis_1_1client_1_1RoomManagementCommand_abd74df6bdcd0895fed166f8ab0a35334_cgraph.png" border="0" usemap="#adf/d2c/classnexilis_1_1client_1_1RoomManagementCommand_abd74df6bdcd0895fed166f8ab0a35334_cgraph" alt=""/></div>
 <map name="adf/d2c/classnexilis_1_1client_1_1RoomManagementCommand_abd74df6bdcd0895fed166f8ab0a35334_cgraph" id="adf/d2c/classnexilis_1_1client_1_1RoomManagementCommand_abd74df6bdcd0895fed166f8ab0a35334_cgraph">
-<area shape="rect" title=" " alt="" coords="5,69,247,109"/>
-<area shape="rect" href="../../d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a827d09d95f7d81fa2cd69c75bdc71f3e" title=" " alt="" coords="295,5,589,45"/>
-<area shape="poly" title=" " alt="" coords="225,67,329,45,330,51,226,72"/>
-<area shape="rect" href="../../d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a89bf770a7a9d8bb30c56a961fbf9e697" title=" " alt="" coords="325,69,559,109"/>
-<area shape="poly" title=" " alt="" coords="247,87,310,87,310,92,247,92"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a80741fb08b4a50379131fdf0ee75e157" title="Set the value of 2D overlapping." alt="" coords="354,133,530,173"/>
-<area shape="poly" title=" " alt="" coords="226,107,341,130,340,135,225,112"/>
+<area shape="rect" title=" " alt="" coords="5,165,247,205"/>
+<area shape="rect" href="../../d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a5c981c63e4349e1deb836cc0d48ae0f7" title=" " alt="" coords="313,5,571,45"/>
+<area shape="poly" title=" " alt="" coords="146,163,208,109,249,80,294,55,312,47,314,52,296,60,252,84,212,113,149,167"/>
+<area shape="rect" href="../../d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a827d09d95f7d81fa2cd69c75bdc71f3e" title=" " alt="" coords="295,69,589,109"/>
+<area shape="poly" title=" " alt="" coords="173,163,294,119,326,110,327,115,295,124,175,168"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#aa161a7346c5fec03ad4181024d034a4b" title="Last room ID assigned by the server. Zero when no room is current." alt="" coords="354,133,530,173"/>
+<area shape="poly" title=" " alt="" coords="246,170,340,161,341,166,247,176"/>
+<area shape="rect" href="../../d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#a89bf770a7a9d8bb30c56a961fbf9e697" title=" " alt="" coords="325,197,559,237"/>
+<area shape="poly" title=" " alt="" coords="247,195,311,201,310,207,246,200"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a80741fb08b4a50379131fdf0ee75e157" title="Set the value of 2D overlapping." alt="" coords="354,261,530,301"/>
+<area shape="poly" title=" " alt="" coords="175,203,295,247,341,259,340,264,294,252,173,208"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a9c57706bb980adb5956a37ec8aedc5c1" title=" " alt="" coords="354,325,530,365"/>
+<area shape="poly" title=" " alt="" coords="149,204,212,258,252,287,296,311,341,327,340,332,294,316,249,291,208,262,146,208"/>
+<area shape="rect" href="../../d6/d0d/classnexilis_1_1client_1_1ClientAPI_1_1ClientData.html#a9d9a2394e8a7cf2161c826ba37f83793" title=" " alt="" coords="637,133,816,173"/>
+<area shape="poly" title=" " alt="" coords="530,151,624,151,624,156,530,156"/>
+<area shape="rect" href="../../d6/d0d/classnexilis_1_1client_1_1ClientAPI_1_1ClientData.html#ae09eafb9ada5a8f5f3e3274133fad5d3" title=" " alt="" coords="638,325,815,365"/>
+<area shape="poly" title=" " alt="" coords="530,343,624,343,624,348,530,348"/>
 </map>
 </div>
 

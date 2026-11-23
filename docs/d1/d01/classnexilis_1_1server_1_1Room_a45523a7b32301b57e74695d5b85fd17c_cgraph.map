@@ -1,0 +1,11 @@
+<map id="nexilis::server::Room::allowsUser" name="nexilis::server::Room::allowsUser">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,69,165,109"/>
+<area shape="rect" id="Node000002" href="$d1/d01/classnexilis_1_1server_1_1Room.html#a8b3de14ea4457b17f2fab7acebb49c54" title=" " alt="" coords="213,5,373,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,67,214,47,216,52,152,72"/>
+<area shape="rect" id="Node000003" href="$da/d49/classnexilis_1_1BaseRoom.html#a22a31b859c2c60f3472bb69747698bf9" title="Get the identifier of the creator that created the room." alt="" coords="218,69,369,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="165,87,204,87,204,92,165,92"/>
+<area shape="rect" id="Node000005" href="$dc/dcb/classnexilis_1_1BaseClient.html#a2ef1dddc83ce3e9f573e144673189546" title=" " alt="" coords="222,133,365,173"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="152,107,216,127,214,132,150,112"/>
+<area shape="rect" id="Node000004" href="$de/d38/classnexilis_1_1RoomData.html#aff84fd69bbdaa0c8838d4b2e739cd743" title=" " alt="" coords="421,69,572,109"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="369,87,408,87,408,92,369,92"/>
+</map>

@@ -58,7 +58,7 @@
 <area shape="poly" id="edge31_Node000022_Node000024" title=" " alt="" coords="448,760,498,750,499,755,449,765"/>
 <area shape="rect" id="Node000025" href="$d4/d3a/classnexilis_1_1server_1_1User.html#a37bf38b5fc17e97faecf5637c8ad7e47" title=" " alt="" coords="536,773,688,813"/>
 <area shape="poly" id="edge32_Node000022_Node000025" title=" " alt="" coords="448,783,522,787,522,792,448,788"/>
-<area shape="rect" id="Node000026" href="$da/d15/classnexilis_1_1server_1_1Command.html#a8dc941be1df851c4d426e39dcad676d1" title="Send message to every protocol that is avainable for a client." alt="" coords="517,837,707,877"/>
+<area shape="rect" id="Node000026" href="$da/d15/classnexilis_1_1server_1_1Command.html#a8dc941be1df851c4d426e39dcad676d1" title="Send a response only through the protocol that received the request." alt="" coords="517,837,707,877"/>
 <area shape="poly" id="edge33_Node000022_Node000026" title=" " alt="" coords="423,799,531,831,529,836,422,804"/>
 <area shape="poly" id="edge36_Node000026_Node000006" title=" " alt="" coords="701,835,715,823,730,803,738,783,739,742,740,700,748,678,763,657,790,635,816,622,842,616,868,614,921,608,949,599,978,582,1012,552,1040,517,1080,453,1084,456,1044,520,1015,556,982,586,951,604,922,613,868,619,843,621,818,627,793,639,767,660,753,681,746,701,744,742,743,784,735,806,719,827,704,839"/>
 <area shape="rect" id="Node000027" href="$d2/d8d/group__UserBoostTCP.html#gad64b1d7881430c9dc278fcab25c7e4a6" title=" " alt="" coords="797,671,949,711"/>

@@ -1,5 +1,13 @@
 <map id="nexilis::client::SetPortCommand::execute" name="nexilis::client::SetPortCommand::execute">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,169,45"/>
-<area shape="rect" id="Node000002" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a946b2edf5cd580bf62206c7291de4fed" title=" " alt="" coords="217,5,393,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,23,204,23,204,28,169,28"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,69,169,109"/>
+<area shape="rect" id="Node000002" href="$db/d44/namespacenexilis_1_1udp__auth.html#a8ebdfdbacb3e3300981bb53464c13439" title=" " alt="" coords="241,5,382,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,67,227,47,228,52,159,72"/>
+<area shape="rect" id="Node000004" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#ade2fc0a94488e36b6d2c41555ccd5150" title=" " alt="" coords="217,69,405,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="170,87,204,87,204,92,170,92"/>
+<area shape="rect" id="Node000006" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a946b2edf5cd580bf62206c7291de4fed" title=" " alt="" coords="223,133,399,173"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="159,107,228,127,227,132,157,112"/>
+<area shape="rect" id="Node000003" href="$db/d44/namespacenexilis_1_1udp__auth.html#aa1f541692b6481211358719845a76ad3" title=" " alt="" coords="515,5,657,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="382,23,501,23,501,28,382,28"/>
+<area shape="rect" id="Node000005" href="$d6/d0d/classnexilis_1_1client_1_1ClientAPI_1_1ClientData.html#a2d7de1005f2fde3140faacded178c033" title=" " alt="" coords="453,69,719,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="406,87,440,87,440,92,406,92"/>
 </map>

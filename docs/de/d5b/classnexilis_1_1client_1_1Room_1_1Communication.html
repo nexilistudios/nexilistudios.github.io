@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.10-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.11-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -82,9 +82,6 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="../../de/d5b/classnexilis_1_1client_1_1Room_1_1Communication.html" title="Communication type for communications in a room.">Communication</a> type for communications in a room.  
- <a href="../../de/d5b/classnexilis_1_1client_1_1Room_1_1Communication.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="../../d7/d99/client_2room_8hh_source.html">room.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -124,9 +121,9 @@ Friends</h2></td></tr>
 <tr class="separator:ae4efd7499a5cfb6d59aa0974aa8a0e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="../../de/d5b/classnexilis_1_1client_1_1Room_1_1Communication.html" title="Communication type for communications in a room.">Communication</a> type for communications in a room. </p>
+<div class="textblock"><p>Player-authored room content. Treat the payload as untrusted data; authoritative game events use separate server-authored message types. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d99/client_2room_8hh_source.html#l00032">32</a> of file <a class="el" href="../../d7/d99/client_2room_8hh_source.html">room.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d99/client_2room_8hh_source.html#l00033">33</a> of file <a class="el" href="../../d7/d99/client_2room_8hh_source.html">room.hh</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a587e4ba521fd3fa36356229839fa0915" name="a587e4ba521fd3fa36356229839fa0915"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a587e4ba521fd3fa36356229839fa0915">&#9670;&#160;</a></span>Communication() <span class="overload">[1/3]</span></h2>
@@ -155,7 +152,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Constructor. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">payload</td><td>The data for the <a class="el" href="../../de/d5b/classnexilis_1_1client_1_1Room_1_1Communication.html" title="Communication type for communications in a room.">Communication</a> messages. </td></tr>
+    <tr><td class="paramname">payload</td><td>The data for the <a class="el" href="../../de/d5b/classnexilis_1_1client_1_1Room_1_1Communication.html">Communication</a> messages. </td></tr>
   </table>
   </dd>
 </dl>
@@ -167,7 +164,7 @@ Friends</h2></td></tr>
 <div class="line"><span class="lineno">   26</span>      m_id(Util::getRandomUint64())</div>
 <div class="line"><span class="lineno">   27</span>{</div>
 <div class="line"><span class="lineno">   28</span>}</div>
-<div class="ttc" id="aclassnexilis_1_1client_1_1Room_1_1Communication_html_a64901692a18b26e2bdb03f0bf49e94fc"><div class="ttname"><a href="../../de/d5b/classnexilis_1_1client_1_1Room_1_1Communication.html#a64901692a18b26e2bdb03f0bf49e94fc">nexilis::client::Room::Communication::getId</a></div><div class="ttdeci">uint64_t getId() const</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d99/client_2room_8hh_source.html#l00077">room.hh:77</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1client_1_1Room_1_1Communication_html_a64901692a18b26e2bdb03f0bf49e94fc"><div class="ttname"><a href="../../de/d5b/classnexilis_1_1client_1_1Room_1_1Communication.html#a64901692a18b26e2bdb03f0bf49e94fc">nexilis::client::Room::Communication::getId</a></div><div class="ttdeci">uint64_t getId() const</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d99/client_2room_8hh_source.html#l00078">room.hh:78</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -254,10 +251,10 @@ Friends</h2></td></tr>
 
 <p>Get client identification. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d99/client_2room_8hh_source.html#l00067">67</a> of file <a class="el" href="../../d7/d99/client_2room_8hh_source.html">room.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   68</span>        {</div>
-<div class="line"><span class="lineno">   69</span>            <span class="keywordflow">return</span> m_client.get();</div>
-<div class="line"><span class="lineno">   70</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="../../d7/d99/client_2room_8hh_source.html#l00068">68</a> of file <a class="el" href="../../d7/d99/client_2room_8hh_source.html">room.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   69</span>        {</div>
+<div class="line"><span class="lineno">   70</span>            <span class="keywordflow">return</span> m_client.get();</div>
+<div class="line"><span class="lineno">   71</span>        }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -294,10 +291,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d99/client_2room_8hh_source.html#l00077">77</a> of file <a class="el" href="../../d7/d99/client_2room_8hh_source.html">room.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   78</span>        {</div>
-<div class="line"><span class="lineno">   79</span>            <span class="keywordflow">return</span> m_id;</div>
-<div class="line"><span class="lineno">   80</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="../../d7/d99/client_2room_8hh_source.html#l00078">78</a> of file <a class="el" href="../../d7/d99/client_2room_8hh_source.html">room.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   79</span>        {</div>
+<div class="line"><span class="lineno">   80</span>            <span class="keywordflow">return</span> m_id;</div>
+<div class="line"><span class="lineno">   81</span>        }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -338,10 +335,10 @@ Here is the caller graph for this function:</div>
 
 <p>Get the payload data as a string. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d99/client_2room_8hh_source.html#l00061">61</a> of file <a class="el" href="../../d7/d99/client_2room_8hh_source.html">room.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   62</span>        {</div>
-<div class="line"><span class="lineno">   63</span>            <span class="keywordflow">return</span> m_payload;</div>
-<div class="line"><span class="lineno">   64</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="../../d7/d99/client_2room_8hh_source.html#l00062">62</a> of file <a class="el" href="../../d7/d99/client_2room_8hh_source.html">room.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   63</span>        {</div>
+<div class="line"><span class="lineno">   64</span>            <span class="keywordflow">return</span> m_payload;</div>
+<div class="line"><span class="lineno">   65</span>        }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -378,10 +375,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d99/client_2room_8hh_source.html#l00072">72</a> of file <a class="el" href="../../d7/d99/client_2room_8hh_source.html">room.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   73</span>        {</div>
-<div class="line"><span class="lineno">   74</span>            <span class="keywordflow">return</span> m_senderId;</div>
-<div class="line"><span class="lineno">   75</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="../../d7/d99/client_2room_8hh_source.html#l00073">73</a> of file <a class="el" href="../../d7/d99/client_2room_8hh_source.html">room.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   74</span>        {</div>
+<div class="line"><span class="lineno">   75</span>            <span class="keywordflow">return</span> m_senderId;</div>
+<div class="line"><span class="lineno">   76</span>        }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -496,10 +493,10 @@ Here is the caller graph for this function:</div>
 
 <p>Non-comparison operator overload. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/d99/client_2room_8hh_source.html#l00055">55</a> of file <a class="el" href="../../d7/d99/client_2room_8hh_source.html">room.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   56</span>        {</div>
-<div class="line"><span class="lineno">   57</span>            <span class="keywordflow">return</span> !(lhs == rhs);</div>
-<div class="line"><span class="lineno">   58</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="../../d7/d99/client_2room_8hh_source.html#l00056">56</a> of file <a class="el" href="../../d7/d99/client_2room_8hh_source.html">room.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   57</span>        {</div>
+<div class="line"><span class="lineno">   58</span>            <span class="keywordflow">return</span> !(lhs == rhs);</div>
+<div class="line"><span class="lineno">   59</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>

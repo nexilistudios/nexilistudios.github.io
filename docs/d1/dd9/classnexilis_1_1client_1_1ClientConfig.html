@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.10-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.11-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -107,6 +107,12 @@ Collaboration diagram for nexilis::client::ClientConfig:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7d75e747d26a6d0b3506cc5679d02148" id="r_a7d75e747d26a6d0b3506cc5679d02148"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd9/classnexilis_1_1client_1_1ClientConfig.html#a7d75e747d26a6d0b3506cc5679d02148">ClientConfig</a> ()=default</td></tr>
 <tr class="separator:a7d75e747d26a6d0b3506cc5679d02148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50ee65725850e93d9f415e16cf776093" id="r_a50ee65725850e93d9f415e16cf776093"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd9/classnexilis_1_1client_1_1ClientConfig.html#a50ee65725850e93d9f415e16cf776093">setAccountCredentials</a> (std::string accountId, std::string credential)</td></tr>
+<tr class="separator:a50ee65725850e93d9f415e16cf776093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33bfbfc3337ed0decded7a9f4e86873d" id="r_a33bfbfc3337ed0decded7a9f4e86873d"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd9/classnexilis_1_1client_1_1ClientConfig.html#a33bfbfc3337ed0decded7a9f4e86873d">getAccountId</a> () const</td></tr>
+<tr class="separator:a33bfbfc3337ed0decded7a9f4e86873d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab95ffc32ccb2385b27dcf463e15e9f0b" id="r_ab95ffc32ccb2385b27dcf463e15e9f0b"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd9/classnexilis_1_1client_1_1ClientConfig.html#ab95ffc32ccb2385b27dcf463e15e9f0b">getAccountCredential</a> () const</td></tr>
+<tr class="separator:ab95ffc32ccb2385b27dcf463e15e9f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50cfe8efb2ee083605b7844342d219f5" id="r_a50cfe8efb2ee083605b7844342d219f5"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd9/classnexilis_1_1client_1_1ClientConfig.html#a50cfe8efb2ee083605b7844342d219f5">getInetUDPServerAddress</a> () const</td></tr>
 <tr class="memdesc:a50cfe8efb2ee083605b7844342d219f5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d8/de2/namespacenexilis_1_1client_1_1af__inet.html">af_inet</a> UDP  <br /></td></tr>
 <tr class="separator:a50cfe8efb2ee083605b7844342d219f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,9 +166,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acfc49839f1ac5bea6a6df64090d51470" id="r_acfc49839f1ac5bea6a6df64090d51470"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd9/classnexilis_1_1client_1_1ClientConfig.html#acfc49839f1ac5bea6a6df64090d51470">setMessageEncryption</a> (bool enabled)</td></tr>
 <tr class="separator:acfc49839f1ac5bea6a6df64090d51470"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacafbc9fac43411d9469f3558dd43439" id="r_aacafbc9fac43411d9469f3558dd43439"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd9/classnexilis_1_1client_1_1ClientConfig.html#aacafbc9fac43411d9469f3558dd43439">isTlsEnabled</a> () const</td></tr>
+<tr class="memdesc:aacafbc9fac43411d9469f3558dd43439"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether Boost TCP uses certificate-based TLS. On by default.  <br /></td></tr>
 <tr class="separator:aacafbc9fac43411d9469f3558dd43439"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a099cd2df2baa4c655400b9daff8ead29" id="r_a099cd2df2baa4c655400b9daff8ead29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd9/classnexilis_1_1client_1_1ClientConfig.html#a099cd2df2baa4c655400b9daff8ead29">setTls</a> (bool enabled)</td></tr>
 <tr class="separator:a099cd2df2baa4c655400b9daff8ead29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a741375b63163cf2f05e201352034e031" id="r_a741375b63163cf2f05e201352034e031"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd9/classnexilis_1_1client_1_1ClientConfig.html#a741375b63163cf2f05e201352034e031">setServerPublicKeySha256</a> (std::string fingerprint)</td></tr>
+<tr class="separator:a741375b63163cf2f05e201352034e031"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b3f7eaf34ee3e93350d389935b555b6" id="r_a0b3f7eaf34ee3e93350d389935b555b6"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd9/classnexilis_1_1client_1_1ClientConfig.html#a0b3f7eaf34ee3e93350d389935b555b6">getServerPublicKeySha256</a> () const</td></tr>
+<tr class="separator:a0b3f7eaf34ee3e93350d389935b555b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96de7c9925ac9342059942ba7190ecd7" id="r_a96de7c9925ac9342059942ba7190ecd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd9/classnexilis_1_1client_1_1ClientConfig.html#a96de7c9925ac9342059942ba7190ecd7">AuthConfig</a> ()=default</td></tr>
 <tr class="separator:a96de7c9925ac9342059942ba7190ecd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe01b87a4a9ef91f454082962770ad4d" id="r_abe01b87a4a9ef91f454082962770ad4d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd9/classnexilis_1_1client_1_1ClientConfig.html#abe01b87a4a9ef91f454082962770ad4d">AuthConfig</a> (<a class="el" href="../../d0/db6/classnexilis_1_1AuthConfig.html">AuthConfig</a> &amp;&amp;other)</td></tr>
@@ -342,6 +353,130 @@ Public Member Functions</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="ab95ffc32ccb2385b27dcf463e15e9f0b" name="ab95ffc32ccb2385b27dcf463e15e9f0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab95ffc32ccb2385b27dcf463e15e9f0b">&#9670;&#160;</a></span>getAccountCredential()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; nexilis::client::ClientConfig::getAccountCredential </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00046">46</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   47</span>    {</div>
+<div class="line"><span class="lineno">   48</span>        <span class="keywordflow">return</span> m_accountCredential;</div>
+<div class="line"><span class="lineno">   49</span>    }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/dd9/classnexilis_1_1client_1_1ClientConfig_ab95ffc32ccb2385b27dcf463e15e9f0b_icgraph.png" border="0" usemap="#ad1/dd9/classnexilis_1_1client_1_1ClientConfig_ab95ffc32ccb2385b27dcf463e15e9f0b_icgraph" alt=""/></div>
+<map name="ad1/dd9/classnexilis_1_1client_1_1ClientConfig_ab95ffc32ccb2385b27dcf463e15e9f0b_icgraph" id="ad1/dd9/classnexilis_1_1client_1_1ClientConfig_ab95ffc32ccb2385b27dcf463e15e9f0b_icgraph">
+<area shape="rect" title=" " alt="" coords="1123,101,1319,141"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#ac9aa7a3e3594d8a15bf6e0efeed2c91c" title=" " alt="" coords="899,101,1075,141"/>
+<area shape="poly" title=" " alt="" coords="1109,124,1075,124,1075,119,1109,119"/>
+<area shape="rect" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#a179d25c69c4a8ece4a2b75c81b3fb6d8" title=" " alt="" coords="643,101,851,141"/>
+<area shape="poly" title=" " alt="" coords="885,124,851,124,851,119,885,119"/>
+<area shape="rect" href="../../d8/d6b/classnexilis_1_1client_1_1af__inet_1_1TCPClient.html#a3344f385a6c0a606ef330f39b7a44fbf" title="NXProtocol::start() implementation." alt="" coords="429,5,591,45"/>
+<area shape="poly" title=" " alt="" coords="686,98,594,60,563,48,565,43,596,55,688,94"/>
+<area shape="rect" href="../../dd/d79/classnexilis_1_1client_1_1af__inet_1_1UDPClient.html#aaf3c724b4e74a0ddb26ede0c8453632c" title="NXProtocol::start() implementation." alt="" coords="427,69,593,109"/>
+<area shape="poly" title=" " alt="" coords="629,108,593,103,594,98,629,103"/>
+<area shape="rect" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#aa33257eb91ceaddd1289e83aa03d7ba6" title="NXProtocol::start() implementation." alt="" coords="425,133,595,173"/>
+<area shape="poly" title=" " alt="" coords="629,140,595,145,594,139,628,135"/>
+<area shape="rect" href="../../db/dfd/classnexilis_1_1client_1_1nxboost_1_1UDPClient.html#a49787569066c0c36fc7ca9cf7a566640" title="NXProtocol::start() implementation." alt="" coords="425,225,595,265"/>
+<area shape="poly" title=" " alt="" coords="697,150,551,227,548,223,694,145"/>
+<area shape="rect" href="../../d8/df0/boost__tcp__client__c_8cc.html#aa7de3448ecaaf164b22a7fc66cbe7356" title=" " alt="" coords="197,47,375,87"/>
+<area shape="poly" title=" " alt="" coords="441,131,424,124,376,101,346,89,348,84,378,96,426,119,443,126"/>
+<area shape="rect" href="../../d8/df0/boost__tcp__client__c_8cc.html#a8d93315129da1c1ad300a6e4cef6cc88" title=" " alt="" coords="213,111,359,137"/>
+<area shape="poly" title=" " alt="" coords="411,143,358,136,359,131,412,138"/>
+<area shape="rect" href="../../dc/d34/classnexilis_1_1TCPClient.html#a7ef0f30ee01fc275ba8cdc2d1f402784" title="Start running nexilis tcp client." alt="" coords="219,161,353,201"/>
+<area shape="poly" title=" " alt="" coords="412,168,354,176,353,170,411,163"/>
+<area shape="rect" href="../../d8/d34/namespacenexilis.html#a96f5c6cfdccac25888b5a40ef9d32592" title=" " alt="" coords="5,169,147,194"/>
+<area shape="poly" title=" " alt="" coords="205,184,147,184,147,179,205,179"/>
+<area shape="rect" href="../../df/d70/boost__udp__client__c_8cc.html#a3e7df0ca76ddd0517837122790254ca9" title=" " alt="" coords="195,225,377,265"/>
+<area shape="poly" title=" " alt="" coords="411,248,377,248,377,243,411,243"/>
+<area shape="rect" href="../../de/d39/classnexilis_1_1UDPClient.html#abeaa8f43e6fb3249514e81a1e88b47b0" title="Start running the UDP client." alt="" coords="217,289,355,329"/>
+<area shape="poly" title=" " alt="" coords="427,272,356,292,355,287,425,267"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a33bfbfc3337ed0decded7a9f4e86873d" name="a33bfbfc3337ed0decded7a9f4e86873d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33bfbfc3337ed0decded7a9f4e86873d">&#9670;&#160;</a></span>getAccountId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; nexilis::client::ClientConfig::getAccountId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00042">42</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   43</span>    {</div>
+<div class="line"><span class="lineno">   44</span>        <span class="keywordflow">return</span> m_accountId;</div>
+<div class="line"><span class="lineno">   45</span>    }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/dd9/classnexilis_1_1client_1_1ClientConfig_a33bfbfc3337ed0decded7a9f4e86873d_icgraph.png" border="0" usemap="#ad1/dd9/classnexilis_1_1client_1_1ClientConfig_a33bfbfc3337ed0decded7a9f4e86873d_icgraph" alt=""/></div>
+<map name="ad1/dd9/classnexilis_1_1client_1_1ClientConfig_a33bfbfc3337ed0decded7a9f4e86873d_icgraph" id="ad1/dd9/classnexilis_1_1client_1_1ClientConfig_a33bfbfc3337ed0decded7a9f4e86873d_icgraph">
+<area shape="rect" title=" " alt="" coords="1123,101,1319,141"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a0da5e76dbcd21ea949de27a071b133a1" title=" " alt="" coords="899,101,1075,141"/>
+<area shape="poly" title=" " alt="" coords="1109,124,1075,124,1075,119,1109,119"/>
+<area shape="rect" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#a179d25c69c4a8ece4a2b75c81b3fb6d8" title=" " alt="" coords="643,101,851,141"/>
+<area shape="poly" title=" " alt="" coords="885,124,851,124,851,119,885,119"/>
+<area shape="rect" href="../../d8/d6b/classnexilis_1_1client_1_1af__inet_1_1TCPClient.html#a3344f385a6c0a606ef330f39b7a44fbf" title="NXProtocol::start() implementation." alt="" coords="429,5,591,45"/>
+<area shape="poly" title=" " alt="" coords="686,98,594,60,563,48,565,43,596,55,688,94"/>
+<area shape="rect" href="../../dd/d79/classnexilis_1_1client_1_1af__inet_1_1UDPClient.html#aaf3c724b4e74a0ddb26ede0c8453632c" title="NXProtocol::start() implementation." alt="" coords="427,69,593,109"/>
+<area shape="poly" title=" " alt="" coords="629,108,593,103,594,98,629,103"/>
+<area shape="rect" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#aa33257eb91ceaddd1289e83aa03d7ba6" title="NXProtocol::start() implementation." alt="" coords="425,133,595,173"/>
+<area shape="poly" title=" " alt="" coords="629,140,595,145,594,139,628,135"/>
+<area shape="rect" href="../../db/dfd/classnexilis_1_1client_1_1nxboost_1_1UDPClient.html#a49787569066c0c36fc7ca9cf7a566640" title="NXProtocol::start() implementation." alt="" coords="425,225,595,265"/>
+<area shape="poly" title=" " alt="" coords="697,150,551,227,548,223,694,145"/>
+<area shape="rect" href="../../d8/df0/boost__tcp__client__c_8cc.html#aa7de3448ecaaf164b22a7fc66cbe7356" title=" " alt="" coords="197,47,375,87"/>
+<area shape="poly" title=" " alt="" coords="441,131,424,124,376,101,346,89,348,84,378,96,426,119,443,126"/>
+<area shape="rect" href="../../d8/df0/boost__tcp__client__c_8cc.html#a8d93315129da1c1ad300a6e4cef6cc88" title=" " alt="" coords="213,111,359,137"/>
+<area shape="poly" title=" " alt="" coords="411,143,358,136,359,131,412,138"/>
+<area shape="rect" href="../../dc/d34/classnexilis_1_1TCPClient.html#a7ef0f30ee01fc275ba8cdc2d1f402784" title="Start running nexilis tcp client." alt="" coords="219,161,353,201"/>
+<area shape="poly" title=" " alt="" coords="412,168,354,176,353,170,411,163"/>
+<area shape="rect" href="../../d8/d34/namespacenexilis.html#a96f5c6cfdccac25888b5a40ef9d32592" title=" " alt="" coords="5,169,147,194"/>
+<area shape="poly" title=" " alt="" coords="205,184,147,184,147,179,205,179"/>
+<area shape="rect" href="../../df/d70/boost__udp__client__c_8cc.html#a3e7df0ca76ddd0517837122790254ca9" title=" " alt="" coords="195,225,377,265"/>
+<area shape="poly" title=" " alt="" coords="411,248,377,248,377,243,411,243"/>
+<area shape="rect" href="../../de/d39/classnexilis_1_1UDPClient.html#abeaa8f43e6fb3249514e81a1e88b47b0" title="Start running the UDP client." alt="" coords="217,289,355,329"/>
+<area shape="poly" title=" " alt="" coords="427,272,356,292,355,287,425,267"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a23c7094536bab78fccafe6619ca48002" name="a23c7094536bab78fccafe6619ca48002"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a23c7094536bab78fccafe6619ca48002">&#9670;&#160;</a></span>getBoostTCPServerAddress()</h2>
 
@@ -367,10 +502,10 @@ Public Member Functions</h2></td></tr>
 
 <p>boost TCP. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00078">78</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   79</span>    {</div>
-<div class="line"><span class="lineno">   80</span>        <span class="keywordflow">return</span> m_boostTCPServerAddress;</div>
-<div class="line"><span class="lineno">   81</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00094">94</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   95</span>    {</div>
+<div class="line"><span class="lineno">   96</span>        <span class="keywordflow">return</span> m_boostTCPServerAddress;</div>
+<div class="line"><span class="lineno">   97</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -397,10 +532,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00088">88</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   89</span>    {</div>
-<div class="line"><span class="lineno">   90</span>        <span class="keywordflow">return</span> m_boostTCPServerPort;</div>
-<div class="line"><span class="lineno">   91</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00104">104</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  105</span>    {</div>
+<div class="line"><span class="lineno">  106</span>        <span class="keywordflow">return</span> m_boostTCPServerPort;</div>
+<div class="line"><span class="lineno">  107</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -429,10 +564,10 @@ Public Member Functions</h2></td></tr>
 
 <p>boost UDP. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00099">99</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  100</span>    {</div>
-<div class="line"><span class="lineno">  101</span>        <span class="keywordflow">return</span> m_boostUDPServerAddress;</div>
-<div class="line"><span class="lineno">  102</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00115">115</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  116</span>    {</div>
+<div class="line"><span class="lineno">  117</span>        <span class="keywordflow">return</span> m_boostUDPServerAddress;</div>
+<div class="line"><span class="lineno">  118</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -459,10 +594,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00109">109</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  110</span>    {</div>
-<div class="line"><span class="lineno">  111</span>        <span class="keywordflow">return</span> m_boostUDPServerPort;</div>
-<div class="line"><span class="lineno">  112</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00125">125</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  126</span>    {</div>
+<div class="line"><span class="lineno">  127</span>        <span class="keywordflow">return</span> m_boostUDPServerPort;</div>
+<div class="line"><span class="lineno">  128</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -491,10 +626,10 @@ Public Member Functions</h2></td></tr>
 
 <p><a class="el" href="../../d8/de2/namespacenexilis_1_1client_1_1af__inet.html">af_inet</a> TCP </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00057">57</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   58</span>    {</div>
-<div class="line"><span class="lineno">   59</span>        <span class="keywordflow">return</span> m_inetTCPServerAddress;</div>
-<div class="line"><span class="lineno">   60</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00073">73</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   74</span>    {</div>
+<div class="line"><span class="lineno">   75</span>        <span class="keywordflow">return</span> m_inetTCPServerAddress;</div>
+<div class="line"><span class="lineno">   76</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -521,10 +656,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00067">67</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   68</span>    {</div>
-<div class="line"><span class="lineno">   69</span>        <span class="keywordflow">return</span> m_inetTCPServerPort;</div>
-<div class="line"><span class="lineno">   70</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00083">83</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   84</span>    {</div>
+<div class="line"><span class="lineno">   85</span>        <span class="keywordflow">return</span> m_inetTCPServerPort;</div>
+<div class="line"><span class="lineno">   86</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -553,10 +688,10 @@ Public Member Functions</h2></td></tr>
 
 <p><a class="el" href="../../d8/de2/namespacenexilis_1_1client_1_1af__inet.html">af_inet</a> UDP </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00036">36</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   37</span>    {</div>
-<div class="line"><span class="lineno">   38</span>        <span class="keywordflow">return</span> m_inetUDPServerAddress;</div>
-<div class="line"><span class="lineno">   39</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00052">52</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   53</span>    {</div>
+<div class="line"><span class="lineno">   54</span>        <span class="keywordflow">return</span> m_inetUDPServerAddress;</div>
+<div class="line"><span class="lineno">   55</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -583,11 +718,51 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00046">46</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   47</span>    {</div>
-<div class="line"><span class="lineno">   48</span>        <span class="keywordflow">return</span> m_inetUDPServerPort;</div>
-<div class="line"><span class="lineno">   49</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00062">62</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   63</span>    {</div>
+<div class="line"><span class="lineno">   64</span>        <span class="keywordflow">return</span> m_inetUDPServerPort;</div>
+<div class="line"><span class="lineno">   65</span>    }</div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a0b3f7eaf34ee3e93350d389935b555b6" name="a0b3f7eaf34ee3e93350d389935b555b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b3f7eaf34ee3e93350d389935b555b6">&#9670;&#160;</a></span>getServerPublicKeySha256()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; nexilis::client::ClientConfig::getServerPublicKeySha256 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00200">200</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  201</span>    {</div>
+<div class="line"><span class="lineno">  202</span>        <span class="keywordflow">return</span> m_serverPublicKeySha256;</div>
+<div class="line"><span class="lineno">  203</span>    }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/dd9/classnexilis_1_1client_1_1ClientConfig_a0b3f7eaf34ee3e93350d389935b555b6_icgraph.png" border="0" usemap="#ad1/dd9/classnexilis_1_1client_1_1ClientConfig_a0b3f7eaf34ee3e93350d389935b555b6_icgraph" alt=""/></div>
+<map name="ad1/dd9/classnexilis_1_1client_1_1ClientConfig_a0b3f7eaf34ee3e93350d389935b555b6_icgraph" id="ad1/dd9/classnexilis_1_1client_1_1ClientConfig_a0b3f7eaf34ee3e93350d389935b555b6_icgraph">
+<area shape="rect" title=" " alt="" coords="257,5,461,45"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#ad5f9fb5a5b49fd9b490698e9df9f88af" title=" " alt="" coords="5,5,209,45"/>
+<area shape="poly" title=" " alt="" coords="244,28,210,28,210,23,244,23"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a5e7f408ec07dd8f294f3bedf1952da2d" name="a5e7f408ec07dd8f294f3bedf1952da2d"></a>
@@ -615,10 +790,10 @@ Public Member Functions</h2></td></tr>
 
 <p>af_unix DGRAM </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00120">120</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  121</span>    {</div>
-<div class="line"><span class="lineno">  122</span>        <span class="keywordflow">return</span> m_unixDgramServerPath;</div>
-<div class="line"><span class="lineno">  123</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00136">136</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  137</span>    {</div>
+<div class="line"><span class="lineno">  138</span>        <span class="keywordflow">return</span> m_unixDgramServerPath;</div>
+<div class="line"><span class="lineno">  139</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -681,10 +856,10 @@ Here is the caller graph for this function:</div>
 
 <p>af_unix STREAM </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00131">131</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  132</span>    {</div>
-<div class="line"><span class="lineno">  133</span>        <span class="keywordflow">return</span> m_unixStreamServerPath;</div>
-<div class="line"><span class="lineno">  134</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00147">147</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  148</span>    {</div>
+<div class="line"><span class="lineno">  149</span>        <span class="keywordflow">return</span> m_unixStreamServerPath;</div>
+<div class="line"><span class="lineno">  150</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -710,19 +885,19 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Whether room messages are encrypted end-to-end between the clients. </p><dl class="section note"><dt>Note</dt><dd>Off by default so plaintext traffic stays plaintext unless the developer explicitly opts in. </dd></dl>
+<p>Whether room broadcasts use a password-derived encryption key. The server knows the password and can derive the same key. </p><dl class="section note"><dt>Note</dt><dd>Off by default so plaintext traffic stays plaintext unless the developer explicitly opts in. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00156">156</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  157</span>    {</div>
-<div class="line"><span class="lineno">  158</span>        <span class="keywordflow">return</span> m_messageEncryption;</div>
-<div class="line"><span class="lineno">  159</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00173">173</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  174</span>    {</div>
+<div class="line"><span class="lineno">  175</span>        <span class="keywordflow">return</span> m_messageEncryption;</div>
+<div class="line"><span class="lineno">  176</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d1/dd9/classnexilis_1_1client_1_1ClientConfig_a7af5188f196aa922c979c77e7878f63b_icgraph.png" border="0" usemap="#ad1/dd9/classnexilis_1_1client_1_1ClientConfig_a7af5188f196aa922c979c77e7878f63b_icgraph" alt=""/></div>
 <map name="ad1/dd9/classnexilis_1_1client_1_1ClientConfig_a7af5188f196aa922c979c77e7878f63b_icgraph" id="ad1/dd9/classnexilis_1_1client_1_1ClientConfig_a7af5188f196aa922c979c77e7878f63b_icgraph">
 <area shape="rect" title=" " alt="" coords="789,5,1009,45"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#abce7773cfc0a6b26979ad7b43118529c" title="Whether new room messages are encrypted end&#45;to&#45;end." alt="" coords="521,5,741,45"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#abce7773cfc0a6b26979ad7b43118529c" title="Whether new room broadcasts use password&#45;derived encryption." alt="" coords="521,5,741,45"/>
 <area shape="poly" title=" " alt="" coords="776,28,742,28,742,23,776,23"/>
 <area shape="rect" href="../../d5/d69/structnexilis_1_1client_1_1ClientImpl.html#a7d7bf9f7d979fde6d5863311c2c9721d" title=" " alt="" coords="243,5,473,45"/>
 <area shape="poly" title=" " alt="" coords="508,28,473,28,473,23,508,23"/>
@@ -755,23 +930,67 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Whether the TCP connection to the server is encrypted with TLS-PSK. </p><dl class="section note"><dt>Note</dt><dd>The pre-shared key is derived from the password, so the client can only connect to a server that knows the same password. On by default for Boost TCP; a password is required unless disabled. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00170">170</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  171</span>    {</div>
-<div class="line"><span class="lineno">  172</span>        <span class="keywordflow">return</span> m_tls;</div>
-<div class="line"><span class="lineno">  173</span>    }</div>
+<p>Whether Boost TCP uses certificate-based TLS. On by default. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00184">184</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  185</span>    {</div>
+<div class="line"><span class="lineno">  186</span>        <span class="keywordflow">return</span> m_tls;</div>
+<div class="line"><span class="lineno">  187</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d1/dd9/classnexilis_1_1client_1_1ClientConfig_aacafbc9fac43411d9469f3558dd43439_icgraph.png" border="0" usemap="#ad1/dd9/classnexilis_1_1client_1_1ClientConfig_aacafbc9fac43411d9469f3558dd43439_icgraph" alt=""/></div>
 <map name="ad1/dd9/classnexilis_1_1client_1_1ClientConfig_aacafbc9fac43411d9469f3558dd43439_icgraph" id="ad1/dd9/classnexilis_1_1client_1_1ClientConfig_aacafbc9fac43411d9469f3558dd43439_icgraph">
-<area shape="rect" title=" " alt="" coords="229,5,425,45"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a3c6f895072609c2632db4df15dbf57dc" title="Whether the TCP connection is encrypted with TLS&#45;PSK." alt="" coords="5,5,181,45"/>
+<area shape="rect" title="Whether Boost TCP uses certificate&#45;based TLS. On by default." alt="" coords="229,5,425,45"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a3c6f895072609c2632db4df15dbf57dc" title="Whether the Boost TCP connection uses certificate&#45;based TLS." alt="" coords="5,5,181,45"/>
 <area shape="poly" title=" " alt="" coords="216,28,181,28,181,23,216,23"/>
 </map>
 </div>
 
+</div>
+</div>
+<a id="a50ee65725850e93d9f415e16cf776093" name="a50ee65725850e93d9f415e16cf776093"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50ee65725850e93d9f415e16cf776093">&#9670;&#160;</a></span>setAccountCredentials()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nexilis::client::ClientConfig::setAccountCredentials </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>accountId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>credential</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Optional stable account credentials for a server with an account authenticator. Both fields are sent only over pinned TLS Boost TCP. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00037">37</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   38</span>    {</div>
+<div class="line"><span class="lineno">   39</span>        m_accountId = std::move(accountId);</div>
+<div class="line"><span class="lineno">   40</span>        m_accountCredential = std::move(credential);</div>
+<div class="line"><span class="lineno">   41</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a663e467dce897ba98fd30018fe740daa" name="a663e467dce897ba98fd30018fe740daa"></a>
@@ -798,10 +1017,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00083">83</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   84</span>    {</div>
-<div class="line"><span class="lineno">   85</span>        m_boostTCPServerAddress = serverAddress;</div>
-<div class="line"><span class="lineno">   86</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00099">99</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  100</span>    {</div>
+<div class="line"><span class="lineno">  101</span>        m_boostTCPServerAddress = serverAddress;</div>
+<div class="line"><span class="lineno">  102</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -839,10 +1058,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00093">93</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   94</span>    {</div>
-<div class="line"><span class="lineno">   95</span>        m_boostTCPServerPort = port;</div>
-<div class="line"><span class="lineno">   96</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00109">109</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  110</span>    {</div>
+<div class="line"><span class="lineno">  111</span>        m_boostTCPServerPort = port;</div>
+<div class="line"><span class="lineno">  112</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -870,10 +1089,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00104">104</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  105</span>    {</div>
-<div class="line"><span class="lineno">  106</span>        m_boostUDPServerAddress = serverAddress;</div>
-<div class="line"><span class="lineno">  107</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00120">120</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  121</span>    {</div>
+<div class="line"><span class="lineno">  122</span>        m_boostUDPServerAddress = serverAddress;</div>
+<div class="line"><span class="lineno">  123</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -911,10 +1130,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00114">114</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  115</span>    {</div>
-<div class="line"><span class="lineno">  116</span>        m_boostUDPServerPort = port;</div>
-<div class="line"><span class="lineno">  117</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00130">130</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  131</span>    {</div>
+<div class="line"><span class="lineno">  132</span>        m_boostUDPServerPort = port;</div>
+<div class="line"><span class="lineno">  133</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -942,10 +1161,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00062">62</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   63</span>    {</div>
-<div class="line"><span class="lineno">   64</span>        m_inetTCPServerAddress = serverAddress;</div>
-<div class="line"><span class="lineno">   65</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00078">78</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   79</span>    {</div>
+<div class="line"><span class="lineno">   80</span>        m_inetTCPServerAddress = serverAddress;</div>
+<div class="line"><span class="lineno">   81</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -973,10 +1192,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00072">72</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   73</span>    {</div>
-<div class="line"><span class="lineno">   74</span>        m_inetTCPServerPort = port;</div>
-<div class="line"><span class="lineno">   75</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00088">88</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   89</span>    {</div>
+<div class="line"><span class="lineno">   90</span>        m_inetTCPServerPort = port;</div>
+<div class="line"><span class="lineno">   91</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1004,10 +1223,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00041">41</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   42</span>    {</div>
-<div class="line"><span class="lineno">   43</span>        m_inetUDPServerAddress = serverAddress;</div>
-<div class="line"><span class="lineno">   44</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00057">57</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>    {</div>
+<div class="line"><span class="lineno">   59</span>        m_inetUDPServerAddress = serverAddress;</div>
+<div class="line"><span class="lineno">   60</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1035,10 +1254,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00051">51</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   52</span>    {</div>
-<div class="line"><span class="lineno">   53</span>        m_inetUDPServerPort = port;</div>
-<div class="line"><span class="lineno">   54</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00067">67</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   68</span>    {</div>
+<div class="line"><span class="lineno">   69</span>        m_inetUDPServerPort = port;</div>
+<div class="line"><span class="lineno">   70</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1066,10 +1285,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00161">161</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  162</span>    {</div>
-<div class="line"><span class="lineno">  163</span>        m_messageEncryption = enabled;</div>
-<div class="line"><span class="lineno">  164</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00178">178</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  179</span>    {</div>
+<div class="line"><span class="lineno">  180</span>        m_messageEncryption = enabled;</div>
+<div class="line"><span class="lineno">  181</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1117,17 +1336,49 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00141">141</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  142</span>    {</div>
-<div class="line"><span class="lineno">  143</span>        <span class="keywordflow">if</span> (protocol == <span class="stringliteral">&quot;boost_tcp&quot;</span>)</div>
-<div class="line"><span class="lineno">  144</span>            m_boostTCPServerPort = port;</div>
-<div class="line"><span class="lineno">  145</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (protocol == <span class="stringliteral">&quot;boost_udp&quot;</span>)</div>
-<div class="line"><span class="lineno">  146</span>            m_boostUDPServerPort = port;</div>
-<div class="line"><span class="lineno">  147</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (protocol == <span class="stringliteral">&quot;inet_tcp&quot;</span>)</div>
-<div class="line"><span class="lineno">  148</span>            m_inetTCPServerPort = port;</div>
-<div class="line"><span class="lineno">  149</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (protocol == <span class="stringliteral">&quot;inet_udp&quot;</span>)</div>
-<div class="line"><span class="lineno">  150</span>            m_inetUDPServerPort = port;</div>
-<div class="line"><span class="lineno">  151</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00157">157</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  158</span>    {</div>
+<div class="line"><span class="lineno">  159</span>        <span class="keywordflow">if</span> (protocol == <span class="stringliteral">&quot;boost_tcp&quot;</span>)</div>
+<div class="line"><span class="lineno">  160</span>            m_boostTCPServerPort = port;</div>
+<div class="line"><span class="lineno">  161</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (protocol == <span class="stringliteral">&quot;boost_udp&quot;</span>)</div>
+<div class="line"><span class="lineno">  162</span>            m_boostUDPServerPort = port;</div>
+<div class="line"><span class="lineno">  163</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (protocol == <span class="stringliteral">&quot;inet_tcp&quot;</span>)</div>
+<div class="line"><span class="lineno">  164</span>            m_inetTCPServerPort = port;</div>
+<div class="line"><span class="lineno">  165</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (protocol == <span class="stringliteral">&quot;inet_udp&quot;</span>)</div>
+<div class="line"><span class="lineno">  166</span>            m_inetUDPServerPort = port;</div>
+<div class="line"><span class="lineno">  167</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a741375b63163cf2f05e201352034e031" name="a741375b63163cf2f05e201352034e031"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a741375b63163cf2f05e201352034e031">&#9670;&#160;</a></span>setServerPublicKeySha256()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nexilis::client::ClientConfig::setServerPublicKeySha256 </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>fingerprint</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Expected SHA-256 of the intended server's DER public key (SPKI), as 64 hexadecimal digits. Obtain this through a trusted channel. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00196">196</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  197</span>    {</div>
+<div class="line"><span class="lineno">  198</span>        m_serverPublicKeySha256 = std::move(fingerprint);</div>
+<div class="line"><span class="lineno">  199</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1155,10 +1406,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00175">175</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  176</span>    {</div>
-<div class="line"><span class="lineno">  177</span>        m_tls = enabled;</div>
-<div class="line"><span class="lineno">  178</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00189">189</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  190</span>    {</div>
+<div class="line"><span class="lineno">  191</span>        m_tls = enabled;</div>
+<div class="line"><span class="lineno">  192</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1196,10 +1447,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00125">125</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  126</span>    {</div>
-<div class="line"><span class="lineno">  127</span>        m_unixDgramServerPath = socketPath;</div>
-<div class="line"><span class="lineno">  128</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00141">141</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  142</span>    {</div>
+<div class="line"><span class="lineno">  143</span>        m_unixDgramServerPath = socketPath;</div>
+<div class="line"><span class="lineno">  144</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1227,10 +1478,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00136">136</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  137</span>    {</div>
-<div class="line"><span class="lineno">  138</span>        m_unixStreamServerPath = socketPath;</div>
-<div class="line"><span class="lineno">  139</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d9a/client__config_8hh_source.html#l00152">152</a> of file <a class="el" href="../../d3/d9a/client__config_8hh_source.html">client_config.hh</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  153</span>    {</div>
+<div class="line"><span class="lineno">  154</span>        m_unixStreamServerPath = socketPath;</div>
+<div class="line"><span class="lineno">  155</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>

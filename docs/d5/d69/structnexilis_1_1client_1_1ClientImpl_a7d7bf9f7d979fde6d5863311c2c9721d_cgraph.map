@@ -12,7 +12,7 @@
 <area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="236,456,308,462,308,468,236,462"/>
 <area shape="rect" id="Node000017" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a1d349e7fdcb435d5b06ac0ced0ae883f" title=" " alt="" coords="319,511,495,551"/>
 <area shape="poly" id="edge19_Node000001_Node000017" title=" " alt="" coords="189,467,285,495,319,504,318,510,283,500,188,472"/>
-<area shape="rect" id="Node000019" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#abce7773cfc0a6b26979ad7b43118529c" title="Whether new room messages are encrypted end&#45;to&#45;end." alt="" coords="297,575,517,615"/>
+<area shape="rect" id="Node000019" href="$d5/da0/classnexilis_1_1client_1_1ClientAPI.html#abce7773cfc0a6b26979ad7b43118529c" title="Whether new room broadcasts use password&#45;derived encryption." alt="" coords="297,575,517,615"/>
 <area shape="poly" id="edge21_Node000001_Node000019" title=" " alt="" coords="147,467,207,514,245,539,285,560,303,568,301,573,283,565,242,543,204,518,143,472"/>
 <area shape="rect" id="Node000021" href="$d0/dd2/namespacenexilis_1_1crypto.html#abd3e8c89fd242719a57d425ceac63aee" title="RFC 4648 base64 encoding (with padding)." alt="" coords="315,639,498,665"/>
 <area shape="poly" id="edge23_Node000001_Node000021" title=" " alt="" coords="136,468,160,503,194,546,236,589,285,624,303,633,301,638,283,629,233,593,190,549,156,506,132,471"/>

@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.10-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.11-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -75,18 +75,36 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">nexilis::tls Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d94/structnexilis_1_1tls_1_1ServerIdentity.html">ServerIdentity</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a6aec5afeaeb87833f24d3f1295147d51" id="r_a6aec5afeaeb87833f24d3f1295147d51"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d94/namespacenexilis_1_1tls.html#a6aec5afeaeb87833f24d3f1295147d51">derivePsk</a> (const std::string &amp;password)</td></tr>
 <tr class="separator:a6aec5afeaeb87833f24d3f1295147d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2da4f30ec86e994dccc7cee18334b9c" id="r_ab2da4f30ec86e994dccc7cee18334b9c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; boost::asio::ssl::context &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d94/namespacenexilis_1_1tls.html#ab2da4f30ec86e994dccc7cee18334b9c">createPskContext</a> (const std::string &amp;password, bool server)</td></tr>
 <tr class="separator:ab2da4f30ec86e994dccc7cee18334b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7da0e96276bf82442cfdffa0c3a5658c" id="r_a7da0e96276bf82442cfdffa0c3a5658c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d94/structnexilis_1_1tls_1_1ServerIdentity.html">ServerIdentity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d94/namespacenexilis_1_1tls.html#a7da0e96276bf82442cfdffa0c3a5658c">generateSelfSignedIdentity</a> ()</td></tr>
+<tr class="separator:a7da0e96276bf82442cfdffa0c3a5658c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a336680a6f9c4f14f61d5df988f7311aa" id="r_a336680a6f9c4f14f61d5df988f7311aa"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d94/namespacenexilis_1_1tls.html#a336680a6f9c4f14f61d5df988f7311aa">publicKeySha256</a> (std::string_view certificatePem)</td></tr>
+<tr class="separator:a336680a6f9c4f14f61d5df988f7311aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9173ea7aa27926677e37cbfc0b34c510" id="r_a9173ea7aa27926677e37cbfc0b34c510"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; boost::asio::ssl::context &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d94/namespacenexilis_1_1tls.html#a9173ea7aa27926677e37cbfc0b34c510">createServerContext</a> (std::string_view certificatePem, std::string_view privateKeyPem)</td></tr>
+<tr class="separator:a9173ea7aa27926677e37cbfc0b34c510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a267226e16dbe01afe7ee86b97904b4eb" id="r_a267226e16dbe01afe7ee86b97904b4eb"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; boost::asio::ssl::context &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d94/namespacenexilis_1_1tls.html#a267226e16dbe01afe7ee86b97904b4eb">createClientContext</a> ()</td></tr>
+<tr class="separator:a267226e16dbe01afe7ee86b97904b4eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04b474e4a62363a6a97cc1724524cb11" id="r_a04b474e4a62363a6a97cc1724524cb11"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d94/namespacenexilis_1_1tls.html#a04b474e4a62363a6a97cc1724524cb11">validPublicKeySha256</a> (std::string_view expectedHex)</td></tr>
+<tr class="separator:a04b474e4a62363a6a97cc1724524cb11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8e52afc79e307ccd0e2e419ea3e223b" id="r_ae8e52afc79e307ccd0e2e419ea3e223b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d94/namespacenexilis_1_1tls.html#ae8e52afc79e307ccd0e2e419ea3e223b">verifyServerKey</a> (<a class="el" href="../../d0/d00/tls_8hh.html#a71f21e09bf365489dab9d85bd4785e24">SSL</a> *ssl, std::string_view expectedHex)</td></tr>
+<tr class="separator:ae8e52afc79e307ccd0e2e419ea3e223b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -96,6 +114,30 @@ Variables</h2></td></tr>
 <tr class="separator:aae9fd185bc35277ccdf9ef7f57e45b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a267226e16dbe01afe7ee86b97904b4eb" name="a267226e16dbe01afe7ee86b97904b4eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a267226e16dbe01afe7ee86b97904b4eb">&#9670;&#160;</a></span>createClientContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; boost::asio::ssl::context &gt; nexilis::tls::createClientContext </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Client TLS context for an exact server public-key pin checked after the handshake. Never send or accept application data before verifyServerKey. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d54/tls_8cc_source.html#l00262">262</a> of file <a class="el" href="../../d6/d54/tls_8cc_source.html">tls.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  263</span>{</div>
+<div class="line"><span class="lineno">  264</span>    <span class="keyword">auto</span> context = std::make_shared&lt;boost::asio::ssl::context&gt;(boost::asio::ssl::context::tls_client);</div>
+<div class="line"><span class="lineno">  265</span>    <span class="keywordflow">return</span> configureCertificateTls(context-&gt;native_handle()) ? context : <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  266</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="ab2da4f30ec86e994dccc7cee18334b9c" name="ab2da4f30ec86e994dccc7cee18334b9c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab2da4f30ec86e994dccc7cee18334b9c">&#9670;&#160;</a></span>createPskContext()</h2>
 
@@ -132,56 +174,56 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The configured context, or nullptr when TLS-PSK cannot be set up. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d54/tls_8cc_source.html#l00103">103</a> of file <a class="el" href="../../d6/d54/tls_8cc_source.html">tls.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  104</span>{</div>
-<div class="line"><span class="lineno">  105</span>    <span class="keyword">const</span> std::string psk = <a class="code hl_function" href="../../d7/d94/namespacenexilis_1_1tls.html#a6aec5afeaeb87833f24d3f1295147d51">derivePsk</a>(password);</div>
-<div class="line"><span class="lineno">  106</span>    <span class="keywordflow">if</span> (psk.size() != kPskLength)</div>
-<div class="line"><span class="lineno">  107</span>    {</div>
-<div class="line"><span class="lineno">  108</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  109</span>    }</div>
-<div class="line"><span class="lineno">  110</span> </div>
-<div class="line"><span class="lineno">  111</span>    <span class="keyword">auto</span> ctx = std::make_shared&lt;boost::asio::ssl::context&gt;(</div>
-<div class="line"><span class="lineno">  112</span>            server ? boost::asio::ssl::context::tls_server</div>
-<div class="line"><span class="lineno">  113</span>                   : boost::asio::ssl::context::tls_client);</div>
-<div class="line"><span class="lineno">  114</span> </div>
-<div class="line"><span class="lineno">  115</span>    ctx-&gt;set_options(</div>
-<div class="line"><span class="lineno">  116</span>            boost::asio::ssl::context::default_workarounds |</div>
-<div class="line"><span class="lineno">  117</span>            boost::asio::ssl::context::no_sslv2 |</div>
-<div class="line"><span class="lineno">  118</span>            boost::asio::ssl::context::no_sslv3 |</div>
-<div class="line"><span class="lineno">  119</span>            boost::asio::ssl::context::no_tlsv1 |</div>
-<div class="line"><span class="lineno">  120</span>            boost::asio::ssl::context::no_tlsv1_1);</div>
-<div class="line"><span class="lineno">  121</span> </div>
-<div class="line"><span class="lineno">  122</span>    SSL_CTX* native = ctx-&gt;native_handle();</div>
-<div class="line"><span class="lineno">  123</span> </div>
-<div class="line"><span class="lineno">  124</span>    <span class="comment">// Restrict the ciphers to PSK key exchange so no certificates are needed,</span></div>
-<div class="line"><span class="lineno">  125</span>    <span class="comment">// and to SHA-256 based suites so the 32-byte key always matches the PRF.</span></div>
-<div class="line"><span class="lineno">  126</span>    <span class="keywordflow">if</span> (SSL_CTX_set_cipher_list(native, <span class="stringliteral">&quot;PSK-AES128-GCM-SHA256:PSK-CHACHA20-POLY1305&quot;</span>) != 1)</div>
-<div class="line"><span class="lineno">  127</span>    {</div>
-<div class="line"><span class="lineno">  128</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  129</span>    }</div>
-<div class="line"><span class="lineno">  130</span>    <span class="keywordflow">if</span> (SSL_CTX_set_ciphersuites(native, <span class="stringliteral">&quot;TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256&quot;</span>) != 1)</div>
-<div class="line"><span class="lineno">  131</span>    {</div>
-<div class="line"><span class="lineno">  132</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  133</span>    }</div>
-<div class="line"><span class="lineno">  134</span> </div>
-<div class="line"><span class="lineno">  135</span>    <span class="comment">// Store the key against the context so multiple servers/clients with</span></div>
-<div class="line"><span class="lineno">  136</span>    <span class="comment">// different passwords can coexist; OpenSSL calls the free function when</span></div>
-<div class="line"><span class="lineno">  137</span>    <span class="comment">// the context is destroyed.</span></div>
-<div class="line"><span class="lineno">  138</span>    <span class="keyword">auto</span>* keyStorage = <span class="keyword">new</span> std::vector&lt;unsigned char&gt;(psk.begin(), psk.end());</div>
-<div class="line"><span class="lineno">  139</span>    SSL_CTX_set_ex_data(native, pskExDataIndex(), keyStorage);</div>
-<div class="line"><span class="lineno">  140</span> </div>
-<div class="line"><span class="lineno">  141</span>    <span class="keywordflow">if</span> (server)</div>
-<div class="line"><span class="lineno">  142</span>    {</div>
-<div class="line"><span class="lineno">  143</span>        SSL_CTX_set_psk_server_callback(native, pskServerCallback);</div>
-<div class="line"><span class="lineno">  144</span>    }</div>
-<div class="line"><span class="lineno">  145</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  146</span>    {</div>
-<div class="line"><span class="lineno">  147</span>        SSL_CTX_set_psk_client_callback(native, pskClientCallback);</div>
-<div class="line"><span class="lineno">  148</span>    }</div>
-<div class="line"><span class="lineno">  149</span> </div>
-<div class="line"><span class="lineno">  150</span>    <span class="keywordflow">return</span> ctx;</div>
-<div class="line"><span class="lineno">  151</span>}</div>
-<div class="ttc" id="anamespacenexilis_1_1tls_html_a6aec5afeaeb87833f24d3f1295147d51"><div class="ttname"><a href="../../d7/d94/namespacenexilis_1_1tls.html#a6aec5afeaeb87833f24d3f1295147d51">nexilis::tls::derivePsk</a></div><div class="ttdeci">std::string derivePsk(const std::string &amp;password)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d54/tls_8cc_source.html#l00096">tls.cc:96</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d54/tls_8cc_source.html#l00175">175</a> of file <a class="el" href="../../d6/d54/tls_8cc_source.html">tls.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  176</span>{</div>
+<div class="line"><span class="lineno">  177</span>    <span class="keyword">const</span> std::string psk = <a class="code hl_function" href="../../d7/d94/namespacenexilis_1_1tls.html#a6aec5afeaeb87833f24d3f1295147d51">derivePsk</a>(password);</div>
+<div class="line"><span class="lineno">  178</span>    <span class="keywordflow">if</span> (psk.size() != kPskLength)</div>
+<div class="line"><span class="lineno">  179</span>    {</div>
+<div class="line"><span class="lineno">  180</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  181</span>    }</div>
+<div class="line"><span class="lineno">  182</span> </div>
+<div class="line"><span class="lineno">  183</span>    <span class="keyword">auto</span> ctx = std::make_shared&lt;boost::asio::ssl::context&gt;(</div>
+<div class="line"><span class="lineno">  184</span>            server ? boost::asio::ssl::context::tls_server</div>
+<div class="line"><span class="lineno">  185</span>                   : boost::asio::ssl::context::tls_client);</div>
+<div class="line"><span class="lineno">  186</span> </div>
+<div class="line"><span class="lineno">  187</span>    ctx-&gt;set_options(</div>
+<div class="line"><span class="lineno">  188</span>            boost::asio::ssl::context::default_workarounds |</div>
+<div class="line"><span class="lineno">  189</span>            boost::asio::ssl::context::no_sslv2 |</div>
+<div class="line"><span class="lineno">  190</span>            boost::asio::ssl::context::no_sslv3 |</div>
+<div class="line"><span class="lineno">  191</span>            boost::asio::ssl::context::no_tlsv1 |</div>
+<div class="line"><span class="lineno">  192</span>            boost::asio::ssl::context::no_tlsv1_1);</div>
+<div class="line"><span class="lineno">  193</span> </div>
+<div class="line"><span class="lineno">  194</span>    SSL_CTX* native = ctx-&gt;native_handle();</div>
+<div class="line"><span class="lineno">  195</span> </div>
+<div class="line"><span class="lineno">  196</span>    <span class="comment">// Restrict the ciphers to PSK key exchange so no certificates are needed,</span></div>
+<div class="line"><span class="lineno">  197</span>    <span class="comment">// and to SHA-256 based suites so the 32-byte key always matches the PRF.</span></div>
+<div class="line"><span class="lineno">  198</span>    <span class="keywordflow">if</span> (SSL_CTX_set_cipher_list(native, <span class="stringliteral">&quot;PSK-AES128-GCM-SHA256:PSK-CHACHA20-POLY1305&quot;</span>) != 1)</div>
+<div class="line"><span class="lineno">  199</span>    {</div>
+<div class="line"><span class="lineno">  200</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  201</span>    }</div>
+<div class="line"><span class="lineno">  202</span>    <span class="keywordflow">if</span> (SSL_CTX_set_ciphersuites(native, <span class="stringliteral">&quot;TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256&quot;</span>) != 1)</div>
+<div class="line"><span class="lineno">  203</span>    {</div>
+<div class="line"><span class="lineno">  204</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  205</span>    }</div>
+<div class="line"><span class="lineno">  206</span> </div>
+<div class="line"><span class="lineno">  207</span>    <span class="comment">// Store the key against the context so multiple servers/clients with</span></div>
+<div class="line"><span class="lineno">  208</span>    <span class="comment">// different passwords can coexist; OpenSSL calls the free function when</span></div>
+<div class="line"><span class="lineno">  209</span>    <span class="comment">// the context is destroyed.</span></div>
+<div class="line"><span class="lineno">  210</span>    <span class="keyword">auto</span>* keyStorage = <span class="keyword">new</span> std::vector&lt;unsigned char&gt;(psk.begin(), psk.end());</div>
+<div class="line"><span class="lineno">  211</span>    SSL_CTX_set_ex_data(native, pskExDataIndex(), keyStorage);</div>
+<div class="line"><span class="lineno">  212</span> </div>
+<div class="line"><span class="lineno">  213</span>    <span class="keywordflow">if</span> (server)</div>
+<div class="line"><span class="lineno">  214</span>    {</div>
+<div class="line"><span class="lineno">  215</span>        SSL_CTX_set_psk_server_callback(native, pskServerCallback);</div>
+<div class="line"><span class="lineno">  216</span>    }</div>
+<div class="line"><span class="lineno">  217</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  218</span>    {</div>
+<div class="line"><span class="lineno">  219</span>        SSL_CTX_set_psk_client_callback(native, pskClientCallback);</div>
+<div class="line"><span class="lineno">  220</span>    }</div>
+<div class="line"><span class="lineno">  221</span> </div>
+<div class="line"><span class="lineno">  222</span>    <span class="keywordflow">return</span> ctx;</div>
+<div class="line"><span class="lineno">  223</span>}</div>
+<div class="ttc" id="anamespacenexilis_1_1tls_html_a6aec5afeaeb87833f24d3f1295147d51"><div class="ttname"><a href="../../d7/d94/namespacenexilis_1_1tls.html#a6aec5afeaeb87833f24d3f1295147d51">nexilis::tls::derivePsk</a></div><div class="ttdeci">std::string derivePsk(const std::string &amp;password)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d54/tls_8cc_source.html#l00168">tls.cc:168</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -194,14 +236,65 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="427,15,461,15,461,21,427,21"/>
 </map>
 </div>
-<div class="dynheader">
+
+</div>
+</div>
+<a id="a9173ea7aa27926677e37cbfc0b34c510" name="a9173ea7aa27926677e37cbfc0b34c510"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9173ea7aa27926677e37cbfc0b34c510">&#9670;&#160;</a></span>createServerContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; boost::asio::ssl::context &gt; nexilis::tls::createServerContext </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>certificatePem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>privateKeyPem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Certificate-based TLS context. The server certificate/key must match. An empty or invalid identity fails closed. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d54/tls_8cc_source.html#l00239">239</a> of file <a class="el" href="../../d6/d54/tls_8cc_source.html">tls.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  241</span>{</div>
+<div class="line"><span class="lineno">  242</span>    <span class="keywordflow">if</span> (certificatePem.empty() || privateKeyPem.empty())</div>
+<div class="line"><span class="lineno">  243</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  244</span>    <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  245</span>    {</div>
+<div class="line"><span class="lineno">  246</span>        <span class="keyword">auto</span> context = std::make_shared&lt;boost::asio::ssl::context&gt;(boost::asio::ssl::context::tls_server);</div>
+<div class="line"><span class="lineno">  247</span>        <span class="keywordflow">if</span> (!configureCertificateTls(context-&gt;native_handle()))</div>
+<div class="line"><span class="lineno">  248</span>            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  249</span>        context-&gt;use_certificate_chain(boost::asio::buffer(certificatePem.data(), certificatePem.size()));</div>
+<div class="line"><span class="lineno">  250</span>        context-&gt;use_private_key(boost::asio::buffer(privateKeyPem.data(), privateKeyPem.size()),</div>
+<div class="line"><span class="lineno">  251</span>                                 boost::asio::ssl::context::pem);</div>
+<div class="line"><span class="lineno">  252</span>        <span class="keywordflow">if</span> (SSL_CTX_check_private_key(context-&gt;native_handle()) != 1)</div>
+<div class="line"><span class="lineno">  253</span>            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  254</span>        <span class="keywordflow">return</span> context;</div>
+<div class="line"><span class="lineno">  255</span>    }</div>
+<div class="line"><span class="lineno">  256</span>    <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><span class="lineno">  257</span>    {</div>
+<div class="line"><span class="lineno">  258</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  259</span>    }</div>
+<div class="line"><span class="lineno">  260</span>}</div>
+</div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d7/d94/namespacenexilis_1_1tls_ab2da4f30ec86e994dccc7cee18334b9c_icgraph.png" border="0" usemap="#ad7/d94/namespacenexilis_1_1tls_ab2da4f30ec86e994dccc7cee18334b9c_icgraph" alt=""/></div>
-<map name="ad7/d94/namespacenexilis_1_1tls_ab2da4f30ec86e994dccc7cee18334b9c_icgraph" id="ad7/d94/namespacenexilis_1_1tls_ab2da4f30ec86e994dccc7cee18334b9c_icgraph">
-<area shape="rect" title=" " alt="" coords="228,13,440,38"/>
+<div class="center"><img src="../../d7/d94/namespacenexilis_1_1tls_a9173ea7aa27926677e37cbfc0b34c510_icgraph.png" border="0" usemap="#ad7/d94/namespacenexilis_1_1tls_a9173ea7aa27926677e37cbfc0b34c510_icgraph" alt=""/></div>
+<map name="ad7/d94/namespacenexilis_1_1tls_a9173ea7aa27926677e37cbfc0b34c510_icgraph" id="ad7/d94/namespacenexilis_1_1tls_a9173ea7aa27926677e37cbfc0b34c510_icgraph">
+<area shape="rect" title=" " alt="" coords="228,5,408,45"/>
 <area shape="rect" href="../../d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#a35fd3f2e67731e41113c957cd533c7fb" title="NXProtocol::start() implementation." alt="" coords="5,5,180,45"/>
-<area shape="poly" title=" " alt="" coords="215,28,180,28,180,23,215,23"/>
+<area shape="poly" title=" " alt="" coords="214,28,180,28,180,23,214,23"/>
 </map>
 </div>
 
@@ -232,12 +325,12 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The key bytes, or an empty string on failure. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d54/tls_8cc_source.html#l00096">96</a> of file <a class="el" href="../../d6/d54/tls_8cc_source.html">tls.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   97</span>{</div>
-<div class="line"><span class="lineno">   98</span>    <span class="comment">// Domain-separated from the room-message keys: the same password produces</span></div>
-<div class="line"><span class="lineno">   99</span>    <span class="comment">// unrelated keys for message encryption and for the TLS transport.</span></div>
-<div class="line"><span class="lineno">  100</span>    <span class="keywordflow">return</span> crypto::deriveKey(password, <span class="stringliteral">&quot;nexilis-tls-psk-v1:&quot;</span>);</div>
-<div class="line"><span class="lineno">  101</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d54/tls_8cc_source.html#l00168">168</a> of file <a class="el" href="../../d6/d54/tls_8cc_source.html">tls.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  169</span>{</div>
+<div class="line"><span class="lineno">  170</span>    <span class="comment">// Domain-separated from the room-message keys: the same password produces</span></div>
+<div class="line"><span class="lineno">  171</span>    <span class="comment">// unrelated keys for message encryption and for the TLS transport.</span></div>
+<div class="line"><span class="lineno">  172</span>    <span class="keywordflow">return</span> crypto::deriveKey(password, <span class="stringliteral">&quot;nexilis-tls-psk-v1:&quot;</span>);</div>
+<div class="line"><span class="lineno">  173</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -253,14 +346,183 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d7/d94/namespacenexilis_1_1tls_a6aec5afeaeb87833f24d3f1295147d51_icgraph.png" border="0" usemap="#ad7/d94/namespacenexilis_1_1tls_a6aec5afeaeb87833f24d3f1295147d51_icgraph" alt=""/></div>
 <map name="ad7/d94/namespacenexilis_1_1tls_a6aec5afeaeb87833f24d3f1295147d51_icgraph" id="ad7/d94/namespacenexilis_1_1tls_a6aec5afeaeb87833f24d3f1295147d51_icgraph">
-<area shape="rect" title=" " alt="" coords="488,13,649,38"/>
-<area shape="rect" href="../../d7/d94/namespacenexilis_1_1tls.html#ab2da4f30ec86e994dccc7cee18334b9c" title=" " alt="" coords="228,13,440,38"/>
-<area shape="poly" title=" " alt="" coords="474,28,440,28,440,23,474,23"/>
-<area shape="rect" href="../../d6/d58/classnexilis_1_1server_1_1nxboost_1_1TCPServer.html#a35fd3f2e67731e41113c957cd533c7fb" title="NXProtocol::start() implementation." alt="" coords="5,5,180,45"/>
-<area shape="poly" title=" " alt="" coords="215,28,180,28,180,23,215,23"/>
+<area shape="rect" title=" " alt="" coords="265,5,427,31"/>
+<area shape="rect" href="../../d7/d94/namespacenexilis_1_1tls.html#ab2da4f30ec86e994dccc7cee18334b9c" title=" " alt="" coords="5,5,217,31"/>
+<area shape="poly" title=" " alt="" coords="251,21,218,21,218,15,251,15"/>
 </map>
 </div>
 
+</div>
+</div>
+<a id="a7da0e96276bf82442cfdffa0c3a5658c" name="a7da0e96276bf82442cfdffa0c3a5658c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7da0e96276bf82442cfdffa0c3a5658c">&#9670;&#160;</a></span>generateSelfSignedIdentity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d94/structnexilis_1_1tls_1_1ServerIdentity.html">ServerIdentity</a> nexilis::tls::generateSelfSignedIdentity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Generate a self-signed identity. Persist it for a real server so its pin stays stable across restarts; a fresh identity is useful for local examples. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d54/tls_8cc_source.html#l00293">293</a> of file <a class="el" href="../../d6/d54/tls_8cc_source.html">tls.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  294</span>{</div>
+<div class="line"><span class="lineno">  295</span>    <a class="code hl_struct" href="../../d2/d94/structnexilis_1_1tls_1_1ServerIdentity.html">ServerIdentity</a> identity;</div>
+<div class="line"><span class="lineno">  296</span>    std::unique_ptr&lt;EVP_PKEY_CTX, <span class="keyword">decltype</span>(&amp;EVP_PKEY_CTX_free)&gt; keyContext(</div>
+<div class="line"><span class="lineno">  297</span>            EVP_PKEY_CTX_new_id(EVP_PKEY_RSA, <span class="keyword">nullptr</span>), EVP_PKEY_CTX_free);</div>
+<div class="line"><span class="lineno">  298</span>    <span class="keywordflow">if</span> (!keyContext || EVP_PKEY_keygen_init(keyContext.get()) != 1 ||</div>
+<div class="line"><span class="lineno">  299</span>        EVP_PKEY_CTX_set_rsa_keygen_bits(keyContext.get(), 3072) != 1)</div>
+<div class="line"><span class="lineno">  300</span>        <span class="keywordflow">return</span> identity;</div>
+<div class="line"><span class="lineno">  301</span>    EVP_PKEY* rawKey = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  302</span>    <span class="keywordflow">if</span> (EVP_PKEY_keygen(keyContext.get(), &amp;rawKey) != 1)</div>
+<div class="line"><span class="lineno">  303</span>        <span class="keywordflow">return</span> identity;</div>
+<div class="line"><span class="lineno">  304</span>    std::unique_ptr&lt;EVP_PKEY, <span class="keyword">decltype</span>(&amp;EVP_PKEY_free)&gt; key(rawKey, EVP_PKEY_free);</div>
+<div class="line"><span class="lineno">  305</span>    std::unique_ptr&lt;X509, <span class="keyword">decltype</span>(&amp;X509_free)&gt; certificate(X509_new(), X509_free);</div>
+<div class="line"><span class="lineno">  306</span>    <span class="keywordflow">if</span> (!certificate || X509_set_version(certificate.get(), 2) != 1 ||</div>
+<div class="line"><span class="lineno">  307</span>        ASN1_INTEGER_set(X509_get_serialNumber(certificate.get()), 1) != 1 ||</div>
+<div class="line"><span class="lineno">  308</span>        !X509_gmtime_adj(X509_getm_notBefore(certificate.get()), 0) ||</div>
+<div class="line"><span class="lineno">  309</span>        !X509_gmtime_adj(X509_getm_notAfter(certificate.get()), 365L * 24 * 60 * 60) ||</div>
+<div class="line"><span class="lineno">  310</span>        X509_set_pubkey(certificate.get(), key.get()) != 1)</div>
+<div class="line"><span class="lineno">  311</span>        <span class="keywordflow">return</span> identity;</div>
+<div class="line"><span class="lineno">  312</span>    std::unique_ptr&lt;X509_NAME, <span class="keyword">decltype</span>(&amp;X509_NAME_free)&gt; name(X509_NAME_new(), X509_NAME_free);</div>
+<div class="line"><span class="lineno">  313</span>    <span class="keywordflow">if</span> (!name || X509_NAME_add_entry_by_txt(name.get(), <span class="stringliteral">&quot;CN&quot;</span>, MBSTRING_ASC, <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(<span class="stringliteral">&quot;Nexilis server&quot;</span>), -1, -1, 0) != 1 ||</div>
+<div class="line"><span class="lineno">  314</span>        X509_set_subject_name(certificate.get(), name.get()) != 1 ||</div>
+<div class="line"><span class="lineno">  315</span>        X509_set_issuer_name(certificate.get(), name.get()) != 1 ||</div>
+<div class="line"><span class="lineno">  316</span>        X509_sign(certificate.get(), key.get(), EVP_sha256()) &lt;= 0)</div>
+<div class="line"><span class="lineno">  317</span>        <span class="keywordflow">return</span> identity;</div>
+<div class="line"><span class="lineno">  318</span>    std::unique_ptr&lt;BIO, <span class="keyword">decltype</span>(&amp;BIO_free)&gt; certOutput(BIO_new(BIO_s_mem()), BIO_free);</div>
+<div class="line"><span class="lineno">  319</span>    std::unique_ptr&lt;BIO, <span class="keyword">decltype</span>(&amp;BIO_free)&gt; keyOutput(BIO_new(BIO_s_mem()), BIO_free);</div>
+<div class="line"><span class="lineno">  320</span>    <span class="keywordflow">if</span> (!certOutput || !keyOutput || PEM_write_bio_X509(certOutput.get(), certificate.get()) != 1 ||</div>
+<div class="line"><span class="lineno">  321</span>        PEM_write_bio_PrivateKey(keyOutput.get(), key.get(), <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, 0, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>) != 1)</div>
+<div class="line"><span class="lineno">  322</span>        <span class="keywordflow">return</span> identity;</div>
+<div class="line"><span class="lineno">  323</span>    <span class="keywordtype">char</span>* certData = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  324</span>    <span class="keywordtype">char</span>* keyData = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  325</span>    <span class="keyword">const</span> <span class="keyword">auto</span> certSize = BIO_get_mem_data(certOutput.get(), &amp;certData);</div>
+<div class="line"><span class="lineno">  326</span>    <span class="keyword">const</span> <span class="keyword">auto</span> keySize = BIO_get_mem_data(keyOutput.get(), &amp;keyData);</div>
+<div class="line"><span class="lineno">  327</span>    <span class="keywordflow">if</span> (certSize &lt;= 0 || keySize &lt;= 0)</div>
+<div class="line"><span class="lineno">  328</span>        <span class="keywordflow">return</span> identity;</div>
+<div class="line"><span class="lineno">  329</span>    identity.<a class="code hl_variable" href="../../d2/d94/structnexilis_1_1tls_1_1ServerIdentity.html#a0e2e316ebfc339078f68a5a14cbae5e8">certificatePem</a>.assign(certData, <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(certSize));</div>
+<div class="line"><span class="lineno">  330</span>    identity.<a class="code hl_variable" href="../../d2/d94/structnexilis_1_1tls_1_1ServerIdentity.html#a05b68339042d9b515749e8997dff990f">privateKeyPem</a>.assign(keyData, <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(keySize));</div>
+<div class="line"><span class="lineno">  331</span>    <span class="keyword">const</span> <span class="keyword">auto</span> digest = publicKeyDigest(certificate.get());</div>
+<div class="line"><span class="lineno">  332</span>    <span class="keywordflow">if</span> (!digest)</div>
+<div class="line"><span class="lineno">  333</span>        <span class="keywordflow">return</span> {};</div>
+<div class="line"><span class="lineno">  334</span>    identity.<a class="code hl_variable" href="../../d2/d94/structnexilis_1_1tls_1_1ServerIdentity.html#a795d218bb223e8d711ceb14d90475c3a">publicKeySha256</a> = toHex(*digest);</div>
+<div class="line"><span class="lineno">  335</span>    <span class="keywordflow">return</span> identity;</div>
+<div class="line"><span class="lineno">  336</span>}</div>
+<div class="ttc" id="astructnexilis_1_1tls_1_1ServerIdentity_html"><div class="ttname"><a href="../../d2/d94/structnexilis_1_1tls_1_1ServerIdentity.html">nexilis::tls::ServerIdentity</a></div><div class="ttdef"><b>Definition</b> <a href="../../d0/d00/tls_8hh_source.html#l00064">tls.hh:65</a></div></div>
+<div class="ttc" id="astructnexilis_1_1tls_1_1ServerIdentity_html_a05b68339042d9b515749e8997dff990f"><div class="ttname"><a href="../../d2/d94/structnexilis_1_1tls_1_1ServerIdentity.html#a05b68339042d9b515749e8997dff990f">nexilis::tls::ServerIdentity::privateKeyPem</a></div><div class="ttdeci">std::string privateKeyPem</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d00/tls_8hh_source.html#l00067">tls.hh:67</a></div></div>
+<div class="ttc" id="astructnexilis_1_1tls_1_1ServerIdentity_html_a0e2e316ebfc339078f68a5a14cbae5e8"><div class="ttname"><a href="../../d2/d94/structnexilis_1_1tls_1_1ServerIdentity.html#a0e2e316ebfc339078f68a5a14cbae5e8">nexilis::tls::ServerIdentity::certificatePem</a></div><div class="ttdeci">std::string certificatePem</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d00/tls_8hh_source.html#l00066">tls.hh:66</a></div></div>
+<div class="ttc" id="astructnexilis_1_1tls_1_1ServerIdentity_html_a795d218bb223e8d711ceb14d90475c3a"><div class="ttname"><a href="../../d2/d94/structnexilis_1_1tls_1_1ServerIdentity.html#a795d218bb223e8d711ceb14d90475c3a">nexilis::tls::ServerIdentity::publicKeySha256</a></div><div class="ttdeci">std::string publicKeySha256</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d00/tls_8hh_source.html#l00068">tls.hh:68</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a336680a6f9c4f14f61d5df988f7311aa" name="a336680a6f9c4f14f61d5df988f7311aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a336680a6f9c4f14f61d5df988f7311aa">&#9670;&#160;</a></span>publicKeySha256()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string nexilis::tls::publicKeySha256 </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>certificatePem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SHA-256 of the DER SubjectPublicKeyInfo in a PEM certificate, as 64 hex digits. Returns an empty string for an invalid certificate. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d54/tls_8cc_source.html#l00225">225</a> of file <a class="el" href="../../d6/d54/tls_8cc_source.html">tls.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  226</span>{</div>
+<div class="line"><span class="lineno">  227</span>    <span class="keywordflow">if</span> (certificatePem.empty())</div>
+<div class="line"><span class="lineno">  228</span>        <span class="keywordflow">return</span> {};</div>
+<div class="line"><span class="lineno">  229</span>    std::unique_ptr&lt;BIO, <span class="keyword">decltype</span>(&amp;BIO_free)&gt; input(</div>
+<div class="line"><span class="lineno">  230</span>            BIO_new_mem_buf(certificatePem.data(), <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(certificatePem.size())), BIO_free);</div>
+<div class="line"><span class="lineno">  231</span>    <span class="keywordflow">if</span> (!input)</div>
+<div class="line"><span class="lineno">  232</span>        <span class="keywordflow">return</span> {};</div>
+<div class="line"><span class="lineno">  233</span>    std::unique_ptr&lt;X509, <span class="keyword">decltype</span>(&amp;X509_free)&gt; certificate(</div>
+<div class="line"><span class="lineno">  234</span>            PEM_read_bio_X509(input.get(), <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>), X509_free);</div>
+<div class="line"><span class="lineno">  235</span>    <span class="keyword">const</span> <span class="keyword">auto</span> digest = publicKeyDigest(certificate.get());</div>
+<div class="line"><span class="lineno">  236</span>    <span class="keywordflow">return</span> digest ? toHex(*digest) : std::string();</div>
+<div class="line"><span class="lineno">  237</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a04b474e4a62363a6a97cc1724524cb11" name="a04b474e4a62363a6a97cc1724524cb11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04b474e4a62363a6a97cc1724524cb11">&#9670;&#160;</a></span>validPublicKeySha256()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool nexilis::tls::validPublicKeySha256 </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>expectedHex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d54/tls_8cc_source.html#l00268">268</a> of file <a class="el" href="../../d6/d54/tls_8cc_source.html">tls.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  269</span>{</div>
+<div class="line"><span class="lineno">  270</span>    std::array&lt;unsigned char, 32&gt; pin{};</div>
+<div class="line"><span class="lineno">  271</span>    <span class="keywordflow">return</span> parsePin(expectedHex, pin);</div>
+<div class="line"><span class="lineno">  272</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae8e52afc79e307ccd0e2e419ea3e223b" name="ae8e52afc79e307ccd0e2e419ea3e223b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8e52afc79e307ccd0e2e419ea3e223b">&#9670;&#160;</a></span>verifyServerKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool nexilis::tls::verifyServerKey </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d00/tls_8hh.html#a71f21e09bf365489dab9d85bd4785e24">SSL</a> *&#160;</td>
+          <td class="paramname"><em>ssl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>expectedHex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d54/tls_8cc_source.html#l00274">274</a> of file <a class="el" href="../../d6/d54/tls_8cc_source.html">tls.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  275</span>{</div>
+<div class="line"><span class="lineno">  276</span>    std::array&lt;unsigned char, 32&gt; expected{};</div>
+<div class="line"><span class="lineno">  277</span>    <span class="keywordflow">if</span> (!ssl || !parsePin(expectedHex, expected))</div>
+<div class="line"><span class="lineno">  278</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  279</span>    std::unique_ptr&lt;X509, <span class="keyword">decltype</span>(&amp;X509_free)&gt; certificate(</div>
+<div class="line"><span class="lineno">  280</span>            SSL_get_peer_certificate(ssl), X509_free);</div>
+<div class="line"><span class="lineno">  281</span>    std::unique_ptr&lt;ASN1_TIME, <span class="keyword">decltype</span>(&amp;ASN1_TIME_free)&gt; now(</div>
+<div class="line"><span class="lineno">  282</span>            ASN1_TIME_set(<span class="keyword">nullptr</span>, std::time(<span class="keyword">nullptr</span>)), ASN1_TIME_free);</div>
+<div class="line"><span class="lineno">  283</span>    <span class="keywordflow">if</span> (!certificate || !now)</div>
+<div class="line"><span class="lineno">  284</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  285</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> starts = ASN1_TIME_compare(X509_get0_notBefore(certificate.get()), now.get());</div>
+<div class="line"><span class="lineno">  286</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> ends = ASN1_TIME_compare(X509_get0_notAfter(certificate.get()), now.get());</div>
+<div class="line"><span class="lineno">  287</span>    <span class="keywordflow">if</span> (starts == -2 || ends == -2 || starts &gt; 0 || ends &lt;= 0)</div>
+<div class="line"><span class="lineno">  288</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  289</span>    <span class="keyword">const</span> <span class="keyword">auto</span> actual = publicKeyDigest(certificate.get());</div>
+<div class="line"><span class="lineno">  290</span>    <span class="keywordflow">return</span> actual &amp;&amp; CRYPTO_memcmp(actual-&gt;data(), expected.data(), expected.size()) == 0;</div>
+<div class="line"><span class="lineno">  291</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -285,7 +547,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>The PSK identity announced by clients during the handshake. It is constant; the secret is the password-derived key, not the identity. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d00/tls_8hh_source.html#l00035">35</a> of file <a class="el" href="../../d0/d00/tls_8hh_source.html">tls.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d00/tls_8hh_source.html#l00038">38</a> of file <a class="el" href="../../d0/d00/tls_8hh_source.html">tls.hh</a>.</p>
 
 </div>
 </div>
@@ -310,7 +572,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Length in bytes of the TLS pre-shared key. The TLS 1.3 SHA-256 cipher suites require at least 32 bytes, so this matches the AES-GCM key length. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d00/tls_8hh_source.html#l00031">31</a> of file <a class="el" href="../../d0/d00/tls_8hh_source.html">tls.hh</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d00/tls_8hh_source.html#l00034">34</a> of file <a class="el" href="../../d0/d00/tls_8hh_source.html">tls.hh</a>.</p>
 
 </div>
 </div>

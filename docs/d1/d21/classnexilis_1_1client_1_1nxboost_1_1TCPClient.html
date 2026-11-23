@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.10-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.11-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -119,7 +119,7 @@ Collaboration diagram for nexilis::client::nxboost::TCPClient:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ab94ce6bb7803795906a2010dd418e588" id="r_ab94ce6bb7803795906a2010dd418e588"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#ab94ce6bb7803795906a2010dd418e588">TlsSocket</a> = boost::asio::ssl::stream&lt; boost::asio::ip::tcp::socket &gt;</td></tr>
-<tr class="memdesc:ab94ce6bb7803795906a2010dd418e588"><td class="mdescLeft">&#160;</td><td class="mdescRight">TLS transport used for the TCP connections (TLS-PSK when enabled).  <br /></td></tr>
+<tr class="memdesc:ab94ce6bb7803795906a2010dd418e588"><td class="mdescLeft">&#160;</td><td class="mdescRight">TLS transport used for the TCP connections.  <br /></td></tr>
 <tr class="separator:ab94ce6bb7803795906a2010dd418e588"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classnexilis_1_1NXProtocol"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classnexilis_1_1NXProtocol')"><img src="../../closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="../../d5/da4/classnexilis_1_1NXProtocol.html">nexilis::NXProtocol</a></td></tr>
 <tr class="memitem:a369b4d31659356389601322319be1490 inherit pub_types_classnexilis_1_1NXProtocol" id="r_a369b4d31659356389601322319be1490"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da4/classnexilis_1_1NXProtocol.html#a369b4d31659356389601322319be1490">Type</a> { <br />
@@ -299,7 +299,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>TLS transport used for the TCP connections (TLS-PSK when enabled). </p>
+<p>TLS transport used for the TCP connections. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/dab/client_2protocol_2nxboost_2tcp__client_8hh_source.html#l00045">45</a> of file <a class="el" href="../../d1/dab/client_2protocol_2nxboost_2tcp__client_8hh_source.html">tcp_client.hh</a>.</p>
 
@@ -332,40 +332,41 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html#l00039">39</a> of file <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html">tcp_client.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   40</span>    : <a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696">NxClass</a>(<span class="stringliteral">&quot;client::nxboost::TCPClient&quot;</span>),</div>
-<div class="line"><span class="lineno">   41</span>      <a class="code hl_function" href="../../d5/da4/classnexilis_1_1NXProtocol.html#af09e9806c3da63398b852d39c3a2c06b">NXProtocol</a>(),</div>
-<div class="line"><span class="lineno">   42</span>      <a class="code hl_function" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#acc41d5e868dddd01209c4258df695ae1">ClientProtocol</a>(&amp;api),</div>
-<div class="line"><span class="lineno">   43</span>      m_stopped(std::make_unique&lt;std::atomic&lt;bool&gt;&gt;(<span class="keyword">false</span>)),</div>
-<div class="line"><span class="lineno">   44</span>      m_ioContext(std::make_shared&lt;boost::asio::io_context&gt;()),</div>
-<div class="line"><span class="lineno">   45</span>      m_strand(std::make_shared&lt;boost::asio::io_context::strand&gt;(*m_ioContext)),</div>
-<div class="line"><span class="lineno">   46</span>      m_workGuard(std::make_unique&lt;boost::asio::executor_work_guard&lt;boost::asio::io_context::executor_type&gt;&gt;(</div>
-<div class="line"><span class="lineno">   47</span>              boost::asio::make_work_guard(*m_ioContext))),</div>
-<div class="line"><span class="lineno">   48</span>      m_tlsContext(createTlsContext(api)),</div>
-<div class="line"><span class="lineno">   49</span>      m_mainSocket(std::make_shared&lt;TlsSocket&gt;(*m_ioContext, *m_tlsContext)),</div>
-<div class="line"><span class="lineno">   50</span>      m_switchedSocket(std::make_shared&lt;TlsSocket&gt;(*m_ioContext, *m_tlsContext)),</div>
-<div class="line"><span class="lineno">   51</span>      m_activeSocket(),</div>
-<div class="line"><span class="lineno">   52</span>      m_resolver(*m_ioContext),</div>
-<div class="line"><span class="lineno">   53</span>      m_sendMutex(std::make_shared&lt;std::mutex&gt;()),</div>
-<div class="line"><span class="lineno">   54</span>      m_receiveMutex(std::make_shared&lt;std::mutex&gt;()),</div>
-<div class="line"><span class="lineno">   55</span>      m_portSwitchingMutex(std::make_shared&lt;std::mutex&gt;()),</div>
-<div class="line"><span class="lineno">   56</span>      m_mainPort(<a class="code hl_function" href="../../db/d41/classnexilis_1_1Ports.html#a01bfdb03f223f2a958c79f3568001794">Ports::getBoostTCPPort</a>()),</div>
-<div class="line"><span class="lineno">   57</span>      m_switchedPort(0),</div>
-<div class="line"><span class="lineno">   58</span>      m_useSwitchedPort(<span class="keyword">false</span>),</div>
-<div class="line"><span class="lineno">   59</span>      m_pendingSendsMutex(std::make_shared&lt;std::mutex&gt;())</div>
-<div class="line"><span class="lineno">   60</span>{</div>
-<div class="line"><span class="lineno">   61</span>    storeSocket(m_mainSocket);</div>
-<div class="line"><span class="lineno">   62</span> </div>
-<div class="line"><span class="lineno">   63</span>    <span class="comment">// Verify all shared pointers were created.</span></div>
-<div class="line"><span class="lineno">   64</span>    <span class="keywordflow">if</span> (!m_sendMutex || !m_receiveMutex || !m_portSwitchingMutex)</div>
-<div class="line"><span class="lineno">   65</span>    {</div>
-<div class="line"><span class="lineno">   66</span>        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Failed to initialize synchronization objects&quot;</span>);</div>
-<div class="line"><span class="lineno">   67</span>    }</div>
-<div class="line"><span class="lineno">   68</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html#l00042">42</a> of file <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html">tcp_client.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   43</span>    : <a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696">NxClass</a>(<span class="stringliteral">&quot;client::nxboost::TCPClient&quot;</span>),</div>
+<div class="line"><span class="lineno">   44</span>      <a class="code hl_function" href="../../d5/da4/classnexilis_1_1NXProtocol.html#af09e9806c3da63398b852d39c3a2c06b">NXProtocol</a>(),</div>
+<div class="line"><span class="lineno">   45</span>      <a class="code hl_function" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#acc41d5e868dddd01209c4258df695ae1">ClientProtocol</a>(&amp;api),</div>
+<div class="line"><span class="lineno">   46</span>      m_stopped(std::make_unique&lt;std::atomic&lt;bool&gt;&gt;(<span class="keyword">false</span>)),</div>
+<div class="line"><span class="lineno">   47</span>      m_ioContext(std::make_shared&lt;boost::asio::io_context&gt;()),</div>
+<div class="line"><span class="lineno">   48</span>      m_strand(std::make_shared&lt;boost::asio::io_context::strand&gt;(*m_ioContext)),</div>
+<div class="line"><span class="lineno">   49</span>      m_workGuard(std::make_unique&lt;boost::asio::executor_work_guard&lt;boost::asio::io_context::executor_type&gt;&gt;(</div>
+<div class="line"><span class="lineno">   50</span>              boost::asio::make_work_guard(*m_ioContext))),</div>
+<div class="line"><span class="lineno">   51</span>      m_tlsContext(createTlsContext(api)),</div>
+<div class="line"><span class="lineno">   52</span>      m_tlsEnabled(api.isTlsEnabled()),</div>
+<div class="line"><span class="lineno">   53</span>      m_mainSocket(std::make_shared&lt;TlsSocket&gt;(*m_ioContext, *m_tlsContext)),</div>
+<div class="line"><span class="lineno">   54</span>      m_switchedSocket(std::make_shared&lt;TlsSocket&gt;(*m_ioContext, *m_tlsContext)),</div>
+<div class="line"><span class="lineno">   55</span>      m_activeSocket(),</div>
+<div class="line"><span class="lineno">   56</span>      m_resolver(*m_ioContext),</div>
+<div class="line"><span class="lineno">   57</span>      m_sendMutex(std::make_shared&lt;std::mutex&gt;()),</div>
+<div class="line"><span class="lineno">   58</span>      m_receiveMutex(std::make_shared&lt;std::mutex&gt;()),</div>
+<div class="line"><span class="lineno">   59</span>      m_portSwitchingMutex(std::make_shared&lt;std::mutex&gt;()),</div>
+<div class="line"><span class="lineno">   60</span>      m_mainPort(<a class="code hl_function" href="../../db/d41/classnexilis_1_1Ports.html#a01bfdb03f223f2a958c79f3568001794">Ports::getBoostTCPPort</a>()),</div>
+<div class="line"><span class="lineno">   61</span>      m_switchedPort(0),</div>
+<div class="line"><span class="lineno">   62</span>      m_useSwitchedPort(<span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">   63</span>      m_pendingSendsMutex(std::make_shared&lt;std::mutex&gt;())</div>
+<div class="line"><span class="lineno">   64</span>{</div>
+<div class="line"><span class="lineno">   65</span>    storeSocket(m_mainSocket);</div>
+<div class="line"><span class="lineno">   66</span> </div>
+<div class="line"><span class="lineno">   67</span>    <span class="comment">// Verify all shared pointers were created.</span></div>
+<div class="line"><span class="lineno">   68</span>    <span class="keywordflow">if</span> (!m_sendMutex || !m_receiveMutex || !m_portSwitchingMutex)</div>
+<div class="line"><span class="lineno">   69</span>    {</div>
+<div class="line"><span class="lineno">   70</span>        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Failed to initialize synchronization objects&quot;</span>);</div>
+<div class="line"><span class="lineno">   71</span>    }</div>
+<div class="line"><span class="lineno">   72</span>}</div>
 <div class="ttc" id="aclassnexilis_1_1NXProtocol_html_af09e9806c3da63398b852d39c3a2c06b"><div class="ttname"><a href="../../d5/da4/classnexilis_1_1NXProtocol.html#af09e9806c3da63398b852d39c3a2c06b">nexilis::NXProtocol::NXProtocol</a></div><div class="ttdeci">NXProtocol()=default</div><div class="ttdoc">Default constructor.</div></div>
 <div class="ttc" id="aclassnexilis_1_1NxClass_html_a0f756bc77e25ee01bdc0eb3c9f75e696"><div class="ttname"><a href="../../d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696">nexilis::NxClass::NxClass</a></div><div class="ttdeci">NxClass(const std::string &amp;name)</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d8b/nx__class_8cc_source.html#l00022">nx_class.cc:22</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1Ports_html_a01bfdb03f223f2a958c79f3568001794"><div class="ttname"><a href="../../db/d41/classnexilis_1_1Ports.html#a01bfdb03f223f2a958c79f3568001794">nexilis::Ports::getBoostTCPPort</a></div><div class="ttdeci">static uint16_t getBoostTCPPort()</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dfb/ports_8cc_source.html#l00024">ports.cc:24</a></div></div>
-<div class="ttc" id="aclassnexilis_1_1client_1_1ClientProtocol_html_acc41d5e868dddd01209c4258df695ae1"><div class="ttname"><a href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#acc41d5e868dddd01209c4258df695ae1">nexilis::client::ClientProtocol::ClientProtocol</a></div><div class="ttdeci">ClientProtocol(ClientAPI *api)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition</b> <a href="../../df/d3c/client__protocol_8cc_source.html#l00027">client_protocol.cc:27</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1client_1_1ClientProtocol_html_acc41d5e868dddd01209c4258df695ae1"><div class="ttname"><a href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#acc41d5e868dddd01209c4258df695ae1">nexilis::client::ClientProtocol::ClientProtocol</a></div><div class="ttdeci">ClientProtocol(ClientAPI *api)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition</b> <a href="../../df/d3c/client__protocol_8cc_source.html#l00030">client_protocol.cc:30</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -386,12 +387,12 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html#l00144">144</a> of file <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html">tcp_client.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  145</span>{</div>
-<div class="line"><span class="lineno">  146</span>    <a class="code hl_function" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#ae43cce69993969249f40e476764d8351">stop</a>();</div>
-<div class="line"><span class="lineno">  147</span>    m_workGuard.reset();</div>
-<div class="line"><span class="lineno">  148</span>}</div>
-<div class="ttc" id="aclassnexilis_1_1client_1_1nxboost_1_1TCPClient_html_ae43cce69993969249f40e476764d8351"><div class="ttname"><a href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#ae43cce69993969249f40e476764d8351">nexilis::client::nxboost::TCPClient::stop</a></div><div class="ttdeci">void stop() override</div><div class="ttdoc">NXProtocol::stop() implementation.</div><div class="ttdef"><b>Definition</b> <a href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html#l00248">tcp_client.cc:248</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html#l00150">150</a> of file <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html">tcp_client.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  151</span>{</div>
+<div class="line"><span class="lineno">  152</span>    <a class="code hl_function" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#ae43cce69993969249f40e476764d8351">stop</a>();</div>
+<div class="line"><span class="lineno">  153</span>    m_workGuard.reset();</div>
+<div class="line"><span class="lineno">  154</span>}</div>
+<div class="ttc" id="aclassnexilis_1_1client_1_1nxboost_1_1TCPClient_html_ae43cce69993969249f40e476764d8351"><div class="ttname"><a href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#ae43cce69993969249f40e476764d8351">nexilis::client::nxboost::TCPClient::stop</a></div><div class="ttdeci">void stop() override</div><div class="ttdoc">NXProtocol::stop() implementation.</div><div class="ttdef"><b>Definition</b> <a href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html#l00309">tcp_client.cc:309</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -429,37 +430,38 @@ Here is the call graph for this function:</div>
 
 <p>Move constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html#l00070">70</a> of file <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html">tcp_client.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   71</span>    : <a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696">NxClass</a>(std::move(other)),</div>
-<div class="line"><span class="lineno">   72</span>      <a class="code hl_function" href="../../d5/da4/classnexilis_1_1NXProtocol.html#af09e9806c3da63398b852d39c3a2c06b">NXProtocol</a>(std::move(other)),</div>
-<div class="line"><span class="lineno">   73</span>      <a class="code hl_function" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#acc41d5e868dddd01209c4258df695ae1">ClientProtocol</a>(std::move(other)),</div>
-<div class="line"><span class="lineno">   74</span>      <a class="code hl_variable" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a8adba8b81029ea9edc22df0521ae1909">m_ioContextThread</a>(std::move(other.m_ioContextThread)),</div>
-<div class="line"><span class="lineno">   75</span>      m_stopped(std::move(other.m_stopped)),</div>
-<div class="line"><span class="lineno">   76</span>      m_ioContext(std::move(other.m_ioContext)),</div>
-<div class="line"><span class="lineno">   77</span>      m_strand(std::move(other.m_strand)),</div>
-<div class="line"><span class="lineno">   78</span>      m_workGuard(std::move(other.m_workGuard)),</div>
-<div class="line"><span class="lineno">   79</span>      m_tlsContext(std::move(other.m_tlsContext)),</div>
-<div class="line"><span class="lineno">   80</span>      m_mainSocket(std::move(other.m_mainSocket)),</div>
-<div class="line"><span class="lineno">   81</span>      m_switchedSocket(std::move(other.m_switchedSocket)),</div>
-<div class="line"><span class="lineno">   82</span>      m_activeSocket(other.m_activeSocket.load()),</div>
-<div class="line"><span class="lineno">   83</span>      m_resolver(std::move(other.m_resolver)),</div>
-<div class="line"><span class="lineno">   84</span>      m_sendMutex(std::move(other.m_sendMutex)),</div>
-<div class="line"><span class="lineno">   85</span>      m_receiveMutex(std::move(other.m_receiveMutex)),</div>
-<div class="line"><span class="lineno">   86</span>      m_portSwitchingMutex(std::move(other.m_portSwitchingMutex)),</div>
-<div class="line"><span class="lineno">   87</span>      m_mainPort(std::move(other.m_mainPort)),</div>
-<div class="line"><span class="lineno">   88</span>      m_switchedPort(std::move(other.m_switchedPort)),</div>
-<div class="line"><span class="lineno">   89</span>      m_useSwitchedPort(other.m_useSwitchedPort.load()),</div>
-<div class="line"><span class="lineno">   90</span>      m_pendingSends(std::move(other.m_pendingSends)),</div>
-<div class="line"><span class="lineno">   91</span>      m_pendingSendsMutex(std::move(other.m_pendingSendsMutex))</div>
-<div class="line"><span class="lineno">   92</span>{</div>
-<div class="line"><span class="lineno">   93</span>    other.m_stopped.reset();</div>
-<div class="line"><span class="lineno">   94</span>    other.m_strand.reset();</div>
-<div class="line"><span class="lineno">   95</span>    other.m_workGuard.reset();</div>
-<div class="line"><span class="lineno">   96</span>    other.m_sendMutex.reset();</div>
-<div class="line"><span class="lineno">   97</span>    other.m_receiveMutex.reset();</div>
-<div class="line"><span class="lineno">   98</span>    other.m_portSwitchingMutex.reset();</div>
-<div class="line"><span class="lineno">   99</span>    other.m_activeSocket.store(<span class="keyword">nullptr</span>);</div>
-<div class="line"><span class="lineno">  100</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html#l00074">74</a> of file <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html">tcp_client.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   75</span>    : <a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696">NxClass</a>(std::move(other)),</div>
+<div class="line"><span class="lineno">   76</span>      <a class="code hl_function" href="../../d5/da4/classnexilis_1_1NXProtocol.html#af09e9806c3da63398b852d39c3a2c06b">NXProtocol</a>(std::move(other)),</div>
+<div class="line"><span class="lineno">   77</span>      <a class="code hl_function" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#acc41d5e868dddd01209c4258df695ae1">ClientProtocol</a>(std::move(other)),</div>
+<div class="line"><span class="lineno">   78</span>      <a class="code hl_variable" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a8adba8b81029ea9edc22df0521ae1909">m_ioContextThread</a>(std::move(other.m_ioContextThread)),</div>
+<div class="line"><span class="lineno">   79</span>      m_stopped(std::move(other.m_stopped)),</div>
+<div class="line"><span class="lineno">   80</span>      m_ioContext(std::move(other.m_ioContext)),</div>
+<div class="line"><span class="lineno">   81</span>      m_strand(std::move(other.m_strand)),</div>
+<div class="line"><span class="lineno">   82</span>      m_workGuard(std::move(other.m_workGuard)),</div>
+<div class="line"><span class="lineno">   83</span>      m_tlsContext(std::move(other.m_tlsContext)),</div>
+<div class="line"><span class="lineno">   84</span>      m_tlsEnabled(other.m_tlsEnabled),</div>
+<div class="line"><span class="lineno">   85</span>      m_mainSocket(std::move(other.m_mainSocket)),</div>
+<div class="line"><span class="lineno">   86</span>      m_switchedSocket(std::move(other.m_switchedSocket)),</div>
+<div class="line"><span class="lineno">   87</span>      m_activeSocket(other.m_activeSocket.load()),</div>
+<div class="line"><span class="lineno">   88</span>      m_resolver(std::move(other.m_resolver)),</div>
+<div class="line"><span class="lineno">   89</span>      m_sendMutex(std::move(other.m_sendMutex)),</div>
+<div class="line"><span class="lineno">   90</span>      m_receiveMutex(std::move(other.m_receiveMutex)),</div>
+<div class="line"><span class="lineno">   91</span>      m_portSwitchingMutex(std::move(other.m_portSwitchingMutex)),</div>
+<div class="line"><span class="lineno">   92</span>      m_mainPort(std::move(other.m_mainPort)),</div>
+<div class="line"><span class="lineno">   93</span>      m_switchedPort(std::move(other.m_switchedPort)),</div>
+<div class="line"><span class="lineno">   94</span>      m_useSwitchedPort(other.m_useSwitchedPort.load()),</div>
+<div class="line"><span class="lineno">   95</span>      m_pendingSends(std::move(other.m_pendingSends)),</div>
+<div class="line"><span class="lineno">   96</span>      m_pendingSendsMutex(std::move(other.m_pendingSendsMutex))</div>
+<div class="line"><span class="lineno">   97</span>{</div>
+<div class="line"><span class="lineno">   98</span>    other.m_stopped.reset();</div>
+<div class="line"><span class="lineno">   99</span>    other.m_strand.reset();</div>
+<div class="line"><span class="lineno">  100</span>    other.m_workGuard.reset();</div>
+<div class="line"><span class="lineno">  101</span>    other.m_sendMutex.reset();</div>
+<div class="line"><span class="lineno">  102</span>    other.m_receiveMutex.reset();</div>
+<div class="line"><span class="lineno">  103</span>    other.m_portSwitchingMutex.reset();</div>
+<div class="line"><span class="lineno">  104</span>    other.m_activeSocket.store(<span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  105</span>}</div>
 <div class="ttc" id="aclassnexilis_1_1client_1_1nxboost_1_1TCPClient_html_a8adba8b81029ea9edc22df0521ae1909"><div class="ttname"><a href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a8adba8b81029ea9edc22df0521ae1909">nexilis::client::nxboost::TCPClient::m_ioContextThread</a></div><div class="ttdeci">std::thread m_ioContextThread</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dab/client_2protocol_2nxboost_2tcp__client_8hh_source.html#l00087">tcp_client.hh:87</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -594,47 +596,48 @@ Here is the caller graph for this function:</div>
 
 <p>Move assignment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html#l00102">102</a> of file <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html">tcp_client.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  103</span>{</div>
-<div class="line"><span class="lineno">  104</span>    <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;other)</div>
-<div class="line"><span class="lineno">  105</span>    {</div>
-<div class="line"><span class="lineno">  106</span>        <span class="keyword">static_cast&lt;</span><a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696">NxClass</a>&amp;<span class="keyword">&gt;</span>(*this) = <span class="keyword">static_cast&lt;</span><a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696">NxClass</a>&amp;&amp;<span class="keyword">&gt;</span>(other);</div>
-<div class="line"><span class="lineno">  107</span>        <span class="keyword">static_cast&lt;</span><a class="code hl_function" href="../../d5/da4/classnexilis_1_1NXProtocol.html#af09e9806c3da63398b852d39c3a2c06b">NXProtocol</a>&amp;<span class="keyword">&gt;</span>(*this) = <span class="keyword">static_cast&lt;</span><a class="code hl_function" href="../../d5/da4/classnexilis_1_1NXProtocol.html#af09e9806c3da63398b852d39c3a2c06b">NXProtocol</a>&amp;&amp;<span class="keyword">&gt;</span>(other);</div>
-<div class="line"><span class="lineno">  108</span>        <span class="keyword">static_cast&lt;</span><a class="code hl_function" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#acc41d5e868dddd01209c4258df695ae1">ClientProtocol</a>&amp;<span class="keyword">&gt;</span>(*this) = <span class="keyword">static_cast&lt;</span><a class="code hl_function" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#acc41d5e868dddd01209c4258df695ae1">ClientProtocol</a>&amp;&amp;<span class="keyword">&gt;</span>(other);</div>
-<div class="line"><span class="lineno">  109</span> </div>
-<div class="line"><span class="lineno">  110</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a8adba8b81029ea9edc22df0521ae1909">m_ioContextThread</a>.joinable())</div>
-<div class="line"><span class="lineno">  111</span>        {</div>
-<div class="line"><span class="lineno">  112</span>            <a class="code hl_variable" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a8adba8b81029ea9edc22df0521ae1909">m_ioContextThread</a>.join();</div>
-<div class="line"><span class="lineno">  113</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html#l00107">107</a> of file <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html">tcp_client.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  108</span>{</div>
+<div class="line"><span class="lineno">  109</span>    <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;other)</div>
+<div class="line"><span class="lineno">  110</span>    {</div>
+<div class="line"><span class="lineno">  111</span>        <span class="keyword">static_cast&lt;</span><a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696">NxClass</a>&amp;<span class="keyword">&gt;</span>(*this) = <span class="keyword">static_cast&lt;</span><a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#a0f756bc77e25ee01bdc0eb3c9f75e696">NxClass</a>&amp;&amp;<span class="keyword">&gt;</span>(other);</div>
+<div class="line"><span class="lineno">  112</span>        <span class="keyword">static_cast&lt;</span><a class="code hl_function" href="../../d5/da4/classnexilis_1_1NXProtocol.html#af09e9806c3da63398b852d39c3a2c06b">NXProtocol</a>&amp;<span class="keyword">&gt;</span>(*this) = <span class="keyword">static_cast&lt;</span><a class="code hl_function" href="../../d5/da4/classnexilis_1_1NXProtocol.html#af09e9806c3da63398b852d39c3a2c06b">NXProtocol</a>&amp;&amp;<span class="keyword">&gt;</span>(other);</div>
+<div class="line"><span class="lineno">  113</span>        <span class="keyword">static_cast&lt;</span><a class="code hl_function" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#acc41d5e868dddd01209c4258df695ae1">ClientProtocol</a>&amp;<span class="keyword">&gt;</span>(*this) = <span class="keyword">static_cast&lt;</span><a class="code hl_function" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#acc41d5e868dddd01209c4258df695ae1">ClientProtocol</a>&amp;&amp;<span class="keyword">&gt;</span>(other);</div>
 <div class="line"><span class="lineno">  114</span> </div>
-<div class="line"><span class="lineno">  115</span>        <a class="code hl_variable" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a8adba8b81029ea9edc22df0521ae1909">m_ioContextThread</a> = std::move(other.m_ioContextThread);</div>
-<div class="line"><span class="lineno">  116</span>        m_stopped = std::move(other.m_stopped);</div>
-<div class="line"><span class="lineno">  117</span>        m_ioContext = std::move(other.m_ioContext);</div>
-<div class="line"><span class="lineno">  118</span>        m_strand = std::move(other.m_strand);</div>
-<div class="line"><span class="lineno">  119</span>        m_workGuard = std::move(other.m_workGuard);</div>
-<div class="line"><span class="lineno">  120</span>        m_tlsContext = std::move(other.m_tlsContext);</div>
-<div class="line"><span class="lineno">  121</span>        m_mainSocket = std::move(other.m_mainSocket);</div>
-<div class="line"><span class="lineno">  122</span>        m_switchedSocket = std::move(other.m_switchedSocket);</div>
-<div class="line"><span class="lineno">  123</span>        m_activeSocket = other.m_activeSocket.load();</div>
-<div class="line"><span class="lineno">  124</span>        m_resolver = std::move(other.m_resolver);</div>
-<div class="line"><span class="lineno">  125</span>        m_sendMutex = std::move(other.m_sendMutex);</div>
-<div class="line"><span class="lineno">  126</span>        m_receiveMutex = std::move(other.m_receiveMutex);</div>
-<div class="line"><span class="lineno">  127</span>        m_portSwitchingMutex = std::move(other.m_portSwitchingMutex);</div>
-<div class="line"><span class="lineno">  128</span>        m_mainPort = std::move(other.m_mainPort);</div>
-<div class="line"><span class="lineno">  129</span>        m_switchedPort = std::move(other.m_switchedPort);</div>
-<div class="line"><span class="lineno">  130</span>        m_useSwitchedPort = other.m_useSwitchedPort.load();</div>
-<div class="line"><span class="lineno">  131</span>        m_pendingSends = std::move(other.m_pendingSends);</div>
-<div class="line"><span class="lineno">  132</span>        m_pendingSendsMutex = std::move(other.m_pendingSendsMutex);</div>
-<div class="line"><span class="lineno">  133</span> </div>
-<div class="line"><span class="lineno">  134</span>        other.m_stopped.reset();</div>
-<div class="line"><span class="lineno">  135</span>        other.m_workGuard.reset();</div>
-<div class="line"><span class="lineno">  136</span>        other.m_strand.reset();</div>
-<div class="line"><span class="lineno">  137</span>        other.m_sendMutex.reset();</div>
-<div class="line"><span class="lineno">  138</span>        other.m_receiveMutex.reset();</div>
-<div class="line"><span class="lineno">  139</span>        other.m_portSwitchingMutex.reset();</div>
-<div class="line"><span class="lineno">  140</span>    }</div>
-<div class="line"><span class="lineno">  141</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  142</span>}</div>
+<div class="line"><span class="lineno">  115</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a8adba8b81029ea9edc22df0521ae1909">m_ioContextThread</a>.joinable())</div>
+<div class="line"><span class="lineno">  116</span>        {</div>
+<div class="line"><span class="lineno">  117</span>            <a class="code hl_variable" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a8adba8b81029ea9edc22df0521ae1909">m_ioContextThread</a>.join();</div>
+<div class="line"><span class="lineno">  118</span>        }</div>
+<div class="line"><span class="lineno">  119</span> </div>
+<div class="line"><span class="lineno">  120</span>        <a class="code hl_variable" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a8adba8b81029ea9edc22df0521ae1909">m_ioContextThread</a> = std::move(other.m_ioContextThread);</div>
+<div class="line"><span class="lineno">  121</span>        m_stopped = std::move(other.m_stopped);</div>
+<div class="line"><span class="lineno">  122</span>        m_ioContext = std::move(other.m_ioContext);</div>
+<div class="line"><span class="lineno">  123</span>        m_strand = std::move(other.m_strand);</div>
+<div class="line"><span class="lineno">  124</span>        m_workGuard = std::move(other.m_workGuard);</div>
+<div class="line"><span class="lineno">  125</span>        m_tlsContext = std::move(other.m_tlsContext);</div>
+<div class="line"><span class="lineno">  126</span>        m_tlsEnabled = other.m_tlsEnabled;</div>
+<div class="line"><span class="lineno">  127</span>        m_mainSocket = std::move(other.m_mainSocket);</div>
+<div class="line"><span class="lineno">  128</span>        m_switchedSocket = std::move(other.m_switchedSocket);</div>
+<div class="line"><span class="lineno">  129</span>        m_activeSocket = other.m_activeSocket.load();</div>
+<div class="line"><span class="lineno">  130</span>        m_resolver = std::move(other.m_resolver);</div>
+<div class="line"><span class="lineno">  131</span>        m_sendMutex = std::move(other.m_sendMutex);</div>
+<div class="line"><span class="lineno">  132</span>        m_receiveMutex = std::move(other.m_receiveMutex);</div>
+<div class="line"><span class="lineno">  133</span>        m_portSwitchingMutex = std::move(other.m_portSwitchingMutex);</div>
+<div class="line"><span class="lineno">  134</span>        m_mainPort = std::move(other.m_mainPort);</div>
+<div class="line"><span class="lineno">  135</span>        m_switchedPort = std::move(other.m_switchedPort);</div>
+<div class="line"><span class="lineno">  136</span>        m_useSwitchedPort = other.m_useSwitchedPort.load();</div>
+<div class="line"><span class="lineno">  137</span>        m_pendingSends = std::move(other.m_pendingSends);</div>
+<div class="line"><span class="lineno">  138</span>        m_pendingSendsMutex = std::move(other.m_pendingSendsMutex);</div>
+<div class="line"><span class="lineno">  139</span> </div>
+<div class="line"><span class="lineno">  140</span>        other.m_stopped.reset();</div>
+<div class="line"><span class="lineno">  141</span>        other.m_workGuard.reset();</div>
+<div class="line"><span class="lineno">  142</span>        other.m_strand.reset();</div>
+<div class="line"><span class="lineno">  143</span>        other.m_sendMutex.reset();</div>
+<div class="line"><span class="lineno">  144</span>        other.m_receiveMutex.reset();</div>
+<div class="line"><span class="lineno">  145</span>        other.m_portSwitchingMutex.reset();</div>
+<div class="line"><span class="lineno">  146</span>    }</div>
+<div class="line"><span class="lineno">  147</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  148</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -666,10 +669,10 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#a4f1a10ae05e2d672a42a12b956b0e3b5">nexilis::client::ClientProtocol</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html#l00332">332</a> of file <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html">tcp_client.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  333</span>{</div>
-<div class="line"><span class="lineno">  334</span>    send(message);</div>
-<div class="line"><span class="lineno">  335</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html#l00393">393</a> of file <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html">tcp_client.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  394</span>{</div>
+<div class="line"><span class="lineno">  395</span>    send(message);</div>
+<div class="line"><span class="lineno">  396</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -731,11 +734,11 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#ae4f4fd1c62b8b2cb38213341be027f28">nexilis::client::ClientProtocol</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html#l00337">337</a> of file <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html">tcp_client.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  338</span>{</div>
-<div class="line"><span class="lineno">  339</span>    <a class="code hl_function" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#a3bedd34391c63ccb9d70483317198ac6">sendMessageWithCallback</a>(message, callback);</div>
-<div class="line"><span class="lineno">  340</span>}</div>
-<div class="ttc" id="aclassnexilis_1_1client_1_1ClientProtocol_html_a3bedd34391c63ccb9d70483317198ac6"><div class="ttname"><a href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#a3bedd34391c63ccb9d70483317198ac6">nexilis::client::ClientProtocol::sendMessageWithCallback</a></div><div class="ttdeci">void sendMessageWithCallback(const nx_data &amp;message, const std::function&lt; void()&gt; &amp;callback)</div><div class="ttdef"><b>Definition</b> <a href="../../df/d3c/client__protocol_8cc_source.html#l00111">client_protocol.cc:111</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html#l00398">398</a> of file <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html">tcp_client.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  399</span>{</div>
+<div class="line"><span class="lineno">  400</span>    <a class="code hl_function" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#a3bedd34391c63ccb9d70483317198ac6">sendMessageWithCallback</a>(message, callback);</div>
+<div class="line"><span class="lineno">  401</span>}</div>
+<div class="ttc" id="aclassnexilis_1_1client_1_1ClientProtocol_html_a3bedd34391c63ccb9d70483317198ac6"><div class="ttname"><a href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#a3bedd34391c63ccb9d70483317198ac6">nexilis::client::ClientProtocol::sendMessageWithCallback</a></div><div class="ttdeci">void sendMessageWithCallback(const nx_data &amp;message, const std::function&lt; void()&gt; &amp;callback)</div><div class="ttdef"><b>Definition</b> <a href="../../df/d3c/client__protocol_8cc_source.html#l00114">client_protocol.cc:114</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -783,48 +786,48 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#a77d317a3d405296a46a8ec2d69c37b69">nexilis::client::ClientProtocol</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html#l00583">583</a> of file <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html">tcp_client.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  584</span>{</div>
-<div class="line"><span class="lineno">  585</span>    <span class="comment">// Extract message ID (second 8 bytes)</span></div>
-<div class="line"><span class="lineno">  586</span>    <span class="keywordflow">if</span> (message.size() &lt; 16)</div>
-<div class="line"><span class="lineno">  587</span>    {</div>
-<div class="line"><span class="lineno">  588</span>        <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Message too small&quot;</span>);</div>
-<div class="line"><span class="lineno">  589</span>        std::promise&lt;void&gt; emptyPromise;</div>
-<div class="line"><span class="lineno">  590</span>        emptyPromise.set_exception(</div>
-<div class="line"><span class="lineno">  591</span>                std::make_exception_ptr(std::runtime_error(<span class="stringliteral">&quot;Message too small&quot;</span>)));</div>
-<div class="line"><span class="lineno">  592</span>        <span class="keywordflow">return</span> emptyPromise.get_future();</div>
-<div class="line"><span class="lineno">  593</span>    }</div>
-<div class="line"><span class="lineno">  594</span> </div>
-<div class="line"><span class="lineno">  595</span>    uint64_t messageId = 0;</div>
-<div class="line"><span class="lineno">  596</span>    std::memcpy(&amp;messageId, message.data() + 8, <span class="keyword">sizeof</span>(uint64_t));</div>
-<div class="line"><span class="lineno">  597</span> </div>
-<div class="line"><span class="lineno">  598</span>    <span class="keyword">auto</span> promise = std::make_shared&lt;std::promise&lt;void&gt;&gt;();</div>
-<div class="line"><span class="lineno">  599</span>    <span class="keyword">auto</span> future = promise-&gt;get_future();</div>
-<div class="line"><span class="lineno">  600</span> </div>
-<div class="line"><span class="lineno">  601</span>    <span class="comment">// Store promise BEFORE calling send() so the async_write handler</span></div>
-<div class="line"><span class="lineno">  602</span>    <span class="comment">// can find it when it fires on the io_context thread.</span></div>
-<div class="line"><span class="lineno">  603</span>    {</div>
-<div class="line"><span class="lineno">  604</span>        std::lock_guard&lt;std::mutex&gt; lock(*m_pendingSendsMutex);</div>
-<div class="line"><span class="lineno">  605</span>        m_pendingSends[messageId] = promise;</div>
-<div class="line"><span class="lineno">  606</span>    }</div>
-<div class="line"><span class="lineno">  607</span> </div>
-<div class="line"><span class="lineno">  608</span>    <span class="comment">// Send the message (this will trigger async write)</span></div>
-<div class="line"><span class="lineno">  609</span>    <span class="keywordflow">if</span> (!send(message))</div>
-<div class="line"><span class="lineno">  610</span>    {</div>
-<div class="line"><span class="lineno">  611</span>        <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Async send failed synchronously&quot;</span>);</div>
-<div class="line"><span class="lineno">  612</span> </div>
-<div class="line"><span class="lineno">  613</span>        <span class="comment">// Remove the promise we just stored and reject the future.</span></div>
-<div class="line"><span class="lineno">  614</span>        {</div>
-<div class="line"><span class="lineno">  615</span>            std::lock_guard&lt;std::mutex&gt; lock(*m_pendingSendsMutex);</div>
-<div class="line"><span class="lineno">  616</span>            m_pendingSends.erase(messageId);</div>
-<div class="line"><span class="lineno">  617</span>        }</div>
-<div class="line"><span class="lineno">  618</span>        promise-&gt;set_exception(</div>
-<div class="line"><span class="lineno">  619</span>                std::make_exception_ptr(std::runtime_error(<span class="stringliteral">&quot;Send failed&quot;</span>)));</div>
-<div class="line"><span class="lineno">  620</span>        <span class="keywordflow">return</span> future;</div>
-<div class="line"><span class="lineno">  621</span>    }</div>
-<div class="line"><span class="lineno">  622</span> </div>
-<div class="line"><span class="lineno">  623</span>    <span class="keywordflow">return</span> future;</div>
-<div class="line"><span class="lineno">  624</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html#l00644">644</a> of file <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html">tcp_client.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  645</span>{</div>
+<div class="line"><span class="lineno">  646</span>    <span class="comment">// Extract message ID (second 8 bytes)</span></div>
+<div class="line"><span class="lineno">  647</span>    <span class="keywordflow">if</span> (message.size() &lt; 16)</div>
+<div class="line"><span class="lineno">  648</span>    {</div>
+<div class="line"><span class="lineno">  649</span>        <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Message too small&quot;</span>);</div>
+<div class="line"><span class="lineno">  650</span>        std::promise&lt;void&gt; emptyPromise;</div>
+<div class="line"><span class="lineno">  651</span>        emptyPromise.set_exception(</div>
+<div class="line"><span class="lineno">  652</span>                std::make_exception_ptr(std::runtime_error(<span class="stringliteral">&quot;Message too small&quot;</span>)));</div>
+<div class="line"><span class="lineno">  653</span>        <span class="keywordflow">return</span> emptyPromise.get_future();</div>
+<div class="line"><span class="lineno">  654</span>    }</div>
+<div class="line"><span class="lineno">  655</span> </div>
+<div class="line"><span class="lineno">  656</span>    uint64_t messageId = 0;</div>
+<div class="line"><span class="lineno">  657</span>    std::memcpy(&amp;messageId, message.data() + 8, <span class="keyword">sizeof</span>(uint64_t));</div>
+<div class="line"><span class="lineno">  658</span> </div>
+<div class="line"><span class="lineno">  659</span>    <span class="keyword">auto</span> promise = std::make_shared&lt;std::promise&lt;void&gt;&gt;();</div>
+<div class="line"><span class="lineno">  660</span>    <span class="keyword">auto</span> future = promise-&gt;get_future();</div>
+<div class="line"><span class="lineno">  661</span> </div>
+<div class="line"><span class="lineno">  662</span>    <span class="comment">// Store promise BEFORE calling send() so the async_write handler</span></div>
+<div class="line"><span class="lineno">  663</span>    <span class="comment">// can find it when it fires on the io_context thread.</span></div>
+<div class="line"><span class="lineno">  664</span>    {</div>
+<div class="line"><span class="lineno">  665</span>        std::lock_guard&lt;std::mutex&gt; lock(*m_pendingSendsMutex);</div>
+<div class="line"><span class="lineno">  666</span>        m_pendingSends[messageId] = promise;</div>
+<div class="line"><span class="lineno">  667</span>    }</div>
+<div class="line"><span class="lineno">  668</span> </div>
+<div class="line"><span class="lineno">  669</span>    <span class="comment">// Send the message (this will trigger async write)</span></div>
+<div class="line"><span class="lineno">  670</span>    <span class="keywordflow">if</span> (!send(message))</div>
+<div class="line"><span class="lineno">  671</span>    {</div>
+<div class="line"><span class="lineno">  672</span>        <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Async send failed synchronously&quot;</span>);</div>
+<div class="line"><span class="lineno">  673</span> </div>
+<div class="line"><span class="lineno">  674</span>        <span class="comment">// Remove the promise we just stored and reject the future.</span></div>
+<div class="line"><span class="lineno">  675</span>        {</div>
+<div class="line"><span class="lineno">  676</span>            std::lock_guard&lt;std::mutex&gt; lock(*m_pendingSendsMutex);</div>
+<div class="line"><span class="lineno">  677</span>            m_pendingSends.erase(messageId);</div>
+<div class="line"><span class="lineno">  678</span>        }</div>
+<div class="line"><span class="lineno">  679</span>        promise-&gt;set_exception(</div>
+<div class="line"><span class="lineno">  680</span>                std::make_exception_ptr(std::runtime_error(<span class="stringliteral">&quot;Send failed&quot;</span>)));</div>
+<div class="line"><span class="lineno">  681</span>        <span class="keywordflow">return</span> future;</div>
+<div class="line"><span class="lineno">  682</span>    }</div>
+<div class="line"><span class="lineno">  683</span> </div>
+<div class="line"><span class="lineno">  684</span>    <span class="keywordflow">return</span> future;</div>
+<div class="line"><span class="lineno">  685</span>}</div>
 <div class="ttc" id="aclassnexilis_1_1Log_html_a49959aac4210e93d1ccd1977e08dba80"><div class="ttname"><a href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">nexilis::Log::error</a></div><div class="ttdeci">static void error(const T &amp;data, const Args &amp;... args)</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de3/log_8hh_source.html#l00123">log.hh:123</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1NxClass_html_aacbc1ef37e00748730aa9f6faa55e2ae"><div class="ttname"><a href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">nexilis::NxClass::header</a></div><div class="ttdeci">const std::string &amp; header() const</div><div class="ttdoc">Get the classes name as header for log messages.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d9e/nx__class_8hh_source.html#l00053">nx_class.hh:53</a></div></div>
 </div><!-- fragment --><div class="dynheader">
@@ -881,155 +884,193 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="../../d5/da4/classnexilis_1_1NXProtocol.html#a92a8797ca6658c3bef4e7937a6e5918a">nexilis::NXProtocol</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html#l00626">626</a> of file <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html">tcp_client.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  627</span>{</div>
-<div class="line"><span class="lineno">  628</span>    <span class="keywordflow">if</span> (connectToServer())</div>
-<div class="line"><span class="lineno">  629</span>    {</div>
-<div class="line"><span class="lineno">  630</span>        startAsyncRead();</div>
-<div class="line"><span class="lineno">  631</span> </div>
-<div class="line"><span class="lineno">  632</span>        <span class="comment">// clang-format off</span></div>
-<div class="line"><span class="lineno">  633</span>        <a class="code hl_variable" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a8adba8b81029ea9edc22df0521ae1909">m_ioContextThread</a> = std::thread([<span class="keyword">this</span>]()</div>
-<div class="line"><span class="lineno">  634</span>        {</div>
-<div class="line"><span class="lineno">  635</span>            <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">Log::debug</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;io_context thread started.&quot;</span>);</div>
-<div class="line"><span class="lineno">  636</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  637</span>            {</div>
-<div class="line"><span class="lineno">  638</span>                m_ioContext-&gt;run();</div>
-<div class="line"><span class="lineno">  639</span>            }</div>
-<div class="line"><span class="lineno">  640</span>            <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e)</div>
-<div class="line"><span class="lineno">  641</span>            {</div>
-<div class="line"><span class="lineno">  642</span>                <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;io_context exception: &quot;</span>, e.what());</div>
-<div class="line"><span class="lineno">  643</span>            }</div>
-<div class="line"><span class="lineno">  644</span>            <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">Log::debug</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;io_context thread stopped.&quot;</span>);</div>
-<div class="line"><span class="lineno">  645</span>        });</div>
-<div class="line"><span class="lineno">  646</span>        <span class="comment">// clang-format on</span></div>
-<div class="line"><span class="lineno">  647</span> </div>
-<div class="line"><span class="lineno">  648</span>        <a class="code hl_function" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#a179d25c69c4a8ece4a2b75c81b3fb6d8">ClientProtocol::start</a>(<a class="code hl_function" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a603d6e40cbf86e6754008c220c620512">getType</a>());</div>
-<div class="line"><span class="lineno">  649</span>    }</div>
-<div class="line"><span class="lineno">  650</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  651</span>    {</div>
-<div class="line"><span class="lineno">  652</span>        <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Failed to connect to the server&quot;</span>);</div>
-<div class="line"><span class="lineno">  653</span>    }</div>
-<div class="line"><span class="lineno">  654</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html#l00687">687</a> of file <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html">tcp_client.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  688</span>{</div>
+<div class="line"><span class="lineno">  689</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#ac9059afc8258f93d0190892d4e4a5b9a">getClientAPI</a>()-&gt;<a class="code hl_function" href="../../d5/da4/classnexilis_1_1NXProtocol.html#a3248202c59d7174876a5d268d6021d64">getMode</a>() == <a class="code hl_enumvalue" href="../../d5/dc9/namespacenexilis_1_1server.html#acc371b1360f86610e42c4eb65bce21b7a50e5526edd0d52c30e1f7e839786623d">server::AuthenticationMode::password_protected</a> &amp;&amp;</div>
+<div class="line"><span class="lineno">  690</span>        !m_tlsEnabled)</div>
+<div class="line"><span class="lineno">  691</span>        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Password-protected Boost TCP requires TLS&quot;</span>);</div>
+<div class="line"><span class="lineno">  692</span>    <span class="keywordflow">if</span> (connectToServer())</div>
+<div class="line"><span class="lineno">  693</span>    {</div>
+<div class="line"><span class="lineno">  694</span>        startAsyncRead();</div>
+<div class="line"><span class="lineno">  695</span> </div>
+<div class="line"><span class="lineno">  696</span>        <span class="comment">// clang-format off</span></div>
+<div class="line"><span class="lineno">  697</span>        <a class="code hl_variable" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a8adba8b81029ea9edc22df0521ae1909">m_ioContextThread</a> = std::thread([<span class="keyword">this</span>]()</div>
+<div class="line"><span class="lineno">  698</span>        {</div>
+<div class="line"><span class="lineno">  699</span>            <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">Log::debug</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;io_context thread started.&quot;</span>);</div>
+<div class="line"><span class="lineno">  700</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  701</span>            {</div>
+<div class="line"><span class="lineno">  702</span>                m_ioContext-&gt;run();</div>
+<div class="line"><span class="lineno">  703</span>            }</div>
+<div class="line"><span class="lineno">  704</span>            <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e)</div>
+<div class="line"><span class="lineno">  705</span>            {</div>
+<div class="line"><span class="lineno">  706</span>                <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;io_context exception: &quot;</span>, e.what());</div>
+<div class="line"><span class="lineno">  707</span>            }</div>
+<div class="line"><span class="lineno">  708</span>            <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">Log::debug</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;io_context thread stopped.&quot;</span>);</div>
+<div class="line"><span class="lineno">  709</span>        });</div>
+<div class="line"><span class="lineno">  710</span>        <span class="comment">// clang-format on</span></div>
+<div class="line"><span class="lineno">  711</span> </div>
+<div class="line"><span class="lineno">  712</span>        <a class="code hl_function" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#a179d25c69c4a8ece4a2b75c81b3fb6d8">ClientProtocol::start</a>(<a class="code hl_function" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a603d6e40cbf86e6754008c220c620512">getType</a>());</div>
+<div class="line"><span class="lineno">  713</span> </div>
+<div class="line"><span class="lineno">  714</span>        <span class="comment">// Authentication on the first port only identifies the client. Do not</span></div>
+<div class="line"><span class="lineno">  715</span>        <span class="comment">// report readiness until the session port has also verified the pinned</span></div>
+<div class="line"><span class="lineno">  716</span>        <span class="comment">// server key; otherwise callers can send commands to the closing</span></div>
+<div class="line"><span class="lineno">  717</span>        <span class="comment">// handshake socket and lose them during the switch.</span></div>
+<div class="line"><span class="lineno">  718</span>        <span class="keyword">const</span> <span class="keyword">auto</span> deadline = std::chrono::steady_clock::now() + std::chrono::seconds(5);</div>
+<div class="line"><span class="lineno">  719</span>        <span class="keywordflow">while</span> (!m_useSwitchedPort.load() &amp;&amp; !m_stopped-&gt;load() &amp;&amp;</div>
+<div class="line"><span class="lineno">  720</span>               <a class="code hl_function" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#a6df72c444cd3a170bd1853e5b071afb0">getProtocolStatus</a>() == <a class="code hl_enumvalue" href="../../d2/dbe/namespacenexilis_1_1client.html#af8d5b5008691d1832d523cc9008fede2a06aa6fa8bdc2078e7e1bd903e70c8f6a">ProtocolStatus::connected</a> &amp;&amp;</div>
+<div class="line"><span class="lineno">  721</span>               std::chrono::steady_clock::now() &lt; deadline)</div>
+<div class="line"><span class="lineno">  722</span>            std::this_thread::sleep_for(std::chrono::milliseconds(10));</div>
+<div class="line"><span class="lineno">  723</span>        <span class="keywordflow">if</span> (!m_useSwitchedPort.load())</div>
+<div class="line"><span class="lineno">  724</span>        {</div>
+<div class="line"><span class="lineno">  725</span>            <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Session port did not verify the server identity&quot;</span>);</div>
+<div class="line"><span class="lineno">  726</span>            <a class="code hl_function" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#af9dbac70168c9aa488b0de801a962992">updateProtocolStatus</a>(<a class="code hl_enumvalue" href="../../d2/dbe/namespacenexilis_1_1client.html#af8d5b5008691d1832d523cc9008fede2acb5e100e5a9a3e7f6d1fd97512215282">ProtocolStatus::error</a>);</div>
+<div class="line"><span class="lineno">  727</span>            <a class="code hl_function" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#ae43cce69993969249f40e476764d8351">stop</a>();</div>
+<div class="line"><span class="lineno">  728</span>        }</div>
+<div class="line"><span class="lineno">  729</span>    }</div>
+<div class="line"><span class="lineno">  730</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  731</span>    {</div>
+<div class="line"><span class="lineno">  732</span>        <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80">Log::error</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;Failed to connect to the server&quot;</span>);</div>
+<div class="line"><span class="lineno">  733</span>    }</div>
+<div class="line"><span class="lineno">  734</span>}</div>
 <div class="ttc" id="aclassnexilis_1_1Log_html_a8818a693340eed14a9110c9988eac982"><div class="ttname"><a href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">nexilis::Log::debug</a></div><div class="ttdeci">static void debug(const T &amp;data, const Args &amp;... args)</div><div class="ttdoc">All the overloaded printing functions.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de3/log_8hh_source.html#l00105">log.hh:105</a></div></div>
-<div class="ttc" id="aclassnexilis_1_1client_1_1ClientProtocol_html_a179d25c69c4a8ece4a2b75c81b3fb6d8"><div class="ttname"><a href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#a179d25c69c4a8ece4a2b75c81b3fb6d8">nexilis::client::ClientProtocol::start</a></div><div class="ttdeci">void start(NXProtocol::Type type)</div><div class="ttdef"><b>Definition</b> <a href="../../df/d3c/client__protocol_8cc_source.html#l00128">client_protocol.cc:128</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1NXProtocol_html_a3248202c59d7174876a5d268d6021d64"><div class="ttname"><a href="../../d5/da4/classnexilis_1_1NXProtocol.html#a3248202c59d7174876a5d268d6021d64">nexilis::NXProtocol::getMode</a></div><div class="ttdeci">static Mode getMode(Type type)</div><div class="ttdoc">Get the mode of a type.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d86/nx__protocol_8cc_source.html#l00022">nx_protocol.cc:22</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1client_1_1ClientProtocol_html_a179d25c69c4a8ece4a2b75c81b3fb6d8"><div class="ttname"><a href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#a179d25c69c4a8ece4a2b75c81b3fb6d8">nexilis::client::ClientProtocol::start</a></div><div class="ttdeci">void start(NXProtocol::Type type)</div><div class="ttdef"><b>Definition</b> <a href="../../df/d3c/client__protocol_8cc_source.html#l00131">client_protocol.cc:131</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1client_1_1ClientProtocol_html_a6df72c444cd3a170bd1853e5b071afb0"><div class="ttname"><a href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#a6df72c444cd3a170bd1853e5b071afb0">nexilis::client::ClientProtocol::getProtocolStatus</a></div><div class="ttdeci">ProtocolStatus getProtocolStatus() const</div><div class="ttdoc">Get the connection status of client protocol.</div><div class="ttdef"><b>Definition</b> <a href="../../df/d3c/client__protocol_8cc_source.html#l00068">client_protocol.cc:68</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1client_1_1ClientProtocol_html_ac9059afc8258f93d0190892d4e4a5b9a"><div class="ttname"><a href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#ac9059afc8258f93d0190892d4e4a5b9a">nexilis::client::ClientProtocol::getClientAPI</a></div><div class="ttdeci">ClientAPI * getClientAPI()</div><div class="ttdef"><b>Definition</b> <a href="../../dd/dc4/client__protocol_8hh_source.html#l00056">client_protocol.hh:56</a></div></div>
+<div class="ttc" id="aclassnexilis_1_1client_1_1ClientProtocol_html_af9dbac70168c9aa488b0de801a962992"><div class="ttname"><a href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#af9dbac70168c9aa488b0de801a962992">nexilis::client::ClientProtocol::updateProtocolStatus</a></div><div class="ttdeci">void updateProtocolStatus(ProtocolStatus status)</div><div class="ttdoc">Change the connection status of client protocol.</div><div class="ttdef"><b>Definition</b> <a href="../../df/d3c/client__protocol_8cc_source.html#l00083">client_protocol.cc:83</a></div></div>
 <div class="ttc" id="aclassnexilis_1_1client_1_1nxboost_1_1TCPClient_html_a603d6e40cbf86e6754008c220c620512"><div class="ttname"><a href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a603d6e40cbf86e6754008c220c620512">nexilis::client::nxboost::TCPClient::getType</a></div><div class="ttdeci">NXProtocol::Type getType() override</div><div class="ttdoc">NXProtocol::getType() implementation.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dab/client_2protocol_2nxboost_2tcp__client_8hh_source.html#l00075">tcp_client.hh:75</a></div></div>
+<div class="ttc" id="anamespacenexilis_1_1client_html_af8d5b5008691d1832d523cc9008fede2a06aa6fa8bdc2078e7e1bd903e70c8f6a"><div class="ttname"><a href="../../d2/dbe/namespacenexilis_1_1client.html#af8d5b5008691d1832d523cc9008fede2a06aa6fa8bdc2078e7e1bd903e70c8f6a">nexilis::client::ProtocolStatus::connected</a></div><div class="ttdeci">@ connected</div></div>
+<div class="ttc" id="anamespacenexilis_1_1client_html_af8d5b5008691d1832d523cc9008fede2acb5e100e5a9a3e7f6d1fd97512215282"><div class="ttname"><a href="../../d2/dbe/namespacenexilis_1_1client.html#af8d5b5008691d1832d523cc9008fede2acb5e100e5a9a3e7f6d1fd97512215282">nexilis::client::ProtocolStatus::error</a></div><div class="ttdeci">@ error</div></div>
+<div class="ttc" id="anamespacenexilis_1_1server_html_acc371b1360f86610e42c4eb65bce21b7a50e5526edd0d52c30e1f7e839786623d"><div class="ttname"><a href="../../d5/dc9/namespacenexilis_1_1server.html#acc371b1360f86610e42c4eb65bce21b7a50e5526edd0d52c30e1f7e839786623d">nexilis::server::AuthenticationMode::password_protected</a></div><div class="ttdeci">@ password_protected</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient_aa33257eb91ceaddd1289e83aa03d7ba6_cgraph.png" border="0" usemap="#ad1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient_aa33257eb91ceaddd1289e83aa03d7ba6_cgraph" alt=""/></div>
 <map name="ad1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient_aa33257eb91ceaddd1289e83aa03d7ba6_cgraph" id="ad1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient_aa33257eb91ceaddd1289e83aa03d7ba6_cgraph">
-<area shape="rect" title="NXProtocol::start() implementation." alt="" coords="5,1111,175,1151"/>
-<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982" title="All the overloaded printing functions." alt="" coords="751,1003,895,1029"/>
-<area shape="poly" title=" " alt="" coords="175,1143,305,1163,454,1178,527,1180,592,1178,646,1170,685,1154,698,1142,705,1129,710,1101,714,1070,720,1054,733,1039,740,1033,744,1038,737,1043,725,1057,719,1071,715,1101,710,1131,702,1145,688,1158,648,1175,593,1183,527,1186,454,1183,304,1168,175,1149"/>
-<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="515,19,650,45"/>
-<area shape="poly" title=" " alt="" coords="92,1110,106,1024,133,891,171,733,220,574,248,489,269,414,306,285,330,227,364,170,412,114,477,55,501,42,504,46,480,59,416,118,369,174,335,229,311,287,274,415,253,491,225,575,176,734,138,892,112,1025,97,1111"/>
-<area shape="rect" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a603d6e40cbf86e6754008c220c620512" title="NXProtocol::getType() implementation." alt="" coords="242,1219,411,1259"/>
-<area shape="poly" title=" " alt="" coords="128,1148,224,1198,257,1211,255,1216,222,1202,125,1153"/>
-<area shape="rect" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae" title="Get the classes name as header for log messages." alt="" coords="493,1118,672,1143"/>
-<area shape="poly" title=" " alt="" coords="175,1128,479,1128,479,1133,175,1133"/>
-<area shape="rect" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#a179d25c69c4a8ece4a2b75c81b3fb6d8" title=" " alt="" coords="223,587,431,627"/>
-<area shape="poly" title=" " alt="" coords="98,1109,308,639,313,641,103,1111"/>
-<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#aa9bd79fb1a1804924e3440947c6ab117" title="Send debug message." alt="" coords="981,1099,1147,1139"/>
-<area shape="poly" title=" " alt="" coords="883,1026,912,1039,927,1051,937,1062,946,1073,960,1084,973,1091,970,1096,957,1089,942,1077,933,1066,923,1054,909,1044,881,1031"/>
-<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#acc02567dd7e4103305110bafbfd40c08" title="Send error message." alt="" coords="739,5,906,45"/>
-<area shape="poly" title=" " alt="" coords="650,27,726,25,726,31,650,33"/>
-<area shape="poly" title=" " alt="" coords="332,627,339,698,348,746,362,798,381,852,406,903,439,950,480,989,511,1007,545,1021,580,1029,617,1034,688,1035,751,1028,752,1034,688,1040,616,1040,579,1035,543,1026,509,1012,477,993,435,953,402,906,376,854,356,800,343,747,334,699,326,627"/>
-<area shape="poly" title=" " alt="" coords="333,585,376,463,428,293,435,256,437,224,434,165,435,138,441,111,454,84,477,55,501,39,504,44,480,59,459,87,446,113,441,139,440,165,442,224,440,257,433,294,381,464,338,587"/>
-<area shape="poly" title=" " alt="" coords="330,627,333,714,340,775,352,843,370,913,397,983,433,1047,455,1077,480,1103,487,1109,483,1113,477,1107,451,1080,429,1050,392,985,365,915,347,844,335,776,328,714,325,627"/>
-<area shape="rect" href="../../d9/d3d/group__BytevectorConversions.html#ga38e516c60d98cb71153ded26ce2b67e5" title=" " alt="" coords="739,235,906,275"/>
-<area shape="poly" title=" " alt="" coords="329,586,342,527,369,448,388,406,412,366,442,329,477,298,496,288,520,280,583,267,725,255,726,260,584,273,522,285,498,293,480,302,446,333,417,369,393,409,374,450,347,529,334,587"/>
-<area shape="rect" href="../../db/df7/classnexilis_1_1client_1_1__Packet.html#a5c1c9bd6e35fecaf62084e5fd9387f83" title=" " alt="" coords="499,133,666,173"/>
-<area shape="poly" title=" " alt="" coords="332,586,408,360,451,242,477,184,485,176,489,180,481,187,456,244,413,362,337,587"/>
-<area shape="rect" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#ac9059afc8258f93d0190892d4e4a5b9a" title=" " alt="" coords="479,197,687,237"/>
-<area shape="poly" title=" " alt="" coords="328,586,342,523,368,434,388,386,412,339,442,294,477,254,492,242,496,246,480,258,446,297,417,341,393,388,373,436,347,524,334,587"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a1d349e7fdcb435d5b06ac0ced0ae883f" title=" " alt="" coords="495,69,671,109"/>
-<area shape="poly" title=" " alt="" coords="332,586,428,293,437,242,440,200,449,161,459,140,477,120,481,115,485,119,481,123,464,143,454,162,445,201,443,243,433,294,337,587"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a2a87723072c74d97c65302ddbed6d478" title=" " alt="" coords="495,312,671,352"/>
-<area shape="poly" title=" " alt="" coords="332,585,351,539,381,479,423,416,449,387,477,362,485,357,488,361,480,366,452,391,427,420,386,482,356,542,337,587"/>
-<area shape="rect" href="../../d5/da4/classnexilis_1_1NXProtocol.html#a3248202c59d7174876a5d268d6021d64" title="Get the mode of a type." alt="" coords="510,376,655,416"/>
-<area shape="poly" title=" " alt="" coords="337,585,360,550,391,508,431,464,477,426,496,415,498,420,480,430,435,468,395,511,364,553,342,588"/>
-<area shape="rect" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#a6df72c444cd3a170bd1853e5b071afb0" title="Get the connection status of client protocol." alt="" coords="479,440,687,480"/>
-<area shape="poly" title=" " alt="" coords="350,584,406,541,477,496,506,483,509,488,480,501,409,546,353,589"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a1a217bf8d2dfcc6a0f37b7fb0b1eb010" title="Is the server aware of the client, is the ClientAPI and Packet ready for use." alt="" coords="976,715,1152,755"/>
-<area shape="poly" title=" " alt="" coords="415,584,429,578,443,568,452,558,462,548,478,540,535,524,582,520,629,526,687,540,756,564,805,593,852,627,912,668,936,685,960,700,976,707,974,712,957,705,933,690,909,673,849,632,802,597,754,569,686,545,628,531,582,525,536,529,480,545,465,553,456,562,447,572,432,582,417,589"/>
-<area shape="rect" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#a4f1a10ae05e2d672a42a12b956b0e3b5" title="Send nexilis message (nx_data) to server." alt="" coords="479,555,687,595"/>
-<area shape="poly" title=" " alt="" coords="430,591,465,587,465,592,431,596"/>
-<area shape="rect" href="../../d5/da4/classnexilis_1_1NXProtocol.html#a0359edd948a8adfcf565c6e57da29480" title="Returns a string value of the Type." alt="" coords="510,619,655,659"/>
-<area shape="poly" title=" " alt="" coords="431,617,497,625,496,631,430,622"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a06ff19320eb6c2730a633632681526fd" title="Steal the runtime until boost TCP connection is ready." alt="" coords="487,747,678,787"/>
-<area shape="poly" title=" " alt="" coords="348,625,404,678,441,707,480,732,493,739,491,744,477,737,438,711,401,682,345,629"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a61d2241ecf9a09c30ed3dc6296bba237" title="Steal the runtime until boost UDP connection is ready." alt="" coords="485,811,680,851"/>
-<area shape="poly" title=" " alt="" coords="341,625,362,662,393,708,433,756,480,797,489,802,487,807,477,801,429,759,389,711,357,665,336,628"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#aef58620c267d5289d4bac61a45473e04" title="Steal the runtime until af_inet TCP connection is ready." alt="" coords="493,683,672,723"/>
-<area shape="poly" title=" " alt="" coords="373,624,480,668,502,676,500,681,478,673,371,629"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a0e2d5869a2928781d0403ecef064787b" title="Steal the runtime until af_inet UDP connection is ready." alt="" coords="491,1053,674,1093"/>
-<area shape="poly" title=" " alt="" coords="332,626,341,701,364,810,383,869,408,928,441,984,481,1033,494,1044,491,1048,477,1037,436,987,404,931,378,871,359,811,335,702,327,627"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a528794b5d8aadca2cb1c196948e76b27" title="Steal the runtime until af_unix DGRAM connection is ready." alt="" coords="481,875,685,915"/>
-<area shape="poly" title=" " alt="" coords="337,626,354,674,384,737,426,804,451,834,480,861,487,865,484,870,477,865,448,838,422,807,379,740,349,676,332,628"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a7ed744f06b2070ebd3e0e69206cf9d55" title="Steal the runtime until af_unix STREAM connection is ready." alt="" coords="479,939,686,979"/>
-<area shape="poly" title=" " alt="" coords="334,626,348,685,376,765,395,809,419,851,447,890,480,925,486,929,483,933,477,929,443,894,414,854,390,811,371,767,343,686,329,628"/>
-<area shape="poly" title=" " alt="" coords="778,235,775,225,782,216,798,210,823,208,851,211,866,218,864,223,849,216,823,213,799,215,786,220,780,226,783,234"/>
-<area shape="poly" title=" " alt="" coords="655,171,688,183,775,225,773,230,686,188,653,176"/>
-<area shape="rect" href="../../db/df7/classnexilis_1_1client_1_1__Packet.html#afc8bff2cca98f67e7761cd59300be9a6" title=" " alt="" coords="739,133,906,173"/>
-<area shape="poly" title=" " alt="" coords="666,151,726,151,726,156,666,156"/>
-<area shape="rect" href="../../d0/db6/classnexilis_1_1AuthConfig.html#a224803f2acfd5f3b94cba96ec7de4aef" title=" " alt="" coords="751,69,895,109"/>
-<area shape="poly" title=" " alt="" coords="671,87,737,87,737,92,671,92"/>
-<area shape="rect" href="../../d0/db6/classnexilis_1_1AuthConfig.html#a6b99a0a749fa94f3696e631d82c56d14" title=" " alt="" coords="751,312,895,352"/>
-<area shape="poly" title=" " alt="" coords="671,329,737,329,737,335,671,335"/>
-<area shape="rect" href="../../d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#acdfe3d44bf864dd3916866a369f42ad2" title=" " alt="" coords="1217,715,1420,755"/>
-<area shape="poly" title=" " alt="" coords="1152,732,1203,732,1203,737,1152,737"/>
-<area shape="poly" title=" " alt="" coords="674,785,689,797,706,821,714,846,715,871,713,895,711,919,713,942,720,966,737,989,742,994,739,998,733,992,715,968,707,943,706,919,708,895,710,871,708,847,701,824,685,800,670,789"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#aa05e1f34d3108b2c4c098a33d222d86c" title="If the client boost TCP connection is ready." alt="" coords="735,747,911,787"/>
-<area shape="poly" title=" " alt="" coords="678,764,721,764,721,769,678,769"/>
-<area shape="poly" title=" " alt="" coords="910,752,962,745,963,751,911,758"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a84b44eacc5901081c9d8083047569d86" title="boost TCP" alt="" coords="961,651,1167,691"/>
-<area shape="poly" title=" " alt="" coords="883,744,909,732,933,716,957,700,974,693,976,698,960,705,936,721,912,737,885,749"/>
-<area shape="rect" href="../../d6/d0d/classnexilis_1_1client_1_1ClientAPI_1_1ClientData.html#acf2fb4a90a19b3e6a393bcf9ffdca10c" title=" " alt="" coords="975,907,1153,947"/>
-<area shape="poly" title=" " alt="" coords="895,785,913,797,930,822,937,846,943,870,961,893,966,897,963,901,957,897,938,872,932,848,926,824,909,801,892,789"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a51524818393c2a2a704ee3b3db7b7729" title=" " alt="" coords="976,843,1152,883"/>
-<area shape="poly" title=" " alt="" coords="885,784,912,796,936,813,960,828,976,835,974,840,957,833,933,817,909,801,883,789"/>
-<area shape="rect" href="../../d6/d0d/classnexilis_1_1client_1_1ClientAPI_1_1ClientData.html#a5b874da4915fb5a4bb056d88f21f294f" title=" " alt="" coords="1223,843,1414,883"/>
-<area shape="poly" title=" " alt="" coords="1152,860,1209,860,1209,865,1152,865"/>
-<area shape="poly" title=" " alt="" coords="672,849,689,861,702,877,709,894,713,926,717,958,724,974,737,989,744,994,740,998,733,993,719,976,712,960,708,927,704,895,697,880,685,865,669,853"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a7393249336e504ba53d1182b19022c9f" title="If the client boost UDP connection is ready." alt="" coords="735,811,911,851"/>
-<area shape="poly" title=" " alt="" coords="680,828,721,828,721,833,680,833"/>
-<area shape="poly" title=" " alt="" coords="883,808,909,796,933,780,957,764,974,757,976,762,960,769,936,785,912,801,885,813"/>
-<area shape="poly" title=" " alt="" coords="885,848,912,860,936,877,960,892,976,899,974,904,957,897,933,881,909,865,883,853"/>
-<area shape="poly" title=" " alt="" coords="911,840,963,847,962,852,910,845"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a0384170cf8cea4868f8edc1f54dd1a8b" title="boost UDP" alt="" coords="959,779,1169,819"/>
-<area shape="poly" title=" " alt="" coords="910,816,945,812,945,817,911,822"/>
-<area shape="poly" title=" " alt="" coords="674,720,689,733,710,766,718,799,718,831,713,863,708,895,708,926,716,957,737,989,742,994,738,998,733,992,711,960,703,927,703,895,708,863,713,831,713,799,705,768,685,736,670,724"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#aed14aeef5e50d2815d6b7c93dcbcf289" title="If the client TCP af_inet connection is ready." alt="" coords="735,683,911,723"/>
-<area shape="poly" title=" " alt="" coords="672,700,721,700,721,705,672,705"/>
-<area shape="poly" title=" " alt="" coords="911,712,963,719,962,724,910,717"/>
-<area shape="poly" title=" " alt="" coords="898,721,913,733,928,754,935,775,937,815,939,855,946,874,961,893,965,897,961,901,957,896,941,876,934,856,931,815,930,776,923,756,909,736,894,725"/>
-<area shape="poly" title=" " alt="" coords="895,721,913,733,930,758,937,782,943,806,961,829,966,833,963,837,957,833,938,808,932,784,926,760,909,737,892,725"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a3be92a07de9c7a79109dcc16f0b40d05" title="af_inet TCP." alt="" coords="967,587,1161,627"/>
-<area shape="poly" title=" " alt="" coords="861,680,958,636,979,629,980,634,960,641,863,685"/>
-<area shape="poly" title=" " alt="" coords="666,1051,755,1029,756,1034,668,1056"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a90e4f340ab3adebf3635862bd9bfc62a" title="Stuff related to specific connnections." alt="" coords="735,1053,911,1093"/>
-<area shape="poly" title=" " alt="" coords="674,1071,721,1071,721,1076,674,1076"/>
-<area shape="poly" title=" " alt="" coords="896,1051,909,1040,930,1005,937,971,936,937,931,904,926,870,925,835,934,800,957,765,963,759,966,763,961,768,939,802,930,836,931,869,936,903,942,937,943,972,935,1007,913,1043,899,1055"/>
-<area shape="poly" title=" " alt="" coords="891,1051,909,1039,925,1019,932,999,939,978,957,957,964,951,968,956,960,961,944,980,937,1001,930,1022,912,1043,894,1055"/>
-<area shape="poly" title=" " alt="" coords="894,1051,909,1039,922,1022,929,1004,932,967,935,930,942,911,957,893,962,888,966,892,961,896,947,914,940,932,937,968,934,1005,927,1024,913,1043,897,1055"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#af38da76c91dabe16da1d8a0c7dc446a0" title="af_inet UDP." alt="" coords="965,1163,1163,1203"/>
-<area shape="poly" title=" " alt="" coords="856,1091,904,1120,960,1148,978,1155,976,1160,958,1153,901,1125,853,1096"/>
-<area shape="poly" title=" " alt="" coords="667,913,688,925,704,941,713,958,721,973,736,989,748,996,746,1000,733,993,717,977,708,960,700,944,685,929,665,917"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a0f9c82bb43198858b47dbbafefec1366" title="If the client af_unix DGRAM connection is ready." alt="" coords="735,875,911,915"/>
-<area shape="poly" title=" " alt="" coords="685,892,721,892,721,897,685,897"/>
-<area shape="poly" title=" " alt="" coords="892,872,909,861,926,837,932,814,938,789,957,765,963,760,966,764,961,769,943,791,937,815,930,840,913,865,895,877"/>
-<area shape="poly" title=" " alt="" coords="911,904,961,910,961,916,910,909"/>
-<area shape="poly" title=" " alt="" coords="910,880,962,873,963,879,911,886"/>
-<area shape="rect" href="../../d1/dd9/classnexilis_1_1client_1_1ClientConfig.html#a5e7f408ec07dd8f294f3bedf1952da2d" title="af_unix DGRAM" alt="" coords="966,971,1162,1011"/>
-<area shape="poly" title=" " alt="" coords="885,912,912,924,936,941,960,956,976,963,974,968,957,961,933,945,909,929,883,917"/>
-<area shape="poly" title=" " alt="" coords="668,976,756,998,755,1003,666,981"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a2cdac5ce3d3fb33495382137b06878a5" title="If the client af_unix STREAM connection is ready." alt="" coords="735,939,911,979"/>
-<area shape="poly" title=" " alt="" coords="686,956,721,956,721,961,686,961"/>
-<area shape="poly" title=" " alt="" coords="894,936,909,925,923,905,930,886,931,846,934,806,941,785,957,765,963,759,966,763,961,768,946,788,939,807,937,846,935,887,928,908,913,928,898,941"/>
-<area shape="poly" title=" " alt="" coords="910,944,961,938,961,943,911,950"/>
-<area shape="poly" title=" " alt="" coords="883,936,909,924,933,908,957,892,974,885,976,890,960,897,936,913,912,929,885,941"/>
-<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#af44554958311acac3fdbef1d97b5e108" title="af_unix STREAM." alt="" coords="976,1035,1152,1075"/>
-<area shape="poly" title=" " alt="" coords="885,976,912,988,936,1005,960,1020,976,1027,974,1032,957,1025,933,1009,909,993,883,981"/>
+<area shape="rect" title="NXProtocol::start() implementation." alt="" coords="5,811,175,851"/>
+<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982" title="All the overloaded printing functions." alt="" coords="761,635,905,661"/>
+<area shape="poly" title=" " alt="" coords="96,851,110,953,136,1100,154,1175,174,1242,198,1297,211,1318,224,1333,263,1356,318,1375,384,1390,456,1399,527,1401,593,1396,647,1383,669,1374,685,1362,702,1339,714,1308,722,1271,725,1228,723,1131,713,1024,703,916,699,816,701,772,706,732,717,698,733,672,746,660,750,664,737,675,722,701,712,733,706,772,704,816,709,916,719,1023,728,1130,730,1229,727,1272,720,1310,707,1342,689,1366,671,1378,649,1388,594,1401,527,1406,455,1404,383,1395,317,1380,261,1361,221,1337,207,1321,193,1300,169,1244,149,1176,131,1101,105,954,91,851"/>
+<area shape="rect" href="../../dc/dbc/classnexilis_1_1Log.html#a49959aac4210e93d1ccd1977e08dba80" title=" " alt="" coords="515,13,650,38"/>
+<area shape="poly" title=" " alt="" coords="89,810,94,719,112,580,129,500,152,419,182,340,220,265,275,187,301,158,328,133,392,91,478,47,501,37,503,42,480,52,395,96,331,138,305,162,279,190,225,268,187,342,157,421,134,502,117,581,99,720,94,811"/>
+<area shape="rect" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#ac9059afc8258f93d0190892d4e4a5b9a" title=" " alt="" coords="479,112,687,152"/>
+<area shape="poly" title=" " alt="" coords="104,809,154,746,221,671,252,644,281,623,335,592,360,577,383,558,406,534,428,500,447,456,453,416,452,378,448,341,443,305,444,267,453,227,476,185,491,169,508,157,511,161,495,173,481,188,458,229,449,268,449,304,453,341,458,378,459,417,452,458,433,503,410,537,387,562,363,581,338,597,284,628,255,648,225,675,158,749,108,812"/>
+<area shape="rect" href="../../d5/da4/classnexilis_1_1NXProtocol.html#a3248202c59d7174876a5d268d6021d64" title="Get the mode of a type." alt="" coords="510,1184,655,1224"/>
+<area shape="poly" title=" " alt="" coords="110,849,167,911,253,997,360,1089,419,1132,480,1170,498,1179,496,1183,477,1174,416,1136,357,1093,249,1001,163,914,106,853"/>
+<area shape="rect" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#a6df72c444cd3a170bd1853e5b071afb0" title="Get the connection status of client protocol." alt="" coords="479,1248,687,1288"/>
+<area shape="poly" title=" " alt="" coords="97,850,108,906,132,983,148,1025,169,1066,195,1104,224,1138,279,1180,341,1211,405,1234,466,1249,465,1254,403,1239,339,1216,276,1184,221,1142,190,1107,165,1068,144,1027,127,985,103,908,92,851"/>
+<area shape="rect" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a603d6e40cbf86e6754008c220c620512" title="NXProtocol::getType() implementation." alt="" coords="242,1427,411,1467"/>
+<area shape="poly" title=" " alt="" coords="96,850,110,964,136,1131,154,1217,174,1296,198,1362,225,1406,237,1418,233,1421,221,1410,193,1364,169,1298,148,1218,131,1132,104,965,91,851"/>
+<area shape="rect" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae" title="Get the classes name as header for log messages." alt="" coords="493,62,672,87"/>
+<area shape="poly" title=" " alt="" coords="93,810,108,745,135,651,172,543,220,436,275,328,322,244,350,207,383,171,424,135,477,98,491,90,493,95,480,102,428,139,387,175,354,210,327,246,280,330,225,438,177,545,140,653,114,747,98,811"/>
+<area shape="rect" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#a179d25c69c4a8ece4a2b75c81b3fb6d8" title=" " alt="" coords="223,685,431,725"/>
+<area shape="poly" title=" " alt="" coords="128,808,275,729,277,734,130,813"/>
+<area shape="rect" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#af9dbac70168c9aa488b0de801a962992" title="Change the connection status of client protocol." alt="" coords="479,1312,687,1352"/>
+<area shape="poly" title=" " alt="" coords="94,851,98,925,104,976,115,1032,131,1090,154,1147,185,1200,225,1246,250,1267,278,1284,340,1309,404,1323,465,1331,464,1336,403,1329,338,1314,276,1288,247,1271,221,1250,180,1203,149,1150,126,1092,110,1034,99,977,92,926,88,851"/>
+<area shape="rect" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#ae43cce69993969249f40e476764d8351" title="NXProtocol::stop() implementation." alt="" coords="242,449,411,489"/>
+<area shape="poly" title=" " alt="" coords="96,810,142,702,178,633,221,566,253,529,287,497,291,501,257,532,225,570,182,636,147,704,101,812"/>
+<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#aa9bd79fb1a1804924e3440947c6ab117" title="Send debug message." alt="" coords="1001,699,1167,739"/>
+<area shape="poly" title=" " alt="" coords="884,658,931,671,1005,692,1004,697,930,676,883,663"/>
+<area shape="rect" href="../../db/d91/classnexilis_1_1logger_1_1Logger.html#acc02567dd7e4103305110bafbfd40c08" title="Send error message." alt="" coords="749,5,916,45"/>
+<area shape="poly" title=" " alt="" coords="650,23,736,23,736,28,650,28"/>
+<area shape="poly" title=" " alt="" coords="412,683,478,671,620,656,747,648,747,653,620,661,479,676,413,688"/>
+<area shape="poly" title=" " alt="" coords="339,684,384,605,409,554,428,501,436,457,438,400,438,267,439,200,444,138,456,86,465,65,477,47,501,31,504,35,481,51,470,67,461,87,450,139,444,200,443,267,443,401,441,457,433,502,414,556,389,608,344,686"/>
+<area shape="poly" title=" " alt="" coords="357,683,395,649,414,628,428,604,441,572,450,542,455,485,449,432,439,381,431,330,430,279,435,252,443,225,457,198,477,169,487,158,491,162,481,172,462,200,448,227,440,253,436,279,436,329,445,380,455,431,460,485,455,543,446,574,433,607,418,631,399,653,360,687"/>
+<area shape="poly" title=" " alt="" coords="336,725,404,967,447,1099,466,1146,481,1170,499,1183,495,1188,477,1174,461,1148,442,1101,399,969,331,726"/>
+<area shape="poly" title=" " alt="" coords="330,725,332,817,339,881,350,953,369,1028,395,1103,432,1173,455,1205,481,1234,484,1238,481,1242,477,1238,451,1208,428,1175,390,1105,363,1030,345,954,333,882,327,817,325,726"/>
+<area shape="poly" title=" " alt="" coords="339,684,384,605,408,554,428,501,435,462,438,412,439,294,442,234,447,179,458,132,477,98,481,94,485,97,481,102,463,134,452,179,447,234,445,294,443,412,440,462,433,502,413,556,389,608,344,686"/>
+<area shape="rect" href="../../d9/d3d/group__BytevectorConversions.html#ga38e516c60d98cb71153ded26ce2b67e5" title=" " alt="" coords="749,315,916,355"/>
+<area shape="poly" title=" " alt="" coords="356,683,395,649,413,628,428,604,443,563,447,523,444,486,437,449,433,414,435,380,448,347,477,314,511,292,548,279,587,273,628,273,707,286,774,307,772,312,705,291,627,279,588,279,549,284,513,297,480,318,453,349,440,381,438,414,443,449,449,485,452,523,449,564,433,607,417,631,398,653,359,687"/>
+<area shape="rect" href="../../db/df7/classnexilis_1_1client_1_1__Packet.html#a5c1c9bd6e35fecaf62084e5fd9387f83" title=" " alt="" coords="499,328,666,368"/>
+<area shape="poly" title=" " alt="" coords="355,683,394,649,413,628,428,604,442,572,447,543,445,488,444,461,446,434,456,406,477,378,486,370,489,374,481,382,461,409,452,435,449,461,450,487,452,543,447,574,433,607,417,631,397,653,358,687"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#ac9aa7a3e3594d8a15bf6e0efeed2c91c" title=" " alt="" coords="495,749,671,789"/>
+<area shape="poly" title=" " alt="" coords="408,723,490,743,489,749,407,728"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a0da5e76dbcd21ea949de27a071b133a1" title=" " alt="" coords="495,813,671,853"/>
+<area shape="poly" title=" " alt="" coords="357,724,412,761,480,799,497,806,495,811,477,804,409,766,354,728"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a1d349e7fdcb435d5b06ac0ced0ae883f" title=" " alt="" coords="495,877,671,917"/>
+<area shape="poly" title=" " alt="" coords="344,724,398,792,437,830,480,863,491,869,488,874,477,868,433,834,395,796,340,727"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a2a87723072c74d97c65302ddbed6d478" title=" " alt="" coords="495,941,671,981"/>
+<area shape="poly" title=" " alt="" coords="338,724,358,767,388,821,429,878,454,904,480,927,488,932,485,937,477,931,450,908,425,882,384,824,353,769,334,727"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#aa05e1f34d3108b2c4c098a33d222d86c" title="If the client boost TCP connection is ready." alt="" coords="745,227,921,267"/>
+<area shape="poly" title=" " alt="" coords="356,683,395,649,413,628,428,604,445,557,449,513,444,470,437,430,431,390,433,351,446,313,477,274,504,253,534,238,566,227,600,220,668,217,731,222,731,227,667,222,600,226,567,232,536,243,507,258,481,278,451,315,438,352,437,390,442,429,450,470,454,513,450,558,433,607,418,631,399,653,359,687"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a1a217bf8d2dfcc6a0f37b7fb0b1eb010" title="Is the server aware of the client, is the ClientAPI and Packet ready for use." alt="" coords="996,507,1172,547"/>
+<area shape="poly" title=" " alt="" coords="334,725,347,781,374,856,393,895,417,932,446,965,480,991,521,1008,576,1022,640,1031,709,1035,777,1034,840,1026,892,1012,929,991,940,977,948,958,957,908,959,847,956,780,953,712,953,649,959,596,966,574,977,557,983,550,987,554,981,560,971,576,964,597,958,649,958,712,961,780,964,847,963,909,954,960,945,980,932,995,894,1017,841,1032,778,1039,709,1041,639,1037,575,1027,519,1014,477,996,442,969,413,935,388,898,369,858,342,783,329,726"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a7393249336e504ba53d1182b19022c9f" title="If the client boost UDP connection is ready." alt="" coords="745,163,921,203"/>
+<area shape="poly" title=" " alt="" coords="356,683,395,649,413,628,428,604,438,569,443,523,444,411,445,354,449,301,458,257,466,240,477,226,494,214,519,204,583,190,657,183,731,180,731,185,658,188,584,196,520,209,497,219,481,230,471,243,464,259,454,302,450,354,449,411,448,523,444,570,433,606,418,631,399,653,359,687"/>
+<area shape="rect" href="../../da/d2e/classnexilis_1_1client_1_1ClientProtocol.html#a4f1a10ae05e2d672a42a12b956b0e3b5" title="Send nexilis message (nx_data) to server." alt="" coords="479,1056,687,1096"/>
+<area shape="poly" title=" " alt="" coords="334,725,348,785,376,868,395,913,419,957,447,999,480,1035,496,1047,493,1051,477,1039,443,1002,414,960,390,915,371,870,343,786,329,726"/>
+<area shape="rect" href="../../d5/da4/classnexilis_1_1NXProtocol.html#a0359edd948a8adfcf565c6e57da29480" title="Returns a string value of the Type." alt="" coords="510,1120,655,1160"/>
+<area shape="poly" title=" " alt="" coords="332,725,342,797,365,899,384,955,410,1010,441,1061,480,1106,499,1119,496,1123,477,1110,437,1064,405,1012,380,957,360,901,336,798,327,726"/>
+<area shape="poly" title=" " alt="" coords="333,725,350,842,381,1015,401,1104,425,1186,452,1253,466,1279,481,1298,484,1302,481,1306,477,1302,461,1282,447,1255,420,1188,396,1105,375,1016,344,843,328,726"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#aef58620c267d5289d4bac61a45473e04" title="Steal the runtime until af_inet TCP connection is ready." alt="" coords="493,571,672,611"/>
+<area shape="poly" title=" " alt="" coords="364,683,478,627,511,613,513,618,480,632,366,688"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a0e2d5869a2928781d0403ecef064787b" title="Steal the runtime until af_inet UDP connection is ready." alt="" coords="491,392,674,432"/>
+<area shape="poly" title=" " alt="" coords="352,683,391,648,428,604,444,574,451,549,459,523,477,493,505,463,536,438,539,442,508,467,481,496,464,525,456,550,449,576,433,607,395,652,356,687"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a528794b5d8aadca2cb1c196948e76b27" title="Steal the runtime until af_unix DGRAM connection is ready." alt="" coords="481,685,685,725"/>
+<area shape="poly" title=" " alt="" coords="431,703,467,703,467,708,431,708"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a7ed744f06b2070ebd3e0e69206cf9d55" title="Steal the runtime until af_unix STREAM connection is ready." alt="" coords="479,507,686,547"/>
+<area shape="poly" title=" " alt="" coords="347,683,477,557,489,550,492,555,480,561,351,687"/>
+<area shape="poly" title=" " alt="" coords="787,315,784,305,791,296,808,290,833,288,861,291,877,298,875,303,860,296,833,293,809,295,794,300,789,306,792,314"/>
+<area shape="poly" title=" " alt="" coords="666,341,736,337,736,342,666,346"/>
+<area shape="rect" href="../../db/df7/classnexilis_1_1client_1_1__Packet.html#afc8bff2cca98f67e7761cd59300be9a6" title=" " alt="" coords="749,379,916,419"/>
+<area shape="poly" title=" " alt="" coords="667,362,736,376,735,382,665,367"/>
+<area shape="rect" href="../../d1/dd9/classnexilis_1_1client_1_1ClientConfig.html#ab95ffc32ccb2385b27dcf463e15e9f0b" title=" " alt="" coords="735,749,931,789"/>
+<area shape="poly" title=" " alt="" coords="671,767,721,767,721,772,671,772"/>
+<area shape="rect" href="../../d1/dd9/classnexilis_1_1client_1_1ClientConfig.html#a33bfbfc3337ed0decded7a9f4e86873d" title=" " alt="" coords="735,813,931,853"/>
+<area shape="poly" title=" " alt="" coords="671,831,721,831,721,836,671,836"/>
+<area shape="rect" href="../../d0/db6/classnexilis_1_1AuthConfig.html#a224803f2acfd5f3b94cba96ec7de4aef" title=" " alt="" coords="761,877,905,917"/>
+<area shape="poly" title=" " alt="" coords="671,895,747,895,747,900,671,900"/>
+<area shape="rect" href="../../d0/db6/classnexilis_1_1AuthConfig.html#a6b99a0a749fa94f3696e631d82c56d14" title=" " alt="" coords="761,941,905,981"/>
+<area shape="poly" title=" " alt="" coords="671,959,747,959,747,964,671,964"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a84b44eacc5901081c9d8083047569d86" title="boost TCP" alt="" coords="981,227,1187,267"/>
+<area shape="poly" title=" " alt="" coords="921,244,967,244,967,249,921,249"/>
+<area shape="rect" href="../../d6/d0d/classnexilis_1_1client_1_1ClientAPI_1_1ClientData.html#acf2fb4a90a19b3e6a393bcf9ffdca10c" title=" " alt="" coords="995,443,1173,483"/>
+<area shape="poly" title=" " alt="" coords="917,265,933,277,947,296,955,316,957,355,960,392,967,411,981,429,985,433,981,437,977,432,962,413,954,394,952,355,949,317,943,299,929,281,914,269"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a51524818393c2a2a704ee3b3db7b7729" title=" " alt="" coords="996,379,1172,419"/>
+<area shape="poly" title=" " alt="" coords="914,265,932,277,950,299,957,322,964,344,981,365,987,369,984,374,977,369,959,346,952,324,945,302,929,281,911,269"/>
+<area shape="poly" title=" " alt="" coords="918,265,933,277,951,305,959,333,960,360,957,387,954,414,955,440,963,466,981,493,986,498,983,502,977,496,958,469,950,441,949,414,952,387,955,360,954,333,947,307,929,280,915,269"/>
+<area shape="rect" href="../../d6/d0d/classnexilis_1_1client_1_1ClientAPI_1_1ClientData.html#a5b874da4915fb5a4bb056d88f21f294f" title=" " alt="" coords="1243,379,1434,419"/>
+<area shape="poly" title=" " alt="" coords="1172,396,1229,396,1229,401,1172,401"/>
+<area shape="rect" href="../../d1/df0/classnexilis_1_1client_1_1ClientAPI_1_1ClientAPIData.html#acdfe3d44bf864dd3916866a369f42ad2" title=" " alt="" coords="1237,507,1440,547"/>
+<area shape="poly" title=" " alt="" coords="1172,524,1223,524,1223,529,1172,529"/>
+<area shape="poly" title=" " alt="" coords="918,201,933,213,951,241,959,269,960,296,957,323,954,350,955,376,963,402,981,429,986,434,982,437,977,432,958,405,950,377,949,350,952,323,955,296,954,269,947,243,929,216,915,205"/>
+<area shape="poly" title=" " alt="" coords="917,201,933,213,947,232,955,252,957,291,960,328,967,347,981,365,986,370,983,374,977,368,962,349,954,330,952,291,949,253,943,235,929,217,914,205"/>
+<area shape="poly" title=" " alt="" coords="919,201,933,213,955,249,964,285,963,321,957,355,951,390,950,424,959,458,981,493,986,499,983,502,977,496,954,460,945,425,946,389,952,355,957,320,959,286,950,251,929,216,915,205"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a0384170cf8cea4868f8edc1f54dd1a8b" title="boost UDP" alt="" coords="979,163,1189,203"/>
+<area shape="poly" title=" " alt="" coords="921,180,965,180,965,185,921,185"/>
+<area shape="poly" title=" " alt="" coords="671,608,764,630,763,635,670,613"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#aed14aeef5e50d2815d6b7c93dcbcf289" title="If the client TCP af_inet connection is ready." alt="" coords="745,571,921,611"/>
+<area shape="poly" title=" " alt="" coords="672,588,730,588,730,593,672,593"/>
+<area shape="poly" title=" " alt="" coords="909,568,929,557,944,541,952,525,961,509,977,493,986,487,989,491,980,497,965,512,957,528,948,544,932,561,911,573"/>
+<area shape="poly" title=" " alt="" coords="913,568,929,557,941,541,948,526,952,494,956,462,963,445,977,429,982,424,986,428,981,433,968,448,961,463,957,495,953,527,946,544,933,561,916,573"/>
+<area shape="poly" title=" " alt="" coords="911,568,991,547,993,553,913,573"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a3be92a07de9c7a79109dcc16f0b40d05" title="af_inet TCP." alt="" coords="987,635,1181,675"/>
+<area shape="poly" title=" " alt="" coords="913,608,993,629,991,634,911,613"/>
+<area shape="poly" title=" " alt="" coords="664,430,689,449,704,471,711,494,712,538,713,580,721,600,737,621,750,631,747,635,733,625,716,603,708,581,707,538,706,495,699,474,685,453,660,434"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a90e4f340ab3adebf3635862bd9bfc62a" title="Stuff related to specific connnections." alt="" coords="745,443,921,483"/>
+<area shape="poly" title=" " alt="" coords="675,428,732,440,730,445,674,433"/>
+<area shape="poly" title=" " alt="" coords="921,460,981,460,981,465,921,465"/>
+<area shape="poly" title=" " alt="" coords="911,440,991,419,993,425,913,445"/>
+<area shape="poly" title=" " alt="" coords="913,480,993,501,991,506,911,485"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#af38da76c91dabe16da1d8a0c7dc446a0" title="af_inet UDP." alt="" coords="985,315,1183,355"/>
+<area shape="poly" title=" " alt="" coords="909,440,929,429,944,413,952,397,961,381,977,365,986,359,989,363,980,369,965,384,957,400,948,416,932,433,911,445"/>
+<area shape="poly" title=" " alt="" coords="670,683,763,661,764,666,671,688"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a0f9c82bb43198858b47dbbafefec1366" title="If the client af_unix DGRAM connection is ready." alt="" coords="745,685,921,725"/>
+<area shape="poly" title=" " alt="" coords="685,703,731,703,731,708,685,708"/>
+<area shape="poly" title=" " alt="" coords="914,683,929,672,944,650,951,628,952,584,952,539,960,516,977,493,981,488,985,492,981,496,965,518,958,540,957,584,957,629,949,652,933,675,917,687"/>
+<area shape="poly" title=" " alt="" coords="915,683,929,672,948,642,956,612,956,582,952,552,948,522,948,491,956,460,977,429,983,423,986,427,981,432,961,462,953,492,953,521,957,551,961,582,961,612,953,644,933,675,919,687"/>
+<area shape="poly" title=" " alt="" coords="913,683,929,671,940,658,947,644,952,615,957,586,964,571,977,557,983,552,986,556,981,561,969,574,962,588,957,616,952,646,945,661,932,675,916,687"/>
+<area shape="rect" href="../../d1/dd9/classnexilis_1_1client_1_1ClientConfig.html#a5e7f408ec07dd8f294f3bedf1952da2d" title="af_unix DGRAM" alt="" coords="986,763,1182,803"/>
+<area shape="poly" title=" " alt="" coords="899,723,979,748,1005,756,1003,761,978,753,897,728"/>
+<area shape="poly" title=" " alt="" coords="667,545,688,557,704,573,713,590,721,606,736,621,749,628,746,632,733,625,717,609,708,592,700,576,685,561,665,549"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#a2cdac5ce3d3fb33495382137b06878a5" title="If the client af_unix STREAM connection is ready." alt="" coords="745,507,921,547"/>
+<area shape="poly" title=" " alt="" coords="686,524,731,524,731,529,686,529"/>
+<area shape="poly" title=" " alt="" coords="911,504,991,483,993,489,913,509"/>
+<area shape="poly" title=" " alt="" coords="909,504,929,493,944,477,952,461,961,445,977,429,986,423,989,427,980,433,965,448,957,464,948,480,932,497,911,509"/>
+<area shape="poly" title=" " alt="" coords="921,524,982,524,982,529,921,529"/>
+<area shape="rect" href="../../d5/da0/classnexilis_1_1client_1_1ClientAPI.html#af44554958311acac3fdbef1d97b5e108" title="af_unix STREAM." alt="" coords="996,571,1172,611"/>
+<area shape="poly" title=" " alt="" coords="913,544,993,565,991,570,911,549"/>
+<area shape="poly" title=" " alt="" coords="411,449,477,442,549,444,586,449,622,459,657,473,688,493,703,507,711,524,715,557,718,590,724,606,736,621,749,630,746,634,733,625,719,608,712,591,709,557,706,525,699,510,685,497,654,478,621,464,585,455,549,449,477,448,412,454"/>
+<area shape="poly" title=" " alt="" coords="337,448,380,367,428,262,439,215,442,174,450,137,460,118,477,98,483,93,487,97,481,102,464,121,455,138,447,175,445,215,433,264,385,370,342,450"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1078,89 +1119,89 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="../../d5/da4/classnexilis_1_1NXProtocol.html#a5b08f5492a6471e803b3dc73b9f5ce50">nexilis::NXProtocol</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html#l00248">248</a> of file <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html">tcp_client.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  249</span>{</div>
-<div class="line"><span class="lineno">  250</span>    <span class="keywordflow">if</span> (m_stopped &amp;&amp; m_stopped-&gt;exchange(<span class="keyword">true</span>))</div>
-<div class="line"><span class="lineno">  251</span>    {</div>
-<div class="line"><span class="lineno">  252</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  253</span>    }</div>
-<div class="line"><span class="lineno">  254</span> </div>
-<div class="line"><span class="lineno">  255</span>    <span class="comment">// Close the sockets from the strand. The io_context thread is the only</span></div>
-<div class="line"><span class="lineno">  256</span>    <span class="comment">// thread allowed to touch the ssl::stream objects; closing them from this</span></div>
-<div class="line"><span class="lineno">  257</span>    <span class="comment">// thread while an async SSL operation is in flight is a data race that</span></div>
-<div class="line"><span class="lineno">  258</span>    <span class="comment">// crashes sporadically during shutdown (intermittent SIGSEGV). Closing on</span></div>
-<div class="line"><span class="lineno">  259</span>    <span class="comment">// the strand cancels the pending async reads/writes cleanly from the io</span></div>
-<div class="line"><span class="lineno">  260</span>    <span class="comment">// thread itself.</span></div>
-<div class="line"><span class="lineno">  261</span>    <span class="keywordflow">if</span> (m_strand &amp;&amp; m_ioContext)</div>
-<div class="line"><span class="lineno">  262</span>    {</div>
-<div class="line"><span class="lineno">  263</span>        <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  264</span>        {</div>
-<div class="line"><span class="lineno">  265</span>            boost::asio::post(*m_strand,</div>
-<div class="line"><span class="lineno">  266</span>                              [<span class="keyword">this</span>]()</div>
-<div class="line"><span class="lineno">  267</span>                              {</div>
-<div class="line"><span class="lineno">  268</span>                                  boost::system::error_code ec;</div>
-<div class="line"><span class="lineno">  269</span>                                  <span class="keywordflow">for</span> (<span class="keyword">auto</span>* socket : {m_mainSocket.get(), m_switchedSocket.get()})</div>
-<div class="line"><span class="lineno">  270</span>                                  {</div>
-<div class="line"><span class="lineno">  271</span>                                      <span class="keywordflow">if</span> (socket &amp;&amp; socket-&gt;lowest_layer().is_open())</div>
-<div class="line"><span class="lineno">  272</span>                                      {</div>
-<div class="line"><span class="lineno">  273</span>                                          socket-&gt;lowest_layer().close(ec);</div>
-<div class="line"><span class="lineno">  274</span>                                      }</div>
-<div class="line"><span class="lineno">  275</span>                                  }</div>
-<div class="line"><span class="lineno">  276</span>                              });</div>
-<div class="line"><span class="lineno">  277</span>        }</div>
-<div class="line"><span class="lineno">  278</span>        <span class="keywordflow">catch</span> (...)</div>
-<div class="line"><span class="lineno">  279</span>        {</div>
-<div class="line"><span class="lineno">  280</span>        }</div>
-<div class="line"><span class="lineno">  281</span>    }</div>
-<div class="line"><span class="lineno">  282</span> </div>
-<div class="line"><span class="lineno">  283</span>    <span class="comment">// Let the io thread observe the close, run its remaining handlers and exit</span></div>
-<div class="line"><span class="lineno">  284</span>    <span class="comment">// on its own. The posted close unblocks the pending read/write, so run()</span></div>
-<div class="line"><span class="lineno">  285</span>    <span class="comment">// returns once both the handlers and the work guard are gone.</span></div>
-<div class="line"><span class="lineno">  286</span>    m_workGuard.reset();</div>
-<div class="line"><span class="lineno">  287</span> </div>
-<div class="line"><span class="lineno">  288</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a8adba8b81029ea9edc22df0521ae1909">m_ioContextThread</a>.joinable())</div>
-<div class="line"><span class="lineno">  289</span>    {</div>
-<div class="line"><span class="lineno">  290</span>        <a class="code hl_variable" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a8adba8b81029ea9edc22df0521ae1909">m_ioContextThread</a>.join();</div>
-<div class="line"><span class="lineno">  291</span>        <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">Log::debug</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;io_contextThread stopped&quot;</span>);</div>
-<div class="line"><span class="lineno">  292</span>    }</div>
-<div class="line"><span class="lineno">  293</span> </div>
-<div class="line"><span class="lineno">  294</span>    <span class="keywordflow">if</span> (m_pendingSendsMutex)</div>
-<div class="line"><span class="lineno">  295</span>    {</div>
-<div class="line"><span class="lineno">  296</span>        std::lock_guard&lt;std::mutex&gt; lock(*m_pendingSendsMutex);</div>
-<div class="line"><span class="lineno">  297</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; pair : m_pendingSends)</div>
-<div class="line"><span class="lineno">  298</span>        {</div>
-<div class="line"><span class="lineno">  299</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  300</span>            {</div>
-<div class="line"><span class="lineno">  301</span>                pair.second-&gt;set_exception(</div>
-<div class="line"><span class="lineno">  302</span>                        std::make_exception_ptr(std::runtime_error(<span class="stringliteral">&quot;Connection closed&quot;</span>)));</div>
-<div class="line"><span class="lineno">  303</span>            }</div>
-<div class="line"><span class="lineno">  304</span>            <span class="keywordflow">catch</span> (...)</div>
-<div class="line"><span class="lineno">  305</span>            {</div>
-<div class="line"><span class="lineno">  306</span>            }</div>
-<div class="line"><span class="lineno">  307</span>        }</div>
-<div class="line"><span class="lineno">  308</span>        m_pendingSends.clear();</div>
-<div class="line"><span class="lineno">  309</span>    }</div>
-<div class="line"><span class="lineno">  310</span> </div>
-<div class="line"><span class="lineno">  311</span>    <span class="comment">// Drain any queued (not yet initiated) writes. The io context has been</span></div>
-<div class="line"><span class="lineno">  312</span>    <span class="comment">// joined by now so the strand can no longer be running; reject their</span></div>
-<div class="line"><span class="lineno">  313</span>    <span class="comment">// promises so no future hangs.</span></div>
-<div class="line"><span class="lineno">  314</span>    <span class="keywordflow">while</span> (!m_writeQueue.empty())</div>
-<div class="line"><span class="lineno">  315</span>    {</div>
-<div class="line"><span class="lineno">  316</span>        QueuedWrite w(std::move(m_writeQueue.front()));</div>
-<div class="line"><span class="lineno">  317</span>        m_writeQueue.pop_front();</div>
-<div class="line"><span class="lineno">  318</span>        <span class="keywordflow">if</span> (w.handler)</div>
-<div class="line"><span class="lineno">  319</span>        {</div>
-<div class="line"><span class="lineno">  320</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  321</span>            {</div>
-<div class="line"><span class="lineno">  322</span>                w.handler(boost::asio::error::operation_aborted, 0);</div>
-<div class="line"><span class="lineno">  323</span>            }</div>
-<div class="line"><span class="lineno">  324</span>            <span class="keywordflow">catch</span> (...)</div>
-<div class="line"><span class="lineno">  325</span>            {</div>
-<div class="line"><span class="lineno">  326</span>            }</div>
-<div class="line"><span class="lineno">  327</span>        }</div>
-<div class="line"><span class="lineno">  328</span>    }</div>
-<div class="line"><span class="lineno">  329</span>    m_writeInFlight = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  330</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html#l00309">309</a> of file <a class="el" href="../../de/d2b/client_2protocol_2nxboost_2tcp__client_8cc_source.html">tcp_client.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  310</span>{</div>
+<div class="line"><span class="lineno">  311</span>    <span class="keywordflow">if</span> (m_stopped &amp;&amp; m_stopped-&gt;exchange(<span class="keyword">true</span>))</div>
+<div class="line"><span class="lineno">  312</span>    {</div>
+<div class="line"><span class="lineno">  313</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  314</span>    }</div>
+<div class="line"><span class="lineno">  315</span> </div>
+<div class="line"><span class="lineno">  316</span>    <span class="comment">// Close the sockets from the strand. The io_context thread is the only</span></div>
+<div class="line"><span class="lineno">  317</span>    <span class="comment">// thread allowed to touch the ssl::stream objects; closing them from this</span></div>
+<div class="line"><span class="lineno">  318</span>    <span class="comment">// thread while an async SSL operation is in flight is a data race that</span></div>
+<div class="line"><span class="lineno">  319</span>    <span class="comment">// crashes sporadically during shutdown (intermittent SIGSEGV). Closing on</span></div>
+<div class="line"><span class="lineno">  320</span>    <span class="comment">// the strand cancels the pending async reads/writes cleanly from the io</span></div>
+<div class="line"><span class="lineno">  321</span>    <span class="comment">// thread itself.</span></div>
+<div class="line"><span class="lineno">  322</span>    <span class="keywordflow">if</span> (m_strand &amp;&amp; m_ioContext)</div>
+<div class="line"><span class="lineno">  323</span>    {</div>
+<div class="line"><span class="lineno">  324</span>        <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  325</span>        {</div>
+<div class="line"><span class="lineno">  326</span>            boost::asio::post(*m_strand,</div>
+<div class="line"><span class="lineno">  327</span>                              [<span class="keyword">this</span>]()</div>
+<div class="line"><span class="lineno">  328</span>                              {</div>
+<div class="line"><span class="lineno">  329</span>                                  boost::system::error_code ec;</div>
+<div class="line"><span class="lineno">  330</span>                                  <span class="keywordflow">for</span> (<span class="keyword">auto</span>* socket : {m_mainSocket.get(), m_switchedSocket.get()})</div>
+<div class="line"><span class="lineno">  331</span>                                  {</div>
+<div class="line"><span class="lineno">  332</span>                                      <span class="keywordflow">if</span> (socket &amp;&amp; socket-&gt;lowest_layer().is_open())</div>
+<div class="line"><span class="lineno">  333</span>                                      {</div>
+<div class="line"><span class="lineno">  334</span>                                          socket-&gt;lowest_layer().close(ec);</div>
+<div class="line"><span class="lineno">  335</span>                                      }</div>
+<div class="line"><span class="lineno">  336</span>                                  }</div>
+<div class="line"><span class="lineno">  337</span>                              });</div>
+<div class="line"><span class="lineno">  338</span>        }</div>
+<div class="line"><span class="lineno">  339</span>        <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><span class="lineno">  340</span>        {</div>
+<div class="line"><span class="lineno">  341</span>        }</div>
+<div class="line"><span class="lineno">  342</span>    }</div>
+<div class="line"><span class="lineno">  343</span> </div>
+<div class="line"><span class="lineno">  344</span>    <span class="comment">// Let the io thread observe the close, run its remaining handlers and exit</span></div>
+<div class="line"><span class="lineno">  345</span>    <span class="comment">// on its own. The posted close unblocks the pending read/write, so run()</span></div>
+<div class="line"><span class="lineno">  346</span>    <span class="comment">// returns once both the handlers and the work guard are gone.</span></div>
+<div class="line"><span class="lineno">  347</span>    m_workGuard.reset();</div>
+<div class="line"><span class="lineno">  348</span> </div>
+<div class="line"><span class="lineno">  349</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a8adba8b81029ea9edc22df0521ae1909">m_ioContextThread</a>.joinable())</div>
+<div class="line"><span class="lineno">  350</span>    {</div>
+<div class="line"><span class="lineno">  351</span>        <a class="code hl_variable" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a8adba8b81029ea9edc22df0521ae1909">m_ioContextThread</a>.join();</div>
+<div class="line"><span class="lineno">  352</span>        <a class="code hl_function" href="../../dc/dbc/classnexilis_1_1Log.html#a8818a693340eed14a9110c9988eac982">Log::debug</a>(<a class="code hl_function" href="../../d2/d7e/classnexilis_1_1NxClass.html#aacbc1ef37e00748730aa9f6faa55e2ae">header</a>(), <span class="stringliteral">&quot;io_contextThread stopped&quot;</span>);</div>
+<div class="line"><span class="lineno">  353</span>    }</div>
+<div class="line"><span class="lineno">  354</span> </div>
+<div class="line"><span class="lineno">  355</span>    <span class="keywordflow">if</span> (m_pendingSendsMutex)</div>
+<div class="line"><span class="lineno">  356</span>    {</div>
+<div class="line"><span class="lineno">  357</span>        std::lock_guard&lt;std::mutex&gt; lock(*m_pendingSendsMutex);</div>
+<div class="line"><span class="lineno">  358</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; pair : m_pendingSends)</div>
+<div class="line"><span class="lineno">  359</span>        {</div>
+<div class="line"><span class="lineno">  360</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  361</span>            {</div>
+<div class="line"><span class="lineno">  362</span>                pair.second-&gt;set_exception(</div>
+<div class="line"><span class="lineno">  363</span>                        std::make_exception_ptr(std::runtime_error(<span class="stringliteral">&quot;Connection closed&quot;</span>)));</div>
+<div class="line"><span class="lineno">  364</span>            }</div>
+<div class="line"><span class="lineno">  365</span>            <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><span class="lineno">  366</span>            {</div>
+<div class="line"><span class="lineno">  367</span>            }</div>
+<div class="line"><span class="lineno">  368</span>        }</div>
+<div class="line"><span class="lineno">  369</span>        m_pendingSends.clear();</div>
+<div class="line"><span class="lineno">  370</span>    }</div>
+<div class="line"><span class="lineno">  371</span> </div>
+<div class="line"><span class="lineno">  372</span>    <span class="comment">// Drain any queued (not yet initiated) writes. The io context has been</span></div>
+<div class="line"><span class="lineno">  373</span>    <span class="comment">// joined by now so the strand can no longer be running; reject their</span></div>
+<div class="line"><span class="lineno">  374</span>    <span class="comment">// promises so no future hangs.</span></div>
+<div class="line"><span class="lineno">  375</span>    <span class="keywordflow">while</span> (!m_writeQueue.empty())</div>
+<div class="line"><span class="lineno">  376</span>    {</div>
+<div class="line"><span class="lineno">  377</span>        QueuedWrite w(std::move(m_writeQueue.front()));</div>
+<div class="line"><span class="lineno">  378</span>        m_writeQueue.pop_front();</div>
+<div class="line"><span class="lineno">  379</span>        <span class="keywordflow">if</span> (w.handler)</div>
+<div class="line"><span class="lineno">  380</span>        {</div>
+<div class="line"><span class="lineno">  381</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  382</span>            {</div>
+<div class="line"><span class="lineno">  383</span>                w.handler(boost::asio::error::operation_aborted, 0);</div>
+<div class="line"><span class="lineno">  384</span>            }</div>
+<div class="line"><span class="lineno">  385</span>            <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><span class="lineno">  386</span>            {</div>
+<div class="line"><span class="lineno">  387</span>            }</div>
+<div class="line"><span class="lineno">  388</span>        }</div>
+<div class="line"><span class="lineno">  389</span>    }</div>
+<div class="line"><span class="lineno">  390</span>    m_writeInFlight = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  391</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1180,13 +1221,23 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient_ae43cce69993969249f40e476764d8351_icgraph.png" border="0" usemap="#ad1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient_ae43cce69993969249f40e476764d8351_icgraph" alt=""/></div>
 <map name="ad1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient_ae43cce69993969249f40e476764d8351_icgraph" id="ad1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient_ae43cce69993969249f40e476764d8351_icgraph">
-<area shape="rect" title="NXProtocol::stop() implementation." alt="" coords="267,55,436,95"/>
-<area shape="rect" href="../../d8/df0/boost__tcp__client__c_8cc.html#ae70ef14c7a9163967c164b38353c0292" title=" " alt="" coords="5,5,219,31"/>
-<area shape="poly" title=" " alt="" coords="254,55,218,46,166,33,167,28,219,41,256,50"/>
-<area shape="rect" href="../../dc/d34/classnexilis_1_1TCPClient.html#aed3f18c564b4708ff7565e509dd3137d" title="Stop running nexilis tcp client." alt="" coords="45,55,179,95"/>
-<area shape="poly" title=" " alt="" coords="253,78,180,78,180,73,253,73"/>
-<area shape="rect" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a006bdabddb896eefbb71203a4b912c65" title="Destructor." alt="" coords="25,119,199,159"/>
-<area shape="poly" title=" " alt="" coords="263,102,188,122,187,117,262,96"/>
+<area shape="rect" title="NXProtocol::stop() implementation." alt="" coords="683,95,852,135"/>
+<area shape="rect" href="../../d8/df0/boost__tcp__client__c_8cc.html#ae70ef14c7a9163967c164b38353c0292" title=" " alt="" coords="421,13,635,38"/>
+<area shape="poly" title=" " alt="" coords="717,91,634,53,592,41,593,36,636,48,719,86"/>
+<area shape="rect" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#aa33257eb91ceaddd1289e83aa03d7ba6" title="NXProtocol::start() implementation." alt="" coords="443,63,613,103"/>
+<area shape="poly" title=" " alt="" coords="669,104,612,97,613,91,669,99"/>
+<area shape="rect" href="../../dc/d34/classnexilis_1_1TCPClient.html#aed3f18c564b4708ff7565e509dd3137d" title="Stop running nexilis tcp client." alt="" coords="461,127,595,167"/>
+<area shape="poly" title=" " alt="" coords="669,130,596,140,595,135,669,125"/>
+<area shape="rect" href="../../d1/d21/classnexilis_1_1client_1_1nxboost_1_1TCPClient.html#a006bdabddb896eefbb71203a4b912c65" title="Destructor." alt="" coords="441,191,615,231"/>
+<area shape="poly" title=" " alt="" coords="718,143,636,181,602,193,600,188,634,176,716,139"/>
+<area shape="rect" href="../../d8/df0/boost__tcp__client__c_8cc.html#aa7de3448ecaaf164b22a7fc66cbe7356" title=" " alt="" coords="195,5,373,45"/>
+<area shape="poly" title=" " alt="" coords="430,62,369,48,370,43,431,57"/>
+<area shape="rect" href="../../d8/df0/boost__tcp__client__c_8cc.html#a8d93315129da1c1ad300a6e4cef6cc88" title=" " alt="" coords="211,70,357,95"/>
+<area shape="poly" title=" " alt="" coords="430,85,357,85,357,80,430,80"/>
+<area shape="rect" href="../../dc/d34/classnexilis_1_1TCPClient.html#a7ef0f30ee01fc275ba8cdc2d1f402784" title="Start running nexilis tcp client." alt="" coords="217,120,351,160"/>
+<area shape="poly" title=" " alt="" coords="431,108,352,127,351,122,429,103"/>
+<area shape="rect" href="../../d8/d34/namespacenexilis.html#a96f5c6cfdccac25888b5a40ef9d32592" title=" " alt="" coords="5,127,147,153"/>
+<area shape="poly" title=" " alt="" coords="203,143,147,143,147,137,203,137"/>
 </map>
 </div>
 

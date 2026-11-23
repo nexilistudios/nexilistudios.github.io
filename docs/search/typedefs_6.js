@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['packet_0',['Packet',['../d2/dbe/namespacenexilis_1_1client.html#a708d9b2551389d4f80ed9d16e15c3da8',1,'nexilis::client']]]
+  ['nx_5fdata_0',['nx_data',['../d8/d34/namespacenexilis.html#a279ce2b95cb6cfebfb8a884fcf615072',1,'nexilis']]]
 ];

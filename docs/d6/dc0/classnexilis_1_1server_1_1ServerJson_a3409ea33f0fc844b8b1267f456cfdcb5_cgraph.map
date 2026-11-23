@@ -1,0 +1,13 @@
+<map id="nexilis::server::ServerJson::getClientData" name="nexilis::server::ServerJson::getClientData">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,101,196,141"/>
+<area shape="rect" id="Node000002" href="$da/de9/classnexilis_1_1server_1_1ClientStorage.html#aaea84dd6f0296109d1c006d421650dc2" title="Snapshot of owning handles. This does not lock mutable user fields." alt="" coords="244,5,455,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,99,243,55,264,47,266,52,245,60,144,104"/>
+<area shape="rect" id="Node000003" href="$dc/dcb/classnexilis_1_1BaseClient.html#a2ef1dddc83ce3e9f573e144673189546" title=" " alt="" coords="278,69,421,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,106,264,98,265,103,196,112"/>
+<area shape="rect" id="Node000004" href="$db/d96/classnexilis_1_1server_1_1RoomStorage.html#ab485886b13f88d861cf50ad148391fb5" title=" " alt="" coords="244,133,455,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="196,131,231,135,230,141,196,136"/>
+<area shape="rect" id="Node000005" href="$dc/dbc/classnexilis_1_1Log.html#a66755adfac1917c8b8791a018f31c643" title=" " alt="" coords="285,198,414,223"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="143,139,191,162,245,183,275,192,274,197,243,188,189,166,140,144"/>
+<area shape="rect" id="Node000006" href="$db/d91/classnexilis_1_1logger_1_1Logger.html#abbfff214c9149463f4d7a15990b9361a" title="Send info message." alt="" coords="503,191,669,231"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="415,208,489,208,489,213,415,213"/>
+</map>

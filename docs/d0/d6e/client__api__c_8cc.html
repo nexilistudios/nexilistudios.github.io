@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.10-unstable</span>
+   <div id="projectname">nexilis<span id="projectnumber">&#160;0.0.11-unstable</span>
    </div>
    <div id="projectbrief">Nexilis Client/Server API documentation.</div>
   </td>
@@ -349,43 +349,48 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  354</span>    <span class="keywordflow">if</span> (!client_api || !client_api-&gt;api)</div>
 <div class="line"><span class="lineno">  355</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  356</span>    boost::json::object root;</div>
-<div class="line"><span class="lineno">  357</span>    boost::json::array damage, respawns, leaderboard, chat, audio;</div>
-<div class="line"><span class="lineno">  358</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; event : client_api-&gt;api-&gt;consumeDamageEvents())</div>
-<div class="line"><span class="lineno">  359</span>        damage.emplace_back(boost::json::object{{<span class="stringliteral">&quot;shooter&quot;</span>, std::to_string(event.shooter_id)},</div>
-<div class="line"><span class="lineno">  360</span>                                                {<span class="stringliteral">&quot;target&quot;</span>, std::to_string(event.target_id)},</div>
-<div class="line"><span class="lineno">  361</span>                                                {<span class="stringliteral">&quot;health&quot;</span>, <span class="keyword">event</span>.new_health}});</div>
-<div class="line"><span class="lineno">  362</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; event : client_api-&gt;api-&gt;consumeAudioEvents())</div>
-<div class="line"><span class="lineno">  363</span>        audio.emplace_back(boost::json::object{{<span class="stringliteral">&quot;sender&quot;</span>, std::to_string(event.client_id)},</div>
-<div class="line"><span class="lineno">  364</span>                                               {<span class="stringliteral">&quot;sound&quot;</span>, <span class="keyword">event</span>.sound},</div>
-<div class="line"><span class="lineno">  365</span>                                               {<span class="stringliteral">&quot;x&quot;</span>, <span class="keyword">event</span>.x},</div>
-<div class="line"><span class="lineno">  366</span>                                               {<span class="stringliteral">&quot;y&quot;</span>, <span class="keyword">event</span>.y},</div>
-<div class="line"><span class="lineno">  367</span>                                               {<span class="stringliteral">&quot;z&quot;</span>, <span class="keyword">event</span>.z}});</div>
-<div class="line"><span class="lineno">  368</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; event : client_api-&gt;api-&gt;consumeRespawnEvents())</div>
-<div class="line"><span class="lineno">  369</span>        respawns.emplace_back(boost::json::object{{<span class="stringliteral">&quot;target&quot;</span>, std::to_string(event.target_id)}});</div>
-<div class="line"><span class="lineno">  370</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; event : client_api-&gt;api-&gt;consumeLeaderboardEvents())</div>
-<div class="line"><span class="lineno">  371</span>        for (const auto&amp; entry : event.entries)</div>
-<div class="line"><span class="lineno">  372</span>            leaderboard.emplace_back(boost::json::object{{<span class="stringliteral">&quot;id&quot;</span>, std::to_string(entry.id)},</div>
-<div class="line"><span class="lineno">  373</span>                                                         {<span class="stringliteral">&quot;name&quot;</span>, entry.username},</div>
-<div class="line"><span class="lineno">  374</span>                                                         {<span class="stringliteral">&quot;team&quot;</span>, entry.team},</div>
-<div class="line"><span class="lineno">  375</span>                                                         {<span class="stringliteral">&quot;kills&quot;</span>, entry.kills},</div>
-<div class="line"><span class="lineno">  376</span>                                                         {<span class="stringliteral">&quot;deaths&quot;</span>, entry.deaths}});</div>
-<div class="line"><span class="lineno">  377</span>    root[<span class="stringliteral">&quot;damage&quot;</span>] = std::move(damage);</div>
-<div class="line"><span class="lineno">  378</span>    root[<span class="stringliteral">&quot;audio&quot;</span>] = std::move(audio);</div>
-<div class="line"><span class="lineno">  379</span>    root[<span class="stringliteral">&quot;respawns&quot;</span>] = std::move(respawns);</div>
-<div class="line"><span class="lineno">  380</span>    root[<span class="stringliteral">&quot;leaderboard&quot;</span>] = std::move(leaderboard);</div>
-<div class="line"><span class="lineno">  381</span>    <span class="keyword">auto</span> messages = client_api-&gt;api-&gt;getChatSnapshot(client_api-&gt;api-&gt;clientRoomId());</div>
-<div class="line"><span class="lineno">  382</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = chat_since; i &lt; messages.size(); ++i)</div>
-<div class="line"><span class="lineno">  383</span>        chat.emplace_back(boost::json::object{{<span class="stringliteral">&quot;sender&quot;</span>, std::to_string(messages[i].sender_id)},</div>
-<div class="line"><span class="lineno">  384</span>                                              {<span class="stringliteral">&quot;message&quot;</span>, messages[i].message}});</div>
-<div class="line"><span class="lineno">  385</span>    root[<span class="stringliteral">&quot;chat&quot;</span>] = std::move(chat);</div>
-<div class="line"><span class="lineno">  386</span>    root[<span class="stringliteral">&quot;chatTotal&quot;</span>] = messages.size();</div>
-<div class="line"><span class="lineno">  387</span>    <span class="keyword">auto</span> serialized = boost::json::serialize(root);</div>
-<div class="line"><span class="lineno">  388</span>    <span class="keywordtype">char</span>* result = <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(std::malloc(serialized.size() + 1));</div>
-<div class="line"><span class="lineno">  389</span>    <span class="keywordflow">if</span> (!result)</div>
-<div class="line"><span class="lineno">  390</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  391</span>    std::memcpy(result, serialized.c_str(), serialized.size() + 1);</div>
-<div class="line"><span class="lineno">  392</span>    <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno">  393</span>}</div>
+<div class="line"><span class="lineno">  357</span>    boost::json::array damage, respawns, leaderboard, chat, audio, serverEvents;</div>
+<div class="line"><span class="lineno">  358</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; event : client_api-&gt;api-&gt;consumeServerRoomEvents())</div>
+<div class="line"><span class="lineno">  359</span>        serverEvents.emplace_back(boost::json::object{{<span class="stringliteral">&quot;room_id&quot;</span>, std::to_string(event.room_id)},</div>
+<div class="line"><span class="lineno">  360</span>                                                      {<span class="stringliteral">&quot;event&quot;</span>, <span class="keyword">event</span>.event},</div>
+<div class="line"><span class="lineno">  361</span>                                                      {<span class="stringliteral">&quot;payload&quot;</span>, <span class="keyword">event</span>.payload}});</div>
+<div class="line"><span class="lineno">  362</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; event : client_api-&gt;api-&gt;consumeDamageEvents())</div>
+<div class="line"><span class="lineno">  363</span>        damage.emplace_back(boost::json::object{{<span class="stringliteral">&quot;shooter&quot;</span>, std::to_string(event.shooter_id)},</div>
+<div class="line"><span class="lineno">  364</span>                                                {<span class="stringliteral">&quot;target&quot;</span>, std::to_string(event.target_id)},</div>
+<div class="line"><span class="lineno">  365</span>                                                {<span class="stringliteral">&quot;health&quot;</span>, <span class="keyword">event</span>.new_health}});</div>
+<div class="line"><span class="lineno">  366</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; event : client_api-&gt;api-&gt;consumeAudioEvents())</div>
+<div class="line"><span class="lineno">  367</span>        audio.emplace_back(boost::json::object{{<span class="stringliteral">&quot;sender&quot;</span>, std::to_string(event.client_id)},</div>
+<div class="line"><span class="lineno">  368</span>                                               {<span class="stringliteral">&quot;sound&quot;</span>, <span class="keyword">event</span>.sound},</div>
+<div class="line"><span class="lineno">  369</span>                                               {<span class="stringliteral">&quot;x&quot;</span>, <span class="keyword">event</span>.x},</div>
+<div class="line"><span class="lineno">  370</span>                                               {<span class="stringliteral">&quot;y&quot;</span>, <span class="keyword">event</span>.y},</div>
+<div class="line"><span class="lineno">  371</span>                                               {<span class="stringliteral">&quot;z&quot;</span>, <span class="keyword">event</span>.z}});</div>
+<div class="line"><span class="lineno">  372</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; event : client_api-&gt;api-&gt;consumeRespawnEvents())</div>
+<div class="line"><span class="lineno">  373</span>        respawns.emplace_back(boost::json::object{{<span class="stringliteral">&quot;target&quot;</span>, std::to_string(event.target_id)}});</div>
+<div class="line"><span class="lineno">  374</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; event : client_api-&gt;api-&gt;consumeLeaderboardEvents())</div>
+<div class="line"><span class="lineno">  375</span>        for (const auto&amp; entry : event.entries)</div>
+<div class="line"><span class="lineno">  376</span>            leaderboard.emplace_back(boost::json::object{{<span class="stringliteral">&quot;id&quot;</span>, std::to_string(entry.id)},</div>
+<div class="line"><span class="lineno">  377</span>                                                         {<span class="stringliteral">&quot;name&quot;</span>, entry.username},</div>
+<div class="line"><span class="lineno">  378</span>                                                         {<span class="stringliteral">&quot;team&quot;</span>, entry.team},</div>
+<div class="line"><span class="lineno">  379</span>                                                         {<span class="stringliteral">&quot;kills&quot;</span>, entry.kills},</div>
+<div class="line"><span class="lineno">  380</span>                                                         {<span class="stringliteral">&quot;deaths&quot;</span>, entry.deaths}});</div>
+<div class="line"><span class="lineno">  381</span>    root[<span class="stringliteral">&quot;damage&quot;</span>] = std::move(damage);</div>
+<div class="line"><span class="lineno">  382</span>    root[<span class="stringliteral">&quot;audio&quot;</span>] = std::move(audio);</div>
+<div class="line"><span class="lineno">  383</span>    root[<span class="stringliteral">&quot;respawns&quot;</span>] = std::move(respawns);</div>
+<div class="line"><span class="lineno">  384</span>    root[<span class="stringliteral">&quot;leaderboard&quot;</span>] = std::move(leaderboard);</div>
+<div class="line"><span class="lineno">  385</span>    root[<span class="stringliteral">&quot;server_events&quot;</span>] = std::move(serverEvents);</div>
+<div class="line"><span class="lineno">  386</span>    <span class="keyword">auto</span> messages = client_api-&gt;api-&gt;getChatSnapshot(client_api-&gt;api-&gt;clientRoomId());</div>
+<div class="line"><span class="lineno">  387</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = chat_since; i &lt; messages.size(); ++i)</div>
+<div class="line"><span class="lineno">  388</span>        chat.emplace_back(boost::json::object{{<span class="stringliteral">&quot;sender&quot;</span>, std::to_string(messages[i].sender_id)},</div>
+<div class="line"><span class="lineno">  389</span>                                              {<span class="stringliteral">&quot;message&quot;</span>, messages[i].message}});</div>
+<div class="line"><span class="lineno">  390</span>    root[<span class="stringliteral">&quot;chat&quot;</span>] = std::move(chat);</div>
+<div class="line"><span class="lineno">  391</span>    root[<span class="stringliteral">&quot;chatTotal&quot;</span>] = messages.size();</div>
+<div class="line"><span class="lineno">  392</span>    <span class="keyword">auto</span> serialized = boost::json::serialize(root);</div>
+<div class="line"><span class="lineno">  393</span>    <span class="keywordtype">char</span>* result = <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(std::malloc(serialized.size() + 1));</div>
+<div class="line"><span class="lineno">  394</span>    <span class="keywordflow">if</span> (!result)</div>
+<div class="line"><span class="lineno">  395</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  396</span>    std::memcpy(result, serialized.c_str(), serialized.size() + 1);</div>
+<div class="line"><span class="lineno">  397</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  398</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -405,10 +410,10 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d6e/client__api__c_8cc_source.html#l00395">395</a> of file <a class="el" href="../../d0/d6e/client__api__c_8cc_source.html">client_api_c.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  396</span>{</div>
-<div class="line"><span class="lineno">  397</span>    std::free(events);</div>
-<div class="line"><span class="lineno">  398</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d6e/client__api__c_8cc_source.html#l00400">400</a> of file <a class="el" href="../../d0/d6e/client__api__c_8cc_source.html">client_api_c.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  401</span>{</div>
+<div class="line"><span class="lineno">  402</span>    std::free(events);</div>
+<div class="line"><span class="lineno">  403</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

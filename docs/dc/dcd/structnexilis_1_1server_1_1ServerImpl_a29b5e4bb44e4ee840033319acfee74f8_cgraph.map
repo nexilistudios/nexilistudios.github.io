@@ -22,7 +22,7 @@
 <area shape="poly" id="edge33_Node000001_Node000025" title=" " alt="" coords="120,901,172,963,208,997,248,1026,269,1036,267,1041,245,1030,204,1001,168,967,116,905"/>
 <area shape="rect" id="Node000027" href="$dd/de4/classnexilis_1_1Util.html#a37837fd204fbf43eaacd572d621da92e" title=" " alt="" coords="273,1105,478,1145"/>
 <area shape="poly" id="edge35_Node000001_Node000027" title=" " alt="" coords="114,902,132,943,161,994,200,1047,223,1071,248,1091,261,1099,258,1104,245,1096,219,1075,196,1050,157,997,127,945,109,904"/>
-<area shape="rect" id="Node000028" href="$da/d15/classnexilis_1_1server_1_1Command.html#a8dc941be1df851c4d426e39dcad676d1" title="Send message to every protocol that is avainable for a client." alt="" coords="281,1169,470,1209"/>
+<area shape="rect" id="Node000028" href="$da/d15/classnexilis_1_1server_1_1Command.html#a8dc941be1df851c4d426e39dcad676d1" title="Send a response only through the protocol that received the request." alt="" coords="281,1169,470,1209"/>
 <area shape="poly" id="edge36_Node000001_Node000028" title=" " alt="" coords="110,902,125,954,152,1023,170,1059,192,1094,218,1127,248,1155,270,1168,267,1173,245,1159,214,1131,188,1097,166,1062,147,1025,120,955,105,904"/>
 <area shape="rect" id="Node000036" href="$dc/dbc/classnexilis_1_1Log.html#a191e4c013bad219e746e8e56682d65e1" title=" " alt="" coords="297,1333,453,1358"/>
 <area shape="poly" id="edge45_Node000001_Node000036" title=" " alt="" coords="111,902,129,959,158,1041,198,1132,249,1220,272,1250,298,1278,348,1322,345,1326,295,1281,268,1253,244,1223,193,1134,153,1043,124,961,106,904"/>
